@@ -15,6 +15,21 @@ const u8 gExpandedPlaceholder_Kyogre[] = _("KYOGRE");
 const u8 gExpandedPlaceholder_Groudon[] = _("GROUDON");
 const u8 gExpandedPlaceholder_Brendan[] = _("BRENDAN");
 const u8 gExpandedPlaceholder_May[] = _("MAY");
+const u8 gExpandedPlaceholder_BoyCallMale[] = _("형");
+const u8 gExpandedPlaceholder_BoyCallFemale[] = _("누나");
+const u8 gExpandedPlaceholder_GirlCallMale[] = _("오빠");
+const u8 gExpandedPlaceholder_GirlCallFemale[] = _("언니");
+const u8 gExpandedPlaceholder_Eun[] = _("은");
+const u8 gExpandedPlaceholder_Neun[] = _("는");
+const u8 gExpandedPlaceholder_Eu[] = _("으");
+const u8 gExpandedPlaceholder_I[] = _("이");
+const u8 gExpandedPlaceholder_Ga[] = _("가");
+const u8 gExpandedPlaceholder_Eul[] = _("을");
+const u8 gExpandedPlaceholder_Reul[] = _("를");
+const u8 gExpandedPlaceholder_Wa[] = _("와");
+const u8 gExpandedPlaceholder_Gwa[] = _("과");
+const u8 gExpandedPlaceholder_A[] = _("아");
+const u8 gExpandedPlaceholder_Ya[] = _("야");
 
 // system text
 const u8 gSystemText_Egg[] = _("EGG");

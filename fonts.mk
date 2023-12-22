@@ -30,3 +30,27 @@ graphics/fonts/font4_lat_rev1.4bpp: graphics/fonts/font4_lat_rev1.png
 
 graphics/fonts/font6_braille.1bpp: graphics/fonts/font6_braille.png
 	$(RSFONT) $< $@ 192 0
+
+graphics/fonts/font0_kor.4bpp: graphics/fonts/font0_kor.png
+	$(RSFONT) $< $@ 2608 1
+
+graphics/fonts/font0_kor_10pt.4bpp: graphics/fonts/font0_kor_10pt.png
+	$(RSFONT) $< $@ 5216 1
+
+graphics/fonts/font0_kor_8pt.4bpp: graphics/fonts/font0_kor_8pt.png
+	$(RSFONT) $< $@ 5216 1
+
+graphics/fonts/font1_kor.4bpp: graphics/fonts/font1_kor.png
+	$(RSFONT) $< $@ 2608 0
+
+graphics/fonts/font3_kor.4bpp: graphics/fonts/font3_kor.png
+	$(RSFONT) $< $@ 2608 1
+
+graphics/fonts/font3_kor_10pt.4bpp: graphics/fonts/font3_kor_10pt.png
+	$(RSFONT) $< $@ 5216 1
+
+graphics/fonts/font3_kor_8pt.4bpp: graphics/fonts/font3_kor_8pt.png
+	$(RSFONT) $< $@ 5216 1
+
+graphics/fonts/font4_kor.4bpp: graphics/fonts/font4_kor.png
+	$(RSFONT) $< $@ 2608 0

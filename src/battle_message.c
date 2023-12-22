@@ -8,6 +8,8 @@
 #include "pokemon.h"
 #include "data2.h"
 #include "text.h"
+#include "korean.h"
+#include "strings.h"
 #include "string_util.h"
 #include "link.h"
 #include "battle_setup.h"
@@ -173,6 +175,7 @@ extern struct BattleEnigmaBerry gEnigmaBerries[4];
 extern u8 gBattleBufferA[4][0x200];
 
 EWRAM_DATA u8 gAbilitiesPerBank[4] = {0};
+static EWRAM_DATA bool8 sHasJong = FALSE;
 
 extern const u8* const gUnknown_08401674[]; // table of pointers to 'a -TYPE' strings
 extern const u8* const gUnknown_08400F58[]; // table of pointers to stat strings
@@ -476,7 +479,8 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
 {
     u32 dstID = 0; // if they used dstID, why not use srcID as well?
     const u8* toCpy = NULL;
-    u8 text[12];
+    u8 text[30];
+    u16 prevChar;
     u8 multiplayerID = GetMultiplayerId();
 
     while (*src != EOS)
@@ -516,6 +520,48 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
                 }
                 else
                     toCpy = gBattleTextBuff3;
+                break;
+            case B_TXT_EUNNEUN:
+                if (sHasJong)
+                    toCpy = gExpandedPlaceholder_Eun;
+                else
+                    toCpy = gExpandedPlaceholder_Neun;
+                break;
+            case B_TXT_IGA:
+                if (sHasJong)
+                    toCpy = gExpandedPlaceholder_I;
+                else
+                    toCpy = gExpandedPlaceholder_Ga;
+                break;
+            case B_TXT_EULREUL:
+                if (sHasJong)
+                    toCpy = gExpandedPlaceholder_Eul;
+                else
+                    toCpy = gExpandedPlaceholder_Reul;
+                break;
+            case B_TXT_EU:
+                if (sHasJong)
+                    toCpy = gExpandedPlaceholder_Eu;
+                else
+                    toCpy = gExpandedPlaceholder_Empty;
+                break;
+            case B_TXT_I:
+                if (sHasJong)
+                    toCpy = gExpandedPlaceholder_I;
+                else
+                    toCpy = gExpandedPlaceholder_Empty;
+                break;
+            case B_TXT_WAGWA:
+                if (sHasJong)
+                    toCpy = gExpandedPlaceholder_Gwa;
+                else
+                    toCpy = gExpandedPlaceholder_Wa;
+                break;
+            case B_TXT_AYA:
+                if (sHasJong)
+                    toCpy = gExpandedPlaceholder_A;
+                else
+                    toCpy = gExpandedPlaceholder_Ya;
                 break;
             case B_TXT_PLAYER_MON1_NAME: // first player poke name
                 GetMonData(&gPlayerParty[gBattlerPartyIndexes[GetBattlerAtPosition(0)]], MON_DATA_NICKNAME, text);
@@ -759,9 +805,15 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
             dstID++;
         }
         src++;
+
+        // 종성유무 체크
+        prevChar = (dst[dstID - 2] << 8) | dst[dstID - 1];
+        sHasJong = HasJong(prevChar);
     }
+
     dst[dstID] = *src;
     dstID++;
+
     return dstID;
 }
 

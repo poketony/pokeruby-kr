@@ -5,6 +5,15 @@
 #define CHAR_LV             0x34
 #define CHAR_SONG_WORD_SEPARATOR 0x37  // separates words in the bard song. Not sure if it's used for anything else
 #define CHAR_0              0xA1
+#define CHAR_1              0xA2
+#define CHAR_2              0xA3
+#define CHAR_3              0xA4
+#define CHAR_4              0xA5
+#define CHAR_5              0xA6
+#define CHAR_6              0xA7
+#define CHAR_7              0xA8
+#define CHAR_8              0xA9
+#define CHAR_9              0xAA
 #define CHAR_EXCL_MARK      0xAB
 #define CHAR_QUESTION_MARK  0xAC
 #define CHAR_PERIOD         0xAD
@@ -175,6 +184,13 @@ struct Window
  /*0x2C*/ const struct WindowTemplate *template;
 };
 
+enum
+{
+    KOREAN_FONT_TYPE_DEFAULT, // 0
+    KOREAN_FONT_TYPE_10PT,    // 1
+    KOREAN_FONT_TYPE_8PT,     // 2
+};
+
 extern vu16 *const gBGControlRegs[];
 extern vu16 *const gBGHOffsetRegs[];
 extern vu16 *const gBGVOffsetRegs[];
@@ -298,6 +314,8 @@ void ConvertInternationalString(u8 *s, u8 language);
 void Text_StripExtCtrlCodes(u8 *str);
 s32 StringCompareWithoutExtCtrlCodes(const u8 *str1, const u8 *str2);
 u8 sub_8004FD0(struct Window *win, u8 *dest, const u8 *src, u16 tileDataStartOffset, u8 left, u16 top, u8 width, u32 a8);
+u8 ApplyKoreanFontType(u8 typeNum);
+void RestoreKoreanFontType();
 
 extern const u16 gUnknownPalette_81E6692[];
 

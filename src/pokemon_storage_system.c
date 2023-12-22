@@ -382,6 +382,7 @@ void ResetPokemonStorageSystem(void)
     u16 boxId;
     u16 boxMon;
 
+    gSaveBlock2.useNewBoxName = TRUE;
     gPokemonStorage.currentBox = 0;
     for (boxId = 0; boxId < 14; boxId++)
     {

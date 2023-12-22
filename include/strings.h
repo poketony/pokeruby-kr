@@ -15,6 +15,21 @@ extern const u8 gExpandedPlaceholder_Kyogre[];
 extern const u8 gExpandedPlaceholder_Groudon[];
 extern const u8 gExpandedPlaceholder_Brendan[];
 extern const u8 gExpandedPlaceholder_May[];
+extern const u8 gExpandedPlaceholder_BoyCallMale[];
+extern const u8 gExpandedPlaceholder_BoyCallFemale[];
+extern const u8 gExpandedPlaceholder_GirlCallMale[];
+extern const u8 gExpandedPlaceholder_GirlCallFemale[];
+extern const u8 gExpandedPlaceholder_Eun[];
+extern const u8 gExpandedPlaceholder_Neun[];
+extern const u8 gExpandedPlaceholder_Eu[];
+extern const u8 gExpandedPlaceholder_I[];
+extern const u8 gExpandedPlaceholder_Ga[];
+extern const u8 gExpandedPlaceholder_Eul[];
+extern const u8 gExpandedPlaceholder_Reul[];
+extern const u8 gExpandedPlaceholder_Wa[];
+extern const u8 gExpandedPlaceholder_Gwa[];
+extern const u8 gExpandedPlaceholder_A[];
+extern const u8 gExpandedPlaceholder_Ya[];
 
 // system text
 extern const u8 gSystemText_Egg[];

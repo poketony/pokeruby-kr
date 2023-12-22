@@ -61,6 +61,13 @@ struct StringInfoBattle
 #define B_TXT_ATK_PREFIX3 0x28
 #define B_TXT_DEF_PREFIX3 0x29
 #define B_TXT_BUFF3 0x2A
+#define B_TXT_EUNNEUN 0x35
+#define B_TXT_IGA 0x36
+#define B_TXT_EULREUL 0x37
+#define B_TXT_EU 0x38
+#define B_TXT_I 0x39
+#define B_TXT_WAGWA 0x3A
+#define B_TXT_AYA 0x3B
 
 // for B_TXT_BUFF1, B_TXT_BUFF2 and B_TXT_BUFF3
 

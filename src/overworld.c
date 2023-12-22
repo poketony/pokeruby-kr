@@ -44,6 +44,7 @@
 #include "secret_base.h"
 #include "sound.h"
 #include "start_menu.h"
+#include "string_util.h"
 #include "task.h"
 #include "tileset_anim.h"
 #include "time_events.h"
@@ -1462,8 +1463,40 @@ void sub_805470C(void)
     sub_8080B60();
 }
 
+static void MigrateNewBoxName(void)
+{
+    struct PokemonStorage tempPokemonStorage;
+    u8 *ptr, *tempPtr;
+    u8 i;
+
+    if (gSaveBlock2.useNewBoxName == FALSE)
+    {
+        ptr = (u8 *)gPokemonStorage.boxNames[0];
+        for (i = 0; i < 14; i++)
+        {
+            tempPtr = ptr + (i * 9);
+            StringCopy(tempPokemonStorage.boxNames[i], tempPtr);
+        }
+
+        for (i = 0; i < 14; i++)
+        {
+            tempPtr = ptr + (9 * 14) + i;
+            tempPokemonStorage.wallpaper[i] = *tempPtr;
+        }
+
+        for (i = 0; i < 14; i++)
+        {
+            StringCopy(gPokemonStorage.boxNames[i], tempPokemonStorage.boxNames[i]);
+            gPokemonStorage.wallpaper[i] = tempPokemonStorage.wallpaper[i];
+        }
+
+        gSaveBlock2.useNewBoxName = TRUE;
+    }
+}
+
 void CB2_ContinueSavedGame(void)
 {
+    MigrateNewBoxName();
     FieldClearVBlankHBlankCallbacks();
     StopMapMusic();
 #if DEBUG

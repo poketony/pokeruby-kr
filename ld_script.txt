@@ -43,6 +43,8 @@ SECTIONS {
         src/main.o(.text);
         src/sprite.o(.text);
         src/text.o(.text);
+        src/korean.o(.text);
+        src/korean_table.o(.text);
         src/string_util.o(.text);
         src/link.o(.text);
         src/rtc.o(.text);
@@ -469,6 +471,8 @@ SECTIONS {
         src/sprite.o(.rodata);
         . += 0x8; /* Why the gap? */
         src/text.o(.rodata);
+        src/korean.o(.rodata);
+        src/korean_table.o(.rodata);
         src/string_util.o(.rodata);
         src/link.o(.rodata);
         src/rtc.o(.rodata);

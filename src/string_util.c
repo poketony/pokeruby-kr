@@ -1,4 +1,5 @@
 #include "global.h"
+#include "korean.h"
 #include "string_util.h"
 #include "strings.h"
 #include "text.h"
@@ -7,6 +8,8 @@ u8 gUnknownStringVar[16];
 
 const u8 gEmptyString_81E72B0[] = _("");
 const u8 gRightPointingTriangleString[] = _("▶");
+
+EWRAM_DATA bool8 sHasJong = FALSE;
 
 static const u8 sDigits[] = __("0123456789ABCDEF");
 
@@ -361,12 +364,15 @@ u8 *StringExpandPlaceholders(u8 *dest, const u8 *src)
     {
         u8 c = *src++;
         u8 placeholderId;
+        u16 prevChar;
         const u8 *expandedString;
         u8 length;
 
         switch (c)
         {
         case PLACEHOLDER_BEGIN:
+            prevChar = (*(dest - 2) << 8) | *(dest - 1);
+            sHasJong = HasJong(prevChar);
             placeholderId = *src++;
             expandedString = GetExpandedPlaceholder(placeholderId);
             dest = StringExpandPlaceholders(dest, expandedString);
@@ -479,6 +485,78 @@ VERSION_DEPENDENT_PLACEHOLDER_LIST
 
 #undef X
 
+static const u8 *ExpandPlaceholder_BoyCall(void)
+{
+    if (gSaveBlock2.playerGender == MALE)
+        return gExpandedPlaceholder_BoyCallMale;
+    else
+        return gExpandedPlaceholder_BoyCallFemale;
+}
+
+static const u8 *ExpandPlaceholder_GirlCall(void)
+{
+    if (gSaveBlock2.playerGender == MALE)
+        return gExpandedPlaceholder_GirlCallMale;
+    else
+        return gExpandedPlaceholder_GirlCallFemale;
+}
+
+static const u8 *ExpandPlaceholder_EunNeun(void)
+{
+    if (sHasJong)
+        return gExpandedPlaceholder_Eun;
+    else
+        return gExpandedPlaceholder_Neun;
+}
+
+static const u8 *ExpandPlaceholder_Iga(void)
+{
+    if (sHasJong)
+        return gExpandedPlaceholder_I;
+    else
+        return gExpandedPlaceholder_Ga;
+}
+
+static const u8 *ExpandPlaceholder_EulReul(void)
+{
+    if (sHasJong)
+        return gExpandedPlaceholder_Eul;
+    else
+        return gExpandedPlaceholder_Reul;
+}
+
+static const u8 *ExpandPlaceholder_Eu(void)
+{
+    if (sHasJong)
+        return gExpandedPlaceholder_Eu;
+    else
+        return gExpandedPlaceholder_Empty;
+}
+
+static const u8 *ExpandPlaceholder_I(void)
+{
+    if (sHasJong)
+        return gExpandedPlaceholder_I;
+    else
+        return gExpandedPlaceholder_Empty;
+}
+
+static const u8 *ExpandPlaceholder_WaGwa(void)
+{
+    if (sHasJong)
+        return gExpandedPlaceholder_Gwa;
+    else
+        return gExpandedPlaceholder_Wa;
+}
+
+static const u8 *ExpandPlaceholder_Aya(void)
+{
+    if (sHasJong)
+        return gExpandedPlaceholder_A;
+    else
+        return gExpandedPlaceholder_Ya;
+}
+
 const u8 *GetExpandedPlaceholder(u32 id)
 {
     typedef const u8 *(*ExpandPlaceholderFunc)(void);
@@ -499,12 +577,28 @@ const u8 *GetExpandedPlaceholder(u32 id)
         ExpandPlaceholder_GoodLeader,
         ExpandPlaceholder_EvilLegendary,
         ExpandPlaceholder_GoodLegendary,
+        ExpandPlaceholder_BoyCall,
+        ExpandPlaceholder_GirlCall,
+        ExpandPlaceholder_EunNeun,
+        ExpandPlaceholder_Iga,
+        ExpandPlaceholder_EulReul,
+        ExpandPlaceholder_Eu,
+        ExpandPlaceholder_I,
+        ExpandPlaceholder_WaGwa,
+        ExpandPlaceholder_Aya
     };
 
     if (id >= ARRAY_COUNT(funcs))
+    {
+        // 배틀화면 전용 제어코드 호환용 예외처리
+        if (id >= 0x35 && id <= 0x3b)
+            return funcs[id - 0x25]();
         return gExpandedPlaceholder_Empty;
+    }
     else
+    {
         return funcs[id]();
+    }
 }
 
 u8 *StringFill(u8 *dest, u8 c, u16 n)
