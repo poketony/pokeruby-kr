@@ -419,7 +419,7 @@ const u8 gOtherText_Appeal2[] = _("어필");
 const u8 gOtherText_Jam2[] = _("방해");
 const u8 gOtherText_Status[] = _("상태");
 const u8 gOtherText_ExpPoints[] = _("현재 경험치");
-const u8 gOtherText_NextLv[] = _("레벨업까지");
+const u8 gOtherText_NextLv[] = _("레벨 업까지");
 const u8 gOtherText_Ribbons00[] = _("현재{CLEAR_TO 0x38}개");
 
 const u8 OtherText_Event[] = _("이벤트");

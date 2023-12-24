@@ -46,14 +46,17 @@ Cut_ChoseNo: @ 81B0E3C
 	end
 
 UseCutPromptText: @ 81B0E3F
-	.string "This tree looks like it can be CUT down.\p"
-	.string "Would you like to CUT it?$"
+	.string "...이 나무는 왠지\n"
+	.string "자를 수 있을 것 같다!\p"
+	.string "풀베기로 자르겠습니까?$"
 
 UsedCutRockSmashText: @ 81B0E82
-	.string "{STR_VAR_1} used {STR_VAR_2}.$"
+	.string "{STR_VAR_1}{K_EUNNEUN}\n"
+	.string "{STR_VAR_2}{K_EULREUL} 썼다!$"
 
 CannotUseCutText: @ 81B0E8E
-	.string "This tree looks like it can be CUT down.$"
+	.string "이 나무는 왠지\n"
+	.string "자를 수 있을 것 같다!$"
 
 S_BreakableRock:: @ 81B0EB7
 	lockall
@@ -114,12 +117,13 @@ RockSmash_ChoseNo: @ 81B0F48
 	end
 
 UseRockSmashPromptText: @ 81B0F4B
-	.string "This rock appears to be breakable.\n"
-	.string "Would you like to use ROCK SMASH?$"
+	.string "포켓몬 기술로\n"
+	.string "깨뜨릴 수 있을 것 같다!\l"
+	.string "...바위깨기를 쓰겠습니까?$"
 
 CannotUseRockSmashText: @ 81B0F90
-	.string "It's a rugged rock, but a POKéMON\n"
-	.string "may be able to smash it.$"
+	.string "단단해 보이는 바위지만...\n"
+	.string "포켓몬 기술로 깰 수 있을지도?$"
 
 S_PushableBoulder:: @ 81B0FCB
 	lockall
@@ -167,22 +171,23 @@ Strength_ChoseNo: @ 81B103A
 	end
 
 UseStrengthPromptText: @ 81B103D
-	.string "It's a big boulder, but a POKéMON\n"
-	.string "may be able to push it aside.\p"
-	.string "Would you like to use STRENGTH?$"
+	.string "큰 바위이지만...\n"
+	.string "포켓몬 기술로 밀 수 있을지도?\p"
+	.string "괴력을 쓰겠습니까?$"
 
 UsedStrengthText: @ 81B109D
-	.string "{STR_VAR_1} used STRENGTH.\p"
-	.string "{STR_VAR_1}'s STRENGTH made it possible\n"
-	.string "to move boulders around.$"
+	.string "{STR_VAR_1}{K_EUNNEUN}\n"
+	.string "괴력을 발휘했다!\p"
+	.string "{STR_VAR_1}의 괴력 덕분에\n"
+	.string "바위를 밀 수 있게 되었다!$"
 
 CannotUseStrengthText: @ 81B10E7
-	.string "It's a big boulder, but a POKéMON\n"
-	.string "may be able to push it aside.$"
+	.string "큰 바위이지만...\n"
+	.string "포켓몬 기술로 밀 수 있을지도?$"
 
 AlreadyUsedStrengthText: @ 81B1127
-	.string "STRENGTH made it possible to move\n"
-	.string "boulders around.$"
+	.string "괴력 덕분에\n"
+	.string "바위를 밀어 움직일 수 있다!$"
 
 S_UseWaterfall:: @ 81B115A
 	lockall
@@ -207,15 +212,15 @@ Waterfall_Done:  @ 81B119D
 	end
 
 CannotUseWaterfallText: @ 81B119F
-	.string "A wall of water is crashing down with\n"
-	.string "a mighty roar.$"
+	.string "큰 소리를 내며\n"
+	.string "물이 흘러 떨어진다!$"
 
 UseWaterfallPromptText: @ 81B11D4
-	.string "It's a large waterfall.\n"
-	.string "Would you like to use WATERFALL?$"
+	.string "큰 폭포다!\n"
+	.string "...폭포오르기를 쓰겠습니까?$"
 
 UsedWaterfallText: @ 81B120D
-	.string "{STR_VAR_1} used WATERFALL.$"
+	.string "{STR_VAR_1}{K_EUNNEUN} 폭포오르기를 썼다!$"
 
 UseDiveScript:: @ 81B1220
 	lockall
@@ -270,31 +275,36 @@ UnderwaterDive_Done: @ 81B12BE
 	end
 
 CannotUseDiveText: @ 81B12C0
-	.string "The sea is deep here. A POKéMON may be\n"
-	.string "able to go underwater here.$"
+	.string "깊은 바다다!\n"
+	.string "포켓몬 기술로 잠수할 수 있을지도?$"
 
 UseDivePromptText: @ 81B1303
-	.string "The sea is deep here.\n"
-	.string "Would you like to use DIVE?$"
+	.string "깊은 바다다!\n"
+	.string "다이빙을 쓰겠습니까?$"
 
 UsedDiveText: @ 81B1335
-	.string "{STR_VAR_1} used DIVE.$"
+	.string "{STR_VAR_1}{K_EUNNEUN} 다이빙을 썼다!$"
 
 UnderwaterCannotUseDiveText: @ 81B1343
-	.string "Light is filtering down from above.\n"
-	.string "A POKéMON may be able to surface here.$"
+	.string "위에서 빛이 들어오고 있다!\n"
+	.string "포켓몬 기술로 올라갈 수 있을지도?$"
 
 UnderwaterUseDivePromptText: @ 81B138E
-	.string "Light is filtering down from above.\n"
-	.string "Would you like to use DIVE?$"
+	.string "위에서 빛이 들어오고 있다!\n"
+	.string "다이빙을 쓰겠습니까?$"
 
 SurfacingBlockedText: @ 81B13CE
-	.string "There is something in the way above.\n"
-	.string "DIVE can't be used here.$"
+	.string "위에 무언가가 있습니다!\n"
+	.string "여기서는 다이빙을 쓸 수 없습니다$"
+	// うえに なにか あります!ｎ
+	// ここではダイビングを つかえません
 
 SweetScentNothingHereScript:: @ 81B140C
 	msgbox SweetScentNothingHereText, MSGBOX_SIGN
 	end
 
 SweetScentNothingHereText: @ 81B1415
-	.string "There appears to be nothing here...$"
+	.string "여기에는\n"
+	.string "아무것도 없는 것 같다...$"
+	// ここにはｎ
+	// なにも いないようだ……

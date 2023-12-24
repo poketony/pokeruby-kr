@@ -5,79 +5,79 @@
 
 	@ unused
 gOtherText_TopSpeed::
-	.string "TOP SPEED$"
+	.string "최고 속도$"
 
 gMultiText_BerryBlenderMaxSpeedRecord:: @ 842C2E6
-	.string "BERRY BLENDER\nMAXIMUM SPEED RECORD!$"
+	.string "나무열매블렌더\n최고 속도 랭킹!$"
 
 gMultiText_2P3P4P:: @ 842C30A
-	.string "2 PLAYERS\n3 PLAYERS\n4 PLAYERS$"
+	.string "2명\n3명\n4명$"
 
 gMultiText_Saving:: @ 842C328
-	.string "SAVING...\nDON'T TURN OFF THE POWER.$"
+	.string "통신 대기 중!\n잠시 기다려 주십시오$"
 
 gMultiText_LinkError:: @ 842C34C
-	.string "{HIGHLIGHT TRANSPARENT}{COLOR WHITE2}Link error...\nCheck your Game Link cable connection,\nand turn the power off and on.$"
+	.string "{HIGHLIGHT TRANSPARENT}{COLOR WHITE2}통신 에러가 발생했습니다\n통신케이블의 연결을 확인하고\n전원을 껐다가 다시 켜 주십시오$"
 
 gSystemText_OptionMenu:: @ 842C3A6
-	.string "{PALETTE 9}OPTION$"
+	.string "{PALETTE 9}설정을 바꾼다$"
 
 gSystemText_TextSpeed:: @ 842C3B0
-	.string "{PALETTE 9}TEXT SPEED$"
+	.string "{PALETTE 9}이야기의 속도$"
 
 gSystemText_BattleScene:: @ 842C3BE
-	.string "{PALETTE 9}BATTLE SCENE$"
+	.string "{PALETTE 9}배틀 애니메이션$"
 
 gSystemText_BattleStyle:: @ 842C3CE
-	.string "{PALETTE 9}BATTLE STYLE$"
+	.string "{PALETTE 9}시합 룰$"
 
 gSystemText_Sound:: @ 842C3DE
-	.string "{PALETTE 9}SOUND$"
+	.string "{PALETTE 9}사운드$"
 
 gSystemText_Frame:: @ 842C3E7
-	.string "{PALETTE 9}FRAME$"
+	.string "{PALETTE 9}윈도우$"
 
 gSystemText_Cancel:: @ 842C3F0
-	.string "{PALETTE 9}CANCEL$"
+	.string "{PALETTE 9}닫는다$"
 
 gSystemText_ButtonMode:: @ 842C3FA
-	.string "{PALETTE 9}BUTTON MODE$"
+	.string "{PALETTE 9}버튼 모드$"
 
 gSystemText_Slow:: @ 842C409
-	.string "{PALETTE 15}SLOW$"
+	.string "{PALETTE 15}느리게$"
 
 gSystemText_Mid:: @ 842C411
-	.string "{PALETTE 15}MID$"
+	.string "{PALETTE 15}보통$"
 
 gSystemText_Fast:: @ 842C418
-	.string "{PALETTE 15}FAST$"
+	.string "{PALETTE 15}빠르게$"
 
 gSystemText_On:: @ 842C420
-	.string "{PALETTE 15}ON$"
+	.string "{PALETTE 15}본다$"
 
 gSystemText_Off:: @ 842C426
-	.string "{PALETTE 15}OFF$"
+	.string "{PALETTE 15}보지 않는다$"
 
 gSystemText_Shift:: @ 842C42D
-	.string "{PALETTE 15}SHIFT$"
+	.string "{PALETTE 15}교체$"
 
 gSystemText_Set:: @ 842C436
-	.string "{PALETTE 15}SET$"
+	.string "{PALETTE 15}토너먼트$"
 
 gSystemText_Mono:: @ 842C43D
-	.string "{PALETTE 15}MONO$"
+	.string "{PALETTE 15}모노$"
 
 gSystemText_Stereo:: @ 842C445
-	.string "{PALETTE 15}STEREO$"
+	.string "{PALETTE 15}스테레오$"
 
 gSystemText_Type:: @ 842C44F
-	.string "{PALETTE 15}TYPE$"
+	.string "{PALETTE 15}타입$"
 
 gSystemText_Terminator:: @ 842C457
 	.string "{PALETTE 8}$"
 
 gSystemText_Normal:: @ 842C45B
-	.string "{PALETTE 15}NORMAL$"
+	.string "{PALETTE 15}노말$"
 
 gSystemText_LR:: @ 842C465
 	.string "{PALETTE 15}LR$"
@@ -86,104 +86,104 @@ gSystemText_LA:: @ 842C46B
 	.string "{PALETTE 15}L=A$"
 
 SystemText_Pokedex::
-	.string "POKéDEX$"
+	.string "도감$"
 SystemText_Pokemon::
-	.string "POKéMON$"
+	.string "포켓몬$"
 SystemText_BAG::
-	.string "BAG$"
+	.string "가방$"
 SystemText_Pokenav::
-	.string "POKéNAV$"
+	.string "포켓내비$"
 SystemText_Player::
 	.string "{PLAYER}$"
 SystemText_Save::
-	.string "SAVE$"
+	.string "리포트$"
 SystemText_Option::
-	.string "OPTION$"
+	.string "설정$"
 SystemText_Exit::
-	.string "EXIT$"
+	.string "닫는다$"
 SystemText_Retire:: @ safari zone?
-	.string "RETIRE$"
+	.string "포기한다$"
 
 gOtherText_SafariStock:: @ 842C4A9
-	.string "SAFARI BALLS\nStock: {STR_VAR_1}$"
+	.string "사파리볼\n{STR_VAR_1}개 남음$"
 
 gSystemText_LinkStandby:: @ 842C4C0
-	.string "Link standby...\n... ... B Button: Cancel$"
+	.string "통신 대기 중입니다\n...B 버튼으로 취소합니다$"
 
 gSystemText_LoadEventPressA:: @ 842C4E9
-	.string "Press the A Button to load event.\n... ... B Button: Cancel$"
+	.string "A 버튼으로 사건을 읽어들입니다\n...B 버튼으로 취소합니다$"
 
 gSystemText_LoadingEvent:: @ 842C524
-	.string "Loading event...$"
+	.string "사건을 읽어들이는 중!!$"
 
 gSystemText_DontCutLink:: @ 842C535
-	.string "Don't remove the Game Link cable.\nDon't turn off the power.$"
+	.string "통신케이블을 뽑지 말아 주십시오\n전원을 끄지 않도록 해주십시오$"
 
 gSystemText_EventLoadSuccess:: @ 842C571
-	.string "The event was safely loaded.$$"
+	.string "사건의 로딩이\n정상적으로 종료되었습니다$$"
 
 gSystemText_LoadingError:: @ 842C58F
-	.string "Loading error.\nEnding session.$$$$$$$$"
+	.string "에러가 발생했습니다\n종료합니다$$$$$$$$"
 
 gOtherText_Hoenn:: @ 842C5B5
-	.string "HOENN$"
+	.string "호연지방$"
 
 gOtherText_OhABite:: @ 842C5BB
-	.string "Oh! A bite!$"
+	.string "걸렸다 걸렸다!!$"
 
 gOtherText_PokeOnHook:: @ 842C5C7
-	.string "A POKéMON's on the hook!{PAUSE_UNTIL_PRESS}$"
+	.string "포켓몬을 낚았다!{PAUSE_UNTIL_PRESS}$"
 
 gOtherText_NotEvenANibble:: @ 842C5E2
-	.string "Not even a nibble...{PAUSE_UNTIL_PRESS}$"
+	.string "잡히지 않네...{PAUSE_UNTIL_PRESS}$"
 
 gOtherText_ItGotAway:: @ 842C5F9
-	.string "It got away...{PAUSE_UNTIL_PRESS}$$"
+	.string "도망가버렸다...{PAUSE_UNTIL_PRESS}$$"
 
 gTradeText_WillBeSent:: @ 842C60B
-	.string "{STR_VAR_2} will be sent to {STR_VAR_1}.$"
+	.string "{STR_VAR_2}{K_EULREUL} {STR_VAR_1}에게 보냅니다!$"
 
 gTradeText_ByeBye:: @ 842C622
-	.string "Bye-bye, {STR_VAR_2}!$"
+	.string "바이바이! {STR_VAR_2}!$"
 
 gTradeText_SentOverPoke:: @ 842C62F
-	.string "{STR_VAR_1} sent over {STR_VAR_3}.$"
+	.string "{STR_VAR_1}{K_EU}로부터 {STR_VAR_3}{K_IGA} 전송됐다!$"
 
 gTradeText_TakeGoodCare:: @ 842C640
-	.string "Take good care of {STR_VAR_3}!$"
+	.string "{STR_VAR_3}{K_EULREUL} 귀여워해 줘!$"
 
 TradeText_Cancel::
-	.string "CANCEL$"
+	.string "취소$"
 TradeText_ChoosePoke::
-	.string "Choose a POKéMON.$"
+	.string "포켓몬을 선택해 주십시오$"
 TradeText_Summary1::
-	.string "SUMMARY$"
+	.string "능력치를 본다$"
 TradeText_Trade1::
-	.string "TRADE$"
+	.string "교환에 내보낸다$"
 TradeText_CancelTradePrompt::
-	.string "Cancel trade?$"
+	.string "교환을 그만두겠습니까?$"
 TradeText_PressBToExit::
-	.string "Press the B Button to exit.$"
+	.string "B 버튼으로 돌아갑니다$"
 TradeText_Summary2::
-	.string "SUMMARY$"
+	.string "능력치를 본다$"
 TradeText_Trade2::
-	.string "TRADE$"
+	.string "교환에 내보낸다$"
 TradeText_LinkStandby::
-	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}Link standby...\nPlease wait.$"
+	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}통신 대기 중!\n잠시 기다려 주십시오$"
 TradeText_TradeCancelled::
-	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}The trade has\nbeen canceled.$"
+	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}교환이\n취소되었습니다$"
 TradeText_OnlyPoke::
-	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}That's your only\nPOKéMON for battle.$"
+	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}그 포켓몬을 교환하면\n싸울 수 없게 돼!$"
 TradeText_NonTradablePoke::
-	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}Your friend can't\ntrade that one.$"
+	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}이걸로 교환하면 상대가\n싸울 수 없게 돼!$"
 TradeText_WaitingForFriend::
-	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}Waiting for your\nfriend to finish...$"
+	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}친구가 종료하기를\n기다리고 있습니다...$"
 TradeText_WantToTrade::
-	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}Your friend wants\nto trade POKéMON.$"
+	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}친구는 포켓몬을\n교환하고 싶어하는 것 같습니다!$"
 	.string "$"
 
 gTradeText_TradeOkayPrompt:: @ 842C7B6
-	.string "Is this trade okay?$"
+	.string "교환하겠습니까?$"
 
 gOtherText_Terminator2:: @ 842C7CA
 	.string "$"
@@ -207,76 +207,76 @@ gOtherText_From:: @ 842C894
 	.string "From $"
 
 gOtherText_MixingRecordsWithFriend:: @ 842C89A
-	.string "Mixing records...$"
+	.string "레코드를 섞고 있습니다$"
 
 gOtherText_MixingComplete:: @ 842C8AC
-	.string "Record mixing completed.\nThank you for waiting.$"
+	.string "레코드 통신이 끝났습니다!\n수고하셨습니다$"
 
 gOtherText_TrainersTrainerCard:: @ 842C8DC
-	.string "'s TRAINER CARD$"
+	.string "의 트레이너카드$"
 
 gOtherText_FirstHOF:: @ 842C8EC
-	.string "FIRST HALL OF FAME$"
+	.string "첫 전당등록$"
 
 gOtherText_LinkCableBattles:: @ 842C8FF
-	.string "LINK CABLE BATTLES  W/            L/$"
+	.string "통신케이블 대전           승                패$"
 
 gOtherText_BattleTowerWinRecord:: @ 842C924
-	.string "BATTLE TOWER W/{CLEAR_TO 0x72}&{CLEAR_TO 0x98}STRAIGHT$"
+	.string "배틀타워       승{CLEAR_TO 0x72}&{CLEAR_TO 0x98}연승$"
 
 gOtherText_ContestRecord:: @ 842C943
-	.string "CONTESTS W/FRIENDS W/$"
+	.string "친구와 콘테스트 우승$"
 
 gOtherText_MixingRecord:: @ 842C959
-	.string "{POKEBLOCK}S W/FRIENDS$"
+	.string "친구와 만든 포켓몬스넥      개$"
 
 gOtherText_TradeRecord:: @ 842C96A
-	.string "POKéMON TRADES$"
+	.string "포켓몬 교환$"
 
 gOtherText_Boy:: @ 842C979
-	.string "BOY$"
+	.string "남자$"
 
 gOtherText_Girl:: @ 842C97D
-	.string "GIRL$"
+	.string "여자$"
 	.string "$"
 
 gOtherText_Player:: @ 842C983
-	.string "PLAYER$"
+	.string "주인공$"
 
 gOtherText_Badges:: @ 842C98A
-	.string "BADGES$"
+	.string "가진 배지$"
 	.string "$"
 
 gOtherText_Pokedex:: @ 842C992
-	.string "POKéDEX$"
+	.string "포켓몬 도감$"
 
 gOtherText_PlayTime:: @ 842C99A
-	.string "PLAY TIME$"
+	.string "플레이 시간$"
 
 gOtherText_SentToPC:: @ 842C9A4
-	.string "{STR_VAR_1} was sent to\nthe PC.{PAUSE_UNTIL_PRESS}$"
+	.string "{STR_VAR_1}{K_EUNNEUN}\nPC로 전송되었다!{PAUSE_UNTIL_PRESS}$"
 
 OtherText_YourName::
-	.string "YOUR NAME?$"
+	.string "당신의 이름은?$"
 OtherText_BoxName::
-	.string "BOX NAME?$"
+	.string "박스의 이름은?$"
 OtherText_PokeName::
-	.string "{STR_VAR_1}'s nickname?$"
+	.string "{STR_VAR_1}의 이름은?$"
 
 gOtherText_Marco:: @ 842C9E1
-	.string "MARCO$" @ polo
+	.string "까꿍$" @ polo
 
 gOtherText_Coins:: @ 842C9E7
-	.string "{STR_VAR_1} COINS$"
+	.string "{STR_VAR_1}개$"
 
 gOtherText_BattleResults:: @ 842C9F0
-	.string "{PLAYER}'s BATTLE RESULTS$"
+	.string "{PLAYER}의 대전 성적$"
 
 gOtherText_WinRecord:: @ 842CA04
-	.string "TOTAL RECORD W/{STR_VAR_1} L/{STR_VAR_2} D/{STR_VAR_3}$"
+	.string "{STR_VAR_1}승 {STR_VAR_2}패 {STR_VAR_3}무승부$"
 
 gOtherText_WinLoseDraw:: @ 842CA20
-	.string "WIN        LOSE        DRAW$"
+	.string "{CLEAR_TO 0x53}승{CLEAR_TO 0x80}패{CLEAR_TO 0xB0}무승부$"
 
 gOtherText_SevenDashes:: @ 842CA3C
 	.string "-------$"
@@ -285,131 +285,131 @@ gOtherText_FourDashes:: @ 842CA44
 	.string "----$"
 
 gOtherText_BattleTowerResults:: @ 842CA49
-	.string "{PLAYER}'s BATTLE TOWER RESULTS$"
+	.string "{PLAYER}의 배틀타워 성적$"
 
 gOtherText_Lv50:: @ 842CA63
-	.string "LV 50$"
+	.string "레벨50$"
 
 gOtherText_Lv100:: @ 842CA69
-	.string "LV 100$"
+	.string "레벨100$"
 
 gOtherText_WinStreak:: @ 842CA70
-	.string "{STR_VAR_1}W STREAK$"
+	.string "{STR_VAR_1}연승$"
 
 gOtherText_Current:: @ 842CA7B
-	.string "CURRENT$"
+	.string "현재$"
 
 gOtherText_Record:: @ 842CA83
-	.string "RECORD$"
+	.string "최고$"
 
 gOtherText_Prev:: @ 842CA8A
-	.string "PREV.$"
+	.string "지난번$"
 
 gOtherText_QuitGamePrompt:: @ 842CA90
-	.string "Quit the game?$"
+	.string "게임을 그만두겠습니까?$"
 
 gOtherText_MaxCoins:: @ 842CA9F
-	.string "You've got 9,999 COINS.$"
+	.string "동전이 9999개\n담겨 있습니다$"
 
 gOtherText_OutOfCoins:: @ 842CAB7
-	.string "You've run out of COINS.\nGame over!$"
+	.string "동전이 없습니다\n게임을 종료합니다$"
 
 gOtherText_DontHaveThreeCoins:: @ 842CADB
-	.string "You don't have three COINS.$"
+	.string "동전 3개가 없습니다!$"
 
 gOtherText_ReelTime:: @ 842CAF7
-	.string "REEL TIME\nHere's your chance to take\naim and nail marks!\nThe Reel Time continues for\nas often as the drawn number.\nIt all ends on a Big Bonus.$"
+	.string "   BD 타임\n   차분히 노리면 어느 마크든\n   멈출 수 있는 찬스 게임!\n   물론 뽑은 횟수만큼\n   BD 타임을 즐길 수 있어!\n   빅 보너스가 나오면 종료$"
 
 DaycareText_GetAlongVeryWell::
-	.string "The two seem to get along very well.$"
+	.string "2마리는 사이가\n아주 좋은 것 같구먼!$"
 DaycareText_GetAlong::
-	.string "The two seem to get along.$"
+	.string "2마리는 사이가\n그럭저럭인 것 같구먼$"
 DaycareText_DontLikeOther::
-	.string "The two don't seem to like each other.$"
+	.string "2마리의 사이가\n그다지 좋지 않구먼$"
 DaycareText_PlayOther::
-	.string "The two prefer to play with other\nPOKéMON than each other.$"
+	.string "2마리는 서로\n다른 포켓몬과 놀고 있구먼...$"
 
 gOtherText_NewLine2:: @ 842CC28
 	.string "\n$"
 
 gOtherText_CancelAndLv:: @ 842CC2A
-	.string "CANCEL$"
+	.string "취소$"
 	.string "LV$"
 
 gEggNickname:: @ 842CC34
-	.string "EGG$"
+	.string "알$"
 
 gOtherText_HatchedFromEgg:: @ 842CC38
-	.string "{COLOR WHITE2}{HIGHLIGHT TRANSPARENT}{SHADOW DARK_GREY}{STR_VAR_1} hatched from the EGG!$"
+	.string "{COLOR WHITE2}{HIGHLIGHT TRANSPARENT}{SHADOW DARK_GREY}알이 부화해서\n{STR_VAR_1}{K_IGA} 태어났다!$"
 
 gOtherText_NickHatchPrompt:: @ 842CC5A
-	.string "{COLOR WHITE2}{HIGHLIGHT TRANSPARENT}{SHADOW DARK_GREY}Would you like to nickname the newly\nhatched {STR_VAR_1}?$"
+	.string "{COLOR WHITE2}{HIGHLIGHT TRANSPARENT}{SHADOW DARK_GREY}태어난 {STR_VAR_1}에게\n별명을 지어주겠습니까?$"
 
 OtherText_Battle::
-	.string "BATTLE$"
+	.string "싸울 기술$"
 OtherText_Contest::
-	.string "CONTEST$"
+	.string "콘테스트 기술$"
 OtherText_Type::
-	.string "TYPE/$"
+	.string "타입/$"
 OtherText_PP::
 	.string "PP/$"
 OtherText_Power::
-	.string "POWER$"
+	.string "위력$"
 OtherText_Accuracy::
-	.string "ACCURACY$"
+	.string "명중$"
 OtherText_Appeal::
-	.string "APPEAL$"
+	.string "어필$"
 OtherText_Jam::
-	.string "JAM$"
+	.string "방해$"
 
 gOtherText_TeachWhichMove:: @ 842CCC7
-	.string "Teach which move to {STR_VAR_1}?$"
+	.string "{STR_VAR_1}에게\n어느 기술을 배우게 하겠습니까?$"
 
 gOtherText_TeachSpecificMove:: @ 842CCDF
-	.string "Teach {STR_VAR_2}?$"
+	.string "{STR_VAR_2}{K_EULREUL}\n배우게 하겠습니까?$"
 
 gOtherText_PokeLearnedMove:: @ 842CCE9
-	.string "{STR_VAR_1} learned {STR_VAR_2}.$"
+	.string "{STR_VAR_1}{K_EUNNEUN} 새로\n{STR_VAR_2}{K_EULREUL} 배웠다!$"
 
 gOtherText_DeleteOlderMove:: @ 842CCF8
-	.string "{STR_VAR_1} is trying to learn\n{STR_VAR_2}.\pBut {STR_VAR_1} can't learn more\nthan four moves.\pDelete an older move to make\nroom for {STR_VAR_2}?$"
+	.string "{STR_VAR_1}{K_EUNNEUN} 새로\n{STR_VAR_2}{K_EULREUL} 배우고 싶다...\p그러나 {STR_VAR_1}{K_EUNNEUN} 기술을 4개\n알고 있어 더 이상 배울 수 없다!\p{STR_VAR_2} 대신\n다른 기술을 잊게 하겠습니까?$"
 
 gOtherText_StopLearningMove:: @ 842CD65
-	.string "Stop learning {STR_VAR_2}?$"
+	.string "그럼... {STR_VAR_2}{K_EULREUL}\n배우는 것을 포기하겠습니까?$"
 
 gOtherText_ForgotMove123:: @ 842CD77
-	.string "{PAUSE 32}1, {PAUSE 15}2 {PAUSE 15}...{PAUSE 15}...{PAUSE 15}...{PAUSE 15} {PLAY_SE 0x0038}Poof!\p$"
+	.string "{PAUSE 32}1 {PAUSE 15}2 {PAUSE 15}...{PAUSE 15}...{PAUSE 15}...{PAUSE 15} {PLAY_SE 0x0038}짠!\p$"
 
 gOtherText_ForgotOrDidNotLearnMove:: @ 842CDA3
-	.string "{STR_VAR_1} forgot {STR_VAR_3}.\pAnd...\p{STR_VAR_1} learned {STR_VAR_2}.$"
-	.string "{STR_VAR_1} did not learn\n{STR_VAR_2}.$"
+	.string "{STR_VAR_1}{K_EUNNEUN} {STR_VAR_3}{K_EULREUL}\n깨끗이 잊었다!\p그리고...!\p{STR_VAR_1}{K_EUNNEUN} 새로\n{STR_VAR_2}{K_EULREUL} 배웠다!$"
+	.string "{STR_VAR_1}{K_EUNNEUN} {STR_VAR_2}{K_EULREUL}\n결국 배우지 않았다!$"
 
 gOtherText_GiveUpTeachingMove:: @ 842CDDC
-	.string "Give up trying to teach a new move\nto {STR_VAR_1}?$"
+	.string "{STR_VAR_1}에게 기술을\n배우게 하는 것을 포기하겠습니까?$"
 
 gOtherText_WhichMoveToForget:: @ 842CE06
-	.string "Which move should be forgotten?\p$"
+	.string "어느 기술을\n잊게 하겠습니까?\p$"
 
 gSystemText_ClearAllSaveDataPrompt:: @ 842CE27
-	.string "Clear all save data areas?$"
+	.string "모든 저장 데이터를\n정리하겠습니까?$"
 
 gSystemText_ClearingData:: @ 842CE42
-	.string "Clearing data...\nPlease wait.$"
+	.string "정리하고 있습니다...\n잠시 기다려 주십시오$"
 
 gContestText_AnnounceResults:: @ 842CE60
-	.string "Announcing the results!$"
+	.string "결과 발표!$"
 
 gContestText_PreliminaryResults:: @ 842CE78
-	.string "The preliminary results!$"
+	.string "1차 심사 결과!$"
 
 gContestText_Round2Results:: @ 842CE91
-	.string "Round 2 results!$"
+	.string "2차 심사 결과!$"
 
 gContestText_PokeWon:: @ 842CEA2
-	.string "{STR_VAR_1}'s {STR_VAR_2} won!$"
+	.string "우승! {STR_VAR_1}의 {STR_VAR_2}!$"
 
 gOtherText_LinkStandby:: @ 842CEAF
-	.string "Link standby...$"
+	.string "통신 대기 중...$"
 
 @ 842CEBF
 	.include "data/text/landmarks.inc"
@@ -418,137 +418,137 @@ gOtherText_Terminator4:: @ 842D0E6
 	.string "$"
 
 gOtherText_Nature:: @ 842D0E7
-	.string " nature, $"
+	.string " 성격 $"
 
 gOtherText_Comma:: @ 842D0F1
-	.string ",$"
+	.string "일 때$"
 
 gOtherText_Met:: @ 842D0F3
-	.string " (met).$"
+	.string "에서 만났다$"
 
 gOtherText_Egg2:: @ 842D0FB
-	.string " (EGG).$"
+	.string "에서 알이 부화했다$"
 
 gOtherText_ObtainedInTrade:: @ 842D103
-	.string "obtained in a trade.$"
+	.string "교환을 통해서 만났다$"
 
 gOtherText_FatefulEncounter:: @ 842D118
-	.string "fateful encounter.$"
+	.string "운명적인 만남을 가졌다$"
 
 gOtherText_Met2:: @ 842D12B
-	.string " (met).$"
+	.string "에서 만났다$"
 
 gOtherText_EggDayCare:: @ 842D133
-	.string "An odd POKéMON EGG found\nby the DAY CARE couple.$"
+	.string "키우미집 부부에게서 받은\n이상한 포켓몬알이다$"
 
 gOtherText_EggNicePlace:: @ 842D164
-	.string "A peculiar POKéMON EGG\nobtained at the nice place.$"
+	.string "멋진 장소에서 손에 넣은\n이상하고 또 이상한 포켓몬알이다$"
 
 gOtherText_EggObtainedInTrade:: @ 842D197
-	.string "A peculiar POKéMON EGG\nobtained in a trade.$"
+	.string "교환을 통해서 받은\n이상한 포켓몬알이다$"
 
 gOtherText_EggHotSprings:: @ 842D1C3
-	.string "A POKéMON EGG obtained\nat the hot springs.$"
+	.string "온천할머니에게서 받은\n이상한 포켓몬알이다$"
 
 gOtherText_LinkStandby2:: @ 842D1EE
-	.string "Link standby...$"
+	.string "통신 대기 중...$"
 
 gOtherText_YesNoAndPlayer:: @ 842D1FE
-	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}YES\nNO$"
-	.string "{HIGHLIGHT TRANSPARENT}PLAYER$"
+	.string "{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}예\n아니오$"
+	.string "{HIGHLIGHT TRANSPARENT}플레이어$"
 	.string "{HIGHLIGHT TRANSPARENT}$"
 
 gOtherText_HoennDex:: @ 842D21C
-	.string "HOENN$"
+	.string "호연$"
 
 gOtherText_NationalDex:: @ 842D222
-	.string "NATIONAL$"
+	.string "전국$"
 
 gOtherText_DiplomaCertificationGameFreak:: @ 842D22B
-	.string "{HIGHLIGHT TRANSPARENT}Player: {CLEAR 0x10}{COLOR RED}{PLAYER}\n\n{COLOR DARK_GREY}{STR_VAR_1} POKéDEX\nThis document certifies\nthat you have successfully\ncompleted your POKéDEX.\n\n{CLEAR_TO 0x42}{COLOR RED}GAME FREAK$"
+	.string "{HIGHLIGHT TRANSPARENT}플레이어 {CLEAR 0x10}{COLOR RED}{PLAYER}님\n\n{COLOR DARK_GREY}{STR_VAR_1} 포켓몬 도감을\n훌륭히 완성시킨\n위대한 공적을 기려서\n이에 증명합니다\n\n{CLEAR_TO 0x42}{COLOR RED}GAME FREAK$"
 	.string "{COLOR RED}{HIGHLIGHT TRANSPARENT}GAME FREAK$"
 
 gOtherText_PLink:: @ 842D2BC
-	.string "{STR_VAR_1}P LINK$"
+	.string "{STR_VAR_1}인 접속$"
 
 gOtherText_YesNoTerminating:: @ 842D2C5
-	.string "YES\nNO$"
-	.string "Terminating.$"
+	.string "예\n아니오$"
+	.string "종료 중입니다$"
 
 gOtherText_LinkNotFound:: @ 842D2D9
-	.string "Link partner(s) not found.\nPlease try again.\p$"
+	.string "상대를 찾을 수 없습니다\n다시 한 번 시도해 주십시오\p$"
 
 gOtherText_BlenderChooseBerry:: @ 842D307
-	.string "Starting up the BERRY BLENDER.\pPlease select a BERRY from your BAG\nto put in the BERRY BLENDER.\p$"
+	.string "나무열매블렌더를 작동시킵니다\p가방에서 나무열매블렌더에 넣을\n나무열매를 선택해 주십시오\p$"
 
 gOtherText_PokeBlockMade:: @ 842D368
-	.string " was made!$"
+	.string "이 만들어졌다!$"
 
 gOtherText_PressAToStart:: @ 842D373
-	.string "Press the A Button to start.$"
+	.string "A 버튼으로 시작합니다$"
 
 gOtherText_PleaseWait:: @ 842D390
-	.string "Please wait a while.$"
+	.string "잠시 기다려 주십시오$"
 
 gOtherText_LinkStandby3:: @ 842D3A5
-	.string "Link standby...$"
+	.string "통신 대기 중입니다$"
 
 gOtherText_BlendAnotherBerryPrompt:: @ 842D3B5
-	.string "Would you like to blend another BERRY?$"
+	.string "한 번 더 나무열매를 섞으시겠습니까?$"
 
 gOtherText_OutOfBerries:: @ 842D3DC
-	.string "You've run out of BERRIES for\nblending in the BERRY BLENDER.\p$"
+	.string "나무열매블렌더에 넣을 나무열매가\n없으므로 더 이상 할 수 없습니다\p$"
 
 gOtherText_CaseIsFull:: @ 842D41A
-	.string "Your {POKEBLOCK} CASE is full.\p$"
+	.string "포켓몬스넥케이스가\n가득 찬 것 같습니다\p$"
 
 gOtherText_NoBerriesForBlend:: @ 842D434
-	.string " has no BERRIES to put in\nthe BERRY BLENDER.$"
+	.string "{K_EUNNEUN} 나무열매블렌더에\n넣을 나무열매가 없는 것 같습니다$"
 
 gOtherText_OtherCaseIsFull:: @ 842D461
-	.string "'s {POKEBLOCK} CASE is full.\p$"
+	.string "{K_EUNNEUN} 포켓몬스넥케이스가\n가득 찬 것 같습니다\p$"
 
 gOtherText_ResultsOfBlending:: @ 842D479
-	.string "RESULTS OF BLENDING$"
-	.string "BERRY USED$"
+	.string "섞은 결과$"
+	.string "넣은 열매$"
 
 gOtherText_Berry:: @ 842D498
-	.string " BERRY$"
+	.string "열매$"
 
 gOtherText_RequiredTime:: @ 842D49F
-	.string "REQUIRED TIME$"
+	.string "시간$"
 
 gOtherText_Min:: @ 842D4AD
-	.string "MIN.$"
+	.string "분$"
 
 gOtherText_Sec:: @ 842D4B2
-	.string "SEC.$"
+	.string "초$"
 
 gOtherText_MaxSpeed:: @ 842D4B7
-	.string "MAXIMUM SPEED$"
+	.string "최고 속도$"
 
 gOtherText_RPM:: @ 842D4C5
-	.string "RPM$"
+	.string "rpm$"
 	.string ".$"
 
 gOtherText_Ranking:: @ 842D4CB
-	.string "RANKING$"
+	.string "랭킹$"
 
 gOtherText_BlockLevelIs:: @ 842D4D3
-	.string "The level is $"
+	.string "레벨은 $"
 
 gOtherText_BlockFeelIs:: @ 842D4E1
-	.string ", and the feel is $"
+	.string "이고 경도는 $"
 
 gOtherText_Period:: @ 842D4F4
-	.string ".$"
+	.string "이다$"
 
 gOtherText_Day:: @ 842D4F6
-	.string "DAY$"
+	.string "날짜$"
 	.string ":$"
 
 gOtherText_OK:: @ 842D4FC
-	.string "OK$"
+	.string "결정$"
 
 gOtherText_CorrectTimePrompt:: @ 842D4FF
-	.string "Is this the correct time?$"
+	.string "정말 이 시간이 맞습니까?$"
