@@ -1,4 +1,4 @@
-const u8 gMoveNames[][13] = {
+const u8 gMoveNames[][16] = {
     [MOVE_NONE] = _("-$$$$$$"),
     [MOVE_POUND] = _("POUND"),
     [MOVE_KARATE_CHOP] = _("KARATE CHOP"),
