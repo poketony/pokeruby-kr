@@ -5,6 +5,7 @@
 #include "field_effect.h"
 #include "event_object_movement.h"
 #include "field_player_avatar.h"
+#include "korean.h"
 #include "main.h"
 #include "menu.h"
 #include "palette.h"
@@ -20,7 +21,7 @@
 #include "util.h"
 #include "ewram.h"
 
-#define COLUMN_COUNT 9
+#define COLUMN_COUNT 10
 
 const u8 gSpriteImage_83CE094[] = INCBIN_U8("graphics/naming_screen/pc_icon/0.4bpp");
 const u8 gSpriteImage_83CE154[] = INCBIN_U8("graphics/naming_screen/pc_icon/1.4bpp");
@@ -69,54 +70,43 @@ static void sub_80B7680(void);
 static void sub_80B75C4(void);
 static void sub_80B7794(void);
 static void sub_80B78A8(void);
-static void sub_80B7960(void);
+static void DrawTextEntry(void);
 static void CursorInit(void);
-static void sub_80B6A80(void);
-static void sub_80B6CA8(void);
-static void sub_80B6D04(void);
-static void sub_80B6E44(void);
+static void CreatePageSwapButtonSprites(void);
+static void CreateBackOkSprites(void);
+static void CreateTextEntrySprites(void);
+static void CreateInputTargetIcon(void);
 static void InputInit(void);
 static void sub_80B6438(void);
 static void sub_80B5E50(void);
 static void Task_NamingScreenMain(u8);
+static u8 GetInputEvent(void);
 static void SetInputState(u8);
-static void sub_80B68D8(u8);
+static void SetCursorFlashing(bool8);
 static bool8 HandleKeyboardEvent(void);
 static bool8 IsCursorAnimFinished(void);
 static void MoveCursorToOKButton(void);
-static void sub_80B6B14(void);
+static void StartPageSwapButtonAnim(void);
 static void StartPageSwapAnim(void);
-static void sub_80B6888(u8);
-static void sub_80B6460(u8, u8, u8);
+static void SetCursorInvisibility(bool8);
+static void TryStartButtonFlash(u8, u8, u8);
 static bool8 IsPageSwapAnimNotInProgress(void);
 static void sub_80B7614(void);
 static void GetCursorPos(s16 *, s16 *);
 static void SetCursorPos(s16, s16);
 static void sub_80B77F8(void);
-static void sub_80B74B0(void);
+static void SaveInputText(void);
 static void DisplaySentToPCMessage(void);
 static u8 GetKeyRoleAtCursorPos(void);
-static u8 sub_80B61C8(void);
+static u8 SwapKeyboardPage(void);
 static void DeleteTextCharacter(void);
-static void sub_80B7090(void);
-static u8 GetInputEvent(void);
-static bool8 sub_80B7004(void);
-static void sub_80B6914(void);
+static bool8 AddTextCharacter(void);
+static void SquishCursor(void);
 static void Task_HandlePageSwapAnim(u8);
-static void sub_80B6C48(u8, struct Sprite *, struct Sprite *);
-static u8 GetTextCaretPosition(void);
+static void SetPageSwapButtonGfx(u8, struct Sprite *, struct Sprite *);
+static u8 GetTextEntryPosition(void);
 static u8 GetCharAtKeyboardPos(s16, s16);
-static bool8 sub_80B7104(void);
-static bool8 sub_80B713C(void);
-static void AddTextCharacter(u8);
-static bool8 sub_80B7198(u8);
-static bool8 sub_80B7264(u8);
-static void sub_80B7370(u8, u8);
-static void sub_80B73CC(u8, u8);
-static bool8 sub_80B71E4(u8);
-static void sub_80B7474(u8, u8);
-static void sub_80B72A4(u8, u8);
-static bool8 sub_80B720C(u8);
+static void BufferCharacter(u8);
 static void sub_80B7568(void);
 static void sub_80B75B0(void);
 static void sub_80B7698(u16 *, const u16 *);
@@ -170,6 +160,46 @@ static void C2_NamingScreen(void)
         SetMainCallback2(sub_80B5AA0);
         break;
     }
+}
+
+static u8 *NamingScreen_StringCopyMultibyte(u8 *dest, const u8 *src)
+{
+    while (*src != EOS)
+    {
+        if (IsKoreanGlyph(*src))
+        {
+            *dest++ = *src++;
+            *dest++ = *src++;
+        }
+        else
+        {
+            *dest++ = 0;
+            *dest++ = *src++;
+        }
+    }
+
+    *dest = EOS;
+    return dest;
+}
+
+static u8 *NamingScreen_StringCopy(u8 *dest, const u8 *src)
+{
+    while (*src != EOS)
+    {
+        if (*src == 0)
+        {
+            *(dest++) = *(++src);
+            src++;
+        }
+        else
+        {
+            *dest++ = *src++;
+            *dest++ = *src++;
+        }
+    }
+
+    *dest = EOS;
+    return dest;
 }
 
 static void sub_80B5AA0(void)
@@ -286,6 +316,7 @@ static void NamingScreen_Init(void)
 {
     GetNamingScreenParameters();
     namingScreenDataPtr->state = 0;
+    namingScreenDataPtr->koreanState = 0;
     namingScreenDataPtr->bg1vOffset = 0;
     namingScreenDataPtr->bg2vOffset = 0;
     namingScreenDataPtr->bg1Priority = BGCNT_PRIORITY(1);
@@ -298,7 +329,8 @@ static void NamingScreen_Init(void)
     namingScreenDataPtr->keyRepeatStartDelayCopy = gKeyRepeatStartDelay;
     memset(namingScreenDataPtr->textBuffer, 0xFF, sizeof(namingScreenDataPtr->textBuffer));
     if (namingScreenDataPtr->template->copyExistingString)
-        StringCopy(namingScreenDataPtr->textBuffer, namingScreenDataPtr->destBuffer);
+        NamingScreen_StringCopyMultibyte(namingScreenDataPtr->textBuffer, namingScreenDataPtr->destBuffer);
+    NamingScreen_StringCopyMultibyte(namingScreenDataPtr->backupBuffer, namingScreenDataPtr->destBuffer);
     gKeyRepeatStartDelay = 16;
 }
 
@@ -324,16 +356,16 @@ static void sub_80B5DFC(void)
     sub_80B75C4();
     sub_80B7794();
     sub_80B78A8();
-    sub_80B7960();
+    DrawTextEntry();
 }
 
 static void sub_80B5E20(void)
 {
     CursorInit();
-    sub_80B6A80();
-    sub_80B6CA8();
-    sub_80B6D04();
-    sub_80B6E44();
+    CreatePageSwapButtonSprites();
+    CreateBackOkSprites();
+    CreateTextEntrySprites();
+    CreateInputTargetIcon();
 }
 
 static void sub_80B5E3C(void)
@@ -382,8 +414,7 @@ static void sub_80B5E50(void)
 
 static void Task_NamingScreenMain(u8 taskId)
 {
-    while (sMainStateFuncs[namingScreenDataPtr->state](&gTasks[taskId]) != 0)
-        ;
+    while (sMainStateFuncs[namingScreenDataPtr->state](&gTasks[taskId]) != 0);
 }
 
 static bool8 MainState_BeginFadeIn(struct Task *task)
@@ -398,7 +429,7 @@ static bool8 MainState_WaitFadeIn(struct Task *task)
     if (!gPaletteFade.active)
     {
         SetInputState(INPUT_STATE_ENABLED);
-        sub_80B68D8(1);
+        SetCursorFlashing(1);
         namingScreenDataPtr->state++;
     }
     return FALSE;
@@ -423,10 +454,10 @@ static bool8 MainState_MoveToOKButton(struct Task *task)
 static bool8 MainState_StartPageSwap(struct Task *task)
 {
     SetInputState(INPUT_STATE_DISABLED);
-    sub_80B6B14();
+    StartPageSwapButtonAnim();
     StartPageSwapAnim();
-    sub_80B6888(1);
-    sub_80B6460(0, 0, 1);
+    SetCursorInvisibility(1);
+    TryStartButtonFlash(0, 0, 1);
     PlaySE(SE_WIN_OPEN);
     namingScreenDataPtr->state = MAIN_STATE_WAIT_PAGE_SWAP;
     return FALSE;
@@ -434,32 +465,26 @@ static bool8 MainState_StartPageSwap(struct Task *task)
 
 static bool8 MainState_WaitPageSwap(struct Task *task)
 {
-    s16 cursorX;
-    s16 cursorY;
-
     if (IsPageSwapAnimNotInProgress())
     {
         namingScreenDataPtr->state = MAIN_STATE_HANDLE_INPUT;
         namingScreenDataPtr->currentPage++;
         namingScreenDataPtr->currentPage %= 3;
+
         sub_80B7614();
         sub_80B77F8();
         SetInputState(INPUT_STATE_ENABLED);
-        GetCursorPos(&cursorX, &cursorY);
-        if (namingScreenDataPtr->currentPage == PAGE_OTHERS && (cursorX == 6 || cursorX == 7))
-            cursorX = 5;
-        SetCursorPos(cursorX, cursorY);
-        sub_80B6888(0);
+        SetCursorInvisibility(0);
     }
     return FALSE;
 }
 
 static bool8 MainState_6(struct Task *task)
 {
-    sub_80B74B0();
+    SaveInputText();
     SetInputState(INPUT_STATE_DISABLED);
-    sub_80B68D8(0);
-    sub_80B6460(3, 0, 1);
+    SetCursorFlashing(0);
+    TryStartButtonFlash(3, 0, 1);
     gKeyRepeatStartDelay = namingScreenDataPtr->keyRepeatStartDelayCopy;
     if (namingScreenDataPtr->templateNum == NAMING_SCREEN_TEMPLATE_MON_NAME
      && CalculatePlayerPartyCount() >= 6)
@@ -528,7 +553,9 @@ static bool8 HandleKeyboardEvent(void)
     u8 keyRole = GetKeyRoleAtCursorPos();
 
     if (event == KBEVENT_PRESSED_SELECT)
-        return sub_80B61C8();
+    {
+        return SwapKeyboardPage();
+    }
     else if (event == KBEVENT_PRESSED_B)
     {
         DeleteTextCharacter();
@@ -536,21 +563,22 @@ static bool8 HandleKeyboardEvent(void)
     }
     else if (event == 7)
     {
-        sub_80B7090();
+        MoveCursorToOKButton();
         return FALSE;
     }
+
     return sKeyboardKeyHandlers[keyRole](event);
 }
 
 static bool8 KeyboardKeyHandler_Character(u8 event)
 {
-    sub_80B6460(3, 0, 0);
+    TryStartButtonFlash(3, 0, 0);
     if (event == KBEVENT_PRESSED_A)
     {
-        u8 var = sub_80B7004();
+        u8 textFull = AddTextCharacter();
 
-        sub_80B6914();
-        if (var)
+        SquishCursor();
+        if (textFull)
         {
             SetInputState(INPUT_STATE_DISABLED);
             namingScreenDataPtr->state = MAIN_STATE_MOVE_TO_OK_BUTTON;
@@ -561,16 +589,16 @@ static bool8 KeyboardKeyHandler_Character(u8 event)
 
 static bool8 KeyboardKeyHandler_Page(u8 event)
 {
-    sub_80B6460(0, 1, 0);
+    TryStartButtonFlash(0, 1, 0);
     if (event == KBEVENT_PRESSED_A)
-        return sub_80B61C8();
+        return SwapKeyboardPage();
     else
         return FALSE;
 }
 
 static bool8 KeyboardKeyHandler_Backspace(u8 event)
 {
-    sub_80B6460(1, 1, 0);
+    TryStartButtonFlash(1, 1, 0);
     if (event == KBEVENT_PRESSED_A)
         DeleteTextCharacter();
     return FALSE;
@@ -578,7 +606,7 @@ static bool8 KeyboardKeyHandler_Backspace(u8 event)
 
 static bool8 KeyboardKeyHandler_OK(u8 event)
 {
-    sub_80B6460(2, 1, 0);
+    TryStartButtonFlash(2, 1, 0);
     if (event == KBEVENT_PRESSED_A)
     {
         PlaySE(SE_SELECT);
@@ -589,7 +617,7 @@ static bool8 KeyboardKeyHandler_OK(u8 event)
         return FALSE;
 }
 
-static bool8 sub_80B61C8(void)
+static bool8 SwapKeyboardPage(void)
 {
     namingScreenDataPtr->state = MAIN_STATE_START_PAGE_SWAP;
     return TRUE;
@@ -678,29 +706,29 @@ static void InputState_Enabled(struct Task *task)
     HandleDpadMovement(task);
 }
 
-static const s16 sDpadDeltaX[] =
-{
-    0,   //none
-    0,   //up
-    0,   //down
-    -1,  //left
-    1    //right
-};
-
-static const s16 sDpadDeltaY[] =
-{
-    0,   //none
-    -1,  //up
-    1,   //down
-    0,   //left
-    0    //right
-};
-
-static const s16 s4RowTo3RowTableY[] = {0, 1, 1, 2};
-static const s16 gUnknown_083CE274[] = {0, 0, 3, 0};
-
 static void HandleDpadMovement(struct Task *task)
 {
+    const s16 sDpadDeltaX[] =
+    {
+        0,   //none
+        0,   //up
+        0,   //down
+        -1,  //left
+        1    //right
+    };
+
+    const s16 sDpadDeltaY[] =
+    {
+        0,   //none
+        -1,  //up
+        1,   //down
+        0,   //left
+        0    //right
+    };
+
+    const s16 sKeyRowToButtonRow[] = {0, 1, 1, 2};
+    const s16 sButtonRowToKeyRow[] = {0, 0, 3, 0};
+
     s16 cursorX;
     s16 cursorY;
     u16 dpadDir;
@@ -717,52 +745,44 @@ static void HandleDpadMovement(struct Task *task)
     if (gMain.newAndRepeatedKeys & DPAD_RIGHT)
         dpadDir = 4;
 
-    //Get new cursor position
+    // Get new cursor position
     prevCursorX = cursorX;
     cursorX += sDpadDeltaX[dpadDir];
     cursorY += sDpadDeltaY[dpadDir];
 
-    //Wrap cursor position in the X direction
+    // Wrap cursor position in the X direction
     if (cursorX < 0)
-        cursorX = COLUMN_COUNT - 1;
-    if (cursorX > COLUMN_COUNT - 1)
+        cursorX = COLUMN_COUNT;
+    if (cursorX > COLUMN_COUNT)
         cursorX = 0;
 
-    //Handle cursor movement in X direction
+    // Handle cursor movement in X direction
     if (sDpadDeltaX[dpadDir] != 0)
     {
-        //The "others" page only has 5 columns
-        if (namingScreenDataPtr->currentPage == PAGE_OTHERS && (cursorX == 6 || cursorX == 7))
+        if (cursorX == COLUMN_COUNT)
         {
-            if (sDpadDeltaX[dpadDir] > 0)
-                cursorX = COLUMN_COUNT - 1;
-            else
-                cursorX = 5;
-        }
-
-        if (cursorX == COLUMN_COUNT - 1)
-        {
-            //We are now on the last column
+            // We are now on the last column
             task->tKbFunctionKey = cursorY;
-            cursorY = s4RowTo3RowTableY[cursorY];
+            cursorY = sKeyRowToButtonRow[cursorY];
         }
-        else if (prevCursorX == COLUMN_COUNT - 1)
+        else if (prevCursorX == COLUMN_COUNT)
         {
             if (cursorY == 1)
                 cursorY = task->tKbFunctionKey;
             else
-                cursorY = gUnknown_083CE274[cursorY];
+                cursorY = sButtonRowToKeyRow[cursorY];
         }
     }
 
-    if (cursorX == COLUMN_COUNT - 1)
+    if (cursorX == COLUMN_COUNT)
     {
-        //There are only 3 keys on the last column, unlike the others,
-        //so wrap Y accordingly
+        // There are only 3 keys on the last column, unlike the others,
+        // so wrap Y accordingly
         if (cursorY < 0)
             cursorY = 2;
         if (cursorY > 2)
             cursorY = 0;
+
         if (cursorY == 0)
             task->tKbFunctionKey = FNKEY_BACK;
         else if (cursorY == 2)
@@ -799,7 +819,7 @@ static void sub_80B6438(void)
     gTasks[taskId].data[0] = 3;
 }
 
-static void sub_80B6460(u8 a, u8 b, u8 c)
+static void TryStartButtonFlash(u8 a, u8 b, u8 c)
 {
     struct Task *task = &gTasks[FindTaskIdByFunc(Task_80B64D4)];
 
@@ -982,9 +1002,9 @@ static void CursorInit(void)
 }
 
 static const u8 sKeyboardSymbolPositions[][COLUMN_COUNT] = {
-    {1,  3,  5,  8, 10, 12, 14, 17, 19},  //Upper page
-    {1,  3,  5,  8, 10, 12, 14, 17, 19},  //Lower page
-    {1,  4,  7, 10, 13, 16, 16, 16, 19},  //Others page
+    0, 16, 32, 48, 64, 80, 96, 112, 128, 144,
+    0, 16, 32, 48, 64, 80, 96, 112, 128, 144,
+    0, 16, 32, 48, 64, 80, 96, 112, 128, 144
 };
 
 static u8 CursorColToKeyboardCol(s16 x)
@@ -996,7 +1016,7 @@ static void SetCursorPos(s16 x, s16 y)
 {
     struct Sprite *cursorSprite = &gSprites[namingScreenDataPtr->cursorSpriteId];
 
-    cursorSprite->x = CursorColToKeyboardCol(x) * 8 + 27;
+    cursorSprite->x = CursorColToKeyboardCol(x) + 27;
     cursorSprite->y = y * 16 + 80;
     cursorSprite->data[2] = cursorSprite->data[0];
     cursorSprite->data[3] = cursorSprite->data[1];
@@ -1014,23 +1034,23 @@ static void GetCursorPos(s16 *x, s16 *y)
 
 static void MoveCursorToOKButton(void)
 {
-    SetCursorPos(COLUMN_COUNT - 1, 2);
+    SetCursorPos(COLUMN_COUNT, 2);
 }
 
-static void sub_80B6888(u8 a)
+static void SetCursorInvisibility(bool8 invisible)
 {
     gSprites[namingScreenDataPtr->cursorSpriteId].data[4] &= -256;
-    gSprites[namingScreenDataPtr->cursorSpriteId].data[4] |= a;
+    gSprites[namingScreenDataPtr->cursorSpriteId].data[4] |= invisible;
     StartSpriteAnim(&gSprites[namingScreenDataPtr->cursorSpriteId], 0);
 }
 
-static void sub_80B68D8(u8 a)
+static void SetCursorFlashing(bool8 flashing)
 {
     gSprites[namingScreenDataPtr->cursorSpriteId].data[4] &= 0xFF;
-    gSprites[namingScreenDataPtr->cursorSpriteId].data[4] |= a << 8;
+    gSprites[namingScreenDataPtr->cursorSpriteId].data[4] |= flashing << 8;
 }
 
-static void sub_80B6914(void)
+static void SquishCursor(void)
 {
     StartSpriteAnim(&gSprites[namingScreenDataPtr->cursorSpriteId], 1);
 }
@@ -1047,7 +1067,7 @@ static u8 GetKeyRoleAtCursorPos(void)
     s16 cursorY;
 
     GetCursorPos(&cursorX, &cursorY);
-    if (cursorX < COLUMN_COUNT - 1)
+    if (cursorX < COLUMN_COUNT)
         return KEY_ROLE_CHAR;
     else
         return keyRoles[cursorY];
@@ -1058,7 +1078,7 @@ void sub_80B6998(struct Sprite *sprite)
     if (sprite->animEnded)
         StartSpriteAnim(sprite, 0);
     sprite->invisible = (sprite->data[4] & 0xFF);
-    if (sprite->data[0] == COLUMN_COUNT - 1)
+    if (sprite->data[0] == COLUMN_COUNT)
         sprite->invisible = TRUE;
     if (sprite->invisible || (sprite->data[4] & 0xFF00) == 0
      || sprite->data[0] != sprite->data[2] || sprite->data[1] != sprite->data[3])
@@ -1085,7 +1105,7 @@ void sub_80B6998(struct Sprite *sprite)
     }
 }
 
-static void sub_80B6A80(void)
+static void CreatePageSwapButtonSprites(void)
 {
     u8 spriteId1;
     u8 spriteId2;
@@ -1104,7 +1124,7 @@ static void sub_80B6A80(void)
     gSprites[spriteId1].data[7] = spriteId3;
 }
 
-static void sub_80B6B14(void)
+static void StartPageSwapButtonAnim(void)
 {
     struct Sprite *sprite = &gSprites[namingScreenDataPtr->pageIndicatorSpriteId];
 
@@ -1112,41 +1132,40 @@ static void sub_80B6B14(void)
     sprite->data[1] = namingScreenDataPtr->currentPage;
 }
 
-static u8 sub_80B6B5C(struct Sprite *);
-static u8 sub_80B6B98(struct Sprite *);
-static u8 sub_80B6B9C(struct Sprite *);
-static u8 sub_80B6C08(struct Sprite *);
+static u8 PageSwapSprite_Init(struct Sprite *);
+static u8 PageSwapSprite_Idle(struct Sprite *);
+static u8 PageSwapSprite_SlideOff(struct Sprite *);
+static u8 PageSwapSprite_SlideOn(struct Sprite *);
 
-static u8 (*const gUnknown_083CE2B4[])(struct Sprite *) =
+static u8 (*const sPageSwapSpriteFuncs[])(struct Sprite *) =
 {
-    sub_80B6B5C,
-    sub_80B6B98,
-    sub_80B6B9C,
-    sub_80B6C08,
+    PageSwapSprite_Init,
+    PageSwapSprite_Idle,
+    PageSwapSprite_SlideOff,
+    PageSwapSprite_SlideOn,
 };
 
-void sub_80B6B34(struct Sprite *sprite)
+void SpriteCB_PageSwap(struct Sprite *sprite)
 {
-    while (gUnknown_083CE2B4[sprite->data[0]](sprite) != 0)
-        ;
+    while (sPageSwapSpriteFuncs[sprite->data[0]](sprite) != 0);
 }
 
-static u8 sub_80B6B5C(struct Sprite *sprite)
+static u8 PageSwapSprite_Init(struct Sprite *sprite)
 {
     struct Sprite *sprite1 = &gSprites[sprite->data[6]];
     struct Sprite *sprite2 = &gSprites[sprite->data[7]];
 
-    sub_80B6C48(namingScreenDataPtr->currentPage, sprite1, sprite2);
+    SetPageSwapButtonGfx(namingScreenDataPtr->currentPage, sprite1, sprite2);
     sprite->data[0]++;
     return 0;
 }
 
-static u8 sub_80B6B98(struct Sprite *sprite)
+static u8 PageSwapSprite_Idle(struct Sprite *sprite)
 {
     return 0;
 }
 
-static u8 sub_80B6B9C(struct Sprite *sprite)
+static u8 PageSwapSprite_SlideOff(struct Sprite *sprite)
 {
     struct Sprite *r4 = &gSprites[sprite->data[6]];
     struct Sprite *r5 = &gSprites[sprite->data[7]];
@@ -1157,12 +1176,12 @@ static u8 sub_80B6B9C(struct Sprite *sprite)
         sprite->data[0]++;
         r4->y2 = -4;
         r4->invisible = TRUE;
-        sub_80B6C48(((u8)sprite->data[1] + 1) % 3, r4, r5);
+        SetPageSwapButtonGfx(((u8)sprite->data[1] + 1) % 3, r4, r5);
     }
     return 0;
 }
 
-static u8 sub_80B6C08(struct Sprite *sprite)
+static u8 PageSwapSprite_SlideOn(struct Sprite *sprite)
 {
     struct Sprite *r2 = &gSprites[sprite->data[6]];
 
@@ -1176,19 +1195,17 @@ static u8 sub_80B6C08(struct Sprite *sprite)
     return 0;
 }
 
-static const u16 gUnknown_083CE2C4[] = {1, 3, 2};
-static const u16 gUnknown_083CE2CA[] = {4, 6, 5};
-
-static void sub_80B6C48(u8 a, struct Sprite *b, struct Sprite *c)
+static void SetPageSwapButtonGfx(u8 a, struct Sprite *b, struct Sprite *c)
 {
-    c->oam.paletteNum = IndexOfSpritePaletteTag(gUnknown_083CE2C4[a]);
-    b->sheetTileStart = GetSpriteTileStartByTag(gUnknown_083CE2CA[a]);
+    const u16 sPageSwapPalTags[] = {1, 3, 2};
+    const u16 sPageSwapGfxTags[] = {4, 6, 5};
+
+    c->oam.paletteNum = IndexOfSpritePaletteTag(sPageSwapPalTags[a]);
+    b->sheetTileStart = GetSpriteTileStartByTag(sPageSwapGfxTags[a]);
     b->subspriteTableNum = a;
 }
 
-//
-
-static void sub_80B6CA8(void)
+static void CreateBackOkSprites(void)
 {
     u8 spriteId;
 
@@ -1199,7 +1216,7 @@ static void sub_80B6CA8(void)
     SetSubspriteTables(&gSprites[spriteId], gSubspriteTables_83CE578);
 }
 
-static void sub_80B6D04(void)
+static void CreateTextEntrySprites(void)
 {
     u8 spriteId;
     s16 left;
@@ -1209,7 +1226,7 @@ static void sub_80B6D04(void)
     spriteId = CreateSprite(&gSpriteTemplate_83CE658, left, 0x28, 0);
     gSprites[spriteId].oam.priority = 3;
     left = namingScreenDataPtr->nameLeftOffset * 8 + 4;
-    for (i = 0; i < namingScreenDataPtr->template->maxChars; i++, left += 8)
+    for (i = 0; i < namingScreenDataPtr->template->maxChars * 2; i += 2, left += 8)
     {
         spriteId = CreateSprite(&gSpriteTemplate_83CE670, left, 0x2C, 0);
         gSprites[spriteId].oam.priority = 3;
@@ -1234,7 +1251,7 @@ void sub_80B6DE8(struct Sprite *sprite)
     const s16 arr[] = {2, 3, 2, 1};
     u8 var;
 
-    var = GetTextCaretPosition();
+    var = GetTextEntryPosition();
     if (var != (u8)sprite->data[0])
     {
         sprite->y2 = 0;
@@ -1255,29 +1272,30 @@ void sub_80B6DE8(struct Sprite *sprite)
 
 //
 
-static void nullsub_40(void);
-static void sub_80B6E68(void);
-static void sub_80B6EBC(void);
-static void sub_80B6EFC(void);
+static void NamingScreen_NoIcon(void);
+static void NamingScreen_CreatePlayerIcon(void);
+static void NamingScreen_CreatePCIcon(void);
+static void NamingScreen_CreateMonIcon(void);
 
-static void (*const gUnknown_083CE2E0[])(void) =
+static void (*const sIconFunctions[])(void) =
 {
-    nullsub_40,
-    sub_80B6E68,
-    sub_80B6EBC,
-    sub_80B6EFC,
+    NamingScreen_NoIcon,
+    NamingScreen_CreatePlayerIcon,
+    NamingScreen_CreatePCIcon,
+    NamingScreen_CreateMonIcon,
 };
 
-static void sub_80B6E44(void)
+static void CreateInputTargetIcon(void)
 {
-    gUnknown_083CE2E0[namingScreenDataPtr->template->iconFunction]();
+    sIconFunctions[namingScreenDataPtr->template->iconFunction]();
 }
 
-static void nullsub_40(void)
+static void NamingScreen_NoIcon(void)
 {
+    // No-op
 }
 
-static void sub_80B6E68(void)
+static void NamingScreen_CreatePlayerIcon(void)
 {
     u8 rivalGfxId;
     u8 spriteId;
@@ -1288,7 +1306,7 @@ static void sub_80B6E68(void)
     StartSpriteAnim(&gSprites[spriteId], 4);
 }
 
-static void sub_80B6EBC(void)
+static void NamingScreen_CreatePCIcon(void)
 {
     u8 spriteId;
 
@@ -1297,7 +1315,7 @@ static void sub_80B6EBC(void)
     gSprites[spriteId].oam.priority = 3;
 }
 
-static void sub_80B6EFC(void)
+static void NamingScreen_CreateMonIcon(void)
 {
     u8 spriteId;
 
@@ -1306,16 +1324,16 @@ static void sub_80B6EFC(void)
     gSprites[spriteId].oam.priority = 3;
 }
 
-static u8 GetTextCaretPosition(void)
+static u8 GetTextEntryPosition(void)
 {
     u8 i;
 
     for (i = 0; i < namingScreenDataPtr->template->maxChars; i++)
     {
-        if (namingScreenDataPtr->textBuffer[i] == EOS)
-            return i;
+        if (namingScreenDataPtr->textBuffer[i * 2] == EOS)
+            return i * 2;
     }
-    return namingScreenDataPtr->template->maxChars - 1;
+    return namingScreenDataPtr->template->maxChars * 2;
 }
 
 static u8 GetPreviousTextCaretPosition(void)
@@ -1324,8 +1342,8 @@ static u8 GetPreviousTextCaretPosition(void)
 
     for (i = namingScreenDataPtr->template->maxChars - 1; i > 0; i--)
     {
-        if (namingScreenDataPtr->textBuffer[i] != EOS)
-            return i;
+        if (namingScreenDataPtr->textBuffer[i * 2] != EOS)
+            return i * 2;
     }
     return 0;
 }
@@ -1333,239 +1351,496 @@ static u8 GetPreviousTextCaretPosition(void)
 static void DeleteTextCharacter(void)
 {
     u8 index;
-    u8 var2;
+    u8 keyRole;
+    u8 ch;
+    u16 korean;
 
+    // 마지막으로 입력된 인덱스, 문자
     index = GetPreviousTextCaretPosition();
-    namingScreenDataPtr->textBuffer[index] = 0;
-    sub_80B7960();
-    namingScreenDataPtr->textBuffer[index] = EOS;
-    var2 = GetKeyRoleAtCursorPos();
-    if (var2 == 0 || var2 == 2)
-        sub_80B6460(1, 0, 1);
+    korean = (namingScreenDataPtr->textBuffer[index] << 8) | namingScreenDataPtr->textBuffer[index + 1];
+
+    switch (namingScreenDataPtr->koreanState)
+    {
+    // 0 - STATE_NONE : 초기상태
+    // 1 - STATE_JAUM : 자음입력상태
+    // 한 글자 제거
+    case STATE_NONE:
+    case STATE_JAUM:
+        namingScreenDataPtr->koreanState = STATE_NONE;
+        namingScreenDataPtr->textBuffer[index] = EOS;
+        namingScreenDataPtr->textBuffer[index + 1] = EOS;
+        break;
+
+    // 2, 3 - STATE_MOUM_MERGEABLE, STATE_MOUM : 자음+모음 입력상태
+    // 모음 제거 및 분리
+    case STATE_MOUM:
+    case STATE_MOUM_MERGEABLE:
+        ch = DecomposeToJung(korean);
+        if (ch == 0x1d || ch == 0x1e || ch == 0x1f 
+            || ch == 0x22 || ch == 0x23 || ch == 0x24 
+            || ch == 0x27)
+        {
+            namingScreenDataPtr->koreanState = STATE_MOUM_MERGEABLE;
+
+            korean = ComposeKorean(
+                GetCho(DecomposeToCho(korean)),
+                SplitJung(GetJung(DecomposeToJung(korean)), 0),
+                0);
+
+            namingScreenDataPtr->textBuffer[index] = (korean & 0xFF00) >> 8;
+            namingScreenDataPtr->textBuffer[index + 1] = korean & 0x00FF;
+        }
+        else
+        {
+            namingScreenDataPtr->koreanState = STATE_JAUM;
+            namingScreenDataPtr->textBuffer[index] = 0x41;
+            namingScreenDataPtr->textBuffer[index + 1] = DecomposeToCho(korean);
+        }
+        break;
+
+    // 4, 5 - STATE_JAUM_2_MERGEABLE, STATE_JAUM_2 : 자음+모음+자음 입력상태
+    // 자음 제거
+    case STATE_JAUM_2_MERGEABLE:
+    case STATE_JAUM_2:
+        ch = DecomposeToJung(korean);
+        if (ch == 0x1d || ch == 0x1e || ch == 0x1f 
+            || ch == 0x22 || ch == 0x23 || ch == 0x24 
+            || ch == 0x27)
+            namingScreenDataPtr->koreanState = STATE_MOUM;
+        else
+            namingScreenDataPtr->koreanState = STATE_MOUM_MERGEABLE;
+
+        korean = ComposeKorean(
+            GetCho(DecomposeToCho(korean)),
+            GetJung(DecomposeToJung(korean)),
+            0);
+
+        namingScreenDataPtr->textBuffer[index] = (korean & 0xFF00) >> 8;
+        namingScreenDataPtr->textBuffer[index + 1] = korean & 0x00FF;
+        break;
+
+    // 6 - STATE_MERGED_JAUM : 이중자음 입력상태
+    // 이중 자음 분리
+    case STATE_MERGED_JAUM:
+        namingScreenDataPtr->koreanState = STATE_JAUM_2_MERGEABLE;
+
+        korean = ComposeKorean(
+            GetCho(DecomposeToCho(korean)),
+            GetJung(DecomposeToJung(korean)),
+            SplitJong(DecomposeToJongIndex(korean), 0));
+
+        namingScreenDataPtr->textBuffer[index] = (korean & 0xFF00) >> 8;
+        namingScreenDataPtr->textBuffer[index + 1] = korean & 0x00FF;
+        break;
+    }
+
+    DrawTextEntry();
+
+    keyRole = GetKeyRoleAtCursorPos();
+    if (keyRole == 0 || keyRole == 2)
+        TryStartButtonFlash(1, 0, 1);
+
     PlaySE(SE_BALL);
 }
 
-static bool8 sub_80B7004(void)
+static bool8 AddTextCharacter(void)
 {
     s16 x;
     s16 y;
-    u8 ch;
-    bool8 r4;
 
     GetCursorPos(&x, &y);
-    x = CursorColToKeyboardCol(x);
-    ch = GetCharAtKeyboardPos(x, y);
-    r4 = 1;
-    if (ch == 0xFF)
-        r4 = sub_80B7104();
-    else if (ch == 0xFE)
-        r4 = sub_80B713C();
-    else
-        AddTextCharacter(ch);
-    sub_80B7960();
+    BufferCharacter(GetCharAtKeyboardPos(x, y));
+    DrawTextEntry();
     PlaySE(SE_SELECT);
-    if (r4)
-    {
-        if (GetPreviousTextCaretPosition() == namingScreenDataPtr->template->maxChars - 1)
-            return TRUE;
-    }
+
     return FALSE;
 }
 
-static void sub_80B7090(void) // DoInput?
+static void BufferCharacter(u8 ch)
 {
-    u8 r5;
-    u8 r4;
+    u8 index = GetTextEntryPosition();
+    u8 state = namingScreenDataPtr->koreanState;
+    u16 koreanChar, prevChar;
 
-    r5 = GetPreviousTextCaretPosition();
-    r4 = namingScreenDataPtr->textBuffer[r5];
-    if (sub_80B7198(r4))
+    // 이전에 입력한 글자 불러오기
+    if (index >= 2)
     {
-        if (sub_80B7264(r4))
-            sub_80B7370(r4, r5);
-        else
-            sub_80B73CC(r4, r5);
+        prevChar = namingScreenDataPtr->textBuffer[index - 2] << 8 |
+                   namingScreenDataPtr->textBuffer[index - 1];
+    }
+
+    if (ch >= 0xa1 || ch == 0x00)
+    {
+        if (index == namingScreenDataPtr->template->maxChars * 2)
+            return;
+
+        namingScreenDataPtr->textBuffer[index++] = 0;
+        namingScreenDataPtr->textBuffer[index] = ch;
+        state = STATE_NONE;
     }
     else
     {
-        if (sub_80B71E4(r4))
-            sub_80B7474(r4, r5);
-        else
-            sub_80B72A4(r4, r5);
+        switch (state)
+        {
+        // 초기 상태(모든 문자 입력가능)
+        case STATE_NONE:
+        {
+            if (index == namingScreenDataPtr->template->maxChars * 2)
+                return;
+
+            namingScreenDataPtr->textBuffer[index++] = 0x41;
+            namingScreenDataPtr->textBuffer[index] = ch;
+
+            if (IsJaum(ch))
+                state = STATE_JAUM;
+            break;
+        }
+        // 자음 입력 상태
+        case STATE_JAUM:
+        {
+            if (IsMoum(ch))
+            {
+                koreanChar = ComposeKorean(
+                    GetCho(prevChar & 0xff),
+                    GetJung(ch),
+                    0);
+
+                if (koreanChar == 0xffff)
+                {
+                    if (index == namingScreenDataPtr->template->maxChars * 2)
+                        return;
+
+                    state = STATE_NONE;
+                    namingScreenDataPtr->textBuffer[index++] = 0x41;
+                    namingScreenDataPtr->textBuffer[index] = ch;
+                }
+                else
+                {
+                    index -= 2;
+                    namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                    namingScreenDataPtr->textBuffer[index] = koreanChar & 0xff;
+
+                    if (ch == 0x1c || ch == 0x21 || ch == 0x26)
+                        state = STATE_MOUM_MERGEABLE;
+                    else
+                        state = STATE_MOUM;
+                }
+            }
+            else
+            {
+                if (index == namingScreenDataPtr->template->maxChars * 2)
+                    return;
+
+                namingScreenDataPtr->textBuffer[index++] = 0x41;
+                namingScreenDataPtr->textBuffer[index] = ch;
+            }
+            break;
+        }
+        // 모음 입력 상태(모음 조합가능)
+        case STATE_MOUM_MERGEABLE:
+        {
+            if (IsMoum(ch))
+            {
+                if (!ComposeMoum(DecomposeToJung(prevChar), ch))
+                {
+                    state = STATE_NONE;
+
+                    if (index == namingScreenDataPtr->template->maxChars * 2)
+                        return;
+
+                    namingScreenDataPtr->textBuffer[index++] = 0x41;
+                    namingScreenDataPtr->textBuffer[index] = ch;
+                }
+                else
+                {
+                    koreanChar = ComposeKorean(
+                        GetCho(DecomposeToCho(prevChar)), 
+                        GetJung(ComposeMoum(DecomposeToJung(prevChar), ch)), 
+                        0);
+
+                    if (koreanChar == 0xffff)
+                    {
+                        if (index == namingScreenDataPtr->template->maxChars * 2)
+                            return;
+
+                        state = STATE_NONE;
+                        namingScreenDataPtr->textBuffer[index++] = 0x41;
+                        namingScreenDataPtr->textBuffer[index] = ch;
+                    }
+                    else
+                    {
+                        index -= 2;
+                        namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                        namingScreenDataPtr->textBuffer[index] = koreanChar & 0xff;
+                        state = STATE_MOUM;
+                    }
+                }
+            }
+            else
+            {
+                koreanChar = ComposeKorean(
+                    GetCho(DecomposeToCho(prevChar)), 
+                    GetJung(DecomposeToJung(prevChar)), 
+                    GetJong(ch));
+
+                if (koreanChar == 0xffff || GetJong(ch) == 0xff)
+                {
+                    if (index == namingScreenDataPtr->template->maxChars * 2)
+                        return;
+
+                    state = STATE_JAUM;
+                    namingScreenDataPtr->textBuffer[index++] = 0x41;
+                    namingScreenDataPtr->textBuffer[index] = ch;
+                }
+                else
+                {
+                    index -= 2;
+                    namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                    namingScreenDataPtr->textBuffer[index] = koreanChar & 0xff;
+                    state = STATE_JAUM_2;
+                }
+            }
+            break;
+        }
+        // 모음 입력 상태
+        case STATE_MOUM:
+        {
+            if (IsMoum(ch))
+            {
+                if (index == namingScreenDataPtr->template->maxChars * 2)
+                    return;
+
+                state = STATE_NONE;
+                namingScreenDataPtr->textBuffer[index++] = 0x41;
+                namingScreenDataPtr->textBuffer[index] = ch;
+            }
+            else
+            {
+                koreanChar = ComposeKorean(
+                    GetCho(DecomposeToCho(prevChar)), 
+                    GetJung(DecomposeToJung(prevChar)), 
+                    GetJong(ch));
+
+                if (koreanChar == 0xffff || GetJong(ch) == 0x00 || GetJong(ch) == 0xff)
+                {
+                    if (index == namingScreenDataPtr->template->maxChars * 2)
+                        return;
+
+                    state = STATE_JAUM;
+                    namingScreenDataPtr->textBuffer[index++] = 0x41;
+                    namingScreenDataPtr->textBuffer[index] = ch;
+                }
+                else
+                {
+                    index -= 2;
+                    namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                    namingScreenDataPtr->textBuffer[index] = koreanChar & 0xff;
+
+                    if (ch == 0x01 || ch == 0x03 || ch == 0x06 || ch == 0x08)
+                        state = STATE_JAUM_2_MERGEABLE;
+                    else
+                        state = STATE_JAUM_2;
+                }
+            }
+            break;
+        }
+        // 4 - STATE_JAUM_2_MERGEABLE : 자음 입력 상태(자음 조합가능)
+        case STATE_JAUM_2_MERGEABLE:
+        {
+            if (IsJaum(ch))
+            {
+                if (!ComposeJaum(DecomposeToJong(prevChar), ch))
+                {
+                    if (index == namingScreenDataPtr->template->maxChars * 2)
+                        return;
+
+                    state = STATE_JAUM;
+                    namingScreenDataPtr->textBuffer[index++] = 0x41;
+                    namingScreenDataPtr->textBuffer[index] = ch;
+                }
+                else
+                {
+                    koreanChar = ComposeKorean(
+                        GetCho(DecomposeToCho(prevChar)), 
+                        GetJung(DecomposeToJung(prevChar)), 
+                        ComposeJaum(DecomposeToJong(prevChar), ch));
+
+                    if (koreanChar == 0xffff)
+                    {
+                        state = STATE_JAUM;
+
+                        if (index == namingScreenDataPtr->template->maxChars * 2)
+                            return;
+
+                        namingScreenDataPtr->textBuffer[index++] = 0x41;
+                        namingScreenDataPtr->textBuffer[index] = ch;
+                    }
+                    else
+                    {
+                        index -= 2;
+                        namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                        namingScreenDataPtr->textBuffer[index] = koreanChar & 0xff;
+                        state = STATE_MERGED_JAUM;
+                    }
+                }
+            }
+            else
+            {
+                if (index == namingScreenDataPtr->template->maxChars * 2)
+                    return;
+
+                koreanChar = ComposeKorean(
+                    GetCho(DecomposeToCho(prevChar)), 
+                    GetJung(DecomposeToJung(prevChar)), 
+                    0);
+
+                index -= 2;
+                namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                namingScreenDataPtr->textBuffer[index++] = koreanChar & 0xff;
+
+                koreanChar = ComposeKorean(
+                    GetCho(DecomposeToJong(prevChar)), 
+                    GetJung(ch), 
+                    0);
+
+                if (koreanChar == 0xffff)
+                {
+                    state = STATE_NONE;
+                    namingScreenDataPtr->textBuffer[index++] = 0x41;
+                    namingScreenDataPtr->textBuffer[index] = ch;
+                }
+                else
+                {
+                    namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                    namingScreenDataPtr->textBuffer[index] = koreanChar & 0xff;
+
+                    if (ch == 0x1c || ch == 0x21 || ch == 0x26)
+                        state = STATE_MOUM_MERGEABLE;
+                    else
+                        state = STATE_MOUM;
+                }
+            }
+            break;
+        }        
+        // 5 - STATE_JAUM_2 : 자음 입력 상태(모음 조합 가능)
+        case STATE_JAUM_2:
+        {
+            if (IsJaum(ch))
+            {
+                if (index == namingScreenDataPtr->template->maxChars * 2)
+                    return;
+
+                state = STATE_JAUM;
+                namingScreenDataPtr->textBuffer[index++] = 0x41;
+                namingScreenDataPtr->textBuffer[index] = ch;
+            }
+            else
+            {
+                if (index == namingScreenDataPtr->template->maxChars * 2)
+                    return;
+
+                koreanChar = ComposeKorean(
+                    GetCho(DecomposeToCho(prevChar)), 
+                    GetJung(DecomposeToJung(prevChar)), 
+                    0);
+
+                index -= 2;
+                namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                namingScreenDataPtr->textBuffer[index++] = koreanChar & 0xff;
+
+                koreanChar = ComposeKorean(
+                    GetCho(DecomposeToJong(prevChar)), 
+                    GetJung(ch), 
+                    0);
+
+                if (koreanChar == 0xffff)
+                {
+                    state = STATE_NONE;
+                    namingScreenDataPtr->textBuffer[index++] = 0x41;
+                    namingScreenDataPtr->textBuffer[index] = ch;
+                }
+                else
+                {
+                    namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                    namingScreenDataPtr->textBuffer[index] = koreanChar & 0xff;
+
+                    if (ch == 0x1c || ch == 0x21 || ch == 0x26)
+                        state = STATE_MOUM_MERGEABLE;
+                    else
+                        state = STATE_MOUM;
+                }
+            }
+            break;
+        }
+        // 6 - STATE_MERGED_JAUM : 이중 자음 입력상태
+        case STATE_MERGED_JAUM:
+        {
+            if (IsJaum(ch))
+            {
+                if (index == namingScreenDataPtr->template->maxChars * 2)
+                    return;
+
+                state = STATE_JAUM;
+                namingScreenDataPtr->textBuffer[index++] = 0x41;
+                namingScreenDataPtr->textBuffer[index] = ch;
+            }
+            else
+            {
+                if (index == namingScreenDataPtr->template->maxChars * 2)
+                    return;
+
+                // 이전 글자에서 종성만 제거
+                koreanChar = ComposeKorean(
+                    GetCho(DecomposeToCho(prevChar)), 
+                    GetJung(DecomposeToJung(prevChar)), 
+                    SplitJong(DecomposeToJongIndex(prevChar), 0));
+
+                index -= 2;
+                namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                namingScreenDataPtr->textBuffer[index++] = koreanChar & 0xff;
+                
+                // 새 글자
+                koreanChar = ComposeKorean(
+                    GetCho(ConvertJongToCho(SplitJong(DecomposeToJongIndex(prevChar), 1))), 
+                    GetJung(ch), 
+                    0);
+
+                if (koreanChar == 0xffff)
+                {
+                    state = STATE_NONE;
+                    namingScreenDataPtr->textBuffer[index++] = 0x41;
+                    namingScreenDataPtr->textBuffer[index] = ch;
+                }
+                else
+                {
+                    namingScreenDataPtr->textBuffer[index++] = (koreanChar & 0xff00) >> 8;
+                    namingScreenDataPtr->textBuffer[index] = koreanChar & 0xff;
+
+                    // 모음 조합가능 여부에 따른 분기
+                    if (ch == 0x1c || ch == 0x21 || ch == 0x26)
+                        state = STATE_MOUM_MERGEABLE;
+                    else
+                        state = STATE_MOUM;
+                }
+            }
+            break;
+        }
+        }
     }
-    sub_80B7960();
-    PlaySE(SE_SELECT);
+
+    namingScreenDataPtr->koreanState = state;
 }
 
-static bool8 sub_80B7104(void)
-{
-    u8 r5;
-    u8 r4;
-
-    r5 = GetPreviousTextCaretPosition();
-    r4 = namingScreenDataPtr->textBuffer[r5];
-    if (sub_80B720C(r4))
-    {
-        sub_80B72A4(r4, r5);
-        return TRUE;
-    }
-    return FALSE;
-}
-
-static bool8 sub_80B713C(void)
-{
-    u8 r5;
-    u8 r4;
-
-    r5 = GetPreviousTextCaretPosition();
-    r4 = namingScreenDataPtr->textBuffer[r5];
-    if (sub_80B7264(r4))
-    {
-        sub_80B7370(r4, r5);
-        return TRUE;
-    }
-    return FALSE;
-}
-
-static void AddTextCharacter(u8 ch)
-{
-    u8 index = GetTextCaretPosition();
-
-    namingScreenDataPtr->textBuffer[index] = ch;
-}
-
-static bool8 sub_80B7198(u8 a)
-{
-    if ((a >= 55 && a <= 74)
-     || (a >= 135 && a <= 139)
-     || (a >= 140 && a <= 144)
-     || (a >= 145 && a <= 149)
-     || (a >= 150 && a <= 154))
-        return TRUE;
-    else
-        return FALSE;
-}
-
-static bool8 sub_80B71E4(u8 a)
-{
-    if ((a >= 75 && a <= 79)
-     || (a >= 155 && a <= 159))
-        return TRUE;
-    else
-        return FALSE;
-}
-
-static bool8 sub_80B720C(u8 a)
-{
-    if ((a >= 6 && a <= 20)
-     || (a >= 26 && a <= 30)
-     || (a >= 75 && a <= 79)
-     || (a >= 86 && a <= 100)
-     || (a >= 106 && a <= 110)
-     || (a >= 155 && a <= 159))
-        return TRUE;
-    else
-        return FALSE;
-}
-
-static bool8 sub_80B7264(u8 a)
-{
-    if ((a >= 26 && a <= 30)
-     || (a >= 70 && a <= 74)
-     || (a >= 106 && a <= 110)
-     || (a >= 150 && a <= 154))
-        return TRUE;
-    else
-        return FALSE;
-}
-
-static void sub_80B72A4(u8 a, u8 b)
-{
-    u8 chr = a;
-
-    if (a >= 6 && a <= 10)
-        chr = a + 0x31;
-    else if (a >= 11 && a <= 15)
-        chr = a + 0x31;
-    else if (a >= 16 && a <= 20)
-        chr = a + 0x31;
-    else if (a >= 26 && a <= 30)
-        chr = a + 0x2C;
-    else if (a >= 75 && a <= 79)
-        chr = a + 0xFB;
-    else if (a >= 86 && a <= 90)
-        chr = a + 0x31;
-    else if (a >= 91 && a <= 95)
-        chr = a + 0x31;
-    else if (a >= 96 && a <= 100)
-        chr = a + 0x31;
-    else if (a >= 106 && a <= 110)
-        chr = a + 0x2C;
-    else if (a >= 155 && a <= 159)
-        chr = a + 0xFB;
-    namingScreenDataPtr->textBuffer[b] = chr;
-}
-
-static void sub_80B7370(u8 a, u8 b)
-{
-    u8 chr = a;
-
-    if (a >= 26 && a <= 30)
-        chr = a + 0x31;
-    else if (a >= 70 && a <= 74)
-        chr = a + 5;
-    else if (a >= 106 && a <= 110)
-        chr = a + 0x31;
-    else if (a >= 150 && a <= 154)
-        chr = a + 5;
-    namingScreenDataPtr->textBuffer[b] = chr;
-}
-
-static void sub_80B73CC(u8 a, u8 b)
-{
-    u8 chr = a;
-
-    if (a >= 55 && a <= 59)
-        chr = a + 0xCF;
-    else if (a >= 60 && a <= 64)
-        chr = a + 0xCF;
-    else if (a >= 65 && a <= 69)
-        chr = a + 0xCF;
-    else if (a >= 70 && a <= 74)
-        chr = a + 0xD4;
-    else if (a >= 135 && a <= 139)
-        chr = a + 0xCF;
-    else if (a >= 140 && a <= 144)
-        chr = a + 0xCF;
-    else if (a >= 145 && a <= 149)
-        chr = a + 0xCF;
-    else if (a >= 150 && a <= 154)
-        chr = a + 0xD4;
-    namingScreenDataPtr->textBuffer[b] = chr;
-}
-
-static void sub_80B7474(u8 a, u8 b)
-{
-    u8 chr = a;
-
-    if (a >= 75 && a <= 79)
-        chr = a + 0xCF;
-    else if (a >= 155 && a <= 159)
-        chr = a + 0xCF;
-    namingScreenDataPtr->textBuffer[b] = chr;
-}
-
-static void sub_80B74B0(void)
+static void SaveInputText(void)
 {
     u8 i;
 
-    for (i = 0; i < namingScreenDataPtr->template->maxChars; i++)
+    NamingScreen_StringCopy(namingScreenDataPtr->destBuffer, namingScreenDataPtr->textBuffer);
+
+    i = StringLength(namingScreenDataPtr->destBuffer);
+    if (i == 0)
     {
-        if (namingScreenDataPtr->textBuffer[i] != 0 && namingScreenDataPtr->textBuffer[i] != 0xFF)
-        {
-            StringCopyN(namingScreenDataPtr->destBuffer, namingScreenDataPtr->textBuffer, namingScreenDataPtr->template->maxChars + 1);
-            break;
-        }
+        NamingScreen_StringCopy(namingScreenDataPtr->destBuffer, namingScreenDataPtr->backupBuffer);
     }
 }
 
@@ -1748,7 +2023,8 @@ static void (*const gUnknown_083CE368[])(void) =
     sub_80B7924,
 };
 
-static const u8 sKeyboardCharacters[][4][20];  //forward declaration
+static const u8 sKeyboardCharacters[][4][20];
+static const u8 sKeyboardCharactersTexts[][4][56];
 
 static u8 GetCharAtKeyboardPos(s16 a, s16 b)
 {
@@ -1789,11 +2065,15 @@ static void sub_80B7850(void)
 
 static void PrintKeyboardCharacters(u8 page)  //print letters on page
 {
-    s16 i;
-    s16 r5;
+    s16 xPos;
+    s16 yPos;
 
-    for (i = 0, r5 = 9; i < 4; i++, r5 += 2)
-        Menu_PrintText(sKeyboardCharacters[page][i], 3, r5);
+    yPos = 9;
+    for (xPos = 0; xPos < 4; xPos++)
+    {
+        Menu_PrintText(sKeyboardCharactersTexts[page][xPos], 3, yPos);
+        yPos += 2;
+    }
 }
 
 static void sub_80B78A8(void)
@@ -1829,8 +2109,10 @@ static void sub_80B7924(void)
     }
 }
 
-static void sub_80B7960(void)
+static void DrawTextEntry(void)
 {
+    u8 i;
+    u8 first, second;
     u8 *string = gStringVar1;
 
     string[0] = 0xFC;
@@ -1840,8 +2122,34 @@ static void sub_80B7960(void)
     string[4] = 0x11;
     string[5] = 1;
     string += 6;
-    StringCopy(string, namingScreenDataPtr->textBuffer);
+
+    for (i = 0; i < sizeof(namingScreenDataPtr->textBuffer); i += 2)
+    {
+        first = namingScreenDataPtr->textBuffer[i];
+        second = namingScreenDataPtr->textBuffer[i + 1];
+
+        // 한글을 제외한 문자 처리
+        if (first == 0)
+        {
+            *string = second;
+            string++;
+            continue;
+        }
+
+        *string++ = first;
+        *string++ = second;
+    }
+
     BasicInitMenuWindow(&gWindowTemplate_81E6F4C);
+
+    // 폰트폭이 8px가 넘는 경우에 이름 한 글자 지우기 시, 잔상이 남을 수 있기 때문에 이름란의 타일을 비웁니다.
+    Menu_BlankWindowRect(
+        namingScreenDataPtr->nameLeftOffset,
+        4,
+        namingScreenDataPtr->nameLeftOffset + namingScreenDataPtr->template->maxChars,
+        (4 + 2) - 1
+    );
+
     Menu_PrintText(gStringVar1, namingScreenDataPtr->nameLeftOffset, 4);
 }
 
@@ -1852,7 +2160,7 @@ static void sub_80B7960(void)
 static const struct NamingScreenTemplate playerNamingScreenTemplate =
 {
     .copyExistingString = 0,
-    .maxChars = 7,
+    .maxChars = 3,
     .iconFunction = 1,
     .addGenderIcon = 0,
     .initialPage = 0,
@@ -1872,7 +2180,7 @@ static const struct NamingScreenTemplate pcBoxNamingTemplate =
 static const struct NamingScreenTemplate monNamingScreenTemplate =
 {
     .copyExistingString = 0,
-    .maxChars = 10,
+    .maxChars = 5,
     .iconFunction = 3,
     .addGenderIcon = 1,
     .initialPage = 0,
@@ -1889,24 +2197,56 @@ static const struct NamingScreenTemplate *const sNamingScreenTemplates[] =
 
 static const u8 sKeyboardCharacters[][4][20] =
 {
+    [PAGE_KOREAN] =
     {
-        _(" A B C  D E F    . "),
-        _(" G H I  J K L    , "),
-        _(" M N O  P Q R S    "),
-        _(" T U V  W X Y Z    "),
+        /* ㅃㅉㄸㄲㅆ!?-ㅒㅖ */
+        { 0x09, 0x0E, 0x05, 0x02, 0x0B, 0xAB, 0xAC, 0xAE, 0x17, 0x1B },
+        /* ㅂㅈㄷㄱㅅㅛㅕㅑㅐㅔ */
+        { 0x08, 0x0D, 0x04, 0x01, 0x0A, 0x20, 0x1A, 0x16, 0x15, 0x19 },
+        /* ㅁㄴㅇㄹㅎㅗㅓㅏㅣ */
+        { 0x07, 0x03, 0x0C, 0x06, 0x13, 0x1C, 0x18, 0x14, 0x28, 0xBA },
+        /* ㅋㅌㅊㅍ ㅠㅜㅡ,. */
+        { 0x10, 0x11, 0x0F, 0x12, 0x00, 0x25, 0x21, 0x26, 0xB8, 0xAD },
     },
+    [PAGE_LOWER] =
     {
-        _(" a b c  d e f    . "),
-        _(" g h i  j k l    , "),
-        _(" m n o  p q r s    "),
-        _(" t u v  w x y z    "),
+        _("1234567890"),
+        _("abcdefghij"),
+        _("klmnopqrst"),
+        _("uvwxyz♂♀-·"),
     },
+    [PAGE_UPPER] =
     {
-        _(" 0  1  2  3  4     "),
-        _(" 5  6  7  8  9     "),
-        _(" !  ?  ♂  ♀  /  -  "),
-        _(" …  “  ”  ‘  '     "),
+        _("1234567890"),
+        _("ABCDEFGHIJ"),
+        _("KLMNOPQRST"),
+        _("UVWXYZ‘'“”"),
+    }
+};
+
+static const u8 sKeyboardCharactersTexts[][4][56] =
+{
+    [PAGE_KOREAN] =
+    {
+        _("ㅃ{CLEAR_TO 16}ㅉ{CLEAR_TO 32}ㄸ{CLEAR_TO 48}ㄲ{CLEAR_TO 64}ㅆ{CLEAR_TO 80}!{CLEAR_TO 96}?{CLEAR_TO 112}-{CLEAR_TO 128}ㅒ{CLEAR_TO 144}ㅖ"),
+        _("ㅂ{CLEAR_TO 16}ㅈ{CLEAR_TO 32}ㄷ{CLEAR_TO 48}ㄱ{CLEAR_TO 64}ㅅ{CLEAR_TO 80}ㅛ{CLEAR_TO 96}ㅕ{CLEAR_TO 112}ㅑ{CLEAR_TO 128}ㅐ{CLEAR_TO 144}ㅔ"),
+        _("ㅁ{CLEAR_TO 16}ㄴ{CLEAR_TO 32}ㅇ{CLEAR_TO 48}ㄹ{CLEAR_TO 64}ㅎ{CLEAR_TO 80}ㅗ{CLEAR_TO 96}ㅓ{CLEAR_TO 112}ㅏ{CLEAR_TO 128}ㅣ{CLEAR_TO 144}/"),
+        _("ㅋ{CLEAR_TO 16}ㅌ{CLEAR_TO 32}ㅊ{CLEAR_TO 48}ㅍ{CLEAR_TO 64}{CLEAR_TO 80}ㅠ{CLEAR_TO 96}ㅜ{CLEAR_TO 112}ㅡ{CLEAR_TO 128},{CLEAR_TO 144}."),
     },
+    [PAGE_UPPER] =
+    {
+        _("1{CLEAR_TO 16}2{CLEAR_TO 32}3{CLEAR_TO 48}4{CLEAR_TO 64}5{CLEAR_TO 80}6{CLEAR_TO 96}7{CLEAR_TO 112}8{CLEAR_TO 128}9{CLEAR_TO 144}0"),
+        _("A{CLEAR_TO 16}B{CLEAR_TO 32}C{CLEAR_TO 48}D{CLEAR_TO 64}E{CLEAR_TO 80}F{CLEAR_TO 96}G{CLEAR_TO 112}H{CLEAR_TO 128}I{CLEAR_TO 144}J"),
+        _("K{CLEAR_TO 16}L{CLEAR_TO 32}M{CLEAR_TO 48}N{CLEAR_TO 64}O{CLEAR_TO 80}P{CLEAR_TO 96}Q{CLEAR_TO 112}R{CLEAR_TO 128}S{CLEAR_TO 144}T"),
+        _("U{CLEAR_TO 16}V{CLEAR_TO 32}W{CLEAR_TO 48}X{CLEAR_TO 64}Y{CLEAR_TO 80}Z{CLEAR_TO 96}‘{CLEAR_TO 112}'{CLEAR_TO 128}“{CLEAR_TO 144}”"),
+    },
+    [PAGE_LOWER] =
+    {
+        _("1{CLEAR_TO 16}2{CLEAR_TO 32}3{CLEAR_TO 48}4{CLEAR_TO 64}5{CLEAR_TO 80}6{CLEAR_TO 96}7{CLEAR_TO 112}8{CLEAR_TO 128}9{CLEAR_TO 144}0"),
+        _("a{CLEAR_TO 16}b{CLEAR_TO 32}c{CLEAR_TO 48}d{CLEAR_TO 64}e{CLEAR_TO 80}f{CLEAR_TO 96}g{CLEAR_TO 112}h{CLEAR_TO 128}i{CLEAR_TO 144}j"),
+        _("k{CLEAR_TO 16}l{CLEAR_TO 32}m{CLEAR_TO 48}n{CLEAR_TO 64}o{CLEAR_TO 80}p{CLEAR_TO 96}q{CLEAR_TO 112}r{CLEAR_TO 128}s{CLEAR_TO 144}t"),
+        _("u{CLEAR_TO 16}v{CLEAR_TO 32}w{CLEAR_TO 48}x{CLEAR_TO 64}y{CLEAR_TO 80}z{CLEAR_TO 96}♂{CLEAR_TO 112}♀{CLEAR_TO 128}-{CLEAR_TO 144}·"),
+    }
 };
 
 const struct OamData gOamData_83CE498 =
@@ -2051,7 +2391,7 @@ const union AnimCmd *const gSpriteAnimTable_83CE5C4[] = {
 };
 
 const struct SpriteTemplate gSpriteTemplate_83CE5C8 = {
-    2, 4, &gOamData_83CE498, gSpriteAnimTable_83CE5B8, NULL, gDummySpriteAffineAnimTable, sub_80B6B34
+    2, 4, &gOamData_83CE498, gSpriteAnimTable_83CE5B8, NULL, gDummySpriteAffineAnimTable, SpriteCB_PageSwap
 };
 
 const struct SpriteTemplate gSpriteTemplate_83CE5E0 = {

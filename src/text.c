@@ -4448,9 +4448,9 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
         case 1:
         case 2:
             glyphTileInfo.width = 8;
-			glyphTileInfo.src = (u8 *)sFont1KoreanGlyphs + 0x20 * koreanGlyph;
-			glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
-			retVal = DrawGlyphTile_UnshadowedFont(&glyphTileInfo);
+            glyphTileInfo.src = (u8 *)sFont1KoreanGlyphs + 0x20 * koreanGlyph;
+            glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
+            retVal = DrawGlyphTile_UnshadowedFont(&glyphTileInfo);
             break;
 
         case 3:
@@ -4514,9 +4514,9 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
         case 4:
         case 5:
             glyphTileInfo.width = 8;
-			glyphTileInfo.src = (u8 *)sFont4KoreanGlyphs + 0x20 * koreanGlyph;
-			glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
-			retVal = DrawGlyphTile_ShadowedFont(&glyphTileInfo);
+            glyphTileInfo.src = (u8 *)sFont4KoreanGlyphs + 0x20 * koreanGlyph;
+            glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
+            retVal = DrawGlyphTile_ShadowedFont(&glyphTileInfo);
             break;
         }
 

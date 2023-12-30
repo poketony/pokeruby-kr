@@ -29,34 +29,36 @@ struct NamingScreenTemplate
 
 struct NamingScreenData
 {
- /*0x00*/ u8 state;
- /*0x01*/ u8 templateNum;
- /*0x02*/ u16 nameLeftOffset;
- /*0x04*/ u16 bg1vOffset;
- /*0x06*/ u16 bg2vOffset;
- /*0x08*/ u16 bg1Priority;
- /*0x0A*/ u16 bg2Priority;
- /*0x0C*/ u8 bgToReveal;
- /*0x0D*/ u8 bgToHide;
- /*0x0E*/ u8 currentPage;
- /*0x0F*/ u8 cursorSpriteId;
- /*0x10*/ u8 pageIndicatorSpriteId;
- /*0x11*/ u8 textBuffer[0x10];
- /*0x21*/ u8 filler21[0x13];
- /*0x34*/ const struct NamingScreenTemplate *template;
- /*0x38*/ u8 *destBuffer;
- /*0x3C*/ u16 keyRepeatStartDelayCopy;
- /*0x3E*/ u16 speciesOrPlayerGender;
- /*0x40*/ u16 monGender;
- /*0x42*/ u32 monPersonality;
- /*0x46*/ MainCallback returnCallback;
+    u8 state;
+    u8 koreanState;
+    u8 templateNum;
+    u16 nameLeftOffset;
+    u16 bg1vOffset;
+    u16 bg2vOffset;
+    u16 bg1Priority;
+    u16 bg2Priority;
+    u8 bgToReveal;
+    u8 bgToHide;
+    u8 currentPage;
+    u8 cursorSpriteId;
+    u8 pageIndicatorSpriteId;
+    u8 textBuffer[40];
+    u8 backupBuffer[40];
+    u8 filler21[0x13];
+    const struct NamingScreenTemplate *template;
+    u8 *destBuffer;
+    u16 keyRepeatStartDelayCopy;
+    u16 speciesOrPlayerGender;
+    u16 monGender;
+    u32 monPersonality;
+    MainCallback returnCallback;
 };
 
 enum
 {
+    PAGE_KOREAN,
     PAGE_UPPER,
     PAGE_LOWER,
-    PAGE_OTHERS,
 };
 
 enum
@@ -76,6 +78,17 @@ enum
 {
     INPUT_STATE_DISABLED,
     INPUT_STATE_ENABLED,
+};
+
+enum
+{
+    STATE_NONE,
+    STATE_JAUM,
+    STATE_MOUM_MERGEABLE,
+    STATE_MOUM,
+    STATE_JAUM_2_MERGEABLE,
+    STATE_JAUM_2,
+    STATE_MERGED_JAUM,
 };
 
 void DoNamingScreen(u8, u8*, u16, u16, u32, MainCallback);
