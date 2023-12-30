@@ -1,236 +1,236 @@
 gAbilityDescription_None: @ 81F99CC
-	.string "No special ability.$"
+	.string "특성 없음$"
 
 gAbilityDescription_Stench: @ 81F99E0
-	.string "Helps repel wild POKéMON.$"
+	.string "포켓몬이 접근하기 어려워진다$"
 
 gAbilityDescription_Drizzle: @ 81F99FA
-	.string "Summons rain in battle.$"
+	.string "배틀에 나오면 비를 내리게 한다$"
 
 gAbilityDescription_SpeedBoost: @ 81F9A12
-	.string "Gradually boosts SPEED.$"
+	.string "점점 스피드가 올라간다$"
 
 gAbilityDescription_BattleArmor: @ 81F9A2A
-	.string "Blocks critical hits.$"
+	.string "기술을 급소에 맞지 않게 한다$"
 
 gAbilityDescription_Sturdy: @ 81F9A40
-	.string "Negates 1-hit KO attacks.$"
+	.string "일격필살이 통하지 않는다$"
 
 gAbilityDescription_Damp: @ 81F9A5A
-	.string "Prevents self-destruction.$"
+	.string "누구도 자폭할 수 없게 된다$"
 
 gAbilityDescription_Limber: @ 81F9A75
-	.string "Prevents paralysis.$"
+	.string "마비 상태가 되지 않는다$"
 
 gAbilityDescription_SandVeil: @ 81F9A89
-	.string "Ups evasion in a sandstorm.$"
+	.string "모래바람으로 회피율이 올라간다$"
 
 gAbilityDescription_Static: @ 81F9AA5
-	.string "Paralyzes on contact.$"
+	.string "접촉한 상대를 마비시킨다$"
 
 gAbilityDescription_VoltAbsorb: @ 81F9ABB
-	.string "Turns electricity into HP.$"
+	.string "전기를 받으면 회복한다$"
 
 gAbilityDescription_WaterAbsorb: @ 81F9AD6
-	.string "Changes water into HP.$"
+	.string "물을 받으면 회복한다$"
 
 gAbilityDescription_Oblivious: @ 81F9AED
-	.string "Prevents attraction.$"
+	.string "헤롱헤롱 상태가 되지 않는다$"
 
 gAbilityDescription_CloudNine: @ 81F9B02
-	.string "Negates weather effects.$"
+	.string "날씨의 영향이 없어진다$"
 
 gAbilityDescription_CompoundEyes: @ 81F9B1B
-	.string "Raises accuracy.$"
+	.string "기술의 명중률이 올라간다$"
 
 gAbilityDescription_Insomnia: @ 81F9B2C
-	.string "Prevents sleep.$"
+	.string "잠듦 상태가 되지 않는다$"
 
 gAbilityDescription_ColorChange: @ 81F9B3C
-	.string "Changes type to foe's move.$"
+	.string "받은 기술의 타입으로 변화한다$"
 
 gAbilityDescription_Immunity: @ 81F9B58
-	.string "Prevents poisoning.$"
+	.string "독 상태가 되지 않는다$"
 
 gAbilityDescription_FlashFire: @ 81F9B6C
-	.string "Powers up if hit by fire.$"
+	.string "불꽃을 받으면 강해진다$"
 
 gAbilityDescription_ShieldDust: @ 81F9B86
-	.string "Prevents added effects.$"
+	.string "기술의 추가 효과를 받지 않는다$"
 
 gAbilityDescription_OwnTempo: @ 81F9B9E
-	.string "Prevents confusion.$"
+	.string "혼란 상태가 되지 않는다$"
 
 gAbilityDescription_SuctionCups: @ 81F9BB2
-	.string "Firmly anchors the body.$"
+	.string "몸을 단단히 고정시킨다$"
 
 gAbilityDescription_Intimidate: @ 81F9BCB
-	.string "Lowers the foe's ATTACK.$"
+	.string "상대의 공격을 떨어뜨린다$"
 
 gAbilityDescription_ShadowTag: @ 81F9BE4
-	.string "Prevents the foe's escape.$"
+	.string "상대를 도망칠 수 없게 한다$"
 
 gAbilityDescription_RoughSkin: @ 81F9BFF
-	.string "Hurts to touch.$"
+	.string "접촉한 상대에게 상처를 입힌다$"
 
 gAbilityDescription_WonderGuard: @ 81F9C0F
-	.string "“Super effective” hits.$"
+	.string "효과가 굉장한 기술밖에 맞지 않는다$"
 
 gAbilityDescription_Levitate: @ 81F9C27
-	.string "Not hit by GROUND attacks.$"
+	.string "땅타입 기술을 받지 않는다$"
 
 gAbilityDescription_EffectSpore: @ 81F9C42
-	.string "Leaves spores on contact.$"
+	.string "접촉한 상대에게 포자가 붙는다$"
 
 gAbilityDescription_Synchronize: @ 81F9C5C
-	.string "Passes on status problems.$"
+	.string "독, 마비, 화상을 상대에게 옮긴다$"
 
 gAbilityDescription_ClearBody: @ 81F9C77
-	.string "Prevents ability reduction.$"
+	.string "상대가 능력을 떨어뜨릴 수 없다$"
 
 gAbilityDescription_NaturalCure: @ 81F9C93
-	.string "Heals upon switching out.$"
+	.string "교체하면 상태 이상이 치료된다$"
 
 gAbilityDescription_LightningRod: @ 81F9CAD
-	.string "Draws electrical moves.$"
+	.string "전기타입 기술이 자신에게 맞는다$"
 
 gAbilityDescription_SereneGrace: @ 81F9CC5
-	.string "Promotes added effects.$"
+	.string "기술의 추가 효과가 나오기 쉽다$"
 
 gAbilityDescription_SwiftSwim: @ 81F9CDD
-	.string "Raises SPEED in rain.$"
+	.string "비가 올 때 스피드가 올라간다$"
 
 gAbilityDescription_Chlorophyll: @ 81F9CF3
-	.string "Raises SPEED in sunshine.$"
+	.string "맑을 때 스피드가 올라간다$"
 
 gAbilityDescription_Illuminate: @ 81F9D0D
-	.string "Encounter rate increases.$"
+	.string "포켓몬과 만나기 쉬워진다$"
 
 gAbilityDescription_Trace: @ 81F9D27
-	.string "Copies special ability.$"
+	.string "상대와 같은 특성이 된다$"
 
 gAbilityDescription_HugePower: @ 81F9D3F
-	.string "Raises ATTACK.$"
+	.string "공격이 올라간다$"
 
 gAbilityDescription_PoisonPoint: @ 81F9D4E
-	.string "Poisons foe on contact.$"
+	.string "접촉한 상대를 독 상태로 만든다$"
 
 gAbilityDescription_InnerFocus: @ 81F9D66
-	.string "Prevents flinching.$"
+	.string "풀죽지 않는다$"
 
 gAbilityDescription_MagmaArmor: @ 81F9D7A
-	.string "Prevents freezing.$"
+	.string "얼음 상태가 되지 않는다$"
 
 gAbilityDescription_WaterVeil: @ 81F9D8D
-	.string "Prevents burns.$"
+	.string "화상 상태가 되지 않는다$"
 
 gAbilityDescription_MagnetPull: @ 81F9D9D
-	.string "Traps STEEL-type POKéMON.$"
+	.string "강철타입이 도망칠 수 없게 된다$"
 
 gAbilityDescription_Soundproof: @ 81F9DB7
-	.string "Avoids sound-based moves.$"
+	.string "소리 기술을 받지 않는다$"
 
 gAbilityDescription_RainDish: @ 81F9DD1
-	.string "Slight HP recovery in rain.$"
+	.string "비가 오면 조금씩 회복한다$"
 
 gAbilityDescription_SandStream: @ 81F9DED
-	.string "Summons a sandstorm.$"
+	.string "배틀에 나오면 모래바람을 일으킨다$"
 
 gAbilityDescription_Pressure: @ 81F9E02
-	.string "Raises foe's PP usage.$"
+	.string "상대의 PP를 많이 줄인다$"
 
 gAbilityDescription_ThickFat: @ 81F9E19
-	.string "Heat-and-cold protection.$"
+	.string "불꽃과 얼음타입의 기술에 강하다$"
 
 gAbilityDescription_EarlyBird: @ 81F9E33
-	.string "Awakens quickly from sleep.$"
+	.string "잠듦 상태에서 빨리 깨어난다$"
 
 gAbilityDescription_FlameBody: @ 81F9E4F
-	.string "Burns the foe on contact.$"
+	.string "접촉한 상대에게 화상을 입힌다$"
 
 gAbilityDescription_RunAway: @ 81F9E69
-	.string "Makes escaping easier.$"
+	.string "배틀에서 도망치기 쉽다$"
 
 gAbilityDescription_KeenEye: @ 81F9E80
-	.string "Prevents loss of accuracy.$"
+	.string "명중률이 떨어지지 않는다$"
 
 gAbilityDescription_HyperCutter: @ 81F9E9B
-	.string "Prevents ATTACK reduction.$"
+	.string "상대가 공격을 떨어뜨리지 못한다$"
 
 gAbilityDescription_Pickup: @ 81F9EB6
-	.string "May pick up items.$"
+	.string "도구를 주워올 때가 있다$"
 
 gAbilityDescription_Truant: @ 81F9EC9
-	.string "Moves only every two turns.$"
+	.string "연속으로 공격할 수 없다$"
 
 gAbilityDescription_Hustle: @ 81F9EE5
-	.string "Trades accuracy for power.$"
+	.string "공격이 높지만 빗나가기 쉽다$"
 
 gAbilityDescription_CuteCharm: @ 81F9F00
-	.string "Infatuates on contact.$"
+	.string "스치면 헤롱헤롱 상태가 된다$"
 
 gAbilityDescription_Plus: @ 81F9F17
-	.string "Powers up with MINUS.$"
+	.string "마이너스가 있으면 강해진다$"
 
 gAbilityDescription_Minus: @ 81F9F2D
-	.string "Powers up with PLUS.$"
+	.string "플러스가 있으면 강해진다$"
 
 gAbilityDescription_Forecast: @ 81F9F42
-	.string "Changes with the weather.$"
+	.string "날씨에 따라 캐스퐁이 변화한다$"
 
 gAbilityDescription_StickyHold: @ 81F9F5C
-	.string "Prevents item theft.$"
+	.string "달라붙어서 도구를 지킨다$"
 
 gAbilityDescription_ShedSkin: @ 81F9F71
-	.string "Heals the body by shedding.$"
+	.string "탈피하면서 상태 이상을 회복한다$"
 
 gAbilityDescription_Guts: @ 81F9F8D
-	.string "Ups ATTACK if suffering.$"
+	.string "상태 이상이 되면 공격이 올라간다$"
 
 gAbilityDescription_MarvelScale: @ 81F9FA6
-	.string "Ups DEFENSE if suffering.$"
+	.string "상태 이상이 되면 방어가 올라간다$"
 
 gAbilityDescription_LiquidOoze: @ 81F9FC0
-	.string "Draining causes injury.$"
+	.string "흡수한 상대의 체력을 감소시킨다$"
 
 gAbilityDescription_Overgrow: @ 81F9FD8
-	.string "Ups GRASS moves in a pinch.$"
+	.string "위급할 때 풀의 위력이 올라간다$"
 
 gAbilityDescription_Blaze: @ 81F9FF4
-	.string "Ups FIRE moves in a pinch.$"
+	.string "위급할 때 불꽃의 위력이 올라간다$"
 
 gAbilityDescription_Torrent: @ 81FA00F
-	.string "Ups WATER moves in a pinch.$"
+	.string "위급할 때 물의 위력이 올라간다$"
 
 gAbilityDescription_Swarm: @ 81FA02B
-	.string "Ups BUG moves in a pinch.$"
+	.string "위급할 때 벌레의 위력이 올라간다$"
 
 gAbilityDescription_RockHead: @ 81FA045
-	.string "Prevents recoil damage.$"
+	.string "부딪쳐도 반동을 받지 않는다$"
 
 gAbilityDescription_Drought: @ 81FA05D
-	.string "Summons sunlight in battle.$"
+	.string "배틀에 나가면 햇살이 강해진다$"
 
 gAbilityDescription_ArenaTrap: @ 81FA079
-	.string "Prevents fleeing.$"
+	.string "상대를 도망칠 수 없게 한다$"
 
 gAbilityDescription_VitalSpirit: @ 81FA08B
-	.string "Prevents sleep.$"
+	.string "잠듦 상태가 되지 않는다$"
 
 gAbilityDescription_WhiteSmoke: @ 81FA09B
-	.string "Prevents ability reduction.$"
+	.string "상대가 능력을 떨어뜨릴 수 없다$"
 
 gAbilityDescription_PurePower: @ 81FA0B7
-	.string "Raises ATTACK.$"
+	.string "공격의 위력이 올라간다$"
 
 gAbilityDescription_ShellArmor: @ 81FA0C6
-	.string "Blocks critical hits.$"
+	.string "기술을 급소에 맞지 않게 한다$"
 
 gAbilityDescription_Cacophony: @ 81FA0DC
-	.string "Avoids sound-based moves.$"
+	.string "소리 기술을 맞지 않는다$"
 
 gAbilityDescription_AirLock: @ 81FA0F6
-	.string "Negates weather effects.$"
+	.string "날씨의 영향이 없어진다$"
 
 	.align 2
 gAbilityDescriptions:: @ 81FA110

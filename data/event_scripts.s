@@ -682,19 +682,20 @@ gStdScripts_End::
 	.include "data/maps/Route110_TrickHouseEntrance/text.inc"
 
 Route110_TrickHousePuzzle1_Text_19C1B8:: @ 819C1B8
-	.string "{PLAYER} found a scroll.$"
+	.string "{PLAYER}{K_EUNNEUN} 두루마리를 발견했다!$"
 
 Route110_TrickHousePuzzle1_Text_19C1CB:: @ 819C1CB
-	.string "{PLAYER} memorized the secret code\n"
-	.string "written on the scroll.$"
+	.string "{PLAYER}{K_EUNNEUN} 두루마리에 적혀 있는\n"
+	.string "암호를 기억했다!$"
 
 Route110_TrickHousePuzzle1_Text_19C1FF:: @ 819C1FF
-	.string "A secret code is written on it.$"
+	.string "암호가 적혀 있다$"
 
 UnknownString_819C21F: @ 819C21F
-	.string "The door is locked.\p"
-	.string "...On closer inspection, this is written\n"
-	.string "on it: “Write the secret code here.”$"
+	.string "문은 열쇠로 잠겨 있다!\p"
+	.string "...자세히 보니\n"
+	.string "문에 문자가 적혀 있다\l"
+	.string "“여기에 암호를 적어라”$"
 
 	.include "data/maps/Route110_TrickHouseEnd/text.inc"
 	.include "data/maps/Route110_TrickHousePuzzle1/text.inc"
@@ -991,152 +992,163 @@ Common_EventScript_PlayerHandedOverTheItem:: @ 81A067F
 	.include "data/text/obtain_item.inc"
 
 Text_PokemartSign:: @ 81A0D41
-	.string "“Selected items for your convenience!”\n"
-	.string "POKéMON MART$"
+	.string "편리한 도구가 여러 가지 있습니다\n"
+	.string "“프렌들리숍”$"
 
 Text_PokemonCenterSign:: @ 81A0D75
-	.string "“Rejuvenate your tired partners!”\n"
-	.string "POKéMON CENTER$"
+	.string "지친 포켓몬도 휴식!\n"
+	.string "“포켓몬센터”$"
 
 UnknownString_81A0DA6: @ 81A0DA6
-	.string "Fufufu...$"
+	.string "후후후...$"
 
 UnknownString_81A0DB0: @ 81A0DB0
-	.string "Mumble, mumble...$"
+	.string "궁시렁궁시렁$"
 
 UnknownString_81A0DC2: @ 81A0DC2
-	.string "Oh!$"
+	.string "오-!$"
 
 UnknownString_81A0DC6: @ 81A0DC6
-	.string "Closed today!$"
+	.string "오늘은 쉬는 날이었구나!$"
 
 UnknownString_81A0DD4: @ 81A0DD4
-	.string "You like the {STR_VAR_3}-type POKéMON\n"
-	.string "{STR_VAR_1}?$"
+	.string "{STR_VAR_3}타입 포켓몬\n"
+	.string "{STR_VAR_1}{K_IGA} 마음에 들었니?!$"
 
 UnknownString_81A0DF5: @ 81A0DF5
-	.string "It contains a POKéMON!$"
+	.string "포켓몬이 들어있다!$"
 
 UnknownString_81A0E0C: @ 81A0E0C
-	.string "We're making preparations.$"
+	.string "준비 중입니다$"
 
 UnknownString_81A0E27: @ 81A0E27
-	.string "I'm a pseudo-GYM LEADER for\n"
-	.string "interviews.$"
+	.string "인터뷰용의 가짜 체육관 관장입니다!$"
 
 UnknownString_81A0E4F: @ 81A0E4F
-	.string "Ready for a test battle.$"
+	.string "테스트 배틀에 들어갑니다$"
 
 UnknownString_81A0E68: @ 81A0E68
-	.string "{STR_VAR_1} might like this program.\n"
-	.string "... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...\p"
-	.string "Better get going!$"
+	.string "{STR_VAR_1}가 좋아할 것 같은\n"
+	.string "프로가 나오고 있다!\l"
+	.string "........................\p"
+	.string "빨리 가자!$"
 
 UnknownString_81A0ED6: @ 81A0ED6
-	.string "What should I do for fun today?$"
+	.string "오늘은 뭘 하면서 놀까나!$"
 
 LilycoveCity_DepartmentStoreElevator_Text_1A0EF6:: @ 81A0EF6
-	.string "Welcome to LILYCOVE DEPARTMENT STORE.\p"
-	.string "Which floor would you like?$"
+	.string "해안백화점에 어서 오세요!\p"
+	.string "몇 층으로 가십니까?$"
 
 UnknownString_81A0F38: @ 81A0F38
-	.string "Warp to BATTLE TOWER.$"
+	.string "배틀타워로 워프합니다$"
 
 UnknownString_81A0F4E: @ 81A0F4E
-	.string "Warp to LILYCOVE.$"
+	.string "해안시티로 워프합니다$"
 
 UnknownString_81A0F60: @ 81A0F60
-	.string "The time is {STR_VAR_1}!$"
+	.string "시간은 {STR_VAR_1}!$"
 
 UnknownString_81A0F70: @ 81A0F70
-	.string "The HALL OF FAME will be accessed.$"
+	.string "전당등록을 불러옵니다$"
 
 Route111_Text_1A0F93:: @ 81A0F93
-	.string "The sandstorm is vicious.\n"
-	.string "It's impossible to keep going.$"
+	.string "사막의 모래바람이 심해서\n"
+	.string "앞으로 갈 수 없어!$"
 
 Text_NoRegisteredItem: @ 81A0FCC
-	.string "An item in the BAG can be registered\n"
-	.string "on SELECT for convenience.$"
+	.string "가방에 들어 있는 도구를\n"
+	.string "편리 버튼에 등록할 수 있습니다$"
 
 LittlerootTown_BrendansHouse_2F_Text_1A100C:: @ 81A100C
 LittlerootTown_MaysHouse_2F_Text_1A100C:: @ 81A100C
-	.string "There's an e-mail from POKéMON TRAINER\n"
-	.string "SCHOOL.\p"
-	.string "... ... ... ... ... ...\p"
-	.string "A POKéMON may learn up to four moves.\p"
-	.string "A TRAINER's expertise is tested on the\n"
-	.string "move sets chosen for POKéMON.\p"
-	.string "... ... ... ... ... ...$"
+	.string "트레이너스쿨에서 온 메일이다!\p"
+	.string "...... ...... ......\p"
+	.string "“포켓몬이\n"
+	.string "  배울 수 있는 기술은 4개!\p"
+	.string "  어떤 기술을 배우게 하는가로\n"
+	.string "  트레이너의 실력이\l"
+	.string "  시험받게 됩니다!”\p"
+	.string "...... ...... ......$"
 
 LittlerootTown_BrendansHouse_2F_Text_1A10D6:: @ 81A10D6
 LittlerootTown_MaysHouse_2F_Text_1A10D6:: @ 81A10D6
-	.string "{PLAYER} booted up the PC.$"
+	.string "{PLAYER}{K_EUNNEUN} PC\n"
+	.string "전원을 켰다!$"
 
 FallarborTown_ContestLobby_Text_1A10EB:: @ 81A10EB
-	.string "The link was canceled.$"
+	.string "통신이 취소되었습니다$"
 
 MossdeepCity_StevensHouse_Text_1A1102:: @ 81A1102
 RustboroCity_DevonCorp_2F_Text_1A1102:: @ 81A1102
-	.string "Want to give a nickname to the\n"
-	.string "{STR_VAR_2} you received?$"
+	.string "받은 {STR_VAR_2}에게\n"
+	.string "닉네임을 붙이겠습니까?$"
 
 fieldPoisonText_PokemonFainted:: @ 81A1132
-	.string "{STR_VAR_1} fainted...\p$"
+	.string "{STR_VAR_1}{K_EUNNEUN}\n"
+	.string "기절했다\p$"
+	// §いはｎ
+	// ちからつきたｐ
 
 UnknownString_81A1141: @ 81A1141
-	.string "{PLAYER} is out of useable POKéMON!\p"
-	.string "{PLAYER} whited out!$"
+	.string "{PLAYER}에게는 이제\n"
+	.string "싸울 수 있는 포켓몬이 없다!\p"
+	.string "{PLAYER}{K_EUNNEUN}\n"
+	.string "눈 앞이 깜깜해졌다!$"
 
 SlateportCity_Text_1A116E:: @ 81A116E
-	.string "Do you know the TM SECRET POWER?\p"
-	.string "Our group, we love the TM SECRET\n"
-	.string "POWER.\p"
-	.string "One of our members will give it to you.\n"
-	.string "Come back and show me if you get it.\p"
-	.string "We'll accept you as a member and sell\n"
-	.string "you good stuff in secrecy.$"
+	.string "“비밀의힘”이라고 하는\n"
+	.string "기술머신 알아?\p"
+	.string "우리는 기술머신 “비밀의힘”을\n"
+	.string "정말 좋아해\p"
+	.string "우리 멤버가 어딘가에서 주고 있으니까\n"
+	.string "그걸 받은 뒤에 다시 와!\p"
+	.string "너도 우리의 멤버가 되면\n"
+	.string "비밀로 좋은 걸 살 수 있게 해 주지$"
 
 gText_NurseJoy_OkayIllTakeYourPokemon:: @ 81A1245
-	.string "Okay, I'll take your POKéMON for a\n"
-	.string "few seconds.$"
+	.string "그럼\n"
+	.string "맡아 드리겠습니다!$"
 
 gText_NurseJoy_Pokerus:: @ 81A1275
-	.string "Your POKéMON may be infected with\n"
-	.string "POKéRUS.\p"
-	.string "Little is known about the POKéRUS\n"
-	.string "except that they are microscopic life-\l"
-	.string "forms that attach to POKéMON.\p"
-	.string "While infected, POKéMON are said to\n"
-	.string "grow exceptionally well.$"
+	.string "맡겨 주신 포켓몬에\n"
+	.string "포켓러스가 붙어 있는 것 같습니다\p"
+	.string "자세한 것은 알 수 없지만\n"
+	.string "포켓러스는 포켓몬에 붙는\l"
+	.string "작은 생명체라고 합니다\p"
+	.string "이것이 붙어 있는 동안\n"
+	.string "포켓몬이 잘 큰다고 합니다$"
 
 	.include "data/text/surf.inc"
 
 SealedChamber_InnerRoom_Text_1A138B:: @ 81A138B
-	.string "It sounded as if a door opened\n"
-	.string "somewhere far away.$"
+	.string "어딘가 멀리 있는 문이\n"
+	.string "열리는 듯한 소리다...$"
 
 AncientTomb_Text_1A13BE:: @ 81A13BE
 DesertRuins_Text_1A13BE:: @ 81A13BE
 IslandCave_Text_1A13BE:: @ 81A13BE
 SealedChamber_OuterRoom_Text_1A13BE:: @ 81A13BE
-	.string "There is a big hole in the wall.$"
+	.string "벽에 큰 구멍이 있다!$"
 
 OldaleTown_PokemonCenter_2F_Text_1A13DF:: @ 81A13DF
-	.string "I'm terribly sorry. The COLOSSEUM\n"
-	.string "is undergoing adjustments.$"
+	.string "죄송합니다\n"
+	.string "지금 이쪽의 콜로세움은\l"
+	.string "조정 중입니다$"
 
 OldaleTown_PokemonCenter_2F_Text_1A141C:: @ 81A141C
-	.string "I'm terribly sorry. The TRADE CENTER\n"
-	.string "is undergoing inspections.$"
+	.string "죄송합니다\n"
+	.string "지금 이쪽의 트레이드센터는\l"
+	.string "점검 중입니다$"
 
 OldaleTown_PokemonCenter_2F_Text_1A145C:: @ 81A145C
-	.string "I'm terribly sorry. The RECORD CORNER\n"
-	.string "is under preparation.$"
+	.string "죄송합니다\n"
+	.string "지금 이쪽의 레코드코너는\l"
+	.string "준비 중입니다$"
 
 FallarborTown_House1_Text_1A1498:: @ 81A1498
-	.string "{PLAYER} handed over the\n"
-	.string "{STR_VAR_1}.$"
+	.string "{PLAYER}{K_EUNNEUN}\n"
+	.string "{STR_VAR_1}{K_EULREUL} 건넸다!$"
 
 Event_NoRegisteredItem:: @ 81A14AF
 	msgbox Text_NoRegisteredItem, MSGBOX_SIGN
@@ -1591,7 +1603,7 @@ S_RepelWoreOff:: @ 81C33E6
 	end
 
 Text_RepelWoreOff: @ 81C33EF
-	.string "REPEL's effect wore off...$"
+	.string "스프레이의 효과가 사라졌다$"
 
 	.include "data/scripts/safari_zone.inc"
 	.include "data/text/safari_zone.inc"
