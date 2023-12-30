@@ -1,79 +1,79 @@
 gAbilityNames:: @ 81FA248
 	.string "-------$", 13
-	.string "STENCH$", 13
-	.string "DRIZZLE$", 13
-	.string "SPEED BOOST$", 13
-	.string "BATTLE ARMOR$", 13
-	.string "STURDY$", 13
-	.string "DAMP$", 13
-	.string "LIMBER$", 13
-	.string "SAND VEIL$", 13
-	.string "STATIC$", 13
-	.string "VOLT ABSORB$", 13
-	.string "WATER ABSORB$", 13
-	.string "OBLIVIOUS$", 13
-	.string "CLOUD NINE$", 13
-	.string "COMPOUNDEYES$", 13
-	.string "INSOMNIA$", 13
-	.string "COLOR CHANGE$", 13
-	.string "IMMUNITY$", 13
-	.string "FLASH FIRE$", 13
-	.string "SHIELD DUST$", 13
-	.string "OWN TEMPO$", 13
-	.string "SUCTION CUPS$", 13
-	.string "INTIMIDATE$", 13
-	.string "SHADOW TAG$", 13
-	.string "ROUGH SKIN$", 13
-	.string "WONDER GUARD$", 13
-	.string "LEVITATE$", 13
-	.string "EFFECT SPORE$", 13
-	.string "SYNCHRONIZE$", 13
-	.string "CLEAR BODY$", 13
-	.string "NATURAL CURE$", 13
-	.string "LIGHTNINGROD$", 13
-	.string "SERENE GRACE$", 13
-	.string "SWIFT SWIM$", 13
-	.string "CHLOROPHYLL$", 13
-	.string "ILLUMINATE$", 13
-	.string "TRACE$", 13
-	.string "HUGE POWER$", 13
-	.string "POISON POINT$", 13
-	.string "INNER FOCUS$", 13
-	.string "MAGMA ARMOR$", 13
-	.string "WATER VEIL$", 13
-	.string "MAGNET PULL$", 13
-	.string "SOUNDPROOF$", 13
-	.string "RAIN DISH$", 13
-	.string "SAND STREAM$", 13
-	.string "PRESSURE$", 13
-	.string "THICK FAT$", 13
-	.string "EARLY BIRD$", 13
-	.string "FLAME BODY$", 13
-	.string "RUN AWAY$", 13
-	.string "KEEN EYE$", 13
-	.string "HYPER CUTTER$", 13
-	.string "PICKUP$", 13
-	.string "TRUANT$", 13
-	.string "HUSTLE$", 13
-	.string "CUTE CHARM$", 13
-	.string "PLUS$", 13
-	.string "MINUS$", 13
-	.string "FORECAST$", 13
-	.string "STICKY HOLD$", 13
-	.string "SHED SKIN$", 13
-	.string "GUTS$", 13
-	.string "MARVEL SCALE$", 13
-	.string "LIQUID OOZE$", 13
-	.string "OVERGROW$", 13
-	.string "BLAZE$", 13
-	.string "TORRENT$", 13
-	.string "SWARM$", 13
-	.string "ROCK HEAD$", 13
-	.string "DROUGHT$", 13
-	.string "ARENA TRAP$", 13
-	.string "VITAL SPIRIT$", 13
-	.string "WHITE SMOKE$", 13
-	.string "PURE POWER$", 13
-	.string "SHELL ARMOR$", 13
-	.string "CACOPHONY$", 13
-	.string "AIR LOCK$", 13
+	.string "악취$", 13
+	.string "잔비$", 13
+	.string "가속$", 13
+	.string "전투무장$", 13
+	.string "옹골참$", 13
+	.string "습기$", 13
+	.string "유연$", 13
+	.string "모래숨기$", 13
+	.string "정전기$", 13
+	.string "축전$", 13
+	.string "저수$", 13
+	.string "둔감$", 13
+	.string "날씨부정$", 13
+	.string "복안$", 13
+	.string "불면$", 13
+	.string "변색$", 13
+	.string "면역$", 13
+	.string "타오르는불꽃$", 13
+	.string "인분$", 13
+	.string "마이페이스$", 13
+	.string "흡반$", 13
+	.string "위협$", 13
+	.string "그림자밟기$", 13
+	.string "까칠한피부$", 13
+	.string "불가사의부적$", 13
+	.string "부유$", 13
+	.string "포자$", 13
+	.string "싱크로$", 13
+	.string "클리어바디$", 13
+	.string "자연회복$", 13
+	.string "피뢰침$", 13
+	.string "하늘의은총$", 13
+	.string "쓱쓱$", 13
+	.string "엽록소$", 13
+	.string "발광$", 13
+	.string "트레이스$", 13
+	.string "천하장사$", 13
+	.string "독가시$", 13
+	.string "정신력$", 13
+	.string "마그마의무장$", 13
+	.string "수의베일$", 13
+	.string "자력$", 13
+	.string "방음$", 13
+	.string "젖은접시$", 13
+	.string "모래날림$", 13
+	.string "프레셔$", 13
+	.string "두꺼운지방$", 13
+	.string "일찍기상$", 13
+	.string "불꽃몸$", 13
+	.string "도주$", 13
+	.string "날카로운눈$", 13
+	.string "괴력집게$", 13
+	.string "픽업$", 13
+	.string "게으름$", 13
+	.string "의욕$", 13
+	.string "헤롱헤롱바디$", 13
+	.string "플러스$", 13
+	.string "마이너스$", 13
+	.string "기분파$", 13
+	.string "점착$", 13
+	.string "탈피$", 13
+	.string "근성$", 13
+	.string "이상한비늘$", 13
+	.string "해감액$", 13
+	.string "심록$", 13
+	.string "맹화$", 13
+	.string "급류$", 13
+	.string "벌레의알림$", 13
+	.string "돌머리$", 13
+	.string "가뭄$", 13
+	.string "개미지옥$", 13
+	.string "의기양양$", 13
+	.string "하얀연기$", 13
+	.string "순수한힘$", 13
+	.string "조가비갑옷$", 13
+	.string "소음$", 13
+	.string "에어록$", 13

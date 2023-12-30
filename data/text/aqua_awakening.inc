@@ -1,96 +1,165 @@
 UnknownString_81B41B8: @ 81B41B8
-	.string "ARCHIE: Hold it right there.$"
+	.string "아강: ...거기 멈춰라!$"
+	// アオギリ『……まちたまえ!
 
 UnknownString_81B41D5: @ 81B41D5
-	.string "ARCHIE: Fufufu...\n"
-	.string "So it was you, after all.$"
+	.string "아강: 후후후...\n"
+	.string "역시 너였던 건가$"
+	// アオギリ『ふふふ……ｎ
+	// やはり きみ だったか
 
 UnknownString_81B4201: @ 81B4201
-	.string "ARCHIE: Behold!\p"
-	.string "See how beautiful it is, the sleeping\n"
-	.string "form of the ancient POKéMON KYOGRE!\p"
-	.string "I have waited so long for this day to\n"
-	.string "come...$"
+	.string "아강: 어떠냐 봐라!\p"
+	.string "초 고대포켓몬 가이오가가\n"
+	.string "조용히 잠들어 있는 이 아름다운 모습을!\p"
+	.string "난 이 날이 오기만을\n"
+	.string "오랫동안 기다려왔다...$"
+	// アオギリ『どうだ みたまえ!ｐ
+	// ちょう こだいポケモン カイオ-ガがｎ
+	// しずかに ねむる うつくしい すがたを!ｐ
+	// わたしは この ひが くるのをｎ
+	// ながい あいだ まっていた……
 
 UnknownString_81B4289: @ 81B4289
-	.string "ARCHIE: It surprises me, how you've\n"
-	.string "managed to chase me here.\p"
-	.string "But that's all over now.\p"
-	.string "For the realization of my dream,\n"
-	.string "you must disappear now!$"
+	.string "아강: 그건 그렇고 설마 네가\n"
+	.string "여기까지 왔을 줄이야!\p"
+	.string "하지만 그것도 끝이다\n"
+	.string "내 목적 달성을 위해\l"
+	.string "너는 여기서 사라져 줘야겠다!$"
+	// アオギリ『それにしても まさか きみがｎ
+	// ここまで くいついて くるとはな!ｐ
+	// だが それも もう おわりｎ
+	// わたしの もくてき たっせいの ためｌ
+	// きみには ここで きえてもらう!
 
 UnknownString_81B4319: @ 81B4319
-	.string "I...\n"
-	.string "I lost again?$"
+	.string "이 내가...\n"
+	.string "또다시 질 줄이야...$"
+	// この わたしが……ｎ
+	// またしても まけるとは……
 
 UnknownString_81B432C: @ 81B432C
-	.string "ARCHIE: Fufufu...\p"
-	.string "I commend you. I must recognize that\n"
-	.string "you are truly gifted.\p"
-	.string "But!\n"
-	.string "I have this in my possession!\p"
-	.string "With this RED ORB, I can make KYOGRE...$"
+	.string "아강: 후후후...\p"
+	.string "역시나라고 해야 하나...\n"
+	.string "너의 그 힘은 인정하마!\p"
+	.string "하지만...!\n"
+	.string "내게는 이것이 있다!\p"
+	.string "이 주홍구슬이 있으면\n"
+	.string "가이오가를...$"
+	// アオギリ『フフフ……ｐ
+	// さすが というべきか……ｎ
+	// きみの その ちからは みとめよう!ｐ
+	// だが……!ｎ
+	// わたしには これが ある!ｐ
+	// この べにいろのたまが あればｎ
+	// カイオ-ガを……
 
 UnknownString_81B43C4: @ 81B43C4
-	.string "The RED ORB suddenly began shining\n"
-	.string "by itself!$"
+	.string "주홍구슬이...\n"
+	.string "멋대로 빛나기 시작했다...!?$"
+	// べにいろのたまが……ｎ
+	// かってに かがやき はじめた……!?
 
 UnknownString_81B43F2: @ 81B43F2
-	.string "ARCHIE: What?!\p"
-	.string "I didn't do anything.\n"
-	.string "Why did the RED ORB...\p"
-	.string "Where did KYOGRE go?$"
+	.string "아강: ...!?\p"
+	.string "나는 아무것도 하지 않았는데\n"
+	.string "어째서 주홍구슬이...?\p"
+	.string "가이오가는 어디로 사라졌지?$"
+	// アオギリ『……!?ｐ
+	// わたしは なにも していないのにｎ
+	// なぜ べにいろのたまが……?ｐ
+	// カイオ-ガは どこへ きえた?
 
 UnknownString_81B4443: @ 81B4443
-	.string "ARCHIE: Hm? It's a message from our\n"
-	.string "members outside...$"
+	.string "아강: 밖에 있는\n"
+	.string "단원한테서로군$"
+	// アオギリ『そとに いるｎ
+	// だんいん からの れんらくか
 
 UnknownString_81B447A: @ 81B447A
-	.string "ARCHIE: Yes, what is it?\p"
-	.string "Hm...\n"
-	.string "It's raining heavily?\p"
-	.string "Good... That should have happened.\n"
-	.string "That is why we awakened KYOGRE,\l"
-	.string "to realize TEAM AQUA's vision of\l"
-	.string "expanding the sea.\p"
-	.string "What?!\p"
-	.string "It's raining far harder than we\n"
-	.string "envisioned? You're in danger?\p"
-	.string "That can't be...\n"
-	.string "That's just not possible...\p"
-	.string "Hold your position and monitor the\n"
-	.string "situation!$"
+	.string "아강: 무슨 일이냐...?\p"
+	.string "흠...\n"
+	.string "폭우가 내리고 있다고...\p"
+	.string "그렇겠지... 그것이야말로\n"
+	.string "우리들 아쿠아단의 목적\l"
+	.string "바다를 넓히기 위해 가이오가를\l"
+	.string "깨운 이유니까 말이다\p"
+	.string "뭐라고!\n"
+	.string "예상한 것 이상의 폭우라서\l"
+	.string "이대로라면 우리들도 위험하다고?\p"
+	.string "말도 안 돼...\n"
+	.string "그럴 리가 없는데...\p"
+	.string "어쨌든 상황을 보고 있어라!$"
+	// アオギリ『どうした……?ｐ
+	// フム……ｎ
+	// おおあめが ふっている……ｐ
+	// そうだろう…… それこそがｎ
+	// われわれ アクアだんの もくてきｌ
+	// うみを ふやすために カイオ-ガをｌ
+	// めざめさせた りゆう なのだからなｐ
+	// なんだと!ｎ
+	// よそう いじょうの あめで このままではｌ
+	// じぶんたちも あぶない だと!?ｐ
+	// そんな ばかな……ｎ
+	// そんなこと ありえない はずだ……ｐ
+	// とにかく ようすを みているんだ!
 
 UnknownString_81B45C6: @ 81B45C6
-	.string "ARCHIE: There's something wrong...\p"
-	.string "The RED ORB is supposed to awaken\n"
-	.string "and control KYOGRE...\p"
-	.string "But... Why?\n"
-	.string "Why did KYOGRE disappear?\p"
-	.string "Why?!$"
+	.string "아강: 이상해...\p"
+	.string "주홍구슬로 가이오가가 눈을 뜨고\n"
+	.string "내가 컨트롤할 수 있어야 할 텐데...\p"
+	.string "그런데... 어째서...\n"
+	.string "가이오가는 여기서 없어진 거지!?\p"
+	.string "어째서냐!?$"
+	// アオギリ『おかしい……ｐ
+	// べにいろのたまで カイオ-ガが めざめるｎ
+	// そして コントロ-ル できるはず……ｐ
+	// なのに…… どうして……ｎ
+	// カイオ-ガは ここから いなくなったッ!?ｐ
+	// なぜなんだッ!?
 
 UnknownString_81B464D: @ 81B464D
-	.string "MAXIE: What have you wrought?\p"
-	.string "ARCHIE... You've finally awoken KYOGRE,\n"
-	.string "haven't you?\p"
-	.string "What will happen to the world if this\n"
-	.string "downpour continues for all eternity?\p"
-	.string "The world's landmass will drown in\n"
-	.string "the deepening sea...$"
+	.string "마적: 무슨 일이란 말인가...\p"
+	.string "아강... 넌 결국\n"
+	.string "가이오가를 눈 뜨게 해버린 건가!\p"
+	.string "이대로 영원히\n"
+	.string "폭우가 쏟아져 내린다면\l"
+	.string "세계는 대체 어떻게 되겠는가!\p"
+	.string "모든 대지가\n"
+	.string "물 깊숙히 가라앉게 될 거다...$"
+	// マツブサ『なんてことだ……ｐ
+	// アオギリ…… きみは とうとうｎ
+	// カイオ-ガを めざめさせて しまったな!ｐ
+	// このまま えいえんにｎ
+	// おおあめが ふりつづけたらｌ
+	// せかいは いったい どうなる!ｐ
+	// すべての だいちはｎ
+	// みずの そこに しずむぞ……
 
 UnknownString_81B4723: @ 81B4723
-	.string "ARCHIE: What are you saying?\p"
-	.string "The RED ORB should let me control\n"
-	.string "KYOGRE...\l"
-	.string "That can't be possible...$"
+	.string "아강: 뭐라고...?\p"
+	.string "주홍구슬이 있으면\n"
+	.string "가이오가를 컨트롤할 수 있을 텐데...\l"
+	.string "말도 안 돼...$"
+	// アオギリ『なんだと……?ｐ
+	// べにいろのたまが あればｎ
+	// カイオ-ガを コントロ-ル できるはず……ｌ
+	// そんな ことが……
 
 UnknownString_81B4786: @ 81B4786
-	.string "MAXIE: We don't have the time to\n"
-	.string "argue about it here!\p"
-	.string "Get outside and see for yourself!\p"
-	.string "See if what you've wrought is the\n"
-	.string "world that you desired!$"
+	.string "마적: 어쨌든 지금은 여기서\n"
+	.string "말다툼하고 있을 때가 아니다!\p"
+	.string "밖으로 나가서 확인하도록 해라!\n"
+	.string "눈앞에 펼쳐진 게\l"
+	.string "네가 원했던 세계인지 말이다$"
+	// マツブサ『とにかく いまは ここでｎ
+	// いいあらそいを している ひまはない!ｐ
+	// そとに でて たしかめると いい!ｎ
+	// めのまえに ひろがるのがｌ
+	// きみの のぞんだ せかいか どうかを
 
 UnknownString_81B4818: @ 81B4818
-	.string "MAXIE: {PLAYER}{KUN}, come on, you have\n"
-	.string "to get out of here, too!$"
+	.string "마적: {PLAYER} 너도\n"
+	.string "서둘러 밖으로 나가거라!$"
+	// マツブサ『§あ§おもｎ
+	// はやく そとに でるんだ!
