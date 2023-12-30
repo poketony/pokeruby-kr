@@ -21,6 +21,17 @@ enum
     FLAG_SET_CAUGHT
 };
 
+enum
+{
+    NAME_1 = 1,
+    NAME_2,
+    NAME_3,
+    NAME_4,
+    NAME_5,
+    NAME_6,
+    NAME_7,
+};
+
 s8 GetSetPokedexFlag(u16, u8);
 
 u16 GetNationalPokedexCount(u8);
@@ -32,17 +43,16 @@ extern bool8 gUnusedPokedexU8;
 
 struct PokedexEntry
 {
-    /*0x00*/ u8 categoryName[12];
-    /*0x0C*/ u16 height; //in decimeters
-    /*0x0E*/ u16 weight; //in hectograms
-    /*0x10*/ const u8 *descriptionPage1;
-    /*0x14*/ const u8 *descriptionPage2;
-    /*0x18*/ u16 unused;
-    /*0x1A*/ u16 pokemonScale;
-    /*0x1C*/ u16 pokemonOffset;
-    /*0x1E*/ u16 trainerScale;
-    /*0x20*/ u16 trainerOffset;
-};  /*size = 0x24*/
+    u8 categoryName[14];
+    u16 height; //in decimeters
+    u16 weight; //in hectograms
+    const u8 *description;
+    u16 unused;
+    u16 pokemonScale;
+    u16 pokemonOffset;
+    u16 trainerScale;
+    u16 trainerOffset;
+};
 
 extern const struct PokedexEntry gPokedexEntries[];
 

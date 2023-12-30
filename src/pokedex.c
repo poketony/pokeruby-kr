@@ -6,6 +6,8 @@
 #include "decompress.h"
 #include "event_data.h"
 #include "graphics.h"
+#include "text.h"
+#include "korean.h"
 #include "m4a.h"
 #include "main.h"
 #include "menu.h"
@@ -64,7 +66,6 @@ struct PokedexView
     u8 currentPageBackup;
     u8 isSearchResults:1;
     u8 selectedScreen;
-    u8 descriptionPageNum;
     u8 screenSwitchState;
     u8 menuIsOpen;
     u16 menuCursorPos;
@@ -81,10 +82,10 @@ enum
 
 enum
 {
-    PAGE_SCREEN,
     AREA_SCREEN,
     CRY_SCREEN,
-    SIZE_SCREEN
+    SIZE_SCREEN,
+    BACK_SCREEN,
 };
 
 struct SearchOptionText
@@ -1039,18 +1040,16 @@ static const struct SpriteTemplate sMonOrTrainerPicSpriteTemplate =
 };
 
 // First character in range followed by number of characters in range for upper and lowercase
-static const u8 sLetterSearchRanges[][4] =
+static const u8 sLetterSearchRanges[][5] =
 {
-    {0,      0, 0,      0},
-    {CHAR_A, 3, CHAR_a, 3},
-    {CHAR_D, 3, CHAR_d, 3},
-    {CHAR_G, 3, CHAR_g, 3},
-    {CHAR_J, 3, CHAR_j, 3},
-    {CHAR_M, 3, CHAR_m, 3},
-    {CHAR_P, 3, CHAR_p, 3},
-    {CHAR_S, 3, CHAR_s, 3},
-    {CHAR_V, 3, CHAR_v, 3},
-    {CHAR_Y, 2, CHAR_y, 2},
+    {},
+    [NAME_1] = _("가닢"),
+    [NAME_2] = _("다링"),
+    [NAME_3] = _("마삥"),
+    [NAME_4] = _("사잎"),
+    [NAME_5] = _("자칭"),
+    [NAME_6] = _("카팅"),
+    [NAME_7] = _("파힝"),
 };
 static const struct SearchMenuTopBarItem sSearchMenuTopBarItems[] =
 {
@@ -1127,15 +1126,13 @@ static const struct SearchOptionText sDexOrderOptions[] =
 static const struct SearchOptionText sDexSearchNameOptions[] =
 {
     {DexText_Terminator5, DexText_DontSpecify},
-    {DexText_Terminator5, DexText_ABC},
-    {DexText_Terminator5, DexText_DEF},
-    {DexText_Terminator5, DexText_GHI},
-    {DexText_Terminator5, DexText_JKL},
-    {DexText_Terminator5, DexText_MNO},
-    {DexText_Terminator5, DexText_PQR},
-    {DexText_Terminator5, DexText_STU},
-    {DexText_Terminator5, DexText_VWX},
-    {DexText_Terminator5, DexText_YZ},
+    [NAME_1] = {DexText_Terminator5, DexText_Alpha1},
+    [NAME_2] = {DexText_Terminator5, DexText_Alpha2},
+    [NAME_3] = {DexText_Terminator5, DexText_Alpha3},
+    [NAME_4] = {DexText_Terminator5, DexText_Alpha4},
+    [NAME_5] = {DexText_Terminator5, DexText_Alpha5},
+    [NAME_6] = {DexText_Terminator5, DexText_Alpha6},
+    [NAME_7] = {DexText_Terminator5, DexText_Alpha7},
     {NULL, NULL},
 };
 static const struct SearchOptionText sDexSearchColorOptions[] =
@@ -1180,7 +1177,7 @@ static const u8 sOrderOptions[] = {0, 1, 2, 3, 4, 5};
 static const u8 sDexSearchTypeIds[] = {0xFF, 0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17};
 static const struct SearchOption sSearchOptions[] =
 {
-    { sDexSearchNameOptions,  6,  7, 10},
+    { sDexSearchNameOptions,  6,  7, 7},
     { sDexSearchColorOptions,  8,  9, 11},
     { sDexSearchTypeOptions, 10, 11, 18},
     { sDexSearchTypeOptions, 12, 13, 18},
@@ -1189,6 +1186,9 @@ static const struct SearchOption sSearchOptions[] =
 };
 static const u8 gUnknown_083B5AAC[] = _("{STR_VAR_1}{CLEAR_TO 43}");
 static const u8 gUnknown_083B5AB2[] = _("{STR_VAR_1}{CLEAR_TO 96}");
+
+static const u8 sTextHeight[] = _("키");
+static const u8 sTextWeight[] = _("몸무게");
 
 static void MainCB(void);
 static void Task_PokedexShowMainScreen(u8 taskId);
@@ -1250,14 +1250,12 @@ static void sub_8090750(u8);
 static void sub_8090A3C(u8);
 static void sub_8090B8C(u8);
 static void sub_8090C28(struct Sprite *);
-static void sub_8090C68(void);
 static void ResetOtherVideoRegisters(u16);
 static void PrintEntryScreenDexNum(u16 order, u8, u8);
 static u8 PrintEntryScreenSpeciesName(u16 num, u8, u8);
 static u8 PrintCryScreenSpeciesName(u16 num, u8, u8, u8);
 static void UnusedPrintMonName(const u8 *name, u8, u8);
-static void sub_8091458(u16 height, u8 i, u8 i1);
-static void sub_8091564(u16 weight, u8 i, u8 i1);
+static void PrintDecimalNum(u16 value, u8 left, u8 top);
 void PrintFootprint(u16 num, u16 b, u16 c);
 static void sub_80C0DC0(u16 a, u16 b);
 static u16 GetNextPosition(u8 direction, u16 position, u16 min, u16 max);
@@ -1421,8 +1419,7 @@ void CB2_InitPokedex(void)
         gPokedexView->dexOrder = gSaveBlock2.pokedex.order;
         gPokedexView->selectedPokemon = sLastSelectedPokemon;
         gPokedexView->pokeBallRotation = sPokeBallRotation;
-        gPokedexView->selectedScreen = PAGE_SCREEN;
-        gPokedexView->descriptionPageNum = 0;
+        gPokedexView->selectedScreen = AREA_SCREEN;
         if (!IsNationalPokedexEnabled())
         {
             gPokedexView->seenCount = GetHoennPokedexCount(0);
@@ -2892,7 +2889,6 @@ static void Task_InitPageScreenMultistep(u8 taskId)
             u16 r2;
 
             gPokedexView->currentPage = 1;
-            gPokedexView->descriptionPageNum = 0;
             gPokedexVBlankCB = gMain.vblankCallback;
             SetVBlankCallback(NULL);
             r2 = 0;
@@ -2928,19 +2924,28 @@ static void Task_InitPageScreenMultistep(u8 taskId)
             PrintEntryScreenDexNum(sPokedexListItem->dexNum, 0xD, 3);
         PrintEntryScreenSpeciesName(sPokedexListItem->dexNum, 0x10, 3);
         Menu_PrintText(gDexText_UnknownPoke, CATEGORY_LEFT, 5);
-        Menu_PrintText(gDexText_UnknownHeight, 16, 7);
-        Menu_PrintText(gDexText_UnknownWeight, 16, 9);
+        Menu_PrintText(sTextHeight, 12, 7);
+        Menu_PrintText(sTextWeight, 12, 9);
+        Menu_PrintText(gDexText_HeightOf, 21, 7);
+        Menu_PrintText(gDexText_WeightOf, 21, 9);
+
         if (sPokedexListItem->owned)
         {
             UnusedPrintMonName(gPokedexEntries[sPokedexListItem->dexNum].categoryName, CATEGORY_LEFT, 5);
-            sub_8091458(gPokedexEntries[sPokedexListItem->dexNum].height, 16, 7);
-            sub_8091564(gPokedexEntries[sPokedexListItem->dexNum].weight, 16, 9);
-            Menu_PrintText(gPokedexEntries[sPokedexListItem->dexNum].descriptionPage1, 2, 13);
+            PrintDecimalNum(gPokedexEntries[sPokedexListItem->dexNum].height, 21, 7);
+            PrintDecimalNum(gPokedexEntries[sPokedexListItem->dexNum].weight, 21, 9);
+            ApplyKoreanFontType(KOREAN_FONT_TYPE_8PT);
+            Menu_PrintText(gPokedexEntries[sPokedexListItem->dexNum].description, 3, 13);
+            RestoreKoreanFontType();
             sub_80C0DC0(14, 0x3FC);
         }
         else
         {
-            Menu_PrintText(gUnknown_083A05F8, 2, 13);
+            MenuPrint_RightAligned(gDexText_UnknownHeight, 21, 7);
+            MenuPrint_RightAligned(gDexText_UnknownWeight, 21, 9);
+            ApplyKoreanFontType(KOREAN_FONT_TYPE_8PT);
+            Menu_PrintText(gUnknown_083A05F8, 3, 13);
+            RestoreKoreanFontType();
             LoadPalette(gPlttBufferUnfaded + 1, 0x31, 0x1E);
         }
         gMain.state++;
@@ -3025,9 +3030,6 @@ static void Task_PageScreenProcessInput(u8 taskId)
     {
         switch (gPokedexView->selectedScreen)
         {
-        case PAGE_SCREEN:
-            sub_8090C68();
-            break;
         case AREA_SCREEN:
             BeginNormalPaletteFade(0xFFFFFFEB, 0, 0, 16, RGB(0, 0, 0));
             gTasks[taskId].func = Task_InitAreaScreenMultistep;
@@ -3049,6 +3051,11 @@ static void Task_PageScreenProcessInput(u8 taskId)
                 gTasks[taskId].func = Task_InitSizeScreenMultistep;
                 PlaySE(SE_PIN);
             }
+            break;
+        case BACK_SCREEN:
+            BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB(0, 0, 0));
+            gTasks[taskId].func = Task_ClosePageScreen;
+            PlaySE(SE_PC_OFF);
             break;
         }
         return;
@@ -3103,7 +3110,7 @@ static void Task_InitAreaScreenMultistep(u8 taskId)
         break;
     case 1:
         LoadScreenSelectBarSubmenu(0xD);
-        sub_8090644(1, 0xD);
+        sub_8090644(0, 0xD);
         LoadPokedexBgPalette();
         REG_BG1CNT = BGCNT_PRIORITY(0) | BGCNT_CHARBASE(0) | BGCNT_SCREENBASE(13) | BGCNT_16COLOR | BGCNT_TXT256x256;
         gMain.state++;
@@ -3165,7 +3172,7 @@ static void Task_InitCryScreenMultistep(u8 taskId)
         break;
     case 2:
         LoadScreenSelectBarSubmenu(0xD);
-        sub_8090644(2, 0xD);
+        sub_8090644(1, 0xD);
         LoadPokedexBgPalette();
         DmaClear16(3, (void *)(VRAM + 0xF800), 0x500);
         gMain.state++;
@@ -3177,8 +3184,10 @@ static void Task_InitCryScreenMultistep(u8 taskId)
         gMain.state++;
         break;
     case 4:
-        Menu_PrintText(gDexText_CryOf, 10, 4);
-        PrintCryScreenSpeciesName(sPokedexListItem->dexNum, 10, 6, 2);
+        ApplyKoreanFontType(KOREAN_FONT_TYPE_8PT);
+        PrintCryScreenSpeciesName(sPokedexListItem->dexNum, 10, 4, 2);
+        Menu_PrintText(gDexText_CryOf2, 10, 6);
+        RestoreKoreanFontType();
         gMain.state++;
         break;
     case 5:
@@ -3353,21 +3362,22 @@ static void Task_InitSizeScreenMultistep(u8 taskId)
         break;
     case 2:
         LoadScreenSelectBarSubmenu(0xD);
-        sub_8090644(3, 0xD);
+        sub_8090644(2, 0xD);
         LoadPokedexBgPalette();
         gMain.state++;
         break;
     case 3:
         {
-            // This only needs to be 25 chars long (31 in German).
-            u8 string[40];  //I hope this is the correct size
+            u8 string[64];
 
             Text_LoadWindowTemplate(&gWindowTemplate_81E702C);
             InitMenuWindow(&gWindowTemplate_81E702C);
             string[0] = EOS;
+
+            StringAppend(string, gSpeciesNames[NationalPokedexNumToSpecies(sPokedexListItem->dexNum)]);
             StringAppend(string, gDexText_SizeComparedTo);
-            StringAppend(string, gSaveBlock2.playerName);
-            MenuPrint_Centered(string, 3, 15, 0xC0);
+            StringExpandPlaceholders(gStringVar1, string);
+            MenuPrint_Centered(gStringVar1, 3, 15, 0xC0);
             gMain.state++;
         }
         break;
@@ -3467,300 +3477,53 @@ static void LoadScreenSelectBarSubmenu(u16 screenBase)
     DmaClear16(3, (void *)(VRAM + screenBase * 0x800 + 0xC0), 0x440);
 }
 
-#ifdef NONMATCHING
 static void HighlightScreenSelectBarItem(u8 a, u16 b)
 {
-    u8 i;   //r1
-    u8 j;   //r3
-    u32 r6;
-    register u8 r7;
+    u8 i, j;
+    u16 *ptr, pal;
 
     for (i = 0; i < 4; i++)
     {
-        r7 = i * 5 + 1;
-        r6 = 0x4000;
-
         if (i == a)
-            r6 = 0x2000;
-
-        for (j = 0; j < 5; j++)
+            pal = 0x2000;
+        else
+            pal = 0x4000;
+        
+        for (j = 0; j < 14; j++)
         {
-            u32 r0 = b * 0x800 + (r7 + j) * 2;
-            u8 *ptr;
-
-            ptr = (void *)VRAM;
-            *(u16 *)(ptr + r0) = (*(u16 *)(ptr + r0) & 0xFFF) | r6;
-            ptr = (void *)VRAM + 0x40;
-            *(u16 *)(ptr + r0) = (*(u16 *)(ptr + r0) & 0xFFF) | r6;
+            if (j < 7)
+                ptr = (u16 *)(0x6006802 + i * 0xE + j * 2);
+            else
+                ptr = (u16 *)(0x6006842 + i * 0xE + (j - 7) * 2);
+            
+            *ptr = (*ptr & 0x0FFF) | pal;
         }
     }
-    r6 = 0x4000;
-    for (j = 0; j < 5; j++)
-    {
-        u32 r0 = b * 0x800 + j * 2;
-        u8 *ptr;
-
-        ptr = (void *)VRAM + 0x32;
-        *(u16 *)(ptr + r0) = (*(u16 *)(ptr + r0) & 0xFFF) | r6;
-        ptr = (void *)VRAM + 0x72;
-        *(u16 *)(ptr + r0) = (*(u16 *)(ptr + r0) & 0xFFF) | r6;
-    }
 }
-#else
-NAKED
-static void HighlightScreenSelectBarItem(u8 a, u16 b)
-{
-    asm(".syntax unified\n\
-    push {r4-r7,lr}\n\
-    mov r7, r10\n\
-    mov r6, r9\n\
-    mov r5, r8\n\
-    push {r5-r7}\n\
-    lsls r0, 24\n\
-    lsrs r0, 24\n\
-    mov r10, r0\n\
-    lsls r1, 16\n\
-    lsrs r1, 16\n\
-    mov r9, r1\n\
-    movs r1, 0\n\
-_0809059C:\n\
-    lsls r0, r1, 2\n\
-    adds r0, r1\n\
-    adds r0, 0x1\n\
-    lsls r0, 24\n\
-    lsrs r7, r0, 24\n\
-    movs r6, 0x80\n\
-    lsls r6, 7\n\
-    cmp r1, r10\n\
-    bne _080905B2\n\
-    movs r6, 0x80\n\
-    lsls r6, 6\n\
-_080905B2:\n\
-    movs r3, 0\n\
-    mov r0, r9\n\
-    lsls r0, 11\n\
-    mov r12, r0\n\
-    adds r1, 0x1\n\
-    mov r8, r1\n\
-    mov r5, r12\n\
-    ldr r4, _08090634 @ =0x00000fff\n\
-_080905C2:\n\
-    adds r0, r7, r3\n\
-    lsls r0, 1\n\
-    adds r0, r5, r0\n\
-    movs r2, 0xC0\n\
-    lsls r2, 19\n\
-    adds r1, r0, r2\n\
-    ldrh r2, [r1]\n\
-    ands r2, r4\n\
-    orrs r2, r6\n\
-    strh r2, [r1]\n\
-    ldr r1, _08090638 @ =0x06000040\n\
-    adds r0, r1\n\
-    ldrh r2, [r0]\n\
-    ands r2, r4\n\
-    orrs r2, r6\n\
-    strh r2, [r0]\n\
-    adds r0, r3, 0x1\n\
-    lsls r0, 24\n\
-    lsrs r3, r0, 24\n\
-    cmp r3, 0x4\n\
-    bls _080905C2\n\
-    mov r2, r8\n\
-    lsls r0, r2, 24\n\
-    lsrs r1, r0, 24\n\
-    cmp r1, 0x3\n\
-    bls _0809059C\n\
-    movs r6, 0x80\n\
-    lsls r6, 7\n\
-    movs r3, 0\n\
-    mov r5, r12\n\
-    ldr r4, _08090634 @ =0x00000fff\n\
-_08090600:\n\
-    lsls r0, r3, 1\n\
-    adds r0, r5, r0\n\
-    ldr r2, _0809063C @ =0x06000032\n\
-    adds r1, r0, r2\n\
-    ldrh r2, [r1]\n\
-    ands r2, r4\n\
-    orrs r2, r6\n\
-    strh r2, [r1]\n\
-    ldr r1, _08090640 @ =0x06000072\n\
-    adds r0, r1\n\
-    ldrh r2, [r0]\n\
-    ands r2, r4\n\
-    orrs r2, r6\n\
-    strh r2, [r0]\n\
-    adds r0, r3, 0x1\n\
-    lsls r0, 24\n\
-    lsrs r3, r0, 24\n\
-    cmp r3, 0x4\n\
-    bls _08090600\n\
-    pop {r3-r5}\n\
-    mov r8, r3\n\
-    mov r9, r4\n\
-    mov r10, r5\n\
-    pop {r4-r7}\n\
-    pop {r0}\n\
-    bx r0\n\
-    .align 2, 0\n\
-_08090634: .4byte 0x00000fff\n\
-_08090638: .4byte 0x06000040\n\
-_0809063C: .4byte 0x06000032\n\
-_08090640: .4byte 0x06000072\n\
-    .syntax divided\n");
-}
-#endif
 
-//Nope, can't get this one to match, either.
-#ifdef NONMATCHING
 static void sub_8090644(u8 a, u16 b)
 {
-    u8 i;
-    u8 j;
+    u8 i, j;
+    u16 *ptr, pal;
 
     for (i = 0; i < 4; i++)
     {
-        u8 r8 = i * 5 + 1;
-        u32 r5;
-
-        if (i == a || i == 0)
-            r5 = 0x2000;
-        else if (a != 0)
-            r5 = 0x4000;
-
-        for (j = 0; j < 5; j++)
+        if (i == a || i == 3)
+            pal = 0x2000;
+        else
+            pal = 0x4000;
+        
+        for (j = 0; j < 14; j++)
         {
-            u16 (*vramData)[0x400];
-
-            vramData = (u16 (*)[])VRAM;
-            vramData[b][r8 + j] = (vramData[b][r8 + j] & 0xFFF) | r5;
-            vramData = (u16 (*)[])(VRAM + 0x40);
-            vramData[b][r8 + j] = (vramData[b][r8 + j] & 0xFFF) | r5;
+            if (j < 7)
+                ptr = (u16 *)(0x6006802 + i * 0xE + j * 2);
+            else
+                ptr = (u16 *)(0x6006842 + i * 0xE + (j - 7) * 2);
+            
+            *ptr = (*ptr & 0x0FFF) | pal;
         }
     }
-
-    for (j = 0; j < 5; j++)
-    {
-        u16 (*vramData)[0x400];
-
-        vramData = (u16 (*)[])(VRAM + 0x32);
-        vramData[b][j] = (vramData[b][j] & 0xFFF) | 0x4000;
-        vramData = (u16 (*)[])(VRAM + 0x72);
-        vramData[b][j] = (vramData[b][j] & 0xFFF) | 0x4000;
-    }
 }
-#else
-NAKED
-static void sub_8090644(u8 a, u16 b)
-{
-    asm(".syntax unified\n\
-    push {r4-r7,lr}\n\
-    mov r7, r10\n\
-    mov r6, r9\n\
-    mov r5, r8\n\
-    push {r5-r7}\n\
-    lsls r0, 24\n\
-    lsrs r0, 24\n\
-    mov r10, r0\n\
-    lsls r1, 16\n\
-    lsrs r1, 16\n\
-    mov r9, r1\n\
-    movs r1, 0\n\
-_0809065C:\n\
-    lsls r0, r1, 2\n\
-    adds r0, r1\n\
-    adds r0, 0x1\n\
-    lsls r0, 24\n\
-    lsrs r0, 24\n\
-    mov r8, r0\n\
-    cmp r1, r10\n\
-    beq _08090670\n\
-    cmp r1, 0\n\
-    bne _08090676\n\
-_08090670:\n\
-    movs r5, 0x80\n\
-    lsls r5, 6\n\
-    b _0809067A\n\
-_08090676:\n\
-    movs r5, 0x80\n\
-    lsls r5, 7\n\
-_0809067A:\n\
-    movs r3, 0\n\
-    mov r0, r9\n\
-    lsls r7, r0, 11\n\
-    adds r1, 0x1\n\
-    mov r12, r1\n\
-    adds r6, r7, 0\n\
-    ldr r4, _080906FC @ =0x00000fff\n\
-_08090688:\n\
-    mov r1, r8\n\
-    adds r0, r1, r3\n\
-    lsls r0, 1\n\
-    adds r0, r6, r0\n\
-    movs r2, 0xC0\n\
-    lsls r2, 19\n\
-    adds r1, r0, r2\n\
-    ldrh r2, [r1]\n\
-    ands r2, r4\n\
-    orrs r2, r5\n\
-    strh r2, [r1]\n\
-    ldr r1, _08090700 @ =0x06000040\n\
-    adds r0, r1\n\
-    ldrh r2, [r0]\n\
-    ands r2, r4\n\
-    orrs r2, r5\n\
-    strh r2, [r0]\n\
-    adds r0, r3, 0x1\n\
-    lsls r0, 24\n\
-    lsrs r3, r0, 24\n\
-    cmp r3, 0x4\n\
-    bls _08090688\n\
-    mov r2, r12\n\
-    lsls r0, r2, 24\n\
-    lsrs r1, r0, 24\n\
-    cmp r1, 0x3\n\
-    bls _0809065C\n\
-    movs r5, 0x80\n\
-    lsls r5, 7\n\
-    movs r3, 0\n\
-    adds r6, r7, 0\n\
-    ldr r4, _080906FC @ =0x00000fff\n\
-_080906C8:\n\
-    lsls r0, r3, 1\n\
-    adds r0, r6, r0\n\
-    ldr r2, _08090704 @ =0x06000032\n\
-    adds r1, r0, r2\n\
-    ldrh r2, [r1]\n\
-    ands r2, r4\n\
-    orrs r2, r5\n\
-    strh r2, [r1]\n\
-    ldr r1, _08090708 @ =0x06000072\n\
-    adds r0, r1\n\
-    ldrh r2, [r0]\n\
-    ands r2, r4\n\
-    orrs r2, r5\n\
-    strh r2, [r0]\n\
-    adds r0, r3, 0x1\n\
-    lsls r0, 24\n\
-    lsrs r3, r0, 24\n\
-    cmp r3, 0x4\n\
-    bls _080906C8\n\
-    pop {r3-r5}\n\
-    mov r8, r3\n\
-    mov r9, r4\n\
-    mov r10, r5\n\
-    pop {r4-r7}\n\
-    pop {r0}\n\
-    bx r0\n\
-    .align 2, 0\n\
-_080906FC: .4byte 0x00000fff\n\
-_08090700: .4byte 0x06000040\n\
-_08090704: .4byte 0x06000032\n\
-_08090708: .4byte 0x06000072\n\
-    .syntax divided\n");
-}
-#endif
 
 u8 sub_809070C(u16 dexNum, u32 b, u32 c)
 {
@@ -3822,12 +3585,16 @@ static void sub_8090750(u8 taskId)
             PrintEntryScreenDexNum(dexNum, 13, 3);
         PrintEntryScreenSpeciesName(dexNum, 16, 3);
         Menu_PrintText(gDexText_UnknownPoke, CATEGORY_LEFT, 5);
-        Menu_PrintText(gDexText_UnknownHeight, 16, 7);
-        Menu_PrintText(gDexText_UnknownWeight, 16, 9);
+        Menu_PrintText(sTextHeight, 12, 7);
+        Menu_PrintText(sTextWeight, 12, 9);
+        Menu_PrintText(gDexText_HeightOf, 21, 7);
+        Menu_PrintText(gDexText_WeightOf, 21, 9);
         UnusedPrintMonName(gPokedexEntries[dexNum].categoryName, CATEGORY_LEFT, 5);
-        sub_8091458(gPokedexEntries[dexNum].height, 16, 7);
-        sub_8091564(gPokedexEntries[dexNum].weight, 16, 9);
-        Menu_PrintText(gPokedexEntries[dexNum].descriptionPage1, 2, 13);
+        PrintDecimalNum(gPokedexEntries[dexNum].height, 21, 7);
+        PrintDecimalNum(gPokedexEntries[dexNum].weight, 21, 9);
+        ApplyKoreanFontType(KOREAN_FONT_TYPE_8PT);
+        Menu_PrintText(gPokedexEntries[dexNum].description, 3, 13);
+        RestoreKoreanFontType();
         sub_80C0DC0(14, 0x3FC);
         gTasks[taskId].data[0]++;
         break;
@@ -3861,34 +3628,14 @@ static void sub_8090750(u8 taskId)
 
 static void sub_8090A3C(u8 taskId)
 {
-    if (gMain.newKeys & B_BUTTON)
+    if (gMain.newKeys & (A_BUTTON | B_BUTTON))
     {
         BeginNormalPaletteFade(0xFFFC, 0, 0, 16, RGB(0, 0, 0));
         gSprites[gTasks[taskId].data[3]].callback = sub_8090C28;
         gTasks[taskId].func = sub_8090B8C;
         return;
     }
-    else if (gMain.newKeys & A_BUTTON)
-    {
-        if (gTasks[taskId].data[4] == 0)
-        {
-            u16 r4 = gTasks[taskId].data[1];
 
-            Menu_EraseWindowRect(2, 13, 27, 19);
-            Menu_PrintText(gPokedexEntries[r4].descriptionPage2, 2, 13);
-            (*(u16 *)(BG_VRAM + 0x7ACA))++;
-            (*(u16 *)(BG_VRAM + 0x7B0A))++;
-            gTasks[taskId].data[4] = 1;
-            PlaySE(SE_PIN);
-        }
-        else
-        {
-            BeginNormalPaletteFade(0xFFFC, 0, 0, 16, RGB(0, 0, 0));
-            gSprites[gTasks[taskId].data[3]].callback = sub_8090C28;
-            gTasks[taskId].func = sub_8090B8C;
-            return;
-        }
-    }
     gTasks[taskId].data[2]++;
     if (gTasks[taskId].data[2] & 0x10)
         LoadPalette(gPokedexMenu_Pal + 1, 0x51, 14);
@@ -3930,31 +3677,6 @@ static void sub_8090C28(struct Sprite *sprite)
         sprite->y += 1;
     if (sprite->y > 0x50)
         sprite->y -= 1;
-}
-
-static void sub_8090C68(void)
-{
-    if (sPokedexListItem->owned)
-    {
-        if (gPokedexView->descriptionPageNum == 0)
-        {
-            Menu_EraseWindowRect(2, 13, 27, 19);
-            Menu_PrintText(gPokedexEntries[sPokedexListItem->dexNum].descriptionPage2, 2, 13);
-            gPokedexView->descriptionPageNum = 1;
-            (*(u16 *)(BG_VRAM + 0x7ACA))++;
-            (*(u16 *)(BG_VRAM + 0x7B0A))++;
-            PlaySE(SE_PIN);
-        }
-        else
-        {
-            Menu_EraseWindowRect(2, 13, 27, 19);
-            Menu_PrintText(gPokedexEntries[sPokedexListItem->dexNum].descriptionPage1, 2, 13);
-            gPokedexView->descriptionPageNum = 0;
-            (*(u16 *)(BG_VRAM + 0x7ACA))--;
-            (*(u16 *)(BG_VRAM + 0x7B0A))--;
-            PlaySE(SE_PIN);
-        }
-    }
 }
 
 const u8 *GetPokemonCategory(u16 dexNum)
@@ -4213,6 +3935,7 @@ static u8 PrintCryScreenSpeciesName(u16 num, u8 b, u8 c, u8 d)
         break;
     }
     end[i] = EOS;
+    StringAppend(str, gDexText_CryOf1);
     Menu_PrintText(str, b, c);
     return i;
 }
@@ -4221,30 +3944,27 @@ static void UnusedPrintMonName(const u8 *name, u8 left, u8 top)
 {
     u8 str[32];
     u8 i;
-#if ENGLISH
     u8 j;
-#endif
 
-    for (i = 0; name[i] != EOS && i < 11; i++)
+    for (i = 0; name[i] != EOS && i < 13; i++)
         str[i] = name[i];
-#if ENGLISH
-    for (j = 0; gDexText_UnknownPoke[j] == CHAR_QUESTION_MARK || gDexText_UnknownPoke[j] == CHAR_SPACE; j++)
-        ;
-    j--;
+
+    for (j = 0; gDexText_UnknownPoke[j] == CHAR_QUESTION_MARK || gDexText_UnknownPoke[j] == CHAR_SPACE; j++);
+
     while (gDexText_UnknownPoke[j] != EOS)
         str[i++] = gDexText_UnknownPoke[j++];
-#endif
     str[i] = EOS;
+
     MenuPrint_AlignedToRightOfReferenceString(str, left, top, gDexText_UnknownPoke);
 }
 
-void UnusedPrintDecimalNum(u16 a, u8 left, u8 top)
+static void PrintDecimalNum(u16 value, u8 left, u8 top)
 {
     u8 str[6];
     bool8 outputted = FALSE;
     u8 result;
 
-    result = a / 1000;
+    result = value / 1000;
     if (result == 0)
     {
         str[0] = CHAR_SPACE;
@@ -4256,7 +3976,7 @@ void UnusedPrintDecimalNum(u16 a, u8 left, u8 top)
         outputted = TRUE;
     }
 
-    result = (a % 1000) / 100;
+    result = (value % 1000) / 100;
     if (result == 0 && !outputted)
     {
         str[1] = CHAR_SPACE;
@@ -4268,124 +3988,12 @@ void UnusedPrintDecimalNum(u16 a, u8 left, u8 top)
         outputted = TRUE;
     }
 
-    str[2] = CHAR_0 + ((a % 1000) % 100) / 10;
+    str[2] = CHAR_0 + ((value % 1000) % 100) / 10;
     str[3] = CHAR_PERIOD;
-    str[4] = CHAR_0 + ((a % 1000) % 100) % 10;
+    str[4] = CHAR_0 + ((value % 1000) % 100) % 10;
     str[5] = EOS;
-    Menu_PrintText(str, left, top);
+    MenuPrint_RightAligned(str, left, top);
 }
-
-#ifdef UNITS_IMPERIAL
-#define CHAR_PRIME (0xB4)
-#define CHAR_DOUBLE_PRIME (0xB2)
-static void sub_8091458(u16 height, u8 left, u8 top)
-{
-    u8 buffer[16];
-    u32 inches, feet;
-    u8 i = 0;
-
-    inches = (height * 10000) / 254;
-    if (inches % 10 >= 5)
-        inches += 10;
-    feet = inches / 120;
-    inches = (inches - (feet * 120)) / 10;
-
-    buffer[i++] = EXT_CTRL_CODE_BEGIN;
-    buffer[i++] = 0x13;
-    if (feet / 10 == 0)
-    {
-        buffer[i++] = 18;
-        buffer[i++] = feet + CHAR_0;
-    }
-    else
-    {
-        buffer[i++] = 12;
-        buffer[i++] = feet / 10 + CHAR_0;
-        buffer[i++] = (feet % 10) + CHAR_0;
-    }
-    buffer[i++] = CHAR_PRIME;
-    buffer[i++] = (inches / 10) + CHAR_0;
-    buffer[i++] = (inches % 10) + CHAR_0;
-    buffer[i++] = CHAR_DOUBLE_PRIME;
-    buffer[i++] = EOS;
-    Menu_PrintText(buffer, left, top);
-}
-#else
-static void sub_8091458(u16 height, u8 left, u8 top)
-{
-    UnusedPrintDecimalNum(height, left, top);
-}
-#endif
-
-#ifdef UNITS_IMPERIAL
-static void sub_8091564(u16 weight, u8 left, u8 top)
-{
-    u8 buffer[16];
-    u32 lbs;
-    u8 i = 0;
-    bool8 output;
-
-    lbs = (weight * 100000) / 4536;
-    if (lbs % 10 >= 5)
-        lbs += 10;
-    output = FALSE;
-
-    buffer[i] = (lbs / 100000) + CHAR_0;
-    if (buffer[i] == CHAR_0 && output == FALSE)
-    {
-        buffer[i++] = CHAR_SPACE;
-        buffer[i++] = CHAR_SPACE;
-    }
-    else
-    {
-        output = TRUE;
-        i++;
-    }
-
-    lbs = (lbs % 100000);
-    buffer[i] = (lbs / 10000) + CHAR_0;
-    if (buffer[i] == CHAR_0 && output == FALSE)
-    {
-        buffer[i++] = CHAR_SPACE;
-        buffer[i++] = CHAR_SPACE;
-    }
-    else
-    {
-        output = TRUE;
-        i++;
-    }
-
-    lbs = (lbs % 10000);
-    buffer[i] = (lbs / 1000) + CHAR_0;
-    if (buffer[i] == CHAR_0 && output == FALSE)
-    {
-        buffer[i++] = CHAR_SPACE;
-        buffer[i++] = CHAR_SPACE;
-    }
-    else
-    {
-        output = TRUE;
-        i++;
-    }
-    lbs = (lbs % 1000);
-    buffer[i++] = (lbs / 100) + CHAR_0;
-    lbs = (lbs % 100);
-    buffer[i++] = CHAR_PERIOD;
-    buffer[i++] = (lbs / 10) + CHAR_0;
-    buffer[i++] = CHAR_SPACE;
-    buffer[i++] = CHAR_l;
-    buffer[i++] = CHAR_b;
-    buffer[i++] = CHAR_s;
-    buffer[i++] = CHAR_PERIOD;
-    buffer[i++] = EOS;
-    Menu_PrintText(buffer, left, top);
-}
-#else
-static void sub_8091564(u16 arg0, u8 left, u8 top)
-{
-    UnusedPrintDecimalNum(arg0, left, top);
-}
-#endif
 
 void PrintFootprint(u16 num, u16 b, u16 c)
 {
@@ -4557,12 +4165,13 @@ int DoPokedexSearch(u8 dexMode, u8 order, u8 abcGroup, u8 bodyColor, u8 type1, u
     {
         for (i = 0, resultsCount = 0; i < gPokedexView->pokemonListCount; i++)
         {
-            u8 r3;
+            u16 firstLetter;
+            u16 upperLetter = sLetterSearchRanges[abcGroup][0] << 8 | sLetterSearchRanges[abcGroup][1];
+            u16 lowerLetter = sLetterSearchRanges[abcGroup][2] << 8 | sLetterSearchRanges[abcGroup][3];
 
             species = NationalPokedexNumToSpecies(gPokedexView->pokedexList[i].dexNum);
-            r3 = gSpeciesNames[species][0];
-            if ((r3 >= sLetterSearchRanges[abcGroup][0] && r3 < sLetterSearchRanges[abcGroup][0] + sLetterSearchRanges[abcGroup][1])
-             || (r3 >= sLetterSearchRanges[abcGroup][2] && r3 < sLetterSearchRanges[abcGroup][2] + sLetterSearchRanges[abcGroup][3]))
+            firstLetter = gSpeciesNames[species][0] << 8 | gSpeciesNames[species][1];
+            if (firstLetter >= upperLetter && firstLetter <= lowerLetter)
             {
                 gPokedexView->pokedexList[resultsCount] = gPokedexView->pokedexList[i];
                 resultsCount++;

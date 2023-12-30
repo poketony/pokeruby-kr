@@ -40,8 +40,6 @@
 #define BUGFIX_EVO_NAME
 #endif
 
-#define UNITS_IMPERIAL
-
 // An option to use fuller translations for debug ROMs.
 // #define DEBUG_FIX 1 // Unsupported languages default to English text.
 
