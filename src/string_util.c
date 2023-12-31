@@ -1,5 +1,6 @@
 #include "global.h"
 #include "korean.h"
+#include "menu.h"
 #include "string_util.h"
 #include "strings.h"
 #include "text.h"
@@ -637,4 +638,37 @@ u8 *StringCopyPadded(u8 *dest, const u8 *src, u8 c, u16 n)
 u8 *StringFillWithTerminator(u8 *dest, u16 n)
 {
     return StringFill(dest, EOS, n);
+}
+
+u32 StringLength_Multibyte(const u8 *str)
+{
+    u32 length = 0;
+
+    while (*str != EOS)
+    {
+        if (IsKoreanGlyph(*str))
+            str++;
+        str++;
+        length++;
+    }
+
+    return length;
+}
+
+int GetStringCenterAlignXOffset(const u8 *str, int totalWidth)
+{
+    int stringWidth = GetStringWidth(gMenuWindowPtr, str);
+    if (totalWidth > stringWidth)
+        return (totalWidth - stringWidth) / 2;
+    else
+        return 0;
+}
+
+int GetStringRightAlignXOffset(const u8 *str, int totalWidth)
+{
+    int stringWidth = GetStringWidth(gMenuWindowPtr, str);
+    if (totalWidth > stringWidth)
+        return totalWidth - stringWidth;
+    else
+        return 0;
 }

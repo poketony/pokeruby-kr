@@ -27,6 +27,7 @@
 #include "string_util.h"
 #include "strings.h"
 #include "strings2.h"
+#include "string_util.h"
 #include "task.h"
 #include "tv.h"
 #include "constants/items.h"
@@ -56,14 +57,16 @@ static void sub_80A00A4(void);
 static void sub_80A0390(void);
 extern u8 SummaryScreen_CreatePokemonSprite(struct Pokemon *);
 static void SummaryScreen_PrintColoredIntPixelCoords(s32, u8, u8, u8, u8, u16, s32);
+static void SummaryScreen_PrintColoredIntPixelCoordsRightAlign(s32, u8, u8, u8, u8, u16, s32, u8);
 static void sub_80A0958(struct Pokemon *);
 static void PokemonSummaryScreen_PrintTrainerMemo(struct Pokemon *, u8, u8);
 static void PokemonSummaryScreen_PrintEggTrainerMemo(struct Pokemon *, u8, u8);
 static void SummaryScreen_PrintColoredTextPixelCoords(const u8 *, u8, u8, u16, s32);
-static void SummaryScreen_PrintColoredTextCentered(const u8 *, u8, u8, u8, u16);
+static void SummaryScreen_PrintColoredTextPixelCoordsCentered(const u8 *, u8, u8, u8, u8);
+static void SummaryScreen_PrintColoredTextPixelCoordsRightAlign(const u8 *, u8, u8, u16, u8);
 static void PrintHeldItemName(u16, u8, u8);
 static void PrintNumRibbons(struct Pokemon *);
-static void DrawExperienceProgressBar(struct Pokemon *, u8, u8);
+static void DrawExperienceProgressBar(struct Pokemon *);
 static void SummaryScreen_DestroyTask(u8 taskId);
 static void sub_80A1950(void);
 static void sub_809DE64(void);
@@ -79,7 +82,7 @@ static void sub_80A2078(int);
 static void SummaryScreen_MoveSelect_HandleInput(u8);
 static void SummaryScreenHandleKeyInput(u8);
 static void sub_80A1B1C(u8);
-static void sub_80A16CC(u8);
+static void SummaryScreen_DrawMovesBottomTiles(bool8);
 static void sub_80A1A30(u8);
 void DrawSummaryScreenNavigationDots(void);
 static void sub_80A00F4(u8);
@@ -146,9 +149,7 @@ extern const u8 * const gAbilityDescriptions[];
 extern const u8 * const gContestEffectStrings[];
 extern const struct ContestMove gContestMoves[];
 extern const struct ContestEffect gContestEffects[];
-extern const u16 gUnknown_08E94510[];
-extern const u16 gUnknown_08E94550[];
-extern const u16 gUnknown_08E94590[];
+extern const u16 gStatusScreenMovesBottomTiles[][32];
 extern const u8 gUnknown_08E73E88[];
 
 EWRAM_DATA u8 gUnknown_020384F0 = 0;
@@ -520,8 +521,8 @@ static void (*const sUnknown_083C1598[])(struct Pokemon *) = {
 
 static const u8 sDoubleBattlePartyOrder[] = { 0, 2, 3, 1, 4, 5 };
 
-static const u8 sUnknown_083C15AE[] = _("{STR_VAR_1}{CLEAR_TO 64}");
-static const u8 sUnknown_083C15B4[] = _("{STR_VAR_1}{CLEAR_TO 72}");
+static const u8 sRibbonsText[] = _("{STR_VAR_1}{CLEAR_TO 64}");
+static const u8 sItemText[] = _("{STR_VAR_1}{CLEAR_TO 72}");
 
 struct TextColors {
     u8 id;
@@ -1265,7 +1266,7 @@ static void SummaryScreenHandleAButton(u8 taskId)
         PrintSummaryWindowHeaderText();
     }
 
-    sub_80A16CC(0);
+    SummaryScreen_DrawMovesBottomTiles(FALSE);
     sub_80A029C(&pssData.loadedMon);
     sub_80A1A30(9);
 
@@ -1282,7 +1283,7 @@ static void SummaryScreen_MoveSelect_Cancel(u8 taskId)
     }
 
     sub_80A1B1C(9);
-    sub_80A16CC(1);
+    SummaryScreen_DrawMovesBottomTiles(TRUE);
 
     Menu_EraseWindowRect(15, 12, 28, 13);
     Menu_EraseWindowRect(11, 15, 28, 18);
@@ -1310,7 +1311,7 @@ static void sub_809EB40(u8 taskId)
             sub_80A1654(10, pssData.selectedMoveIndex);
         }
 
-        sub_80A16CC(0);
+        SummaryScreen_DrawMovesBottomTiles(FALSE);
         sub_80A029C(&pssData.loadedMon);
         // fall through
     default:
@@ -1998,7 +1999,6 @@ static void sub_809FAC8(struct Pokemon *mon)
 {
     bool8 shiny;
     u16 dexNum;
-    u8 *buffer;
 
     if (GetMonData(mon, MON_DATA_IS_EGG))
     {
@@ -2031,15 +2031,6 @@ static void sub_809FAC8(struct Pokemon *mon)
             Menu_EraseWindowRect(1, 2, 4, 3);
         }
 
-        buffer = gStringVar1;
-        buffer = SummaryScreen_SetTextColor(buffer, 13);
-        buffer = GetMonNickname(mon, buffer);
-        buffer[0] = EXT_CTRL_CODE_BEGIN;
-        buffer[1] = 0x13;
-        buffer[2] = 0x3C;
-        buffer[3] = EOS;
-        Menu_PrintText(gStringVar1, 1, 12);
-
         sub_80A0958(mon);
     }
 }
@@ -2057,8 +2048,8 @@ static void sub_809FBE4(void)
 static void SummaryScreen_PrintPokemonInfoLabels(void)
 {
     Menu_PrintText(gOtherText_Type2, 11, 6);
-    SummaryScreen_PlaceTextTile_White(0, 22, 4);
-    SummaryScreen_PlaceTextTile_White(2, 23, 4);
+    SummaryScreen_PlaceTextTile_White(0, 23, 4);
+    SummaryScreen_PlaceTextTile_White(2, 24, 4);
 }
 
 static void SummaryScreen_PrintPokemonInfo(struct Pokemon *mon)
@@ -2123,12 +2114,12 @@ static void SummaryScreen_PrintPokemonInfo(struct Pokemon *mon)
         buffer[3] = EOS;
         Menu_PrintText(gStringVar1, 11, 4);
 
-        SummaryScreen_PrintColoredIntPixelCoords(GetMonData(mon, MON_DATA_OT_ID) & 0xFFFF, 13, 5, 2, 193, 32, 1);
+        SummaryScreen_PrintColoredIntPixelCoordsRightAlign(GetMonData(mon, MON_DATA_OT_ID) & 0xFFFF, 13, 5, 2, 191, 32, 1, 40);
 
         species = GetMonData(mon, MON_DATA_SPECIES);
-        SummaryScreen_DrawTypeIcon(gBaseStats[species].type1, 120, 48, 0);
+        SummaryScreen_DrawTypeIcon(gBaseStats[species].type1, 112, 48, 0);
         if (gBaseStats[species].type1 != gBaseStats[species].type2)
-            SummaryScreen_DrawTypeIcon(gBaseStats[species].type2, 160, 48, 1);
+            SummaryScreen_DrawTypeIcon(gBaseStats[species].type2, 152, 48, 1);
 
         ability = GetAbilityBySpecies(GetMonData(mon, MON_DATA_SPECIES), GetMonData(mon, MON_DATA_ALT_ABILITY));
         SummaryScreen_PrintColoredText(gAbilityNames[ability], 13, 11, 9);
@@ -2156,14 +2147,14 @@ static void SummaryScreen_PrintPokemonSkillsLabels(void)
 {
     SummaryScreen_PrintColoredText(gOtherText_ExpPoints, 13, 11, 14);
     SummaryScreen_PrintColoredText(gOtherText_NextLv, 13, 11, 16);
-    Menu_PrintText(gOtherText_Terminator18, 21, 16);
+    Menu_PrintText(gOtherText_NextLvUntil, 20, 16);
 
-    SummaryScreen_PrintColoredTextCentered(gOtherText_HP, 13, 11, 7, 42);
-    SummaryScreen_PrintColoredTextCentered(gOtherText_Attack, 13, 11, 9, 42);
-    SummaryScreen_PrintColoredTextCentered(gOtherText_Defense, 13, 11, 11, 42);
-    SummaryScreen_PrintColoredTextCentered(gOtherText_SpAtk, 13, 22, 7, 36);
-    SummaryScreen_PrintColoredTextCentered(gOtherText_SpDef, 13, 22, 9, 36);
-    SummaryScreen_PrintColoredTextCentered(gOtherText_Speed, 13, 22, 11, 36);
+    SummaryScreen_PrintColoredTextPixelCoordsCentered(gOtherText_HP, 13, 87, 56, 32);
+    SummaryScreen_PrintColoredTextPixelCoordsCentered(gOtherText_Attack, 13, 87, 72, 32);
+    SummaryScreen_PrintColoredTextPixelCoordsCentered(gOtherText_Defense, 13, 87, 88, 32);
+    SummaryScreen_PrintColoredTextPixelCoordsCentered(gOtherText_SpAtk, 13, 168, 56, 40);
+    SummaryScreen_PrintColoredTextPixelCoordsCentered(gOtherText_SpDef, 13, 168, 72, 40);
+    SummaryScreen_PrintColoredTextPixelCoordsCentered(gOtherText_Speed, 13, 168, 88, 40);
 }
 
 static void SummaryScreen_PrintPokemonSkills(struct Pokemon *mon)
@@ -2182,29 +2173,28 @@ static void SummaryScreen_PrintPokemonSkills(struct Pokemon *mon)
     buffer = gStringVar1;
 
     ConvertIntToDecimalString(buffer, GetMonData(mon, MON_DATA_EXP));
-    MenuPrint_RightAligned(buffer, 29, 14);
-    DrawExperienceProgressBar(mon, 23, 16);
+    SummaryScreen_PrintColoredTextPixelCoordsRightAlign(buffer, 0, 184, 112, 48);
+    DrawExperienceProgressBar(mon);
 
     ConvertIntToDecimalString(buffer, GetMonData(mon, MON_DATA_ATK));
-    MenuPrint_Centered(buffer, 16, 9, 50);
+    SummaryScreen_PrintColoredTextPixelCoordsRightAlign(buffer, 0, 117, 72, 48);
 
     ConvertIntToDecimalString(buffer, GetMonData(mon, MON_DATA_DEF));
-    MenuPrint_Centered(buffer, 16, 11, 50);
+    SummaryScreen_PrintColoredTextPixelCoordsRightAlign(buffer, 0, 117, 88, 48);
 
     ConvertIntToDecimalString(buffer, GetMonData(mon, MON_DATA_SPATK));
-    MenuPrint_Centered(buffer, 27, 7, 18);
+    SummaryScreen_PrintColoredTextPixelCoordsRightAlign(buffer, 0, 211, 56, 20);
 
     ConvertIntToDecimalString(buffer, GetMonData(mon, MON_DATA_SPDEF));
-    MenuPrint_Centered(buffer, 27, 9, 18);
+    SummaryScreen_PrintColoredTextPixelCoordsRightAlign(buffer, 0, 211, 72, 20);
 
     ConvertIntToDecimalString(buffer, GetMonData(mon, MON_DATA_SPEED));
-    MenuPrint_Centered(buffer, 27, 11, 18);
+    SummaryScreen_PrintColoredTextPixelCoordsRightAlign(buffer, 0, 211, 88, 20);
 
     buffer = AlignInt1InMenuWindow(buffer, GetMonData(mon, MON_DATA_HP), 24, 1);
     *buffer++ = CHAR_SLASH;
     buffer = AlignInt1InMenuWindow(buffer, GetMonData(mon, MON_DATA_MAX_HP), 48, 1);
-
-    Menu_PrintTextPixelCoords(gStringVar1, 126, 56, 1);
+    SummaryScreen_PrintColoredTextPixelCoordsRightAlign(gStringVar1, 0, 117, 56, 48);
 }
 
 static void sub_80A0090(struct Pokemon *mon)
@@ -2216,9 +2206,8 @@ static void sub_80A0090(struct Pokemon *mon)
 static void sub_80A00A4(void)
 {
     Menu_EraseWindowRect(11, 4, 19, 5);
-    Menu_EraseWindowRect(16, 7, 21, 8);
-    Menu_EraseWindowRect(17, 9, 21, 12);
-    Menu_EraseWindowRect(27, 7, 29, 12);
+    Menu_EraseWindowRect(15, 7, 20, 12);
+    Menu_EraseWindowRect(26, 7, 28, 12);
     Menu_EraseWindowRect(22, 14, 28, 15);
     Menu_EraseWindowRect(23, 16, 28, 17);
 }
@@ -2229,13 +2218,13 @@ static void sub_80A00F4(u8 a)
     {
         if (pssData.page == PSS_PAGE_BATTLE_MOVES)
         {
-            SummaryScreen_PrintColoredText(gOtherText_Power2, 13, 1, 15);
-            SummaryScreen_PrintColoredText(gOtherText_Accuracy2, 13, 1, 17);
+            SummaryScreen_PrintColoredText(gOtherText_Power2, 13, 2, 15);
+            SummaryScreen_PrintColoredText(gOtherText_Accuracy2, 13, 2, 17);
         }
         else
         {
-            SummaryScreen_PrintColoredText(gOtherText_Appeal2, 13, 1, 15);
-            SummaryScreen_PrintColoredText(gOtherText_Jam2, 13, 1, 17);
+            SummaryScreen_PrintColoredText(gOtherText_Appeal2, 13, 2, 15);
+            SummaryScreen_PrintColoredText(gOtherText_Jam2, 13, 2, 17);
         }
     }
 }
@@ -2517,8 +2506,6 @@ static void PokemonSummaryScreen_PrintEggTrainerMemo(struct Pokemon *mon, u8 lef
         return;
     }
 
-    asm(""); // needed to match for some reason
-
     if (locationMet == 253)
     {
         Menu_PrintText(gOtherText_EggHotSprings, left, top);
@@ -2633,35 +2620,22 @@ static void sub_80A0958(struct Pokemon *mon)
 
     buffer = gStringVar1;
     buffer = SummaryScreen_SetTextColor(buffer, 13);
-    buffer[0] = EXT_CTRL_CODE_BEGIN;
-    buffer[1] = 0x11;
-    buffer[2] = 0x7;
-    buffer[3] = CHAR_SLASH;
-    buffer += 4;
     buffer = StringCopy(buffer, gSpeciesNames[species]);
+    Menu_PrintText(gStringVar1, 4, 14);
+    sub_80A0A2C(mon, 4 + StringLength_Multibyte(gSpeciesNames[species]), 14);
 
-    buffer[0] = EXT_CTRL_CODE_BEGIN;
-    buffer[1] = 0x13;
-    buffer[2] = 0x50;
-    buffer[3] = EOS;
-
-    Menu_PrintText(gStringVar1, 0, 14);
-    Menu_EraseWindowRect(3, 16, 9, 17);
+    Menu_EraseWindowRect(3, 12, 10, 13);
 
     level = GetMonData(mon, MON_DATA_LEVEL);
-
     buffer = SummaryScreen_SetTextColor(gStringVar1, 13);
     buffer[0] = CHAR_LV;
     buffer += 1;
     buffer = ConvertIntToDecimalString(buffer, level);
+    Menu_PrintText(gStringVar1, 1, 12);
 
-    buffer[0] = EXT_CTRL_CODE_BEGIN;
-    buffer[1] = 0x13;
-    buffer[2] = 0x20;
-    buffer[3] = EOS;
-
-    Menu_PrintText(gStringVar1, 3, 16);
-    sub_80A0A2C(mon, 7, 16);
+    buffer = SummaryScreen_SetTextColor(gStringVar1, 13);
+    buffer = GetMonNickname5(mon, buffer);
+    Menu_PrintText(gStringVar1, level == 100 ? 5 : 4, 12);
 }
 
 static void sub_80A0A2C(struct Pokemon *mon, u8 left, u8 top)
@@ -2725,24 +2699,20 @@ static void PrintNumRibbons(struct Pokemon *mon)
     if (numRibbons == 0)
     {
         StringCopy(gStringVar1, gOtherText_None);
+        Menu_PrintText(sRibbonsText, 21, 4);
     }
     else
     {
-        u8 ribbonsStringLength;
+        const u8 textAmount[] = _("개");
         u8 *text;
 
         StringCopy(gStringVar1, gOtherText_Ribbons00);
-        ribbonsStringLength = StringLength(gStringVar1);
-
-        text = &gStringVar1[ribbonsStringLength - 2];
-
-        text[0] = EXT_CTRL_CODE_BEGIN;
-        text[1] = 0x14;
-        text[2] = 6;
-        ConvertIntToDecimalStringN(&text[3], numRibbons, 1, 2);
+        Menu_PrintText(sRibbonsText, 21, 4);
+        
+        text = ConvertIntToDecimalStringN(gStringVar2, numRibbons, 1, 2);
+        StringAppend(text, textAmount);
+        SummaryScreen_PrintColoredTextPixelCoordsRightAlign(gStringVar2, 0, 208, 32, 24);
     }
-
-    Menu_PrintText(sUnknown_083C15AE, 21, 4);
 }
 
 static void PrintHeldItemName(u16 itemId, u8 left, u8 top)
@@ -2757,10 +2727,10 @@ static void PrintHeldItemName(u16 itemId, u8 left, u8 top)
     else
         CopyItemName(itemId, gStringVar1);
 
-    Menu_PrintText(sUnknown_083C15B4, left, top);
+    Menu_PrintText(sItemText, left, top);
 }
 
-static void DrawExperienceProgressBar(struct Pokemon *mon, u8 left, u8 top)
+static void DrawExperienceProgressBar(struct Pokemon *mon)
 {
     u32 curExperience;
     u8 level;
@@ -2800,8 +2770,7 @@ static void DrawExperienceProgressBar(struct Pokemon *mon, u8 left, u8 top)
     }
 
     ConvertIntToDecimalString(gStringVar1, expToNextLevel);
-    MenuPrint_RightAligned(gStringVar1, left + 6, top);
-
+    SummaryScreen_PrintColoredTextPixelCoordsRightAlign(gStringVar1, 0, 184, 128, 48);
 
     // Draw each of the 8 tiles that make up the experience progress bar.
     vramAddr = (u16 *)(VRAM + 0x4CAA);
@@ -2843,16 +2812,16 @@ static void PrintSummaryWindowHeaderText(void)
     buffer[2] = 0x58;
     buffer[3] = EOS;
 
-    Menu_PrintText(gStringVar1, 0, 0);
+    Menu_PrintText(gStringVar1, 1, 0);
 
     if (pssData.headerActionTextId != 0)
     {
-        SummaryScreen_PlaceTextTile_White(5, 23, 0);
-        SummaryScreen_PlaceTextTile_White(6, 24, 0);
+        SummaryScreen_PlaceTextTile_White(5, 24, 0);
+        SummaryScreen_PlaceTextTile_White(6, 25, 0);
     }
     else
     {
-        Menu_EraseWindowRect(23, 0, 24, 1);
+        Menu_EraseWindowRect(24, 0, 25, 1);
     }
 
     buffer = gStringVar1;
@@ -2864,15 +2833,15 @@ static void PrintSummaryWindowHeaderText(void)
     buffer[2] = 0x28;
     buffer[3] = EOS;
 
-    Menu_PrintText(gStringVar1, 25, 0);
+    Menu_PrintText(gStringVar1, 26, 0);
 }
 
 // If the given pokemon previously had the pokerus virus, a small
 // dot will be drawn in between the pokeball and the mon's level.
 static void DrawPokerusSurvivorDot(struct Pokemon *mon)
 {
-    u16 *vram1 = (u16 *)(VRAM + 0xE444);
-    u16 *vram2 = (u16 *)(VRAM + 0xEC44);
+    u16 *vram1 = (u16 *)(VRAM + 0xE3C6);
+    u16 *vram2 = (u16 *)(VRAM + 0xEBC6);
 
     if (!CheckPartyPokerus(mon, 0) && CheckPartyHasHadPokerus(mon, 0))
     {
@@ -2978,26 +2947,27 @@ void sub_80A1048(u8 taskId)
 {
     s16 * data = gTasks[taskId].data;
     u8 i;
+    u8 *tilemapPtr = (u8 *)gUnknown_08E73508;
 
     data[1] += data[0];
     if (data[1] != 0)
     {
-        DmaCopyLargeCheckFirst16(&gUnknown_08E73508[0x24A - data[1]], (void *)(BG_SCREEN_ADDR(28) + 0x480), data[1] * 2);
-        DmaCopyLargeCheckFirst16(&gUnknown_08E73508[0x26A - data[1]], (void *)(BG_SCREEN_ADDR(28) + 0x4C0), data[1] * 2);
-        DmaCopyLargeCheckFirst16(&gUnknown_08E73508[0x24A - data[1]], (void *)(BG_SCREEN_ADDR(29) + 0x480), data[1] * 2);
-        DmaCopyLargeCheckFirst16(&gUnknown_08E73508[0x26A - data[1]], (void *)(BG_SCREEN_ADDR(29) + 0x4C0), data[1] * 2);
+        DmaCopyLargeCheckFirst16((tilemapPtr + 0x44A - data[1]), (void *)(BG_SCREEN_ADDR(28) + 0x440), data[1] * 2);
+        DmaCopyLargeCheckFirst16((tilemapPtr + 0x48A - data[1]), (void *)(BG_SCREEN_ADDR(28) + 0x480), data[1] * 2);
+        DmaCopyLargeCheckFirst16((tilemapPtr + 0x44A - data[1]), (void *)(BG_SCREEN_ADDR(29) + 0x440), data[1] * 2);
+        DmaCopyLargeCheckFirst16((tilemapPtr + 0x48A - data[1]), (void *)(BG_SCREEN_ADDR(29) + 0x480), data[1] * 2);
     }
     for (i = data[1]; i < 10; i++)
     {
+        DmaCopy16Defvars(3, &data[2], (void *)(BG_SCREEN_ADDR(28) + 0x440 + 2 * i), 2);
         DmaCopy16Defvars(3, &data[2], (void *)(BG_SCREEN_ADDR(28) + 0x480 + 2 * i), 2);
-        DmaCopy16Defvars(3, &data[2], (void *)(BG_SCREEN_ADDR(28) + 0x4C0 + 2 * i), 2);
+        DmaCopy16Defvars(3, &data[2], (void *)(BG_SCREEN_ADDR(29) + 0x440 + 2 * i), 2);
         DmaCopy16Defvars(3, &data[2], (void *)(BG_SCREEN_ADDR(29) + 0x480 + 2 * i), 2);
-        DmaCopy16Defvars(3, &data[2], (void *)(BG_SCREEN_ADDR(29) + 0x4C0 + 2 * i), 2);
     }
     if (data[0] == 0 || data[1] <= 0 || data[1] >= 10)
     {
         if (data[1] >= 10)
-            SummaryScreen_PrintColoredText(gOtherText_Status, 13, 1, 18);
+            SummaryScreen_PrintColoredText(gOtherText_Status, 13, 1, 17);
         sub_80A1D18();
         DestroyTask(taskId);
     }
@@ -3007,7 +2977,7 @@ static void sub_80A12D0(s8 a)
 {
     u8 newTaskId;
 
-    Menu_EraseWindowRect(1, 18, 5, 19);
+    Menu_EraseWindowRect(1, 17, 5, 18);
     sub_80A18E4(29);
 
     newTaskId = CreateTask(sub_80A1048, 0);
@@ -3021,74 +2991,6 @@ static void sub_80A12D0(s8 a)
     gTasks[newTaskId].data[2] = 1;
 }
 
-// void sub_80A1334(u8 taskId)
-// {
-//     u8 i;
-//     s16 var1;
-
-//     gTasks[taskId].data[1] += gTasks[taskId].data[0];
-
-//     var1 = 0;
-//     if (gTasks[taskId].data[1] >= 0)
-//     {
-//         var1 = 10;
-//         if (gTasks[taskId].data[1] < 10)
-//         {
-//             var1 = gTasks[taskId].data[1];
-//         }
-//     }
-
-//     if (var1 > 0)
-//     {
-//         u8 *vramAddr = (u8 *)(VRAM + 0x5B40);
-//         for (i = 0; i < 7; i++)
-//         {
-//             CpuSet(&gUnknown_08E73E88[(i + 13) * 64], vramAddr, var1 & 0x1FFFFF);
-//             vramAddr += 64;
-//         }
-//     }
-
-//     if (var1 <= 9)
-//     {
-//         u8 *vramAddr = (u8 *)(VRAM + 0x5B40);
-//         for (i = 0; i < 64; i++)
-//         {
-//             u16 val = gTasks[taskId].data[2];
-//             CpuSet(&val, vramAddr, ((10 - var1) & 0x1FFFFF) | 0x800000);
-//         }
-//     }
-//     else
-//     {
-//         Menu_EraseWindowRect(0, 19, 9, 19);
-//     }
-
-//     if (gTasks[taskId].data[0] == 0 || gTasks[taskId].data[1] < 0)
-//     {
-//         if (pssData.page == PSS_PAGE_BATTLE_MOVES)
-//         {
-//             Menu_EraseWindowRect(0, 14, 9, 18);
-//             sub_80A0958(pssData.loadedMon);
-
-//             if (GetMonStatusAndPokerus(pssData.loadedMon))
-//             {
-//                 SummaryScreen_PrintColoredText(gOtherText_Status, 13, 1, 18);
-//             }
-
-//             DestroyTask(taskId);
-//         }
-//     }
-
-//     if (gTasks[taskId].data[1] > 9)
-//     {
-//         if (pssData.page == PSS_PAGE_BATTLE_MOVES)
-//         {
-//             sub_80A00F4(gTasks[taskId].data[3]);
-//         }
-
-//         sub_80A0428(pssData.loadedMon, &gTasks[taskId].data[3]);
-//         DestroyTask(taskId);
-//     }
-// }
 NAKED
 static void sub_80A1334(u8 taskId)
 {
@@ -3223,7 +3125,7 @@ _080A1410:\n\
     ldr r0, _080A1484 @ =gOtherText_Status\n\
     movs r1, 0xD\n\
     movs r2, 0x1\n\
-    movs r3, 0x12\n\
+    movs r3, 0x11\n\
     bl SummaryScreen_PrintColoredText\n\
 _080A1444:\n\
     mov r0, r10\n\
@@ -3419,7 +3321,7 @@ _080A15DC:\n\
     ldr r0, _080A1650 @ =gOtherText_Status\n\
     movs r1, 0xD\n\
     movs r2, 0x1\n\
-    movs r3, 0x12\n\
+    movs r3, 0x11\n\
     bl SummaryScreen_PrintColoredText\n\
 _080A1610:\n\
     mov r0, r10\n\
@@ -3479,224 +3381,52 @@ static void sub_80A1654(s8 a, u8 b)
     gTasks[taskId].data[3] = b;
 }
 
-// not enough registers allocated (need to allocate r8 and r9)
-#ifdef NONMATCHING
-static void sub_80A16CC(u8 a)
+static void SummaryScreen_DrawMovesBottomTiles(bool8 enabled)
 {
     u8 i;
     u16 *vramAddr = (u16 *)(VRAM + 0x6AD4);
 
-    if (a == 0)
-    {
-        for (i = 0; i < 20; i++)
-        {
-            vramAddr[i] = gUnknown_08E94510[i] + 0x1000;
-            vramAddr[i + 0x20] = gUnknown_08E94510[i] + 0x1000;
-            vramAddr[i + 0x40] = gUnknown_08E94550[i] + 0x1000;
-        }
-    }
-    else
+    if (enabled)
     {
         i = 0;
         for (i = 0; i < 20; i++)
         {
-            vramAddr[i] = gUnknown_08E94550[i] + 0x1000;
-            vramAddr[i + 0x20] = gUnknown_08E94590[i] + 0x1000;
-            vramAddr[i + 0x40] = gUnknown_08E94590[i] + 0x1000;
+            vramAddr[i] = gStatusScreenMovesBottomTiles[1][i] + 0x1000;
+            vramAddr[i + 0x20] = gStatusScreenMovesBottomTiles[2][i] + 0x1000;
+            vramAddr[i + 0x40] = gStatusScreenMovesBottomTiles[2][i] + 0x1000;
+        }
+    }
+    else
+    {
+        for (i = 0; i < 20; i++)
+        {
+            vramAddr[i] = gStatusScreenMovesBottomTiles[0][i] + 0x1000;
+            vramAddr[i + 0x20] = gStatusScreenMovesBottomTiles[0][i] + 0x1000;
+            vramAddr[i + 0x40] = gStatusScreenMovesBottomTiles[1][i] + 0x1000;
         }
     }
 
     vramAddr = (u16 *)(VRAM + 0x5AD4);
 
-    if (a == 0)
+    if (enabled)
     {
         for (i = 0; i < 20; i++)
         {
-            vramAddr[i] = gUnknown_08E94510[i] + 0x3000;
-            vramAddr[i + 0x20] = gUnknown_08E94510[i] + 0x3000;
-            vramAddr[i + 0x40] = gUnknown_08E94550[i] + 0x3000;
+            vramAddr[i] = gStatusScreenMovesBottomTiles[1][i] + 0x3000;
+            vramAddr[i + 0x20] = gStatusScreenMovesBottomTiles[2][i] + 0x3000;
+            vramAddr[i + 0x40] = gStatusScreenMovesBottomTiles[2][i] + 0x3000;
         }
     }
     else
     {
         for (i = 0; i < 20; i++)
         {
-            vramAddr[i] = gUnknown_08E94550[i] + 0x3000;
-            vramAddr[i + 0x20] = gUnknown_08E94590[i] + 0x3000;
-            vramAddr[i + 0x40] = gUnknown_08E94590[i] + 0x3000;
+            vramAddr[i] = gStatusScreenMovesBottomTiles[0][i] + 0x3000;
+            vramAddr[i + 0x20] = gStatusScreenMovesBottomTiles[0][i] + 0x3000;
+            vramAddr[i + 0x40] = gStatusScreenMovesBottomTiles[1][i] + 0x3000;
         }
     }
 }
-#else
-NAKED
-static void sub_80A16CC(u8 a)
-{
-    asm(".syntax unified\n\
-    push {r4-r7,lr}\n\
-    mov r7, r9\n\
-    mov r6, r8\n\
-    push {r6,r7}\n\
-    lsls r0, 24\n\
-    lsrs r0, 24\n\
-    mov r9, r0\n\
-    ldr r0, _080A1724 @ =0x06006ad4\n\
-    mov r12, r0\n\
-    mov r1, r9\n\
-    cmp r1, 0\n\
-    bne _080A172C\n\
-    movs r5, 0\n\
-    ldr r7, _080A1728 @ =gUnknown_08E94510\n\
-    movs r0, 0x80\n\
-    lsls r0, 5\n\
-    adds r6, r0, 0\n\
-    movs r1, 0x40\n\
-    adds r1, r7\n\
-    mov r8, r1\n\
-_080A16F4:\n\
-    lsls r2, r5, 1\n\
-    mov r0, r12\n\
-    adds r3, r2, r0\n\
-    adds r4, r2, r7\n\
-    ldrh r1, [r4]\n\
-    adds r0, r6, r1\n\
-    strh r0, [r3]\n\
-    adds r1, r3, 0\n\
-    adds r1, 0x40\n\
-    ldrh r4, [r4]\n\
-    adds r0, r6, r4\n\
-    strh r0, [r1]\n\
-    adds r3, 0x80\n\
-    add r2, r8\n\
-    ldrh r2, [r2]\n\
-    adds r0, r6, r2\n\
-    strh r0, [r3]\n\
-    adds r0, r5, 0x1\n\
-    lsls r0, 24\n\
-    lsrs r5, r0, 24\n\
-    cmp r5, 0x13\n\
-    bls _080A16F4\n\
-    b _080A1768\n\
-    .align 2, 0\n\
-_080A1724: .4byte 0x06006ad4\n\
-_080A1728: .4byte gUnknown_08E94510\n\
-_080A172C:\n\
-    movs r5, 0\n\
-    ldr r6, _080A17B0 @ =gUnknown_08E94550\n\
-    movs r7, 0x80\n\
-    lsls r7, 5\n\
-    adds r4, r7, 0\n\
-    movs r0, 0x40\n\
-    adds r0, r6\n\
-    mov r8, r0\n\
-_080A173C:\n\
-    lsls r1, r5, 1\n\
-    mov r7, r12\n\
-    adds r2, r1, r7\n\
-    adds r0, r1, r6\n\
-    ldrh r0, [r0]\n\
-    adds r0, r4, r0\n\
-    strh r0, [r2]\n\
-    adds r3, r2, 0\n\
-    adds r3, 0x40\n\
-    add r1, r8\n\
-    ldrh r7, [r1]\n\
-    adds r0, r4, r7\n\
-    strh r0, [r3]\n\
-    adds r2, 0x80\n\
-    ldrh r1, [r1]\n\
-    adds r0, r4, r1\n\
-    strh r0, [r2]\n\
-    adds r0, r5, 0x1\n\
-    lsls r0, 24\n\
-    lsrs r5, r0, 24\n\
-    cmp r5, 0x13\n\
-    bls _080A173C\n\
-_080A1768:\n\
-    ldr r0, _080A17B4 @ =0x06005ad4\n\
-    mov r12, r0\n\
-    mov r1, r9\n\
-    cmp r1, 0\n\
-    bne _080A17BC\n\
-    movs r5, 0\n\
-    ldr r7, _080A17B8 @ =gUnknown_08E94510\n\
-    movs r0, 0xC0\n\
-    lsls r0, 6\n\
-    adds r6, r0, 0\n\
-    movs r1, 0x40\n\
-    adds r1, r7\n\
-    mov r8, r1\n\
-_080A1782:\n\
-    lsls r2, r5, 1\n\
-    mov r0, r12\n\
-    adds r3, r2, r0\n\
-    adds r4, r2, r7\n\
-    ldrh r1, [r4]\n\
-    adds r0, r6, r1\n\
-    strh r0, [r3]\n\
-    adds r1, r3, 0\n\
-    adds r1, 0x40\n\
-    ldrh r4, [r4]\n\
-    adds r0, r6, r4\n\
-    strh r0, [r1]\n\
-    adds r3, 0x80\n\
-    add r2, r8\n\
-    ldrh r2, [r2]\n\
-    adds r0, r6, r2\n\
-    strh r0, [r3]\n\
-    adds r0, r5, 0x1\n\
-    lsls r0, 24\n\
-    lsrs r5, r0, 24\n\
-    cmp r5, 0x13\n\
-    bls _080A1782\n\
-    b _080A17F8\n\
-    .align 2, 0\n\
-_080A17B0: .4byte gUnknown_08E94550\n\
-_080A17B4: .4byte 0x06005ad4\n\
-_080A17B8: .4byte gUnknown_08E94510\n\
-_080A17BC:\n\
-    movs r5, 0\n\
-    ldr r6, _080A1804 @ =gUnknown_08E94550\n\
-    movs r7, 0xC0\n\
-    lsls r7, 6\n\
-    adds r4, r7, 0\n\
-    movs r0, 0x40\n\
-    adds r0, r6\n\
-    mov r8, r0\n\
-_080A17CC:\n\
-    lsls r1, r5, 1\n\
-    mov r7, r12\n\
-    adds r2, r1, r7\n\
-    adds r0, r1, r6\n\
-    ldrh r0, [r0]\n\
-    adds r0, r4, r0\n\
-    strh r0, [r2]\n\
-    adds r3, r2, 0\n\
-    adds r3, 0x40\n\
-    add r1, r8\n\
-    ldrh r7, [r1]\n\
-    adds r0, r4, r7\n\
-    strh r0, [r3]\n\
-    adds r2, 0x80\n\
-    ldrh r1, [r1]\n\
-    adds r0, r4, r1\n\
-    strh r0, [r2]\n\
-    adds r0, r5, 0x1\n\
-    lsls r0, 24\n\
-    lsrs r5, r0, 24\n\
-    cmp r5, 0x13\n\
-    bls _080A17CC\n\
-_080A17F8:\n\
-    pop {r3,r4}\n\
-    mov r8, r3\n\
-    mov r9, r4\n\
-    pop {r4-r7}\n\
-    pop {r0}\n\
-    bx r0\n\
-    .align 2, 0\n\
-_080A1804: .4byte gUnknown_08E94550\n\
-    .syntax divided\n");
-}
-#endif // NONMATCHING
 
 u8 SummaryScreen_CreatePokemonSprite(struct Pokemon *mon)
 {
@@ -3919,7 +3649,7 @@ void sub_80A1D18(void)
     }
 
     if (ewram1A000[29] == 0xFF)
-        ewram1A000[29] = CreateSprite(&sSpriteTemplate_StatusCondition, 64, 152, 0);
+        ewram1A000[29] = CreateSprite(&sSpriteTemplate_StatusCondition, 64, 144, 0);
     StartSpriteAnim(&gSprites[ewram1A000[29]], statusAndPkrs2);
 }
 
@@ -3951,7 +3681,7 @@ static void sub_80A1DE8(struct Pokemon *mon)
     u8 ball = ball_number_to_ball_processing_index(GetMonData(mon, MON_DATA_POKEBALL));
     LoadBallGraphics(ball);
 
-    pssData.ballSpriteId = CreateSprite(&gBallSpriteTemplates[ball], 6, 136, 0);
+    pssData.ballSpriteId = CreateSprite(&gBallSpriteTemplates[ball], 16, 120, 0);
     gSprites[pssData.ballSpriteId].callback = SpriteCallbackDummy;
     gSprites[pssData.ballSpriteId].oam.priority = 3;
 }
@@ -4007,16 +3737,42 @@ static void SummaryScreen_PrintColoredTextPixelCoords(const u8 *text, u8 id, u8 
     Menu_PrintTextPixelCoords(gStringVar4, left, top, (bool8)e);
 }
 
-static void SummaryScreen_PrintColoredTextCentered(const u8 *text, u8 id, u8 left, u8 top, u16 width)
+static void SummaryScreen_PrintColoredTextPixelCoordsCentered(const u8 *text, u8 id, u8 left, u8 top, u8 maxWidth)
 {
-    SummaryScreen_CopyColoredString(gStringVar4, text, id);
-    MenuPrint_Centered(gStringVar4, left, top, width);
+    u8 *buffer = gStringVar3;
+    buffer[0] = EXT_CTRL_CODE_BEGIN;
+    buffer[1] = EXT_CTRL_CODE_CLEAR_TO;
+    buffer[2] = GetStringCenterAlignXOffset(text, maxWidth);
+    buffer += 3;
+
+    StringCopy(buffer, text);
+    SummaryScreen_PrintColoredTextPixelCoords(gStringVar3, id, left, top, TRUE);
+}
+
+static void SummaryScreen_PrintColoredTextPixelCoordsRightAlign(const u8 *text, u8 id, u8 left, u16 top, u8 maxWidth)
+{
+    u8 *buffer = gStringVar3;
+    buffer[0] = EXT_CTRL_CODE_BEGIN;
+    buffer[1] = EXT_CTRL_CODE_CLEAR_TO;
+    buffer[2] = GetStringRightAlignXOffset(text, maxWidth);
+    buffer += 3;
+
+    StringCopy(buffer, text);
+    SummaryScreen_PrintColoredTextPixelCoords(gStringVar3, id, left, top, TRUE);
 }
 
 static void SummaryScreen_PrintColoredIntPixelCoords(s32 value, u8 id, u8 n, u8 mode, u8 left, u16 top, s32 e)
 {
     ConvertIntToDecimalStringN(gStringVar1, value, mode, n);
     SummaryScreen_PrintColoredTextPixelCoords(gStringVar1, id, left, top, e);
+}
+
+static void SummaryScreen_PrintColoredIntPixelCoordsRightAlign(s32 value, u8 id, u8 n, u8 mode, u8 left, u16 top, s32 e, u8 maxWidth)
+{
+    u8 xOffset;
+    ConvertIntToDecimalStringN(gStringVar1, value, mode, n);
+    xOffset = GetStringRightAlignXOffset(gStringVar1, maxWidth);
+    SummaryScreen_PrintColoredTextPixelCoords(gStringVar1, id, left + xOffset, top, e);
 }
 
 static void SummaryScreen_PrintColoredText(const u8 *text, u8 id, u8 left, u8 top)

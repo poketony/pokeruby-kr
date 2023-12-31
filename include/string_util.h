@@ -30,5 +30,8 @@ const u8 *GetExpandedPlaceholder(u32 id);
 u8 *StringFill(u8 *dest, u8 c, u16 n);
 u8 *StringCopyPadded(u8 *dest, const u8 *src, u8 c, u16 n);
 u8 *StringFillWithTerminator(u8 *dest, u16 n);
+u32 StringLength_Multibyte(const u8 *str);
+int GetStringCenterAlignXOffset(const u8 *str, int totalWidth);
+int GetStringRightAlignXOffset(const u8 *str, int totalWidth);
 
 #endif // GUARD_STRING_UTIL_H
