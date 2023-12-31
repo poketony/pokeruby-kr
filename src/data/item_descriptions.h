@@ -1,901 +1,880 @@
 static const u8 gItemDescription_MasterBall[] = _(
-    "The best BALL that\n"
-    "catches a POKéMON\n"
-    "without fail.");
+    "포켓몬을 반드시\n"
+    "잡을 수 있는\n"
+    "최고의 볼");
 
 static const u8 gItemDescription_UltraBall[] = _(
-    "A better BALL with\n"
-    "a higher catch rate\n"
-    "than a GREAT BALL.");
+    "수퍼볼보다\n"
+    "잡기 쉬워진\n"
+    "무척 대단한 볼");
 
 static const u8 gItemDescription_GreatBall[] = _(
-    "A good BALL with a\n"
-    "higher catch rate\n"
-    "than a POKé BALL.");
+    "몬스터볼보다\n"
+    "잡기 쉬워진\n"
+    "고성능의 볼");
 
 static const u8 gItemDescription_PokeBall[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "야생 포켓몬을\n"
+    "잡기 위한 도구");
 
 static const u8 gItemDescription_SafariBall[] = _(
-    "A special BALL that\n"
-    "is used only in the\n"
-    "SAFARI ZONE.");
+    "사파리존에서만\n"
+    "쓸 수 있는\n"
+    "특수한 볼");
 
 static const u8 gItemDescription_NetBall[] = _(
-    "A BALL that works\n"
-    "well on WATER- and\n"
-    "BUG-type POKéMON.");
+    "물타입과 벌레타입의\n"
+    "포켓몬을 잡기\n"
+    "쉬워지는 볼");
 
 static const u8 gItemDescription_DiveBall[] = _(
-    "A BALL that works\n"
-    "better on POKéMON\n"
-    "on the ocean floor.");
+    "해저에서 사는\n"
+    "포켓몬을 잡기\n"
+    "쉬워지는 볼");
 
 static const u8 gItemDescription_NestBall[] = _(
-    "A BALL that works\n"
-    "better on weaker\n"
-    "POKéMON.");
+    "잡을 수 있는 포켓몬이\n"
+    "약할수록 잡기\n"
+    "쉬워지는 볼");
 
 static const u8 gItemDescription_RepeatBall[] = _(
-    "A BALL that works\n"
-    "better on POKéMON\n"
-    "caught before.");
+    "잡은 적이 있는\n"
+    "포켓몬을 잡기\n"
+    "쉬워지는 볼");
 
 static const u8 gItemDescription_TimerBall[] = _(
-    "More effective as\n"
-    "more turns are\n"
-    "taken in battle.");
+    "턴 수가 길어지면\n"
+    "길어질수록 잡기\n"
+    "쉬워지는 볼");
 
 static const u8 gItemDescription_LuxuryBall[] = _(
-    "A cozy BALL that\n"
-    "makes POKéMON\n"
-    "more friendly.");
+    "잡은 포켓몬이\n"
+    "친밀해지기 쉬운\n"
+    "편안한 볼");
 
 static const u8 gItemDescription_PremierBall[] = _(
-    "A rare BALL made\n"
-    "in commemoration\n"
-    "of some event.");
+    "무언가의 기념품으로\n"
+    "만들어진 조금 희귀한\n"
+    "몬스터볼");
 
 static const u8 gItemDescription_Potion[] = _(
-    "Restores the HP of\n"
-    "a POKéMON by\n"
-    "20 points.");
+    "포켓몬의 체력을\n"
+    "20 회복한다");
 
 static const u8 gItemDescription_Antidote[] = _(
-    "Heals a poisoned\n"
-    "POKéMON.");
+    "독 상태를\n"
+	"회복한다");
 
 static const u8 gItemDescription_BurnHeal[] = _(
-    "Heals POKéMON\n"
-    "of a burn.");
+    "화상 상태를\n"
+	"회복한다");
 
 static const u8 gItemDescription_IceHeal[] = _(
-    "Defrosts a frozen\n"
-    "POKéMON.");
+    "얼음 상태를\n"
+	"회복한다");
 
 static const u8 gItemDescription_Awakening[] = _(
-    "Awakens a sleeping\n"
-    "POKéMON.");
+    "잠듦 상태를\n"
+	"회복한다");
 
 static const u8 gItemDescription_ParalyzeHeal[] = _(
-    "Heals a paralyzed\n"
-    "POKéMON.");
+    "마비 상태를\n"
+	"회복한다");
 
 static const u8 gItemDescription_FullRestore[] = _(
-    "Fully restores the\n"
-    "HP and status of a\n"
-    "POKéMON.");
+    "포켓몬의 체력과\n"
+    "상태 이상을\n"
+    "모두 회복한다");
 
 static const u8 gItemDescription_MaxPotion[] = _(
-    "Fully restores the\n"
-    "HP of a POKéMON.");
+    "포켓몬의 체력을\n"
+	"모두 회복한다");
 
 static const u8 gItemDescription_HyperPotion[] = _(
-    "Restores the HP of\n"
-    "a POKéMON by\n"
-    "200 points.");
+    "포켓몬의 체력을\n"
+    "200 회복한다");
 
 static const u8 gItemDescription_SuperPotion[] = _(
-    "Restores the HP of\n"
-    "a POKéMON by\n"
-    "50 points.");
+    "포켓몬의 체력을\n"
+    "50 회복한다");
 
 static const u8 gItemDescription_FullHeal[] = _(
-    "Heals all the status\n"
-    "problems of one\n"
-    "POKéMON.");
+    "상태 이상을\n"
+    "모두 회복한다");
 
 static const u8 gItemDescription_Revive[] = _(
-    "Revives a fainted\n"
-    "POKéMON with half\n"
-    "its HP.");
+    "기절 상태에서\n"
+    "체력을 절반까지\n"
+    "회복한다");
 
 static const u8 gItemDescription_MaxRevive[] = _(
-    "Revives a fainted\n"
-    "POKéMON with all\n"
-    "its HP.");
+    "기절 상태에서\n"
+    "체력을\n"
+    "모두 회복한다");
 
 static const u8 gItemDescription_FreshWater[] = _(
-    "A mineral water\n"
-    "that restores HP\n"
-    "by 50 points.");
+    "미네랄이 가득한 물\n"
+    "포켓몬의 체력을\n"
+    "50 회복한다");
 
 static const u8 gItemDescription_SodaPop[] = _(
-    "A fizzy soda drink\n"
-    "that restores HP\n"
-    "by 60 points.");
+    "쏴-하고 상쾌하다\n"
+    "포켓몬의 체력을\n"
+    "60 회복한다");
 
 static const u8 gItemDescription_Lemonade[] = _(
-    "A very sweet drink\n"
-    "that restores HP\n"
-    "by 80 points.");
+    "매우 달콤하다\n"
+    "포켓몬의 체력을\n"
+    "80 회복한다");
 
 static const u8 gItemDescription_MoomooMilk[] = _(
-    "A nutritious milk\n"
-    "that restores HP\n"
-    "by 100 points.");
+    "영양 만점\n"
+    "포켓몬의 체력을\n"
+    "100 회복한다");
 
 static const u8 gItemDescription_EnergyPowder[] = _(
-    "A bitter powder\n"
-    "that restores HP\n"
-    "by 50 points.");
+    "매우 쓴 가루\n"
+    "포켓몬의 체력을\n"
+    "50 회복한다");
 
 static const u8 gItemDescription_EnergyRoot[] = _(
-    "A bitter root\n"
-    "that restores HP\n"
-    "by 200 points.");
+    "매우 쓴 뿌리\n"
+    "포켓몬의 체력을\n"
+    "200 회복한다");
 
 static const u8 gItemDescription_HealPowder[] = _(
-    "A bitter powder\n"
-    "that heals all\n"
-    "status problems.");
+    "무척 쓴 가루\n"
+    "상태 이상을\n"
+    "모두 회복한다");
 
 static const u8 gItemDescription_RevivalHerb[] = _(
-    "A very bitter herb\n"
-    "that revives a\n"
-    "fainted POKéMON.");
+    "매우 쓴 풀\n"
+    "기절 상태에서\n"
+    "부활한다");
 
 static const u8 gItemDescription_Ether[] = _(
-    "Restores the PP\n"
-    "of a selected move\n"
-    "by 10.");
+    "1개 기술의\n"
+    "기술 포인트를\n"
+    "10 회복한다");
 
 static const u8 gItemDescription_MaxEther[] = _(
-    "Fully restores the\n"
-    "PP of a selected\n"
-    "move.");
+    "1개 기술의\n"
+    "기술 포인트를\n"
+    "전부 회복한다");
 
 static const u8 gItemDescription_Elixir[] = _(
-    "Restores the PP\n"
-    "of all moves by 10.");
+    "모든 기술의\n"
+    "기술 포인트를\n"
+    "10 회복한다");
 
 static const u8 gItemDescription_MaxElixir[] = _(
-    "Fully restores the\n"
-    "PP of a POKéMON's\n"
-    "moves.");
+    "포켓몬 1마리의\n"
+    "모든 기술 포인트를\n"
+    "전부 회복한다");
 
 static const u8 gItemDescription_LavaCookie[] = _(
-    "A local specialty\n"
-    "that heals all\n"
-    "status problems.");
+    "용암마을의 명물\n"
+    "상태 이상을\n"
+    "모두 회복한다");
 
 static const u8 gItemDescription_BlueFlute[] = _(
-    "A glass flute that\n"
-    "awakens sleeping\n"
-    "POKéMON.");
+    "유리로 된 피리\n"
+    "잠듦 상태를\n"
+    "회복한다");
 
 static const u8 gItemDescription_YellowFlute[] = _(
-    "A glass flute that\n"
-    "snaps POKéMON\n"
-    "out of confusion.");
+    "유리로 된 피리\n"
+    "혼란 상태를\n"
+    "회복한다");
 
 static const u8 gItemDescription_RedFlute[] = _(
-    "A glass flute that\n"
-    "snaps POKéMON\n"
-    "out of attraction.");
+    "유리로 된 피리\n"
+    "헤롱헤롱 상태를\n"
+    "회복한다");
 
 static const u8 gItemDescription_BlackFlute[] = _(
-    "A glass flute that\n"
-    "keeps away wild\n"
-    "POKéMON.");
+    "유리로 된 피리\n"
+    "야생 포켓몬과\n"
+    "마주치기 어려워진다");
 
 static const u8 gItemDescription_WhiteFlute[] = _(
-    "A glass flute that\n"
-    "lures wild POKéMON.");
+    "유리로 된 피리\n"
+	"야생 포켓몬과\n"
+    "마주치기 쉬워진다");
 
 static const u8 gItemDescription_BerryJuice[] = _(
-    "A 100% pure juice\n"
-    "that restores HP\n"
-    "by 20 points.");
+    "나무열매 100%\n"
+    "포켓몬의 체력을\n"
+    "20 회복한다");
 
 static const u8 gItemDescription_SacredAsh[] = _(
-    "Fully revives and\n"
-    "restores all\n"
-    "fainted POKéMON.");
+    "기절해 버린 포켓몬\n"
+    "전원을 정상\n"
+    "상태로 한다");
 
 static const u8 gItemDescription_ShoalSalt[] = _(
-    "Salt obtained from\n"
-    "deep inside the\n"
-    "SHOAL CAVE.");
+    "여울의 동굴에서\n"
+    "발견한 소금");
 
 static const u8 gItemDescription_ShoalShell[] = _(
-    "A seashell found\n"
-    "deep inside the\n"
-    "SHOAL CAVE.");
+    "여울의 동굴에서\n"
+    "발견한 조개껍질");
 
 static const u8 gItemDescription_RedShard[] = _(
-    "A shard from an\n"
-    "ancient item.\n"
-    "Can be sold cheaply.");
+    "이전에 만들어진\n"
+    "도구의 일부인 듯하다\n"
+    "싸게 팔린다");
 
 static const u8 gItemDescription_BlueShard[] = _(
-    "A shard from an\n"
-    "ancient item.\n"
-    "Can be sold cheaply.");
+    "옛날에 만들어진\n"
+    "도구의 일부인 듯하다\n"
+    "싸게 팔린다");
 
 static const u8 gItemDescription_YellowShard[] = _(
-    "A shard from an\n"
-    "ancient item.\n"
-    "Can be sold cheaply.");
+    "옛날에 만들어진\n"
+    "도구의 일부인 듯하다\n"
+    "싸게 팔린다");
 
 static const u8 gItemDescription_GreenShard[] = _(
-    "A shard from an\n"
-    "ancient item.\n"
-    "Can be sold cheaply.");
+    "옛날에 만들어진\n"
+    "도구의 일부인 듯하다\n"
+    "싸게 팔린다");
 
 static const u8 gItemDescription_HPUp[] = _(
-    "Raises the HP of\n"
-    "one POKéMON.");
+    "체력의\n"
+    "기초 포인트를 올린다");
 
 static const u8 gItemDescription_Protein[] = _(
-    "Raises the stat\n"
-    "ATTACK of one\n"
-    "POKéMON.");
+    "공격의\n"
+    "기초 포인트를 올린다");
 
 static const u8 gItemDescription_Iron[] = _(
-    "Raises the stat\n"
-    "DEFENSE of one\n"
-    "POKéMON.");
+    "방어의\n"
+    "기초 포인트를 올린다");
 
 static const u8 gItemDescription_Carbos[] = _(
-    "Raises the stat\n"
-    "SPEED of one\n"
-    "POKéMON.");
+    "스피드의\n"
+    "기초 포인트를 올린다");
 
 static const u8 gItemDescription_Calcium[] = _(
-    "Raises the stat\n"
-    "SP. ATK of one\n"
-    "POKéMON.");
+    "특수공격의\n"
+    "기초 포인트를 올린다");
 
 static const u8 gItemDescription_RareCandy[] = _(
-    "Raises the level\n"
-    "of a POKéMON by\n"
-    "one.");
+    "포켓몬의 레벨을\n"
+    "1 올린다");
 
 static const u8 gItemDescription_PPUp[] = _(
-    "Raises the maximum\n"
-    "PP of a selected\n"
-    "move.");
+    "기술 포인트의\n"
+    "최대치가 올라간다");
 
 static const u8 gItemDescription_Zinc[] = _(
-    "Raises the stat\n"
-    "SP. DEF of one\n"
-    "POKéMON.");
+    "특수방어의\n"
+    "기초 포인트를 올린다");
 
 static const u8 gItemDescription_PPMax[] = _(
-    "Raises the PP of a\n"
-    "move to its maximum\n"
-    "points.");
+    "기술 포인트를\n"
+    "최대치까지 올린다");
 
 static const u8 gItemDescription_GuardSpec[] = _(
-    "Prevents stat\n"
-    "reduction when\n"
-    "used in battle.");
+    "배틀에서 사용하면\n"
+    "같은 편의 능력이\n"
+    "떨어지지 않게 된다");
 
 static const u8 gItemDescription_DireHit[] = _(
-    "Raises the\n"
-    "critical-hit ratio\n"
-    "during one battle.");
+    "사용한 배틀 중\n"
+    "상대의 급소에\n"
+    "맞기 쉬워진다");
 
 static const u8 gItemDescription_XAttack[] = _(
-    "Raises the stat\n"
-    "ATTACK during one\n"
-    "battle.");
+    "사용한 배틀 중\n"
+    "공격력이 올라간다");
 
 static const u8 gItemDescription_XDefend[] = _(
-    "Raises the stat\n"
-    "DEFENSE during one\n"
-    "battle.");
+    "사용한 배틀 중\n"
+    "방어력이 올라간다");
 
 static const u8 gItemDescription_XSpeed[] = _(
-    "Raises the stat\n"
-    "SPEED during one\n"
-    "battle.");
+    "사용한 배틀 중\n"
+    "스피드가 올라간다");
 
 static const u8 gItemDescription_XAccuracy[] = _(
-    "Raises accuracy\n"
-    "of attack moves\n"
-    "during one battle.");
+    "사용한 배틀 중\n"
+    "기술이 맞기 쉬워진다");
 
 static const u8 gItemDescription_XSpecial[] = _(
-    "Raises the stat\n"
-    "SP. ATK during one\n"
-    "battle.");
+    "사용한 배틀 중\n"
+    "특수공격력이\n"
+    "올라간다");
 
 static const u8 gItemDescription_PokeDoll[] = _(
-    "Use to flee from\n"
-    "any battle with\n"
-    "a wild POKéMON.");
+    "조우한 야생\n"
+    "포켓몬으로부터 반드시\n"
+    "도망칠 수 있다");
+	// そうぐうした やせいのｎ
+	// ポケモンから かならずｎ
+	// にげることが できる
 
 static const u8 gItemDescription_FluffyTail[] = _(
-    "Use to flee from\n"
-    "any battle with\n"
-    "a wild POKéMON.");
+    "조우한 야생\n"
+    "포켓몬으로부터 반드시\n"
+    "도망칠 수 있다");
+	// そうぐうした やせいのｎ
+	// ポケモンから かならずｎ
+	// にげることが できる
 
 static const u8 gItemDescription_SuperRepel[] = _(
-    "Repels weak wild\n"
-    "POKéMON for 200\n"
-    "steps.");
+    "200보 걸어가는 동안\n"
+    "약한 야생 포켓몬과\n"
+    "마주치지 않게 된다");
 
 static const u8 gItemDescription_MaxRepel[] = _(
-    "Repels weak wild\n"
-    "POKéMON for 250\n"
-    "steps.");
+    "250보 걸어가는 동안\n"
+    "약한 야생 포켓몬과\n"
+    "마주치지 않게 된다");
 
 static const u8 gItemDescription_EscapeRope[] = _(
-    "Use to escape\n"
-    "instantly from a\n"
-    "cave or a dungeon.");
+    "동굴이나 던전에서\n"
+    "빠져나올 수 있다");
 
 static const u8 gItemDescription_Repel[] = _(
-    "Repels weak wild\n"
-    "POKéMON for 100\n"
-    "steps.");
+    "100보 걸어가는 동안\n"
+    "약한 야생 포켓몬과\n"
+    "마주치지 않게 된다");
 
 static const u8 gItemDescription_SunStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "특정한 포켓몬을\n"
+    "진화시킨다");
 
 static const u8 gItemDescription_MoonStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "특정한 포켓몬을\n"
+    "진화시킨다");
 
 static const u8 gItemDescription_FireStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "특정한 포켓몬을\n"
+    "진화시킨다");
 
 static const u8 gItemDescription_ThunderStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "특정한 포켓몬을\n"
+    "진화시킨다");
 
 static const u8 gItemDescription_WaterStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "특정한 포켓몬을\n"
+    "진화시킨다");
 
 static const u8 gItemDescription_LeafStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "특정한 포켓몬을\n"
+    "진화시킨다");
 
 static const u8 gItemDescription_TinyMushroom[] = _(
-    "A plain, ordinary\n"
-    "mushroom.\n"
-    "Can be sold cheaply.");
+    "평범한 버섯\n"
+    "싸게 팔린다");
 
 static const u8 gItemDescription_BigMushroom[] = _(
-    "A rare mushroom\n"
-    "that would sell at a\n"
-    "high price.");
+    "진귀한 버섯\n"
+    "비싸게 팔린다");
 
 static const u8 gItemDescription_Pearl[] = _(
-    "A pretty pearl.\n"
-    "Can be sold cheaply.");
+    "예쁜 진주\n"
+    "싸게 팔린다");
 
 static const u8 gItemDescription_BigPearl[] = _(
-    "A lovely large pearl\n"
-    "that would sell at a\n"
-    "high price.");
+    "엄청 예쁜\n"
+    "큰 낱알의 진주\n"
+    "비싸게 팔린다");
 
 static const u8 gItemDescription_Stardust[] = _(
-    "Beautiful red sand.\n"
-    "Can be sold at a\n"
-    "high price.");
+    "빨갛고 예쁜 모래\n"
+    "비싸게 팔린다");
 
 static const u8 gItemDescription_StarPiece[] = _(
-    "A red gem shard.\n"
-    "It would sell for a\n"
-    "very high price.");
+    "빨갛고 예쁜\n"
+    "보석 조각\n"
+    "매우 비싸게 팔린다");
 
 static const u8 gItemDescription_Nugget[] = _(
-    "A nugget of pure\n"
-    "gold. Can be sold at\n"
-    "a high price.");
+    "순금으로 만들어졌다\n"
+    "비싸게 팔린다");
 
 static const u8 gItemDescription_HeartScale[] = _(
-    "A lovely scale.\n"
-    "It is coveted by\n"
-    "collectors.");
+    "예쁜 비늘\n"
+    "마니아 사이에서\n"
+    "인기가 높다");
 
 static const u8 gItemDescription_OrangeMail[] = _(
-    "A ZIGZAGOON-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "지그제구리의 모습이\n"
+    "프린트된 편지지\n"
+    "포켓몬에게 맡길 수 있다");
 
 static const u8 gItemDescription_HarborMail[] = _(
-    "A WINGULL-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "갈모매의 모습이\n"
+    "프린트된 편지지\n"
+    "포켓몬에게 맡길 수 있다");
 
 static const u8 gItemDescription_GlitterMail[] = _(
-    "A PIKACHU-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "피카츄의 모습이\n"
+    "프린트된 편지지\n"
+    "포켓몬에게 맡길 수 있다");
 
 static const u8 gItemDescription_MechMail[] = _(
-    "A MAGNEMITE-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "코일의 모습이\n"
+    "프린트된 편지지\n"
+    "포켓몬에게 맡길 수 있다");
 
 static const u8 gItemDescription_WoodMail[] = _(
-    "A SLAKOTH-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "게을로의 모습이\n"
+    "프린트된 편지지\n"
+    "포켓몬에게 맡길 수 있다");
 
 static const u8 gItemDescription_WaveMail[] = _(
-    "A WAILMER-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "고래왕자의 모습이\n"
+    "프린트된 편지지\n"
+    "포켓몬에게 맡길 수 있다");
 
 static const u8 gItemDescription_BeadMail[] = _(
-    "MAIL featuring a\n"
-    "sketch of the\n"
-    "holding POKéMON.");
+    "지니게 한 포켓몬의\n"
+    "초상화가 나오는 편지지");
 
 static const u8 gItemDescription_ShadowMail[] = _(
-    "A DUSKULL-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "해골몽의 모습이\n"
+    "프린트된 편지지\n"
+    "포켓몬에게 맡길 수 있다");
 
 static const u8 gItemDescription_TropicMail[] = _(
-    "A BELLOSSOM-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "아르코의 모습이\n"
+    "프린트된 편지지\n"
+    "포켓몬에게 맡길 수 있다");
 
 static const u8 gItemDescription_DreamMail[] = _(
-    "MAIL featuring a\n"
-    "sketch of the\n"
-    "holding POKéMON.");
+    "지니게 한 포켓몬의\n"
+    "초상화가 나오는 편지지");
 
 static const u8 gItemDescription_FabMail[] = _(
-    "A gorgeous-print\n"
-    "MAIL to be held\n"
-    "by a POKéMON.");
+    "호화로운 모양이\n"
+    "프린트된 편지지\n"
+    "포켓몬에게 맡길 수 있다");
 
 static const u8 gItemDescription_RetroMail[] = _(
-    "MAIL featuring the\n"
-    "drawings of three\n"
-    "POKéMON.");
+    "3마리의 포켓몬이\n"
+    "프린트된 편지지\n"
+    "포켓몬에게 맡길 수 있다");
 
 static const u8 gItemDescription_CheriBerry[] = _(
-    "A hold item that\n"
-    "heals paralysis\n"
-    "in battle.");
+    "지니게 하면 스스로\n"
+    "마비 상태를\n"
+    "회복한다");
 
 static const u8 gItemDescription_ChestoBerry[] = _(
-    "A hold item that\n"
-    "awakens POKéMON\n"
-    "in battle.");
+    "지니게 하면 스스로\n"
+    "잠듦 상태를\n"
+    "회복한다");
 
 static const u8 gItemDescription_PechaBerry[] = _(
-    "A hold item that\n"
-    "heals poisoning\n"
-    "in battle.");
+    "지니게 하면 스스로\n"
+    "독 상태를\n"
+    "회복한다");
 
 static const u8 gItemDescription_RawstBerry[] = _(
-    "A hold item that\n"
-    "heals a burn in\n"
-    "battle.");
+    "지니게 하면 스스로\n"
+    "화상 상태를\n"
+    "회복한다");
 
 static const u8 gItemDescription_AspearBerry[] = _(
-    "A hold item that\n"
-    "defrosts POKéMON\n"
-    "in battle.");
+    "지니게 하면 스스로\n"
+    "얼음 상태를\n"
+    "회복한다");
 
 static const u8 gItemDescription_LeppaBerry[] = _(
-    "A hold item that\n"
-    "restores 10 PP in\n"
-    "battle.");
+    "지니게 하면 스스로\n"
+    "기술 포인트를\n"
+    "10 회복한다");
 
 static const u8 gItemDescription_OranBerry[] = _(
-    "A hold item that\n"
-    "restores 10 HP in\n"
-    "battle.");
+    "지니게 하면 스스로\n"
+    "체력을\n"
+    "10 회복한다");
 
 static const u8 gItemDescription_PersimBerry[] = _(
-    "A hold item that\n"
-    "heals confusion\n"
-    "in battle.");
+    "지니게 하면 스스로\n"
+    "혼란 상태를\n"
+    "회복한다");
 
 static const u8 gItemDescription_LumBerry[] = _(
-    "A hold item that\n"
-    "heals status in\n"
-    "battle.");
+    "지니게 하면 스스로\n"
+    "상태 이상을\n"
+    "회복한다");
 
 static const u8 gItemDescription_SitrusBerry[] = _(
-    "A hold item that\n"
-    "restores 30 HP in\n"
-    "battle.");
+    "지니게 하면 스스로\n"
+    "체력을\n"
+    "30 회복한다");
 
 static const u8 gItemDescription_FigyBerry[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "지니게 하면 체력을\n"
+    "회복하지만\n"
+    "혼란에 빠질 수도 있다");
 
 static const u8 gItemDescription_WikiBerry[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "지니게 하면 체력을\n"
+    "회복하지만\n"
+    "혼란에 빠질 수도 있다");
 
 static const u8 gItemDescription_MagoBerry[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "지니게 하면 체력을\n"
+    "회복하지만\n"
+    "혼란에 빠질 수도 있다");
 
 static const u8 gItemDescription_AguavBerry[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "지니게 하면 체력을\n"
+    "회복하지만\n"
+    "혼란에 빠질 수도 있다");
 
 static const u8 gItemDescription_IapapaBerry[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "지니게 하면 체력을\n"
+    "회복하지만\n"
+    "혼란에 빠질 수도 있다");
 
 static const u8 gItemDescription_RazzBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow RAZZ.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "라즈가 자란다");
 
 static const u8 gItemDescription_BlukBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow BLUK.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "블리가 자란다");
 
 static const u8 gItemDescription_NanabBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow NANAB.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "나나가 자란다");
 
 static const u8 gItemDescription_WepearBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow WEPEAR.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "서배가 자란다");
 
 static const u8 gItemDescription_PinapBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow PINAP.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "파인이 자란다");
 
 static const u8 gItemDescription_PomegBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow POMEG.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "유석이 자란다");
+	// ポロックの ざいりょうｎ
+	// つちのなかに うめるとｎ
+	// ザロクが そだつ
 
 static const u8 gItemDescription_KelpsyBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow KELPSY.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "시마가 자란다");
 
 static const u8 gItemDescription_QualotBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow QUALOT.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "파비가 자란다");
 
 static const u8 gItemDescription_HondewBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow HONDEW.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "로매가 자란다");
 
 static const u8 gItemDescription_GrepaBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow GREPA.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "또뽀가 자란다");
 
 static const u8 gItemDescription_TamatoBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow TAMATO.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "토망이 자란다");
 
 static const u8 gItemDescription_CornnBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow CORNN.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "수숙이 자란다");
 
 static const u8 gItemDescription_MagostBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow MAGOST.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "고스티가 자란다");
 
 static const u8 gItemDescription_RabutaBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow RABUTA.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "라부탐이 자란다");
 
 static const u8 gItemDescription_NomelBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow NOMEL.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "노멜이 자란다");
 
 static const u8 gItemDescription_SpelonBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow SPELON.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "메호키가 자란다");
 
 static const u8 gItemDescription_PamtreBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow PAMTRE.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "자야가 자란다");
 
 static const u8 gItemDescription_WatmelBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow WATMEL.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "슈박이 자란다");
 
 static const u8 gItemDescription_DurinBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow DURIN.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "두리가 자란다");
 
 static const u8 gItemDescription_BelueBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow BELUE.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "루베가 자란다");
 
 static const u8 gItemDescription_LiechiBerry[] = _(
-    "A hold item that\n"
-    "raises ATTACK in\n"
-    "a pinch.");
+    "지니게 하면 위급할 때\n"
+    "공격력이 올라간다");
+	// もたせると ピンチのときｎ
+	// こうげきりょくが あがる
 
 static const u8 gItemDescription_GanlonBerry[] = _(
-    "A hold item that\n"
-    "raises DEFENSE in\n"
-    "a pinch.");
+    "지니게 하면 위급할 때\n"
+    "방어력이 올라간다");
 
 static const u8 gItemDescription_SalacBerry[] = _(
-    "A hold item that\n"
-    "raises SPEED in\n"
-    "a pinch.");
+    "지니게 하면 위급할 때\n"
+    "스피드가 올라간다");
 
 static const u8 gItemDescription_PetayaBerry[] = _(
-    "A hold item that\n"
-    "raises SP. ATK in\n"
-    "a pinch.");
+    "지니게 하면 위급할 때\n"
+    "특수공격이 올라간다");
 
 static const u8 gItemDescription_ApicotBerry[] = _(
-    "A hold item that\n"
-    "raises SP. DEF in\n"
-    "a pinch.");
+    "지니게 하면 위급할 때\n"
+    "특수방어가 올라간다");
 
 static const u8 gItemDescription_LansatBerry[] = _(
-    "A hold item that\n"
-    "ups the critical-\n"
-    "hit rate in a pinch.");
+    "지니게 하면 위급할 때\n"
+	"적의 급소를\n"
+    "맞추기 쉬워진다");
 
 static const u8 gItemDescription_StarfBerry[] = _(
-    "A hold item that\n"
-    "sharply boosts a\n"
-    "stat in a pinch.");
+    "지니게 하면 위급할 때\n"
+    "능력 중 어느\n"
+    "하나가 크게 올라간다");
 
 static const u8 gItemDescription_EnigmaBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow a mystery.");
+    "포켓몬스넥의 재료\n"
+    "땅속에 심으면\n"
+    "의문의 열매가 자란다");
 
 static const u8 gItemDescription_BrightPowder[] = _(
-    "A hold item that\n"
-    "casts a glare to\n"
-    "reduce accuracy.");
+    "지니게 하면 빛이\n"
+    "상대를 혼란시켜\n"
+    "명중률을 떨어뜨린다");
 
 static const u8 gItemDescription_WhiteHerb[] = _(
-    "A hold item that\n"
-    "restores any\n"
-    "lowered stat.");
+    "포켓몬에게 지니게 하면\n"
+    "떨어진 능력을\n"
+    "원래대로 되돌린다");
 
 static const u8 gItemDescription_MachoBrace[] = _(
-    "A hold item that\n"
-    "promotes growth,\n"
-    "but reduces SPEED.");
+    "포켓몬에게 지니게 하면\n"
+    "스피드가 떨어지지만\n"
+    "강하게 자란다");
 
 static const u8 gItemDescription_ExpShare[] = _(
-    "A hold item that\n"
-    "gets EXP. points\n"
-    "from battles.");
+    "지니게 한 포켓몬이\n"
+    "경험치를\n"
+    "나누어 받는다");
 
 static const u8 gItemDescription_QuickClaw[] = _(
-    "A hold item that\n"
-    "occasionally allows\n"
-    "the first strike.");
+    "포켓몬에게 지니게 하면\n"
+    "선제공격을\n"
+    "가끔씩 한다");
 
 static const u8 gItemDescription_SootheBell[] = _(
-    "A hold item that\n"
-    "calms spirits and\n"
-    "fosters friendship.");
+    "지니게 하면 포켓몬이\n"
+    "무척 마음이 편안해져서\n"
+    "친밀해지기 쉬워진다");
 
 static const u8 gItemDescription_MentalHerb[] = _(
-    "A hold item that\n"
-    "snaps POKéMON out\n"
-    "of infatuation.");
+    "지니게 한 포켓몬이\n"
+    "헤롱헤롱 상태가 되었을 때\n"
+    "낫게 한다");
 
 static const u8 gItemDescription_ChoiceBand[] = _(
-    "Raises a move's\n"
-    "power, but permits\n"
-    "only that move.");
+    "공격의 위력이\n"
+    "올라가지만 똑같은\n"
+    "기술밖에 쓰지 못한다");
 
 static const u8 gItemDescription_KingsRock[] = _(
-    "A hold item that\n"
-    "may cause flinching\n"
-    "when the foe is hit.");
+    "포켓몬에게 지니게 하면\n"
+    "데미지를 받은\n"
+    "상대가 가끔씩 풀죽는다");
 
 static const u8 gItemDescription_SilverPowder[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "BUG-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "벌레타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_AmuletCoin[] = _(
-    "Doubles money in\n"
-    "battle if the holder\n"
-    "takes part.");
+    "지니게 한 포켓몬이\n"
+    "배틀에 나오면\n"
+    "돈을 2배로 받을 수 있다");
 
 static const u8 gItemDescription_CleanseTag[] = _(
-    "A hold item that\n"
-    "helps repel wild\n"
-    "POKéMON.");
+    "포켓몬에게 지니게 하면\n"
+    "야생 포켓몬과\n"
+    "마주치기 어려워진다");
 
 static const u8 gItemDescription_SoulDew[] = _(
-    "Hold item: Raises\n"
-    "SP. ATK & SP. DEF\n"
-    "of LATIOS & LATIAS.");
+    "라티오스 라티아스에게\n"
+    "지니게 하면 특수공격과\n"
+    "특수방어가 올라간다");
 
 static const u8 gItemDescription_DeepSeaTooth[] = _(
-    "A hold item that\n"
-    "raises the SP. ATK\n"
-    "of CLAMPERL.");
+    "날카롭게 빛나는 이빨\n"
+    "진주몽에게 지니게 하면\n"
+    "특수공격이 올라간다");
 
 static const u8 gItemDescription_DeepSeaScale[] = _(
-    "A hold item that\n"
-    "raises the SP. DEF\n"
-    "of CLAMPERL.");
+    "희미하게 빛나는 비늘\n"
+    "진주몽에게 지니게 하면\n"
+    "특수방어가 올라간다");
 
 static const u8 gItemDescription_SmokeBall[] = _(
-    "A hold item that\n"
-    "can be used to flee\n"
-    "from a wild POKéMON.");
+    "조우한 야생\n"
+    "포켓몬으로부터 반드시\n"
+    "도망칠 수 있다");
+	// そうぐうした やせいのｎ
+	// ポケモンから かならずｎ
+	// にげられる
 
 static const u8 gItemDescription_Everstone[] = _(
-    "A wondrous stone\n"
-    "& a hold item that\n"
-    "prevents evolution.");
+    "지니게 한 포켓몬이\n"
+    "진화하지 않게 되는\n"
+    "이상한 돌");
 
 static const u8 gItemDescription_FocusBand[] = _(
-    "A hold item that\n"
-    "occasionally\n"
-    "prevents fainting.");
+    "포켓몬에게 지니게 하면\n"
+    "가끔씩 기절을\n"
+    "막기도 한다");
 
 static const u8 gItemDescription_LuckyEgg[] = _(
-    "A hold item that\n"
-    "boosts EXP. points\n"
-    "earned in battle.");
+    "지니게 한 포켓몬의\n"
+    "경험치가 여느 때보다\n"
+    "조금 더 늘어난다");
 
 static const u8 gItemDescription_ScopeLens[] = _(
-    "A hold item that\n"
-    "raises the critical-\n"
-    "hit rate.");
+    "포켓몬에게 지니게 하면\n"
+    "급소에\n"
+    "맞추기 쉬워진다");
 
 static const u8 gItemDescription_MetalCoat[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "STEEL-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "강철타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_Leftovers[] = _(
-    "A hold item that\n"
-    "gradually restores\n"
-    "HP in battle.");
+    "지니게 하면 체력이\n"
+    "배틀을 하는 동안\n"
+    "조금씩 회복된다");
 
 static const u8 gItemDescription_DragonScale[] = _(
-    "A strange scale\n"
-    "held by DRAGON-\n"
-    "type POKéMON.");
+    "드래곤타입의\n"
+    "포켓몬이 지니고 있는\n"
+    "이상한 비늘");
 
 static const u8 gItemDescription_LightBall[] = _(
-    "A hold item that\n"
-    "raises the SP. ATK\n"
-    "of PIKACHU.");
+    "찌릿찌릿한 구슬\n"
+    "피카츄에게 지니게 하면\n"
+    "특수공격이 올라간다");
 
 static const u8 gItemDescription_SoftSand[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "GROUND-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "땅타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_HardStone[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "ROCK-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "바위타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_MiracleSeed[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "GRASS-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "풀타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_BlackGlasses[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "DARK-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "악타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_BlackBelt[] = _(
-    "A hold item that\n"
-    "boosts FIGHTING-\n"
-    "type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "격투타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_Magnet[] = _(
-    "A hold item that\n"
-    "boosts ELECTRIC-\n"
-    "type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "전기타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_MysticWater[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "WATER-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "물타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_SharpBeak[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "FLYING-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "비행타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_PoisonBarb[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "POISON-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "독타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_NeverMeltIce[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "ICE-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "얼음타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_SpellTag[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "GHOST-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "고스트타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_TwistedSpoon[] = _(
-    "A hold item that\n"
-    "boosts PSYCHIC-\n"
-    "type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "에스퍼타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_Charcoal[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "FIRE-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "불꽃타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_DragonFang[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "DRAGON-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "드래곤타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_SilkScarf[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "NORMAL-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "노말타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_UpGrade[] = _(
-    "A peculiar box made\n"
-    "by SILPH CO.");
+    "이상한 상자\n"
+    "실프주식회사 제품");
 
 static const u8 gItemDescription_ShellBell[] = _(
     "A hold item that\n"

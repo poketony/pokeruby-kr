@@ -174,7 +174,7 @@ const u8 OtherText_CheckTag[] = _("태그확인");
 const u8 OtherText_Confirm[] = _("결정");
 const u8 gOtherText_Walk[] = _("내린다");
 
-const u8 gOtherText_Exit[] = _("돌아간다"); // 되돌아간다
+const u8 gOtherText_Exit[] = _("되돌아간다"); // 되돌아간다
 const u8 gOtherText_CancelNoTerminator[] = _("그만둔다");
 const u8 gOtherText_CancelWithTerminator[] = _("$그만둔다"); // with terminator at beginning?
 
