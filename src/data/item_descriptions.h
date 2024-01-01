@@ -662,7 +662,7 @@ static const u8 gItemDescription_ApicotBerry[] = _(
 static const u8 gItemDescription_LansatBerry[] = _(
     "지니게 하면 위급할 때\n"
 	"적의 급소를\n"
-    "맞추기 쉬워진다");
+    "맞히기 쉬워진다");
 
 static const u8 gItemDescription_StarfBerry[] = _(
     "지니게 하면 위급할 때\n"
@@ -775,7 +775,7 @@ static const u8 gItemDescription_LuckyEgg[] = _(
 static const u8 gItemDescription_ScopeLens[] = _(
     "포켓몬에게 지니게 하면\n"
     "급소에\n"
-    "맞추기 쉬워진다");
+    "맞히기 쉬워진다");
 
 static const u8 gItemDescription_MetalCoat[] = _(
     "포켓몬에게 지니게 하면\n"
@@ -877,495 +877,483 @@ static const u8 gItemDescription_UpGrade[] = _(
     "실프주식회사 제품");
 
 static const u8 gItemDescription_ShellBell[] = _(
-    "A hold item that\n"
-    "restores HP upon\n"
-    "striking the foe.");
+    "지니게 하면 적에게\n"
+    "데미지를 주었을 때\n"
+    "체력을 회복한다");
 
 static const u8 gItemDescription_SeaIncense[] = _(
-    "A hold item that\n"
-    "slightly boosts\n"
-    "WATER-type moves.");
+    "포켓몬에게 지니게 하면\n"
+    "물타입 기술의\n"
+    "위력이 조금 올라간다");
 
 static const u8 gItemDescription_LaxIncense[] = _(
-    "A hold item that\n"
-    "slightly lowers the\n"
-    "foe's accuracy.");
+    "포켓몬에게 지니게 하면\n"
+    "적의 명중률을\n"
+    "조금 떨어뜨린다");
 
 static const u8 gItemDescription_LuckyPunch[] = _(
-    "A hold item that\n"
-    "raises CHANSEY's\n"
-    "critical-hit rate.");
+    "럭키에게 지니게 하면\n"
+    "상대의 급소에\n"
+    "맞히기 쉬워진다");
 
 static const u8 gItemDescription_MetalPowder[] = _(
-    "A hold item that\n"
-    "raises DEFENSE.");
+    "메타몽에게 지니게 하면\n"
+    "방어력이 올라간다");
 
 static const u8 gItemDescription_ThickClub[] = _(
-    "A bone of some\n"
-    "sort. It can be sold\n"
-    "cheaply.");
+    "무언가의 뼈\n"
+    "싸게 팔린다");
 
 static const u8 gItemDescription_Stick[] = _(
-    "A stick of leek.\n"
-    "It can be sold\n"
-    "cheaply.");
+    "평범한 대파\n"
+    "싸게 팔린다");
 
 static const u8 gItemDescription_RedScarf[] = _(
-    "A hold item that\n"
-    "raises COOL in\n"
-    "CONTESTS.");
+    "지니게 하고 콘테스트에\n"
+    "참가시키면 여느 때보다\n"
+    "근사하게 보인다");
 
 static const u8 gItemDescription_BlueScarf[] = _(
-    "A hold item that\n"
-    "raises BEAUTY in\n"
-    "CONTESTS.");
+    "지니게 하고 콘테스트에\n"
+    "참가시키면 여느 때보다\n"
+    "아름답게 보인다");
 
 static const u8 gItemDescription_PinkScarf[] = _(
-    "A hold item that\n"
-    "raises CUTE in\n"
-    "CONTESTS.");
+    "지니게 하고 콘테스트에\n"
+    "참가시키면 여느 때보다\n"
+    "귀엽게 보인다");
 
 static const u8 gItemDescription_GreenScarf[] = _(
-    "A hold item that\n"
-    "raises SMART in\n"
-    "CONTESTS.");
+    "지니게 하고 콘테스트에\n"
+    "참가시키면 여느 때보다\n"
+    "슬기롭게 보인다");
 
 static const u8 gItemDescription_YellowScarf[] = _(
-    "A hold item that\n"
-    "raises TOUGH in\n"
-    "CONTESTS.");
+    "지니게 하고 콘테스트에\n"
+    "참가시키면 여느 때보다\n"
+    "강인하게 보인다");
 
 static const u8 gItemDescription_MachBike[] = _(
-    "A folding bicycle\n"
-    "that more than\n"
-    "doubles foot speed.");
+    "2배 이상의 스피드로\n"
+    "이동할 수 있는\n"
+    "접이식 자전거다");
 
 static const u8 gItemDescription_CoinCase[] = _(
-    "A case that holds\n"
-    "up to 9,999 COINS.");
+    "손에 넣은 동전을\n"
+	"9999개까지\n"
+    "넣을 수 있다");
 
 static const u8 gItemDescription_Itemfinder[] = _(
-    "A device that\n"
-    "signals an invisible\n"
-    "item by sound.");
+    "보이지 않는 도구에\n"
+    "반응해서\n"
+    "소리로 가르쳐준다");
 
 static const u8 gItemDescription_OldRod[] = _(
-    "Use by any body of\n"
-    "water to fish for\n"
-    "wild POKéMON.");
+    "포켓몬을 낚는 도구\n"
+    "물가에서 사용하면\n"
+    "포켓몬을 낚을 수 있다");
 
 static const u8 gItemDescription_GoodRod[] = _(
-    "A decent fishing\n"
-    "rod for catching\n"
-    "wild POKéMON.");
+    "포켓몬을 낚는 도구\n"
+    "그럭저럭인 낚싯대라고\n"
+    "전해진다");
 
 static const u8 gItemDescription_SuperRod[] = _(
-    "The best fishing\n"
-    "rod for catching\n"
-    "wild POKéMON.");
+    "포켓몬을 낚는 도구\n"
+    "최고의 낚싯대라고\n"
+    "전해진다");
 
 static const u8 gItemDescription_SSTicket[] = _(
-    "The ticket required\n"
-    "for sailing on a\n"
-    "ferry.");
+    "연락선에\n"
+    "탈 때 필요하다");
 
 static const u8 gItemDescription_ContestPass[] = _(
-    "The pass required\n"
-    "for entering\n"
-    "POKéMON CONTESTS.");
+    "포켓몬 콘테스트에\n"
+    "참가할 수 있다");
 
 static const u8 gItemDescription_WailmerPail[] = _(
-    "A tool used for\n"
-    "watering BERRIES\n"
-    "and plants.");
+    "물을 주는 도구\n"
+    "땅에 심은 나무열매를\n"
+    "쑥쑥 키운다");
 
 static const u8 gItemDescription_DevonGoods[] = _(
-    "A package that\n"
-    "contains DEVON's\n"
-    "machine parts.");
+    "데봉에서 만들어진\n"
+    "무언가의 파츠가\n"
+    "들어 있는 화물");
 
 static const u8 gItemDescription_SootSack[] = _(
-    "A sack used to\n"
-    "gather and hold\n"
-    "volcanic ash.");
+    "쌓인 화산재를\n"
+	"모으기 위한 주머니");
 
 static const u8 gItemDescription_BasementKey[] = _(
-    "The key for NEW\n"
-    "MAUVILLE beneath\n"
-    "MAUVILLE CITY.");
+    "보라시티 근처에 있는\n"
+    "뉴보라에 들어가기 위한\n"
+    "열쇠다");
 
 static const u8 gItemDescription_AcroBike[] = _(
-    "A folding bicycle\n"
-    "capable of jumps\n"
-    "and wheelies.");
+    "점프나 윌리 액션을\n"
+    "할 수 있는\n"
+    "접이식 자전거다");
 
 static const u8 gItemDescription_PokeblockCase[] = _(
-    "A case for holding\n"
-    "{POKEBLOCK}S made with\n"
-    "a BERRY BLENDER.");
+    "나무열매블렌더로\n"
+    "만든 포켓몬스넥을\n"
+    "저장하는 용기");
 
 static const u8 gItemDescription_Letter[] = _(
-    "A letter to STEVEN\n"
-    "from the PRESIDENT\n"
-    "of the DEVON CORP.");
+    "데봉사장이\n"
+    "맡긴 편지");
 
 static const u8 gItemDescription_EonTicket[] = _(
-    "The ticket for a\n"
-    "ferry to a distant\n"
-    "southern island.");
+    "남쪽의 외딴섬으로 가는\n"
+    "배의 승선티켓");
 
 static const u8 gItemDescription_RedOrb[] = _(
-    "A red, glowing orb\n"
-    "said to contain an\n"
-    "ancient power.");
+    "고대의 힘이\n"
+    "깃들어 있다고 하는\n"
+    "빨갛게 빛나는 구슬");
 
 static const u8 gItemDescription_BlueOrb[] = _(
-    "A blue, glowing orb\n"
-    "said to contain an\n"
-    "ancient power.");
+    "고대의 힘이\n"
+    "깃들어 있다고 하는\n"
+    "파랗게 빛나는 구슬");
 
 static const u8 gItemDescription_Scanner[] = _(
-    "A device found\n"
-    "inside the\n"
-    "ABANDONED SHIP.");
+    "버려진 배 안에서\n"
+    "발견한 도구");
 
 static const u8 gItemDescription_GoGoggles[] = _(
-    "Nifty goggles that\n"
-    "protect eyes from\n"
-    "desert sandstorms.");
+    "사막의 모래바람으로부터\n"
+    "눈을 보호해 주는\n"
+    "근사한 고글");
 
 static const u8 gItemDescription_Meteorite[] = _(
-    "A meteorite found\n"
-    "at METEOR FALLS.");
+    "유성의 폭포에\n"
+    "떨어져 있던 운석이다");
 
 static const u8 gItemDescription_Room1Key[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "버려진 배의 방으로\n"
+    "들어가기 위한 열쇠");
 
 static const u8 gItemDescription_Room2Key[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "버려진 배의 방으로\n"
+    "들어가기 위한 열쇠");
 
 static const u8 gItemDescription_Room4Key[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "버려진 배의 방으로\n"
+    "들어가기 위한 열쇠");
 
 static const u8 gItemDescription_Room6Key[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "버려진 배의 방으로\n"
+    "들어가기 위한 열쇠");
 
 static const u8 gItemDescription_StorageKey[] = _(
-    "The key to the\n"
-    "storage inside the\n"
-    "ABANDONED SHIP.");
+    "버려진 배의 창고로\n"
+    "들어가기 위한 열쇠");
 
 static const u8 gItemDescription_RootFossil[] = _(
-    "A fossil of an\n"
-    "ancient, seafloor-\n"
-    "dwelling POKéMON.");
+    "오랜 옛날 해저에\n"
+    "살았던 포켓몬의\n"
+    "화석이라고 전해진다");
 
 static const u8 gItemDescription_ClawFossil[] = _(
-    "A fossil of an\n"
-    "ancient, seafloor-\n"
-    "dwelling POKéMON.");
+    "오랜 옛날 해저에\n"
+    "살았던 포켓몬의\n"
+    "화석이라고 전해진다");
 
 static const u8 gItemDescription_DevonScope[] = _(
-    "A device by DEVON\n"
-    "that signals any\n"
-    "unseeable POKéMON.");
+    "보이지 않는 포켓몬에\n"
+    "반응하여 소리를 내는\n"
+    "데봉의 특제품");
 
 static const u8 gItemDescription_TM01[] = _(
-    "Powerful, but makes\n"
-    "the user flinch if\n"
-    "hit by the foe.");
+    "적에게 큰 데미지를\n"
+    "줄 수 있지만 공격을\n"
+    "받으면 풀죽어 버린다");
 
 static const u8 gItemDescription_TM02[] = _(
-    "Hooks and slashes\n"
-    "the foe with long,\n"
-    "sharp claws.");
+    "길고 날카로운 발톱으로\n"
+    "적을 할퀴어\n"
+	"공격한다");
 
 static const u8 gItemDescription_TM03[] = _(
-    "Generates an\n"
-    "ultrasonic wave\n"
-    "that may confuse.");
+    "초음파 공격으로\n"
+    "적을 혼란하게\n"
+    "만들기도 한다");
 
 static const u8 gItemDescription_TM04[] = _(
-    "Raises SP. ATK and\n"
-    "SP. DEF by focusing\n"
-    "the mind.");
+    "정신을 집중시켜서\n"
+    "특수공격과\n"
+	"특수방어를 올린다.");
 
 static const u8 gItemDescription_TM05[] = _(
-    "A savage roar that\n"
-    "makes the foe flee \n"
-    "to end the battle.");
+    "짖어서 적을 쫓는다\n"
+    "적이 도망가면\n"
+    "배틀이 끝난다");
 
 static const u8 gItemDescription_TM06[] = _(
-    "Poisons the foe\n"
-    "with a toxin that\n"
-    "gradually worsens.");
+    "점점 데미지가\n"
+    "늘어나는 맹독을\n"
+    "적에게 준다");
 
 static const u8 gItemDescription_TM07[] = _(
-    "Summons a hailstorm\n"
-    "that hurts all\n"
-    "types except ICE.");
+    "싸라기눈을 내리게 해서\n"
+    "얼음타입 이외에\n"
+    "데미지를 준다");
 
 static const u8 gItemDescription_TM08[] = _(
-    "Bulks up the body\n"
-    "to boost both\n"
-    "ATTACK & DEFENSE.");
+    "몸을 단련하여\n"
+    "공격과 방어의\n"
+    "힘을 올린다");
 
 static const u8 gItemDescription_TM09[] = _(
-    "Shoots 2 to 5 seeds\n"
-    "in a row to strike\n"
-    "the foe.");
+    "씨앗을 2-5회\n"
+    "연속으로 발사하여\n"
+    "적을 공격한다");
 
 static const u8 gItemDescription_TM10[] = _(
-    "The attack power\n"
-    "varies among\n"
-    "different POKéMON.");
+    "포켓몬에 따라 적에게\n"
+    "주는 데미지의\n"
+    "위력이 변화한다");
 
 static const u8 gItemDescription_TM11[] = _(
-    "Raises the power of\n"
-    "FIRE-type moves\n"
-    "for 5 turns.");
+    "5턴 동안\n"
+    "불꽃타입\n"
+    "기술의 위력이 올라간다");
 
 static const u8 gItemDescription_TM12[] = _(
-    "Enrages the foe so\n"
-    "it can only use\n"
-    "attack moves.");
+    "상대를 화나게 해서\n"
+    "공격 기술밖에\n"
+    "쓸 수 없게 만든다");
 
 static const u8 gItemDescription_TM13[] = _(
-    "Fires an icy cold\n"
-    "beam that may\n"
-    "freeze the foe.");
+    "냉기를 발사해서\n"
+    "적을 공격한다\n"
+    "얼릴 때가 있다");
 
 static const u8 gItemDescription_TM14[] = _(
-    "A vicious snow-and-\n"
-    "wind attack that\n"
-    "may freeze the foe.");
+    "눈을 강한 바람에\n"
+    "실어서 공격한다\n"
+    "얼릴 때가 있다");
 
 static const u8 gItemDescription_TM15[] = _(
-    "Powerful, but needs\n"
-    "recharging the\n"
-    "next turn.");
+    "데미지는 크지만\n"
+    "사용하면 다음 턴에\n"
+    "움직일 수 없게 된다");
 
 static const u8 gItemDescription_TM16[] = _(
-    "Creates a wall of\n"
-    "light that lowers\n"
-    "SP. ATK damage.");
+    "빛의 장막을 만들어\n"
+    "특수공격의 데미지를\n"
+    "약하게 한다");
 
 static const u8 gItemDescription_TM17[] = _(
-    "Negates all damage,\n"
-    "but may fail if used\n"
-    "in succession.");
+    "그 턴의 공격을\n"
+    "받지 않지만 연속으로\n"
+    "쓰면 실패하기 쉬워진다");
 
 static const u8 gItemDescription_TM18[] = _(
-    "Raises the power of\n"
-    "WATER-type moves\n"
-    "for 5 turns.");
+    "5턴 동안\n"
+    "물타입 기술의\n"
+    "위력이 올라간다");
 
 static const u8 gItemDescription_TM19[] = _(
-    "Recovers half the\n"
-    "HP of the damage \n"
-    "this move inflicts.");
+    "입힌 데미지의\n"
+    "절반만큼의 체력을\n"
+    "회복할 수 있다");
 
 static const u8 gItemDescription_TM20[] = _(
-    "Prevents status\n"
-    "abnormality with a\n"
-    "mystical power.");
+    "이상한 힘으로\n"
+    "보호받아 특수 상태가\n"
+    "되지 않는다");
 
 static const u8 gItemDescription_TM21[] = _(
-    "The less the user\n"
-    "likes you, the more\n"
-    "powerful this move.");
+    "포켓몬과 친밀하지\n"
+    "않을수록 주는\n"
+    "데미지가 올라간다");
 
 static const u8 gItemDescription_TM22[] = _(
-    "Absorbs sunlight in\n"
-    "the 1st turn, then\n"
-    "attacks next turn.");
+    "1턴 동안 빛을\n"
+    "흡수해서\n"
+    "다음 턴에 공격한다");
 
 static const u8 gItemDescription_TM23[] = _(
-    "Slams the foe with\n"
-    "a hard tail. It may\n"
-    "lower DEFENSE.");
+    "단단한 꼬리로 공격\n"
+    "적의 방어를\n"
+    "떨어뜨리기도 한다");
 
 static const u8 gItemDescription_TM24[] = _(
-    "A powerful electric\n"
-    "attack that may\n"
-    "cause paralysis.");
+    "전자파를 날려\n"
+    "맞힌 적을\n"
+    "마비시키기도 한다");
 
 static const u8 gItemDescription_TM25[] = _(
-    "Strikes the foe\n"
-    "with a thunderbolt.\n"
-    "It may paralyze.");
+    "번개를 떨어뜨려\n"
+    "맞힌 적을\n"
+    "마비시키기도 한다");
 
 static const u8 gItemDescription_TM26[] = _(
-    "Causes a quake\n"
-    "that has no effect\n"
-    "on flying foes.");
+    "땅을 강하게 흔들어\n"
+    "나는 적 이외에\n"
+    "큰 데미지를 입힌다");
 
 static const u8 gItemDescription_TM27[] = _(
-    "The more the user\n"
-    "likes you, the more\n"
-    "powerful this move.");
+    "포켓몬과 친밀할수록\n"
+    "주는 데미지가\n"
+    "올라간다");
 
 static const u8 gItemDescription_TM28[] = _(
-    "Digs underground\n"
-    "the 1st turn, then\n"
-    "strikes next turn.");
+    "1턴째에 땅에\n"
+    "파고들어 다음 턴에\n"
+    "적을 공격한다");
 
 static const u8 gItemDescription_TM29[] = _(
-    "A powerful psychic\n"
-    "attack that may\n"
-    "lower SP. DEF.");
+    "강한 초능력을 내어\n"
+    "적의 특수방어를\n"
+    "떨어뜨리기도 한다");
 
 static const u8 gItemDescription_TM30[] = _(
-    "Hurls a dark lump\n"
-    "at the foe. It may\n"
-    "lower SP. DEF.");
+    "검은 덩어리를 내던진다\n"
+    "적의 특수방어를\n"
+    "떨어뜨리기도 한다");
 
 static const u8 gItemDescription_TM31[] = _(
-    "Destroys barriers\n"
-    "like LIGHT SCREEN\n"
-    "and causes damage.");
+    "빛의장막 등을\n"
+    "부숴서 적에게\n"
+    "데미지를 줄 수 있다");
 
 static const u8 gItemDescription_TM32[] = _(
-    "Creates illusory\n"
-    "copies to enhance\n"
-    "elusiveness.");
+    "자신을 만들어\n"
+    "적을 혼란하게 해\n"
+    "회피율을 올린다");
 
 static const u8 gItemDescription_TM33[] = _(
-    "Creates a wall of\n"
-    "light that weakens\n"
-    "physical attacks.");
+    "빛나는 장막을 만들어\n"
+    "물리 공격의\n"
+    "데미지를 약하게 한다");
 
 static const u8 gItemDescription_TM34[] = _(
-    "Zaps the foe with a\n"
-    "jolt of electricity\n"
-    "that never misses.");
+    "절대로 피할 수 없는\n"
+    "스피드로 적에게\n"
+    "전격을 날린다");
 
 static const u8 gItemDescription_TM35[] = _(
-    "Looses a stream of\n"
-    "fire that may burn\n"
-    "the foe.");
+    "불꽃을 흩뿌린다\n"
+    "맞힌 적을\n"
+    "화상 입힐 때가 있다");
 
 static const u8 gItemDescription_TM36[] = _(
-    "Hurls sludge at the\n"
-    "foe. It may poison\n"
-    "the foe.");
+    "오물을 내던진다\n"
+    "맞힌 적을 독에\n"
+    "걸리게 할 때가 있다");
 
 static const u8 gItemDescription_TM37[] = _(
-    "Causes a sandstorm\n"
-    "that hits the foe\n"
-    "over several turns.");
+    "모래바람을 일으켜서\n"
+    "매 턴 적에게\n"
+    "데미지를 준다");
 
 static const u8 gItemDescription_TM38[] = _(
-    "A powerful fire\n"
-    "attack that may\n"
-    "burn the foe.");
+    "큰 문자로 모든 것을\n"
+    "불태우는 공격\n"
+    "화상 입힐 때가 있다");
 
 static const u8 gItemDescription_TM39[] = _(
-    "Stops the foe from\n"
-    "moving with rocks.\n"
-    "May lower SPEED.");
+    "바위로 적의 움직임을\n"
+    "막아서 공격\n"
+    "스피드를 낮추기도 한다");
 
 static const u8 gItemDescription_TM40[] = _(
-    "An extremely fast\n"
-    "attack that can't\n"
-    "be avoided.");
+    "재빠른 움직임으로\n"
+    "절대로 피할 수 없는\n"
+    "공격을 한다");
 
 static const u8 gItemDescription_TM41[] = _(
-    "Prevents the foe\n"
-    "from using the same\n"
-    "move in a row.");
+    "적이 똑같은 기술을\n"
+    "연속으로\n"
+    "쓸 수 없게 만든다");
 
 static const u8 gItemDescription_TM42[] = _(
-    "Raises ATTACK when\n"
-    "poisoned, burned,\n"
-    "or paralyzed.");
+    "독, 마비, 화상일 때\n"
+    "공격의 힘을\n"
+    "올릴 수 있다");
 
 static const u8 gItemDescription_TM43[] = _(
-    "Adds an effect to\n"
-    "attack depending\n"
-    "on the location.");
+    "싸우는 장소에 따라\n"
+    "적에게 주는\n"
+    "추가 효과가 바뀐다");
 
 static const u8 gItemDescription_TM44[] = _(
-    "The user sleeps for\n"
-    "2 turns to restore\n"
-    "health and status.");
+    "2턴 잠자서 몸의\n"
+    "이상과 체력을\n"
+    "전부 회복한다");
 
 static const u8 gItemDescription_TM45[] = _(
-    "Makes it tough to\n"
-    "attack a foe of the\n"
-    "opposite gender.");
+    "수컷은 암컷에게\n"
+    "암컷은 수컷에게\n"
+    "기술을 쓸 수 없게 된다");
 
 static const u8 gItemDescription_TM46[] = _(
-    "While attacking,\n"
-    "it may steal the\n"
-    "foe's held item.");
+    "공격 중에 틈을 봐서\n"
+    "적이 지니고 있는\n"
+    "도구를 훔친다");
 
 static const u8 gItemDescription_TM47[] = _(
-    "Spreads hard-edged\n"
-    "wings and slams\n"
-    "into the foe.");
+    "단단한 날개를 크게\n"
+    "펼쳐서 그대로\n"
+    "적에게 몸통박치기한다");
 
 static const u8 gItemDescription_TM48[] = _(
-    "Switches abilities\n"
-    "with the foe on the\n"
-    "turn this is used.");
+    "기술을 쓴 턴에\n"
+    "자신과 적의\n"
+    "특성을 바꾼다");
 
 static const u8 gItemDescription_TM49[] = _(
-    "Steals the effects\n"
-    "of the move the foe\n"
-    "is trying to use.");
+    "적이 사용하려고 했던\n"
+    "기술을 빼앗아\n"
+    "자신이 쓴다");
 
 static const u8 gItemDescription_TM50[] = _(
-    "Enables full-power\n"
-    "attack, but sharply\n"
-    "lowers SP. ATK.");
+    "풀 파워로 공격하지만\n"
+    "특수공격이\n"
+    "크게 떨어져 버린다");
 
 static const u8 gItemDescription_HM01[] = _(
-    "Attacks the foe\n"
-    "with sharp blades\n"
-    "or claws.");
+    "낫이나 발톱 등\n"
+    "날카로운 것으로 적을\n"
+    "갈라서 공격한다");
 
 static const u8 gItemDescription_HM02[] = _(
-    "Flies up on the\n"
-    "first turn, then\n"
-    "attacks next turn.");
+    "1턴째에 하늘을 날아\n"
+    "다음 턴에 적을\n"
+    "공격한다");
 
 static const u8 gItemDescription_HM03[] = _(
-    "Creates a huge\n"
-    "wave, then crashes\n"
-    "it down on the foe.");
+    "물에 파도를 일으켜서\n"
+    "그것을 엄청난\n"
+    "힘으로 내리친다");
 
 static const u8 gItemDescription_HM04[] = _(
-    "Builds enormous\n"
-    "power, then slams\n"
-    "the foe.");
+    "전신에 엄청난\n"
+    "힘을 담아\n"
+    "적을 공격한다");
 
 static const u8 gItemDescription_HM05[] = _(
-    "Looses a powerful\n"
-    "blast of light that\n"
-    "reduces accuracy.");
+    "강한 빛으로 눈을\n"
+    "속여서 적의\n"
+    "명중률을 떨어뜨린다");
 
 static const u8 gItemDescription_HM06[] = _(
-    "A rock-crushingly\n"
-    "tough attack that\n"
-    "may lower DEFENSE.");
+    "바위를 깨뜨리는 힘으로\n"
+    "적의 방어를\n"
+    "떨어뜨릴 때가 있다");
 
 static const u8 gItemDescription_HM07[] = _(
-    "Attacks the foe\n"
-    "with enough power\n"
-    "to climb waterfalls.");
+    "폭포를 거꾸로 오르는 듯한\n"
+    "기세로 적에게\n"
+    "돌진한다");
 
 static const u8 gItemDescription_HM08[] = _(
-    "Dives underwater\n"
-    "the 1st turn, then\n"
-    "attacks next turn.");
+    "1턴째에 물에\n"
+    "잠수해 다음 턴에\n"
+    "적을 공격한다");
 
 static const u8 gItemDescription_Dummy[] = _("");
