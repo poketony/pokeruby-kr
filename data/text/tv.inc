@@ -905,11 +905,7 @@ gTVSmartShopperText1:: @ 81AB381
 	.string "Hello!\p"
 	.string "It's time for TODAY'S SMART SHOPPER.\p"
 	.string "INTERVIEWER: How are you, viewers?\p"
-	.if REVISION >= 1
 	.string "Today we're visiting a shop\n"
-	.else
-	.string "Today we're visiting the POKéMON MART\n"
-	.endif
 	.string "in {STR_VAR_2}.\p"
 	.string "Let's check on what the hot sellers\n"
 	.string "have been recently.$"

@@ -7,7 +7,6 @@ GAME_LANGUAGE ?= ENGLISH
 DEBUG         ?= 0
 MODERN        ?= 0
 DEBUG_FIX     ?= 0
-COMPARE       ?= 0
 
 # For gbafix
 MAKER_CODE  := 01
@@ -32,38 +31,25 @@ ifeq ($(GAME_LANGUAGE), ENGLISH)
   BUILD_NAME := $(BUILD_NAME)
   GAME_CODE  := $(GAME_CODE)E
 else
-ifeq ($(GAME_LANGUAGE), GERMAN)
-  BUILD_NAME := $(BUILD_NAME)_de
-  GAME_CODE  := $(GAME_CODE)D
-else
   $(error unknown language $(GAME_LANGUAGE))
-endif
 endif
 
 # Revision
 ifeq ($(GAME_REVISION), 0)
   BUILD_NAME := $(BUILD_NAME)
 else
-ifeq ($(GAME_REVISION), 1)
-  BUILD_NAME := $(BUILD_NAME)_rev1
-else
-ifeq ($(GAME_REVISION), 2)
-  BUILD_NAME := $(BUILD_NAME)_rev2
-else
   $(error unknown revision $(GAME_REVISION))
-endif
-endif
 endif
 
 # Debug fixes (always nonmatching)
 ifeq ($(DEBUG_FIX), 1)
-  COMPARE := 0
   DEBUG = 1
 endif
 
 # Debug
 ifeq ($(DEBUG), 1)
   BUILD_NAME := $(BUILD_NAME)_debug
+else
 ifeq ($(DEBUG_FIX), 1)
   BUILD_NAME := $(BUILD_NAME)_fixed
 endif
@@ -75,4 +61,3 @@ ifeq ($(MODERN), 0)
 else
   BUILD_NAME := $(BUILD_NAME)_modern
 endif
-

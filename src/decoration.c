@@ -409,11 +409,7 @@ const u8 DecorDesc_MARILL_DOLL[] = _(
     "or a desk.");
 
 const u8 DecorDesc_TOGEPI_DOLL[] = _(
-#if REVISION >= 1
     "A TOGEPI doll.\n"
-#else
-    "A TOPGEPI doll.\n"
-#endif
     "Place it on a mat\n"
     "or a desk.");
 

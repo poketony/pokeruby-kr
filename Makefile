@@ -1,9 +1,4 @@
 TOOLCHAIN := $(DEVKITARM)
-COMPARE ?= 0
-
-ifeq (compare,$(MAKECMDGOALS))
-  COMPARE := 1
-endif
 
 # don't use dkP's base_tools anymore
 # because the redefinition of $(CC) conflicts
@@ -70,7 +65,6 @@ CPP       := $(PREFIX)cpp
 LD        := $(PREFIX)ld
 OBJCOPY   := $(PREFIX)objcopy
 
-SHA1SUM   := $(shell { command -v sha1sum || command -v shasum; } 2>/dev/null) -c
 GBAGFX    := tools/gbagfx/gbagfx$(EXE)
 RSFONT    := tools/rsfont/rsfont$(EXE)
 AIF2PCM   := tools/aif2pcm/aif2pcm$(EXE)
@@ -157,7 +151,7 @@ infoshell = $(foreach line, $(shell $1 | sed "s/ /__SPACE__/g"), $(info $(subst 
 
 # Build tools when building the rom
 # Disable dependency scanning for clean/tidy/tools
-ifeq (,$(filter-out all modern compare syms,$(MAKECMDGOALS)))
+ifeq (,$(filter-out all modern syms,$(MAKECMDGOALS)))
 $(call infoshell, $(MAKE) tools)
 else
 NODEP := 1
@@ -187,11 +181,6 @@ $(shell mkdir -p $(SUBDIRS))
 AUTO_GEN_TARGETS :=
 
 all: $(ROM)
-ifeq ($(COMPARE),1)
-	@$(SHA1SUM) $(BUILD_NAME).sha1
-endif
-
-compare: ; @$(MAKE) COMPARE=1
 
 syms: $(SYM)
 
@@ -266,31 +255,14 @@ $(BUILD_DIR)/%.o: %.s $$(ASM_DEP)
 # "friendly" target names for convenience sake
 ruby:              ; @$(MAKE) GAME_VERSION=RUBY
 ruby_debug:        ; @$(MAKE) GAME_VERSION=RUBY DEBUG=1
-ruby_rev1:         ; @$(MAKE) GAME_VERSION=RUBY GAME_REVISION=1
-ruby_rev2:         ; @$(MAKE) GAME_VERSION=RUBY GAME_REVISION=2
 sapphire:          ; @$(MAKE) GAME_VERSION=SAPPHIRE
 sapphire_debug:    ; @$(MAKE) GAME_VERSION=SAPPHIRE DEBUG=1
-sapphire_rev1:     ; @$(MAKE) GAME_VERSION=SAPPHIRE GAME_REVISION=1
-sapphire_rev2:     ; @$(MAKE) GAME_VERSION=SAPPHIRE GAME_REVISION=2
 
 modern:                   ; @$(MAKE) GAME_VERSION=RUBY MODERN=1
 ruby_modern:              ; @$(MAKE) GAME_VERSION=RUBY MODERN=1
 ruby_debug_modern:        ; @$(MAKE) GAME_VERSION=RUBY DEBUG=1 MODERN=1
-ruby_rev1_modern:         ; @$(MAKE) GAME_VERSION=RUBY GAME_REVISION=1 MODERN=1
-ruby_rev2_modern:         ; @$(MAKE) GAME_VERSION=RUBY GAME_REVISION=2 MODERN=1
 sapphire_modern:          ; @$(MAKE) GAME_VERSION=SAPPHIRE MODERN=1
 sapphire_debug_modern:    ; @$(MAKE) GAME_VERSION=SAPPHIRE DEBUG=1 MODERN=1
-sapphire_rev1_modern:     ; @$(MAKE) GAME_VERSION=SAPPHIRE GAME_REVISION=1 MODERN=1
-sapphire_rev2_modern:     ; @$(MAKE) GAME_VERSION=SAPPHIRE GAME_REVISION=2 MODERN=1
-
-compare_ruby:              ; @$(MAKE) GAME_VERSION=RUBY COMPARE=1
-compare_ruby_debug:        ; @$(MAKE) GAME_VERSION=RUBY DEBUG=1 COMPARE=1
-compare_ruby_rev1:         ; @$(MAKE) GAME_VERSION=RUBY GAME_REVISION=1 COMPARE=1
-compare_ruby_rev2:         ; @$(MAKE) GAME_VERSION=RUBY GAME_REVISION=2 COMPARE=1
-compare_sapphire:          ; @$(MAKE) GAME_VERSION=SAPPHIRE COMPARE=1
-compare_sapphire_debug:    ; @$(MAKE) GAME_VERSION=SAPPHIRE DEBUG=1 COMPARE=1
-compare_sapphire_rev1:     ; @$(MAKE) GAME_VERSION=SAPPHIRE GAME_REVISION=1 COMPARE=1
-compare_sapphire_rev2:     ; @$(MAKE) GAME_VERSION=SAPPHIRE GAME_REVISION=2 COMPARE=1
 
 #### Graphics Rules ####
 
@@ -301,7 +273,6 @@ include tilesets.mk
 include fonts.mk
 include misc.mk
 include spritesheet_rules.mk
-include override.mk
 include map_data_rules.mk
 include json_data_rules.mk
 

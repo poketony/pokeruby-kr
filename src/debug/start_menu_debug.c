@@ -50,16 +50,8 @@
 extern void Debug_SetUpFieldMove_Cut(void);
 extern void Debug_SetUpFieldMove_SecretPower(void);
 
-#if (ENGLISH && REVISION == 0)
-#define TYPE u8
-#else
 #define TYPE u32
-#endif
-
 TYPE gUnknown_Debug_03004BD0;
-#if (ENGLISH && REVISION == 0)
-TYPE gUnknown_Debug_Murakawa2;
-#endif
 #undef TYPE
 
 void debug_sub_8076BB4(u8);
@@ -146,9 +138,7 @@ u8 DebugMenu_EndSequenceDemo(void);
 u8 DebugMenu_RandomNumberTest(void);
 u8 DebugMenu_MeTooBackupMan(void);
 u8 DebugMenu_OpenMurakawa(void);
-#if !(ENGLISH && REVISION == 0)
 u8 DebugMenu_OpenKiwa(void);
-#endif
 u8 DebugMenu_8076CBC(void);
 u8 DebugMenu_8076CC0(void);
 u8 DebugMenu_8076CD4(void);
@@ -219,9 +209,7 @@ const u8 Str_839B972[] = _("End sequence demo");
 const u8 Str_839B984[] = _("Random number test");
 const u8 Str_839B997[] = _("Me-too BackupMan");
 const u8 Str_839B9A8[] = _("MURAKAWA");
-#if !(ENGLISH && REVISION == 0)
 const u8 Str_839B9B1[] = _("KINA(FONT)");
-#endif
 
 const struct MenuAction gDebug0x839B9BC[] =
 {
@@ -277,32 +265,17 @@ const struct MenuAction gDebug0x839B9BC[] =
     { Str_839B984, DebugMenu_RandomNumberTest },
     { Str_839B997, DebugMenu_MeTooBackupMan },
     { Str_839B9A8, DebugMenu_OpenMurakawa },
-#if !(ENGLISH && REVISION == 0)
     { Str_839B9B1, DebugMenu_OpenKiwa },
-#endif
 };
 
-#if (ENGLISH && REVISION == 0)
-const u8 gUnknown_Debug_839BB64[] =
-{
-    0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x00, 0x0b, 0x0c, 0x0d, 0x0e, 0x1f, 0x12, 0x13, 0x00, 0x08, 0x09, 0x0a, 0x1e, 0x10, 0x24, 0x0f, 0x00, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1a, 0x1b, 0x00,
-    0x1c, 0x1d, 0x14, 0x20, 0x21, 0x22, 0x23, 0x00, 0x25, 0x26, 0x27, 0x28, 0x29, 0x2a, 0x2b, 0x00, 0x2c, 0x2d, 0x2e, 0x2f, 0x30, 0x31, 0x32, 0x00, 0x11, 0x33, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-};
-#else
 const u8 gUnknown_Debug_839BB64[] =
 {
     0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x00, 0x0b, 0x0c, 0x0d, 0x0e, 0x1f, 0x12, 0x13, 0x00, 0x08, 0x09, 0x0a, 0x1e, 0x10, 0x24, 0x0f, 0x00, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1a, 0x1b, 0x00,
     0x1c, 0x1d, 0x14, 0x20, 0x21, 0x22, 0x23, 0x00, 0x25, 0x26, 0x27, 0x28, 0x29, 0x2a, 0x2b, 0x00, 0x2c, 0x2d, 0x2e, 0x2f, 0x30, 0x31, 0x32, 0x00, 0x11, 0x33, 0x34, 0x00, 0x00, 0x00, 0x00, 0x00,
 };
-#endif
 
-#if ENGLISH
 const u8 gDebugCreatedString[] = _("Created");
-const u8 gDebugContinuousString[] = _("Continuous play\n"
-                                      "available from");
-#else
-const u8 gDebugRomString[] = _("Debugging Version");
-#endif
+const u8 gDebugContinuousString[] = _("Continuous play\navailable from");
 const u8 gDebugVersionString[] = _("{VERSION} Version");
 const u8 gDebugRTCString[] = _("Normal RTC compatible");
 
@@ -741,9 +714,6 @@ void DebugMenu_8077048(void)
 
 u8 DebugMenu_807706C(void)
 {
-#if (ENGLISH && REVISION == 0)
-    gUnknown_Debug_Murakawa2 = 1;
-#endif
     InitMenuWindow(&gMenuTextWindowTemplate);
     DebugMenu_8077004();
     DebugMenu_807719C();
@@ -791,20 +761,11 @@ u8 DebugMenu_807709C(void)
     {
         PlaySE(SE_SELECT);
         actionRet = gDebug0x839B9BC[gUnknown_030006C4[gUnknown_030006C0]].func();
-// TODO: see if this is in rev1+
-#if (ENGLISH && REVISION == 0)
-        if (actionRet == 1)
-            gUnknown_Debug_Murakawa2 = 0;
-#endif
         return actionRet;
     }
     if (gMain.newKeys & (B_BUTTON | START_BUTTON))
     {
         CloseMenu();
-// TODO: see if this is in rev1+
-#if (ENGLISH && REVISION == 0)
-        gUnknown_Debug_Murakawa2 = 0;
-#endif
         return TRUE;
     }
     return FALSE;
@@ -2688,22 +2649,14 @@ u8 DebugMenu_PTime(void)
     return TRUE;
 }
 
-#if (ENGLISH && REVISION == 0)
-const u8 gDebug0x839C60C[] = _("switch DISP mode");
-#else
 const u8 gDebug0x839C60C[] = _("Set FLASH ERR");
-#endif
 
 void DebugMenu_8079058(u8 taskId)
 {
     switch (gTasks[taskId].data[0])
     {
         case 0:
-#if (ENGLISH && REVISION == 0)
-            gUnknown_Debug_Murakawa2 = 1;
-#else
             gUnknown_Debug_03004BD0 = 0;
-#endif
             Menu_DisplayDialogueFrame();
             gTasks[taskId].data[0]++;
             break;
@@ -2724,9 +2677,6 @@ void DebugMenu_8079058(u8 taskId)
                     gUnknown_Debug_03004BD0 = 0;
                     break;
             }
-#if (ENGLISH && REVISION == 0)
-            gUnknown_Debug_Murakawa2 = 0;
-#endif
             Menu_EraseScreen();
             ScriptContext2_Disable();
             DestroyTask(taskId);
@@ -2742,7 +2692,6 @@ u8 DebugMenu_OpenMurakawa(void)
     return TRUE;
 }
 
-#if !(ENGLISH && REVISION == 0)
 const u8 Str_839C61A[] = _(
     "Tableaux　des　verbes　du　2{SUPER_E}　groupe.\p"
     "La1{SUPER_RE}　chose　à apprendre　c'est　de　lire.\p"
@@ -2781,6 +2730,5 @@ u8 DebugMenu_OpenKiwa(void)
     ScriptContext2_Enable();
     // return TRUE;
 }
-#endif
 
 #endif

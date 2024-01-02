@@ -334,10 +334,6 @@ void BattleAI_SetupAIData(void)
         AI_THINKING_STRUCT->aiFlags = 0x20000000;
     else if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
         AI_THINKING_STRUCT->aiFlags = 0x80000000;
-#if ENGLISH && DEBUG && REVISION == 0
-    else if (gBattleTypeFlags & (BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_BATTLE_TOWER) || gTrainerBattleOpponent == SECRET_BASE_OPPONENT)
-        AI_THINKING_STRUCT->aiFlags = 7;
-#endif
     else // otherwise, just set aiFlags to whatever flags the trainer has set in their data.
         AI_THINKING_STRUCT->aiFlags = gTrainers[gTrainerBattleOpponent].aiFlags;
 #if DEBUG

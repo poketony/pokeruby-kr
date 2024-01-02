@@ -104,13 +104,8 @@ bool8 debug_sub_808F414(void)
     }
 }
 
-#if (ENGLISH && REVISION == 0)
-const u8 gUnknown_Debug_083C4980[] = _("ひみつがたを すぐみれるように    ひだりキーで\n"
-                                       "データタイプを へんこうしますか？  きりかえ");
-#else
 const u8 gUnknown_Debug_083C4980[] = _("Want to change data type{CLEAR_TO 143}Press　Left\n"
                                        "to see secret type now？{CLEAR_TO 143}to　switch");
-#endif
 
 const u8 gUnknown_Debug_083C49CA[] = _("Choose the TV data you wish to\n"
                                        "create to check a transmission。");
@@ -497,107 +492,6 @@ void debug_sub_808FA88(u8 a0, u8 a1)
             break;
     }
 
-#if (ENGLISH && REVISION == 0)
-    switch (a1)
-    {
-        case TVSHOW_FAN_CLUB_LETTER:
-        case TVSHOW_RECENT_HAPPENINGS:
-        {
-            GF_ACCESS(TVShowFanClubLetter)->species = SPECIES_BULBASAUR;
-            StringCopy(GF_ACCESS(TVShowFanClubLetter)->playerName, gSaveBlock2.playerName);
-            GF_ACCESS(TVShowFanClubLetter)->language = GAME_LANGUAGE;
-            break;
-        }
-        case TVSHOW_PKMN_FAN_CLUB_OPINIONS:
-        {
-            GF_ACCESS(TVShowFanclubOpinions)->var02 = 1;
-            StringCopy(GF_ACCESS(TVShowFanclubOpinions)->playerName, gSaveBlock2.playerName);
-            GetMonData(&gPlayerParty[leadMonIndex], MON_DATA_NICKNAME, GF_ACCESS(TVShowFanclubOpinions)->var10);
-            GF_ACCESS(TVShowFanclubOpinions)->language = GAME_LANGUAGE;
-            GF_ACCESS(TVShowFanclubOpinions)->var0E = GetMonData(&gPlayerParty[leadMonIndex], MON_DATA_LANGUAGE);
-            break;
-        }
-        case TVSHOW_UNKN_SHOWTYPE_04:
-        {
-            break;
-        }
-        case TVSHOW_NAME_RATER_SHOW:
-        {
-            GF_ACCESS(TVShowNameRaterShow)->species = GetMonData(&gPlayerParty[leadMonIndex], MON_DATA_SPECIES);
-            GF_ACCESS(TVShowNameRaterShow)->var1C = 1;
-            StringCopy(GF_ACCESS(TVShowNameRaterShow)->trainerName, gSaveBlock2.playerName);
-            GetMonData(&gPlayerParty[leadMonIndex], MON_DATA_NICKNAME, GF_ACCESS(TVShowNameRaterShow)->pokemonName);
-            GF_ACCESS(TVShowNameRaterShow)->language = GAME_LANGUAGE;
-            GF_ACCESS(TVShowNameRaterShow)->pokemonNameLanguage = GetMonData(&gPlayerParty[leadMonIndex], MON_DATA_LANGUAGE);
-            break;
-        }
-        case TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE:
-        {
-            GF_ACCESS(TVShowBravoTrainerPokemonProfiles)->species = SPECIES_BULBASAUR;
-            StringCopy(GF_ACCESS(TVShowBravoTrainerPokemonProfiles)->playerName, gSaveBlock2.playerName);
-            GetMonData(&gPlayerParty[leadMonIndex], MON_DATA_NICKNAME, GF_ACCESS(TVShowBravoTrainerPokemonProfiles)->pokemonNickname);
-            GF_ACCESS(TVShowBravoTrainerPokemonProfiles)->language = GAME_LANGUAGE;
-            GF_ACCESS(TVShowBravoTrainerPokemonProfiles)->var1f = GetMonData(&gPlayerParty[leadMonIndex], MON_DATA_LANGUAGE);
-            break;
-        }
-        case TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE:
-        {
-            GF_ACCESS(TVShowBravoTrainerBattleTowerSpotlight)->species = SPECIES_BULBASAUR;
-            GF_ACCESS(TVShowBravoTrainerBattleTowerSpotlight)->defeatedSpecies = SPECIES_BULBASAUR;
-            StringCopy(GF_ACCESS(TVShowBravoTrainerBattleTowerSpotlight)->trainerName, gSaveBlock2.playerName);
-            StringCopy(GF_ACCESS(TVShowBravoTrainerBattleTowerSpotlight)->enemyTrainerName, gSaveBlock2.playerName);
-            GF_ACCESS(TVShowBravoTrainerBattleTowerSpotlight)->language = GAME_LANGUAGE;
-            break;
-        }
-        case TVSHOW_MASS_OUTBREAK:
-        {
-            GF_ACCESS(TVShowMassOutbreak)->species = SPECIES_BULBASAUR;
-            GF_ACCESS(TVShowMassOutbreak)->daysLeft = 1;
-            break;
-        }
-        case TVSHOW_POKEMON_TODAY_CAUGHT:
-        {
-            GF_ACCESS(TVShowPokemonToday)->species = SPECIES_BULBASAUR;
-            StringCopy(GF_ACCESS(TVShowPokemonToday)->playerName, gSaveBlock2.playerName);
-            GetMonData(&gPlayerParty[leadMonIndex], MON_DATA_NICKNAME, GF_ACCESS(TVShowPokemonToday)->nickname);
-            GF_ACCESS(TVShowPokemonToday)->language = GAME_LANGUAGE;
-            GF_ACCESS(TVShowPokemonToday)->language2 = GetMonData(&gPlayerParty[leadMonIndex], MON_DATA_LANGUAGE);
-            break;
-        }
-        case TVSHOW_SMART_SHOPPER:
-        {
-            StringCopy(GF_ACCESS(TVShowSmartShopper)->playerName, gSaveBlock2.playerName);
-            GF_ACCESS(TVShowSmartShopper)->language = GAME_LANGUAGE;
-            break;
-        }
-        case TVSHOW_POKEMON_TODAY_FAILED:
-        {
-            GF_ACCESS(TVShowPokemonTodayFailed)->species = SPECIES_BULBASAUR;
-            GF_ACCESS(TVShowPokemonTodayFailed)->species2 = SPECIES_BULBASAUR;
-            StringCopy(GF_ACCESS(TVShowPokemonTodayFailed)->playerName, gSaveBlock2.playerName);
-            GF_ACCESS(TVShowPokemonTodayFailed)->language = GAME_LANGUAGE;
-            break;
-        }
-        case TVSHOW_FISHING_ADVICE:
-        {
-            GF_ACCESS(TVShowPokemonAngler)->var04 = SPECIES_BULBASAUR;
-            StringCopy(GF_ACCESS(TVShowPokemonAngler)->playerName, gSaveBlock2.playerName);
-            GF_ACCESS(TVShowPokemonAngler)->language = GAME_LANGUAGE;
-            break;
-        }
-        case TVSHOW_WORLD_OF_MASTERS:
-        {
-            GF_ACCESS(TVShowWorldOfMasters)->var04 = SPECIES_BULBASAUR;
-            GF_ACCESS(TVShowWorldOfMasters)->var08 = SPECIES_BULBASAUR;
-            StringCopy(GF_ACCESS(TVShowWorldOfMasters)->playerName, gSaveBlock2.playerName);
-            GF_ACCESS(TVShowWorldOfMasters)->language = GAME_LANGUAGE;
-            break;
-        }
-    }
-#else
-// Murakawa must have really hated working with GF code. He devised his own, less complicated
-// access method after US rev0. Also, this iteration of the code has his self inserts: TERUKUN,
-// TERU, and TERUDA. Who all love Wigglytuff.
     switch (a1)
     {
         case TVSHOW_FAN_CLUB_LETTER:
@@ -738,7 +632,6 @@ void debug_sub_808FA88(u8 a0, u8 a1)
             break;
         }
     }
-#endif
 }
 
 bool8 debug_sub_808FEBC(void)

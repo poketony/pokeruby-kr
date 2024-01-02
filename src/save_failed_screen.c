@@ -13,14 +13,7 @@
 #include "text.h"
 #include "ewram.h"
 
-// In English 1.0, the text window is too small, causing text to overflow.
-
-#ifdef BUGFIX_SAVEFAILEDSCREEN1
-#define MSG_WIN_TOP 10
-#else
 #define MSG_WIN_TOP 12
-#endif
-
 #define CLOCK_WIN_TOP (MSG_WIN_TOP - 4)
 
 static EWRAM_DATA u16 gSaveFailedType = 0;
@@ -155,9 +148,9 @@ static void CB2_WipeSave(void)
 
     gSaveFailedClockInfo[0] = TRUE;
 
-#if (DEBUG && !(ENGLISH && REVISION == 0))
-	if (gUnknown_Debug_03004BD0 != 0)
-		gDamagedSaveSectors = 1;
+#if DEBUG
+    if (gUnknown_Debug_03004BD0 != 0)
+        gDamagedSaveSectors = 1;
 #endif
 
     while (gDamagedSaveSectors != 0 && wipeTries < 3) // while there are still attempts left, keep trying to fix the save sectors.
@@ -277,14 +270,15 @@ static bool8 IsSectorNonEmpty(u16 sector)
 
     ReadFlash(sector, 0, ptr, 4096);
 
-#if (DEBUG && !(ENGLISH && REVISION == 0))  // Don't verify the sector wipe?
-    for (i = 0; i < 0x400; i++, ptr++)
-		;
+#if DEBUG
+    for (i = 0; i < 0x400; i++, ptr++);
     return gUnknown_Debug_03004BD0;
 #else
-	for (i = 0; i < 0x400; i++, ptr++)
+    for (i = 0; i < 0x400; i++, ptr++)
+    {
         if (*ptr != 0)
             return TRUE;
+    }
     return FALSE;
 #endif
 }

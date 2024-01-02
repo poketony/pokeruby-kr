@@ -23,23 +23,6 @@
 // printing system. Use NoCashGBAPrint() and NoCashGBAPrintf() like you
 // would normally use AGBPrint() and AGBPrintf().
 
-#ifndef REVISION
-#define REVISION 0
-#endif
-
-#if REVISION == 2
-#define BUGFIX_BERRY
-#endif
-
-#if REVISION >= 1
-#define BUGFIX_GLYPHWIDTH
-#define BUGFIX_SAVEFAILEDSCREEN1
-#endif
-
-#if REVISION >= 1
-#define BUGFIX_EVO_NAME
-#endif
-
 // An option to use fuller translations for debug ROMs.
 // #define DEBUG_FIX 1 // Unsupported languages default to English text.
 

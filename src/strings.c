@@ -334,13 +334,7 @@ const u8 gOtherText_Hp2[] = _("체력");
 const u8 gOtherText_SpAtk2[] = _("특수공격");
 const u8 gOtherText_SpDef2[] = _("특수방어");
 const u8 gOtherText_WontHaveAnyEffect[] = _("써도 효과가 없다!{PAUSE_UNTIL_PRESS}");
-
-#if REVISION >= 1
 const u8 gOtherText_CantUseOnPoke[] = _("그 포켓몬에게는\n쓸 수 없습니다{PAUSE_UNTIL_PRESS}");
-#else
-const u8 gOtherText_CantUseOnPoke[] = _("그 포켓몬에게는\n쓸 수 없습니다{PAUSE_UNTIL_PRESS}");
-#endif
-
 const u8 gOtherText_CantBeSwitched[] = _("{STR_VAR_1}{K_EULREUL}\n돌아오게 할 수 없습니다!{PAUSE_UNTIL_PRESS}");
 const u8 gOtherText_AlreadyBattle[] = _("{STR_VAR_1}{K_EUNNEUN}\n이미 배틀에 나가 있습니다{PAUSE_UNTIL_PRESS}");
 const u8 gOtherText_AlreadySelected[] = _("{STR_VAR_1}{K_EUNNEUN} 이미\n선택되어 있습니다{PAUSE_UNTIL_PRESS}");

@@ -525,7 +525,7 @@ void BoxMonRestorePP(struct BoxPokemon *);
 bool8 HealStatusConditions(struct Pokemon *mon, u32 unused, u32 healMask, u8 battleId);
 u8 GetItemEffectParamOffset(u16 itemId, u8 effectByte, u8 effectBit);
 
-#if DEBUG && !(ENGLISH && REVISION == 0)
+#if DEBUG
 void Nakamura_NakaGenderTest_RecalcStats(struct Pokemon *);
 #endif
 
