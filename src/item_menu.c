@@ -1335,8 +1335,8 @@ static void ItemListMenu_InitDescription(s16 itemId)
 
     if (gBagPocketScrollStates[sCurrentBagPocket].scrollTop + gBagPocketScrollStates[sCurrentBagPocket].cursorPos == gBagPocketScrollStates[sCurrentBagPocket].numSlots)
     {
-        r5 = sub_8072A18(gOtherText_ReturnTo, 4, 0x68, 0x68, 1);
-        r5 += sub_8072A18(gUnknown_0840E740[sReturnLocation], 4, 0x78, 0x68, 1);
+        r5 = sub_8072A18(gUnknown_0840E740[sReturnLocation], 4, 0x68, 0x68, 1);
+        r5 += sub_8072A18(gOtherText_ReturnTo, 4, 0x78, 0x68, 1);
     }
     else
     {
@@ -1356,11 +1356,11 @@ static void ItemListMenu_ChangeDescription(s16 itemId, int b)
         if (b == 0)
         {
             Menu_EraseWindowRect(0, 13, 13, 20);
-            Menu_PrintTextPixelCoords(gOtherText_ReturnTo, 4, 0x68, 0);
+            Menu_PrintTextPixelCoords(gOtherText_ReturnTo, 4, 0x78, 0);
         }
         else if (b == 1)
         {
-            Menu_PrintTextPixelCoords(gUnknown_0840E740[sReturnLocation], 4, 0x78, 0);
+            Menu_PrintTextPixelCoords(gUnknown_0840E740[sReturnLocation], 4, 0x68, 0);
         }
     }
     else
