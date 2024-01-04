@@ -2229,7 +2229,7 @@ static void CreateCaughtBall(u16 owned, u8 x, u8 y, u16 screenBase)
 
 static u8 CreateMonName(u16 num, u8 b, u8 c)
 {
-    u8 text[POKEMON_NAME_LENGTH + (MODERN ? 1 : 0)];
+    u8 text[POKEMON_NAME_LENGTH];
     u8 i;
 
     for (i = 0; i < 10; i++)

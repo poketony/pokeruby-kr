@@ -21,10 +21,6 @@ LD := $(PREFIX)ld
 NM := $(PREFIX)nm
 OBJDUMP := $(PREFIX)objdump
 
-# note: the makefile must be set up so MODERNCC is never called
-# if MODERN=0
-MODERNCC := $(PREFIX)gcc
-
 include config.mk
 
 ifeq ($(OS),Windows_NT)
@@ -44,23 +40,16 @@ endif
 # we can't unconditionally use arm-none-eabi-cpp
 # as installations which install binutils-arm-none-eabi
 # don't come with it
-ifneq ($(MODERN),1)
-  ifeq ($(shell uname -s),Darwin)
-    CPP := $(PREFIX)cpp
-  else
-    CPP := $(CC) -E
-  endif
+ifeq ($(shell uname -s),Darwin)
+	CPP := $(PREFIX)cpp
 else
-  CPP := $(PREFIX)cpp
+	CPP := $(CC) -E
 endif
+
 #### Tools ####
 
 SHELL     := /bin/bash -o pipefail
-ifeq ($(MODERN),0)
 CC1       := tools/agbcc/bin/agbcc$(EXE)
-else
-CC1        = $(shell $(MODERNCC) --print-prog-name=cc1) -quiet
-endif
 CPP       := $(PREFIX)cpp
 LD        := $(PREFIX)ld
 OBJCOPY   := $(PREFIX)objcopy
@@ -80,12 +69,8 @@ PERL := perl
 
 ASFLAGS  := -mcpu=arm7tdmi -I include --defsym $(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym DEBUG_FIX=$(DEBUG_FIX) --defsym $(GAME_LANGUAGE)=1 --defsym DEBUG=$(DEBUG) --defsym MODERN=$(MODERN)
 CPPFLAGS := -iquote include -Werror -Wno-trigraphs -D $(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_LANGUAGE) -D=DEBUG_FIX$(DEBUG_FIX) -D DEBUG=$(DEBUG) -D MODERN=$(MODERN)
-ifeq ($(MODERN),0)
 CPPFLAGS += -I tools/agbcc/include -nostdinc -undef
 CC1FLAGS := -g -mthumb-interwork -Wimplicit -Wparentheses -Wunused -Werror -O2 -fhex-asm
-else
-CC1FLAGS := -g -mthumb -mthumb-interwork -mabi=apcs-gnu -mcpu=arm7tdmi -O2 -fno-toplevel-reorder -fno-aggressive-loop-optimizations -Wno-pointer-to-int-cast -Wno-stringop-overflow
-endif
 
 ifneq (,$(NONMATCHING))
 CPPFLAGS += -DNONMATCHING
@@ -114,21 +99,12 @@ DATA_SRC_SUBDIR = src/data
 
 GCC_VER = $(shell $(MODERNCC) -dumpversion)
 
-ifeq ($(MODERN),0)
 LIBDIRS := ../../tools/agbcc/lib
-else
-LIBDIRS := -L $(shell dirname $(shell $(MODERNCC) --print-file-name=libgcc.a)) -L $(shell dirname $(shell $(MODERNCC) --print-file-name=libc.a))
-endif
 LDFLAGS := $(LIBDIRS:%=-L %) -lgcc -lc
 
-ifeq ($(MODERN),0)
 LD_SCRIPT := $(BUILD_DIR)/ld_script.ld
-else
-LD_SCRIPT := $(BUILD_DIR)/ld_script_modern.ld
-endif
 
 # Special configurations required for lib files
-ifeq ($(MODERN),0)
 %src/libs/siirtc.o:       CC1FLAGS := -mthumb-interwork
 %src/libs/agb_flash.o:    CC1FLAGS := -O1 -mthumb-interwork
 %src/libs/agb_flash_1m.o: CC1FLAGS := -O1 -mthumb-interwork
@@ -136,8 +112,6 @@ ifeq ($(MODERN),0)
 %src/libs/m4a.o:          CC1 := tools/agbcc/bin/old_agbcc$(EXE)
 %src/libs/libisagbprn.o:  CC1 := tools/agbcc/bin/old_agbcc$(EXE)
 %src/libs/libisagbprn.o:  CC1FLAGS := -mthumb-interwork
-endif
-
 
 #### Main Rules ####
 
