@@ -177,8 +177,6 @@ const u16 TMHMMoves[] =
     MOVE_DIVE,
 };
 
-//FIXME
-
 u8 *const gTileBufferPtr = gTileBuffer;
 
 static const u8 MenuGfx_HoldIcons[] = INCBIN_U8("graphics/interface/hold_icons.4bpp");
@@ -263,14 +261,14 @@ static const u8 *const PartyMenuPromptTexts[] = {
 };
 
 static const struct Coords8 gUnknown_08376678[8][6] = {
-    {{16, 40}, {104, 18}, {104, 42}, {104, 66}, {104, 90}, {104, 114}}, // PARTY_MENU_TYPE_STANDARD
-    {{16, 24}, { 16, 80}, {104, 18}, {104, 50}, {104, 82}, {104, 114}}, // PARTY_MENU_TYPE_BATTLE
-    {{16, 24}, { 16, 80}, {104, 26}, {104, 50}, {104, 82}, {104, 106}}, // PARTY_MENU_TYPE_CONTEST
-    {{16, 24}, {104, 26}, {104, 50}, { 16, 80}, {104, 82}, {104, 106}}, // PARTY_MENU_TYPE_IN_GAME_TRADE
-    {{ 5,  4}, { 16,  1}, { 16,  4}, { 16,  7}, { 16, 10}, { 16,  13}}, // PARTY_MENU_TYPE_BATTLE_TOWER
-    {{ 5,  2}, {  5,  9}, { 16,  1}, { 16,  5}, { 16,  9}, { 16,  13}}, // PARTY_MENU_TYPE_LINK_MULTI_BATTLE
-    {{ 5,  2}, {  5,  9}, { 16,  2}, { 16,  5}, { 16,  9}, { 16,  12}}, // PARTY_MENU_TYPE_DAYCARE
-    {{ 5,  2}, { 16,  2}, { 16,  5}, {  5,  9}, { 16,  9}, { 16,  12}}, // PARTY_MENU_TYPE_MOVE_TUTOR
+    {{24, 40}, {112, 18}, {112, 42}, {112, 66}, {112, 90}, {112, 114}}, // PARTY_MENU_TYPE_STANDARD
+    {{24, 24}, { 24, 80}, {112, 18}, {112, 50}, {112, 82}, {112, 114}}, // PARTY_MENU_TYPE_BATTLE
+    {{24, 24}, { 24, 80}, {112, 26}, {112, 50}, {112, 82}, {112, 106}}, // PARTY_MENU_TYPE_CONTEST
+    {{24, 24}, {112, 26}, {112, 50}, { 24, 80}, {112, 82}, {112, 106}}, // PARTY_MENU_TYPE_IN_GAME_TRADE
+    {{13,  4}, { 24,  1}, { 24,  4}, { 24,  7}, { 24, 10}, { 24,  13}}, // PARTY_MENU_TYPE_BATTLE_TOWER
+    {{13,  2}, { 13,  9}, { 24,  1}, { 24,  5}, { 24,  9}, { 24,  13}}, // PARTY_MENU_TYPE_LINK_MULTI_BATTLE
+    {{13,  2}, { 13,  9}, { 24,  2}, { 24,  5}, { 24,  9}, { 24,  12}}, // PARTY_MENU_TYPE_DAYCARE
+    {{13,  2}, { 24,  2}, { 24,  5}, { 13,  9}, { 24,  9}, { 24,  12}}, // PARTY_MENU_TYPE_MOVE_TUTOR
 };
 
 static const struct Coords8 gUnknown_08376738[12][6] = {
@@ -331,25 +329,25 @@ static const u8 gUnknown_083769C0[] = {
 };
 
 static const u8 gUnknown_083769D8[] = {
-    0x24,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x27,
-    0x34,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x37,
-    0x34,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x37,
-    0x34,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x37,
-    0x44,0x45,0x45,0x45,0x45,0x45,0x45,0x45,0x45,0x45,0x47,
-    0x44,0x45,0x45,0x45,0x45,0x45,0x45,0x45,0x45,0x45,0x47,
-    0x54,0x55,0x55,0x55,0x55,0x55,0x55,0x55,0x55,0x55,0x57,
+    0x24,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x27,
+    0x34,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x37,
+    0x34,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x37,
+    0x34,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x35,0x37,
+    0x44,0x45,0x45,0x45,0x45,0x45,0x45,0x45,0x45,0x47,
+    0x44,0x45,0x45,0x45,0x45,0x45,0x45,0x45,0x45,0x47,
+    0x54,0x55,0x55,0x55,0x55,0x55,0x55,0x55,0x55,0x57,
 };
 
 static const u8 gUnknown_08376A25[] = {
-    0x50,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x53,
-    0x60,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x63,
-    0x70,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x73,
+    0x50,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x51,0x53,
+    0x60,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x61,0x63,
+    0x70,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x71,0x73,
 };
 
 static const u8 gUnknown_08376A5E[] = {
-    0x20,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x23,
-    0x30,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x33,
-    0x40,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x43,
+    0x20,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x21,0x23,
+    0x30,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x31,0x33,
+    0x40,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x43,
 };
 
 static const u8 gUnusedData_08376A97[] = {
@@ -383,30 +381,29 @@ static const TaskFunc gUnknown_08376B54[] = {
     ((palette) << 12) | ((priority) << 10) | (tileOffset)
 
 static const u16 PartyMonOAMSettings_LeftColumn[] = {
-    PartyMonOAMSettings(24,  0, 15, ST_OAM_H_RECTANGLE, 1, 1,  0),
-    PartyMonOAMSettings(56,  0, 15, ST_OAM_H_RECTANGLE, 1, 1,  4),
-    PartyMonOAMSettings(24,  8, 15, ST_OAM_H_RECTANGLE, 1, 1,  8),
-    PartyMonOAMSettings(56,  8, 15, ST_OAM_H_RECTANGLE, 1, 1, 12),
+    PartyMonOAMSettings(32,  0, 15, ST_OAM_H_RECTANGLE, 1, 1,  0),
+    PartyMonOAMSettings(64,  0, 15, ST_OAM_H_RECTANGLE, 1, 1,  4),
+    PartyMonOAMSettings(32,  8, 15, ST_OAM_H_RECTANGLE, 1, 1,  8),
+    PartyMonOAMSettings(64,  8, 15, ST_OAM_H_RECTANGLE, 1, 1, 12),
     PartyMonOAMSettings(32, 16, 15, ST_OAM_H_RECTANGLE, 1, 1, 16),
-    PartyMonOAMSettings(37, 32, 15, ST_OAM_H_RECTANGLE, 1, 1, 24),
-    PartyMonOAMSettings(69, 32, 15, ST_OAM_H_RECTANGLE, 1, 1, 28),
+    PartyMonOAMSettings(16, 32, 15, ST_OAM_H_RECTANGLE, 1, 1, 24),
+    PartyMonOAMSettings(48, 32, 15, ST_OAM_H_RECTANGLE, 1, 1, 28),
     0xFFFF,
 };
 
 static const u16 PartyMonOAMSettings_RightColumn[] = {
-    PartyMonOAMSettings( 24,  0, 15, ST_OAM_H_RECTANGLE, 1, 1,  0),
-    PartyMonOAMSettings( 56,  0, 15, ST_OAM_H_RECTANGLE, 1, 1,  4),
-    PartyMonOAMSettings( 24,  8, 15, ST_OAM_H_RECTANGLE, 1, 1,  8),
-    PartyMonOAMSettings( 56,  8, 15, ST_OAM_H_RECTANGLE, 1, 1, 12),
+    PartyMonOAMSettings( 32,  0, 15, ST_OAM_H_RECTANGLE, 1, 1,  0),
+    PartyMonOAMSettings( 64,  0, 15, ST_OAM_H_RECTANGLE, 1, 1,  4),
+    PartyMonOAMSettings( 32,  8, 15, ST_OAM_H_RECTANGLE, 1, 1,  8),
+    PartyMonOAMSettings( 64,  8, 15, ST_OAM_H_RECTANGLE, 1, 1, 12),
     PartyMonOAMSettings( 32, 16, 15, ST_OAM_H_RECTANGLE, 1, 1, 16),
-    PartyMonOAMSettings(101, 16, 15, ST_OAM_H_RECTANGLE, 1, 1, 24),
-    PartyMonOAMSettings(133, 16, 15, ST_OAM_H_RECTANGLE, 1, 1, 28),
+    PartyMonOAMSettings( 80, 16, 15, ST_OAM_H_RECTANGLE, 1, 1, 24),
+    PartyMonOAMSettings(112, 16, 15, ST_OAM_H_RECTANGLE, 1, 1, 28),
     0xFFFF,
 };
 
 // Controls where and how the mons' text appears in the party menu screen (nickname, HP, and level).
-static struct PartyMonTextSettingsStruct const PartyMonTextSettings[4][6] =
-{
+static struct PartyMonTextSettingsStruct const PartyMonTextSettings[4][6] = {
     { // PARTY_MENU_LAYOUT_STANDARD
         { 1,  4, PartyMonOAMSettings_LeftColumn},
         {12,  1, PartyMonOAMSettings_RightColumn},
@@ -441,8 +438,7 @@ static struct PartyMonTextSettingsStruct const PartyMonTextSettings[4][6] =
     },
 };
 
-static const struct PartyMenuHandlersStruct PartyMenuHandlers[] =
-{
+static const struct PartyMenuHandlersStruct PartyMenuHandlers[] = {
     {HandleDefaultPartyMenu,         SetupDefaultPartyMenu,            0}, // PARTY_MENU_TYPE_STANDARD
     {HandleBattlePartyMenu,          SetUpBattlePartyMenu,             0}, // PARTY_MENU_TYPE_BATTLE
     {HandleSelectPartyMenu,          SetupContestPartyMenu,            0}, // PARTY_MENU_TYPE_CONTEST
@@ -1003,10 +999,10 @@ void sub_806B9A4(s16 a, u16 b, u8 c)
 
         if (a <= 0x1F)
         {
-            for (; j <= 10 && a + j <= 0x1F; j++)
+            for (; j < 10 && a + j <= 0x1F; j++)
             {
                 if (a + j >= 0)
-                    gBGTilemapBuffers[2][var1 + (i * 32) + (a + j)] = (c << 12) | gUnknown_083769D8[i * 11 + j];
+                    gBGTilemapBuffers[2][var1 + (i * 32) + (a + j) + 1] = (c << 12) | gUnknown_083769D8[i * 10 + j];
             }
         }
     }
@@ -1023,10 +1019,10 @@ void sub_806BA34(s16 a, u16 b)
 
         if (a <= 0x1F)
         {
-            for (; j <= 10 && a + j <= 0x1F; j++)
+            for (; j < 10 && a + j <= 0x1F; j++)
             {
                 if (a + j >= 0)
-                    gBGTilemapBuffers[2][var1 + (i * 32) + (a + j)] = 0;
+                    gBGTilemapBuffers[2][var1 + (i * 32) + (a + j) + 1] = 0;
             }
         }
     }
@@ -1038,12 +1034,14 @@ void sub_806BA94(s16 a, u16 b, u8 c, u8 d)
     const u8 *arr;
     u16 var1;
 
+    arr = gUnknown_08376A5E;
     if (c == 0)
+    {
         arr = gUnknown_08376A25;
-    else
-        arr = gUnknown_08376A5E;
+    }
 
     var1 = b * 32;
+
 
     for (i = 0; i < 3; i++)
     {
@@ -1051,13 +1049,10 @@ void sub_806BA94(s16 a, u16 b, u8 c, u8 d)
 
         if (a <= 0x1F)
         {
-            while (j <= 0x12 && a + j <= 0x1F)
+            while (j < 0x12 && a + j <= 0x1F)
             {
                 if (a + j >= 0)
-                {
-                    gBGTilemapBuffers[2][var1 + (i * 32) + (a + j)] = (d << 12) | arr[i * 19 + j];
-                }
-
+                    gBGTilemapBuffers[2][var1 + (i * 32) + (a + j) + 1] = (d << 12) | arr[i * 18 + j];
                 j++;
             }
         }
@@ -1075,12 +1070,12 @@ void sub_806BB3C(s16 a, u16 b)
 
         if (a <= 0x1F)
         {
-            for (; j <= 0x12 && a + j <= 0x1F; j++)
+            for (; j < 0x12 && a + j <= 0x1F; j++)
             {
                 if (a + j >= 0)
                 {
-                    gBGTilemapBuffers[2][var1 + (i * 32) + (a + j)] = 0;
-                }
+                    gBGTilemapBuffers[2][var1 + (i * 32) + (a + j) + 1] = 0;
+                }                
             }
         }
     }
@@ -1088,14 +1083,15 @@ void sub_806BB3C(s16 a, u16 b)
 
 void sub_806BB9C(u8 a)
 {
-    u8 i;
-    u16 arr[12] =
-    {
+    const u16 arr[] = {
         0x2A, 0x2B, 0x2C, 0x2D, 0x2E, 0x2F,
         0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F,
     };
-    u16 *vramPtr = (u16 *)(BG_VRAM + 0x3C30);
 
+    u8 i;
+    u16 *vramPtr;
+
+    vramPtr = (u16 *)(BG_VRAM + 0x3C30);
     for (i = 0; i < PARTY_SIZE; i++)
     {
         vramPtr[i] = arr[i] + (a << 12);
@@ -1105,14 +1101,15 @@ void sub_806BB9C(u8 a)
 
 void sub_806BBEC(u8 a)
 {
-    u8 i;
-    u16 arr[12] =
-    {
+    const u16 arr[] = {
         0x2A, 0x0B, 0x0C, 0x0D, 0x0E, 0x2F,
         0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F,
     };
-    u16 *vramPtr = (u16 *)(BG_VRAM + 0x3CB0);
 
+    u8 i;
+    u16 *vramPtr;
+
+    vramPtr = (u16 *)(BG_VRAM + 0x3CB0);
     for (i = 0; i < PARTY_SIZE; i++)
     {
         vramPtr[i] = arr[i] + (a << 12);
@@ -2525,7 +2522,6 @@ u16 GetMonHeldItemIconSpriteId(u8 taskId, u8 monIndex)
     return retVal;
 }
 
-// #ifdef NONMATCHING (for grep)
 void SetHeldItemIconVisibility(u8 taskId, u8 monIndex)
 {
     u8 spriteId;
@@ -2538,24 +2534,20 @@ void SetHeldItemIconVisibility(u8 taskId, u8 monIndex)
     }
     else
     {
-        register struct Sprite *sprite asm("r4");
-// sprite2 is required to mimic a failed optimization where r0 would have been loaded at the end of the if statement
-        register struct Sprite *sprite2 asm("r0");
+        struct Sprite *sprite;
         u8 animNum;
         heldItem = GetMonData(&gPlayerParty[monIndex], MON_DATA_HELD_ITEM);
         if (ItemIsMail(heldItem))
         {
             sprite = &gSprites[spriteId];
-            sprite2 = sprite; // hack
             animNum = 1;
         }
         else
         {
             sprite = &gSprites[spriteId];
-            sprite2 = sprite; // hack
             animNum = 0;
         }
-        StartSpriteAnim(sprite2, animNum);
+        StartSpriteAnim(sprite, animNum);
         sprite->invisible = FALSE;
     }
 }
@@ -2569,8 +2561,13 @@ void PartyMenuDoPrintMonNickname(u8 monIndex, int b, const u8 *nameBuffer)
 
 void PrintPartyMenuMonNickname(u8 monIndex, u8 b, struct Pokemon *pokemon)
 {
-    u8 nameBuffer[12];
-    GetMonNickname(pokemon, nameBuffer);
+    u8 nameBuffer[13];
+    u8 *textPtr = nameBuffer;
+
+    *(textPtr++) = EXT_CTRL_CODE_BEGIN;
+    *(textPtr++) = EXT_CTRL_CODE_JPN;
+
+    GetMonNickname5(pokemon, textPtr);
     PartyMenuDoPrintMonNickname(monIndex, b, nameBuffer);
 }
 
@@ -2676,11 +2673,13 @@ void PartyMenuDoPrintLevel(u8 monIndex, u8 menuLayout, u8 level)
     PartyMenuWriteTilemap(0x40, x - 1, y + 1);
 
     stringVar = gStringVar1;
-    stringVar[0] = 0xFC;
-    stringVar[1] = 0x12;
-    stringVar[2] = 0x8;
+    *(stringVar++) = EXT_CTRL_CODE_BEGIN;
+    *(stringVar++) = EXT_CTRL_CODE_JPN;
+    *(stringVar++) = EXT_CTRL_CODE_BEGIN;
+    *(stringVar++) = EXT_CTRL_CODE_SKIP;
+    *(stringVar++) = 8;
 
-    ConvertIntToDecimalString(&stringVar[3], level);
+    ConvertIntToDecimalString(stringVar, level);
 
     CpuFastFill(0, gTileBufferPtr + 0x100, 0x80);
     Text_InitWindow8004E3C((struct WindowTemplate *)&gWindowTemplate_81E6CAC, gTileBufferPtr, gStringVar1);
@@ -2754,11 +2753,18 @@ void PartyMenuPrintGenderIcon(u8 monIndex, u8 menuLayout, struct Pokemon *pokemo
 
 void PartyMenuDoPrintHP(u8 monIndex, u8 b, u16 currentHP, u16 maxHP)
 {
-    register u8 *stringVar1 asm("r2") = gStringVar1;
-    register u8 *textPtr asm("r2") = AlignInt1InMenuWindow(stringVar1, currentHP, 15, 1);
-    textPtr[0] = CHAR_SLASH;
+    #define CURRENT_HP_AMOUNT 8 * 2
+    #define MAX_HP_AMOUNT     8 * 6
 
-    AlignInt1InMenuWindow(++textPtr, maxHP, 35, 1);
+    u8 *textBuffer = gStringVar1;
+    *(textBuffer++) = EXT_CTRL_CODE_BEGIN;
+    *(textBuffer++) = EXT_CTRL_CODE_JPN;
+
+    textBuffer = AlignInt1InMenuWindow(textBuffer, currentHP, CURRENT_HP_AMOUNT - 1, 1);
+    *(textBuffer++) = CHAR_SLASH;
+
+    AlignInt1InMenuWindow(textBuffer, maxHP, MAX_HP_AMOUNT - 1, 1);
+
     CpuFastFill(0, gTileBufferPtr + 0x100, 0x100);
     Text_InitWindow8004E3C((struct WindowTemplate *)&gWindowTemplate_81E6CAC, gTileBufferPtr, gStringVar1);
     CpuFastCopy(gTileBufferPtr + 0x100, OBJ_VRAM1 + 0x300 + (monIndex * 0x400), 0x100);
