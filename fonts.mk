@@ -40,6 +40,9 @@ graphics/fonts/font0_kor_8pt.4bpp: graphics/fonts/font0_kor_8pt.png
 graphics/fonts/font1_kor.4bpp: graphics/fonts/font1_kor.png
 	$(RSFONT) $< $@ 2608 0
 
+graphics/fonts/font1_kor_modern.4bpp: graphics/fonts/font1_kor_modern.png
+	$(RSFONT) $< $@ 2608 0
+
 graphics/fonts/font3_kor.4bpp: graphics/fonts/font3_kor.png
 	$(RSFONT) $< $@ 2608 1
 
@@ -53,4 +56,7 @@ graphics/fonts/font3_kor_8pt.4bpp: graphics/fonts/font3_kor_8pt.png
 	$(RSFONT) $< $@ 5216 1
 
 graphics/fonts/font4_kor.4bpp: graphics/fonts/font4_kor.png
+	$(RSFONT) $< $@ 2608 0
+
+graphics/fonts/font4_kor_modern.4bpp: graphics/fonts/font4_kor_modern.png
 	$(RSFONT) $< $@ 2608 0

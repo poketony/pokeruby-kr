@@ -247,7 +247,12 @@ static const u8 sFont0KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font0_kor.4bpp"
 
 static const u8 sFont0Korean10ptGlyphs[] = INCBIN_U8("graphics/fonts/font0_kor_10pt.4bpp");
 static const u8 sFont0Korean8ptGlyphs[] = INCBIN_U8("graphics/fonts/font0_kor_8pt.4bpp");
+
+#if MODERN
+static const u8 sFont1KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font1_kor_modern.4bpp");
+#else
 static const u8 sFont1KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font1_kor.4bpp");
+#endif
 
 #if MODERN
 static const u8 sFont3KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor_modern.4bpp");
@@ -257,7 +262,12 @@ static const u8 sFont3KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor.4bpp"
 
 static const u8 sFont3Korean10ptGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor_10pt.4bpp");
 static const u8 sFont3Korean8ptGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor_8pt.4bpp");
+
+#if MODERN
+static const u8 sFont4KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font4_kor_modern.4bpp");
+#else
 static const u8 sFont4KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font4_kor.4bpp");
+#endif
 
 // clang-format off
 #include "data/text/type1_map.h"
