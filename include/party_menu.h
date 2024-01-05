@@ -136,7 +136,6 @@ void PrintPartyMenuMonNickname(u8 monIndex, u8 b, struct Pokemon *pokemon);
 void PrintPartyMenuMonNicknames(void);
 void CreateMonIcon_LinkMultiBattle(u8 taskId, u8 monIndex, u8 menuType, struct MultiBattlePokemonTx *pokemon);
 u8 *GetMonNickname(struct Pokemon *pokemon, u8 *stringBuffer);
-u8 *GetMonNickname5(struct Pokemon *pokemon, u8 *stringBuffer);
 void PartyMenuPutStatusTilemap(u8 monIndex, u8 b, u8 status);
 void PartyMenuDoPrintLevel(u8 monIndex, u8 b, u8 level);
 void PartyMenuPrintLevel(u8 monIndex, u8 b, struct Pokemon *pokemon);

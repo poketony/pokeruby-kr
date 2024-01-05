@@ -2562,12 +2562,8 @@ void PartyMenuDoPrintMonNickname(u8 monIndex, int b, const u8 *nameBuffer)
 void PrintPartyMenuMonNickname(u8 monIndex, u8 b, struct Pokemon *pokemon)
 {
     u8 nameBuffer[13];
-    u8 *textPtr = nameBuffer;
 
-    *(textPtr++) = EXT_CTRL_CODE_BEGIN;
-    *(textPtr++) = EXT_CTRL_CODE_JPN;
-
-    GetMonNickname5(pokemon, textPtr);
+    GetMonNickname(pokemon, nameBuffer);
     PartyMenuDoPrintMonNickname(monIndex, b, nameBuffer);
 }
 
@@ -2594,35 +2590,6 @@ u8 *GetMonNickname(struct Pokemon *pokemon, u8 *stringBuffer)
 {
     GetMonData(pokemon, MON_DATA_NICKNAME, stringBuffer);
     return StringGetEnd10(stringBuffer);
-}
-
-u8 *GetMonNickname5(struct Pokemon *pokemon, u8 *stringBuffer)
-{
-    u8 *tempBuffer = stringBuffer;
-    u8 length = 0;
-
-    GetMonData(pokemon, MON_DATA_NICKNAME, stringBuffer);
-    StringGetEnd10(stringBuffer);
-
-    while (*tempBuffer != EOS)
-    {
-        if (IsKoreanGlyph(*tempBuffer))
-        {
-            length++;
-            tempBuffer += 2;
-            continue;
-        }
-
-        tempBuffer++;
-        length++;
-
-        if (length == 5)
-            break;
-    }
-
-    *tempBuffer = EOS;
-
-    return tempBuffer;
 }
 
 void PartyMenuPutStatusTilemap(u8 monIndex, u8 menuLayout, u8 status)
