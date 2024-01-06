@@ -2244,11 +2244,11 @@ static u8 CreateMonName(u16 num, u8 b, u8 c)
             text[i] = gSpeciesNames[num][i];
         break;
     case 0:
-        for (i = 0; i < POKEMON_NAME_LENGTH; i++)
+        for (i = 0; i < 5; i++)
             text[i] = CHAR_HYPHEN;
         break;
     }
-    Menu_PrintTextPixelCoords(text, (b - 0x11) * 8 + 0xFC, c * 8, 0);
+    Menu_PrintTextPixelCoords(text, (b - 0x11) * 8 - 2, c * 8, 0);
     return i;
 }
 
@@ -2934,9 +2934,13 @@ static void Task_InitPageScreenMultistep(u8 taskId)
             UnusedPrintMonName(gPokedexEntries[sPokedexListItem->dexNum].categoryName, CATEGORY_LEFT, 5);
             PrintDecimalNum(gPokedexEntries[sPokedexListItem->dexNum].height, 21, 7);
             PrintDecimalNum(gPokedexEntries[sPokedexListItem->dexNum].weight, 21, 9);
+        #if !MODERN
             ApplyKoreanFontType(KOREAN_FONT_TYPE_8PT);
+        #endif
             Menu_PrintText(gPokedexEntries[sPokedexListItem->dexNum].description, 3, 13);
+        #if !MODERN
             RestoreKoreanFontType();
+        #endif
             sub_80C0DC0(14, 0x3FC);
         }
         else
@@ -3184,10 +3188,8 @@ static void Task_InitCryScreenMultistep(u8 taskId)
         gMain.state++;
         break;
     case 4:
-        ApplyKoreanFontType(KOREAN_FONT_TYPE_8PT);
-        PrintCryScreenSpeciesName(sPokedexListItem->dexNum, 10, 4, 2);
-        Menu_PrintText(gDexText_CryOf2, 10, 6);
-        RestoreKoreanFontType();
+        PrintCryScreenSpeciesName(sPokedexListItem->dexNum, 11, 4, 2);
+        Menu_PrintText(gDexText_CryOf2, 11, 6);
         gMain.state++;
         break;
     case 5:
@@ -4258,11 +4260,9 @@ int DoPokedexSearch(u8 dexMode, u8 order, u8 abcGroup, u8 bodyColor, u8 type1, u
     return resultsCount;
 }
 
-#define SUB_8091E20_WIDTH (208)
-
 void EraseAndPrintSearchTextBox(const u8 *str)
 {
-    sub_8072AB0(str, 9, 120, SUB_8091E20_WIDTH, 32, 1);
+    sub_8072AB0(str, 16, 120, 208, 32, 1);
 }
 
 u8 LoadSearchMenu(void)
@@ -4801,29 +4801,29 @@ static void PrintSelectedSearchParameters(u8 taskId)
 
     var = gTasks[taskId].data[6] + gTasks[taskId].data[7];
     StringCopy(gStringVar1, sDexSearchNameOptions[var].title);
-    Menu_PrintTextPixelCoords(gUnknown_083B5AB2, 45, 16, 1);
+    Menu_PrintTextPixelCoords(gUnknown_083B5AB2, 49, 16, 1);
 
     var = gTasks[taskId].data[8] + gTasks[taskId].data[9];
     StringCopy(gStringVar1, sDexSearchColorOptions[var].title);
-    Menu_PrintTextPixelCoords(gUnknown_083B5AB2, 45, 32, 1);
+    Menu_PrintTextPixelCoords(gUnknown_083B5AB2, 49, 32, 1);
 
     var = gTasks[taskId].data[10] + gTasks[taskId].data[11];
     StringCopy(gStringVar1, sDexSearchTypeOptions[var].title);
-    Menu_PrintTextPixelCoords(gUnknown_083B5AAC, 45, 48, 1);
+    Menu_PrintTextPixelCoords(gUnknown_083B5AAC, 49, 48, 1);
 
     var = gTasks[taskId].data[12] + gTasks[taskId].data[13];
     StringCopy(gStringVar1, sDexSearchTypeOptions[var].title);
-    Menu_PrintTextPixelCoords(gUnknown_083B5AAC, 93, 48, 1);
+    Menu_PrintTextPixelCoords(gUnknown_083B5AAC, 97, 48, 1);
 
     var = gTasks[taskId].data[4] + gTasks[taskId].data[5];
     StringCopy(gStringVar1, sDexOrderOptions[var].title);
-    Menu_PrintTextPixelCoords(gUnknown_083B5AB2, 45, 64, 1);
+    Menu_PrintTextPixelCoords(gUnknown_083B5AB2, 49, 64, 1);
 
     if (IsNationalPokedexEnabled())
     {
         var = gTasks[taskId].data[2] + gTasks[taskId].data[3];
         StringCopy(gStringVar1, sDexModeOptions[var].title);
-        Menu_PrintTextPixelCoords(gUnknown_083B5AB2, 45, 80, 1);
+        Menu_PrintTextPixelCoords(gUnknown_083B5AB2, 49, 80, 1);
     }
 }
 
@@ -4874,12 +4874,7 @@ static void PrintSearchParameterText(u8 taskId)
 
     Menu_EraseWindowRect(18, 1, 28, 12);
     for (i = 0, j = *r7; i < 6 && r6[j].title != NULL; i++, j++)
-    {
-#ifndef NONMATCHING
-        j += 0;  // Useless statement needed to match
-#endif
         Menu_PrintText(r6[j].title, 18, i * 2 + 1);
-    }
     EraseAndPrintSearchTextBox(r6[*r8 + *r7].description);
 }
 

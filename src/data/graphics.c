@@ -1317,14 +1317,15 @@ const u8 gTitleScreenPressStart_Gfx[] = INCBIN_U8("graphics/title_screen/press_s
 const u8 gTitleScreenLogoShinePalette[] = INCBIN_U8("graphics/title_screen/logo_shine.gbapal");
 
 #ifdef SAPPHIRE
-const u8 gUnknown_08E9D8CC[] = INCBIN_U8("graphics/title_screen/pokemon_sapphire.8bpp.lz");
-const u8 gVersionTiles[] = INCBIN_U8("graphics/title_screen/sapphireversion.8bpp.lz");
-const u16 gUnknown_08E9F624[] = INCBIN_U16("graphics/title_screen/logo_sapphire.gbapal");
-// for some reason, the sapphire palette is different even though the visible colors for the logo and version are not
+const u8 gTitleScreenLogoGfx[] = INCBIN_U8("graphics/title_screen/logo_sapphire.8bpp.lz");
+const u16 gTitleScreenLogoPalette[] = INCBIN_U16("graphics/title_screen/logo_sapphire.gbapal");
+const u8 gTitleScreenVersionGfx[] = INCBIN_U8("graphics/title_screen/logo_version_sapphire.8bpp.lz");
+const u16 gTitleScreenVersionPalette[] = INCBIN_U16("graphics/title_screen/logo_version_sapphire.gbapal");
 #else
-const u8 gUnknown_08E9D8CC[] = INCBIN_U8("graphics/title_screen/pokemon_ruby.8bpp.lz");
-const u8 gVersionTiles[] = INCBIN_U8("graphics/title_screen/rubyversion.8bpp.lz");
-const u16 gUnknown_08E9F624[] = INCBIN_U16("graphics/title_screen/logo_ruby.gbapal");
+const u8 gTitleScreenLogoGfx[] = INCBIN_U8("graphics/title_screen/logo_ruby.8bpp.lz");
+const u16 gTitleScreenLogoPalette[] = INCBIN_U16("graphics/title_screen/logo_ruby.gbapal");
+const u8 gTitleScreenVersionGfx[] = INCBIN_U8("graphics/title_screen/logo_version_ruby.8bpp.lz");
+const u16 gTitleScreenVersionPalette[] = INCBIN_U16("graphics/title_screen/logo_version_ruby.gbapal");
 #endif // SAPPHIRE
 
 const u8 gUnknown_08E9F7E4[] = INCBIN_U8("graphics/unknown/unknown_E9F7E4.bin.lz");

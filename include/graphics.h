@@ -2735,9 +2735,10 @@ extern const u8 gUnknown_08E9AC4C[];
 extern const u8 gInterviewOutlineCursorTiles[];
 extern const u8 gTitleScreenPressStart_Gfx[];
 extern const u16 gTitleScreenLogoShinePalette[];
-extern const u8 gUnknown_08E9D8CC[];
-extern const u8 gVersionTiles[];
-extern const u16 gUnknown_08E9F624[];
+extern const u8 gTitleScreenLogoGfx[];
+extern const u16 gTitleScreenLogoPalette[];
+extern const u8 gTitleScreenVersionGfx[];
+extern const u16 gTitleScreenVersionPalette[];
 extern const u8 gUnknown_08E9F7E4[];
 
 extern const u8 gCableCar_Gfx[];

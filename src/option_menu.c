@@ -351,7 +351,7 @@ static void BattleScene_DrawChoices(u8 selection)
     styles[selection] = 0x8;
 
     DrawOptionMenuChoice(gSystemText_On,  120, 56, styles[0]);
-    DrawOptionMenuChoice(gSystemText_Off, 190, 56, styles[1]);
+    DrawOptionMenuChoice(gSystemText_Off, 165, 56, styles[1]);
 }
 
 static u8 BattleStyle_ProcessInput(u8 selection)
@@ -361,8 +361,6 @@ static u8 BattleStyle_ProcessInput(u8 selection)
     return selection;
 }
 
-#define BATTLESTYLE_SHIFT (120)
-#define BATTLESTYLE_SET (190)
 
 static void BattleStyle_DrawChoices(u8 selection)
 {
@@ -372,8 +370,8 @@ static void BattleStyle_DrawChoices(u8 selection)
     styles[1] = 0xF;
     styles[selection] = 0x8;
 
-    DrawOptionMenuChoice(gSystemText_Shift, BATTLESTYLE_SHIFT, 72, styles[0]);
-    DrawOptionMenuChoice(gSystemText_Set,   BATTLESTYLE_SET,   72, styles[1]);
+    DrawOptionMenuChoice(gSystemText_Shift, 120, 72, styles[0]);
+    DrawOptionMenuChoice(gSystemText_Set,   176, 72, styles[1]);
 }
 
 static u8 Sound_ProcessInput(u8 selection)
@@ -395,7 +393,7 @@ static void Sound_DrawChoices(u8 selection)
     styles[selection] = 0x8;
 
     DrawOptionMenuChoice(gSystemText_Mono,   120, 88, styles[0]);
-    DrawOptionMenuChoice(gSystemText_Stereo, 172, 88, styles[1]);
+    DrawOptionMenuChoice(gSystemText_Stereo, 176, 88, styles[1]);
 }
 
 static u8 FrameType_ProcessInput(u8 selection)
@@ -446,7 +444,7 @@ static void FrameType_DrawChoices(u8 selection)
 
     text[i] = EOS;
     Menu_PrintText(gSystemText_Type, 15, 15);
-    Menu_PrintText(text, 18, 15);
+    Menu_PrintText(text, 17, 15);
 }
 
 static u8 ButtonMode_ProcessInput(u8 selection)
@@ -478,6 +476,6 @@ static void ButtonMode_DrawChoices(u8 selection)
     styles[selection] = 0x8;
 
     DrawOptionMenuChoice(gSystemText_Normal, 120, 104, styles[0]);
-    DrawOptionMenuChoice(gSystemText_LR,     166, 104, styles[1]);
+    DrawOptionMenuChoice(gSystemText_LR,     156, 104, styles[1]);
     DrawOptionMenuChoice(gSystemText_LA,     188, 104, styles[2]);
 }

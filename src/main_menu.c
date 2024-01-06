@@ -682,10 +682,22 @@ void PrintSaveFileInfo(void)
     PrintBadgeCount();
 }
 
+static void PrintTextPixelCoordsRightAlign(const u8 *text, u8 left, u8 top, u8 maxWidth)
+{
+    u8 *buffer = gStringVar1;
+    buffer[0] = EXT_CTRL_CODE_BEGIN;
+    buffer[1] = EXT_CTRL_CODE_CLEAR_TO;
+    buffer[2] = GetStringRightAlignXOffset(text, maxWidth);
+    buffer += 3;
+
+    StringCopy(buffer, text);
+    Menu_PrintTextPixelCoords(gStringVar1, left, top, TRUE);
+}
+
 void PrintPlayerName(void)
 {
     Menu_PrintText(gMainMenuString_Player, 2, 3);
-    Menu_PrintText(gSaveBlock2.playerName, 9, 3);
+    PrintTextPixelCoordsRightAlign(gSaveBlock2.playerName, 56, 24, 68);
 }
 
 void PrintPlayTime(void)
@@ -696,25 +708,29 @@ void PrintPlayTime(void)
     Menu_PrintText(gMainMenuString_Time, 16, 3);
     FormatPlayTime(playTime, gSaveBlock2.playTimeHours, gSaveBlock2.playTimeMinutes, 1);
     AlignStringInMenuWindow(alignedPlayTime, playTime, 48, 1);
-    Menu_PrintText(alignedPlayTime, 22, 3);
+    PrintTextPixelCoordsRightAlign(alignedPlayTime, 176, 24, 40);
 }
 
 void PrintPokedexCount(void)
 {
+    const u8 textAmount[] = _("마리");
     u8 buffer[16];
 
     Menu_PrintText(gMainMenuString_Pokedex, 2, 5);
-    AlignInt1InMenuWindow(buffer, GetPokedexSeenCount(), 18, 0);
-    Menu_PrintText(buffer, 9, 5);
+    ConvertIntToDecimalString(buffer, GetPokedexSeenCount());
+    StringAppend(buffer, textAmount);
+    PrintTextPixelCoordsRightAlign(buffer, 64, 40, 60);
 }
 
 void PrintBadgeCount(void)
 {
+    const u8 textAmount[] = _("개");
     u8 buffer[16];
 
     Menu_PrintText(gMainMenuString_Badges, 16, 5);
     ConvertIntToDecimalString(buffer, GetBadgeCount());
-    Menu_PrintTextPixelCoords(buffer, 205, 40, 1);
+    StringAppend(buffer, textAmount);
+    PrintTextPixelCoordsRightAlign(buffer, 208, 40, 16);
 }
 
 #define tTrainerSpriteId data[2]

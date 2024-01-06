@@ -1643,15 +1643,15 @@ void sub_80EC4A0()
     case 0xD:
         sub_80EED2C(0x1);
 #if DEBUG
-		if (gLinkOpen == TRUE)
-			debug_sub_8008218((void *)(VRAM + 0x75E0), 0, (void *)(VRAM + 0xF800), 4);
+        if (gLinkOpen == TRUE)
+            debug_sub_8008218((void *)(VRAM + 0x75E0), 0, (void *)(VRAM + 0xF800), 4);
 #endif
         gPokenavStructPtr->unk304++;
         break;
     case 0xE:
         if (!gPaletteFade.active)
-			sub_80EBDBC(&sub_80EC67C);
-		break;
+            sub_80EBDBC(&sub_80EC67C);
+        break;
     }
 }
 
@@ -1686,23 +1686,23 @@ void sub_80EC67C()
         }
         else if (!sub_80EFBDC(1))
         {
-			sub_80FAEC4();
-			gPokenavStructPtr->unk304++;
-		}
+            sub_80FAEC4();
+            gPokenavStructPtr->unk304++;
+        }
         break;
     case 2:
         if (!sub_80FAFC0())
         {
-			if (!gPokenavStructPtr->regionMap.zoomed)
-			{
-				sub_80EFBB0();
-				gPokenavStructPtr->unk304 = 0;
-			}
-			else
-			{
-				gPokenavStructPtr->unk304++;
-			}
-		}
+            if (!gPokenavStructPtr->regionMap.zoomed)
+            {
+                sub_80EFBB0();
+                gPokenavStructPtr->unk304 = 0;
+            }
+            else
+            {
+                gPokenavStructPtr->unk304++;
+            }
+        }
         break;
     case 3:
         if (!sub_80EFBDC(0))
@@ -1718,16 +1718,16 @@ void sub_80EC67C()
     case 5:
         if (!gPaletteFade.active)
         {
-			sub_80F2DF4();
-			sub_80F2D04(0x4);
-			gSaveBlock2.regionMapZoom = (gPokenavStructPtr->regionMap.zoomed == 1) ? 1 : 0;
-			sub_80EBDBC(&sub_80EC00C);
-		}
-		break;
+            sub_80F2DF4();
+            sub_80F2D04(0x4);
+            gSaveBlock2.regionMapZoom = (gPokenavStructPtr->regionMap.zoomed == 1) ? 1 : 0;
+            sub_80EBDBC(&sub_80EC00C);
+        }
+        break;
     }
 #if DEBUG
-	if (gLinkOpen == TRUE)
-		debug_sub_8008264(gLink.recvQueue.count, 1, 1, 2, 4);
+    if (gLinkOpen == TRUE)
+        debug_sub_8008264(gLink.recvQueue.count, 1, 1, 2, 4);
 #endif
 }
 

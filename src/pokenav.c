@@ -591,7 +591,7 @@ bool8 sub_80EF874(void)
             return TRUE;
         break;
     case 10:
-        Menu_DrawStdWindowFrame(13, 3, 29, 17);
+        Menu_DrawStdWindowFrame(16, 3, 29, 17);
         sub_80EF9F8();
         break;
     case 11:
@@ -633,7 +633,7 @@ void sub_80EF9F8(void)
         break;
     case 1:
     case 4:
-        sub_8072A18(gPokenavStructPtr->regionMap.mapSectionName, 0x70, top * 8, 0x78, 1);
+        sub_8072A18(gPokenavStructPtr->regionMap.mapSectionName, 136, top * 8, 96, 1);
         top += 2;
         if (gLinkOpen == TRUE)
         {
@@ -653,33 +653,32 @@ void sub_80EF9F8(void)
 
                 if (secName == NULL)
                     break;
-                sub_8072A18(secName, 0x70, top * 8, 0x78, 1);
+                sub_8072A18(secName, 136, top * 8, 96, 1);
                 top += 2;
             }
         }
         break;
     case 2:
-        sub_8072A18(gPokenavStructPtr->regionMap.mapSectionName, 0x70, top * 8, 0x78, 1);
+        sub_8072A18(gPokenavStructPtr->regionMap.mapSectionName, 136, top * 8, 96, 1);
         top += 2;
         mapSectionId = gPokenavStructPtr->regionMap.mapSectionId;
         b = gPokenavStructPtr->regionMap.everGrandeCityArea;
         if (gPokenavStructPtr->unkCDCC[mapSectionId][b] != NULL)
         {
-            Menu_BlankWindowRect(14, top, 15, 15);
-            Menu_BlankWindowRect(26, top, 28, 15);
-            sub_8095C8C((void *)(VRAM + 0xF800), 16, 6, gPokenavStructPtr->unkCDCC[mapSectionId][b], 0, 0, 10, 10, 10);
+            Menu_BlankWindowRect(17, top, 28, 15);
+            sub_8095C8C((void *)(VRAM + 0xF800), 18, 6, gPokenavStructPtr->unkCDCC[mapSectionId][b], 0, 0, 10, 10, 10);
             top += 11;
         }
         break;
     case 3:
-        sub_8072A18(gPokenavStructPtr->regionMap.mapSectionName, 0x70, top * 8, 0x78, 1);
+        sub_8072A18(gPokenavStructPtr->regionMap.mapSectionName, 136, top * 8, 96, 1);
         top += 2;
         break;
     }
 
     // Epic fail by the compiler at optimizing this.
     if (!someBool && top < 16)
-        Menu_BlankWindowRect(14, top, 28, 15);
+        Menu_BlankWindowRect(17, top, 28, 15);
 
     if (gPokenavStructPtr->regionMap.unk16 == 2)
         sub_80EFD74();
@@ -787,7 +786,7 @@ void sub_80EFD74(void)
 
 void sub_80EFDA0(void)
 {
-    sub_8095C8C((void *)VRAM + 0xF800, 14, 16, gUnknown_08E9AC2C, 0, 0, 15, 1, 15);
+    sub_8095C8C((void *)VRAM + 0xF800, 17, 16, gUnknown_08E9AC2C, 0, 0, 11 + 1, 1, 15);
     gPokenavStructPtr->unk769E = 0;
 }
 
@@ -795,18 +794,17 @@ void sub_80EFDE4(u8 param0)
 {
     u16 var1 = 60 - gPokenavStructPtr->unk769C;
 
-    if (var1 > 15)
-        var1 = 15;
+    if (var1 > 11 + 1)
+        var1 = 11 + 1;
 
     if (gPokenavStructPtr->unk769E != 0)
     {
-        sub_8095C8C((void *)VRAM + 0xF800, 14, 16, gUnknown_08E9ABB4, gPokenavStructPtr->unk769C, 0, var1, 1, 60);
+        sub_8095C8C((void *)VRAM + 0xF800, 17, 16, gUnknown_08E9ABB4, gPokenavStructPtr->unk769C, 0, var1, 1, 60);
 
-        if (var1 < 15)
+        if (var1 < 17 + 1)
         {
-            u16 var2 = var1 + 14;
-
-            sub_8095C8C((void *)VRAM + 0xF800, var2, 16, gUnknown_08E9ABB4, 0, 0, (u16)(15 - var1), 1, 60);
+            u16 var2 = var1 + 17;
+            sub_8095C8C((void *)VRAM + 0xF800, var2, 16, gUnknown_08E9ABB4, 0, 0, (u16)(11 + 1 - var1), 1, 60);
         }
     }
 }
@@ -1385,42 +1383,44 @@ bool8 sub_80F0D5C(void)
 
     if (gPokenavStructPtr->unkD15C == 7)
         return FALSE;
+
     if (++gPokenavStructPtr->unk306 < 2)
         return TRUE;
+
     gPokenavStructPtr->unk306 = 0;
+
     BasicInitMenuWindow(&gWindowTemplate_81E70D4);
+
     r5 = (gPokenavStructPtr->unk8778 + 2 + gPokenavStructPtr->unkD15C * 2) & 0x1F;
-#ifndef NONMATCHING
-    asm("":::"r2"); // fakematch
-#endif //NONMATCHING
+
     switch (gPokenavStructPtr->unkD15C)
     {
     default:
         return FALSE;
     case 0:
-        Menu_PrintTextPixelCoords(gOtherText_Strategy, 0x61, r5 * 8, 0);
+        Menu_PrintTextPixelCoords(gOtherText_Strategy, 97, r5 * 8, 0);
         break;
     case 1:
-        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[0], 0x88, 0);
-        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 0x61, r5 * 8, 0);
+        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[0], 136, 0);
+        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 97, r5 * 8, 0);
         break;
     case 2:
-        Menu_PrintTextPixelCoords(gOtherText_TrainersPokemon, 0x61, r5 * 8, 0);
+        Menu_PrintTextPixelCoords(gOtherText_TrainersPokemon, 97, r5 * 8, 0);
         break;
     case 3:
-        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[1], 0x88, 0);
-        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 0x61, r5 * 8, 0);
+        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[1], 136, 0);
+        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 97, r5 * 8, 0);
         break;
     case 4:
-        Menu_PrintTextPixelCoords(gOtherText_SelfIntroduction, 0x61, r5 * 8, 0);
+        Menu_PrintTextPixelCoords(gOtherText_SelfIntroduction, 97, r5 * 8, 0);
         break;
     case 5:
-        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[2], 0x88, 0);
-        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 0x61, r5 * 8, 0);
+        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[2], 136, 0);
+        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 97, r5 * 8, 0);
         break;
     case 6:
-        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[3], 0x88, 0);
-        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 0x61, r5 * 8, 0);
+        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[3], 136, 0);
+        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 97, r5 * 8, 0);
         return FALSE;
     }
     gPokenavStructPtr->unkD15C++;
@@ -1818,8 +1818,7 @@ void sub_80F19DC(u8 *text)
 
 void sub_80F19FC(void)
 {
-    // FIXME r4/r5 swapped
-    register u8 *ptr asm("r5") = gUnknown_020388B0;
+    u8 *ptr = gUnknown_020388B0;
     if (ptr[0] == 1)
     {
         const u8 *landmarkName = GetLandmarkName(
@@ -1829,12 +1828,12 @@ void sub_80F19FC(void)
 
         if (landmarkName)
         {
-            sub_8072A18(landmarkName, 0x70, 4 * (ptr[1] * 4 + 12), 0x78, 1);
+            sub_8072A18(landmarkName, 112, 4 * (ptr[1] * 4 + 12), 120, 1);
             if (++ptr[1] != 4)
                 return;
         }
 
-        Menu_BlankWindowRect(14, ptr[1] * 2 + 6, 28, 15);
+        Menu_BlankWindowRect(17, ptr[1] * 2 + 6, 28, 15);
         ptr[0] = 0;
     }
 }

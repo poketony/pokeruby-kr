@@ -1367,7 +1367,7 @@ void CB2_InitFlyRegionMap(void)
         break;
     case 6:
         LoadPalette(sFlyRegionMapFrame_Pal, 16, 32);
-        Menu_PrintTextPixelCoords(gOtherText_FlyToWhere, 1, 0x90, 1);
+        Menu_PrintTextPixelCoords(gOtherText_FlyToWhere, 8, 144, 1);
         break;
     case 7:
         CreateFlyTargetGraphics();
@@ -1422,8 +1422,8 @@ static void PrintFlyTargetName(void)
             {
                 if (FlagGet(sMultiPartMapSections[i].requiredFlag))
                 {
-                    Menu_DrawStdWindowFrame(16, 14, 29, 19);
-                    Menu_PrintText(gRegionMapState->regionMap.mapSectionName, 17, 15);
+                    Menu_DrawStdWindowFrame(18, 14, 29, 19);
+                    Menu_PrintText(gRegionMapState->regionMap.mapSectionName, 19, 15);
                     MenuPrint_RightAligned(sMultiPartMapSections[i].partNames[gRegionMapState->regionMap.everGrandeCityArea], 29, 17);
                     drawFrameDisabled = TRUE;
                 }
@@ -1433,16 +1433,16 @@ static void PrintFlyTargetName(void)
 
         if (!drawFrameDisabled)
         {
-            Menu_DrawStdWindowFrame(16, 16, 29, 19);
-            Menu_PrintText(gRegionMapState->regionMap.mapSectionName, 17, 17);
-            Menu_EraseWindowRect(16, 14, 29, 15);
+            Menu_DrawStdWindowFrame(18, 16, 29, 19);
+            Menu_PrintText(gRegionMapState->regionMap.mapSectionName, 19, 17);
+            Menu_EraseWindowRect(18, 14, 29, 15);
         }
     }
     else
     {
-        Menu_DrawStdWindowFrame(16, 16, 29, 19);
-        Menu_PrintText(gRegionMapState->blankMapName, 17, 17);
-        Menu_EraseWindowRect(16, 14, 29, 15);
+        Menu_DrawStdWindowFrame(18, 16, 29, 19);
+        Menu_PrintText(gRegionMapState->blankMapName, 19, 17);
+        Menu_EraseWindowRect(18, 14, 29, 15);
     }
 }
 
@@ -1657,22 +1657,22 @@ void debug_sub_8110CCC(void)
         {
             if (FlagGet(sMultiPartMapSections[i].requiredFlag))
             {
-                indent = 12 - StringLength(sMultiPartMapSections[i].partNames[gRegionMapState->regionMap.everGrandeCityArea]);
+                indent = 10 - StringLength(sMultiPartMapSections[i].partNames[gRegionMapState->regionMap.everGrandeCityArea]);
                 if (indent < 0)
                     indent = 0;
                 r7 = TRUE;
-                Menu_DrawStdWindowFrame(16, 14, 29, 19);
-                Menu_PrintText(gRegionMapState->regionMap.mapSectionName, 17, 15);
-                Menu_PrintText(sMultiPartMapSections[i].partNames[gRegionMapState->regionMap.everGrandeCityArea], 17 + indent, 17);
+                Menu_DrawStdWindowFrame(18, 14, 29, 19);
+                Menu_PrintText(gRegionMapState->regionMap.mapSectionName, 19, 15);
+                Menu_PrintText(sMultiPartMapSections[i].partNames[gRegionMapState->regionMap.everGrandeCityArea], 19 + indent, 17);
             }
             break;
         }
     }
     if (!r7)
     {
-        Menu_DrawStdWindowFrame(16, 16, 29, 19);
-        Menu_PrintText(gRegionMapState->regionMap.mapSectionName, 17, 17);
-        Menu_EraseWindowRect(16, 14, 29, 15);
+        Menu_DrawStdWindowFrame(18, 16, 29, 19);
+        Menu_PrintText(gRegionMapState->regionMap.mapSectionName, 19, 17);
+        Menu_EraseWindowRect(18, 14, 29, 15);
     }
 }
 

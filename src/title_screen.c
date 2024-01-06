@@ -1,4 +1,5 @@
 #include "global.h"
+#include "graphics.h"
 #include "gba/m4a_internal.h"
 #include "title_screen.h"
 #include "clear_save_data_menu.h"
@@ -19,22 +20,22 @@
 #define VERSION_BANNER_SHAPE 1
 #define VERSION_BANNER_RIGHT_TILEOFFSET 64
 #define VERSION_BANNER_BYTES 0x1000
-#define VERSION_BANNER_LEFT_X 98
-#define VERSION_BANNER_RIGHT_X 162
-#define VERSION_BANNER_Y 26
-#define VERSION_BANNER_Y_GOAL 66
-#define START_BANNER_X DISPLAY_WIDTH / 2
+#define VERSION_BANNER_LEFT_X 164
+#define VERSION_BANNER_RIGHT_X 228
+#define VERSION_BANNER_Y 50
+#define LOGO_SLIDE_DURATION 80
+#define LOGO_DELAY_DURATION 64
+#define LOGO_X -24
+#define LOGO_X_GOAL -1
+#define LOGO_X_DISTANCE (LOGO_X_GOAL - LOGO_X)
+#define LOGO_Y -40
+#define LOGO_Y_GOAL -8
+#define LOGO_Y_DISTANCE (LOGO_Y_GOAL - LOGO_Y)
 
 extern u8 gReservedSpritePaletteCount;
 extern struct MusicPlayerInfo gMPlayInfo_BGM;
 extern u16 gBattle_BG1_Y;
 extern u16 gBattle_BG1_X;
-extern const u8 gUnknown_08E9D8CC[];
-extern const u16 gUnknown_08E9F624[];
-extern const u8 gUnknown_08E9F7E4[];
-extern const u8 gVersionTiles[];
-extern const u8 gTitleScreenPressStart_Gfx[];
-extern const u16 gTitleScreenLogoShinePalette[];
 
 static EWRAM_DATA u8 gUnknown_0202F7E4 = 0;
 
@@ -57,7 +58,9 @@ static const u8 sLegendaryMonPixelData[] = INCBIN_U8("graphics/title_screen/grou
 static const u8 sLegendaryMonTilemap[] = INCBIN_U8("graphics/title_screen/groudon_map.bin.lz");
 static const u8 sBackdropTilemap[] = INCBIN_U8("graphics/title_screen/lava_map.bin.lz");
 #endif
+
 static const u8 sLogoShineTiles[] = INCBIN_U8("graphics/title_screen/logo_shine.4bpp.lz");
+
 const u16 gUnknown_08393E64[] =
 {
     0x10,
@@ -93,6 +96,7 @@ const u16 gUnknown_08393E64[] =
     0x1001,
     0x1000,
 };
+
 static const struct OamData sVersionBannerLeftOamData =
 {
     .y = 160,
@@ -109,6 +113,7 @@ static const struct OamData sVersionBannerLeftOamData =
     .paletteNum = 0,
     .affineParam = 0,
 };
+
 static const struct OamData sVersionBannerRightOamData =
 {
     .y = 160,
@@ -125,24 +130,29 @@ static const struct OamData sVersionBannerRightOamData =
     .paletteNum = 0,
     .affineParam = 0,
 };
+
 static const union AnimCmd sVersionBannerLeftAnimSequence[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_END,
 };
+
 static const union AnimCmd sVersionBannerRightAnimSequence[] =
 {
     ANIMCMD_FRAME(VERSION_BANNER_RIGHT_TILEOFFSET, 30),
     ANIMCMD_END,
 };
+
 static const union AnimCmd *const sVersionBannerLeftAnimTable[] =
 {
     sVersionBannerLeftAnimSequence,
 };
+
 static const union AnimCmd *const sVersionBannerRightAnimTable[] =
 {
     sVersionBannerRightAnimSequence,
 };
+
 static const struct SpriteTemplate sVersionBannerLeftSpriteTemplate =
 {
     .tileTag = 1000,
@@ -153,6 +163,7 @@ static const struct SpriteTemplate sVersionBannerLeftSpriteTemplate =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallback_VersionBannerLeft,
 };
+
 static const struct SpriteTemplate sVersionBannerRightSpriteTemplate =
 {
     .tileTag = 1000,
@@ -163,11 +174,13 @@ static const struct SpriteTemplate sVersionBannerRightSpriteTemplate =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallback_VersionBannerRight,
 };
+
 static const struct CompressedSpriteSheet gUnknown_08393EFC[] =
 {
-    {gVersionTiles, VERSION_BANNER_BYTES, 1000},
+    {gTitleScreenVersionGfx, VERSION_BANNER_BYTES, 1000},
     {NULL},
 };
+
 static const struct OamData gOamData_8393F0C =
 {
     .y = 160,
@@ -184,46 +197,67 @@ static const struct OamData gOamData_8393F0C =
     .paletteNum = 0,
     .affineParam = 0,
 };
+
 static const union AnimCmd gSpriteAnim_8393F14[] =
 {
     ANIMCMD_FRAME(0, 4),
     ANIMCMD_END,
 };
+
 static const union AnimCmd gSpriteAnim_8393F1C[] =
 {
     ANIMCMD_FRAME(4, 4),
     ANIMCMD_END,
 };
+
 static const union AnimCmd gSpriteAnim_8393F24[] =
 {
     ANIMCMD_FRAME(8, 4),
     ANIMCMD_END,
 };
+
 static const union AnimCmd gSpriteAnim_8393F2C[] =
 {
     ANIMCMD_FRAME(12, 4),
     ANIMCMD_END,
 };
+
 static const union AnimCmd gSpriteAnim_8393F34[] =
 {
     ANIMCMD_FRAME(16, 4),
     ANIMCMD_END,
 };
+
 static const union AnimCmd gSpriteAnim_8393F3C[] =
 {
     ANIMCMD_FRAME(20, 4),
     ANIMCMD_END,
 };
+
 static const union AnimCmd gSpriteAnim_8393F44[] =
 {
     ANIMCMD_FRAME(24, 4),
     ANIMCMD_END,
 };
+
 static const union AnimCmd gSpriteAnim_8393F4C[] =
 {
     ANIMCMD_FRAME(28, 4),
     ANIMCMD_END,
 };
+
+static const union AnimCmd gSpriteAnim_8393F54[] =
+{
+    ANIMCMD_FRAME(32, 4),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd gSpriteAnim_8393F5C[] =
+{
+    ANIMCMD_FRAME(36, 4),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd *const sStartCopyrightBannerAnimTable[] =
 {
     gSpriteAnim_8393F14,
@@ -234,7 +268,10 @@ static const union AnimCmd *const sStartCopyrightBannerAnimTable[] =
     gSpriteAnim_8393F3C,
     gSpriteAnim_8393F44,
     gSpriteAnim_8393F4C,
+    gSpriteAnim_8393F54,
+    gSpriteAnim_8393F5C,
 };
+
 static const struct SpriteTemplate sStartCopyrightBannerSpriteTemplate =
 {
     .tileTag = 1001,
@@ -245,16 +282,19 @@ static const struct SpriteTemplate sStartCopyrightBannerSpriteTemplate =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallback_PressStartCopyrightBanner,
 };
+
 static const struct CompressedSpriteSheet gUnknown_08393F8C[] =
 {
     {gTitleScreenPressStart_Gfx, 0x520, 1001},
     {NULL},
 };
+
 const struct SpritePalette sPokemonLogoShinePalette[] =
 {
     {gTitleScreenLogoShinePalette, 1001},
     {NULL},
 };
+
 static const struct OamData sPokemonLogoShineOamData =
 {
     .y = 160,
@@ -271,15 +311,18 @@ static const struct OamData sPokemonLogoShineOamData =
     .paletteNum = 0,
     .affineParam = 0,
 };
+
 static const union AnimCmd sPokemonLogoShineAnimSequence[] =
 {
     ANIMCMD_FRAME(0, 4),
     ANIMCMD_END,
 };
+
 static const union AnimCmd *const sPokemonLogoShineAnimTable[] =
 {
     sPokemonLogoShineAnimSequence,
 };
+
 static const struct SpriteTemplate sPokemonLogoShineSpriteTemplate =
 {
     .tileTag = 1002,
@@ -290,6 +333,7 @@ static const struct SpriteTemplate sPokemonLogoShineSpriteTemplate =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallback_PokemonLogoShine,
 };
+
 static const struct CompressedSpriteSheet sPokemonLogoShineSpriteSheet[] =
 {
     {sLogoShineTiles, 0x800, 1002},
@@ -336,7 +380,8 @@ void SpriteCallback_VersionBannerLeft(struct Sprite *sprite)
     if (task->data[1] != 0)
     {
         sprite->oam.objMode = 0;
-        sprite->y = VERSION_BANNER_Y_GOAL;
+		sprite->x = VERSION_BANNER_LEFT_X;
+        sprite->y = VERSION_BANNER_Y;
         sprite->invisible = FALSE;
     }
     else
@@ -346,8 +391,9 @@ void SpriteCallback_VersionBannerLeft(struct Sprite *sprite)
         if (task->data[5] < 64)
         {
             sprite->invisible = FALSE;
-            if (sprite->y != VERSION_BANNER_Y_GOAL)
-                sprite->y++;
+            if (sprite->x != VERSION_BANNER_LEFT_X)
+                sprite->x += 2;
+            sprite->y = VERSION_BANNER_Y;
             REG_BLDALPHA = gUnknown_08393E64[task->data[5] / 2];
         }
     }
@@ -360,7 +406,8 @@ void SpriteCallback_VersionBannerRight(struct Sprite *sprite)
     if (task->data[1] != 0)
     {
         sprite->oam.objMode = 0;
-        sprite->y = VERSION_BANNER_Y_GOAL;
+		sprite->x = VERSION_BANNER_RIGHT_X;
+        sprite->y = VERSION_BANNER_Y;
         sprite->invisible = FALSE;
     }
     else
@@ -368,8 +415,9 @@ void SpriteCallback_VersionBannerRight(struct Sprite *sprite)
         if (task->data[5] < 64)
         {
             sprite->invisible = FALSE;
-            if (sprite->y != VERSION_BANNER_Y_GOAL)
-                sprite->y++;
+            if (sprite->x != VERSION_BANNER_RIGHT_X)
+                sprite->x += 2;
+            sprite->y = VERSION_BANNER_Y;
         }
     }
 }
@@ -394,8 +442,8 @@ static void CreatePressStartBanner(s16 x, s16 y)
     u8 i;
     u8 spriteId;
 
-    x -= 32;
-    for (i = 0; i < 3; i++, x += 32)
+    x -= 64;
+    for (i = 0; i < 5; i++, x += 32)
     {
         spriteId = CreateSprite(&sStartCopyrightBannerSpriteTemplate, x, y, 0);
         StartSpriteAnim(&gSprites[spriteId], i);
@@ -412,7 +460,7 @@ static void CreateCopyrightBanner(s16 x, s16 y)
     for (i = 0; i < 5; i++, x += 32)
     {
         spriteId = CreateSprite(&sStartCopyrightBannerSpriteTemplate, x, y, 0);
-        StartSpriteAnim(&gSprites[spriteId], i + 3);
+        StartSpriteAnim(&gSprites[spriteId], i + 5);
     }
 }
 
@@ -503,9 +551,9 @@ void CB2_InitTitleScreen(void)
         gMain.state = 1;
         break;
     case 1:
-        LZ77UnCompVram(gUnknown_08E9D8CC, (void *)VRAM);
+        LZ77UnCompVram(gTitleScreenLogoGfx, (void *)VRAM);
         LZ77UnCompVram(gUnknown_08E9F7E4, (void *)(VRAM + 0x4800));
-        LoadPalette(gUnknown_08E9F624, 0, 0x1C0);
+        LoadPalette(gTitleScreenLogoPalette, 0, 0x1C0);
         LZ77UnCompVram(sLegendaryMonPixelData, (void *)(VRAM + 0x8000));
         LZ77UnCompVram(sLegendaryMonTilemap, (void *)(VRAM + 0xC000));
         LZ77UnCompVram(sBackdropTilemap, (void *)(VRAM + 0xC800));
@@ -518,7 +566,7 @@ void CB2_InitTitleScreen(void)
         LoadCompressedObjectPic(&gUnknown_08393EFC[0]);
         LoadCompressedObjectPic(&gUnknown_08393F8C[0]);
         LoadCompressedObjectPic(&sPokemonLogoShineSpriteSheet[0]);
-        LoadPalette(gUnknown_08E9F624, 0x100, 0x1C0);
+        LoadPalette(gTitleScreenVersionPalette, 0x100, 0x1C0);
         LoadSpritePalette(&sPokemonLogoShinePalette[0]);
         gMain.state = 2;
         break;
@@ -529,7 +577,6 @@ void CB2_InitTitleScreen(void)
         gTasks[taskId].tCounter = 256;
         gTasks[taskId].tSkipToNext = FALSE;
         gTasks[taskId].data[2] = -16;
-        gTasks[taskId].data[3] = -32;
         gUnknown_0202F7E4 = taskId;
         gMain.state = 3;
         break;
@@ -544,8 +591,10 @@ void CB2_InitTitleScreen(void)
         u16 savedIme;
 
         sub_813CE30(0x78, 0x50, 0x100, 0);
-        REG_BG2X = -29 * 256;
-        REG_BG2Y = -33 * 256;
+        REG_BG2X_L = LOGO_X * 256;
+        REG_BG2X_H = -1;
+        REG_BG2Y_L = LOGO_Y * 256;
+        REG_BG2Y_H = -1;
         REG_WIN0H = 0;
         REG_WIN0V = 0;
         REG_WIN1H = 0;
@@ -622,17 +671,17 @@ static void Task_TitleScreenPhase1(u8 taskId)
         REG_BLDY = 0;
 
         //Create left side of version banner
-        spriteId = CreateSprite(&sVersionBannerLeftSpriteTemplate, VERSION_BANNER_LEFT_X, VERSION_BANNER_Y, 0);
+        spriteId = CreateSprite(&sVersionBannerLeftSpriteTemplate, 64, VERSION_BANNER_Y, 0);
         gSprites[spriteId].invisible = TRUE;
         gSprites[spriteId].data[1] = taskId;
 
         //Create right side of version banner
-        spriteId = CreateSprite(&sVersionBannerRightSpriteTemplate, VERSION_BANNER_RIGHT_X, VERSION_BANNER_Y, 0);
+        spriteId = CreateSprite(&sVersionBannerRightSpriteTemplate, 128, VERSION_BANNER_Y, 0);
         gSprites[spriteId].invisible = TRUE;
         gSprites[spriteId].data[1] = taskId;
 
         gTasks[taskId].data[5] = 88;
-        gTasks[taskId].tCounter = 144;
+        gTasks[taskId].tCounter = LOGO_SLIDE_DURATION + LOGO_DELAY_DURATION;
         gTasks[taskId].func = Task_TitleScreenPhase2;
     }
 }
@@ -640,6 +689,8 @@ static void Task_TitleScreenPhase1(u8 taskId)
 //Create "Press Start" and copyright banners, and slide Pokemon logo up
 static void Task_TitleScreenPhase2(u8 taskId)
 {
+    f32 progress;
+
     //Skip to next phase when A, B, Start, or Select is pressed
     if ((gMain.newKeys & A_B_START_SELECT) || gTasks[taskId].tSkipToNext)
     {
@@ -648,7 +699,9 @@ static void Task_TitleScreenPhase2(u8 taskId)
     }
 
     if (gTasks[taskId].tCounter != 0)
+    {
         gTasks[taskId].tCounter--;
+    }
     else
     {
         gTasks[taskId].tSkipToNext = TRUE;
@@ -658,17 +711,21 @@ static void Task_TitleScreenPhase2(u8 taskId)
                     | DISPCNT_BG1_ON
                     | DISPCNT_BG2_ON
                     | DISPCNT_OBJ_ON;
-        CreatePressStartBanner(START_BANNER_X, 108);
+        CreatePressStartBanner(DISPLAY_WIDTH / 2, 108);
         CreateCopyrightBanner(DISPLAY_WIDTH / 2, 148);
         gTasks[taskId].data[4] = 0;
         gTasks[taskId].func = Task_TitleScreenPhase3;
+        return;
     }
 
     if (!(gTasks[taskId].tCounter & 1) && gTasks[taskId].data[3] != 0)
         gTasks[taskId].data[3]++;
 
-    //Slide Pokemon logo up
-    REG_BG2Y = gTasks[taskId].data[3] * 256;
+    progress = (f32)(LOGO_SLIDE_DURATION - (gTasks[taskId].tCounter - LOGO_DELAY_DURATION)) / LOGO_SLIDE_DURATION;
+    progress = min(progress, 1);
+
+    *(vu32 *)(REG_ADDR_BG2X) = (s16)((LOGO_X_DISTANCE * progress) - LOGO_X_DISTANCE + LOGO_X_GOAL) << 8;
+    *(vu32 *)(REG_ADDR_BG2Y) = (s16)((LOGO_Y_DISTANCE * progress) - LOGO_Y_DISTANCE + LOGO_Y_GOAL) << 8;
 }
 
 //Show Kyogre/Groundon silhouette and process main title screen input
@@ -704,7 +761,9 @@ static void Task_TitleScreenPhase3(u8 taskId)
 #endif
         else
         {
-            REG_BG2Y = 0;
+            *(vu32 *)(REG_ADDR_BG2X) = LOGO_X_GOAL << 8;
+            *(vu32 *)(REG_ADDR_BG2Y) = LOGO_Y_GOAL << 8;
+
             gTasks[taskId].tCounter++;
             if (gTasks[taskId].tCounter & 1)
             {
@@ -712,7 +771,9 @@ static void Task_TitleScreenPhase3(u8 taskId)
                 gBattle_BG1_Y = gTasks[taskId].data[4];
                 gBattle_BG1_X = 0;
             }
+
             UpdateLegendaryMarkingColor(gTasks[taskId].tCounter);
+
             if ((gMPlayInfo_BGM.status & 0xFFFF) == 0)
             {
                 BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, FADE_COLOR_WHITE);
