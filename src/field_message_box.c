@@ -117,13 +117,13 @@ bool8 unref_sub_8064BD0(const u8 *message)
 static void PrintFieldMessage(const u8 *message)
 {
     StringExpandPlaceholders(gStringVar4, message);
-    Contest_StartTextPrinter(&gFieldMessageBoxWindow, gStringVar4, gMenuTextTileOffset, 2, 15);
+    Contest_StartTextPrinter(&gFieldMessageBoxWindow, gStringVar4, gMenuTextTileOffset, 4, 15);
     CreateFieldMessageBoxTask();
 }
 
 static void PrintFieldMessageFromStringVar4(void)
 {
-    Contest_StartTextPrinter(&gFieldMessageBoxWindow, gStringVar4, gMenuTextTileOffset, 2, 15);
+    Contest_StartTextPrinter(&gFieldMessageBoxWindow, gStringVar4, gMenuTextTileOffset, 4, 15);
     CreateFieldMessageBoxTask();
 }
 

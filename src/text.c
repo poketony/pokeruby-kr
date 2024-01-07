@@ -2059,7 +2059,7 @@ void Contest_StartTextPrinter(struct Window *win, const u8 *text, u16 tileDataSt
     gMain.watchedKeysMask = A_BUTTON | B_BUTTON;
     gMain.watchedKeysPressed = 0;
     sWaitType = WAIT_TYPE_NORMAL;
-    sLineLength = 26;
+    sLineLength = 23;
     Text_InitWindow(win, text, tileDataStartOffset, left, top);
     win->win_field_B = -1;
     if (win->textMode == TEXT_MODE_UNKNOWN0)
@@ -2555,7 +2555,7 @@ u8 Text_UpdateWindowInBattle(struct Window *win)
     sWaitType = WAIT_TYPE_BATTLE;
     sLineLength = SUB_800374C_LINE_LENGTH;
     retVal = UpdateWindowText(win);
-    sLineLength = 26;
+    sLineLength = 23;
     sWaitType = WAIT_TYPE_NORMAL;
     return retVal;
 }
@@ -2565,7 +2565,7 @@ u8 Text_UpdateWindowAutoscroll(struct Window *win)
     u8 retVal;
 
     sWaitType = WAIT_TYPE_AUTOSCROLL;
-    sLineLength = 26;
+    sLineLength = 23;
     retVal = UpdateWindowText(win);
     sWaitType = WAIT_TYPE_NORMAL;
     return retVal;
@@ -2578,7 +2578,7 @@ u8 Contest_RunTextPrinter(struct Window *win)
     sWaitType = WAIT_TYPE_CONTEST;
     sLineLength = 17;
     retVal = UpdateWindowText(win);
-    sLineLength = 26;
+    sLineLength = 23;
     return retVal;
 }
 
@@ -2589,7 +2589,7 @@ u32 Text_UpdateWindowOverrideLineLength(struct Window *win, u8 lineLength)
     sWaitType = WAIT_TYPE_NORMAL;
     sLineLength = lineLength;
     retVal = UpdateWindowText(win);
-    sLineLength = 26;
+    sLineLength = 23;
     return retVal;
 }
 

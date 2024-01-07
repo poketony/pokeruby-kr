@@ -284,7 +284,7 @@ void Task_MainMenuCheckSave(u8 taskId)
         break;
     case 2:
         Menu_DrawStdWindowFrame(2, 14, 27, 19);
-        MenuPrintMessage(gSaveFileDeletedMessage, 3, 15);
+        MenuPrintMessage(gSaveFileDeletedMessage, 4, 15);
         REG_WIN0H = WIN_RANGE(17, 223);
         REG_WIN0V = WIN_RANGE(113, 159);
         gTasks[taskId].tMenuLayout = HAS_NO_SAVED_GAME;
@@ -292,7 +292,7 @@ void Task_MainMenuCheckSave(u8 taskId)
         break;
     case SAVE_STATUS_ERROR:
         Menu_DrawStdWindowFrame(2, 14, 27, 19);
-        MenuPrintMessage(gSaveFileCorruptMessage, 3, 15);
+        MenuPrintMessage(gSaveFileCorruptMessage, 4, 15);
         REG_WIN0H = WIN_RANGE(17, 223);
         REG_WIN0V = WIN_RANGE(113, 159);
         gTasks[taskId].tMenuLayout = HAS_SAVED_GAME;
@@ -310,7 +310,7 @@ void Task_MainMenuCheckSave(u8 taskId)
         break;
     case SAVE_STATUS_NO_FLASH:
         Menu_DrawStdWindowFrame(2, 14, 27, 19);
-        MenuPrintMessage(gBoardNotInstalledMessage, 3, 15);
+        MenuPrintMessage(gBoardNotInstalledMessage, 4, 15);
         REG_WIN0H = WIN_RANGE(17, 223);
         REG_WIN0V = WIN_RANGE(113, 159);
         gTasks[taskId].tMenuLayout = HAS_NO_SAVED_GAME;
@@ -350,7 +350,7 @@ void Task_MainMenuCheckRtc(u8 taskId)
         else
         {
             Menu_DrawStdWindowFrame(2, 14, 27, 19);
-            MenuPrintMessage(gBatteryDryMessage, 3, 15);
+            MenuPrintMessage(gBatteryDryMessage, 4, 15);
             REG_WIN0H = WIN_RANGE(17, 223);
             REG_WIN0V = WIN_RANGE(113, 159);
             gTasks[taskId].func = Task_MainMenuWaitForRtcErrorAck;
@@ -810,7 +810,7 @@ static void Task_NewGameSpeech3(u8 taskId)
             Menu_DrawStdWindowFrame(2, 13, 27, 18);
             //"Hi! Sorry to keep you waiting...
             //...But everyone calls me the POKEMON PROFESSOR."
-            MenuPrintMessage(gBirchSpeech_Welcome, 3, 14);
+            MenuPrintMessage(gBirchSpeech_Welcome, 4, 14);
             gTasks[taskId].func = Task_NewGameSpeech4;
         }
     }
@@ -822,7 +822,7 @@ static void Task_NewGameSpeech4(u8 taskId)
     {
         gTasks[taskId].func = Task_NewGameSpeech5;
         //"This is what we call a POKEMON."
-        MenuPrintMessage(gBirchSpeech_ThisIsPokemon, 3, 14);
+        MenuPrintMessage(gBirchSpeech_ThisIsPokemon, 4, 14);
     }
 }
 
@@ -872,7 +872,7 @@ static void Task_NewGameSpeech8(u8 taskId)
     {
         //"This world is widely inhabited by POKEMON...
         //...That's what I do."
-        MenuPrintMessage(gBirchSpeech_WorldInhabitedByPokemon, 3, 14);
+        MenuPrintMessage(gBirchSpeech_WorldInhabitedByPokemon, 4, 14);
         gTasks[taskId].func = Task_NewGameSpeech9;
     }
 }
@@ -883,7 +883,7 @@ static void Task_NewGameSpeech9(u8 taskId)
     {
         Menu_DrawStdWindowFrame(2, 13, 27, 18);
         //"And you are?"
-        MenuPrintMessage(gBirchSpeech_AndYouAre, 3, 14);
+        MenuPrintMessage(gBirchSpeech_AndYouAre, 4, 14);
         gTasks[taskId].func = Task_NewGameSpeech10;
     }
 }
@@ -959,7 +959,7 @@ static void Task_NewGameSpeech14(u8 taskId)
 {
     Menu_DrawStdWindowFrame(2, 13, 27, 18);
     //"Are you a boy? Or are you a girl?"
-    MenuPrintMessage(gBirchSpeech_AreYouBoyOrGirl, 3, 14);
+    MenuPrintMessage(gBirchSpeech_AreYouBoyOrGirl, 4, 14);
     gTasks[taskId].func = Task_NewGameSpeech15;
 }
 
@@ -1059,7 +1059,7 @@ static void Task_NewGameSpeech19(u8 taskId)
 {
     Menu_DrawStdWindowFrame(2, 13, 27, 18);
     //"All right. What's your name?"
-    MenuPrintMessage(gBirchSpeech_WhatsYourName, 3, 14);
+    MenuPrintMessage(gBirchSpeech_WhatsYourName, 4, 14);
     gTasks[taskId].func = Task_NewGameSpeech20;
 }
 
@@ -1118,7 +1118,7 @@ static void Task_NewGameSpeech23(u8 taskId)
     Menu_DrawStdWindowFrame(2, 13, 27, 18);
     //"So it's (PLAYER)?"
     StringExpandPlaceholders(gStringVar4, gBirchSpeech_SoItsPlayer);
-    MenuPrintMessage(gStringVar4, 3, 14);
+    MenuPrintMessage(gStringVar4, 4, 14);
     gTasks[taskId].func = Task_NewGameSpeech24;
 }
 
@@ -1196,7 +1196,7 @@ static void Task_NewGameSpeech27(u8 taskId)
         StringExpandPlaceholders(gStringVar4, gBirchSpeech_AhOkayYouArePlayer);
         //"Ah, okay! You're (PLAYER) who's moving...
         //...I get it now!"
-        MenuPrintMessage(gStringVar4, 3, 14);
+        MenuPrintMessage(gStringVar4, 4, 14);
         gTasks[taskId].func = Task_NewGameSpeech28;
     }
 }
@@ -1263,7 +1263,7 @@ static void Task_NewGameSpeech29(u8 taskId)
             StartSpriteFadeIn(taskId, 2);
             StartBackgroundFadeIn(taskId, 1);
             Menu_DrawStdWindowFrame(2, 13, 27, 18);
-            MenuPrintMessage(gBirchSpeech_AreYouReady, 3, 14);
+            MenuPrintMessage(gBirchSpeech_AreYouReady, 4, 14);
             gTasks[taskId].func = Task_NewGameSpeech30;
         }
     }

@@ -209,7 +209,7 @@ void MenuPrintMessage(const u8 *str, u8 left, u8 top)
 
 void MenuPrintMessageDefaultCoords(const u8 *str)
 {
-    Contest_StartTextPrinter(gMenuWindowPtr, str, gMenuTextTileOffset, 2, 15);
+    Contest_StartTextPrinter(gMenuWindowPtr, str, gMenuTextTileOffset, 4, 15);
 }
 
 void Menu_SetText(const u8 *str)

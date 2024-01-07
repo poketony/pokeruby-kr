@@ -9,7 +9,7 @@
 // Dimensions (in tiles) of a field dialogue frame
 #define STD_DLG_FRAME_LEFT    0
 #define STD_DLG_FRAME_TOP    14
-#define STD_DLG_FRAME_WIDTH  26
+#define STD_DLG_FRAME_WIDTH  24
 #define STD_DLG_FRAME_HEIGHT  4
 
 static void LoadTextWindowTiles(u8, void *);
@@ -91,11 +91,11 @@ static const struct FrameGraphics sTextWindowFrameGraphics[20] =
 
 static const u16 sDialogueFrameTilemap[5][7] =
 {
-    {1,      3,      4,      4,      5,      6,      9},
-    {11,     9,      9,      9,      9,      0x040B, 9},
-    {7,      9,      9,      9,      9,      10,     9},
-    {0x080B, 9,      9,      9,      9,      0x0C0B, 9},
-    {0x0801, 0x0803, 0x0804, 0x0804, 0x0805, 0x0806, 9},
+    {0x0001, 0x0002, 0x0003, 0x0004, 0x0005, 0x0402, 0x0006},
+    {0x0007, 0x000D, 0x0009, 0x0009, 0x0009, 0x040D, 0x000A},
+    {0x0007, 0x0008, 0x0009, 0x0009, 0x0009, 0x0408, 0x000A},
+    {0x0007, 0x080D, 0x0809, 0x0009, 0x0009, 0x0C0D, 0x000A},
+    {0x0801, 0x0802, 0x0803, 0x0804, 0x0805, 0x0C02, 0x0806},
 };
 
 u16 TextWindow_SetBaseTileNum(u16 baseTileNum)
@@ -157,44 +157,39 @@ static void LoadTextWindowPalette(u8 frameType, u8 palSlot)
 // Draws a standard window frame
 static void DrawStandardFrame(u16 *tilemap, u16 baseTileNum, u8 left, u8 top, u8 right, u8 bottom)
 {
-    u8 startX = min(left, right);
-    u8 endX = max(left, right);
-    u8 startY = min(top, bottom);
-    u8 endY = max(top, bottom);
     u8 x, y;
+    u8 startX, endX;
+    u8 startY, endY;
 
-    // top left corner
-    tilemap[32 * startY + startX] = baseTileNum | (STD_WINDOW_PALETTE_NUM << 12);
+    startX = (left < right) ? left : right;
+    endX = (right > left) ? right : left;
 
-    // top border
+    startY = (top < bottom) ? top : bottom;
+    endY = (bottom > top) ? bottom : top;
+
+    tilemap[32 * startY + startX] = baseTileNum | 0xE000;
+
     for (x = startX + 1; x < endX; x++)
-        tilemap[32 * startY + x] = (baseTileNum + 1) | (STD_WINDOW_PALETTE_NUM << 12);
+        tilemap[32 * startY + x] = (baseTileNum + 1) | 0xE000;
 
-    // top right corner
-    tilemap[32 * startY + endX] = (baseTileNum + 2) | (STD_WINDOW_PALETTE_NUM << 12);
+    tilemap[32 * startY + endX] = (baseTileNum + 2) | 0xE000;
 
     for (y = startY + 1; y < endY; y++)
     {
-        // left border
-        tilemap[32 * y + startX] = (baseTileNum + 3) | (STD_WINDOW_PALETTE_NUM << 12);
+        tilemap[32 * y + startX] = (baseTileNum + 3) | 0xE000;
 
-        // middle
         for (x = startX + 1; x < endX; x++)
-            tilemap[32 * y + x] = (baseTileNum + 4) | (STD_WINDOW_PALETTE_NUM << 12);
+            tilemap[32 * y + x] = (baseTileNum + 4) | 0xE000;
 
-        // right border
-        tilemap[32 * y + endX] = (baseTileNum + 5) | (STD_WINDOW_PALETTE_NUM << 12);
+        tilemap[32 * y + endX] = (baseTileNum + 5) | 0xE000;
     }
 
-    // bottom left corner
-    tilemap[32 * endY + startX] = (baseTileNum + 6) | (STD_WINDOW_PALETTE_NUM << 12);
+    tilemap[32 * endY + startX] = (baseTileNum + 6) | 0xE000;
 
-    // bottom border
     for (x = startX + 1; x < endX; x++)
-        tilemap[32 * endY + x] = (baseTileNum + 7) | (STD_WINDOW_PALETTE_NUM << 12);
+        tilemap[32 * endY + x] = (baseTileNum + 7) | 0xE000;
 
-    // bottom right corner
-    tilemap[32 * endY + endX] = (baseTileNum + 8) | (STD_WINDOW_PALETTE_NUM << 12);
+    tilemap[32 * endY + endX] = (baseTileNum + 8) | 0xE000;
 }
 
 u16 TextWindow_SetDlgFrameBaseTileNum(u16 baseTileNum)
@@ -205,7 +200,7 @@ u16 TextWindow_SetDlgFrameBaseTileNum(u16 baseTileNum)
 
 void unref_sub_80651DC(struct Window *win, u8 *text)
 {
-    Contest_StartTextPrinter(win, text, sDialogueFrameBaseTileNum + 14, 2, 15);
+    Contest_StartTextPrinter(win, text, sDialogueFrameBaseTileNum + 14, 4, 15);
 }
 
 // Loads and draws a dialogue window frame
@@ -224,12 +219,12 @@ static u16 GetDialogueFrameTilemapEntry(u16 baseTilemapEntry, u8 x, u8 y, u8 wid
     else if (y > 1)
         y = 2;
 
-    if (x >= width + 2)
-        x = x - (width + 2) + 4;
-    else if (x > 2)
+    if (x >= width + 1)
+        x = x - (width + 1) + 4;
+    else if (x > 3)
         x = 3;
 
-    if (x < 7 && y < 5)
+    if (x <= 6 && y <= 4)
         tilemapEntry = sDialogueFrameTilemap[y][x];
 
     tilemapEntry += baseTilemapEntry;
@@ -240,13 +235,17 @@ static u16 GetDialogueFrameTilemapEntry(u16 baseTilemapEntry, u8 x, u8 y, u8 wid
 static void DrawDialogueFrame(struct Window *win, u8 left, u8 top, u8 width, u8 height)
 {
     u8 x, y;
+    u16 index;
     u16 baseTilemapEntry = (win->paletteNum << 12) | sDialogueFrameBaseTileNum;
     u16 *tilemap = win->template->tilemap;
 
     for (y = 0; y < height + 2; y++)
     {
-        for (x = 0; x < width + 6; x++)
-            tilemap[(left + x) + 32 * (top + y)] = (win->paletteNum << 12) | GetDialogueFrameTilemapEntry(baseTilemapEntry, x, y, width, height);
+        for (x = 0; x < width + 4; x++)
+        {
+            index = (left + x + 1) + 32 * (top + y);
+            tilemap[index] = (win->paletteNum << 12) | GetDialogueFrameTilemapEntry(baseTilemapEntry, x, y, width, height);
+        }
     }
 }
 
