@@ -1787,7 +1787,7 @@ void sub_80FEABC(u8 taskId, u8 dummy1)
         }
         if (i == gUnknown_020388D5)
         {
-            sub_8072A18(gOtherText_Exit, 0x08, 8 * ni, 0x68, 1);
+            Menu_PrintTextPixelCoordsAndGetLines(gOtherText_Exit, 0x08, 8 * ni, 0x68, 1);
             break;
         }
         if (gUnknown_020388D0[i])
@@ -1795,10 +1795,10 @@ void sub_80FEABC(u8 taskId, u8 dummy1)
             if (sDecorationContext.isPlayerRoom == 1 && gUnknown_020388F6 != DECORCAT_DOLL && gUnknown_020388F6 != DECORCAT_CUSHION && gTasks[taskId].data[11] == 0)
             {
                 StringCopy(gStringVar1, gDecorations[gUnknown_020388D0[i]].name);
-                sub_8072A18(gUnknown_083EC65A, 0x08, 8 * ni, 0x68, 1);
+                Menu_PrintTextPixelCoordsAndGetLines(gUnknown_083EC65A, 0x08, 8 * ni, 0x68, 1);
             } else
             {
-                sub_8072A18(gDecorations[gUnknown_020388D0[i]].name, 0x08, 8 * ni, 0x68, 1);
+                Menu_PrintTextPixelCoordsAndGetLines(gDecorations[gUnknown_020388D0[i]].name, 0x08, 8 * ni, 0x68, 1);
             }
             for (j=0; j<16; j++)
             {

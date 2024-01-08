@@ -1021,7 +1021,7 @@ static void DrawMoveInfoWindow(bool8 contestInfo, int unused)
 
             for (i = 0; i < 4; i++)
                 PrintMoveInfo(moveId, sMoveInfoTextCoords[sBattleMoveInfoCoordIds[i]]);
-            var = sub_8072A18(gMoveDescriptions[moveId - 1], 0x58, 0x48, 0x90, 1);
+            var = Menu_PrintTextPixelCoordsAndGetLines(gMoveDescriptions[moveId - 1], 0x58, 0x48, 0x90, 1);
             if (var < 2)
             {
                 u8 r1 = var * 2 + 9;

@@ -1331,20 +1331,20 @@ static void sub_80A48F8(u16 taskId)
 
 static void ItemListMenu_InitDescription(s16 itemId)
 {
-    u8 r5;
+    u8 lines;
 
     if (gBagPocketScrollStates[sCurrentBagPocket].scrollTop + gBagPocketScrollStates[sCurrentBagPocket].cursorPos == gBagPocketScrollStates[sCurrentBagPocket].numSlots)
     {
-        r5 = sub_8072A18(gUnknown_0840E740[sReturnLocation], 4, 0x68, 0x68, 1);
-        r5 += sub_8072A18(gOtherText_ReturnTo, 4, 0x78, 0x68, 1);
+        lines = Menu_PrintTextPixelCoordsAndGetLines(gOtherText_ReturnLocations[sReturnLocation], 8, 104, 104, 1);
+        lines += Menu_PrintTextPixelCoordsAndGetLines(gOtherText_ReturnTo, 8, 120, 104, 1);
     }
     else
     {
-        r5 = sub_8072A18(ItemId_GetDescription(itemId), 4, 0x68, 0x68, 1);
+        lines = Menu_PrintTextPixelCoordsAndGetLines(ItemId_GetDescription(itemId), 8, 104, 104, 1);
     }
 
-    if (r5 < 3)
-        Menu_EraseWindowRect(0, 13 + r5 * 2, 13, 20);
+    if (lines < 3)
+        Menu_EraseWindowRect(1, 13 + lines * 2, 13, 20);
 }
 
 static void ItemListMenu_ChangeDescription(s16 itemId, int b)
@@ -1355,20 +1355,20 @@ static void ItemListMenu_ChangeDescription(s16 itemId, int b)
     {
         if (b == 0)
         {
-            Menu_EraseWindowRect(0, 13, 13, 20);
-            Menu_PrintTextPixelCoords(gOtherText_ReturnTo, 4, 0x78, 0);
+            Menu_EraseWindowRect(1, 13, 13, 20);
+            Menu_PrintText(gOtherText_ReturnLocations[sReturnLocation], 1, 13);
         }
         else if (b == 1)
         {
-            Menu_PrintTextPixelCoords(gUnknown_0840E740[sReturnLocation], 4, 0x68, 0);
+            Menu_PrintText(gOtherText_ReturnTo, 1, 15);
         }
     }
     else
     {
         if (b == 0)
-            Menu_EraseWindowRect(0, 13, 13, 20);
+            Menu_EraseWindowRect(1, 13, 13, 20);
         if (ItemId_CopyDescription(description, itemId, b))
-            Menu_PrintTextPixelCoords(description, 4, 104 + b * 16, 0);
+            Menu_PrintText(description, 1, 13 + b * 2);
     }
 }
 

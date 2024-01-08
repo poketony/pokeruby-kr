@@ -65,8 +65,8 @@ void InitYesNoMenu(u8, u8, u8);
 void DisplayYesNoMenu(u8, u8, u32);
 s8 Menu_ProcessInputNoWrap_(void);
 u8 Menu_PrintTextPixelCoords(const u8 *, u8, u16, u8);
-u8 sub_8072A18(const u8 *, u8, u16, u8, u32);
-u8 unref_sub_8072A5C(u8 *, u8 *, u8, u16, u8, u32);
+u8 Menu_PrintTextPixelCoordsAndGetLines(const u8 *, u8, u16, u8, u32);
+u8 Menu_BufferedPrintTextPixelCoordsAndGetLines(u8 *, u8 *, u8, u16, u8, u32);
 int sub_8072AB0(const u8 *, u8, u16, u8, u8, u32);
 void MenuPrint_RightAligned(const u8 *, u8, u8);
 

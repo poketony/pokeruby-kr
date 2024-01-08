@@ -537,7 +537,7 @@ static void Shop_DisplayNormalPriceInList(u16 itemId, u8 var2, bool32 hasControl
 
     CopyItemName(itemId, stringPtr);
 
-    sub_8072A18(&gStringVar1[0], 0x70, var2 << 3, 0x58, 0x1);
+    Menu_PrintTextPixelCoordsAndGetLines(&gStringVar1[0], 0x70, var2 << 3, 0x58, 0x1);
     stringPtr = gStringVar1;
 
     if (hasControlCode)
@@ -560,7 +560,7 @@ static void Shop_DisplayDecorationPriceInList(u16 itemId, u8 var2, bool32 hasCon
     }
 
     StringCopy(stringPtr, gDecorations[itemId].name);
-    sub_8072A18(&gStringVar1[0], 0x70, var2 << 3, 0x58, 0x1);
+    Menu_PrintTextPixelCoordsAndGetLines(&gStringVar1[0], 0x70, var2 << 3, 0x58, 0x1);
     stringPtr = gStringVar1;
 
     if (hasControlCode)
@@ -605,18 +605,30 @@ static void Shop_PrintItemDescText(void)
     {
         if (gMartInfo.martType == MART_TYPE_0)
         {
-            sub_8072AB0(ItemId_GetDescription(gMartInfo.itemList[gMartInfo.choicesAbove + gMartInfo.cursor]),
-                0x4, 0x68, 0x68, 0x30, 0);
+            sub_8072AB0(
+                ItemId_GetDescription(gMartInfo.itemList[gMartInfo.choicesAbove + gMartInfo.cursor]),
+                8,
+                104,
+                104,
+                48,
+                0
+            );
         }
         else
         {
-            sub_8072AB0(gDecorations[gMartInfo.itemList[gMartInfo.choicesAbove + gMartInfo.cursor]].description,
-                0x4, 0x68, 0x68, 0x30, 0);
+            sub_8072AB0(
+                gDecorations[gMartInfo.itemList[gMartInfo.choicesAbove + gMartInfo.cursor]].description,
+                8,
+                104,
+                104,
+                48,
+                0
+            );
         }
     }
     else
     {
-        sub_8072AB0(gOtherText_QuitShopping, 0x4, 0x68, 0x68, 0x30, 0);
+        sub_8072AB0(gOtherText_QuitShopping, 8, 104, 104, 48, 0);
     }
 }
 

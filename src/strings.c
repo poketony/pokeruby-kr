@@ -214,7 +214,7 @@ const u8 OtherText_TheField[] = _("필드로");
 const u8 OtherText_TheField2[] = _("필드로");
 const u8 OtherText_ThePC[] = _("PC로");
 
-const u8 *const gUnknown_0840E740[7] =
+const u8 *const gOtherText_ReturnLocations[7] =
 {
     OtherText_TheField3,
     OtherText_TheBattle,

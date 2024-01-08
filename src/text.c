@@ -2546,14 +2546,12 @@ static u8 UpdateWindowText(struct Window *win)
     return 0;
 }
 
-#define SUB_800374C_LINE_LENGTH 26
-
 u8 Text_UpdateWindowInBattle(struct Window *win)
 {
     u8 retVal;
 
     sWaitType = WAIT_TYPE_BATTLE;
-    sLineLength = SUB_800374C_LINE_LENGTH;
+    sLineLength = 23;
     retVal = UpdateWindowText(win);
     sLineLength = 23;
     sWaitType = WAIT_TYPE_NORMAL;

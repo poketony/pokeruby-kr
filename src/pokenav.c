@@ -633,7 +633,7 @@ void sub_80EF9F8(void)
         break;
     case 1:
     case 4:
-        sub_8072A18(gPokenavStructPtr->regionMap.mapSectionName, 136, top * 8, 96, 1);
+        Menu_PrintTextPixelCoordsAndGetLines(gPokenavStructPtr->regionMap.mapSectionName, 136, top * 8, 96, 1);
         top += 2;
         if (gLinkOpen == TRUE)
         {
@@ -653,13 +653,13 @@ void sub_80EF9F8(void)
 
                 if (secName == NULL)
                     break;
-                sub_8072A18(secName, 136, top * 8, 96, 1);
+                Menu_PrintTextPixelCoordsAndGetLines(secName, 136, top * 8, 96, 1);
                 top += 2;
             }
         }
         break;
     case 2:
-        sub_8072A18(gPokenavStructPtr->regionMap.mapSectionName, 136, top * 8, 96, 1);
+        Menu_PrintTextPixelCoordsAndGetLines(gPokenavStructPtr->regionMap.mapSectionName, 136, top * 8, 96, 1);
         top += 2;
         mapSectionId = gPokenavStructPtr->regionMap.mapSectionId;
         b = gPokenavStructPtr->regionMap.everGrandeCityArea;
@@ -671,7 +671,7 @@ void sub_80EF9F8(void)
         }
         break;
     case 3:
-        sub_8072A18(gPokenavStructPtr->regionMap.mapSectionName, 136, top * 8, 96, 1);
+        Menu_PrintTextPixelCoordsAndGetLines(gPokenavStructPtr->regionMap.mapSectionName, 136, top * 8, 96, 1);
         top += 2;
         break;
     }
@@ -1828,7 +1828,7 @@ void sub_80F19FC(void)
 
         if (landmarkName)
         {
-            sub_8072A18(landmarkName, 112, 4 * (ptr[1] * 4 + 12), 120, 1);
+            Menu_PrintTextPixelCoordsAndGetLines(landmarkName, 112, 4 * (ptr[1] * 4 + 12), 120, 1);
             if (++ptr[1] != 4)
                 return;
         }

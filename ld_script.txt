@@ -563,6 +563,7 @@ SECTIONS {
         src/option_menu.o(.rodata);
         src/pokedex.o(.rodata);
         src/trainer_card.o(.rodata);
+        src/save_menu_util.o(.rodata);
         src/battle_party_menu.o(.rodata);
         src/pokemon_storage_system.o(.rodata);
         src/pokemon_storage_system_2.o(.rodata);

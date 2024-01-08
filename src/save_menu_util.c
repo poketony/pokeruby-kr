@@ -70,7 +70,7 @@ void PrintSavePlayerName(s16 x, s16 y)
 
 void PrintSaveMapName(s16 x, s16 y)
 {
-    char name[32];
+    u8 name[32];
 
     CopyMapName(name, gMapHeader.regionMapSectionId);
     Menu_PrintText(name, x, y);
@@ -78,25 +78,29 @@ void PrintSaveMapName(s16 x, s16 y)
 
 void PrintSaveBadges(s16 x, s16 y)
 {
-    char badges[16];
+    const u8 textAmount[] = _("개");
+    u8 badges[16];
 
     Menu_PrintText(gOtherText_Badges, x, y);
     ConvertIntToDecimalString(badges, GetBadgeCount());
+    StringAppend(badges, textAmount);
     MenuPrint_RightAligned(badges, x + 12, y);
 }
 
 void PrintSavePokedexCount(s16 x, s16 y)
 {
-    char pokedex[16];
+    const u8 textAmount[] = _("마리");
+    u8 pokedex[16];
 
     Menu_PrintText(gOtherText_Pokedex, x, y);
-    ConvertIntToDecimalStringN(pokedex, GetPokedexSeenCount(), 1, 3);
+    ConvertIntToDecimalString(pokedex, GetPokedexSeenCount());
+    StringAppend(pokedex, textAmount);
     MenuPrint_RightAligned(pokedex, x + 12, y);
 }
 
 void PrintSavePlayTime(s16 x, s16 y)
 {
-    char playtime[16];
+    u8 playtime[16];
 
     Menu_PrintText(gOtherText_PlayTime, x, y);
     FormatPlayTime(playtime, gSaveBlock2.playTimeHours, gSaveBlock2.playTimeMinutes, 1);

@@ -872,7 +872,7 @@ static void ItemStorage_DrawItemList(u8 taskId)
 
         if (i == NUM_ITEMS)
         {
-            sub_8072A18(gOtherText_CancelNoTerminator, 0x80, (yCoord + 2) * 8, 0x68, 1);
+            Menu_PrintTextPixelCoordsAndGetLines(gOtherText_CancelNoTerminator, 0x80, (yCoord + 2) * 8, 0x68, 1);
             break;
         }
         else
