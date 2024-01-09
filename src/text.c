@@ -2403,19 +2403,19 @@ void sub_80034D4(u8 *tileData, const u8 *text)
     Text_InitWindow8004E3C(&gWindowTemplate_81E6C74, tileData, text);
 }
 
-u8 sub_80034EC(u8 *str)
+u8 Text_GetStringWidth80034EC(u8 *str)
 {
     return Text_GetStringWidthFromWindowTemplate((struct WindowTemplate *)&gWindowTemplate_81E6C74, str);
 }
 
-u8 *sub_8003504(u8 *dest, s32 value, u8 alignAmount, u8 alignType)
+u8 *Text_AlignInt2(u8 *dest, s32 value, u8 alignAmount, u8 alignType)
 {
     sTempWindow.template = (struct WindowTemplate *)&gWindowTemplate_81E6C74;
     Text_InitWindow(&sTempWindow, 0, 0, 0, 0);
     return AlignInt2(&sTempWindow, dest, value, alignAmount, alignType);
 }
 
-u8 *sub_8003558(u8 *dest, const u8 *src, u8 alignAmount, u8 alignType)
+u8 *Text_AlignString(u8 *dest, const u8 *src, u8 alignAmount, u8 alignType)
 {
     sTempWindow.template = (struct WindowTemplate *)&gWindowTemplate_81E6C74;
     Text_InitWindow(&sTempWindow, src, 0, 0, 0);
@@ -3568,10 +3568,10 @@ u8 *AlignInt2(struct Window *win, u8 *dest, s32 value, u8 alignAmount, u8 alignT
         width = GetStringWidth(win, temp);
         dest = StringCopy(dest, temp);
         dest[0] = EXT_CTRL_CODE_BEGIN;
-        dest[1] = 17;
+        dest[1] = EXT_CTRL_CODE_CLEAR;
         dest[2] = alignAmount - width;
         dest += 3;
-        *dest = 0xFF;
+        *dest = EOS;
         break;
     case 1:
         ConvertIntToDecimalString(temp, value);
@@ -3579,7 +3579,7 @@ u8 *AlignInt2(struct Window *win, u8 *dest, s32 value, u8 alignAmount, u8 alignT
         if (alignAmount > width)
         {
             dest[0] = EXT_CTRL_CODE_BEGIN;
-            dest[1] = 17;
+            dest[1] = EXT_CTRL_CODE_CLEAR;
             dest[2] = alignAmount - width;
             dest += 3;
         }
@@ -3591,7 +3591,7 @@ u8 *AlignInt2(struct Window *win, u8 *dest, s32 value, u8 alignAmount, u8 alignT
         if (alignAmount > width)
         {
             dest[0] = EXT_CTRL_CODE_BEGIN;
-            dest[1] = 17;
+            dest[1] = EXT_CTRL_CODE_CLEAR;
             dest[2] = (alignAmount - width) / 2;
             dest += 3;
         }
@@ -3599,7 +3599,7 @@ u8 *AlignInt2(struct Window *win, u8 *dest, s32 value, u8 alignAmount, u8 alignT
         if (alignAmount > width)
         {
             dest[0] = EXT_CTRL_CODE_BEGIN;
-            dest[1] = 17;
+            dest[1] = EXT_CTRL_CODE_CLEAR;
             dest[2] = (alignAmount - width) / 2;
             dest += 3;
             *dest = 0xFF;

@@ -1296,7 +1296,7 @@ void bx_t1_healthbar_update(void)
     sub_8043DFC(gHealthboxSpriteIds[gActiveBattler]);
     if (r4 != -1)
     {
-        sub_80440EC(gHealthboxSpriteIds[gActiveBattler], r4, 0);
+        DrawHealthText(gHealthboxSpriteIds[gActiveBattler], r4, FALSE);
     }
     else
     {
@@ -2700,7 +2700,7 @@ void PlayerHandleHealthBarUpdate(void)
         u32 maxHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_MAX_HP);
 
         sub_8043D84(gActiveBattler, gHealthboxSpriteIds[gActiveBattler], maxHP, 0, r7);
-        sub_80440EC(gHealthboxSpriteIds[gActiveBattler], 0, 0);
+        DrawHealthText(gHealthboxSpriteIds[gActiveBattler], 0, FALSE);
     }
     gBattlerControllerFuncs[gActiveBattler] = bx_t1_healthbar_update;
 }

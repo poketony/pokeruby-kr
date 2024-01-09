@@ -306,55 +306,62 @@ const struct SpriteTemplate gSpriteTemplate_820A7D4[] = {
     }
 };
 
-u8 *const gUnknown_0820A804[2] =
+u8 *const gUnknown_0820A804[] =
 {
     OBJ_VRAM0 + 32 * 74,
     OBJ_VRAM0 + 32 * 75,
+    OBJ_VRAM0 + 32 * 76,
 };
 
-u8 *const gUnknown_0820A80C[2] =
+u8 *const gUnknown_0820A80C[] =
 {
     OBJ_VRAM0 + 32 * 41,
-    OBJ_VRAM0 + 32 * 42,
-};
-
-u8 *const gUnknown_0820A814[2] =
-{
     OBJ_VRAM0 + 32 * 42,
     OBJ_VRAM0 + 32 * 43,
 };
 
-const u8 gUnknown_0820A81C[] = __("{COLOR DARK_GREY}{HIGHLIGHT RED}                        ");
-
-u8 *const gUnknown_0820A83C[3] =
+u8 *const gUnknown_0820A814[] =
 {
-    OBJ_VRAM0 + 32 * 31,
-    OBJ_VRAM0 + 32 * 88,
-    OBJ_VRAM0 + 32 * 89,
+    OBJ_VRAM0 + 32 * 42,
+    OBJ_VRAM0 + 32 * 43,
+    OBJ_VRAM0 + 32 * 44,
 };
 
-u8 *const gUnknown_0820A848[3] =
+const u8 gUnknown_0820A81C[] = __("{COLOR DARK_GREY}{HIGHLIGHT RED}                        ");
+
+u8 *const gUnknown_0820A83C[] =
+{
+    OBJ_VRAM0 + 32 * 29,
+    OBJ_VRAM0 + 32 * 30,
+    OBJ_VRAM0 + 32 * 31,
+    OBJ_VRAM0 + 32 * 88,
+};
+
+u8 *const gUnknown_0820A848[] =
 {
     OBJ_VRAM0 + 32 * 22,
     OBJ_VRAM0 + 32 * 23,
     OBJ_VRAM0 + 32 * 48,
+    OBJ_VRAM0 + 32 * 48,
 };
 
-u8 *const gUnknown_0820A854[2] =
+u8 *const gUnknown_0820A854[] =
 {
+    OBJ_VRAM0 + 32 * 89,
     OBJ_VRAM0 + 32 * 90,
     OBJ_VRAM0 + 32 * 91,
 };
 
-u8 *const gUnknown_0820A85C[2] =
+u8 *const gUnknown_0820A85C[] =
 {
+    OBJ_VRAM0 + 32 * 48,
     OBJ_VRAM0 + 32 * 49,
     OBJ_VRAM0 + 32 * 50,
 };
 
 const u8 gUnknown_0820A864[] = _("{COLOR DARK_GREY}{HIGHLIGHT RED}              /");
 
-u8 *const gUnknown_0820A87C[6] =
+u8 *const gUnknown_0820A87C[] =
 {
     OBJ_VRAM0 + 32 * 0,
     OBJ_VRAM0 + 32 * 1,
@@ -364,16 +371,15 @@ u8 *const gUnknown_0820A87C[6] =
     OBJ_VRAM0 + 32 * 5,
 };
 
-u8 *const gUnknown_0820A894[2] =
+u8 *const gUnknown_0820A894[] =
 {
     OBJ_VRAM0 + 32 * 6,
     OBJ_VRAM0 + 32 * 7,
 };
 
 const u8 gUnknown_0820A89C[] = __("{COLOR DARK_GREY}{HIGHLIGHT TRANSPARENT}              ");
-const u8 gUnknown_0820A8B0[] = _("{HIGHLIGHT RED}");
 
-u8 *const gUnknown_0820A8B4[10] =
+u8 *const gUnknown_0820A8B4[] =
 {
     OBJ_VRAM0 + 32 *  2,
     OBJ_VRAM0 + 32 *  3,
@@ -387,7 +393,7 @@ u8 *const gUnknown_0820A8B4[10] =
     OBJ_VRAM0 + 32 * 67,
 };
 
-u8 *const gUnknown_0820A8DC[10] =
+u8 *const gUnknown_0820A8DC[] =
 {
     OBJ_VRAM0 + 32 *  1,
     OBJ_VRAM0 + 32 *  2,
@@ -401,7 +407,7 @@ u8 *const gUnknown_0820A8DC[10] =
     OBJ_VRAM0 + 32 * 34,
 };
 
-u8 *const gUnknown_0820A904[10] =
+u8 *const gUnknown_0820A904[] =
 {
     OBJ_VRAM0 + 32 *  2,
     OBJ_VRAM0 + 32 *  3,
@@ -773,113 +779,117 @@ void sub_8043F44(u8 a)
 
 #define CHAR_LV_SEPARATOR CHAR_COLON
 
-/*static*/ void sub_8043FC0(u8 a, u8 b)
+void DrawLevelText(u8 spriteId, u8 value)
 {
     u8 str[30];
     u8 *const *r7;
     u8 *ptr;
-    s32 i;
-    s32 two;
+    s32 i, j;
 
-    // TODO: Make this a local variable
     memcpy(str, gUnknown_0820A81C, sizeof(str));
     if (!IsDoubleBattle())
     {
-        if (GetBattlerSide(gSprites[a].data[6]) == 0)
+        if (GetBattlerSide(gSprites[spriteId].data[6]) == 0)
             r7 = gUnknown_0820A804;
         else
             r7 = gUnknown_0820A80C;
     }
     else
     {
-        if (GetBattlerSide(gSprites[a].data[6]) == 0)
+        if (GetBattlerSide(gSprites[spriteId].data[6]) == 0)
             r7 = gUnknown_0820A814;
         else
             r7 = gUnknown_0820A80C;
     }
 
     ptr = str + 6;
-    if (b == 100)
-    {
-        ptr = ConvertIntToDecimalStringN(ptr, 100, 0, 3);
-    }
-    else
-    {
-        *(ptr++) = EXT_CTRL_CODE_BEGIN;
-        *(ptr++) = EXT_CTRL_CODE_CLEAR;
-        *(ptr++) = 1;
-        *(ptr++) = EXT_CTRL_CODE_BEGIN;
-        *(ptr++) = EXT_CTRL_CODE_MIN_LETTER_SPACING;
-        *(ptr++) = 4;
-        *(ptr++) = CHAR_LV_SEPARATOR;
-        *(ptr++) = EXT_CTRL_CODE_BEGIN;
-        *(ptr++) = EXT_CTRL_CODE_MIN_LETTER_SPACING;
-        *(ptr++) = 0;
-        ptr = ConvertIntToDecimalStringN(ptr, b, 0, 2);
-    }
 
     *(ptr++) = EXT_CTRL_CODE_BEGIN;
-    *(ptr++) = EXT_CTRL_CODE_CLEAR_TO;
-    *(ptr++) = 15;
-    *(ptr++) = EOS;
+    *(ptr++) = EXT_CTRL_CODE_JPN;
+
+    if (value == 100)
+        ptr = ConvertIntToDecimalStringN(ptr, 100, 0, 3);
+    else
+        ptr = ConvertIntToDecimalStringN(ptr, value, 0, 2);
+
     sub_80034D4(eBattleInterfaceGfxBuffer, str);
 
-    two = 2;
-    for (i = 0; i < two; i++)
-        CpuCopy32(&eBattleInterfaceGfxBuffer[i * 64 + 32], r7[i] + gSprites[a].oam.tileNum * TILE_SIZE_4BPP, TILE_SIZE_4BPP);
+    j = (value == 100) ? 3 : 2;
+    for (i = 0; i < j; i++)
+    {
+        CpuCopy32(
+            &eBattleInterfaceGfxBuffer[i * 64 + 32],
+            r7[i] - ((value == 100) ? TILE_SIZE_4BPP : 0) + gSprites[spriteId].oam.tileNum * TILE_SIZE_4BPP,
+            TILE_SIZE_4BPP
+        );
+    }
 }
 
-void sub_80440EC(u8 a, s16 b, u8 c)
+void DrawHealthText(u8 spriteId, s16 value, bool8 isMaxHp)
 {
-    u8 str[0x14];
+    u8 str[32], num[8];
     u8 *ptr;
+    u8 *numPtr;
     s32 foo;
     u8 *const *r4;
     s32 i;
     u8 r8;
 
-    // TODO: make this a local variable
-    memcpy(str, gUnknown_0820A864, sizeof(str));
-    foo = gSprites[a].data[6];
+    ptr = str;
+    *(ptr++) = EXT_CTRL_CODE_BEGIN;
+    *(ptr++) = EXT_CTRL_CODE_COLOR;
+    *(ptr++) = TEXT_COLOR_DARK_GREY;
+    *(ptr++) = EXT_CTRL_CODE_BEGIN;
+    *(ptr++) = EXT_CTRL_CODE_HIGHLIGHT;
+    *(ptr++) = TEXT_COLOR_RED;
+
+    foo = gSprites[spriteId].data[6];
 
     if (IsDoubleBattle() == TRUE || GetBattlerSide(foo) == 1)
     {
-        //_08044136
-        sub_8044210(a, b, c);
+        sub_8044210(spriteId, value, isMaxHp);
     }
     else
     {
-        //
-        ptr = str + 6;
-        if (c == 0)
+        numPtr = num;
+        *(numPtr++) = EXT_CTRL_CODE_BEGIN;
+        *(numPtr++) = EXT_CTRL_CODE_JPN;
+
+        if (isMaxHp == FALSE)
         {
-            if (GetBattlerSide(gSprites[a].data[6]) == 0)
+            if (GetBattlerSide(gSprites[spriteId].data[6]) == 0)
                 r4 = gUnknown_0820A83C;
             else
                 r4 = gUnknown_0820A848;
-            r8 = 3;
-            ptr = sub_8003504(ptr, b, 19, 1);
+
+            r8 = 4;
+
+            numPtr = ConvertIntToDecimalString(numPtr, value);
+            ptr = Text_AlignString(ptr, num, 24, 1);
             *(ptr++) = CHAR_SLASH;
             *(ptr++) = EOS;
         }
         else
         {
-            if (GetBattlerSide(gSprites[a].data[6]) == 0)
+            if (GetBattlerSide(gSprites[spriteId].data[6]) == 0)
                 r4 = gUnknown_0820A854;
             else
                 r4 = gUnknown_0820A85C;
-            r8 = 2;
-            ptr = sub_8003504(ptr, b, 15, 1);
+
+            r8 = 3;
+
+            numPtr = ConvertIntToDecimalString(numPtr, value);
+            ptr = Text_AlignString(ptr, num, 24, 1);
         }
+
         sub_80034D4(eBattleInterfaceGfxBuffer, str);
-        //asm(""::"r"(a));
-        //_080441B6
-        for (i = 0; i < r8; i++)  // _080440BC
+
+        for (i = 0; i < r8; i++)
         {
             CpuCopy32(
                 &eBattleInterfaceGfxBuffer[i * 64 + 32],
-                r4[i] + gSprites[a].oam.tileNum * 32,
-                0x20
+                r4[i] + gSprites[spriteId].oam.tileNum * TILE_SIZE_4BPP,
+                TILE_SIZE_4BPP
             );
         }
     }
@@ -904,7 +914,7 @@ void sub_80440EC(u8 a, s16 b, u8 c)
     {
         r7 = gUnknown_0820A87C;
         r10 = 6;
-        ptr = sub_8003504(ptr, b, 0x2B, 1);
+        ptr = Text_AlignInt2(ptr, b, 0x2B, 1);
         *(ptr++) = CHAR_SLASH;
         *(ptr++) = EOS;
     }
@@ -912,7 +922,7 @@ void sub_80440EC(u8 a, s16 b, u8 c)
     {
         r7 = gUnknown_0820A894;
         r10 = 2;
-        sub_8003504(ptr, b, 0xF, 1);
+        Text_AlignInt2(ptr, b, 0xF, 1);
         if (GetBattlerSide(r4) == 0)
         {
             CpuCopy32(sub_8043CDC(0x74), OBJ_VRAM0 + (gSprites[a].oam.tileNum + 0x34) * 32, 32);
@@ -922,7 +932,11 @@ void sub_80440EC(u8 a, s16 b, u8 c)
     sub_80034D4(eBattleInterfaceGfxBuffer, str);
     for (i = 0; i < r10; i++)
     {
-        CpuCopy32((void *)(&eBattleInterfaceGfxBuffer[i * 64 + 32]), r7[i] + gSprites[r4].oam.tileNum * 32, 32);
+        CpuCopy32(
+            (void *)(&eBattleInterfaceGfxBuffer[i * 64 + 32]),
+            r7[i] + gSprites[r4].oam.tileNum * 32,
+            32
+        );
     }
 }
 
@@ -2084,7 +2098,7 @@ void sub_8045180(struct Sprite *sprite)
     sprite->y2 = gSprites[spriteId].y2;
 }
 
-/*static*/ void sub_80451A0(u8 a, struct Pokemon *pkmn)
+void sub_80451A0(u8 a, struct Pokemon *pkmn)
 {
     u8 nickname[POKEMON_NAME_LENGTH];
     u8 gender;
@@ -2092,53 +2106,56 @@ void sub_8045180(struct Sprite *sprite)
     u8 language;
     u8 *ptr;
     s32 i;
-    s32 _7;
     u8 *const *r1;
 
-    StringCopy(gDisplayedStringBattle, gUnknown_0820A8B0);
+    ptr = gDisplayedStringBattle;
+    *(ptr++) = EXT_CTRL_CODE_BEGIN;
+    *(ptr++) = EXT_CTRL_CODE_HIGHLIGHT;
+    *(ptr++) = TEXT_COLOR_RED;
+
     GetMonData(pkmn, MON_DATA_NICKNAME, nickname);
     StringGetEnd10(nickname);
-    ptr = StringCopy(gDisplayedStringBattle + 3, nickname);
-    ptr[0] = EXT_CTRL_CODE_BEGIN;
-    ptr[1] = 3;
-    ptr[2] = 2;
-    ptr[3] = EXT_CTRL_CODE_BEGIN;
-    ptr[4] = 1;
-    ptr += 5;
+
+    ptr = StringCopy(ptr, nickname);
+    *(ptr++) = EXT_CTRL_CODE_BEGIN;
+    *(ptr++) = EXT_CTRL_CODE_SHADOW;
+    *(ptr++) = TEXT_COLOR_RED;
+    *(ptr++) = EXT_CTRL_CODE_BEGIN;
+    *(ptr++) = EXT_CTRL_CODE_COLOR;
+
     gender = GetMonGender(pkmn);
     species = GetMonData(pkmn, MON_DATA_SPECIES);
     language = GetMonData(pkmn, MON_DATA_LANGUAGE);
+
     if (ShouldHideGenderIconForLanguage(species, nickname, language))
         gender = 100;
+
     switch (gender)
     {
     default:
-        ptr[0] = 0xB;
-        ptr[1] = EOS;
-        ptr += 1;
+        *(ptr++) = TEXT_COLOR_SILVER;
         break;
+
     case MON_MALE:
-        ptr[0] = 0xB;
-        ptr[1] = CHAR_MALE;
-        ptr[2] = EOS;
-        ptr += 2;
+        *(ptr++) = TEXT_COLOR_SILVER;
+        *(ptr++) = CHAR_MALE;
         break;
+
     case MON_FEMALE:
-        ptr[0] = 0xA;
-        ptr[1] = CHAR_FEMALE;
-        ptr[2] = EOS;
-        ptr += 2;
+        *(ptr++) = TEXT_COLOR_BLACK2;
+        *(ptr++) = CHAR_FEMALE;
         break;
     }
-    ptr[0] = EXT_CTRL_CODE_BEGIN;
-    ptr[1] = 0x13;
-    ptr[2] = 0x37;
-    ptr[3] = EOS;
+
+    *(ptr++) = EXT_CTRL_CODE_BEGIN;
+    *(ptr++) = EXT_CTRL_CODE_CLEAR_TO;
+    *(ptr++) = 55;
+    *(ptr++) = EOS;
+
     ptr = &eBattleInterfaceGfxBuffer[0x520 + GetBattlerPosition(gSprites[a].data[6]) * 0x180];
     sub_80034D4(ptr, gDisplayedStringBattle);
 
     i = 0;
-    _7 = 7;
     if (GetMonData(pkmn, MON_DATA_LANGUAGE) == 1
      && GetMonData(pkmn, MON_DATA_IS_EGG) == 0)
     {
@@ -2168,13 +2185,13 @@ void sub_8045180(struct Sprite *sprite)
         }
     }
 
-    for (; i < _7; i++)
+    for (; i < 6; i++)
         CpuCopy32(sub_8043CDC(0x2B), ptr + 64 * i, 32);
 
     if (GetBattlerSide(gSprites[a].data[6]) == 0 && !IsDoubleBattle())
     {
         r1 = (u8 *const *)gUnknown_0820A8B4;
-        for (i = 0; i < _7; i++)
+        for (i = 0; i < 6; i++)
         {
             u8 *r4 = r1[i];
 
@@ -2193,7 +2210,7 @@ void sub_8045180(struct Sprite *sprite)
             r1 = (u8 *const *)gUnknown_0820A904;
         else
             r1 = (u8 *const *)gUnknown_0820A8DC;
-        for (i = 0; i < _7; i++)
+        for (i = 0; i < 6; i++)
         {
             u8 *r4 = r1[i];
 
@@ -2408,7 +2425,7 @@ static u8 sub_80457E8(u8 a, u8 b)
     s32 i;
 
     r7 = StringCopy(gDisplayedStringBattle, BattleText_SafariBallsLeft);
-    r7 = sub_8003504(r7, gNumSafariBalls, 10, 1);
+    r7 = Text_AlignInt2(r7, gNumSafariBalls, 10, 1);
     StringAppend(r7, BattleText_HighlightRed);
     status = GetBattlerPosition(gSprites[a].data[6]);
     r7 = &eBattleInterfaceGfxBuffer[0x520 + status * 0x180];
@@ -2432,11 +2449,11 @@ void sub_8045A5C(u8 a, struct Pokemon *pkmn, u8 c)
     if (GetBattlerSide(r10) == 0)
     {
         if (c == 3 || c == 0)
-            sub_8043FC0(a, GetMonData(pkmn, MON_DATA_LEVEL));
+            DrawLevelText(a, GetMonData(pkmn, MON_DATA_LEVEL));
         if (c == 1 || c == 0)
-            sub_80440EC(a, GetMonData(pkmn, MON_DATA_HP), 0);
+            DrawHealthText(a, GetMonData(pkmn, MON_DATA_HP), FALSE);
         if (c == 2 || c == 0)
-            sub_80440EC(a, GetMonData(pkmn, MON_DATA_MAX_HP), 1);
+            DrawHealthText(a, GetMonData(pkmn, MON_DATA_MAX_HP), TRUE);
         if (c == 5 || c == 0)
         {
             load_gfxc_health_bar(0);
@@ -2476,14 +2493,14 @@ void sub_8045A5C(u8 a, struct Pokemon *pkmn, u8 c)
     else
     {
         if (c == 3 || c == 0)
-            sub_8043FC0(a, GetMonData(pkmn, MON_DATA_LEVEL));
+            DrawLevelText(a, GetMonData(pkmn, MON_DATA_LEVEL));
 #if DEBUG
         if (gUnknown_020297ED == 1)
         {
             if (c == 1 || c == 0)
-                sub_80440EC(a, GetMonData(pkmn, MON_DATA_HP), 0);
+                DrawHealthText(a, GetMonData(pkmn, MON_DATA_HP), FALSE);
             if (c == 2 || c == 0)
-                sub_80440EC(a, GetMonData(pkmn, MON_DATA_MAX_HP), 1);
+                DrawHealthText(a, GetMonData(pkmn, MON_DATA_MAX_HP), TRUE);
         }
 #endif
         if (c == 5 || c == 0)

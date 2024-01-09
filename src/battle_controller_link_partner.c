@@ -334,7 +334,7 @@ void bx_t3_healthbar_update(void)
     sub_8043DFC(gHealthboxSpriteIds[gActiveBattler]);
     if (r4 != -1)
     {
-        sub_80440EC(gHealthboxSpriteIds[gActiveBattler], r4, 0);
+        DrawHealthText(gHealthboxSpriteIds[gActiveBattler], r4, FALSE);
     }
     else
     {
