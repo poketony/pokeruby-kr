@@ -115,7 +115,7 @@ LD_SCRIPT := $(BUILD_DIR)/ld_script.ld
 
 #### Main Rules ####
 
-ALL_BUILDS := ruby ruby_debug ruby_rev1 ruby_rev2 sapphire sapphire_debug sapphire_rev1 sapphire_rev2
+ALL_BUILDS := ruby ruby_debug sapphire sapphire_debug
 MODERN_BUILDS := $(ALL_BUILDS:%=%_modern)
 
 # Available targets
