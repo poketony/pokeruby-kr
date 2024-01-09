@@ -254,8 +254,8 @@ u8 debug_sub_8138CC4(void)
     gSpecialVar_0x8004 = 0;
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(19, 0, 29, 12);
-    Menu_PrintItems(20, 1, 5, gUnkDebug4Menu);
-    InitMenu(0, 20, 1, 5, 0, 8);
+    Menu_PrintItems(21, 1, 5, gUnkDebug4Menu);
+    InitMenu(0, 20, 1, 5, 0);
     gMenuCallback = debug_sub_8138C54;
     return 0;
 }

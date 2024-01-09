@@ -108,19 +108,19 @@ void CreateAvailableDecorationsMenu(u8 taskId)
         {
             if (trader->unk1[i] > DECOR_REGISTEEL_DOLL)
             {
-                Menu_PrintText(gOtherText_FiveQuestions, 1, numDecorations * 2 + 2);
+                Menu_PrintText(gOtherText_FiveQuestions, 2, numDecorations * 2 + 2);
             }
             else
             {
-                Menu_PrintText(gDecorations[trader->unk1[i]].name, 1, numDecorations * 2 + 2);
+                Menu_PrintText(gDecorations[trader->unk1[i]].name, 2, numDecorations * 2 + 2);
             }
 
             numDecorations++;
         }
     }
 
-    Menu_PrintText(gOtherText_CancelNoTerminator, 1, numDecorations * 2 + 2);
-    InitMenu(0, 1, 2, numChoices, 0, 11);
+    Menu_PrintText(gOtherText_CancelNoTerminator, 2, numDecorations * 2 + 2);
+    InitMenu(0, 1, 2, numChoices, 0);
     gTasks[taskId].data[1] = numDecorations;
 }
 

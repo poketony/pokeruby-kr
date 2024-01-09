@@ -375,8 +375,8 @@ void debug_sub_8076AC8(u8 a)
         ;
     Menu_EraseWindowRect(16, 0, 29, 19);
     Menu_DrawStdWindowFrame(16, 0, 29, r4 * 2 + 1);
-    Menu_PrintItemsReordered(17, 1, r4, (struct MenuAction2 *)gDebug_TestMenuItems, gUnknown_030006C4);
-    InitMenu(0, 17, 1, r4, 0, 12);
+    Menu_PrintItemsReordered(18, 1, r4, (struct MenuAction2 *)gDebug_TestMenuItems, gUnknown_030006C4);
+    InitMenu(0, 17, 1, r4, 0);
 }
 
 void debug_sub_8076B4C(void)
@@ -655,7 +655,7 @@ void DebugMenu_8076EF4(void)
     {
         sub_8071F60((gTestMenu_FieldStartNames[i].flags & 1) == MALE ? CHAR_MALE : CHAR_FEMALE, 10, 2 * i + 1);
     }
-    InitMenu(0, 1, 1, ARRAY_COUNT(gTestMenu_FieldStartNames), 0, 9);
+    InitMenu(0, 1, 1, ARRAY_COUNT(gTestMenu_FieldStartNames), 0);
 }
 
 void DebugMenu_8076F60(u8 taskId)
@@ -774,8 +774,8 @@ u8 DebugMenu_807709C(void)
 void DebugMenu_807719C(void)
 {
     Menu_DrawStdWindowFrame(0, 0, 14, 17);
-    Menu_PrintItemsReordered(1, 1, 8, gDebug0x839B9BC, gUnknown_030006C4);
-    gUnknown_030006C0 = InitMenu(0, 1, 1, 8, gUnknown_030006C0, 13);
+    Menu_PrintItemsReordered(2, 1, 8, gDebug0x839B9BC, gUnknown_030006C4);
+    gUnknown_030006C0 = InitMenu(0, 1, 1, 8, gUnknown_030006C0);
 }
 
 const u8 Str_839BE04[] = _("ID");
@@ -1129,7 +1129,7 @@ u8 DebugMenu_SwitchBG(void)
 {
     Menu_EraseScreen();
     DebugMenu_8077704();
-    InitMenu(0, 20, 0, 4, 0, 6);
+    InitMenu(0, 20, 0, 4, 0);
     gMenuCallback = DebugMenu_8077760;
     return FALSE;
 }
@@ -1492,8 +1492,8 @@ void DebugMenu_8077D24(const struct MenuAction *menuAction, u8 width, u8 itemCou
 {
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(0, 0, width, 2 * itemCount + 1);
-    Menu_PrintItems(1, 1, itemCount, menuAction);
-    InitMenu(0, 1, 1, itemCount, 0, width - 1);
+    Menu_PrintItems(2, 1, itemCount, menuAction);
+    InitMenu(0, 1, 1, itemCount, 0);
 }
 
 u8 DebugMenu_8077D78(const struct MenuAction *menuActions)

@@ -1659,8 +1659,8 @@ static void CreateGenderMenu(u8 left, u8 top)
     Menu_DrawStdWindowFrame(left, top, left + 6, top + 5);
     menuLeft = left + 1;
     menuTop = top + 1;
-    Menu_PrintItems(menuLeft, menuTop, 2, gUnknown_081E79B0);
-    InitMenu(0, menuLeft, menuTop, 2, 0, 5);
+    Menu_PrintItems(menuLeft + 1, menuTop, 2, gUnknown_081E79B0);
+    InitMenu(0, menuLeft, menuTop, 2, 0);
 }
 
 static s8 GenderMenuProcessInput(void)
@@ -1673,11 +1673,11 @@ static void CreateNameMenu(u8 left, u8 top)
     Menu_DrawStdWindowFrame(left, top, left + 10, top + 11);
 
     if (gSaveBlock2.playerGender == MALE)
-        Menu_PrintItems(left + 1, top + 1, 5, gMalePresetNames);
+        Menu_PrintItems(left + 2, top + 1, 5, gMalePresetNames);
     else
-        Menu_PrintItems(left + 1, top + 1, 5, gFemalePresetNames);
+        Menu_PrintItems(left + 2, top + 1, 5, gFemalePresetNames);
 
-    InitMenu(0, left + 1, top + 1, 5, 0, 9);
+    InitMenu(0, left + 1, top + 1, 5, 0);
 }
 
 static s8 NameMenuProcessInput(void)

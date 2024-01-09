@@ -81,11 +81,11 @@ u8 Menu_GetTextWindowPaletteNum(void);
 void Menu_GetTextColors(u8 *, u8 *, u8 *);
 u32 Menu_UpdateWindowTextOverrideLineLength(u8);
 struct Window * unref_sub_8072D0C(void);
-u8 InitMenu(u8, u8, u8, u8, u8, u8);
+u8 InitMenu(u8, u8, u8, u8, u8);
 void unref_sub_8072DC0(void);
 void sub_8072DCC(u8);
 void sub_8072DDC(u8);
 void Menu_DestroyCursor(void);
-u8 MoveMenuCursor3(s8 delta);
+u8 Menu_MoveCursorItemPopupMenu(s8 delta);
 
 #endif // GUARD_MENU_H

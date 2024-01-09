@@ -48,7 +48,7 @@ void InitKagayaDebugMenu_B(void)
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(0, 0, 14, 7);
     Menu_PrintItems(2, 1, 3, _83EBB64);
-    InitMenu(0, 1, 1, 3, 0, 13);
+    InitMenu(0, 1, 1, 3, 0);
     gMenuCallback = debug_sub_80B061C;
 }
 

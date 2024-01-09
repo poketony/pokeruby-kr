@@ -2439,7 +2439,7 @@ void sub_809CE84(void)
     gPokemonStorageSystemPtr->unk_11ba = 28 - gPokemonStorageSystemPtr->unk_11b9;
     Menu_DrawStdWindowFrame(gPokemonStorageSystemPtr->unk_11ba, gPokemonStorageSystemPtr->unk_11bc, 29, 15);
     Menu_PrintItems(
-        gPokemonStorageSystemPtr->unk_11ba + 1,
+        gPokemonStorageSystemPtr->unk_11ba + 2,
         gPokemonStorageSystemPtr->unk_11bc + 1,
         gPokemonStorageSystemPtr->unk_11b8,
         gPokemonStorageSystemPtr->unk_1180);
@@ -2448,8 +2448,7 @@ void sub_809CE84(void)
         gPokemonStorageSystemPtr->unk_11ba + 1,
         gPokemonStorageSystemPtr->unk_11bc + 1,
         gPokemonStorageSystemPtr->unk_11b8,
-        0,
-        gPokemonStorageSystemPtr->unk_11b9);
+        0);
 }
 
 s16 sub_809CF30(void)

@@ -773,8 +773,8 @@ static void Task_SetClock3(u8 taskId)
     Menu_DrawStdWindowFrame(2, 16, 27, 19);
     Menu_PrintText(gOtherText_CorrectTimePrompt, 3, 17);
     Menu_DrawStdWindowFrame(23, 8, 29, 13);
-    Menu_PrintItems(24, 9, 2, gMenuYesNoItems);
-    InitMenu(0, 24, 9, 2, 1, 5);
+    Menu_PrintItems(25, 9, 2, gMenuYesNoItems);
+    InitMenu(0, 24, 9, 2, 1);
     gTasks[taskId].func = Task_SetClock4;
 }
 

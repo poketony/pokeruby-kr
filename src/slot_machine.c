@@ -5827,7 +5827,7 @@ static void debug_sub_811B654(u8 taskId)
             Menu_DrawStdWindowFrame(0, 0, 10, 19);
             Menu_PrintText(Str_841B254, 1, 1);
             Menu_PrintItems(2, 3, 8, (void *)_841B270);
-            InitMenu(0, 1, 3, 8, 0, 9);
+            InitMenu(0, 1, 3, 8, 0);
             task->data[0]++;
         }
         if (gMain.newKeys & 8)

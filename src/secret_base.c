@@ -856,7 +856,7 @@ void sub_80BC6B0(u8 taskId)
         {
             sub_80BC190(gStringVar1, i);
             Menu_BlankWindowRect(18, 2 * n + 2, 28, 2 * n + 3);
-            Menu_PrintText(gStringVar1, 18, 2 * n + 2);
+            Menu_PrintText(gStringVar1, 19, 2 * n + 2);
             if (++n == 8)
                 break;
         }
@@ -865,7 +865,7 @@ void sub_80BC6B0(u8 taskId)
     if (n < 8)
     {
         Menu_BlankWindowRect(18, 2 * n + 2, 28, 2 * n + 3);
-        Menu_PrintText(gOtherText_Exit, 18, 2 * n + 2);
+        Menu_PrintText(gOtherText_Exit, 19, 2 * n + 2);
         DestroyVerticalScrollIndicator(BOTTOM_ARROW);
         if (n != 7)
         {
@@ -889,7 +889,7 @@ void sub_80BC7D8(u8 taskId)
 {
     u16 *taskData = gTasks[taskId].data;
     Menu_DrawStdWindowFrame(17, 0, 29, 19);
-    InitMenu(0, 18, 2, taskData[3] + 1, taskData[1], 11);
+    InitMenu(0, 18, 2, taskData[3] + 1, taskData[1]);
 
     sub_80BC6B0(taskId);
 }
@@ -980,8 +980,8 @@ void sub_80BC980(u8 taskId)
     PauseVerticalScrollIndicator(TOP_ARROW);
     PauseVerticalScrollIndicator(BOTTOM_ARROW);
     Menu_DrawStdWindowFrame(1, 0, 12, 5);
-    Menu_PrintItems(2, 1, 2, (const struct MenuAction *)gUnknown_083D13D4);
-    InitMenu(0, 2, 1, 2, 0, 10);
+    Menu_PrintItems(3, 1, 2, (const struct MenuAction *)gUnknown_083D13D4);
+    InitMenu(0, 2, 1, 2, 0);
     gTasks[taskId].func = sub_80BC9E4;
 }
 
@@ -1072,7 +1072,7 @@ void sub_80BCBF8(u8 taskId)
 {
     s16 *taskData = gTasks[taskId].data;
 
-    InitMenu(0, 18, 2, taskData[3] + 1, taskData[1], 11);
+    InitMenu(0, 18, 2, taskData[3] + 1, taskData[1]);
     Menu_EraseWindowRect(1, 0, 12, 5);
     StartVerticalScrollIndicators(TOP_ARROW);
     StartVerticalScrollIndicators(BOTTOM_ARROW);

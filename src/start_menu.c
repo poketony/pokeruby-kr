@@ -312,7 +312,7 @@ static bool32 PrintStartMenuItemsMultistep(s16 *index, u32 n)
 
     do
     {
-        Menu_PrintText(sStartMenuItems[sCurrentStartMenuActions[_index]].text, 23, 2 + _index * 2);
+        Menu_PrintText(sStartMenuItems[sCurrentStartMenuActions[_index]].text, 24, 2 + _index * 2);
         _index++;
         if (_index >= sNumStartMenuActions)
         {
@@ -351,7 +351,7 @@ static bool32 InitStartMenuMultistep(s16 *step, s16 *index)
         (*step)++;
         break;
     case 5:
-        sStartMenuCursorPos = InitMenu(0, 0x17, 2, sNumStartMenuActions, sStartMenuCursorPos, 6);
+        sStartMenuCursorPos = InitMenu(0, 23, 2, sNumStartMenuActions, sStartMenuCursorPos);
         return TRUE;
     }
     return FALSE;

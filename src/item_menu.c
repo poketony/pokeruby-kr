@@ -16,7 +16,6 @@
 #include "main.h"
 #include "map_name_popup.h"
 #include "menu.h"
-#include "menu_cursor.h"
 #include "menu_helpers.h"
 #include "money.h"
 #include "palette.h"
@@ -304,8 +303,6 @@ static void sub_80A6870(u16, u8);
 static void sub_80A699C(void);
 static void sub_80A7230(u8);
 static void ItemListMenu_InitMenu(void);
-static void sub_80A73C0(void);
-static void sub_80A73F0(void);
 static void sub_80A73FC(void);
 static void sub_80A740C(void);
 static void sub_80A7420(void);
@@ -1090,18 +1087,18 @@ static void sub_80A41D4(u8 taskId)
 
 static void sub_80A41E0(u8 *a, u16 b, const u8 *c, u16 d, u8 e)
 {
-    a[0] = EXT_CTRL_CODE_BEGIN;
-    a[1] = 0x13;
-    a[2] = 8;
-    a += 3;
+    *(a++) = EXT_CTRL_CODE_BEGIN;
+    *(a++) = EXT_CTRL_CODE_CLEAR_TO;
+    *(a++) = 9;
+
     a = ConvertIntToDecimalStringN(a, b, STR_CONV_MODE_LEADING_ZEROS, 2);
-    a[0] = EXT_CTRL_CODE_BEGIN;
-    a[1] = 0x13;
-    a[2] = 0x18;
-    a += 3;
-    a = AlignStringInMenuWindow(a, c, 0x78 - (e + 1) * 6, 0);
-    *a++ = CHAR_MULT_SIGN;
-    AlignInt1InMenuWindow(a, d, 0x78, 1);
+    *(a++) = EXT_CTRL_CODE_BEGIN;
+    *(a++) = EXT_CTRL_CODE_CLEAR_TO;
+    *(a++) = 28;
+
+    a = AlignStringInMenuWindow(a, c, 104 - (e + 1) * 6, 0);
+    *(a++) = CHAR_MULT_SIGN;
+    AlignInt1InMenuWindow(a, d, 104, 1);
 }
 
 static u8 *sub_80A425C(u8 taskId, u8 *text, u8 itemSlot)
@@ -1129,9 +1126,9 @@ static bool8 sub_80A42B0(u8 itemPos, int b)
         if (sReturnLocation == RETURN_TO_FIELD_5)
             return TRUE;
         r5 = itemPos * 2 + 2;
-        AlignStringInMenuWindow(gStringVar1, gOtherText_CloseBag, 0x78, 0);
-        Menu_PrintText(gStringVar1, 14, r5);
-        ptr = gBGTilemapBuffers[2] + 14 + r5 * 32;
+        AlignStringInMenuWindow(gStringVar1, gOtherText_CloseBag, 120, 0);
+        Menu_PrintText(gStringVar1, 15, r5);
+        ptr = gBGTilemapBuffers[2] + 15 + r5 * 32;
         ptr[0] = 0x4F;
         ptr[1] = 0x4F;
         ptr[32] = 0x4F;
@@ -1139,9 +1136,9 @@ static bool8 sub_80A42B0(u8 itemPos, int b)
         if (itemPos == 7)
             return TRUE;
         if ((b == 1 && r8->unk2 != 0) || b == 2)
-            Menu_BlankWindowRect(14, r5 + 2, 29, 13);
+            Menu_BlankWindowRect(15, r5 + 2, 29, 13);
         else
-            Menu_BlankWindowRect(14, r5 + 2, 29, 17);
+            Menu_BlankWindowRect(15, r5 + 2, 29, 17);
         return TRUE;
     }
     return FALSE;
@@ -1163,10 +1160,10 @@ static void sub_80A4380(u16 a, int b, int c, int d)
         r5 = i * 2 + 2;
         text = gStringVar1;
         text = sub_80A425C(a, text, i);
-        text = AlignStringInMenuWindow(text, ItemId_GetName(gCurrentBagPocketItemSlots[r4].itemId), 0x66, 0);
+        text = AlignStringInMenuWindow(text, ItemId_GetName(gCurrentBagPocketItemSlots[r4].itemId), 94, 0);
         *text++ = CHAR_MULT_SIGN;
-        AlignInt1InMenuWindow(text, gCurrentBagPocketItemSlots[r4].quantity, 0x78, 1);
-        Menu_PrintText(gStringVar1, 14, r5);
+        AlignInt1InMenuWindow(text, gCurrentBagPocketItemSlots[r4].quantity, 112, 1);
+        Menu_PrintText(gStringVar1, 15, r5);
     }
 }
 
@@ -1186,12 +1183,8 @@ static void sub_80A444C(u16 a, int b, int c, int d)
         r5 = i * 2 + 2;
         text = gStringVar1;
         text = sub_80A425C(a, text, i);
-#if ENGLISH
-        AlignStringInMenuWindow(text, ItemId_GetName(gCurrentBagPocketItemSlots[slot].itemId), 0x60, 0);
-#else
-        AlignStringInMenuWindow(text, ItemId_GetName(gCurrentBagPocketItemSlots[slot].itemId), 0x63, 0);
-#endif
-        Menu_PrintText(gStringVar1, 14, r5);
+        AlignStringInMenuWindow(text, ItemId_GetName(gCurrentBagPocketItemSlots[slot].itemId), 88, 0);
+        Menu_PrintText(gStringVar1, 15, r5);
         if (gUnknown_02038558)
         {
             if (gCurrentBagPocketItemSlots[slot].itemId == gSaveBlock1.registeredItem)
@@ -1223,7 +1216,7 @@ static void sub_80A4548(u16 taskId, int topItemOffset, int bottomItemOffset, int
 
         slot = gBagPocketScrollStates[sCurrentBagPocket].scrollTop + i;
         y = i * 2 + 2;
-        tilemapOffset = y * 32 + 14;
+        tilemapOffset = y * 32 + 15;
         text = gStringVar1;
         text = sub_80A425C(taskId, text, i);
 
@@ -1245,19 +1238,19 @@ static void sub_80A4548(u16 taskId, int topItemOffset, int bottomItemOffset, int
             gBGTilemapBuffers[2][tilemapOffset + 32] = 0x106D;
             gBGTilemapBuffers[2][tilemapOffset + 33] = 0x106E;
             text[0] = EXT_CTRL_CODE_BEGIN;
-            text[1] = 0x13;
-            text[2] = 0x11;
+            text[1] = EXT_CTRL_CODE_CLEAR_TO;
+            text[2] = 17;
             text += 3;
             text = ConvertIntToDecimalString(text, gCurrentBagPocketItemSlots[slot].itemId - (ITEM_HM01_CUT - 1));
             text[0] = EXT_CTRL_CODE_BEGIN;
-            text[1] = 0x13;
-            text[2] = 0x18;
+            text[1] = EXT_CTRL_CODE_CLEAR_TO;
+            text[2] = 28;
             text += 3;
             moveName = gMoveNames[ItemIdToBattleMoveId(gCurrentBagPocketItemSlots[slot].itemId)];
-            AlignStringInMenuWindow(text, moveName, 0x78, 0);
+            AlignStringInMenuWindow(text, moveName, 112, 0);
         }
 
-        Menu_PrintText(gStringVar1, 14, y);
+        Menu_PrintText(gStringVar1, 15, y);
     }
 }
 
@@ -1270,14 +1263,14 @@ static void sub_80A46FC(u16 taskId, int b, int c, int d)
         u8 r4;
         u8 r5;
         u8 *text;
-        register int var asm("r0");
+        s16 var;
 
         if (sub_80A42B0(i, d) == TRUE)
             break;
         r4 = gBagPocketScrollStates[sCurrentBagPocket].scrollTop + i;
         r5 = i * 2 + 2;
 
-        var = 14 + r5 * 32;
+        var = 15 + r5 * 32;
         gBGTilemapBuffers[2][var] = 0x59;
         var += 32;
         gBGTilemapBuffers[2][var] = 0x69;
@@ -1285,8 +1278,8 @@ static void sub_80A46FC(u16 taskId, int b, int c, int d)
         text = gStringVar1;
         text = sub_80A425C(taskId, text, i);
         CopyItemName(gCurrentBagPocketItemSlots[r4].itemId, gStringVar2);
-        sub_80A41E0(text, gCurrentBagPocketItemSlots[r4].itemId - 0x84, gStringVar2, gCurrentBagPocketItemSlots[r4].quantity, 3);
-        Menu_PrintText(gStringVar1, 14, r5);
+        sub_80A41E0(text, gCurrentBagPocketItemSlots[r4].itemId - 132, gStringVar2, gCurrentBagPocketItemSlots[r4].quantity, 3);
+        Menu_PrintText(gStringVar1, 15, r5);
     }
 }
 
@@ -1408,7 +1401,7 @@ static void sub_80A4A98(const u8 *text, u32 line)
     if (line == 0)
         Menu_EraseWindowRect(0, 13, 13, 20);
     if (CopyTextLine(buffer, text, line))
-        Menu_PrintTextPixelCoords(buffer, 4, 104 + line * 16, 0);
+        Menu_PrintTextPixelCoords(buffer, 8, 104 + line * 16, 0);
 }
 
 static void sub_80A4ADC(u8 taskId)
@@ -1423,7 +1416,6 @@ static void sub_80A4B14(s8 a, u8 b)
 {
     gBagPocketScrollStates[sCurrentBagPocket].scrollTop += a;
     Menu_MoveCursor(0);
-    sub_80A73C0();
     sub_80A763C();
     sub_80A4ADC(b);
 }
@@ -1431,7 +1423,6 @@ static void sub_80A4B14(s8 a, u8 b)
 static void sub_80A4B58(s8 delta, u8 b)
 {
     gBagPocketScrollStates[sCurrentBagPocket].cursorPos = Menu_MoveCursor(delta);
-    sub_80A73C0();
     sub_80A4ADC(b);
 }
 
@@ -1455,6 +1446,7 @@ static void sub_80A4BF0(u16 *a)
     {
         Menu_DrawStdWindowFrame(0, 7, 13, 12);
         sub_80A4008(a, 1, 8, 12, 4);
+
         if (sub_80F9344() == TRUE && sReturnLocation == RETURN_TO_FIELD_5)
         {
             sub_80A7834(1, 0);
@@ -1469,22 +1461,37 @@ static void sub_80A4BF0(u16 *a)
                     text = sub_80A4B90(gSpecialVar_ItemId);
                 else
                     text = sItemPopupMenuActions[sPopupMenuActionList[i]].text;
-                Menu_PrintText(text, 1 + (i / 2) * 6, 8 + (i % 2) * 2);
+
+                Menu_PrintText(
+                    text,
+                    2 + (i / 2) * 6,
+                    8 + (i % 2) * 2
+                );
             }
         }
+
         if (sReturnLocation == RETURN_TO_FIELD_5)
-            InitMenu(0, 1, 8, gUnknown_02038564, sPopupMenuSelection, 1);
+            InitMenu(0, 1, 8, gUnknown_02038564, sPopupMenuSelection);
         else
-            InitMenu(0, 1, 8, gUnknown_02038564, 0, 1);
+            InitMenu(0, 1, 8, gUnknown_02038564, 0);
+
         sub_8072DCC(0x2F);
     }
     else
     {
         Menu_DrawStdWindowFrame(0, 5, 13, 12);
         sub_80A4008(a, 1, 6, 12, 6);
+
         for (i = 0; i < gUnknown_02038564; i++)
-            Menu_PrintText(sItemPopupMenuActions[sPopupMenuActionList[i]].text, 1 + (i / 3) * 6, 6 + (i % 3) * 2);
-        InitMenu(0, 1, 6, gUnknown_02038564, 0, 1);
+        {
+            Menu_PrintText(
+                sItemPopupMenuActions[sPopupMenuActionList[i]].text,
+                2 + (i / 3) * 6,
+                6 + (i % 3) * 2
+            );
+        }
+
+        InitMenu(0, 1, 6, gUnknown_02038564, 0);
         sub_8072DCC(0x2F);
     }
     sub_80A7528(2);
@@ -1594,13 +1601,8 @@ static bool8 sub_80A4F74(u8 a)
     {
         if (gTasks[a].data[10] == 0 && sub_80A4F0C() == TRUE)
         {
-            sub_80A73F0();
             gTasks[a].func = sub_80A4F68;
             retVal = TRUE;
-        }
-        else
-        {
-            sub_80A73C0();
         }
     }
     return retVal;
@@ -1791,7 +1793,7 @@ static void sub_80A5414(u8 taskId)
                 if ((sPopupMenuSelection & 1) && sPopupMenuActionList[sPopupMenuSelection - 1] != 8)
                 {
                     PlaySE(SE_SELECT);
-                    sPopupMenuSelection = MoveMenuCursor3(-1);
+                    sPopupMenuSelection = Menu_MoveCursorItemPopupMenu(-1);
                 }
                 break;
             }
@@ -1800,7 +1802,7 @@ static void sub_80A5414(u8 taskId)
                 if ((!(sPopupMenuSelection & 1)) && sPopupMenuActionList[sPopupMenuSelection + 1] != 8)
                 {
                     PlaySE(SE_SELECT);
-                    sPopupMenuSelection = MoveMenuCursor3(1);
+                    sPopupMenuSelection = Menu_MoveCursorItemPopupMenu(1);
                 }
                 break;
             }
@@ -1809,7 +1811,7 @@ static void sub_80A5414(u8 taskId)
                 if ((sPopupMenuSelection >= 2) && sPopupMenuActionList[sPopupMenuSelection - 2] != 8)
                 {
                     PlaySE(SE_SELECT);
-                    sPopupMenuSelection = MoveMenuCursor3(-2);
+                    sPopupMenuSelection = Menu_MoveCursorItemPopupMenu(-2);
                 }
                 break;
             }
@@ -1818,7 +1820,7 @@ static void sub_80A5414(u8 taskId)
                 if ((sPopupMenuSelection < 2) && sPopupMenuActionList[sPopupMenuSelection + 2] != 8)
                 {
                     PlaySE(SE_SELECT);
-                    sPopupMenuSelection = MoveMenuCursor3(2);
+                    sPopupMenuSelection = Menu_MoveCursorItemPopupMenu(2);
                 }
                 break;
             }
@@ -1874,7 +1876,7 @@ static void sub_80A5600(u8 taskId)
             if (sPopupMenuSelection != 0 && sPopupMenuActionList[sPopupMenuSelection - 1] != 8)
             {
                 PlaySE(SE_SELECT);
-                sPopupMenuSelection = MoveMenuCursor3(-1);
+                sPopupMenuSelection = Menu_MoveCursorItemPopupMenu(-1);
             }
             break;
         }
@@ -1883,7 +1885,7 @@ static void sub_80A5600(u8 taskId)
             if (sPopupMenuSelection != gUnknown_02038564 - 1 && sPopupMenuSelection != 2 && sPopupMenuActionList[sPopupMenuSelection + 1] != 8)
             {
                 PlaySE(SE_SELECT);
-                sPopupMenuSelection = MoveMenuCursor3(1);
+                sPopupMenuSelection = Menu_MoveCursorItemPopupMenu(1);
             }
             break;
         }
@@ -1892,7 +1894,7 @@ static void sub_80A5600(u8 taskId)
             if ((sPopupMenuSelection >= 3) && sPopupMenuActionList[sPopupMenuSelection - 3] != 8)
             {
                 PlaySE(SE_SELECT);
-                sPopupMenuSelection = MoveMenuCursor3(-3);
+                sPopupMenuSelection = Menu_MoveCursorItemPopupMenu(-3);
             }
             break;
         }
@@ -1901,7 +1903,7 @@ static void sub_80A5600(u8 taskId)
             if ((sPopupMenuSelection < 3) && sPopupMenuActionList[sPopupMenuSelection + 3] != 8)
             {
                 PlaySE(SE_SELECT);
-                sPopupMenuSelection = MoveMenuCursor3(3);
+                sPopupMenuSelection = Menu_MoveCursorItemPopupMenu(3);
             }
             break;
         }
@@ -1965,7 +1967,7 @@ static void sub_80A57C4(void)
     sub_80A4008(gBGTilemapBuffers[1], 7, r5 + 1, 6, gUnknown_02038564 * 2);
     Menu_DrawStdWindowFrame(6, r5, 13, gUnknown_02038564 * 2 + 1 + r5);
     sub_80A7834(0, r5);
-    InitMenu(0, 7, r5 + 1, gUnknown_02038564, 0, 6);
+    InitMenu(0, 7, r5 + 1, gUnknown_02038564, 0);
 }
 
 static void sub_80A5888(u8 taskId)
@@ -2796,7 +2798,7 @@ static void sub_80A6DF0(u16 *a)
         Menu_PrintText(sItemPopupMenuActions[sPopupMenuActionList[0]].text, 8, 8);
         Menu_PrintText(sItemPopupMenuActions[sPopupMenuActionList[1]].text, 8, 10);
     }
-    InitMenu(0, 8, 10 - r6, gUnknown_02038564, 0, 5);
+    InitMenu(0, 8, 10 - r6, gUnknown_02038564, 0);
     sub_80A7528(2);
 }
 
@@ -2976,25 +2978,12 @@ static void sub_80A7230(u8 taskId)
 
 static void ItemListMenu_InitMenu(void)
 {
-    InitMenu(0, 14, 2, gBagPocketScrollStates[sCurrentBagPocket].cursorMax + 1, gBagPocketScrollStates[sCurrentBagPocket].cursorPos, 0);
-    CreateBlendedOutlineCursor(16, 0xFFFF, 12, 0x2D9F, 15);
-    sub_80A73C0();
-}
-
-static void sub_80A73C0(void)
-{
-    MenuCursor_SetPos814AD7C(0x70, gBagPocketScrollStates[sCurrentBagPocket].cursorPos * 16 + 16);
-}
-
-static void sub_80A73F0(void)
-{
-    sub_814ADC8();
+    InitMenu(0, 14, 2, gBagPocketScrollStates[sCurrentBagPocket].cursorMax + 1, gBagPocketScrollStates[sCurrentBagPocket].cursorPos);
 }
 
 static void sub_80A73FC(void)
 {
     Menu_DestroyCursor();
-    MenuCursor_Destroy814AD44();
 }
 
 static void sub_80A740C(void)

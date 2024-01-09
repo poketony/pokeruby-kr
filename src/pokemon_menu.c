@@ -233,7 +233,7 @@ static void sub_8089BDC(u8 arg0, u8 arg1, u8 arg2, u8 noOfOptions, const struct 
 {
     PrintPartyMenuPromptText(5, arg6);
     Menu_DrawStdWindowFrame(arg0, arg1, arg0 + arg2, (noOfOptions * 2) + arg1 + 1);
-    Menu_PrintItemsReordered(arg0 + 1, arg1 + 1, noOfOptions, menuActions, order);
+    Menu_PrintItemsReordered(arg0 + 2, arg1 + 1, noOfOptions, menuActions, order);
 }
 
 void sub_8089C50(u8 arg0, u8 arg1, u8 arg2, u8 noOfOptions, const struct MenuAction2 *menuActions, const u8 *order)
@@ -247,7 +247,7 @@ static void sub_8089C7C(u8 arg0)
 
     sub_8089BDC(19, r4, 10, sPokeMenuOptionsNo, sPokemonMenuActions, sPokeMenuOptionsOrder, 3);
     r4 |= 1;
-    InitMenu(0, 20, r4, sPokeMenuOptionsNo, arg0, 9);
+    InitMenu(0, 20, r4, sPokeMenuOptionsNo, arg0);
 }
 
 void HandleDefaultPartyMenu(u8 taskID)

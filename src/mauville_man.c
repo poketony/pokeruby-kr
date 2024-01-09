@@ -1058,9 +1058,9 @@ static void PrintStoryList(void)
 
         if (stat == 0)
             break;
-        Menu_PrintText(GetStoryTitleByStat(stat), 1, 2 + i * 2);
+        Menu_PrintText(GetStoryTitleByStat(stat), 2, 2 + i * 2);
     }
-    Menu_PrintText(gPCText_Cancel, 1, 2 + i * 2);
+    Menu_PrintText(gPCText_Cancel, 2, 2 + i * 2);
 }
 
 static u8 gUnknown_03000748;
@@ -1074,7 +1074,7 @@ static void Task_StoryListMenu(u8 taskId)
     {
     case 0:
         PrintStoryList();
-        InitMenu(0, 1, 2, GetFreeStorySlot() + 1, 0, 24);
+        InitMenu(0, 1, 2, GetFreeStorySlot() + 1, 0);
         task->data[0]++;
         break;
     case 1:

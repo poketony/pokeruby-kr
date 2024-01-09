@@ -198,8 +198,8 @@ s8 InitMoriDebugMenu(void)
 {
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(0, 0, 10, 19);
-    Menu_PrintItems(1, 1, 9, gMoriDebugMenuActions);
-    InitMenu(0, 1, 1, 9, 0, 9);
+    Menu_PrintItems(2, 1, 9, gMoriDebugMenuActions);
+    InitMenu(0, 1, 1, 9, 0);
     gMenuCallback = MoriDebugMenuProcessInput;
     return 0;
 }

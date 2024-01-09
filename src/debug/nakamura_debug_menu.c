@@ -75,7 +75,7 @@ static void DrawNakamuraDebugMenu(void)
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(14, 0, 29, 19);
     Menu_PrintItems(16, 1, ARRAY_COUNT(sNakamuraTopMenuActions), sNakamuraTopMenuActions);
-    InitMenu(0, 15, 1, ARRAY_COUNT(sNakamuraTopMenuActions), 0, 14);
+    InitMenu(0, 15, 1, ARRAY_COUNT(sNakamuraTopMenuActions), 0);
 }
 
 bool8 InitNakamuraDebugMenu(void)
@@ -640,7 +640,7 @@ static bool8 SwitchToMoveYourBaseSubmenu(void)
     Menu_EraseWindowRect(0, 0, 29, 19);
     Menu_DrawStdWindowFrame(0, 0, 12, 11);
     MoveYourBase_Redraw();
-    InitMenu(0, 1, 3, 3, 0, 11);
+    InitMenu(0, 1, 3, 3, 0);
     return FALSE;
 }
 
@@ -700,7 +700,7 @@ static bool8 MovingPKMN(void)
     Menu_DrawStdWindowFrame(0, 0, 11, 9);
     Menu_PrintText(gStringVar1, 1, 1);
     Menu_PrintText(Str_843E580, 2, 3);
-    InitMenu(0, 1, 3, 3, 0, 10);
+    InitMenu(0, 1, 3, 3, 0);
     return FALSE;
 }
 
@@ -1816,7 +1816,7 @@ static void SetPokeblock_Init(void)
     for (i = 0; i < 6; i++)
         SetPokeblock_PrintFlavorValue(i);
 
-    InitMenu(0, 1, 3, 6, 0, 11);
+    InitMenu(0, 1, 3, 6, 0);
 }
 
 static void SetPokeblock_GivePokeblock(void)
@@ -2123,7 +2123,7 @@ static void RNGTest_Init(void)
     Menu_PrintText(Str_843E658, 12, 5);
     Menu_PrintText(Str_843E658, 12, 7);
     Menu_PrintText(Str_843E658, 12, 9);
-    InitMenu(0, 1, 1, 4, 0, 14);
+    InitMenu(0, 1, 1, 4, 0);
 }
 
 static void RNGTest_PrintNum(u16 a0)

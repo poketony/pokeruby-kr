@@ -82,8 +82,8 @@ bool8 InitNoharaDebugMenu(void)
 {
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(0, 0, 19, 19);
-    Menu_PrintItems(1, 1, ARRAY_COUNT(gUnknown_Debug_083C4938), gUnknown_Debug_083C4938);
-    InitMenu(0, 1, 1, ARRAY_COUNT(gUnknown_Debug_083C4938), 0, 18);
+    Menu_PrintItems(2, 1, ARRAY_COUNT(gUnknown_Debug_083C4938), gUnknown_Debug_083C4938);
+    InitMenu(0, 1, 1, ARRAY_COUNT(gUnknown_Debug_083C4938), 0);
     gMenuCallback = debug_sub_808F414;
     return FALSE;
 }
@@ -203,8 +203,8 @@ bool8 NoharaDebugMenu_TV(void)
     gDebug_03000726 = 0;
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(0, 0, 10, 19);
-    Menu_PrintItems(1, 1, ARRAY_COUNT(gUnknown_Debug_083C4B8C), gUnknown_Debug_083C4B8C);
-    InitMenu(0, 1, 1, ARRAY_COUNT(gUnknown_Debug_083C4B8C), 0, 9);
+    Menu_PrintItems(2, 1, ARRAY_COUNT(gUnknown_Debug_083C4B8C), gUnknown_Debug_083C4B8C);
+    InitMenu(0, 1, 1, ARRAY_COUNT(gUnknown_Debug_083C4B8C), 0);
     gMenuCallback = debug_sub_808F4AC;
     return FALSE;
 }
@@ -808,8 +808,8 @@ bool8 NoharaDebugMenu_Fan(void)
 {
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(0, 0, 11, 19);
-    Menu_PrintItems(1, 1, ARRAY_COUNT(gUnknown_Debug_083C4D28), gUnknown_Debug_083C4D28);
-    InitMenu(0, 1, 1, ARRAY_COUNT(gUnknown_Debug_083C4D28), 0, 10);
+    Menu_PrintItems(2, 1, ARRAY_COUNT(gUnknown_Debug_083C4D28), gUnknown_Debug_083C4D28);
+    InitMenu(0, 1, 1, ARRAY_COUNT(gUnknown_Debug_083C4D28), 0);
     gMenuCallback = debug_sub_80901A4;
     return FALSE;
 }

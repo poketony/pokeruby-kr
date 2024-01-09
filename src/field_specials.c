@@ -1068,11 +1068,13 @@ void ScriptShowElevatorMenu(void)
 static void sub_810E874(void)
 {
     u8 i;
+
     ScriptContext2_Enable();
+
     if (gUnknown_0203925A > 5)
     {
         Menu_DrawStdWindowFrame(0, 0, 8, 11);
-        InitMenu(0, 1, 1, 5, 0, 7);
+        InitMenu(0, 1, 1, 5, 0);
         gUnknown_0203925C = 0;
         ClearVerticalScrollIndicatorPalettes();
         LoadScrollIndicatorPalette();
@@ -1081,12 +1083,14 @@ static void sub_810E874(void)
     else
     {
         Menu_DrawStdWindowFrame(0, 0, 8, 2 * gUnknown_0203925A + 1);
-        InitMenu(0, 1, 1, gUnknown_0203925A, 0, 7);
+        InitMenu(0, 1, 1, gUnknown_0203925A, 0);
     }
+
     for (i = 0; i < 5 && gUnknown_03000760[i].var0 != 16; i ++)
     {
-        Menu_PrintText(gUnknown_083F8380[gUnknown_03000760[i].var0], 1, 2 * i + 1);
+        Menu_PrintText(gUnknown_083F8380[gUnknown_03000760[i].var0], 2, 2 * i + 1);
     }
+
     DisplayCurrentElevatorFloor();
     CreateTask(sub_810E984, 8);
 }
@@ -1451,19 +1455,26 @@ void GlassWorkshopUpdateScrollIndicators(u8, u8);
 void ShowGlassWorkshopMenu(void)
 {
     u8 i;
+
     ScriptContext2_Enable();
+
     Menu_DrawStdWindowFrame(0, 0, 10, 11);
-    InitMenu(0, 1, 1, 5, 0, 9);
+    InitMenu(0, 1, 1, 5, 0);
+
     gUnknown_0203925C = 0;
+
     ClearVerticalScrollIndicatorPalettes();
     LoadScrollIndicatorPalette();
     sub_810F2B4();
+
     for (i=0; i<5; i++)
     {
-        Menu_PrintText(gUnknown_083F83C0[i], 1, 2 * i + 1);
+        Menu_PrintText(gUnknown_083F83C0[i], 2, 2 * i + 1);
     }
+
     gUnknown_0203925B = 0;
     gUnknown_0203925A = ARRAY_COUNT(gUnknown_083F83C0);
+
     CreateTask(sub_810F118, 8);
 }
 

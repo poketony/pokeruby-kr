@@ -303,8 +303,8 @@ bool8 debug_sub_809089C(void)
 bool8 TayaDebugMenu_SimpleText(void)
 {
     Menu_DrawStdWindowFrame(0, 0, 12, 19);
-    Menu_PrintItems(1, 1, ARRAY_COUNT(gUnknown_Debug_083C4EC0), gUnknown_Debug_083C4EC0);
-    InitMenu(0, 1, 1, ARRAY_COUNT(gUnknown_Debug_083C4EC0), 0, 11);
+    Menu_PrintItems(2, 1, ARRAY_COUNT(gUnknown_Debug_083C4EC0), gUnknown_Debug_083C4EC0);
+    InitMenu(0, 1, 1, ARRAY_COUNT(gUnknown_Debug_083C4EC0), 0);
     gMenuCallback = debug_sub_809089C;
     return FALSE;
 }
@@ -362,8 +362,8 @@ bool8 debug_sub_8090984(void)
 bool8 TayaDebugMenu_OldMan(void)
 {
     Menu_DrawStdWindowFrame(0, 0, 10, 17);
-    Menu_PrintItems(1, 1, ARRAY_COUNT(gUnknown_Debug_083C4F54), gUnknown_Debug_083C4F54);
-    InitMenu(0, 1, 1, ARRAY_COUNT(gUnknown_Debug_083C4F54), GetCurrentMauvilleOldMan(), 9);
+    Menu_PrintItems(2, 1, ARRAY_COUNT(gUnknown_Debug_083C4F54), gUnknown_Debug_083C4F54);
+    InitMenu(0, 1, 1, ARRAY_COUNT(gUnknown_Debug_083C4F54), GetCurrentMauvilleOldMan());
     gMenuCallback = debug_sub_8090984;
     return FALSE;
 }
@@ -675,8 +675,8 @@ bool8 TayaDebugMenu_8091190(void)
             {
                 Menu_EraseScreen();
                 Menu_DrawStdWindowFrame(0, 0, 11, 19);
-                Menu_PrintItems(1, 1, gUnknown_Debug_83C5068[sTayaTopMenuPage].nitems, gUnknown_Debug_83C5068[sTayaTopMenuPage].menuActions);
-                InitMenu(0, 1, 1, gUnknown_Debug_83C5068[sTayaTopMenuPage].nitems, 0, 10);
+                Menu_PrintItems(2, 1, gUnknown_Debug_83C5068[sTayaTopMenuPage].nitems, gUnknown_Debug_83C5068[sTayaTopMenuPage].menuActions);
+                InitMenu(0, 1, 1, gUnknown_Debug_83C5068[sTayaTopMenuPage].nitems, 0);
             }
             return FALSE;
         case -1:
@@ -690,8 +690,8 @@ bool8 InitTayaDebugWindow(void)
     sTayaTopMenuPage = 0;
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(0, 0, 11, 19);
-    Menu_PrintItems(1, 1, 9, gUnknown_Debug_83C5068[0].menuActions);
-    InitMenu(0, 1, 1, 9, 0, 10);
+    Menu_PrintItems(2, 1, 9, gUnknown_Debug_83C5068[0].menuActions);
+    InitMenu(0, 1, 1, 9, 0);
     gMenuCallback = TayaDebugMenu_8091190;
     return FALSE;
 }

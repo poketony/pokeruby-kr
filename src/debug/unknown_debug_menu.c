@@ -35,7 +35,7 @@ int InitSogabeDebugMenu(void)
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(0, 0, 16, 18);
     Menu_PrintItems(2, 1, 8, gUnknown_0842C29C);
-    InitMenu(0, 1, 1, 8, 0, 15);
+    InitMenu(0, 1, 1, 8, 0);
     gMenuCallback = sub_814A464;
     return 0;
 }

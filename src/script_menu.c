@@ -653,8 +653,8 @@ static void DrawMultichoiceMenu(u8 left, u8 top, u8 count, const struct MenuActi
     bottom = top + (2 * count + 1);
 
     Menu_DrawStdWindowFrame(left, top, right, bottom);
-    Menu_PrintItems(left + 1, top + 1, count, list);
-    InitMenu(0, left + 1, top + 1, count, cursorPos, right - left - 1);
+    Menu_PrintItems(left + 2, top + 1, count, list);
+    InitMenu(0, left + 1, top + 1, count, cursorPos);
     StartScriptMenuTask(left, top, right, bottom, ignoreBPress, count);
 }
 
@@ -746,8 +746,8 @@ static void sub_80B53B4(u8 left, u8 top, u8 count, const struct MenuAction *list
     right = (right + left) + 2;
     bottom = top + (2 * count + 1);
 
-    Menu_PrintItems(left, top, count, list);
-    InitMenu(0, left, top, count, 0, right - left - 1);
+    Menu_PrintItems(left + 1, top, count, list);
+    InitMenu(0, left, top, count, 0);
     StartScriptMenuTask(left, top, right, bottom, ignoreBPress, count);
 }
 
@@ -910,23 +910,23 @@ void ScriptMenu_CreatePCMenu(void)
     {
         numChoices = 4;
         Menu_DrawStdWindowFrame(0, 0, width + 2, 9);
-        Menu_PrintText(gPCText_HallOfFame, 1, 5);
-        Menu_PrintText(gPCText_LogOff, 1, 7);
+        Menu_PrintText(gPCText_HallOfFame, 2, 5);
+        Menu_PrintText(gPCText_LogOff, 2, 7);
     }
     else
     {
         numChoices = 3;
         Menu_DrawStdWindowFrame(0, 0, width + 2, 7);
-        Menu_PrintText(gPCText_LogOff, 1, 5);
+        Menu_PrintText(gPCText_LogOff, 2, 5);
     }
 
     if (FlagGet(FLAG_SYS_PC_LANETTE)) // player met lanette?
-        Menu_PrintText(gPCText_LanettesPC, 1, 1);
+        Menu_PrintText(gPCText_LanettesPC, 2, 1);
     else
-        Menu_PrintText(gPCText_SomeonesPC, 1, 1);
+        Menu_PrintText(gPCText_SomeonesPC, 2, 1);
 
-    Menu_PrintText(gPCText_PlayersPC, 1, 3);
-    InitMenu(0, 1, 1, numChoices, 0, width + 1);
+    Menu_PrintText(gPCText_PlayersPC, 2, 3);
+    InitMenu(0, 1, 1, numChoices, 0);
     StartScriptMenuTask(0, 0, width + 2, 2 * numChoices + 1, 0, numChoices);
 }
 

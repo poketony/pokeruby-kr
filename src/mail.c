@@ -1024,7 +1024,7 @@ void debug_sub_810D174(u8 a)
     }
     Menu_DrawStdWindowFrame(0, 0, 16, 19);
     Menu_PrintItems(2, 1, 9, menuActions);
-    InitMenu(0, 1, 1, 9, 0, 15);
+    InitMenu(0, 1, 1, 9, 0);
     switch (a)
     {
     case 0:
@@ -1086,7 +1086,7 @@ void debug_sub_810D340(void)
 {
     Menu_DrawStdWindowFrame(0, 0, 9, 9);
     Menu_PrintItems(2, 1, 4, _84116BC);
-    InitMenu(0, 1, 1, 4, 0, 8);
+    InitMenu(0, 1, 1, 4, 0);
     gMenuCallback = debug_sub_810D2F4;
 }
 

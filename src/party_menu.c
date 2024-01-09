@@ -2849,8 +2849,7 @@ void ShowPartyPopupMenu(u8 menuIndex, const struct PartyPopupMenu *menu, const s
 
     SetPartyPopupMenuOffsets(menuIndex, &left, &top, menu);
     sub_8089C50(left, top, menu[menuIndex].width, menu[menuIndex].numChoices, menuActions, menu[menuIndex].items);
-
-    InitMenu(0, left + 1, top + 1, menu[menuIndex].numChoices, cursorPos, menu[menuIndex].width - 1);
+    InitMenu(0, left + 1, top + 1, menu[menuIndex].numChoices, cursorPos);
 }
 
 void ClosePartyPopupMenu(u8 index, const struct PartyPopupMenu *menu)
@@ -3851,15 +3850,17 @@ void CreateItemUseMoveMenu(u8 partyMonIndex)
 
     r6 = 0;
     Menu_DrawStdWindowFrame(19, 10, 29, 19);
+
     for (i = 0; i < 4; i++)
     {
         u16 move = GetMonData(&gPlayerParty[partyMonIndex], MON_DATA_MOVE1 + i);
 
-        Menu_PrintText(gMoveNames[move], 20, i * 2 + 11);
+        Menu_PrintText(gMoveNames[move], 21, i * 2 + 11);
         if (move != 0)
             r6++;
     }
-    InitMenu(0, 20, 11, r6, 0, 9);
+
+    InitMenu(0, 20, 11, r6, 0);
 }
 
 void Task_HandleItemUseMoveMenuInput(u8 taskId)

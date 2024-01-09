@@ -366,8 +366,8 @@ void FieldCB_ReturnToOverworld(void)
 void StorageSystemCreatePrimaryMenu(u8 whichMenu)
 {
     Menu_DrawStdWindowFrame(0, 0, 13, 9);
-    Menu_PrintItems(1, 1, 4, (const struct MenuAction *)gUnknown_083B600C);
-    InitMenu(0, 1, 1, 4, whichMenu, 12);
+    Menu_PrintItems(2, 1, 4, (const struct MenuAction *)gUnknown_083B600C);
+    InitMenu(0, 1, 1, 4, whichMenu);
 }
 
 void sub_80961A8(void)

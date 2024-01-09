@@ -45,8 +45,8 @@ static void Task_InitMenu(u8 taskId)
     Menu_PrintText(gSystemText_ClearAllSaveDataPrompt, 3, 15);
 
     Menu_DrawStdWindowFrame(2, 1, 8, 6);
-    Menu_PrintItems(3, 2, 2, gMenuYesNoItems);
-    InitMenu(0, 3, 2, 2, 1, 5);
+    Menu_PrintItems(4, 2, 2, gMenuYesNoItems);
+    InitMenu(0, 3, 2, 2, 1);
 
     gTasks[taskId].func = Task_ProcessMenuInput;
 }

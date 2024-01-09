@@ -218,8 +218,8 @@ void PlayerPC(void)
 static void InitPlayerPCMenu(u8 taskId)
 {
     Menu_DrawStdWindowFrame(0, 0, 10, gPcItemMenuOptionsNum * 2 + 1);
-    Menu_PrintItemsReordered(1, 1, gPcItemMenuOptionsNum, sPlayerPCMenuActions, gPcItemMenuOptionOrder);
-    InitMenu(0, 1, 1, gPcItemMenuOptionsNum, 0, 9);
+    Menu_PrintItemsReordered(2, 1, gPcItemMenuOptionsNum, sPlayerPCMenuActions, gPcItemMenuOptionOrder);
+    InitMenu(0, 1, 1, gPcItemMenuOptionsNum, 0);
     TASK.FUNC = PlayerPCProcessMenuInput;
 }
 
@@ -307,8 +307,8 @@ static void InitItemStorageMenu(u8 var)
 {
     Menu_EraseWindowRect(0, 0, 10, 9);
     Menu_DrawStdWindowFrame(0, 0, 11, 9);
-    Menu_PrintItems(1, 1, 4, (struct MenuAction *)gPCText_ItemPCOptionsText);
-    InitMenu(0, 1, 1, 4, var, 10);
+    Menu_PrintItems(2, 1, 4, (struct MenuAction *)gPCText_ItemPCOptionsText);
+    InitMenu(0, 1, 1, 4, var);
     ItemStorageMenuPrint(gPCText_OptionDescList[var]);
 }
 
@@ -723,7 +723,7 @@ static void ItemStorage_ResumeInputFromNoToss(u8 taskId)
     s16 *data = TASK.data;
 
     Menu_EraseWindowRect(0x6, 0x6, 0xD, 0xB);
-    InitMenu(0, 16, 2, NUM_PAGE_ITEMS, PAGE_INDEX, 0xD);
+    InitMenu(0, 16, 2, NUM_PAGE_ITEMS, PAGE_INDEX);
     StartVerticalScrollIndicators(TOP_ARROW);
     StartVerticalScrollIndicators(BOTTOM_ARROW);
     ItemStorage_PrintItemPcResponse(gSaveBlock1.pcItems[ITEMS_ABOVE_TOP + PAGE_INDEX].itemId);
@@ -746,7 +746,7 @@ static void ItemStorage_HandleRemoveItem(u8 taskId)
 
         ItemStorage_SetItemAndMailCount(taskId);
         ItemStorage_HandleResumeProcessInput(taskId);
-        InitMenu(0, 16, 2, NUM_PAGE_ITEMS, PAGE_INDEX, 0xD);
+        InitMenu(0, 16, 2, NUM_PAGE_ITEMS, PAGE_INDEX);
     }
 }
 
@@ -824,7 +824,7 @@ static void ItemStorage_DrawItemQuantity(u16 arg1, enum StringConvertMode arg2, 
 
 static void ItemStorage_DrawItemVoidQuantity(u8 var)
 {
-    Menu_PrintText(gUnknown_08406330, 0x19, var);
+    Menu_PrintText(gUnknown_08406330, 25, var);
 }
 
 static void ItemStorage_DrawItemName(struct ItemSlot *itemSlot, u8 var, int isSwapSelected)
@@ -832,9 +832,9 @@ static void ItemStorage_DrawItemName(struct ItemSlot *itemSlot, u8 var, int isSw
     CopyItemName(itemSlot->itemId, gStringVar1);
 
     if(isSwapSelected != FALSE)
-        Menu_PrintText(gSelectedItemFormattedText, 16, var);
+        Menu_PrintText(gSelectedItemFormattedText, 17, var);
     else
-        Menu_PrintText(gNonSelectedItemFormattedText, 16, var);
+        Menu_PrintText(gNonSelectedItemFormattedText, 17, var);
 }
 
 static void ItemStorage_DrawNormalItemEntry(struct ItemSlot *itemSlot, u8 var, int var2)
@@ -872,7 +872,7 @@ static void ItemStorage_DrawItemList(u8 taskId)
 
         if (i == NUM_ITEMS)
         {
-            Menu_PrintTextPixelCoordsAndGetLines(gOtherText_CancelNoTerminator, 0x80, (yCoord + 2) * 8, 0x68, 1);
+            Menu_PrintTextPixelCoordsAndGetLines(gOtherText_CancelNoTerminator, 128, (yCoord + 2) * 8, 104, 1);
             break;
         }
         else
@@ -900,7 +900,7 @@ static void ItemStorage_DrawItemList(u8 taskId)
     }
 
     if (i - ITEMS_ABOVE_TOP < 8)
-        Menu_BlankWindowRect(16, yCoord + 4, 0x1C, 0x12);
+        Menu_BlankWindowRect(16, yCoord + 4, 28, 18);
 
     if (ITEMS_ABOVE_TOP != 0)
         CreateVerticalScrollIndicators(TOP_ARROW, 0xB8, 8);
@@ -983,7 +983,7 @@ static void ItemStorage_GoBackToItemPCMenu(u8 taskId, u8 var)
     ItemStorage_PrintItemPcResponse(gSaveBlock1.pcItems[0].itemId);
     Menu_PrintText(gPCText_ItemPCOptionsText[var].text, 1, 1);
     ItemStorage_DrawItemList(taskId);
-    InitMenu(0, 0x10, 2, NUM_PAGE_ITEMS, PAGE_INDEX, 0xD);
+    InitMenu(0, 16, 2, NUM_PAGE_ITEMS, PAGE_INDEX);
 }
 
 static void ItemStorage_LoadPalette(void)
@@ -1037,22 +1037,22 @@ static void Mailbox_DrawMailList(u8 taskId) // taskId is unused
     for (i = eMailboxInfo.itemsAbove; i < eMailboxInfo.itemsAbove + eMailboxInfo.pageItems; i++)
     {
         yCoord = (i - eMailboxInfo.itemsAbove) * 2;
-        Menu_BlankWindowRect(0x15, yCoord + 2, 0x1C, yCoord + 3);
+        Menu_BlankWindowRect(21, yCoord + 2, 28, yCoord + 3);
         if (i == eMailboxInfo.count)
         {
-            Menu_PrintText(gOtherText_CancelNoTerminator, 0x15, yCoord + 2);
+            Menu_PrintText(gOtherText_CancelNoTerminator, 22, yCoord + 2);
             break;
         }
         else
         {
             StringCopy(gStringVar1, gSaveBlock1.mail[i + 6].playerName);
             SanitizeNameString(gStringVar1);
-            Menu_PrintText(gStringVar1, 0x15, yCoord + 2);
+            Menu_PrintText(gStringVar1, 22, yCoord + 2);
         }
     }
 
     if (i - eMailboxInfo.itemsAbove != 8)
-        Menu_BlankWindowRect(0x15, yCoord + 4, 0x1C, 0x12);
+        Menu_BlankWindowRect(21, yCoord + 4, 0x1C, 0x12);
 
     if (eMailboxInfo.itemsAbove != 0)
         CreateVerticalScrollIndicators(TOP_ARROW, 0xC8, 8);
@@ -1074,7 +1074,7 @@ static void Mailbox_DrawMailboxMenu(u8 taskId)
     Menu_PrintText(gPCText_Mailbox, 1, 1);
     Menu_DrawStdWindowFrame(0x14, 0, 0x1D, 0x13);
     Mailbox_DrawMailList(taskId);
-    InitMenu(0, 0x15, 2, eMailboxInfo.pageItems, eMailboxInfo.cursorPos, 8);
+    InitMenu(0, 21, 2, eMailboxInfo.pageItems, eMailboxInfo.cursorPos);
 }
 
 // Mailbox_ProcessInput
@@ -1165,8 +1165,8 @@ static void Mailbox_TurnOff(u8 taskId)
 static void Mailbox_PrintMailOptions(u8 taskId) // Mailbox_PrintMailOptions
 {
     Menu_DrawStdWindowFrame(0, 0, 0xC, 0x9);
-    Menu_PrintItems(1, 1, 4, (struct MenuAction *)gMailboxMailOptions);
-    InitMenu(0, 1, 1, 4, 0, 0xB);
+    Menu_PrintItems(2, 1, 4, (struct MenuAction *)gMailboxMailOptions);
+    InitMenu(0, 1, 1, 4, 0);
     TASK.FUNC = Mailbox_MailOptionsProcessInput;
 }
 

@@ -1837,8 +1837,8 @@ static void sub_8049680(void)
         if (gUnknown_03004824->tradeMenuCursorPosition < PARTY_SIZE)
         {
             TextWindow_DrawStdFrame(&gUnknown_03004824->window, 18, 14, 28, 19);
-            Menu_PrintItems(19, 15, 2, (const struct MenuAction *)gUnknown_0820C320);
-            InitMenu(0, 19, 15, 2, 0, 9);
+            Menu_PrintItems(20, 15, 2, (const struct MenuAction *)gUnknown_0820C320);
+            InitMenu(0, 19, 15, 2, 0);
             gUnknown_03004824->unk_007b = 1;
         }
         else if (gUnknown_03004824->tradeMenuCursorPosition < 2 * PARTY_SIZE)

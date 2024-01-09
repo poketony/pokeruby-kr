@@ -72,8 +72,8 @@ u8 InitMatsudaDebugMenu(void)
 {
     Menu_EraseScreen();
     Menu_DrawStdWindowFrame(0, 0, 17, 18);
-    Menu_PrintItems(1, 1, 7, gMatsudaDebugMenuActions);
-    InitMenu(0, 1, 1, 7, 0, 16);
+    Menu_PrintItems(2, 1, 7, gMatsudaDebugMenuActions);
+    InitMenu(0, 1, 1, 7, 0);
     gMenuCallback = sub_80A9B78;
     return 0;
 }

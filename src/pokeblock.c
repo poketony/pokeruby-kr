@@ -830,8 +830,8 @@ static void sub_810C368(u8 taskId)
     StopVerticalScrollIndicators(BOTTOM_ARROW);
     BasicInitMenuWindow(&gWindowTemplate_81E6E50);
     Menu_DrawStdWindowFrame(7, v0 + 4, 13, 11);
-    Menu_PrintItemsReordered(8, v0 + 5, gUnknown_0203924C, gUnknown_083F7EF4, gUnknown_03000758);
-    InitMenu(0, 8, v0 + 5, gUnknown_0203924C, 0, 5);
+    Menu_PrintItemsReordered(9, v0 + 5, gUnknown_0203924C, gUnknown_083F7EF4, gUnknown_03000758);
+    InitMenu(0, 8, v0 + 5, gUnknown_0203924C, 0);
     gSpecialVar_ItemId = gUnknown_02039248.unk0 + gUnknown_02039248.unk1;
     gTasks[taskId].func = sub_810C40C;
 }

@@ -1061,10 +1061,10 @@ void ShowDaycareLevelMenu(void)
     u8 buffer[100];
     Menu_DrawStdWindowFrame(15, 6, 29, 13);
     GetDaycareLevelMenuText(&gSaveBlock1.daycare, buffer);
-    Menu_PrintText(buffer, 16, 7);
+    Menu_PrintText(buffer, 17, 7);
     GetDaycareLevelMenuLevelText(&gSaveBlock1.daycare, buffer);
-    Menu_PrintTextPixelCoords(buffer, 0xce, 0x38, TRUE);
-    InitMenu(0, 16, 7, 3, 0, 13);
+    Menu_PrintTextPixelCoords(buffer, 206, 56, TRUE);
+    InitMenu(0, 16, 7, 3, 0);
     CreateTask(HandleDaycareLevelMenuInput, 3);
 }
 

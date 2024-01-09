@@ -97,15 +97,15 @@ static u8 CreateShopMenu(u8 martType)
     {
         gMartInfo.numChoices = 2;
         Menu_DrawStdWindowFrame(0, 0, 10, 7);
-        Menu_PrintItemsReordered(1, 1, 3, sBuySellQuitMenuActions, gMartBuySellOptionList);
+        Menu_PrintItemsReordered(2, 1, 3, sBuySellQuitMenuActions, gMartBuySellOptionList);
     }
     else
     {
         gMartInfo.numChoices = 1;
         Menu_DrawStdWindowFrame(0, 0, 10, 5);
-        Menu_PrintItemsReordered(1, 1, 2, sBuySellQuitMenuActions, gMartBuyNoSellOptionList);
+        Menu_PrintItemsReordered(2, 1, 2, sBuySellQuitMenuActions, gMartBuyNoSellOptionList);
     }
-    InitMenu(0, 1, 1, gMartInfo.numChoices + 1, 0, 9); // add 1 for cancel
+    InitMenu(0, 1, 1, gMartInfo.numChoices + 1, 0); // add 1 for cancel
 
     return CreateTask(Task_DoBuySellMenu, 8);
 }
@@ -488,7 +488,7 @@ static void Shop_InitMenus(int firstItemId, int lastItemId)
 {
     BuyMenuDrawTextboxBG();
     Shop_DisplayPriceInList(firstItemId, lastItemId, 0);
-    InitMenu(0, 0xE, 0x2, 0x8, gMartInfo.cursor, 0xF);
+    InitMenu(0, 14, 2, 8, gMartInfo.cursor);
 }
 
 // after printing the item quantity and price, restore the textbox tiles before the Yes/No prompt.
@@ -595,7 +595,7 @@ static void Shop_DisplayPriceInList(int firstItemId, int lastItemId, bool32 hasC
     if (i != 8 && gMartInfo.choicesAbove + i == gMartInfo.itemCount)
     {
         Menu_BlankWindowRect(0xE, (i << 1) + 2, 0x1C, (i << 1) + 3);
-        Menu_PrintText(gOtherText_CancelNoTerminator, 0xE, (i << 1) + 2);
+        Menu_PrintText(gOtherText_CancelNoTerminator, 15, (i << 1) + 2);
     }
 }
 
