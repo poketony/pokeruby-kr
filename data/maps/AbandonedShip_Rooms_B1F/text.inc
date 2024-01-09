@@ -1,5 +1,9 @@
 AbandonedShip_Rooms_B1F_Text_1986FE:: @ 81986FE
-	.string "Urrrrppp...\p"
-	.string "I'm getting queasy just being aboard\n"
-	.string "this ship...\p"
-	.string "It's not even moving, but...$"
+	.string "우웁...\p"
+	.string "어째선지 배 안에 있는 것만으로도\n"
+	.string "멀미를 해버려...\p"
+	.string "배는 조금도 안 움직이는데...$"
+	// うぅ……ｐ
+	// なんだか ふねの なかに いるだけでｎ
+	// よってきちゃった……ｐ
+	// ふねは ちっとも うごいてないのに……

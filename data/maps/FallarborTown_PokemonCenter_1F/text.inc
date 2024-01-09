@@ -1,27 +1,49 @@
 FallarborTown_PokemonCenter_1F_Text_1774D4:: @ 81774D4
-	.string "Oh, hello.\n"
-	.string "You are?\p"
-	.string "Okay, your name's {PLAYER}{KUN}.\n"
-	.string "I can see that you're a TRAINER.\p"
-	.string "So that means you use the POKéMON\n"
-	.string "Storage System I developed.\p"
-	.string "How I arrived at that conclusion is\n"
-	.string "a simple deductive process.\p"
-	.string "You spoke to me because you wanted\n"
-	.string "to access something on this PC.\p"
-	.string "Oh, I'm sorry. I'm LANETTE.\p"
-	.string "Honestly, I'm glad to meet you - it's\n"
-	.string "great you're using the Storage System.\p"
-	.string "If you could, please visit me at home.\n"
-	.string "My house is on ROUTE 114.$"
+	.string "당신은...?\p"
+	.string "{PLAYER}{K_I}라고 하는군요\n"
+	.string "당신 트레이너네요\p"
+	.string "그렇다는 건 제가 만든\n"
+	.string "보관 시스템을 쓰고 계신 거죠?\p"
+	.string "왜냐면 사용하고 싶으니까\n"
+	.string "PC 앞에 있는 저한테\l"
+	.string "말을 걸었을 거 아니에요\l"
+	.string "간단한 추리죠\p"
+	.string "아 전 유미라고 해요\p"
+	.string "보관 시스템을 사용하고 있는\n"
+	.string "트레이너를 만나서 너무 기뻐요\p"
+	.string "괜찮으시다면 저희 집에도\n"
+	.string "놀러 와 주세요\l"
+	.string "114번 도로에 있으니까요$"
+	// あなたは……?ｐ
+	// §あ§お というのですかｎ
+	// あなた トレ-ナ- なんですねｐ
+	// ということは あたしの つくったｎ
+	// あずかりシステム つかってますね?ｐ
+	// だって つかいたいからｎ
+	// パソコンの まえに いる あたしにｌ
+	// はなしかけてきた という わけですよねｌ
+	// かんたんな すいり ですｐ
+	// あっ あたし マユミ といいますｐ
+	// あずかりシステムを つかっているｎ
+	// トレ-ナ-に あえて すごく うれしいですｐ
+	// よかったら あたしの いえにもｎ
+	// あそびに きてくださいｌ
+	// 114ばんどうろに ありますから
 
 FallarborTown_PokemonCenter_1F_Text_17768C:: @ 817768C
-	.string "I wonder what POKéMON looked like\n"
-	.string "long, long ago?\p"
-	.string "Maybe the FOSSIL MANIAC at the edge\n"
-	.string "of town will know.$"
+	.string "오랜 옛날의 포켓몬은\n"
+	.string "어떤 모습이었을까?\p"
+	.string "이 마을 외곽에 있는\n"
+	.string "화석마니아라면 알려줄지도 몰라$"
+	// おおむかしの ポケモンってｎ
+	// どんな すがた だったのかしら?ｐ
+	// この まちの はずれにいるｎ
+	// かせきマニアなら おしえてくれるかも
 
 FallarborTown_PokemonCenter_1F_Text_1776F5:: @ 81776F5
-	.string "In the fields of FALLARBOR, we plant\n"
-	.string "seedlings of hardy trees that thrive\l"
-	.string "even in volcanic ash.$"
+	.string "여기 단풍마을의 밭에는\n"
+	.string "화산재 안에서도 자랄 정도로\l"
+	.string "튼튼한 나무의 모종을 심어놨단다$"
+	// この ハジツゲの はたけ ではなｎ
+	// かざんばいの なかでも そだつようなｌ
+	// じょうぶな きの なえを うえてるんじゃ

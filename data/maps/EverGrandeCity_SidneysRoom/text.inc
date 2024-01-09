@@ -1,20 +1,33 @@
 EverGrandeCity_SidneysRoom_Text_190728:: @ 8190728
-	.string "Welcome, challenger!\n"
-	.string "I'm SIDNEY of the ELITE FOUR.\p"
-	.string "I like that look you're giving me.\n"
-	.string "I guess you'll give me a good match.\l"
-	.string "That's good! Looking real good!\p"
-	.string "All right! You and me, let's enjoy a\n"
-	.string "battle that can only be staged here\l"
-	.string "in the POKéMON LEAGUE!$"
+	.string "어서 오라고 도전자!\n"
+	.string "난 사천왕 혁진이다\p"
+	.string "으-음 좋은 표정인걸\n"
+	.string "제법 즐길 수 있겠는데!\l"
+	.string "좋아! 좋은 느낌이 들어!\p"
+	.string "좋았어! 나하고 너로\n"
+	.string "포켓몬리그에서만 맛볼 수 있는\l"
+	.string "배틀을 즐겨보도록 하자고!!$"
+	// ようこそ チャレンジャ-!ｎ
+	// おれは してんのうの カゲツｐ
+	// う-ん いい かお してるなｎ
+	// なかなか たのしませて くれそうだぞ!ｌ
+	// いいぞ! いい かんじだぞ!ｐ
+	// よ-し! おれと おまえ とでｎ
+	// ポケモン リ-グでしか できないｌ
+	// たたかいを たのしむと しようぜ!!
 
 EverGrandeCity_SidneysRoom_Text_190823:: @ 8190823
-	.string "Well, how do you like that? I lost!\n"
-	.string "Eh, it was fun, so it doesn't matter.$"
+	.string "이런이런 져버렸군\n"
+	.string "뭐 즐겼으니 상관없지만$"
+	// おやおや まけちまったよｎ
+	// まっ たのしんだから いいんだけどよ
 
 EverGrandeCity_SidneysRoom_Text_19086D:: @ 819086D
-	.string "Well, listen to what this loser has\n"
-	.string "to say.\p"
-	.string "You've got what it takes to go far.\n"
-	.string "Now, go on to the next room and enjoy\l"
-	.string "your next battle!$"
+	.string "패배한 내가 한마디 하지\p"
+	.string "너라면 더 앞으로 나아갈 수 있어\n"
+	.string "자 다음 방으로 가서\l"
+	.string "배틀을 즐기고 와!$"
+	// まけた おれから ひとことｐ
+	// おまえなら もっと さきに すすめるぜｎ
+	// さあ つぎの へやに いってｌ
+	// たたかいを たのしんで きなよ!

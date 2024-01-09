@@ -1,70 +1,101 @@
 AbandonedShip_Rooms2_1F_Text_1987C1:: @ 81987C1
-	.string "HAL: While searching for treasures,\n"
-	.string "we discovered a TRAINER!$"
+	.string "중문: 보물을 찾고 있었더니\n"
+	.string "트레이너를 발견!$"
+	// フミ『おたから さがしていたらｎ
+	// トレ-ナ- はっけん!
 
 AbandonedShip_Rooms2_1F_Text_1987FE:: @ 81987FE
-	.string "HAL: We couldn't win even though\n"
-	.string "we worked together...$"
+	.string "중문: 우리 둘의 힘으로도\n"
+	.string "이길 수 없었나...$"
+	// フミ『ぼくたち ふたりの ちからでもｎ
+	// かてなかったのか……
 
 AbandonedShip_Rooms2_1F_Text_198835:: @ 8198835
-	.string "HAL: We can't find any treasures...\n"
-	.string "I wonder if someone got them already?$"
+	.string "중문: 보물을 못 찾겠네...\n"
+	.string "벌써 누가 가져간 거 아닐까?$"
+	// フミ『おたから みつからないんだよね……ｎ
+	// もう だれかが もっていったのかな?
 
 AbandonedShip_Rooms2_1F_Text_19887F:: @ 819887F
-	.string "HAL: You don't even have two POKéMON.\n"
-	.string "You can't expect to beat us like that.$"
+	.string "중문: 포켓몬 2마리가 없구나\n"
+	.string "그래선 우리를 이길 수 없어!$"
+	// フミ『ポケモン 2ひき いないんだねｎ
+	// それだと ぼくたちには かてないよ!
 
 AbandonedShip_Rooms2_1F_Text_1988CC:: @ 81988CC
-	.string "LOIS: Oh? We were looking for some\n"
-	.string "treasure, but we only found a TRAINER.$"
+	.string "소영: 어머? 보물을 찾고 있었는데\n"
+	.string "트레이너를 발견했네!$"
+	// アヤ『あら? おたから さがしていたのにｎ
+	// トレ-ナ- はっけん しちゃった!
 
 AbandonedShip_Rooms2_1F_Text_198916:: @ 8198916
-	.string "LOIS: Oh, wow, you're strong!$"
+	.string "소영: 강하구나!$"
+	// アヤ『つよいんだ!
 
 AbandonedShip_Rooms2_1F_Text_198934:: @ 8198934
-	.string "LOIS: I wonder where the treasures\n"
-	.string "are hidden?\p"
-	.string "I already know what I'm going to buy\n"
-	.string "when I find them!$"
+	.string "소영: 보물은 어디 있을까?\n"
+	.string "찾으면 뭘 살지 고민하고 있어!$"
+	// アヤ『おたから どこかな?ｎ
+	// みつかったら なに かおうか きめてるのよ!
 
 AbandonedShip_Rooms2_1F_Text_19899A:: @ 819899A
-	.string "LOIS: Don't you have two POKéMON?\n"
-	.string "We'll have to battle another time!$"
+	.string "소영: 어머 포켓몬 2마리가 아니구나?\n"
+	.string "그럼 승부는 다음에 해야겠네!$"
+	// アヤ『あら ポケモン 2ひき いないの?ｎ
+	// じゃあ しょうぶは おあずけね!
 
 AbandonedShip_Rooms2_1F_Text_1989DF:: @ 81989DF
-	.string "HAL: We've been searching for\n"
-	.string "treasures all this time.\p"
-	.string "Our POKéMON have grown stronger, too.\n"
-	.string "Let us show you, okay?$"
+	.string "중문: 계속 보물을 찾다 보니\n"
+	.string "포켓몬도 강해졌단 말이지-!\l"
+	.string "잠깐 상대해줘$"
+	// フミ『ずっと おたから さがしていてｎ
+	// ポケモンも つよく なったんだよね-!ｌ
+	// ちょっと あいて してみてよ
 
 AbandonedShip_Rooms2_1F_Text_198A53:: @ 8198A53
-	.string "HAL: You're strong as usual!$"
+	.string "중문: 변함없이 강하구나!$"
+	// フミ『あいかわらず つよいな!
 
 AbandonedShip_Rooms2_1F_Text_198A70:: @ 8198A70
-	.string "HAL: We can't find any treasures,\n"
-	.string "we lose at POKéMON...\p"
-	.string "I want to go home... But if I say that,\n"
-	.string "she gets all angry with me...$"
+	.string "중문: 보물도 못 찾겠고\n"
+	.string "포켓몬 승부도 졌으니 집 가고 싶다\p"
+	.string "하지만 그런 말을 하면\n"
+	.string "여자친구가 화를 내겠지...$"
+	// フミ『おたからは みつからないしｎ
+	// ポケモンは まけるし いえに かえりたいよｐ
+	// でも そんなこと いうとｎ
+	// かのじょ おこりだすからな……
 
 AbandonedShip_Rooms2_1F_Text_198AEE:: @ 8198AEE
-	.string "HAL: You don't even have two POKéMON.\n"
-	.string "You can't expect to beat us like that.$"
+	.string "중문: 포켓몬 2마리가 없구나\n"
+	.string "그러면 우리를 이길 수 없어!$"
+	// フミ『ポケモン 2ひき いないんだねｎ
+	// それだと ぼくたちには かてないよ!
 
 AbandonedShip_Rooms2_1F_Text_198B3B:: @ 8198B3B
-	.string "LOIS: Oh, hi, we meet again!\p"
-	.string "Just like us, you haven't given up\n"
-	.string "searching for treasures!\p"
-	.string "How about we battle, and the loser has\n"
-	.string "to give up looking?$"
+	.string "소영: 어머? 또 만났네!\n"
+	.string "우리처럼 포기하지 않고\l"
+	.string "보물을 찾고 있나보구나!\p"
+	.string "승부해서 진 쪽이\n"
+	.string "포기하는 걸로 하지 않을래?$"
+	// アヤ『あら? また であったわね!ｎ
+	// あたしたちと いっしょで あきらめずにｌ
+	// おたから さがしているのね!ｐ
+	// しょうぶして まけた ほうはｎ
+	// あきらめることに しない?
 
 AbandonedShip_Rooms2_1F_Text_198BCF:: @ 8198BCF
-	.string "LOIS: Oh, we lost again...$"
+	.string "소영: 또 져버렸어...$"
+	// アヤ『また まけちゃった……
 
 AbandonedShip_Rooms2_1F_Text_198BEA:: @ 8198BEA
-	.string "LOIS: We'll raise our POKéMON more.\p"
-	.string "We're not going home until we find our\n"
-	.string "treasures!$"
+	.string "소영: 더욱 포켓몬을 키워서\n"
+	.string "보물을 찾을 때까지 안 돌아갈 거야!$"
+	// アヤ『もっと ポケモン そだててｎ
+	// おたから みつけるまで かえらないわよ!
 
 AbandonedShip_Rooms2_1F_Text_198C40:: @ 8198C40
-	.string "LOIS: Don't you have two POKéMON?\n"
-	.string "We'll have to battle another time!$"
+	.string "소영: 어머 포켓몬 2마리가 아니구나?\n"
+	.string "그럼 승부는 다음에 해야겠네!$"
+	// アヤ『あら ポケモン 2ひき いないの?ｎ
+	// じゃあ しょうぶは おあずけね!

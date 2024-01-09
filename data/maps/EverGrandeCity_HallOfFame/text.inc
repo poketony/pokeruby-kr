@@ -1,13 +1,21 @@
 EverGrandeCity_HallOfFame_Text_191841:: @ 8191841
-	.string "STEVEN: This room...\p"
-	.string "This is where we keep records of\n"
-	.string "POKéMON that prevailed through\l"
-	.string "harsh battles.\p"
-	.string "It is here that the LEAGUE CHAMPIONS\n"
-	.string "are honored.$"
+	.string "성호: 이곳은...\p"
+	.string "격렬한 싸움을 이겨낸\n"
+	.string "포켓몬을 기록하는 곳이자\p"
+	.string "리그 챔피언의\n"
+	.string "영광을 기리기 위한 장소야!$"
+	// ダイゴ『ここは……ｐ
+	// はげしい たたかいを かちぬいたｎ
+	// ポケモンを きろくする ばしょｐ
+	// リ-グ チャンピオンのｎ
+	// えいこうを たたえるための へや!
 
 EverGrandeCity_HallOfFame_Text_1918D7:: @ 81918D7
-	.string "STEVEN: Come on, let's record your\n"
-	.string "name as a TRAINER who triumphed over\l"
-	.string "the POKéMON LEAGUE, and the names of\l"
-	.string "the partners who battled with you.$"
+	.string "성호: 자! 포켓몬리그에서\n"
+	.string "승리를 쟁취한 네 이름과\p"
+	.string "함께 싸운 너의 파트너를\n"
+	.string "이 머신에 기록하자!$"
+	// ダイゴ『さあ! ポケモン リ-グをｎ
+	// かちぬいた きみの なまえとｐ
+	// ともに たたかった きみの パ-トナ-をｎ
+	// この マシンに きろく しよう!

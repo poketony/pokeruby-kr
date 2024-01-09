@@ -1,116 +1,189 @@
 FortreeCity_Gym_Text_18589C:: @ 818589C
-	.string "Yo, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "FORTREE GYM LEADER WINONA is a\n"
-	.string "master of FLYING-type POKéMON.\p"
-	.string "She's waiting at the back of this GYM,\n"
-	.string "behind the rotating doors.\p"
-	.string "She's waiting for new challengers who\n"
-	.string "are trying to take wing!\p"
-	.string "Okay, go for it!$"
+	.string "잘 있었나!!\n"
+	.string "챔피언을 노리는 {PLAYER}!!\p"
+	.string "검방울시티 체육관 관장 은송은\n"
+	.string "비행타입의 포켓몬을 쓴다!\p"
+	.string "이 회전문투성이인\n"
+	.string "체육관 안에서\p"
+	.string "그녀는 새로운 도전자가\n"
+	.string "날아오르길 기다리고 있지!\p"
+	.string "그럼 힘내라고-!!$"
+	// げんき しとぉや!!ｎ
+	// チャンピオンを めざす §あ!!ｐ
+	// ヒワマキシティ ジムの リ-ダ- ナギはｎ
+	// ひこうタイプ ポケモンの つかいてだ!ｐ
+	// この かいてんとびら だらけのｎ
+	// ジムの おくでｐ
+	// かのじょは あらたな チャレンジャ-がｎ
+	// はばたこうと するのを まっている!ｐ
+	// じゃ きばってこォ-!!
 
 FortreeCity_Gym_Text_185994:: @ 8185994
-	.string "You did it!\n"
-	.string "You've achieved liftoff!$"
+	.string "마침내 넌 날아올랐구나!$"
+	// えんやっと きみは はばたいたッ!
 
 FortreeCity_Gym_Text_1859B9:: @ 81859B9
-	.string "Behold the elegant battle style of\n"
-	.string "BIRD POKéMON!$"
+	.string "화려한 새포켓몬의 배틀을\n"
+	.string "보여주마!$"
+	// かれいな とりポケモンの たたかいをｎ
+	// みせて やるぜっ!
 
 FortreeCity_Gym_Text_1859EA:: @ 81859EA
-	.string "You...\n"
-	.string "You're strong...$"
+	.string "너... 강하군...$"
+	// きみ…… つよいんだな……
 
 FortreeCity_Gym_Text_185A02:: @ 8185A02
-	.string "A TRAINER has to be smart to keep\n"
-	.string "up with unexpected turns of events.\p"
-	.string "Let's see if you have the smarts to\n"
-	.string "get to our LEADER?$"
+	.string "트레이너는 머리 회전도\n"
+	.string "빨라야 한다!\p"
+	.string "너는 관장이 있는 데까지\n"
+	.string "무사히 도착할 수 있을까?$"
+	// トレ-ナ-は あたまの かいてんもｎ
+	// はやく なければ つとまらないぜ!ｐ
+	// きみは リ-ダ-の ところまでｎ
+	// ちゃんと たどりつく ことが できるかい?
 
 FortreeCity_Gym_Text_185A7F:: @ 8185A7F
-	.string "The lovers of BIRD POKéMON aspire\n"
-	.string "to join this GYM.\p"
-	.string "As a member of the FORTREE GYM,\n"
-	.string "I'm not allowed to lose!$"
+	.string "새포켓몬을 사랑하는 사람은\n"
+	.string "이 체육관을 목표로 하고 있지!\p"
+	.string "검방울체육관의 일원으로서\n"
+	.string "패배할 수는 없다!$"
+	// とりポケモンを あいする ものはｎ
+	// この ジムを もくひょうと している!ｐ
+	// ヒワマキ ジムの いちいん としてｎ
+	// まける わけには いかないんだ!
 
 FortreeCity_Gym_Text_185AEC:: @ 8185AEC
-	.string "It was too much of a load for me\n"
-	.string "to bear...$"
+	.string "나에겐 너무 큰 짐이었나...!$"
+	// オレには にが おもすぎたか……!
 
 FortreeCity_Gym_Text_185B18:: @ 8185B18
-	.string "The world is huge, and there are\n"
-	.string "countless tough TRAINERS.\p"
-	.string "I'm going to keep training and make\n"
-	.string "myself even stronger.$"
+	.string "세계는 넓고\n"
+	.string "강한 트레이너도 넘쳐나지\p"
+	.string "나도 여기서 계속 수행해서\n"
+	.string "강해질 거다!$"
+	// せかいは ひろいｎ
+	// つよい トレ-ナ-は たくさん いるｐ
+	// オレも ここで しゅぎょうを つづけてｎ
+	// つよくなって みせるよ!
 
 FortreeCity_Gym_Text_185B8D:: @ 8185B8D
-	.string "There's no need for WINONA, our GYM\n"
-	.string "LEADER, to deal with you!\p"
-	.string "I'm plenty good enough for you!$"
+	.string "체육관 관장인 은송님이\n"
+	.string "손쓰실 필요도 없어!\p"
+	.string "네 상대는 나로 충분하다!$"
+	// ジムリ-ダ-の ナギさんのｎ
+	// てを わずらわせるまでも ない!ｐ
+	// きみの あいては オレで じゅうぶん!
 
 FortreeCity_Gym_Text_185BEB:: @ 8185BEB
-	.string "WINONA, I...\n"
-	.string "I lost!$"
+	.string "은송님...! 져버렸습니다...!$"
+	// ナギさん…… まけました……!
 
 FortreeCity_Gym_Text_185C00:: @ 8185C00
-	.string "WINONA is cute and she's strong.\n"
-	.string "She's the ultimate LEADER!\p"
-	.string "Blush...$"
+	.string "은송님은 귀여운 데다 강하시다...\n"
+	.string "정말 최고의 관장이지!\p"
+	.string "...크흠$"
+	// ナギさんは かわいくて つよい……ｎ
+	// ほんと さいこうの リ-ダ-だよ!ｐ
+	// ……ポッ
 
 FortreeCity_Gym_Text_185C45:: @ 8185C45
-	.string "WINONA taught me personally!\n"
-	.string "You can't beat me easily!$"
+	.string "은송님의 가르침을 받은 나를!\n"
+	.string "그렇게 간단히 쓰러뜨릴 순 없을걸?$"
+	// ナギさんの おしえを うけた あたし!ｎ
+	// そう かんたんに たおされないわ!
 
 FortreeCity_Gym_Text_185C7C:: @ 8185C7C
-	.string "I was beaten...$"
+	.string "쓰러졌다...$"
+	// たおされ ちゃった……
 
 FortreeCity_Gym_Text_185C8C:: @ 8185C8C
-	.string "Thanks to WINONA, the people of\n"
-	.string "FORTREE can live without fear.$"
+	.string "은송님이 계셔서\n"
+	.string "검방울시티 사람들은 안심하고 지낼 수 있어$"
+	// ナギさんが いてくれるからｎ
+	// ヒワマキの ひとは あんしんして くらせるの
 
 FortreeCity_Gym_Text_185CCB:: @ 8185CCB
-	.string "I am WINONA. I am the LEADER of the\n"
-	.string "FORTREE POKéMON GYM.\p"
-	.string "I have become one with BIRD POKéMON\n"
-	.string "and have soared the skies...\p"
-	.string "However grueling the battle, we have\n"
-	.string "triumphed with grace...\p"
-	.string "Witness the elegant choreography\n"
-	.string "of BIRD POKéMON and I!$"
+	.string "저는 이 검방울시티 체육관에서\n"
+	.string "관장을 맡고 있는 은송...\p"
+	.string "새포켓몬과 마음을 나누며\n"
+	.string "같이 넓은 하늘을 날아...\p"
+	.string "어떠한 힘든 승부에서도\n"
+	.string "우아하게 이겨 보이죠...\p"
+	.string "자 저와 포켓몬이 만들어내는\n"
+	.string "화려한 춤을 보시죠!$"
+	// わたしは この ヒワマキ ジムでｎ
+	// リ-ダ-を している ナギ……ｐ
+	// とりポケモンと こころを かよわしｎ
+	// いっしょに おおぞらを まい……ｐ
+	// どんな くるしい しょうぶもｎ
+	// ゆうがに かってみせる……ｐ
+	// さあ わたしと ポケモンが おりなすｎ
+	// かれいな まいを みせましょう!
 
 FortreeCity_Gym_Text_185DBA:: @ 8185DBA
-	.string "Never before have I seen a TRAINER\n"
-	.string "command POKéMON with more grace\l"
-	.string "than I...\p"
-	.string "In recognition of your prowess,\n"
-	.string "I present to you this GYM BADGE.$"
+	.string "저보다 화려하게\n"
+	.string "포켓몬을 다루는 사람은...\l"
+	.string "처음 봤어요...\p"
+	.string "그 실력을 인정하여\n"
+	.string "이 체육관 배지를 드리겠습니다!$"
+	// わたしより かれいにｎ
+	// ポケモンを たたかわせる ひと……ｌ
+	// はじめて であいました……ｐ
+	// その じつりょくを みとめｎ
+	// この ジムバッジを おわたしします!
 
 FortreeCity_Gym_Text_185E48:: @ 8185E48
-	.string "{PLAYER} received the FEATHER BADGE\n"
-	.string "from WINONA.$"
+	.string "{PLAYER}{K_EUNNEUN} 은송에게서\n"
+	.string "깃털배지를 받았다!$"
+	// §あは ナギからｎ
+	// フェザ-バッジを もらった!
 
 FortreeCity_Gym_Text_185E73:: @ 8185E73
-	.string "With the FEATHER BADGE, all POKéMON up\n"
-	.string "to LV 70, even those received through\l"
-	.string "trades, will obey your every command.\p"
-	.string "You will also be able to use the\n"
-	.string "HM move FLY outside of battle.\p"
-	.string "And this...\n"
-	.string "This is a gift from me.$"
+	.string "깃털배지를 달고 있으면\n"
+	.string "다른 사람에게 받은 포켓몬이라도\l"
+	.string "레벨 70까지의 포켓몬이라면\l"
+	.string "명령에 잘 따라줍니다!\p"
+	.string "비전기술 공중날기도\n"
+	.string "사용할 수 있게 되죠!\p"
+	.string "그리고 이걸\n"
+	.string "당신에게 선물하겠어요$"
+	// フェザ-バッジを つけてるとｎ
+	// ひとから もらった ポケモンでもｌ
+	// レベル70までの ポケモンならｌ
+	// いうことを すなおに きいてくれます!ｐ
+	// ひでんわざの そらをとぶ をｎ
+	// つかえる ようにも なります!ｐ
+	// そして これをｎ
+	// あなたに プレゼント します
 
 FortreeCity_Gym_Text_185F4A:: @ 8185F4A
-	.string "TM40 contains AERIAL ACE.\p"
-	.string "Its speed...\n"
-	.string "No POKéMON should be able to avoid it.$"
+	.string "기술머신40의 내용물은\n"
+	.string "제비반환!\p"
+	.string "그 스피드는...\n"
+	.string "어떤 포켓몬도\l"
+	.string "피할 수 없겠지요!$"
+	// わざマシン40の なかみはｎ
+	// つばめがえし!ｐ
+	// その すばやさ……ｎ
+	// どんな ポケモンでもｌ
+	// よけることは できないでしょう!
 
 FortreeCity_Gym_Text_185F98:: @ 8185F98
-	.string "Though I fell to you, I will remain\n"
-	.string "devoted to BIRD POKéMON.$"
+	.string "당신에게는 졌지만\p"
+	.string "저는 앞으로도\n"
+	.string "새포켓몬만을 사용할 거예요$"
+	// あなたには まけました けどｐ
+	// わたしは これからもｎ
+	// とりポケモンに こだわって いきます
 
 FortreeCity_Gym_Text_185FD5:: @ 8185FD5
-	.string "FORTREE CITY POKéMON GYM$"
+	.string "검방울시티 포켓몬체육관$"
+	// ヒワマキシティ ポケモンジム
 
 FortreeCity_Gym_Text_185FEE:: @ 8185FEE
-	.string "FORTREE CITY POKéMON GYM\p"
-	.string "WINONA'S CERTIFIED TRAINERS:\n"
+	.string "검방울시티 포켓몬체육관\p"
+	.string "은송 인정 트레이너!\n"
 	.string "{PLAYER}$"
+	// ヒワマキシティ ポケモンジムｐ
+	// ナギ にんてい トレ-ナ-!ｎ
+	// §あ

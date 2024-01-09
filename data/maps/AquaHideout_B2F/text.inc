@@ -1,58 +1,97 @@
 AquaHideout_B2F_Text_197093:: @ 8197093
-	.string "Hehehe...\p"
-	.string "Got here already, did you?\n"
-	.string "We underestimated you!\p"
-	.string "But this is it!\p"
-	.string "I'm a cut above the GRUNTS you've seen\n"
-	.string "so far.\p"
-	.string "I'm not stalling for time. I'm going\n"
-	.string "to pulverize you!$"
+	.string "우효효...\p"
+	.string "벌써 여기까지 온 건가!\n"
+	.string "생각한 것보다 강하군!\p"
+	.string "하지만 여기까지다!\n"
+	.string "난 여태까지의 조무래기들과는\l"
+	.string "차원이 달라!\p"
+	.string "시간벌기 따윈 하지 않고\n"
+	.string "널 짓밟아 주지!$"
+	// ウヒョヒョ……ｐ
+	// もう ここまで きたのか!ｎ
+	// おもって いたより やるな!ｐ
+	// だが ここまでだ!ｎ
+	// おれは これまでの したっぱども とはｌ
+	// ひとあじ ちがう!ｐ
+	// じかんかせぎ なんか しねえでｎ
+	// おまえを コテンパンに してやるぜ!
 
 AquaHideout_B2F_Text_197145:: @ 8197145
-	.string "Hehehe...\n"
-	.string "So, I lost, too...$"
+	.string "우효효...\n"
+	.string "져버렸나...$"
+	// ウヒョヒョ……ｎ
+	// まけちまったか……
 
 AquaHideout_B2F_Text_197162:: @ 8197162
-	.string "Hehehe!\p"
-	.string "While I was toying with you, our BOSS\n"
-	.string "got through his preparations!$"
+	.string "우효효...!\p"
+	.string "내가 너하고\n"
+	.string "놀아준 사이에\l"
+	.string "리더는 준비를 끝내셨을 거다!$"
+	// ウヒョヒョ……!ｐ
+	// おれが おまえとｎ
+	// あそんで やっている あいだにｌ
+	// リ-ダ-の じゅんびが ととのったぜ!
 
 AquaHideout_B2F_Text_1971AE:: @ 81971AE
-	.string "Hehehe!\p"
-	.string "Our BOSS has already gone on his way to\n"
-	.string "some cave under the sea!\p"
-	.string "If you're going to give chase, you'd\n"
-	.string "better search the big, wide sea beyond\l"
-	.string "LILYCOVE.\p"
-	.string "But will you find it then?\n"
-	.string "Hehehe!$"
+	.string "우효효...!\p"
+	.string "리더는 어딘가의 해저에 있는\n"
+	.string "동굴로 출발하셨을 거다!\p"
+	.string "쫓아가려면 해안시티 너머에\n"
+	.string "펼쳐진 거대한 바다를\l"
+	.string "마구 돌아다녀 보라고!\p"
+	.string "그렇게 해서 찾을 수 있다면 말이지...\n"
+	.string "우효효!$"
+	// ウヒョヒョ……!ｐ
+	// リ-ダ-は どこかの かいていにあるｎ
+	// どうくつへ しゅっぱつ したぜ!ｐ
+	// おいかける つもりなら ミナモの さきにｎ
+	// ひろがる でっかい うみをｌ
+	// さがしまわって みるが いいぜ!ｐ
+	// それで みつかれば いいけどな……ｎ
+	// ウヒョヒョヒョ!
 
 AquaHideout_B2F_Text_197270:: @ 8197270
-	.string "Wahahah, I grew weary of waiting!\n"
-	.string "You owe me a battle, too!$"
+	.string "왓핫핫 목이 빠지는 줄 알았다!\n"
+	.string "나랑도 승부해 주실까!$"
+	// わっはっは まちくたびれたぞ!ｎ
+	// おいらとも しょうぶ してもらおうか!
 
 AquaHideout_B2F_Text_1972AC:: @ 81972AC
-	.string "Tired of waiting...\n"
-	.string "Lost and dazed...$"
+	.string "기다리다 너무 지쳐서\n"
+	.string "져버렸다...$"
+	// まちくたびれてｎ
+	// まけて やぶれて……
 
 AquaHideout_B2F_Text_1972D2:: @ 81972D2
-	.string "BOSS...\n"
-	.string "Is this good enough?$"
+	.string "리더어...\n"
+	.string "이 정도면 된 거겠죠-!$"
+	// リ-ダ-ぁ……ｎ
+	// こんなもんで どうでしょ-!
 
 AquaHideout_B2F_Text_1972EF:: @ 81972EF
-	.string "Warp panels, the HIDEOUT's pride\n"
-	.string "and joy!\p"
-	.string "You're clueless about where you are,\n"
-	.string "aren't you?\p"
-	.string "Fluster and tire out the enemy, then\n"
-	.string "lower the boom! That's our plan!$"
+	.string "아지트의 명물인 워프패널!\p"
+	.string "지금 자신이 어디에 있는지\n"
+	.string "하나도 모르겠지?\p"
+	.string "그렇게 지치게 만들어서 상대를\n"
+	.string "쓰러뜨리는 게 작전인 거야!$"
+	// アジト じまんの ワ-プパネル!ｐ
+	// いま じぶんが どこに いるのかｎ
+	// わかって ないでしょ!ｐ
+	// そうやって つかれはてた あいてをｎ
+	// たおすのが さくせん なのよ!
 
 AquaHideout_B2F_Text_197390:: @ 8197390
-	.string "What's wrong with you?\n"
-	.string "You're not tired at all!$"
+	.string "뭐얏!\n"
+	.string "하나도 안 지쳐 있잖아!$"
+	// なによっ!ｎ
+	// ちっとも つかれてない じゃない!
 
 AquaHideout_B2F_Text_1973C0:: @ 81973C0
-	.string "That reminds me... I can't remember\n"
-	.string "where I put the MASTER BALL.\p"
-	.string "If I fail to guard it, our BOSS will\n"
-	.string "chew me out...$"
+	.string "그러고 보니... 마스터볼을\n"
+	.string "어디에 뒀었는지 잊어버렸어\p"
+	.string "그걸 지키고 있지 않으면\n"
+	.string "리더에게 혼이 날 텐데...$"
+	// そういえば…… マスタ-ボ-ルをｎ
+	// どこに おいたのか わすれちゃったわｐ
+	// あれを まもっていないとｎ
+	// リ-ダ-に おこられるのよ……

@@ -1,28 +1,53 @@
 EverGrandeCity_DrakesRoom_Text_190CEB:: @ 8190CEB
-	.string "I am the last of the POKéMON LEAGUE\n"
-	.string "ELITE FOUR, DRAKE the DRAGON master!\p"
-	.string "In their natural state, POKéMON are\n"
-	.string "wild living things. They are free.\p"
-	.string "At times, they hinder us.\n"
-	.string "At times, they help us.\p"
-	.string "For us to battle with POKéMON as\n"
-	.string "partners, do you know what it takes?\p"
-	.string "Do you know what is needed?\p"
-	.string "If you don't, then you will never\n"
-	.string "prevail over me!$"
+	.string "이 몸이 포켓몬리그의\n"
+	.string "마지막 사천왕인\l"
+	.string "드래곤 조련사 권수다!\p"
+	.string "포켓몬은 본래\n"
+	.string "자유로운 야생의 생물이지\p"
+	.string "때로는 인간을 곤란하게 하고\n"
+	.string "때로는 인간을 도와준다\p"
+	.string "그런 포켓몬과 함께하는 배틀에\n"
+	.string "뭐가 필요한지\l"
+	.string "넌 알고 있나?\p"
+	.string "그걸 모른다면\n"
+	.string "이 몸을 이길 수 없다!$"
+	// わしが ポケモン リ-グｎ
+	// してんのう さいごの ひとりｌ
+	// ドラゴンつかいの ゲンジ!ｐ
+	// ポケモンは もともとｎ
+	// じゆうきままな やせいの いきものｐ
+	// ときとして ひとを こまらせｎ
+	// ときとして ひとを たすけるｐ
+	// そんな ポケモンと いっしょに たたかうのにｎ
+	// なにが ひつようかｌ
+	// おまえ わかって いるのか?ｐ
+	// わかっていなければｎ
+	// この わしに かつことは できるまい!
 
 EverGrandeCity_DrakesRoom_Text_190E42:: @ 8190E42
-	.string "Superb, it should be said.$"
+	.string "훌륭하다! 라고 할 만하군!$"
+	// みごと! というべきだな!
 
 EverGrandeCity_DrakesRoom_Text_190E5D:: @ 8190E5D
-	.string "You deserve every credit for coming\n"
-	.string "this far as a TRAINER of POKéMON.\p"
-	.string "You do seem to know what is needed.\p"
-	.string "Yes, what a TRAINER needs is a\n"
-	.string "virtuous heart.\p"
-	.string "POKéMON touch the good hearts of\n"
-	.string "TRAINERS and learn good from wrong.\p"
-	.string "They touch the good hearts of\n"
-	.string "TRAINERS and grow strong.\p"
-	.string "Go! Go onwards!\n"
-	.string "The CHAMPION is waiting!$"
+	.string "과연 여기까지\n"
+	.string "도달한 포켓몬 트레이너\l"
+	.string "뭐가 필요한지 잘 아는 것 같군\p"
+	.string "그래! 트레이너에게\n"
+	.string "필요한 것은 올바른 마음!\p"
+	.string "포켓몬은 트레이너의\n"
+	.string "올바른 마음을 느끼고\l"
+	.string "사물의 선악을 판단해서\l"
+	.string "올바른 마음을 느껴 강해지는 거다!\p"
+	.string "자! 계속 나아가라!\n"
+	.string "챔피언이 기다리고 있다!!$"
+	// さすがは ここまでｎ
+	// やってきた ポケモン トレ-ナ-ｌ
+	// ひつような もの わかっている ようだなｐ
+	// そう! トレ-ナ-にｎ
+	// ひつよう なのは ただしい こころ!ｐ
+	// ポケモンは トレ-ナ-のｎ
+	// ただしい こころに ふれてｌ
+	// ものごとの ぜんあくを はんだんしｌ
+	// ただしい こころに ふれて つよくなる!ｐ
+	// さあ つぎに すすめ!ｎ
+	// チャンピオンが まって おるぞ!!

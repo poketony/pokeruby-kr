@@ -1,192 +1,327 @@
 BattleTower_Lobby_Text_199F2C:: @ 8199F2C
-	.string "Welcome to the BATTLE TOWER!\p"
-	.string "Please register with me to enter\n"
-	.string "a BATTLE ROOM.$"
+	.string "어서 오세요!\p"
+	.string "여기서는 배틀룸의\n"
+	.string "안내를 하고 있습니다$"
+	// ようこそ!ｐ
+	// こちらでは バトルル-ムへのｎ
+	// ごあんないを しております
 
 BattleTower_Lobby_Text_199F79:: @ 8199F79
-	.string "Would you like to make a BATTLE ROOM\n"
-	.string "challenge?$"
+	.string "배틀룸에 도전하시겠습니까?$"
+	// バトルル-ムに ちょうせん しますか?
 
 BattleTower_Lobby_Text_199FA9:: @ 8199FA9
-	.string "We'll be looking forward to your\n"
-	.string "next challenge.$"
+	.string "그럼 다음에 또 이용해 주세요\n"
+	.string "기다리고 있겠습니다$"
+	// それでは またの ごりようをｎ
+	// おまちして おります
 
 BattleTower_Lobby_Text_199FDA:: @ 8199FDA
-	.string "Before entering a BATTLE ROOM, your\n"
-	.string "progress must be saved. Is that okay?$"
+	.string "배틀룸으로 안내하기 전에\n"
+	.string "리포트를 작성합니다만 괜찮겠습니까?$"
+	// バトルル-ムに ごあんないする まえにｎ
+	// レポ-トを かきますが よろしいですか?
 
 BattleTower_Lobby_Text_19A024:: @ 819A024
-	.string "There are two BATTLE ROOMS,\n"
-	.string "Level 50 and Level 100.\l"
-	.string "Which would you like to challenge?$"
+	.string "레벨50의 방과 레벨100의 방이\n"
+	.string "있습니다만 어느 쪽에 도전하겠습니까?$"
+	// レベル50の へやと レベル100の へやがｎ
+	// ありますが どちらに ちょうせん しますか?
 
 BattleTower_Lobby_Text_19A07B:: @ 819A07B
-	.string "Please select the POKéMON you wish\n"
-	.string "to enter.$"
+	.string "그럼 참가할 포켓몬을\n"
+	.string "선택해 주십시오$"
+	// それでは さんかする ポケモンをｎ
+	// えらんで ください
 
 BattleTower_Lobby_Text_19A0A8:: @ 819A0A8
-	.string "I'll direct you to your BATTLE ROOM now.$"
+	.string "그럼 배틀룸으로\n"
+	.string "안내하겠습니다!$"
+	// それでは バトルル-ムへｎ
+	// ごあんない します!
 
 BattleTower_Lobby_Text_19A0D1:: @ 819A0D1
-	.string "The BATTLE TOWER is a facility made\n"
-	.string "especially for POKéMON battles.\p"
-	.string "Within the TOWER are many BATTLE ROOMS.\p"
-	.string "In each BATTLE ROOM, seven TRAINERS\n"
-	.string "await your challenge.\p"
-	.string "Beat all seven, and you will be rewarded\n"
-	.string "with a fabulous prize.\p"
-	.string "You may also take a break from your\n"
-	.string "challenge by saving your progress.\p"
-	.string "Make sure you save properly or you\n"
-	.string "won't be able to resume your challenge.$"
+	.string "배틀타워는 포켓몬 대전을\n"
+	.string "하기 위한 시설입니다\p"
+	.string "타워에는 배틀룸이라고 하는\n"
+	.string "대전을 위한 방이\l"
+	.string "잔뜩 준비되어 있습니다\p"
+	.string "각각의 배틀룸에는\n"
+	.string "7명의 트레이너가\l"
+	.string "당신의 도전을 기다리고 있습니다\p"
+	.string "그 7명을 멋지게 쓰러뜨리시면\n"
+	.string "굉장한 상품을 드립니다!\p"
+	.string "그리고 도중에 도전을\n"
+	.string "중단하고 싶은 경우에는\l"
+	.string "제대로 리포트를 작성하지 않으면\l"
+	.string "계속해서 도전할 수 없으므로\l"
+	.string "부디 주의해 주십시오$"
+	// バトルタワ-は ポケモンたいせんをｎ
+	// おこなうための しせつですｐ
+	// タワ-ないには バトルル-ム というｎ
+	// たいせんの ために よういされた へやがｌ
+	// たくさん ようい されていますｐ
+	// それぞれ バトルル-ムにはｎ
+	// 7にんの トレ-ナ- が いてｌ
+	// あなたの チャレンジを まっていますｐ
+	// みごと その 7にんを たおした ときはｎ
+	// すてきな しょうひんを さしあげます!ｐ
+	// また とちゅうで ちょうせんをｎ
+	// ちゅうだんしたい ばあいはｌ
+	// ちゃんと レポ-トを かかないとｌ
+	// つづけて ちょうせんが できないのでｌ
+	// きをつけて くださいね
 
 BattleTower_Lobby_Text_19A249:: @ 819A249
-	.string "Excuse me!\p"
-	.string "You don't have three eligible POKéMON.\p"
-	.string "You must have three different POKéMON\n"
-	.string "of Level 50 or less to enter.\p"
-	.string "They also must be holding different\n"
-	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Please come see me when you are ready.$"
+	.string "손님!\p"
+	.string "참가 가능한 포켓몬이 3마리는 필요합니다!\p"
+	.string "참가하려면 레벨50 이하의\n"
+	.string "모두 종류가 다른 포켓몬을\l"
+	.string "3마리 준비해 주십시오\p"
+	.string "또한 지니게 할 도구도\n"
+	.string "모두 다른 도구로 해주세요!\p"
+	.string "그리고 알, 뮤,\n"
+	.string "뮤츠, 칠색조,\l"
+	.string "루기아, 세레비,\l"
+	.string "가이오가, 그란돈,\l"
+	.string "레쿠쟈, 지라치,\l"
+	.string "테오키스는\l"
+	.string "참가시킬 수 없습니다!\p"
+	.string "준비되면\n"
+	.string "다시 방문해 주십시오$"
+	// おきゃくさま!ｐ
+	// さんかできる ポケモンが 3ひき いません!ｐ
+	// さんかする ためには レベルが 50いかでｎ
+	// すべて ちがうしゅるいの ポケモンをｌ
+	// 3ひき よういして くださいｐ
+	// また もたせる どうぐもｎ
+	// すべて ちがう どうぐに してください!ｐ
+	// なお タマゴ§いさんか させることは できません!ｐ
+	// じゅんびが できましたらｎ
+	// また おこし ください
 
 BattleTower_Lobby_Text_19A32D:: @ 819A32D
-	.string "Excuse me!\p"
-	.string "You don't have three eligible POKéMON.\p"
-	.string "You must have three different POKéMON\n"
-	.string "to enter.\p"
-	.string "They also must be holding different\n"
-	.string "kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Please come see me when you are ready.$"
+	.string "손님!\p"
+	.string "참가 가능한 포켓몬이 3마리는 필요합니다!\p"
+	.string "참가하려면\n"
+	.string "모두 종류가 다른 포켓몬을\l"
+	.string "3마리 준비해 주십시오\p"
+	.string "또한 지니게 할 도구도\n"
+	.string "모두 다른 도구로 해주세요!\p"
+	.string "그리고 알, 뮤,\n"
+	.string "뮤츠, 칠색조,\l"
+	.string "루기아, 세레비,\l"
+	.string "가이오가, 그란돈,\l"
+	.string "레쿠쟈, 지라치,\l"
+	.string "테오키스는\l"
+	.string "참가시킬 수 없습니다!\p"
+	.string "준비되면\n"
+	.string "다시 방문해 주십시오$"
+	// おきゃくさま!ｐ
+	// さんかできる ポケモンが 3ひき いません!ｐ
+	// さんかする ためにはｎ
+	// すべて ちがうしゅるいの ポケモンをｌ
+	// 3ひき よういして くださいｐ
+	// また もたせる どうぐもｎ
+	// すべて ちがう どうぐに してください!ｐ
+	// なお タマゴ§いさんか させることは できません!ｐ
+	// じゅんびが できましたらｎ
+	// また おこし ください
 
 BattleTower_Lobby_Text_19A3FD:: @ 819A3FD
-	.string "Excuse me!\p"
-	.string "You didn't save before you quit your\n"
-	.string "challenge last time.\p"
-	.string "Because of that, your challenge so far\n"
-	.string "has been disqualified. Sorry!$"
+	.string "손님!\p"
+	.string "지난번에 제대로 리포트를 작성하지 않고\n"
+	.string "종료하셨지요?\p"
+	.string "죄송합니다만 이런 경우에는\n"
+	.string "도전이 무효가 됩니다$"
+	// おきゃくさま!ｐ
+	// ぜんかい ちゃんと レポ-トを かいてｎ
+	// しゅうりょう しませんでしたね?ｐ
+	// もうしわけ ありませんが そのばあいｎ
+	// ちょうせんは むこうと なります
 
 BattleTower_Lobby_Text_19A487:: @ 819A487
-	.string "Congratulations!\n"
-	.string "You've beaten all seven TRAINERS!\p"
+	.string "축하합니다!\n"
+	.string "멋지게 7명 돌파하셨네요!\p"
 	.string "$"
+	// おめでとう ございます!ｎ
+	// みごと 7にんぬき されましたね!ｐ
 
 BattleTower_Lobby_Text_19A4BB:: @ 819A4BB
-	.string "For beating seven TRAINERS in a row,\n"
-	.string "you have earned this fabulous prize!\p"
+	.string "7명을 돌파하기를 달성하였으므로\n"
+	.string "이 상품을 드리겠습니다!\p"
 	.string "$"
+	// 7にんぬきを たっせい されましたのでｎ
+	// この しょうひんを さしあげます!ｐ
 
 BattleTower_Lobby_Text_19A506:: @ 819A506
-	.string "{PLAYER} received the prize\n"
-	.string "{STR_VAR_1}.$"
+	.string "{PLAYER}{K_EUNNEUN}\n"
+	.string "{STR_VAR_1}{K_EULREUL} 받았다!$"
+	// §あはｎ
+	// §いを もらった!
 
 BattleTower_Lobby_Text_19A520:: @ 819A520
-	.string "Oh, your BAG appears to be full.\p"
-	.string "Please make room in your BAG, then come\n"
-	.string "see me.$"
+	.string "...어머 도구가 가득합니다\p"
+	.string "도구를 정리하고 나서\n"
+	.string "다시 와주세요$"
+	// …あら どうぐが いっぱいですねｐ
+	// どうぐを せいりしてからｎ
+	// またおこしください
 
 BattleTower_Lobby_Text_19A571:: @ 819A571
-	.string "Thank you for playing!\p"
+	.string "수고하셨습니다!\p"
 	.string "$"
+	// おつかれさまでした!ｐ
 
 BattleTower_Lobby_Text_19A589:: @ 819A589
-	.string "Your record will be saved.\n"
-	.string "Please wait.$"
+	.string "성적을 리포트에 작성하므로\n"
+	.string "기다려 주십시오$"
+	// せいせきを レポ-トに かきますのでｎ
+	// おまちください
 
 BattleTower_Lobby_Text_19A5B1:: @ 819A5B1
-	.string "We've been waiting for you!\p"
+	.string "기다리고 있었습니다!\p"
 	.string "$"
+	// おまちしておりました!
 
 BattleTower_Lobby_Text_19A5CE:: @ 819A5CE
-	.string "Before entering a BATTLE ROOM, your\n"
-	.string "progress will be saved. Please wait.$"
+	.string "배틀룸으로 안내하기 전에\n"
+	.string "리포트를 작성하므로 기다려 주십시오$"
+	// バトルル-ムに ごあんないする まえにｎ
+	// レポ-トを かきますので おまちください
 
 BattleTower_Lobby_Text_19A617:: @ 819A617
-	.string "You're finally about to face the\n"
-	.string "50th TRAINER.\p"
-	.string "From here on, every time you beat seven\n"
-	.string "TRAINERS in a row, your POKéMON will\l"
-	.string "receive a commemorative RIBBON.\p"
-	.string "Good luck!$"
+	.string "드디어 다음은 50번째\n"
+	.string "트레이너입니다!\p"
+	.string "이제부터는 7연승을 할 때마다\n"
+	.string "손님의 포켓몬에게 기념리본이\l"
+	.string "달리므로 열심히 해주세요!$"
+	// いよいよ つぎは 50にんめのｎ
+	// トレ-ナ- ですね!ｐ
+	// これからは 7にんを かちぬく たびにｎ
+	// あなたの ポケモンに きねんリボンがｌ
+	// おくられますので がんばって くださいね!
 
 BattleTower_Lobby_Text_19A6BE:: @ 819A6BE
-	.string "Here are some RIBBONS for beating\n"
-	.string "seven tough TRAINERS in a row.\p"
-	.string "{PLAYER} received some RIBBONS!$"
+	.string "강한 트레이너 7명에게\n"
+	.string "연승한 기념으로 리본을 드립니다!\p"
+	.string "{PLAYER}{K_EUNNEUN} 리본을 받았다!$"
+	// つよい トレ-ナ- 7にんをｎ
+	// かちぬいた きねんの リボンを どうぞ!ｐ
+	// §あは リボンを もらった!
 
 BattleTower_Lobby_Text_19A719:: @ 819A719
-	.string "{PLAYER} put the RIBBONS on the\n"
-	.string "challenger POKéMON.$"
+	.string "{PLAYER}{K_EUNNEUN} 포켓몬에게\n"
+	.string "리본을 달아 줬다!$"
+	// §あは ポケモンにｎ
+	// リボンを つけて あげた!
 
 BattleTower_Lobby_Text_19A747:: @ 819A747
-	.string "Hello, hello!\n"
-	.string "You're going to battle here, right?\p"
-	.string "Can you tell me what's going through\n"
-	.string "your mind as you prepare for battle?$"
+	.string "있잖아!\p"
+	.string "배틀타워에서 이제부터 승부다!\n"
+	.string "...라고 말할 때\l"
+	.string "너의 기분을 알려줘!$"
+	// ねえねえ!ｐ
+	// バトルタワ-で これから しょうぶだ!ｎ
+	// ……て いうときのｌ
+	// きみの きもちを おしえてよ!
 
 BattleTower_Lobby_Text_19A7C3:: @ 819A7C3
-	.string "Oh, wow, you'll tell me?\n"
-	.string "Great! Then, what's your answer?$"
+	.string "우와 가르쳐줄 거구나!\n"
+	.string "그럼 바로...$"
+	// おっ おしえて くれるの!ｎ
+	// じゃあ さっそく……
 
 BattleTower_Lobby_Text_19A7FD:: @ 819A7FD
-	.string "Oh, so you don't think much about it?\n"
-	.string "You're one cool customer.$"
+	.string "딱히 아무 생각도 없는 거야?\n"
+	.string "너 쿨하구나$"
+	// とくに なにも おもわないって こと?ｎ
+	// きみって ク-ルなんだね
 
 BattleTower_Lobby_Text_19A83D:: @ 819A83D
-	.string "Hunh? You changed your mind?\n"
-	.string "I guess you're fickle.$"
+	.string "어라? 역시 그만둘 거야?\n"
+	.string "너 변덕쟁이구나$"
+	// あれ? やっぱり やめたの?ｎ
+	// きみって きまぐれ なんだね
 
 BattleTower_Lobby_Text_19A871:: @ 819A871
-	.string "Okay, so that's how you feel?\n"
-	.string "That's quite original.\p"
-	.string "Thanks!$"
+	.string "흐음 그런 기분이구나!\n"
+	.string "꽤나 개성적인걸...\p"
+	.string "정말 고마워!$"
+	// へえ そんな きぶんに なるんだ!ｎ
+	// なかなか こせいてき だね……ｐ
+	// どうも ありがと!
 
 BattleTower_Lobby_Text_19A8AE:: @ 819A8AE
-	.string "The number of matches you win in a row\n"
-	.string "is recorded.\p"
-	.string "The record is posted beside the\n"
-	.string "registration counter.\p"
-	.string "It's also on the back of your\n"
-	.string "TRAINER'S CARD.$"
+	.string "연이어 이긴 트레이너의 수가\n"
+	.string "기록되고 있어!\p"
+	.string "기록은 접수처 옆에 있고\n"
+	.string "트레이너카드 뒷면에도 있어!$"
+	// かちぬいた トレ-ナ-の にんずうはｎ
+	// きろく されて いるのよ!ｐ
+	// きろくは うけつけの よこでもｎ
+	// トレ-ナ-カ-ドの うらでも みられるわよ!
 
 BattleTower_Lobby_Text_19A946:: @ 819A946
-	.string "Once you've entered the BATTLE TOWER,\n"
-	.string "you can't leave until you either lose\l"
-	.string "or you beat seven TRAINERS in a row.\p"
-	.string "You'd best be certain that you're up\n"
-	.string "to the challenge.$"
+	.string "일단 배틀타워에 들어가면\n"
+	.string "도중에 패배하거나\l"
+	.string "7명에게 승리할 때까지는\l"
+	.string "나올 수 없어!\p"
+	.string "각오하고 도전해야 돼!$"
+	// いちど バトルタワ-に はいればｎ
+	// とちゅうで まけちゃうかｌ
+	// 7にん かちぬくまではｌ
+	// でられなく なっちゃうんだ!ｐ
+	// かくごして チャレンジ しないとね!
 
 BattleTower_Lobby_Text_19A9EE:: @ 819A9EE
-	.string "Hahahaha! Pure magnificence!\n"
-	.string "Pure magnificence indeed!\p"
-	.string "Do you realize what you've achieved?\n"
-	.string "You've beaten 50 TRAINERS in a row!\p"
-	.string "Yes, purely magnificent!\p"
-	.string "As the OWNER of the BATTLE TOWER,\n"
-	.string "let me give you a memento!$"
+	.string "하하하 이야 훌륭하군요\n"
+	.string "정말 좋네요!\p"
+	.string "당신은 알고 계신가요?\n"
+	.string "50명을 패배시켜 버렸어요!\p"
+	.string "굉장하십니다!\p"
+	.string "배틀타워 오너인 제게서\n"
+	.string "부디 기념품을 받아주세요!$"
+	// はっはっはっ いやあ すばらしいｎ
+	// いやあ すばらしい!ｐ
+	// あなた わかってますか?ｎ
+	// 50にんぬきを しちゃったんですよ!ｐ
+	// じつに すばらしい!ｐ
+	// バトルタワ- オ-ナ-の わたしからｎ
+	// ぜひ きねんひんを おくらせて ください!
 
 BattleTower_Lobby_Text_19AAC4:: @ 819AAC4
-	.string "Wahahaha! Pure magnificence!\n"
-	.string "Absolutely pure magnificence indeed!\p"
-	.string "Do you realize what you've achieved?\n"
-	.string "You've beaten 100 TRAINERS in a row!\p"
-	.string "Yes, absolutely magnificent!\p"
-	.string "As the OWNER of the BATTLE TOWER,\n"
-	.string "let me give you a memento!$"
+	.string "우와하하 이야 훌륭하군요\n"
+	.string "정말 좋네요! 굉장해요!\p"
+	.string "당신은 알고 계신가요?\n"
+	.string "100명을 패배시켜 버렸어요!\l"
+	.string "정말로 대단하십니다!\p"
+	.string "배틀타워 오너인 제게서\n"
+	.string "부디 기념품을 받아주세요!$"
+	// うわっはっはっはっ いやあ すばらしいｎ
+	// いやあ すばらしい! じつに すばらしい!ｐ
+	// あなた わかってますか?ｎ
+	// 100にんぬきを しちゃったんですよ!ｌ
+	// ほんとうに すばらしい!ｐ
+	// バトルタワ- オ-ナ-の わたしからｎ
+	// ぜひ きねんひんを おくらせて ください!
 
 BattleTower_Lobby_Text_19ABAA:: @ 819ABAA
-	.string "I suggest you keep it displayed.\n"
-	.string "It will surely attract attention.$"
+	.string "이걸 장식해두면 주목받을 겁니다!$"
+	// これ かざっておくと めだちますよ!
 
 BattleTower_Lobby_Text_19ABED:: @ 819ABED
-	.string "Oh?\n"
-	.string "Your PC has no room for this...\p"
-	.string "But it would be a shame to waste this...\n"
-	.string "Please come back for this!$"
+	.string "앗 PC가 가득하군요...\p"
+	.string "하지만 모처럼이니까!\n"
+	.string "나중에라도 괜찮을 때 받으러 오십시오!$"
+	// あっ パソコンが いっぱいですか……ｐ
+	// しかし せっかくですから!ｎ
+	// あとでも よいので とりに きてください!
 
 BattleTower_Lobby_Text_19AC55:: @ 819AC55
-	.string "I'm overwhelmed with satisfaction after\n"
-	.string "seeing your magnificent performance.\p"
-	.string "It makes the building of the BATTLE\n"
-	.string "TOWER all worthwhile!$"
+	.string "이렇게 훌륭한 승부를\n"
+	.string "보여주시니 만족입니다!\l"
+	.string "배틀타워를 세운 보람이 있군요!$"
+	// あんなに すばらしい たたかいをｎ
+	// みせて いただいて まんぞくです!ｌ
+	// バトルタワ-を つくった かいが あった!

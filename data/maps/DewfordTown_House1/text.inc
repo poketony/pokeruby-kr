@@ -1,14 +1,25 @@
 DewfordTown_House1_Text_174BA5:: @ 8174BA5
-	.string "There's a lot to be said for living on\n"
-	.string "a small island like this in harmony with\l"
-	.string "POKéMON and the family.$"
+	.string "작은 섬에서\n"
+	.string "포켓몬과 가족과 사이좋게 사는 것도\l"
+	.string "제법 행복하답니다$"
+	// ちいさな しまでｎ
+	// ポケモンと かぞく なかよく くらすのもｌ
+	// なかなか いい もんですよ
 
 DewfordTown_House1_Text_174C0D:: @ 8174C0D
-	.string "I came from the large port of SLATEPORT\n"
-	.string "CITY when I married my husband here.\p"
-	.string "Life goes by slowly on this little\n"
-	.string "island. But being surrounded by the\l"
-	.string "beautiful sea - that's happiness, too.$"
+	.string "나는 잿빛도시라고 하는\n"
+	.string "커다란 항구도시에서\l"
+	.string "시집을 왔어\p"
+	.string "할 것 없는 느긋한 섬이지만\n"
+	.string "아름다운 바다에 둘러싸여 있으면\l"
+	.string "그것만으로도 행복하단 말이지$"
+	// わたしは カイナシティ というｎ
+	// おおきな みなとまち からｌ
+	// およめさんに きたのよｐ
+	// のんびりとした しま だけれどｎ
+	// きれいな うみに かこまれて いればｌ
+	// それだけで しあわせ なんだね
 
 DewfordTown_House1_Text_174CC8:: @ 8174CC8
-	.string "ZIGZAGOON: Guguuh!$"
+	.string "지그제구리: 구구우!$"
+	// ジグザグマ『ぐぐう!

@@ -1,15 +1,23 @@
 FortreeCity_Mart_Text_1861EF:: @ 81861EF
-	.string "SUPER REPEL lasts a long time, and\n"
-	.string "it gets the job done.\p"
-	.string "It's much better than an ordinary\n"
-	.string "REPEL.$"
+	.string "실버스프레이는\n"
+	.string "효과도 오래가고 좋아!\p"
+	.string "즉 벌레회피스프레이보다\n"
+	.string "굉장하다는 거지!$"
+	// シルバ-スプレ-はｎ
+	// ききめ ながもち! こうか ばつぐん!ｐ
+	// つまり むしよけスプレ- よりもｎ
+	// すごい ってことね!
 
 FortreeCity_Mart_Text_186251:: @ 8186251
-	.string "I always stock up on more items than\n"
-	.string "I'm sure I'll need.\p"
-	.string "You never know what might happen.\n"
-	.string "Better to be safe than sorry!$"
+	.string "언제 무슨 일이 일어날지 모르니\n"
+	.string "도구는 항상 많이 사두곤 해$"
+	// もしも ってことが あるかも しれないしｎ
+	// どうぐは おおめに かうように してるのよ
 
 FortreeCity_Mart_Text_1862CA:: @ 81862CA
-	.string "A RARE CANDY makes a POKéMON grow\n"
-	.string "immediately by one level.$"
+	.string "이상한사탕을 주면\n"
+	.string "포켓몬이 단숨에 성장해서\l"
+	.string "레벨이 올라가!$"
+	// ふしぎなアメを あげるとｎ
+	// ポケモン いっきに そだってｌ
+	// レベルが あがっちゃうんだ!

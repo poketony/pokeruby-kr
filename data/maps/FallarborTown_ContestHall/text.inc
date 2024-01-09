@@ -1,21 +1,35 @@
 FallarborTown_ContestHall_Text_177335:: @ 8177335
-	.string "We do all right in the preliminary round,\n"
-	.string "but we can never win the appeals...\p"
-	.string "Maybe it means I have to watch what\n"
-	.string "other contestants are doing...$"
+	.string "1차 심사에서는 잘하는데\n"
+	.string "왠지 어필에서 이기지 못하고 있어...\p"
+	.string "자신의 포켓몬만 보고 있어선\n"
+	.string "이길 수 없다는 거겠지$"
+	// 1じ しんさでは いいセン いくけどｎ
+	// なぜか アピ-ルで かてないんだ……ｐ
+	// じぶんの ポケモンばっかり みてるとｎ
+	// かてないって ことかなあ
 
 FallarborTown_ContestHall_Text_1773C6:: @ 81773C6
-	.string "See!\n"
-	.string "My POKéMON won all these RIBBONS!\p"
-	.string "Have your POKéMON earned any RIBBONS?\n"
-	.string "You can check them on your POKéNAV.$"
+	.string "봐봐! 내 포켓몬\n"
+	.string "이렇게나 리본이 많아!\p"
+	.string "네 포켓몬은 리본을 받았니?\n"
+	.string "받았다면 포켓내비에서 볼 수 있어!$"
+	// みて! わたしの ポケモンｎ
+	// こんなに リボンが いっぱい!ｐ
+	// あなたの ポケモンは リボン もらった?ｎ
+	// もらって いれば ポケナビで みられるわよ!
 
 FallarborTown_ContestHall_Text_177437:: @ 8177437
-	.string "I can't beat GYM LEADERS...\p"
-	.string "I can't win any CONTESTS...\p"
-	.string "I've been here, there, and everywhere,\n"
-	.string "and it's all for naught...$"
+	.string "체육관 관장도 못 이겨...\p"
+	.string "콘테스트에서도 우승 못 해...\p"
+	.string "이 마을 저 마을을\n"
+	.string "왔다리 갔다리 하고 있어...$"
+	// ジムリ-ダ-にも かてない……ｐ
+	// コンテストでも かてない……ｐ
+	// あっちのまち こっちのまちをｎ
+	// いったり きたり だよ……
 
 FallarborTown_ContestHall_Text_1774B1:: @ 81774B1
-	.string "POKéMON CONTESTS\n"
-	.string "SUPER RANK STAGE!$"
+	.string "포켓몬 콘테스트\n"
+	.string "슈퍼랭크 스테이지!$"
+	// ポケモン コンテストｎ
+	// ス-パ-ランク ステ-ジ!

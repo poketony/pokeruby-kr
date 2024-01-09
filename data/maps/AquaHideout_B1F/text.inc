@@ -1,39 +1,55 @@
 AquaHideout_B1F_Text_196E6F:: @ 8196E6F
-	.string "If you want to know the secret about\n"
-	.string "our HIDEOUT, you have me to beat!$"
+	.string "아지트의 비밀을 알고 싶다면\n"
+	.string "이 몸을 쓰려뜨려 보시지!$"
+	// アジトの ひみつを しりたけりゃｎ
+	// おれを たおす ことだな!
 
 AquaHideout_B1F_Text_196EB6:: @ 8196EB6
-	.string "I can't win at all...$"
+	.string "전혀 못 이기겠어...!$"
+	// ぜんぜん かてません……!
 
 AquaHideout_B1F_Text_196ECC:: @ 8196ECC
-	.string "Our HIDEOUT's secret?\p"
-	.string "Well, let's just say...\n"
-	.string "There's a submarine at the far end!\p"
-	.string "But, by now...\n"
-	.string "Kekekeke...$"
+	.string "아지트의 비밀?\p"
+	.string "그건 말이지... 가장 안쪽에\n"
+	.string "잠수정이 있다는 거야!\p"
+	.string "하지만 지금쯤 이히히히...!$"
+	// アジトの ひみつ?ｐ
+	// それはな…… いちばん おくにｎ
+	// せんすいていが あるって ことよ!ｐ
+	// だが いまごろは いひひひ……!
 
 AquaHideout_B1F_Text_196F39:: @ 8196F39
-	.string "Fuel supply loaded A-OK!\n"
-	.string "In-cruise snacks loaded A-OK!\p"
-	.string "Nothing left to do but KO a pesky\n"
-	.string "meddler!$"
+	.string "연료 보급 OK!\n"
+	.string "과자 보급도 OK!\p"
+	.string "남은 건 방해꾼을 처치하는 것뿐이군!$"
+	// ねんりょうの ほきゅう オッケイ!ｎ
+	// おやつも ほきゅう オッケイ!ｐ
+	// あとは ジャマものを ぶっとばす だけ!
 
 AquaHideout_B1F_Text_196F9B:: @ 8196F9B
-	.string "I took a serious licking!$"
+	.string "제대로 당했다-앗!$"
+	// こっぴどく やられた-っ!
 
 AquaHideout_B1F_Text_196FB5:: @ 8196FB5
-	.string "Humph!\n"
-	.string "This was supposed to happen!\p"
-	.string "My mission was to just hold you up!$"
+	.string "흥! 이걸로 충분해\p"
+	.string "널 방해하는 게\n"
+	.string "내 임무였으니까$"
+	// ふん! これで いいんだｐ
+	// おまえの ジャマをする というのがｎ
+	// おれの にんむ だったのさ
 
 AquaHideout_B1F_Text_196FFD:: @ 8196FFD
-	.string "Yawn... Keeping watch over the\n"
-	.string "HIDEOUT bores me. I'll take you on.$"
+	.string "하아- 아지트를 지키는 것도\n"
+	.string "너무 지루하니까 상대해줄게-$"
+	// は-あ アジトで るすばんもｎ
+	// たいくつ だから あいて してあげるわ-
 
 AquaHideout_B1F_Text_197040:: @ 8197040
-	.string "Yawn...\n"
-	.string "Oh, I lost...$"
+	.string "하아- 져버렸어-$"
+	// は-あ まけたわ-
 
 AquaHideout_B1F_Text_197056:: @ 8197056
-	.string "If you scurry too much, other TEAM\n"
-	.string "{EVIL_TEAM} members might get you.$"
+	.string "너무 빠르게 돌아다니면\n"
+	.string "다른 {EVIL_TEAM}단에게 당할지도 몰라-$"
+	// あんまり うろちょろ してるとｎ
+	// ほかの §くだんに やられるかもよ-

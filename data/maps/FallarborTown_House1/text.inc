@@ -1,51 +1,87 @@
 FallarborTown_House1_Text_177755:: @ 8177755
-	.string "PROF. COZMO: Oh...\n"
-	.string "I never should have let myself be\l"
-	.string "conned into telling TEAM {EVIL_TEAM} where\l"
-	.string "you can find METEORITES...\p"
-	.string "That METEORITE from METEOR FALLS...\n"
-	.string "It's never going to be mine now...$"
+	.string "공석박사: 아아...\n"
+	.string "{EVIL_TEAM}단에게 속아서\l"
+	.string "운석을 손에 넣을 수 있는 장소를\l"
+	.string "알려주고 말았어...\p"
+	.string "유성의 폭포의 운석은\n"
+	.string "더 이상 내 것이 아니겠지...$"
+	// ソライシ『ああ……ｎ
+	// §くだんに だまされたからと いってｌ
+	// いんせきが てに はいる ばしょをｌ
+	// おしえてしまったら だめ だなあ……ｐ
+	// りゅうせいのたき の いんせきｎ
+	// もう ぼくの モノには ならないよな……
 
 FallarborTown_House1_Text_17780E:: @ 817780E
-	.string "Oh!\n"
-	.string "Hah?\p"
-	.string "That item...\p"
-	.string "Could it be?\p"
-	.string "Is it the METEORITE that TEAM {EVIL_TEAM}\n"
-	.string "took from METEOR FALLS?\p"
-	.string "Please, may I have it?\p"
-	.string "I'm not asking for it for free.\n"
-	.string "How about in exchange for this TM?$"
+	.string "오오! 에에?\p"
+	.string "그건...\p"
+	.string "혹시 설마..\p"
+	.string "{EVIL_TEAM}단이 유성의 폭포에서\n"
+	.string "가져갔었던 운석인가요...!?\p"
+	.string "괜찮다면 제게 넘겨주세요!\p"
+	.string "공짜로 넘기라고 하진 않겠습니다\n"
+	.string "답례로 이 기술머신을\l"
+	.string "드릴 테니까...$"
+	// おお! ええ?ｐ
+	// それは……ｐ
+	// もしかして もしかすると……ｐ
+	// §くだんが りゅうせいのたき からｎ
+	// もっていった いんせき ですか……!?ｐ
+	// よかったら ぼくに ください!ｐ
+	// ただで とは いいませんｎ
+	// かわりに この わざマシンをｌ
+	// あげますから……
 
 FallarborTown_House1_Text_1778C4:: @ 81778C4
-	.string "PROF. COZMO: This TM, it represents\n"
-	.string "my feeling of gratitude.\l"
-	.string "Please use it!$"
+	.string "공석박사: 이 기술머신은\n"
+	.string "제 고마움의 표시입니다\l"
+	.string "꼭 써보세요!$"
+	// ソライシ『この わざマシンはｎ
+	// ぼくの きもちですｌ
+	// ぜひ つかってください!
 
 FallarborTown_House1_Text_177910:: @ 8177910
-	.string "PROF. COZMO: Oh, I can't believe it.\n"
-	.string "This is really, really great!\p"
-	.string "This is really going to help my research!$"
+	.string "공석박사: 이야- 정말로 기쁩니다\n"
+	.string "이걸로 제 연구도 순조로워졌어요!$"
+	// ソライシ『いや- すごく うれしいなｎ
+	// これで ぼくの けんきゅうも はかどります!
 
 FallarborTown_House1_Text_17797D:: @ 817797D
-	.string "PROF. COZMO: Oh, but...\n"
-	.string "I'm crushed with disappointment...$"
+	.string "공석박사: 그럴 수가...\n"
+	.string "완전 실망입니다...$"
+	// ソライシ『そんな……ｎ
+	// ものすごく がっかりだよ……
 
 FallarborTown_House1_Text_1779B8:: @ 81779B8
-	.string "PROF. COZMO: Please, may I have that\n"
-	.string "METEORITE?\p"
-	.string "I'm not asking for it for free.\n"
-	.string "How about in exchange for this TM?$"
+	.string "공석박사: 그 운석...\n"
+	.string "괜찮다면 제게 넘겨주세요!\p"
+	.string "공짜로 넘기라고 하진 않겠습니다\n"
+	.string "답례로 이 기술머신을\l"
+	.string "드릴 테니까...$"
+	// ソライシ『その いんせき……ｎ
+	// よかったら ぼくに ください!ｐ
+	// ただで とは いいませんｎ
+	// かわりに この わざマシンをｌ
+	// あげますから……
 
 FallarborTown_House1_Text_177A2B:: @ 8177A2B
-	.string "PROF. COZMO went off to METEOR FALLS\n"
-	.string "on ROUTE 114 with some people from\l"
-	.string "TEAM {EVIL_TEAM}.$"
+	.string "공석박사님은\n"
+	.string "{EVIL_TEAM}단 사람들과 같이\l"
+	.string "114번 도로에 있는\l"
+	.string "유성의 폭포에 가셨어요$"
+	// ソライシはかせはｎ
+	// §くだんの ひとと いっしょにｌ
+	// 114ばん どうろに あるｌ
+	// りゅうせいのたきに いきましたよ
 
 FallarborTown_House1_Text_177A7C:: @ 8177A7C
-	.string "Poor PROF. COZMO...\n"
-	.string "He's so depressed... I feel sorry for him.$"
+	.string "공석박사님...\n"
+	.string "저렇게 슬퍼하시다니 불쌍해!$"
+	// ソライシはかせ……ｎ
+	// あんなに おちこんで かわいそう!
 
 FallarborTown_House1_Text_177ABB:: @ 8177ABB
-	.string "Look at PROF. COZMO...\n"
-	.string "He's so happy! I think it's cute.$"
+	.string "공석박사님...\n"
+	.string "저렇게 기뻐하시다니 귀여워!$"
+	// ソライシはかせ ったらｎ
+	// あんなに よろこんで かわいい!

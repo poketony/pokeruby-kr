@@ -1,45 +1,75 @@
 FortreeCity_House2_Text_186306:: @ 8186306
-	.string "People... POKéMON...\p"
-	.string "Their hidden powers are aroused by\n"
-	.string "living in natural environments...$"
+	.string "사람도 포켓몬도\n"
+	.string "자연 속에서 살아감으로써\l"
+	.string "본연의 힘이 깨어난다...$"
+	// ひとも ポケモンもｎ
+	// しぜんの なかで くらすことでｌ
+	// もともとの パワ-が めざめる……
 
 FortreeCity_House2_Text_186360:: @ 8186360
-	.string "Let this old woman see if your hidden\n"
-	.string "power has awoken...\p"
-	.string "I hold a coin in my hand.\p"
-	.string "Now, tell me, have I palmed it in the\n"
-	.string "right hand? Or in the left?$"
+	.string "자네의 힘이 깨어 있는지\n"
+	.string "확인해보도록 하지...\p"
+	.string "어디 보자... 내 오른손과 왼손\n"
+	.string "어느 쪽에 코인이 있는지\l"
+	.string "직감으로 선택해봐$"
+	// おぬしの パワ-が めざめているかｎ
+	// たしかめると するかの……ｐ
+	// どれ…… わしの みぎてと ひだりてｎ
+	// どちらに コインが はいっておるかｌ
+	// ちょっかんで えらんで みなさい
 
 FortreeCity_House2_Text_1863F6:: @ 81863F6
-	.string "Oh! Yes, correct!\p"
-	.string "We shall try again.\p"
-	.string "In which hand have I palmed the coin?\n"
-	.string "The right or left?$"
+	.string "오오! 정답이다!\p"
+	.string "오른손과 왼손\n"
+	.string "어느 쪽에 코인이 있는지\l"
+	.string "직감으로 선택해봐$"
+	// おお! せいかい じゃ!ｐ
+	// つぎは みぎてと ひだりてｎ
+	// どちらに コインが はいっておるかｌ
+	// ちょっかんで えらんで みなさい
 
 FortreeCity_House2_Text_186455:: @ 8186455
-	.string "Oh! Yes, correct again!\p"
-	.string "We shall try once more.\p"
-	.string "In which hand have I palmed the coin?\n"
-	.string "The right or left? Choose!$"
+	.string "오오! 정답이다!\p"
+	.string "오른손과 왼손\n"
+	.string "어느 쪽에 코인이 있는지\l"
+	.string "직감으로 선택해봐$"
+	// おお! せいかい じゃ!ｐ
+	// つぎは みぎてと ひだりてｎ
+	// どちらに コインが はいっておるかｌ
+	// ちょっかんで えらんで みなさい
 
 FortreeCity_House2_Text_1864C6:: @ 81864C6
-	.string "Oh! Splendid!\n"
-	.string "Your hidden power has awoken!\p"
-	.string "Here, take this and awaken the hidden\n"
-	.string "power of your POKéMON.$"
+	.string "오옷! 대단하군!\n"
+	.string "자네의 힘은 깨어 있어!\p"
+	.string "이걸 줄 테니\n"
+	.string "자네의 포켓몬이 지닌 힘을\l"
+	.string "깨우도록 하게!$"
+	// おお! みごと じゃ!ｎ
+	// おぬしの パワ-は めざめているの!ｐ
+	// これを あげるからｎ
+	// おぬしの ポケモンも パワ-をｌ
+	// めざめさせて やると ええぞ!
 
 FortreeCity_House2_Text_18652F:: @ 818652F
-	.string "HIDDEN POWER is a move that changes\n"
-	.string "with the POKéMON.$"
+	.string "잠재파워는 포켓몬에 따라\n"
+	.string "위력이 달라지는 기술이라네!$"
+	// めざめるパワ-は ポケモンによってｎ
+	// いりょくが かわる わざ なんじゃよ!
 
 FortreeCity_House2_Text_186565:: @ 8186565
-	.string "No, too bad.\n"
-	.string "You guessed wrong.$"
+	.string "유감이구먼...\n"
+	.string "꽝이라네...$"
+	// ざんねん……ｎ
+	// はずれ じゃ……
 
 UnknownString_8186585: @ 8186585
-	.string "The area around FORTREE CITY is like\n"
-	.string "a jungle.\p"
-	.string "It gets awfully tiring walking around\n"
-	.string "this city.\p"
-	.string "That's why I use FLY to instantly go to\n"
-	.string "any city I've visited.$"
+	.string "검방울시티 주변은\n"
+	.string "마치 정글 같아서\l"
+	.string "걷다 보면 금방 녹초가 되어버려!\p"
+	.string "그럴 때는 포켓몬의 공중날기로\n"
+	.string "가본 적 있는 마을까지 단숨에 날아가면 돼!$"
+	// ヒワマキの まわりはｎ
+	// まるで ジャングル だからｌ
+	// あるいていると くたくたに なっちゃう!ｐ
+	// そんなとき ポケモンの そらをとぶでｎ
+	// いった まち まで ひとっとび!

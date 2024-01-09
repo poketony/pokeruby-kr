@@ -1,22 +1,39 @@
 EverGrandeCity_GlaciasRoom_Text_190AF9:: @ 8190AF9
-	.string "Welcome, my name is GLACIA of the\n"
-	.string "ELITE FOUR.\p"
-	.string "I've traveled from afar to HOENN so\n"
-	.string "that I may hone my ice skills.\p"
-	.string "But all I have seen are challenges by\n"
-	.string "weak TRAINERS and their POKéMON.\p"
-	.string "What about you?\p"
-	.string "It would please me to no end if I could\n"
-	.string "go all out against you!$"
+	.string "어서 오세요\n"
+	.string "사천왕 미혜입니다\p"
+	.string "얼음타입 기술을 갈고닦으려고\n"
+	.string "머나먼 호연까지 왔지요\p"
+	.string "하지만 이곳에 도전해오는 건\n"
+	.string "어설픈 트레이너와 포켓몬뿐...\p"
+	.string "당신은 어떤가요?\p"
+	.string "진심으로 상대해도 괜찮을 정도라면\n"
+	.string "기쁠 텐데 말이죠...!!$"
+	// ようこそｎ
+	// してんのうの プリムと いいますｐ
+	// こおりの わざを きわめたくてｎ
+	// はるか ホウエンまで やって きましたｐ
+	// ですが ここに ちょうせんに くるのはｎ
+	// やわな トレ-ナ-と ポケモンばかり……ｐ
+	// あなたは どう?ｐ
+	// ほんきを だしても だいじょうぶ だとｎ
+	// うれしいの ですが……!!
 
 EverGrandeCity_GlaciasRoom_Text_190C01:: @ 8190C01
-	.string "You and your POKéMON...\n"
-	.string "How hot your spirits burn!\p"
-	.string "The all-consuming heat overwhelms.\p"
-	.string "It's no surprise that my icy skills\n"
-	.string "failed to harm you.$"
+	.string "당신과 포켓몬의\n"
+	.string "뜨거운 혼!\p"
+	.string "그건 무엇보다도 뜨거워서\n"
+	.string "제 얼음타입 기술이\l"
+	.string "통할 만한 것이 아니었군요$"
+	// あなたと ポケモンのｎ
+	// たましいの あつさ!ｐ
+	// それは なによりも あつくｎ
+	// わたくしの こおりの わざがｌ
+	// つうじる ものでは なかったのですね
 
 EverGrandeCity_GlaciasRoom_Text_190C8F:: @ 8190C8F
-	.string "Advance to the next room.\p"
-	.string "And there, confirm the truly fearsome\n"
-	.string "side of the POKéMON LEAGUE.$"
+	.string "다음으로 나아가세요\p"
+	.string "그리고 포켓몬리그의\n"
+	.string "진정한 두려움을 확인하시죠$"
+	// つぎに すすみなさいｐ
+	// そこで ポケモン リ-グのｎ
+	// ほんとうの おそろしさ たしかめなさい

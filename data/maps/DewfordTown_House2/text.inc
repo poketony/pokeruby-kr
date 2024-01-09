@@ -1,28 +1,45 @@
 DewfordTown_House2_Text_175EFE:: @ 8175EFE
-	.string "Gorge your eyes on this!\p"
-	.string "It's a SILK SCARF. It's right at the\n"
-	.string "cutting edge of fashion, yeah!\p"
-	.string "Oh, I can see your eyes twinkling!\n"
-	.string "You appreciate my dazzling style!\p"
-	.string "Oh, you're a delight!\n"
-	.string "Here you go. I want you to have it!$"
+	.string "어때! 요즘 가장 유행하는\n"
+	.string "이 실크스카프가 멋지지 않아!?\p"
+	.string "오 흥미가 생긴 모양이네!\n"
+	.string "내 센스를 알아주는구나 넌!\p"
+	.string "정말 기쁜걸!\n"
+	.string "이걸 선물할게!$"
+	// ほら! りゅうこう さいせんたんのｎ
+	// この シルクのスカ-フ ステキだろ!ｐ
+	// おっ めが かがやいてるね!ｎ
+	// オレの センスが わかるんだな きみは!ｐ
+	// うれしいね!ｎ
+	// これは プレゼント するよ!
 
 DewfordTown_House2_Text_175FDA:: @ 8175FDA
-	.string "Oh, you don't have room?\p"
-	.string "Now, listen tight, this SCARF is a must-\n"
-	.string "have! Why, I would sell all my items\l"
-	.string "in order to get it!$"
+	.string "엇 못 가진다고?\n"
+	.string "네 물건을 전부 팔아서라도\l"
+	.string "얻을 만큼 가치 있는 스카프라고 이건!$"
+	// え もてないの?ｎ
+	// きみの にもつを ぜんぶ うってでもｌ
+	// もつべき スカ-フだぜ これは!
 
 DewfordTown_House2_Text_176055:: @ 8176055
-	.string "The SILK SCARF raises the power of\n"
-	.string "NORMAL-type moves.\p"
-	.string "It's a marvelous SCARF that will go\n"
-	.string "with almost all POKéMON!$"
+	.string "실크스카프는 노말타입\n"
+	.string "기술의 위력을 높여주지!\p"
+	.string "대부분의 포켓몬에게 어울리는\n"
+	.string "멋진 스카프야!$"
+	// シルクのスカ-フは ノ-マルタイプのｎ
+	// わざの いりょくを あげてくれる!ｐ
+	// ほとんどの ポケモンに にあうｎ
+	// すてきな スカ-フ ってことだぜ!
 
 DewfordTown_House2_Text_1760C8:: @ 81760C8
-	.string "Wow, you bothered to cross the sea\n"
-	.string "to visit DEWFORD?\p"
-	.string "Did you maybe come here because you\n"
-	.string "heard about BRAWLY?\p"
-	.string "He's so cool...\n"
-	.string "Everyone idolizes him.$"
+	.string "헤에! 바다를 건너\n"
+	.string "기어코 무로마을까지 왔구나!\p"
+	.string "혹시 철구님의 소문을 듣고\n"
+	.string "만나러 온 거야?\p"
+	.string "철구님은 정말 멋있어서\n"
+	.string "모두가 동경하잖아!$"
+	// へえ! きみ うみを こえてｎ
+	// わざわざ ムロまで きたの!ｐ
+	// もしかして トウキさんの うわさを きいてｎ
+	// あいに きたんじゃない?ｐ
+	// トウキさん かっこよくてｎ
+	// みんなが あこがれるもんな!

@@ -1,41 +1,63 @@
 FallarborTown_Text_16C7FF:: @ 816C7FF
-	.string "What's up, what's up?\p"
-	.string "I saw a shady fellow scuttling in and\n"
-	.string "out of PROF. COZMO's LAB.$"
+	.string "뭔가 뭔가!?\p"
+	.string "공석박사의 연구소에\n"
+	.string "수상한 사람들이 드나들던데!$"
+	// なんだ なんだ!?ｐ
+	// ソライシはかせの けんきゅうじょにｎ
+	// あやしい おとこが ではいり しておったぞ!
 
 FallarborTown_Text_16C855:: @ 816C855
-	.string "This region's been known for meteors\n"
-	.string "since the olden days.\p"
-	.string "They say METEOR FALLS was gouged out\n"
-	.string "by a falling meteorite long ago.$"
+	.string "여기 일대는\n"
+	.string "옛날부터 운석이 많아서 말이지\p"
+	.string "유성의 폭포도 운석이 떨어져서\n"
+	.string "만들어졌다고 전해지고 있단다$"
+	// ここいら いったいはｎ
+	// むかしから いんせきが おおくてなｐ
+	// りゅうせいのたきも いんせきが おちてｎ
+	// できたとか そう いわれておる
 
 FallarborTown_Text_16C8D6:: @ 816C8D6
-	.string "See! Take a look!\n"
-	.string "This is my precious AZURILL!\p"
-	.string "It's slick and smooth and plushy, too!$"
+	.string "자! 이것 봐!\n"
+	.string "내 소중한 루리리!\p"
+	.string "매끈매끈하고 쓰다듬으면 푹신푹신해!$"
+	// ほら! みてちょうだい!ｎ
+	// わたしの たいせつな ルリリ!ｐ
+	// ツヤツヤの ナデナデの フカフカよ!
 
 FallarborTown_Text_16C92C:: @ 816C92C
-	.string "AZURILL: Rooreelooo.$"
+	.string "루리리: 루-리-루-$"
+	// ルリリ『る-り-る-
 
 FallarborTown_Text_16C941:: @ 816C941
-	.string "Have you already challenged FLANNERY,\n"
-	.string "the LEADER of LAVARIDGE GYM?\p"
-	.string "The girl's grandfather was famous.\n"
-	.string "He was one of the ELITE FOUR in the\l"
-	.string "POKéMON LEAGUE at one point.\p"
-	.string "It wouldn't surprise me to see FLANNERY\n"
-	.string "become a great TRAINER in her own\l"
-	.string "right.$"
+	.string "용암마을의 체육관 관장\n"
+	.string "민지하고 배틀했니?\p"
+	.string "그 아이의 할아버지는 굉장했지\n"
+	.string "듣자 하니 포켓몬리그의\l"
+	.string "사천왕이라고 했었나\p"
+	.string "분명 민지도 이제부터\n"
+	.string "훌륭한 트레이너가 되겠지$"
+	// フエンタウンの ジムリ-ダ-ｎ
+	// アスナとは たたかったかね?ｐ
+	// あのこの おじいさんは すごかったよｎ
+	// なんでも ポケモンリ-グのｌ
+	// してんのう だった らしいからねｐ
+	// きっと アスナも これからｎ
+	// すばらしい トレ-ナ-に なるだろうね
 
 FallarborTown_Text_16CA39:: @ 816CA39
-	.string "POKéMON CONTESTS\n"
-	.string "SUPER RANK REGISTRATION\p"
-	.string "“Burst on to the POKéMON scene!”$"
+	.string "포켓몬 콘테스트 슈퍼랭크 접수처\n"
+	.string "뽐내라! 포켓몬 트레이너!$"
+	// ポケモンコンテスト ス-パ-ランク うけつけｎ
+	// はじけろ! ポケモン トレ-ナ-!
 
 FallarborTown_Text_16CA83:: @ 816CA83
-	.string "FALLARBOR TOWN\n"
-	.string "“A farm community with small gardens.”$"
+	.string "여기는 단풍마을\n"
+	.string "작은 밭이 있는 농촌$"
+	// ここは ハジツゲ タウンｎ
+	// ちいさな はたけが ある のうそん
 
 FallarborTown_Text_16CAB9:: @ 816CAB9
-	.string "MOVE TUTOR'S HOUSE\n"
-	.string "“New moves taught to POKéMON.”$"
+	.string "“기술마니아의 집”\n"
+	.string "포켓몬 기술을 가르쳐 드립니다!$"
+	// 「わざおしえマニアの いえ」ｎ
+	// ポケモンの わざ おしえます!

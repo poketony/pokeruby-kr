@@ -1,10 +1,13 @@
 DewfordTown_PokemonCenter_1F_Text_174CDB:: @ 8174CDB
-	.string "There's a stone cavern at the edge\n"
-	.string "of town.\p"
-	.string "I've heard you can find rare stones\n"
-	.string "there.$"
+	.string "마을 외곽의 바위 동굴에는\n"
+	.string "희귀한 돌이 있다고 들었어$"
+	// まちの はずれの いしのどうくつ にはｎ
+	// めずらしい いしが あるって きいたわ
 
 DewfordTown_PokemonCenter_1F_Text_174D32:: @ 8174D32
-	.string "Even if a POKéMON faints and can't\n"
-	.string "battle, it can still use a move learned\l"
-	.string "from a Hidden Machine, HM.$"
+	.string "지쳐서 배틀을 할 수 없는\n"
+	.string "포켓몬도 비전이라고 불리는\l"
+	.string "기술은 쓸 수 있어!$"
+	// つかれて たたかうことの できないｎ
+	// ポケモンだって ひでんと いわれるｌ
+	// わざは つかうことが できるよ!

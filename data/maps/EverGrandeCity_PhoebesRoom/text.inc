@@ -1,23 +1,43 @@
 EverGrandeCity_PhoebesRoom_Text_1908F5:: @ 81908F5
-	.string "Ahahaha!\p"
-	.string "I'm PHOEBE of the ELITE FOUR.\n"
-	.string "I did my training on MT. PYRE.\p"
-	.string "While I trained, I gained the ability\n"
-	.string "to commune with GHOST-type POKéMON.\p"
-	.string "Yes, the bond I developed with POKéMON\n"
-	.string "is extremely tight.\p"
-	.string "So, come on, just try and see if you can\n"
-	.string "even inflict damage on my POKéMON!$"
+	.string "아하하!\p"
+	.string "난 사천왕 회연이야\p"
+	.string "송화산에서 수행하면서\n"
+	.string "고스트타입 포켓몬과 마음이\l"
+	.string "통하는 것이 가능하게 됐어\p"
+	.string "맞아 나와 포켓몬의 유대감은\n"
+	.string "엄청 강해!\p"
+	.string "이런 내 포켓몬들에게\n"
+	.string "데미지를 줄 수 있을지\l"
+	.string "시험해 봐!$"
+	// アハハ!ｐ
+	// アタシ してんのうの フヨウｐ
+	// おくりびやまで しゅぎょう するうちにｎ
+	// ゴ-ストタイプの ポケモンと きもちをｌ
+	// かよわせる ことが できるように なったのｐ
+	// そう アタシと ポケモンの きずなｎ
+	// とっても つよいんだ!ｐ
+	// そんな アタシの ポケモンたちにｎ
+	// ダメ-ジを あたえる ことが できるかｌ
+	// ためして ごらんよ!
 
 EverGrandeCity_PhoebesRoom_Text_190A0C:: @ 8190A0C
-	.string "Oh, darn.\n"
-	.string "I've gone and lost.$"
+	.string "아-아\n"
+	.string "져버렸네$"
+	// あ-あｎ
+	// まけちゃった
 
 EverGrandeCity_PhoebesRoom_Text_190A2A:: @ 8190A2A
-	.string "There's a definite bond between you\n"
-	.string "and your POKéMON, too.\p"
-	.string "I didn't recognize it, so it's only\n"
-	.string "natural that I lost.\p"
-	.string "Yup, I'd like to see how far your bond\n"
-	.string "will carry you.\p"
-	.string "Go ahead, move on to the next room.$"
+	.string "너와 포켓몬 사이에도\n"
+	.string "분명한 유대감이 있구나\p"
+	.string "그걸 눈치채지 못했으니\n"
+	.string "내가 지는 것도 당연하지\p"
+	.string "응 너희의 유대감이\n"
+	.string "어디까지 통할지 보고 싶어\l"
+	.string "다음 방으로 나아가봐$"
+	// あなたと ポケモンとの あいだにもｎ
+	// たしかな きずなが あったのねｐ
+	// それが わからなかったｎ
+	// アタシが まけたのは とうぜんｐ
+	// ウン あなたたちの きずながｎ
+	// どこまで つうじるか みてみたいなｌ
+	// つぎの へやに すすみなよ

@@ -1,63 +1,93 @@
 JaggedPass_Text_195DAC:: @ 8195DAC
-	.string "MT. CHIMNEY's JAGGED PASS...\p"
-	.string "Now this is what I've always wanted\n"
-	.string "in a mountain.\p"
-	.string "This jagged bumpiness...\n"
-	.string "It rocks my soul!$"
+	.string "굴뚝산의 울퉁불퉁 산길은\n"
+	.string "그야말로 내가 꿈에 그리던 산이야!\l"
+	.string "이 울퉁불퉁함이 너무 좋아서 참을 수 없어!$"
+	// えんとつやまの デコボコさんどうｎ
+	// まさに わたしが もとめていた やま!ｌ
+	// この デコボコした ところが たまらん!
 
 JaggedPass_Text_195E27:: @ 8195E27
-	.string "Losing left me bitter!$"
+	.string "져버려서 분해!$"
+	// まけて くやしいぞ!
 
 JaggedPass_Text_195E3E:: @ 8195E3E
-	.string "Yes, I did lose at POKéMON...\p"
-	.string "But, when it comes to the love of\n"
-	.string "the mountains, I have you beat!$"
+	.string "확실히 포켓몬 승부에서는 졌다...\p"
+	.string "하지만 산을 사랑하는 마음만큼은\n"
+	.string "나의 승리겠지!$"
+	// たしかに ポケモンでは まけた……ｐ
+	// だが やまを あいする きもちならｎ
+	// わたしの ほうが まさっているだろ!
 
 JaggedPass_Text_195E9E:: @ 8195E9E
-	.string "This place isn't your casual hike.\n"
-	.string "It's not suited for a picnic.$"
+	.string "여긴 가벼운 마음으로 오르면 안 되겠다\n"
+	.string "피크닉엔 좀 안 어울려$"
+	// ここは きがるに のぼって いけないものｎ
+	// ちょっと ピクニックむき じゃないわ
 
 JaggedPass_Text_195EDF:: @ 8195EDF
-	.string "Ohhh, no!\n"
-	.string "The ground is too bumpy...$"
+	.string "아-잉! 정말!\n"
+	.string "발밑이 울퉁불퉁하니까...$"
+	// あ-ん もう!ｎ
+	// したが デコボコだから……
 
 JaggedPass_Text_195F04:: @ 8195F04
-	.string "Did you know?\p"
-	.string "Some people cleverly ride their\n"
-	.string "bicycles up this horribly bumpy pass.$"
+	.string "이렇게 울퉁불퉁한 곳을\n"
+	.string "자전거로 잘 올라가는\l"
+	.string "사람도 있어!$"
+	// こんな デコボコしたところｎ
+	// じてんしゃで じょうずに のぼっていくｌ
+	// ひとも いるのよ!
 
 JaggedPass_Text_195F58:: @ 8195F58
-	.string "Picnics are fun wherever you go.\n"
-	.string "Just like POKéMON!$"
+	.string "어떤 길이라도 피크닉은 즐거워!\n"
+	.string "포켓몬도 같이 있고 말이야!$"
+	// どんな みちも ピクニックは たのしい!ｎ
+	// ポケモンも いっしょ だしね!
 
 JaggedPass_Text_195F8C:: @ 8195F8C
-	.string "I only lost because the ground is\n"
-	.string "too bumpy!$"
+	.string "발밑이 울퉁불퉁해서\n"
+	.string "져버린 거야!$"
+	// まけたのはｎ
+	// したが デコボコだからよ!
 
 JaggedPass_Text_195FB9:: @ 8195FB9
-	.string "I'll forget about losing and just\n"
-	.string "enjoy this bumpy hike.$"
+	.string "패배한 건 얼른 잊어버리고\n"
+	.string "이 울퉁불퉁한 길을 실컷 즐겨야지!$"
+	// まけたことは さっさと わすれてｎ
+	// この デコボコみちを たのしんじゃお!
 
 JaggedPass_Text_195FF2:: @ 8195FF2
-	.string "JAGGED PASS is hard to walk on.\n"
-	.string "It's a good place for training.$"
+	.string "이 울퉁불퉁 산길은 걷기가 무척 힘들지!\n"
+	.string "포켓몬을 단련시키기에 딱 좋은 곳이다!$"
+	// この デコボコさんどうは あるきにくい!ｎ
+	// ポケモンを きたえるのに むいてるよ!
 
 JaggedPass_Text_196032:: @ 8196032
-	.string "It was all over while we were still\n"
-	.string "trying to find a good footing...$"
+	.string "발밑을 신경 쓰는 사이에\n"
+	.string "끝나버린 모양이군...$"
+	// あしばを きにしてる うちにｎ
+	// おわっちゃった かんじだ……
 
 JaggedPass_Text_196077:: @ 8196077
-	.string "If I had an ACRO BIKE, I'd be able to\n"
-	.string "jump ledges.$"
+	.string "나도 더트자전거가 있으면\n"
+	.string "턱을 뛰어넘을 수 있을 텐데$"
+	// ぼくも ダ-トじてんしゃ もっていればｎ
+	// だんさを とびこえて いけるのにな
 
 JaggedPass_Text_1960AA:: @ 81960AA
-	.string "I got used to this bumpiness.\n"
-	.string "I sing while I climb now.$"
+	.string "울퉁불퉁한 길에 익숙해져서\n"
+	.string "요즘엔 노래를 부르면서 올라갈 정도야!$"
+	// デコボコに なれちゃったからｎ
+	// ちかごろだと うたいながら のぼるのさ!
 
 JaggedPass_Text_1960E2:: @ 81960E2
-	.string "It's still not easy to battle on this\n"
-	.string "bumpy ground...$"
+	.string "역시 울퉁불퉁하니까\n"
+	.string "배틀하기 힘들어...$"
+	// やっぱり デコボコだとｎ
+	// たたかいにくいよ……
 
 JaggedPass_Text_196118:: @ 8196118
-	.string "I should get an ACRO BIKE from RYDEL\n"
-	.string "in MAUVILLE CITY...$"
+	.string "나도 보라시티에 있는 카제노님에게\n"
+	.string "더트자전거를 달라고 해볼까$"
+	// ぼくも キンセツで カゼノさんからｎ
+	// ダ-トじてんしゃ もらおうかな
