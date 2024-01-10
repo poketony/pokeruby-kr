@@ -43,8 +43,6 @@ SECTIONS {
         src/main.o(.text);
         src/sprite.o(.text);
         src/text.o(.text);
-        src/korean.o(.text);
-        src/korean_table.o(.text);
         src/string_util.o(.text);
         src/link.o(.text);
         src/rtc.o(.text);
@@ -471,13 +469,11 @@ SECTIONS {
         src/sprite.o(.rodata);
         . += 0x8; /* Why the gap? */
         src/text.o(.rodata);
-        src/korean.o(.rodata);
-        src/korean_table.o(.rodata);
         src/string_util.o(.rodata);
         src/link.o(.rodata);
         src/rtc.o(.rodata);
         src/main_menu.o(.rodata);
-		src/battle_controllers.o(.rodata);
+        src/battle_controllers.o(.rodata);
         data/mon_attrs.o(.rodata);
         src/battle/battle_1.o(.rodata);
         src/battle_bg.o(.rodata);
@@ -490,7 +486,7 @@ SECTIONS {
         src/battle_ai_switch_items.o(.rodata);
         src/battle_controller_link_opponent.o(.rodata);
         src/data/battle_moves.o(.rodata);
-		src/battle_main.o(.rodata);
+        src/battle_main.o(.rodata);
         src/battle_util.o(.rodata);
         src/pokemon_1.o(.rodata);
         src/pokemon_1.o(.data); /* gEvolutionTable needs to be non-const to match */
@@ -578,7 +574,7 @@ SECTIONS {
         src/battle_anim_mon_movement.o(.rodata);
         src/item.o(.rodata);
         src/debug/matsuda_debug_menu.o(.rodata);
-		src/contest.o(.rodata);
+        src/contest.o(.rodata);
         src/contest_2.o(.rodata);
         src/shop.o(.rodata);
         src/fldeff_escalator.o(.rodata);
@@ -1219,7 +1215,7 @@ SECTIONS {
     lib_rodata :
     ALIGN(4)
     {
-		src/libs/m4a.o(.rodata);
+        src/libs/m4a.o(.rodata);
         src/libs/agb_flash.o(.rodata);
         src/libs/agb_flash_1m.o(.rodata);
         src/libs/agb_flash_mx.o(.rodata);
@@ -1229,6 +1225,15 @@ SECTIONS {
         *libc.a(.rodata);
         *libc.a(.data);
         src/libs/libisagbprn.o(.rodata);
+    } =0
+
+    korean :
+    ALIGN(4)
+    {
+        src/korean.o(.text);
+        src/korean_table.o(.text);
+        src/korean.o(.rodata);
+        src/korean_table.o(.rodata);
     } =0
 
     . = 0x8D00000;

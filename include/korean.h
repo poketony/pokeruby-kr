@@ -1,6 +1,15 @@
 #ifndef GUARD_KOREAN_H
 #define GUARD_KOREAN_H
 
+extern const u8 gFont0KoreanGlyphs[];
+extern const u8 gFont0Korean10ptGlyphs[];
+extern const u8 gFont0Korean8ptGlyphs[];
+extern const u8 gFont1KoreanGlyphs[];
+extern const u8 gFont3KoreanGlyphs[];
+extern const u8 sFont3Korean10ptGlyphs[];
+extern const u8 sFont3Korean8ptGlyphs[];
+extern const u8 gFont4KoreanGlyphs[];
+
 bool8 IsKoreanGlyph(u16 glyph);
 bool8 IsJaum(u8 glyph);
 bool8 IsMoum(u8 glyph);

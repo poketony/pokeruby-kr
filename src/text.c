@@ -239,36 +239,6 @@ static const u8 sFont1JapaneseGlyphs[] = INCBIN_U8("graphics/fonts/font1_jpn.1bp
 static const u8 sBrailleGlyphs[] = INCBIN_U8("graphics/fonts/font6_braille.1bpp");
 static const u32 sDownArrowTiles[] = INCBIN_U32("graphics/fonts/down_arrow.4bpp");
 
-#if MODERN
-static const u8 sFont0KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font0_kor_modern.4bpp");
-#else
-static const u8 sFont0KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font0_kor.4bpp");
-#endif
-
-static const u8 sFont0Korean10ptGlyphs[] = INCBIN_U8("graphics/fonts/font0_kor_10pt.4bpp");
-static const u8 sFont0Korean8ptGlyphs[] = INCBIN_U8("graphics/fonts/font0_kor_8pt.4bpp");
-
-#if MODERN
-static const u8 sFont1KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font1_kor_modern.4bpp");
-#else
-static const u8 sFont1KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font1_kor.4bpp");
-#endif
-
-#if MODERN
-static const u8 sFont3KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor_modern.4bpp");
-#else
-static const u8 sFont3KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor.4bpp");
-#endif
-
-static const u8 sFont3Korean10ptGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor_10pt.4bpp");
-static const u8 sFont3Korean8ptGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor_8pt.4bpp");
-
-#if MODERN
-static const u8 sFont4KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font4_kor_modern.4bpp");
-#else
-static const u8 sFont4KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font4_kor.4bpp");
-#endif
-
 // clang-format off
 #include "data/text/type1_map.h"
 #include "data/text/type3_map.h"
@@ -4405,7 +4375,7 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
 
             if (sKoreanFontType == KOREAN_FONT_TYPE_DEFAULT)
             {
-                glyphTileInfo.src = (u8 *)sFont0KoreanGlyphs + 0x40 * koreanGlyph;
+                glyphTileInfo.src = (u8 *)gFont0KoreanGlyphs + 0x40 * koreanGlyph;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 0));
                 DrawGlyphTile_UnshadowedFont(&glyphTileInfo);
                 glyphTileInfo.src += 0x20;
@@ -4414,7 +4384,7 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
             }
             else if (sKoreanFontType == KOREAN_FONT_TYPE_10PT)
             {
-                glyphTileInfo.src = (u8 *)sFont0Korean10ptGlyphs + 0x80 * koreanGlyph;
+                glyphTileInfo.src = (u8 *)gFont0Korean10ptGlyphs + 0x80 * koreanGlyph;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 0));
                 DrawGlyphTile_UnshadowedFont(&glyphTileInfo);
                 glyphTileInfo.src += 0x20;
@@ -4427,7 +4397,7 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
                 glyphTileInfo.startPixel = (win->left + win->cursorX) & 7;
                 glyphTileInfo.width = 3;
 
-                glyphTileInfo.src = (u8 *)sFont0Korean10ptGlyphs + 0x80 * koreanGlyph + 0x40;
+                glyphTileInfo.src = (u8 *)gFont0Korean10ptGlyphs + 0x80 * koreanGlyph + 0x40;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 0));
                 DrawGlyphTile_UnshadowedFont(&glyphTileInfo);
                 glyphTileInfo.src += 0x20;
@@ -4436,7 +4406,7 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
             }
             else if (sKoreanFontType == KOREAN_FONT_TYPE_8PT)
             {
-                 glyphTileInfo.src = (u8 *)sFont0Korean8ptGlyphs + 0x80 * koreanGlyph;
+                 glyphTileInfo.src = (u8 *)gFont0Korean8ptGlyphs + 0x80 * koreanGlyph;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 0));
                 DrawGlyphTile_UnshadowedFont(&glyphTileInfo);
                 glyphTileInfo.src += 0x20;
@@ -4449,7 +4419,7 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
                 glyphTileInfo.startPixel = (win->left + win->cursorX) & 7;
                 glyphTileInfo.width = 1;
 
-                glyphTileInfo.src = (u8 *)sFont0Korean8ptGlyphs + 0x80 * koreanGlyph + 0x40;
+                glyphTileInfo.src = (u8 *)gFont0Korean8ptGlyphs + 0x80 * koreanGlyph + 0x40;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 0));
                 DrawGlyphTile_UnshadowedFont(&glyphTileInfo);
                 glyphTileInfo.src += 0x20;
@@ -4461,7 +4431,7 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
         case 1:
         case 2:
             glyphTileInfo.width = 8;
-            glyphTileInfo.src = (u8 *)sFont1KoreanGlyphs + 0x20 * koreanGlyph;
+            glyphTileInfo.src = (u8 *)gFont1KoreanGlyphs + 0x20 * koreanGlyph;
             glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
             retVal = DrawGlyphTile_UnshadowedFont(&glyphTileInfo);
             break;
@@ -4471,7 +4441,7 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
 
             if (sKoreanFontType == KOREAN_FONT_TYPE_DEFAULT)
             {
-                glyphTileInfo.src = (u8 *)sFont3KoreanGlyphs + 0x40 * koreanGlyph;
+                glyphTileInfo.src = (u8 *)gFont3KoreanGlyphs + 0x40 * koreanGlyph;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 0));
                 DrawGlyphTile_ShadowedFont(&glyphTileInfo);
                 glyphTileInfo.src += 0x20;
@@ -4527,7 +4497,7 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
         case 4:
         case 5:
             glyphTileInfo.width = 8;
-            glyphTileInfo.src = (u8 *)sFont4KoreanGlyphs + 0x20 * koreanGlyph;
+            glyphTileInfo.src = (u8 *)gFont4KoreanGlyphs + 0x20 * koreanGlyph;
             glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
             retVal = DrawGlyphTile_ShadowedFont(&glyphTileInfo);
             break;

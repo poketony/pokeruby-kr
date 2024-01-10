@@ -2934,13 +2934,9 @@ static void Task_InitPageScreenMultistep(u8 taskId)
             UnusedPrintMonName(gPokedexEntries[sPokedexListItem->dexNum].categoryName, CATEGORY_LEFT, 5);
             PrintDecimalNum(gPokedexEntries[sPokedexListItem->dexNum].height, 21, 7);
             PrintDecimalNum(gPokedexEntries[sPokedexListItem->dexNum].weight, 21, 9);
-        #if !MODERN
             ApplyKoreanFontType(KOREAN_FONT_TYPE_8PT);
-        #endif
             Menu_PrintText(gPokedexEntries[sPokedexListItem->dexNum].description, 3, 13);
-        #if !MODERN
             RestoreKoreanFontType();
-        #endif
             sub_80C0DC0(14, 0x3FC);
         }
         else

@@ -184,12 +184,21 @@ struct Window
  /*0x2C*/ const struct WindowTemplate *template;
 };
 
+#if MODERN
+enum
+{
+    KOREAN_FONT_TYPE_DEFAULT = 0,
+    KOREAN_FONT_TYPE_10PT    = 1,
+    KOREAN_FONT_TYPE_8PT     = 0,
+};
+#else
 enum
 {
     KOREAN_FONT_TYPE_DEFAULT, // 0
     KOREAN_FONT_TYPE_10PT,    // 1
     KOREAN_FONT_TYPE_8PT,     // 2
 };
+#endif
 
 extern vu16 *const gBGControlRegs[];
 extern vu16 *const gBGHOffsetRegs[];

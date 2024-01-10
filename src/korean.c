@@ -3,6 +3,46 @@
 #include "korean.h"
 #include "korean_table.h"
 
+#if MODERN
+const u8 gFont0KoreanGlyphs[] = INCBIN_U8("graphics-modern/fonts/font0_kor.4bpp");
+#else
+const u8 gFont0KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font0_kor.4bpp");
+#endif
+
+const u8 gFont0Korean10ptGlyphs[] = INCBIN_U8("graphics/fonts/font0_kor_10pt.4bpp");
+
+#if MODERN
+const u8 gFont0Korean8ptGlyphs[] = {};
+#else
+const u8 gFont0Korean8ptGlyphs[] = INCBIN_U8("graphics/fonts/font0_kor_8pt.4bpp");
+#endif
+
+#if MODERN
+const u8 gFont1KoreanGlyphs[] = INCBIN_U8("graphics-modern/fonts/font1_kor.4bpp");
+#else
+const u8 gFont1KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font1_kor.4bpp");
+#endif
+
+#if MODERN
+const u8 gFont3KoreanGlyphs[] = INCBIN_U8("graphics-modern/fonts/font3_kor.4bpp");
+#else
+const u8 gFont3KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor.4bpp");
+#endif
+
+const u8 sFont3Korean10ptGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor_10pt.4bpp");
+
+#if MODERN
+const u8 sFont3Korean8ptGlyphs[] = {};
+#else
+const u8 sFont3Korean8ptGlyphs[] = INCBIN_U8("graphics/fonts/font3_kor_8pt.4bpp");
+#endif
+
+#if MODERN
+const u8 gFont4KoreanGlyphs[] = INCBIN_U8("graphics-modern/fonts/font4_kor.4bpp");
+#else
+const u8 gFont4KoreanGlyphs[] = INCBIN_U8("graphics/fonts/font4_kor.4bpp");
+#endif
+
 static const u8 sSingleByteJongTable[] = 
 {
     CHAR_0,
