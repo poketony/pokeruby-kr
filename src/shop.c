@@ -96,13 +96,13 @@ static u8 CreateShopMenu(u8 martType)
     if (martType == MART_TYPE_0)
     {
         gMartInfo.numChoices = 2;
-        Menu_DrawStdWindowFrame(0, 0, 10, 7);
+        Menu_DrawStdWindowFrame(0, 0, 11, 7);
         Menu_PrintItemsReordered(2, 1, 3, sBuySellQuitMenuActions, gMartBuySellOptionList);
     }
     else
     {
         gMartInfo.numChoices = 1;
-        Menu_DrawStdWindowFrame(0, 0, 10, 5);
+        Menu_DrawStdWindowFrame(0, 0, 11, 5);
         Menu_PrintItemsReordered(2, 1, 2, sBuySellQuitMenuActions, gMartBuyNoSellOptionList);
     }
     InitMenu(0, 1, 1, gMartInfo.numChoices + 1, 0); // add 1 for cancel
@@ -529,22 +529,17 @@ static void Shop_DisplayNormalPriceInList(u16 itemId, u8 var2, bool32 hasControl
 
     if (hasControlCode)
     {
-        stringPtr[0] = EXT_CTRL_CODE_BEGIN;
-        stringPtr[1] = 0x1;
-        stringPtr[2] = 0x2;
-        stringPtr += 3;
+        Menu_BlankWindowRect(14, 2, 14, 17);
+        Menu_PrintText(gMenuCursorText_SelectedCursor, 14, var2);
     }
 
     CopyItemName(itemId, stringPtr);
 
-    Menu_PrintTextPixelCoordsAndGetLines(&gStringVar1[0], 0x70, var2 << 3, 0x58, 0x1);
+    Menu_PrintTextPixelCoordsAndGetLines(&gStringVar1[0], 120, var2 * 8, 88, 1);
     stringPtr = gStringVar1;
 
-    if (hasControlCode)
-        stringPtr = &gStringVar1[3];
-
-    GetMoneyAmountText(stringPtr, (ItemId_GetPrice(itemId) >> GetPriceReduction(1)), 0x4);
-    Menu_PrintTextPixelCoords(&gStringVar1[0], 0xCA, var2 << 3, 1);
+    GetMoneyAmountText(stringPtr, (ItemId_GetPrice(itemId) >> GetPriceReduction(1)), 5);
+    Menu_PrintTextPixelCoords(&gStringVar1[0], 192, var2 * 8, 1);
 }
 
 static void Shop_DisplayDecorationPriceInList(u16 itemId, u8 var2, bool32 hasControlCode)
@@ -554,30 +549,20 @@ static void Shop_DisplayDecorationPriceInList(u16 itemId, u8 var2, bool32 hasCon
     if (hasControlCode)
     {
         stringPtr[0] = EXT_CTRL_CODE_BEGIN;
-        stringPtr[1] = 0x1;
-        stringPtr[2] = 0x2;
+        stringPtr[1] = EXT_CTRL_CODE_COLOR;
+        stringPtr[2] = TEXT_COLOR_RED;
         stringPtr += 3;
     }
 
     StringCopy(stringPtr, gDecorations[itemId].name);
-    Menu_PrintTextPixelCoordsAndGetLines(&gStringVar1[0], 0x70, var2 << 3, 0x58, 0x1);
+    Menu_PrintTextPixelCoordsAndGetLines(&gStringVar1[0], 120, var2 * 8, 88, 1);
     stringPtr = gStringVar1;
 
     if (hasControlCode)
         stringPtr = &gStringVar1[3];
 
-    // some names are the maximum string length for a shop item. Because there is no room for
-    // a 6 character price (including the currency), a sprite is instead used for anything that
-    // is the maximum decoration price in order to fit it on screen.
-    if (gDecorations[itemId].price == 10000)
-    {
-        Draw10000Sprite(0x19, var2, hasControlCode);
-    }
-    else
-    {
-        GetMoneyAmountText(stringPtr, gDecorations[itemId].price, 0x4);
-        Menu_PrintTextPixelCoords(&gStringVar1[0], 0xCA, var2 << 3, 0x1);
-    }
+    GetMoneyAmountText(stringPtr, gDecorations[itemId].price, 5);
+    Menu_PrintTextPixelCoords(&gStringVar1[0], 192, var2 * 8, 1);
 }
 
 static void Shop_DisplayPriceInList(int firstItemId, int lastItemId, bool32 hasControlCode)
@@ -587,15 +572,15 @@ static void Shop_DisplayPriceInList(int firstItemId, int lastItemId, bool32 hasC
     for (i = firstItemId; i <= lastItemId && gMartInfo.choicesAbove + i < gMartInfo.itemCount; i++)
     {
         if (gMartInfo.martType == MART_TYPE_0)
-            Shop_DisplayNormalPriceInList(gMartInfo.itemList[gMartInfo.choicesAbove + i], (i << 1) + 2, hasControlCode);
+            Shop_DisplayNormalPriceInList(gMartInfo.itemList[gMartInfo.choicesAbove + i], i * 2 + 2, hasControlCode);
         else
-            Shop_DisplayDecorationPriceInList(gMartInfo.itemList[gMartInfo.choicesAbove + i], (i << 1) + 2, hasControlCode);
+            Shop_DisplayDecorationPriceInList(gMartInfo.itemList[gMartInfo.choicesAbove + i], i * 2 + 2, hasControlCode);
     }
 
     if (i != 8 && gMartInfo.choicesAbove + i == gMartInfo.itemCount)
     {
-        Menu_BlankWindowRect(0xE, (i << 1) + 2, 0x1C, (i << 1) + 3);
-        Menu_PrintText(gOtherText_CancelNoTerminator, 15, (i << 1) + 2);
+        Menu_BlankWindowRect(15, i * 2 + 2, 28, i * 2 + 3);
+        Menu_PrintText(gOtherText_CancelNoTerminator, 15, i * 2 + 2);
     }
 }
 
@@ -762,280 +747,77 @@ static void Shop_UpdateCurItemCountToMax(u8 taskId)
     gTasks[taskId].func = Shop_PrintPrice;
 }
 
-#ifdef NONMATCHING
 static void Shop_MoveItemListUp(void)
 {
-    u16 *r1;
-    u16 *r2;
-    register u8 *r10 asm("r10");
-    s32 i;
-    s32 j;
-    struct Window *r8 = &gMenuWindow;
-    
-    r1 = r8->tilemap;
-    r1 += 0x1EF;
-    r2 = r1;
-    r2 += 64;
-    r10 = r8->tileData;
-    
+    u8 i, j;
+    u16 *currentTilemapPtr;
+    u16 *nextTilemapPtr;
+    u8 *src;
+    u8 *dest;
+
+    currentTilemapPtr = gMenuWindow.tilemap + 0x1EF;
+    nextTilemapPtr = currentTilemapPtr + TILE_SIZE_4BPP * 2;
+
     for (i = 0; i < 14; i++)
     {
         for (j = 0; j < 15; j++)
         {
-            if ((r1[j] & 0x3FF) <= r8->tileDataStartOffset + 1)
-                r2[j] = r8->tileDataStartOffset + 1;
+            if ((currentTilemapPtr[j] & 0x3FF) <= gMenuWindow.tileDataStartOffset + 1)
+                nextTilemapPtr[j] = gMenuWindow.tileDataStartOffset + 1;
             else
-                r2[j] = r1[j] + 0x3C;
+                nextTilemapPtr[j] = currentTilemapPtr[j] + 0x3C;
         }
         
-        r1 -= 32;
-        r2 -= 32;
+        currentTilemapPtr -= TILE_SIZE_4BPP;
+        nextTilemapPtr -= TILE_SIZE_4BPP;
     }
-    
-    {
-        u8 *r1 = r10 + 0x3A20;
-        u8 *r2 = r1 + 0x780;
-        for (i = 0; i < 14; i++)
-        {
-            DmaCopy16(3, r1, r2, 0x1E0);
-            r2 -= 0x3C0;
-            r1 -= 0x3C0;
-        }
-    }
-}
-#else
-NAKED
-static void Shop_MoveItemListUp(void)
-{
-    asm(".syntax unified\n\
-    push {r4-r7,lr}\n\
-    mov r7, r10\n\
-    mov r6, r9\n\
-    mov r5, r8\n\
-    push {r5-r7}\n\
-    sub sp, 0x4\n\
-    ldr r0, _080B4020 @ =gMenuWindow\n\
-    mov r8, r0\n\
-    ldr r1, [r0, 0x28]\n\
-    ldr r3, _080B4024 @ =0x000003de\n\
-    adds r1, r3\n\
-    adds r2, r1, 0\n\
-    adds r2, 0x80\n\
-    ldr r7, [r0, 0x24]\n\
-    mov r10, r7\n\
-    ldr r0, _080B4028 @ =0x000003ff\n\
-    mov r9, r0\n\
-    movs r6, 0xD\n\
-_080B3FAC:\n\
-    adds r3, r2, 0\n\
-    subs r3, 0x40\n\
-    str r3, [sp]\n\
-    movs r7, 0x40\n\
-    negs r7, r7\n\
-    adds r7, r1\n\
-    mov r12, r7\n\
-    adds r3, r2, 0\n\
-    adds r4, r1, 0\n\
-    movs r5, 0xE\n\
-_080B3FC0:\n\
-    ldrh r2, [r4]\n\
-    mov r1, r9\n\
-    ands r1, r2\n\
-    mov r7, r8\n\
-    ldrh r0, [r7, 0x1A]\n\
-    adds r0, 0x1\n\
-    cmp r1, r0\n\
-    ble _080B3FD4\n\
-    adds r0, r2, 0\n\
-    adds r0, 0x3C\n\
-_080B3FD4:\n\
-    strh r0, [r3]\n\
-    adds r3, 0x2\n\
-    adds r4, 0x2\n\
-    subs r5, 0x1\n\
-    cmp r5, 0\n\
-    bge _080B3FC0\n\
-    ldr r2, [sp]\n\
-    mov r1, r12\n\
-    subs r6, 0x1\n\
-    cmp r6, 0\n\
-    bge _080B3FAC\n\
-    ldr r1, _080B402C @ =0x00003a20\n\
-    add r1, r10\n\
-    movs r0, 0xF0\n\
-    lsls r0, 3\n\
-    adds r2, r1, r0\n\
-    ldr r3, _080B4030 @ =0x040000d4\n\
-    ldr r5, _080B4034 @ =0x800000f0\n\
-    ldr r4, _080B4038 @ =0xfffffc40\n\
-    movs r6, 0xD\n\
-_080B3FFC:\n\
-    str r1, [r3]\n\
-    str r2, [r3, 0x4]\n\
-    str r5, [r3, 0x8]\n\
-    ldr r0, [r3, 0x8]\n\
-    adds r2, r4\n\
-    adds r1, r4\n\
-    subs r6, 0x1\n\
-    cmp r6, 0\n\
-    bge _080B3FFC\n\
-    add sp, 0x4\n\
-    pop {r3-r5}\n\
-    mov r8, r3\n\
-    mov r9, r4\n\
-    mov r10, r5\n\
-    pop {r4-r7}\n\
-    pop {r0}\n\
-    bx r0\n\
-    .align 2, 0\n\
-_080B4020: .4byte gMenuWindow\n\
-_080B4024: .4byte 0x000003de\n\
-_080B4028: .4byte 0x000003ff\n\
-_080B402C: .4byte 0x00003a20\n\
-_080B4030: .4byte 0x040000d4\n\
-_080B4034: .4byte 0x800000f0\n\
-_080B4038: .4byte 0xfffffc40\n\
-    .syntax divided");
-}
-#endif
 
-#ifdef NONMATCHING
+    src = gMenuWindow.tileData + 0x3A20 + TILE_SIZE_4BPP;
+    dest = src + 0x780;
+
+    for (i = 0; i < 14; i++)
+    {
+        DmaCopy16(3, src, dest, 0x1E0 - TILE_SIZE_4BPP);
+        src -= TILE_SIZE_4BPP * 15 * 2;
+        dest -= TILE_SIZE_4BPP * 15 * 2;
+    }
+}
+
 static void Shop_MoveItemListDown(void)
 {
-    u16 *r1;
-    u16 *r2;
-    u8 *r10;
-    s32 i;
-    s32 j;
-    struct Window *r8 = &gMenuWindow;
-    
-    r1 = r8->tilemap;
-    r1 += 0x4F;
-    r2 = r1;
-    r2 += 64;
-    r10 = r8->tileData;
-    
+    u8 i, j;
+    u16 *currentTilemapPtr;
+    u16 *nextTilemapPtr;
+    u8 *src;
+    u8 *dest;
+
+    currentTilemapPtr = gMenuWindow.tilemap + 0x4F;
+    nextTilemapPtr = currentTilemapPtr + TILE_SIZE_4BPP * 2;
+
     for (i = 0; i < 14; i++)
     {
         for (j = 0; j < 15; j++)
         {
-            if ((r1[j] & 0x3FF) <= r8->tileDataStartOffset + 1)
-                r2[j] = r8->tileDataStartOffset + 1;
+            if ((currentTilemapPtr[j] & 0x3FF) <= gMenuWindow.tileDataStartOffset + 1)
+                nextTilemapPtr[j] = gMenuWindow.tileDataStartOffset + 1;
             else
-                r2[j] = r1[j] + 0x3C;
+                nextTilemapPtr[j] = currentTilemapPtr[j] + 0x3C;
         }
         
-        r1 += 32;
-        r2 += 32;
+        currentTilemapPtr += TILE_SIZE_4BPP;
+        nextTilemapPtr += TILE_SIZE_4BPP;
     }
 
+    src = gMenuWindow.tileData + 0x960 + 0x780 + TILE_SIZE_4BPP;
+    dest = gMenuWindow.tileData + 0x960 + TILE_SIZE_4BPP;
+
+    for (i = 0; i < 14; i++)
     {
-        register u8 *r1 asm("r1") = r10 + 0x960;
-        register u8 *r2 asm("r2") = r1;
-       
-        r1 += 0x780;
-        for (i = 0; i < 14; i++)
-        {
-            DmaCopy16(3, r1, r2, 0x1E0);
-            r1 += 0x3C0;
-            r2 += 0x3C0;
-        }
+        DmaCopy16(3, src, dest, 0x1E0 - TILE_SIZE_4BPP);
+        src += TILE_SIZE_4BPP * 15 * 2;
+        dest += TILE_SIZE_4BPP * 15 * 2;
     }
 }
-#else
-NAKED
-static void Shop_MoveItemListDown(void)
-{
-    asm(".syntax unified\n\
-    push {r4-r7,lr}\n\
-    mov r7, r10\n\
-    mov r6, r9\n\
-    mov r5, r8\n\
-    push {r5-r7}\n\
-    sub sp, 0x4\n\
-    ldr r0, _080B40D8 @ =gMenuWindow\n\
-    mov r8, r0\n\
-    ldr r2, [r0, 0x28]\n\
-    adds r1, r2, 0\n\
-    adds r1, 0x9E\n\
-    adds r2, r1, 0\n\
-    adds r1, 0x80\n\
-    ldr r3, [r0, 0x24]\n\
-    mov r10, r3\n\
-    ldr r7, _080B40DC @ =0x000003ff\n\
-    mov r9, r7\n\
-    movs r6, 0xD\n\
-_080B4060:\n\
-    adds r0, r2, 0\n\
-    adds r0, 0x40\n\
-    str r0, [sp]\n\
-    movs r3, 0x40\n\
-    adds r3, r1\n\
-    mov r12, r3\n\
-    adds r3, r2, 0\n\
-    adds r4, r1, 0\n\
-    movs r5, 0xE\n\
-_080B4072:\n\
-    ldrh r2, [r4]\n\
-    mov r1, r9\n\
-    ands r1, r2\n\
-    mov r7, r8\n\
-    ldrh r0, [r7, 0x1A]\n\
-    adds r0, 0x1\n\
-    cmp r1, r0\n\
-    ble _080B4086\n\
-    adds r0, r2, 0\n\
-    subs r0, 0x3C\n\
-_080B4086:\n\
-    strh r0, [r3]\n\
-    adds r3, 0x2\n\
-    adds r4, 0x2\n\
-    subs r5, 0x1\n\
-    cmp r5, 0\n\
-    bge _080B4072\n\
-    ldr r2, [sp]\n\
-    mov r1, r12\n\
-    subs r6, 0x1\n\
-    cmp r6, 0\n\
-    bge _080B4060\n\
-    movs r1, 0x96\n\
-    lsls r1, 4\n\
-    add r1, r10\n\
-    adds r2, r1, 0\n\
-    movs r0, 0xF0\n\
-    lsls r0, 3\n\
-    adds r1, r0\n\
-    ldr r3, _080B40E0 @ =0x040000d4\n\
-    ldr r5, _080B40E4 @ =0x800000f0\n\
-    movs r4, 0xF0\n\
-    lsls r4, 2\n\
-    movs r6, 0xD\n\
-_080B40B4:\n\
-    str r1, [r3]\n\
-    str r2, [r3, 0x4]\n\
-    str r5, [r3, 0x8]\n\
-    ldr r0, [r3, 0x8]\n\
-    adds r2, r4\n\
-    adds r1, r4\n\
-    subs r6, 0x1\n\
-    cmp r6, 0\n\
-    bge _080B40B4\n\
-    add sp, 0x4\n\
-    pop {r3-r5}\n\
-    mov r8, r3\n\
-    mov r9, r4\n\
-    mov r10, r5\n\
-    pop {r4-r7}\n\
-    pop {r0}\n\
-    bx r0\n\
-    .align 2, 0\n\
-_080B40D8: .4byte gMenuWindow\n\
-_080B40DC: .4byte 0x000003ff\n\
-_080B40E0: .4byte 0x040000d4\n\
-_080B40E4: .4byte 0x800000f0\n\
-    .syntax divided");
-}
-#endif
 
 static void Shop_DoCursorAction(u8 taskId)
 {

@@ -2,7 +2,6 @@
 #include "constants/songs.h"
 #include "strings2.h"
 #include "overworld.h"
-#include "menu_cursor.h"
 #include "field_effect.h"
 #include "random.h"
 #include "sound.h"
@@ -1050,7 +1049,6 @@ static bool8 sub_8102318(struct Task *task)
 {
     sub_8101F2C(gOtherText_QuitGamePrompt);
     DisplayYesNoMenu(21, 7, 1);
-    sub_814AB84();
     sSlotMachine->state = 22;
     return FALSE;
 }

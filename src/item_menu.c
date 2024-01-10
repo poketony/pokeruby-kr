@@ -130,7 +130,8 @@ EWRAM_DATA u8 gPokemonItemUseType = 0;
 EWRAM_DATA static u8 gUnknown_02038562 = 0;
 EWRAM_DATA static u8 gUnknown_02038563 = 0;
 EWRAM_DATA static u8 gUnknown_02038564 = 0;
-EWRAM_DATA static u8 sPokeballSpriteId ALIGNED(4) = 0;  // HACK: why is there a space before this variable?
+EWRAM_DATA static u8 sPokeballSpriteId = 0;
+EWRAM_DATA static bool8 sItemSelected = FALSE;
 
 // bss
 static u8 sPopupMenuSelection;
@@ -1103,13 +1104,27 @@ static void sub_80A41E0(u8 *a, u16 b, const u8 *c, u16 d, u8 e)
 
 static u8 *sub_80A425C(u8 taskId, u8 *text, u8 itemSlot)
 {
-    if (gTasks[taskId].data[10] - gBagPocketScrollStates[sCurrentBagPocket].scrollTop - 1 == itemSlot)
+    u16 index = (itemSlot * 2 + 2) * 32 + 14;
+
+    if (sItemSelected)
     {
-        text[0] = EXT_CTRL_CODE_BEGIN;
-        text[1] = 1;
-        text[2] = TEXT_COLOR_RED;
-        text += 3;
+        Menu_BlankWindowRect(14, 2, 14, 17);
+        Menu_PrintText(gMenuCursorText_SelectedCursor, 14, 2 + itemSlot * 2);
     }
+    else
+    {
+        if (gTasks[taskId].data[10] - gBagPocketScrollStates[sCurrentBagPocket].scrollTop - 1 == itemSlot)
+        {
+            gBGTilemapBuffers[2][index] = 95;
+            gBGTilemapBuffers[2][index + 32] = 111;
+        }
+        else
+        {
+            gBGTilemapBuffers[2][index] = 79;
+            gBGTilemapBuffers[2][index + 32] = 79;
+        }
+    }
+
     return text;
 }
 
@@ -1612,6 +1627,8 @@ static void sub_80A50C8(u8 taskId)
 {
     s16 *taskData = gTasks[taskId].data;
 
+    sItemSelected = FALSE;
+
     if (!gPaletteFade.active)
     {
         if (sub_80A4F74(taskId) == TRUE)
@@ -1669,13 +1686,19 @@ static void sub_80A50C8(u8 taskId)
                 if (taskData[10] == 0)
                 {
                     PlaySE(SE_SELECT);
+
                     gCurSelectedItemSlotIndex = gBagPocketScrollStates[sCurrentBagPocket].scrollTop + gBagPocketScrollStates[sCurrentBagPocket].cursorPos;
                     gSpecialVar_ItemId = gCurrentBagPocketItemSlots[gCurSelectedItemSlotIndex].itemId;
+
+                    sItemSelected = TRUE;
                     sItemSelectFuncs[sReturnLocation].onItemSelect(taskId);
+                    sItemSelected = FALSE;
+
                     StopVerticalScrollIndicators(TOP_ARROW);
                     StopVerticalScrollIndicators(BOTTOM_ARROW);
                     StopVerticalScrollIndicators(LEFT_ARROW);
                     StopVerticalScrollIndicators(RIGHT_ARROW);
+
                     sub_80A797C();
                 }
                 else

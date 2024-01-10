@@ -8,7 +8,6 @@
 #include "m4a.h"
 #include "main.h"
 #include "menu.h"
-#include "menu_cursor.h"
 #include "overworld.h"
 #include "palette.h"
 #include "pokeblock.h"
@@ -16,6 +15,7 @@
 #include "save.h"
 #include "sound.h"
 #include "string_util.h"
+#include "strings.h"
 #include "strings2.h"
 #include "task.h"
 #include "text_window.h"
@@ -173,8 +173,6 @@ void m4aMPlayTempoControl(struct MusicPlayerInfo *mplayInfo, u16 tempo);
 void m4aMPlayStop(struct MusicPlayerInfo *mplayInfo);
 void sub_80A6978(void);
 u8 sub_80A7DEC(u8 berryId, u8 x, u8 y, bool8 animate);
-void MenuCursor_SetPos814A880(u8 a1, u8 a2);
-u8 MenuCursor_Create814A5C0(u8 a1, u16 a2, u8 a3, u16 a4, u8 a5);
 s8 GetFirstFreePokeblockSlot(void);
 
 extern struct MusicPlayerInfo gMPlayInfo_SE2;
@@ -2134,19 +2132,20 @@ static void BlenderDebug_CalculatePokeblock(struct BlenderBerry* berries, struct
     sub_80504F0(var);
 }
 
-static void sub_80508D4(u8 value)
+static void Blender_UpdateCursorState(u8 index)
 {
-    gBerryBlenderData->field_AA = value;
-    MenuCursor_SetPos814A880(192, (gBerryBlenderData->field_AA * 16) + 72);
+    gBerryBlenderData->field_AA = index;
+
+    Menu_BlankWindowRect(24, 9, 24, 12);
+    Menu_PrintText(gMenuCursorText_Cursor, 24, 9 + index * 2);
 }
 
 static void sub_80508FC(void)
 {
     gBerryBlenderData->field_AA = 0;
     Menu_DrawStdWindowFrame(23, 8, 28, 13);
-    MenuCursor_Create814A5C0(0, -1, 12, 0x2D9F, 32);
-    Menu_PrintText(gOtherText_YesNoTerminating, 24, 9);
-    sub_80508D4(gBerryBlenderData->field_AA);
+    Menu_PrintText(gOtherText_YesNoTerminating, 25, 9);
+    Blender_UpdateCursorState(gBerryBlenderData->field_AA);
 }
 
 static void sub_8050954(void)
@@ -2235,13 +2234,13 @@ static void sub_8050954(void)
         {
             if (gBerryBlenderData->field_AA != 0)
                 PlaySE(SE_SELECT);
-            sub_80508D4(0);
+            Blender_UpdateCursorState(0);
         }
         else if (gMain.newKeys & DPAD_DOWN)
         {
             if (gBerryBlenderData->field_AA != 1)
                 PlaySE(SE_SELECT);
-            sub_80508D4(1);
+            Blender_UpdateCursorState(1);
         }
         else if (gMain.newKeys & A_BUTTON)
         {
@@ -2252,7 +2251,7 @@ static void sub_8050954(void)
         {
             PlaySE(SE_SELECT);
             gBerryBlenderData->field_6F++;
-            sub_80508D4(1);
+            Blender_UpdateCursorState(1);
         }
         break;
     case 11:
@@ -2388,7 +2387,6 @@ static void sub_8050E30(void)
         break;
     case 1:
         gBerryBlenderData->field_6F = 3;
-        DestroyMenuCursor();
         Menu_EraseWindowRect(23, 8, 28, 13);
 #ifdef ENGLISH
         StringCopy(gStringVar4, gLinkPlayers[gBerryBlenderData->field_7A].name);
@@ -2401,7 +2399,6 @@ static void sub_8050E30(void)
         break;
     case 2:
         gBerryBlenderData->field_6F++;
-        DestroyMenuCursor();
         Menu_EraseWindowRect(23, 8, 28, 13);
 #ifdef ENGLISH
         StringCopy(gStringVar4, gLinkPlayers[gBerryBlenderData->field_7A].name);
@@ -2501,13 +2498,11 @@ static void sub_80510E8(void)
         break;
     case 1:
         gBerryBlenderData->field_6F = 3;
-        DestroyMenuCursor();
         Menu_EraseWindowRect(23, 8, 28, 13);
         MenuPrintMessage(gOtherText_CaseIsFull, 1, 15);
         break;
     case 2:
         gBerryBlenderData->field_6F++;
-        DestroyMenuCursor();
         Menu_EraseWindowRect(23, 8, 28, 13);
         MenuPrintMessage(gOtherText_OutOfBerries, 1, 15);
         break;

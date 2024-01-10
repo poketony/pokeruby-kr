@@ -83,10 +83,10 @@ const u8 sSliderHeartYPositions[] = { 36, 76, 116, 156 };
 const u8 gUnknown_083CA33C[] = { 36, 76, 116, 156 };
 
 const u8 gUnknown_083CA340[][4] = {
-    { 0, 31, 9, 39 },
-    { 0, 33, 9, 39 },
-    { 0, 35, 9, 39 },
-    { 0, 37, 9, 39 },
+    { 2, 31, 9, 39 },
+    { 2, 33, 9, 39 },
+    { 2, 35, 9, 39 },
+    { 2, 37, 9, 39 },
 };
 
 const struct SpriteSheet sSpriteSheet_SliderHeart = {

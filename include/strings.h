@@ -921,4 +921,9 @@ extern const u8 gSystemText_NoSaveFileNoTime[];
 extern const u8 gSystemText_ClockAdjustmentUsable[];
 extern const u8 gSystemText_Saving[];
 
+extern const u8 gMenuCursorText_Space[];
+extern const u8 gMenuCursorText_Cursor[];
+extern const u8 gMenuCursorText_SelectedCursor[];
+extern const u8 gMenuCursorText_ContestMovesCursor[];
+
 #endif

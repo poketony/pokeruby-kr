@@ -7,7 +7,6 @@
 #include "m4a.h"
 #include "main.h"
 #include "menu.h"
-#include "menu_cursor.h"
 #include "menu_helpers.h"
 #include "overworld.h"
 #include "palette.h"
@@ -63,7 +62,6 @@ void sub_8119D80(struct Sprite *);
 extern u8 unk_2039560;
 #endif //DEBUG
 
-#ifdef ENGLISH
 ALIGNED(4) const u16 RouletteSpritePalette_01[] = INCBIN_U16("graphics/roulette/shadow.gbapal");
 const u16 RouletteSpritePalette_02[] = INCBIN_U16("graphics/roulette/ball.gbapal");
 const u16 RouletteSpritePalette_03[] = INCBIN_U16("graphics/roulette/ball_counter.gbapal");
@@ -80,24 +78,6 @@ const u16 RouletteSpritePalette_13[] = INCBIN_U16("graphics/roulette/83F907C.gba
 const u16 RouletteSpritePalette_14[] = INCBIN_U16("graphics/roulette/83F909C.gbapal");
 const u16 RouletteSpritePalette_15[] = INCBIN_U16("graphics/roulette/83F90BC.gbapal");
 const u16 RouletteSpritePalette_16[] = INCBIN_U16("graphics/roulette/83F90DC.gbapal");
-#else
-extern const u16 RouletteSpritePalette_01[];
-extern const u16 RouletteSpritePalette_02[];
-extern const u16 RouletteSpritePalette_03[];
-extern const u16 RouletteSpritePalette_04[];
-extern const u16 RouletteSpritePalette_05[];
-extern const u16 RouletteSpritePalette_06[];
-extern const u16 RouletteSpritePalette_07[];
-extern const u16 RouletteSpritePalette_08[];
-extern const u16 RouletteSpritePalette_09[];
-extern const u16 RouletteSpritePalette_10[];
-extern const u16 RouletteSpritePalette_11[];
-extern const u16 RouletteSpritePalette_12[];
-extern const u16 RouletteSpritePalette_13[];
-extern const u16 RouletteSpritePalette_14[];
-extern const u16 RouletteSpritePalette_15[];
-extern const u16 RouletteSpritePalette_16[];
-#endif //ENGLISH
 
 const u8 gUnknown_083F90FC[] = INCBIN_U8("graphics/roulette/ball.4bpp.lz");
 const u8 RouletteBallCounterTiles[] = INCBIN_U8("graphics/roulette/ball_counter.4bpp.lz");

@@ -2,7 +2,6 @@
 #include "menu.h"
 #include "main.h"
 #include "event_object_lock.h"
-#include "menu_cursor.h"
 #include "script.h"
 #include "constants/songs.h"
 #include "sound.h"
@@ -47,9 +46,6 @@ const struct MenuAction gMenuYesNoItems[] =
     { OtherText_Yes, NULL },
     { OtherText_No, NULL },
 };
-
-static const u8 sText_ArrowCursor[] = _("▶");
-static const u8 sText_Space[] = _(" ");
 
 void CloseMenu(void)
 {
@@ -237,7 +233,7 @@ u8 Menu_MoveCursor(s8 cursorDelta)
 {
     s32 newPos = sMenu.cursorPos + cursorDelta;
 
-    Menu_PrintText(sText_Space, sMenu.left + 1, 2 * sMenu.cursorPos + sMenu.top);
+    Menu_PrintText(gMenuCursorText_Space, sMenu.left + 1, 2 * sMenu.cursorPos + sMenu.top);
 
     if (newPos < sMenu.minCursorPos)
         sMenu.cursorPos = sMenu.maxCursorPos;
@@ -246,7 +242,7 @@ u8 Menu_MoveCursor(s8 cursorDelta)
     else
         sMenu.cursorPos += cursorDelta;
 
-    Menu_PrintText(sText_ArrowCursor, sMenu.left + 1, 2 * sMenu.cursorPos + sMenu.top);
+    Menu_PrintText(gMenuCursorText_Cursor, sMenu.left + 1, 2 * sMenu.cursorPos + sMenu.top);
     return sMenu.cursorPos;
 }
 
@@ -254,7 +250,7 @@ u8 Menu_MoveCursorNoWrap(s8 cursorDelta)
 {
     s32 newPos = sMenu.cursorPos + cursorDelta;
 
-    Menu_PrintText(sText_Space, sMenu.left + 1, 2 * sMenu.cursorPos + sMenu.top);
+    Menu_PrintText(gMenuCursorText_Space, sMenu.left + 1, 2 * sMenu.cursorPos + sMenu.top);
 
     if (newPos < sMenu.minCursorPos)
         sMenu.cursorPos = sMenu.minCursorPos;
@@ -263,7 +259,7 @@ u8 Menu_MoveCursorNoWrap(s8 cursorDelta)
     else
         sMenu.cursorPos += cursorDelta;
 
-    Menu_PrintText(sText_ArrowCursor, sMenu.left + 1, 2 * sMenu.cursorPos + sMenu.top);
+    Menu_PrintText(gMenuCursorText_Cursor, sMenu.left + 1, 2 * sMenu.cursorPos + sMenu.top);
     return sMenu.cursorPos;
 }
 
@@ -347,7 +343,7 @@ u8 Menu_MoveCursorItemPopupMenu(s8 delta)
     s32 newPos = sMenu.cursorPos + delta;
 
     Menu_PrintText(
-        sText_Space,
+        gMenuCursorText_Space,
         6 * (sMenu.cursorPos / menuHeight) + sMenu.left + 1,
         2 * (sMenu.cursorPos % menuHeight) + sMenu.top
     );
@@ -360,7 +356,7 @@ u8 Menu_MoveCursorItemPopupMenu(s8 delta)
         sMenu.cursorPos += delta;
 
     Menu_PrintText(
-        sText_ArrowCursor,
+        gMenuCursorText_Cursor,
         6 * (sMenu.cursorPos / menuHeight) + sMenu.left + 1,
         2 * (sMenu.cursorPos % menuHeight) + sMenu.top
     );
@@ -384,7 +380,7 @@ static u8 Menu_MoveCursorGridLayout(s8 delta)
     if ((sMenu.maxCursorPos + 1) / sMenu.width == 0)
     {
         Menu_PrintText(
-            sText_Space,
+            gMenuCursorText_Space,
             sMenu.left + 1 + sMenu.columnXCoords[sMenu.cursorPos % sMenu.width],
             2 * ((sMenu.cursorPos / sMenu.width) % sMenu.height) + sMenu.top
         );
@@ -392,7 +388,7 @@ static u8 Menu_MoveCursorGridLayout(s8 delta)
     else
     {
         Menu_PrintText(
-            sText_Space,
+            gMenuCursorText_Space,
             sMenu.left + 1 + sMenu.columnXCoords[sMenu.cursorPos % sMenu.width],
             2 * (sMenu.cursorPos / sMenu.width) + sMenu.top
         );
@@ -403,7 +399,7 @@ static u8 Menu_MoveCursorGridLayout(s8 delta)
     if ((sMenu.maxCursorPos + 1) / sMenu.width == 0)
     {
         Menu_PrintText(
-            sText_ArrowCursor,
+            gMenuCursorText_Cursor,
             sMenu.left + 1 + sMenu.columnXCoords[sMenu.cursorPos % sMenu.width],
             2 * ((sMenu.cursorPos / sMenu.width) % sMenu.height) + sMenu.top
         );
@@ -411,7 +407,7 @@ static u8 Menu_MoveCursorGridLayout(s8 delta)
     else
     {
         Menu_PrintText(
-            sText_ArrowCursor,
+            gMenuCursorText_Cursor,
             sMenu.left + 1 + sMenu.columnXCoords[sMenu.cursorPos % sMenu.width],
             2 * (sMenu.cursorPos / sMenu.width) + sMenu.top
         );
@@ -479,7 +475,7 @@ static u8 sub_80724F4(u8 left, u8 top, u8 menuItemCount, const struct MenuAction
     maxWidth = 0;
     for (i = 0; i < menuItemCount; i++)
     {
-        u8 width = (GetStringWidthInMenuWindow(menuItems[i].text) + 7) / 8;
+        u8 width = (GetStringWidthInMenuWindow(menuItems[i].text) + 7) / 8 + 1;
 
         if (width > maxWidth)
             maxWidth = width;
@@ -534,7 +530,7 @@ static void sub_8072620(u8 left, u8 top, u8 menuItemCount, const struct MenuActi
     maxWidth = 0;
     for (i = 0; i < menuItemCount; i++)
     {
-        u8 width = (GetStringWidthInMenuWindow(menuItems[i].text) + 7) / 8;
+        u8 width = (GetStringWidthInMenuWindow(menuItems[i].text) + 7) / 8 + 1;
 
         if (width > maxWidth)
             maxWidth = width;
@@ -553,7 +549,7 @@ static void sub_8072620(u8 left, u8 top, u8 menuItemCount, const struct MenuActi
         u8 row = 0;
         u8 j;
         for (j = 0; i + j < menuItemCount; j += columnCount, row++)
-            Menu_PrintText(menuItems[i + j].text, left + sMenu.columnXCoords[i % columnCount], top + 2 * row);
+            Menu_PrintText(menuItems[i + j].text, left + sMenu.columnXCoords[i % columnCount] + 1, top + 2 * row);
     }
 }
 
@@ -760,12 +756,12 @@ u8 InitMenu(u8 cursorSubpriority, u8 left, u8 top, u8 numChoices, u8 cursorPos)
 
 void unref_sub_8072DC0()
 {
-    sub_814A904();
+    // No-op
 }
 
-void sub_8072DCC(u8 a1)
+void sub_8072DCC(u8 unused)
 {
-    sub_814A958(a1);
+    // No-op
 }
 
 void sub_8072DDC(u8 a1)
@@ -775,5 +771,5 @@ void sub_8072DDC(u8 a1)
 
 void Menu_DestroyCursor(void)
 {
-    DestroyMenuCursor();
+    // No-op
 }

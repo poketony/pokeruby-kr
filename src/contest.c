@@ -19,7 +19,6 @@
 #include "m4a.h"
 #include "main.h"
 #include "menu.h"
-#include "menu_cursor.h"
 #include "overworld.h"
 #include "palette.h"
 #include "random.h"
@@ -29,6 +28,7 @@
 #include "sound.h"
 #include "sprite.h"
 #include "string_util.h"
+#include "strings.h"
 #include "task.h"
 #include "text.h"
 #include "tv.h"
@@ -498,8 +498,7 @@ void Task_ShowMoveSelectScreen(u8 taskId)
         u8 *r5 = sp8;
 
         if (sContestantStatus[gContestPlayerMonIndex].prevMove != MOVE_NONE
-         &&
-            IsContestantAllowedToCombo(gContestPlayerMonIndex)
+         && IsContestantAllowedToCombo(gContestPlayerMonIndex)
          && AreMovesContestCombo(sContestantStatus[gContestPlayerMonIndex].prevMove, move) != 0
          && sContestantStatus[gContestPlayerMonIndex].hasJudgesAttention)
         {
@@ -518,13 +517,12 @@ void Task_ShowMoveSelectScreen(u8 taskId)
           &gWindowTemplate_Contest_MoveDescription,
           sp8,
           776 + i * 20,
-          gUnknown_083CA340[i][0] * 8 + 4,
+          gUnknown_083CA340[i][0] * 8,
           gUnknown_083CA340[i][1] * 8,
           1);
         Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
     }
 
-    MenuCursor_Create814A5C0(0, 0xFFFF, 12, 0x2D9F, 72);
     DrawMoveSelectArrow(sContest.playerMoveChoice);
     PrintContestMoveDescription(gContestMons[gContestPlayerMonIndex].moves[sContest.playerMoveChoice]);
     gTasks[taskId].func = Task_HandleMoveSelectInput;
@@ -546,7 +544,6 @@ void Task_HandleMoveSelectInput(u8 taskId)
 
     if (gMain.newKeys & A_BUTTON)
     {
-        DestroyMenuCursor();
         PlaySE(SE_SELECT);
         gTasks[taskId].func = Task_SelectedMove;
     }
@@ -555,7 +552,6 @@ void Task_HandleMoveSelectInput(u8 taskId)
         switch (gMain.newAndRepeatedKeys)
         {
         case B_BUTTON:
-            sub_814A904();
             PlaySE(SE_SELECT);
             SetBottomSliderHeartsInvisibility(FALSE);
             Text_FillWindowRectDefPalette(
@@ -793,11 +789,14 @@ void debug_sub_80BA054(u8 taskId)
 
 void DrawMoveSelectArrow(s8 a)
 {
-    MenuCursor_SetPos814A880(4, 88 + a * 16);
+    Menu_PrintText(gMenuCursorText_ContestMovesCursor, 1, 31 + a * 2);
 }
 
 void EraseMoveSelectArrow(s8 a)
 {
+    u8 top = 31 + a * 2;
+    // Menu_BlankWindowRect(1, top, 1, top + 1);
+    Menu_EraseWindowRect(1, top, 1, top + 1);
 }
 
 void Task_SelectedMove(u8 taskId)

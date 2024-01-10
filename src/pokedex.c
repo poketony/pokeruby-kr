@@ -11,7 +11,6 @@
 #include "m4a.h"
 #include "main.h"
 #include "menu.h"
-#include "menu_cursor.h"
 #include "palette.h"
 #include "pokedex_area_screen.h"
 #include "pokedex_cry_screen.h"
@@ -4520,9 +4519,12 @@ static void Task_SearchCompleteWaitForInput(u8 taskId)
     }
 }
 
-static void PrintSelectorArrow(u16 a, int unused)
+static void PrintSelectorArrow(u16 cursorPos, bool8 isDrawCursor)
 {
-    MenuCursor_SetPos814AD7C(0x90, (a * 2 + 1) * 8);
+    if (isDrawCursor)
+        Menu_PrintText(gMenuCursorText_Cursor, 18, cursorPos * 2 + 1);
+    else
+        Menu_PrintText(gMenuCursorText_Space, 18, cursorPos * 2 + 1);
 }
 
 static void Task_SelectSearchMenuItem(u8 taskId)
@@ -4538,8 +4540,7 @@ static void Task_SelectSearchMenuItem(u8 taskId)
     gTasks[taskId].data[14] = *p1;
     gTasks[taskId].data[15] = *p2;
     PrintSearchParameterText(taskId);
-    CreateBlendedOutlineCursor(16, 0xFFFF, 12, 0x2D9F, 11);
-    PrintSelectorArrow(*p1, 1);
+    PrintSelectorArrow(*p1, TRUE);
     gTasks[taskId].func = Task_HandleSearchParameterInput;
 }
 
@@ -4559,7 +4560,6 @@ static void Task_HandleSearchParameterInput(u8 taskId)
     r2 = sSearchOptions[r1].numOptions - 1;
     if (gMain.newKeys & A_BUTTON)
     {
-        sub_814ADC8();
         PlaySE(SE_PIN);
         Menu_EraseWindowRect(18, 1, 28, 12);
         DrawOrEraseSearchParameterBox(1);
@@ -4568,7 +4568,6 @@ static void Task_HandleSearchParameterInput(u8 taskId)
     }
     if (gMain.newKeys & B_BUTTON)
     {
-        sub_814ADC8();
         PlaySE(SE_BALL);
         Menu_EraseWindowRect(18, 1, 28, 12);
         DrawOrEraseSearchParameterBox(1);
@@ -4582,16 +4581,16 @@ static void Task_HandleSearchParameterInput(u8 taskId)
     {
         if (*p1 != 0)
         {
-            PrintSelectorArrow(*p1, 0);
+            PrintSelectorArrow(*p1, FALSE);
             (*p1)--;
-            PrintSelectorArrow(*p1, 1);
+            PrintSelectorArrow(*p1, TRUE);
             r3 = TRUE;
         }
         else if (*p2 != 0)
         {
             (*p2)--;
             PrintSearchParameterText(taskId);
-            PrintSelectorArrow(*p1, 1);
+            PrintSelectorArrow(*p1, TRUE);
             r3 = TRUE;
         }
         if (r3)
@@ -4605,16 +4604,16 @@ static void Task_HandleSearchParameterInput(u8 taskId)
     {
         if (*p1 < 5 && *p1 < r2)
         {
-            PrintSelectorArrow(*p1, 0);
+            PrintSelectorArrow(*p1, FALSE);
             (*p1)++;
-            PrintSelectorArrow(*p1, 1);
+            PrintSelectorArrow(*p1, TRUE);
             r3 = TRUE;
         }
         else if (r2 > 5 && *p2 < r2 - 5)
         {
             (*p2)++;
             PrintSearchParameterText(taskId);
-            PrintSelectorArrow(5, 1);
+            PrintSelectorArrow(5, TRUE);
             r3 = TRUE;
         }
         if (r3)
@@ -4868,9 +4867,9 @@ static void PrintSearchParameterText(u8 taskId)
     u16 i;
     u16 j;
 
-    Menu_EraseWindowRect(18, 1, 28, 12);
+    Menu_EraseWindowRect(19, 1, 28, 12);
     for (i = 0, j = *r7; i < 6 && r6[j].title != NULL; i++, j++)
-        Menu_PrintText(r6[j].title, 18, i * 2 + 1);
+        Menu_PrintText(r6[j].title, 19, i * 2 + 1);
     EraseAndPrintSearchTextBox(r6[*r8 + *r7].description);
 }
 

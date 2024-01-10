@@ -7,7 +7,6 @@
 #include "m4a.h"
 #include "main.h"
 #include "menu.h"
-#include "menu_cursor.h"
 #include "menu_helpers.h"
 #include "overworld.h"
 #include "palette.h"
@@ -570,7 +569,6 @@ void sub_81156BC(u8 taskid)
 void sub_8115734(u8 taskid)
 {
     DisplayYesNoMenu(20, 8, 1);
-    sub_814AAF8(RGB(30, 12, 11));
     Menu_DrawStdWindowFrame(0, 14, 29, 19);
     Menu_PrintText(&gUnknown_081C41E3, 1, 15);
     DoYesNoFuncWithChoice(taskid, &gUnknown_083F8EBC);
@@ -1568,7 +1566,6 @@ s16 sub_81174E0(s16 r0)
 void sub_81174F8(u8 r0)
 {
     DisplayYesNoMenu(20, 8, 1);
-    sub_814AAF8(RGB(30, 12, 11));
     DoYesNoFuncWithChoice(r0, &gUnknown_083F8EB4);
 }
 
