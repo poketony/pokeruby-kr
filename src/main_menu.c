@@ -25,7 +25,7 @@
 #include "scanline_effect.h"
 #include "ewram.h"
 
-#define BirchSpeechUpdateWindowText() ((u8)Menu_UpdateWindowTextOverrideLineLength(24))
+#define BirchSpeechUpdateWindowText() ((u8)Menu_UpdateWindowTextOverrideLineLength(23))
 
 extern struct PaletteFadeControl gPaletteFade;
 

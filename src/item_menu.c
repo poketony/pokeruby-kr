@@ -2791,12 +2791,12 @@ static void sub_80A6DF0(u16 *a)
     sub_80A4008(a, 8, 10 - r6, 5, r6 + 2);
     if (gUnknown_02038564 == 1)
     {
-        Menu_PrintText(sItemPopupMenuActions[sPopupMenuActionList[0]].text, 8, 10);
+        Menu_PrintText(sItemPopupMenuActions[sPopupMenuActionList[0]].text, 9, 10);
     }
     else
     {
-        Menu_PrintText(sItemPopupMenuActions[sPopupMenuActionList[0]].text, 8, 8);
-        Menu_PrintText(sItemPopupMenuActions[sPopupMenuActionList[1]].text, 8, 10);
+        Menu_PrintText(sItemPopupMenuActions[sPopupMenuActionList[0]].text, 9, 8);
+        Menu_PrintText(sItemPopupMenuActions[sPopupMenuActionList[1]].text, 9, 10);
     }
     InitMenu(0, 8, 10 - r6, gUnknown_02038564, 0);
     sub_80A7528(2);

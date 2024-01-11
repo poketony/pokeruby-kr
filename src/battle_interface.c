@@ -327,8 +327,6 @@ u8 *const gUnknown_0820A814[] =
     OBJ_VRAM0 + 32 * 44,
 };
 
-const u8 gUnknown_0820A81C[] = __("{COLOR DARK_GREY}{HIGHLIGHT RED}                        ");
-
 u8 *const gUnknown_0820A83C[] =
 {
     OBJ_VRAM0 + 32 * 29,
@@ -786,7 +784,14 @@ void DrawLevelText(u8 spriteId, u8 value)
     u8 *ptr;
     s32 i, j;
 
-    memcpy(str, gUnknown_0820A81C, sizeof(str));
+    ptr = str;
+    *(ptr++) = EXT_CTRL_CODE_BEGIN;
+    *(ptr++) = EXT_CTRL_CODE_COLOR;
+    *(ptr++) = TEXT_COLOR_DARK_GREY;
+    *(ptr++) = EXT_CTRL_CODE_BEGIN;
+    *(ptr++) = EXT_CTRL_CODE_HIGHLIGHT;
+    *(ptr++) = TEXT_COLOR_RED;
+
     if (!IsDoubleBattle())
     {
         if (GetBattlerSide(gSprites[spriteId].data[6]) == 0)
@@ -802,8 +807,6 @@ void DrawLevelText(u8 spriteId, u8 value)
             r7 = gUnknown_0820A80C;
     }
 
-    ptr = str + 6;
-
     *(ptr++) = EXT_CTRL_CODE_BEGIN;
     *(ptr++) = EXT_CTRL_CODE_JPN;
 
@@ -812,6 +815,10 @@ void DrawLevelText(u8 spriteId, u8 value)
     else
         ptr = ConvertIntToDecimalStringN(ptr, value, 0, 2);
 
+    *(ptr++) = EXT_CTRL_CODE_BEGIN;
+    *(ptr++) = EXT_CTRL_CODE_CLEAR_TO;
+    *(ptr++) = 24;
+    *(ptr++) = EOS;
     sub_80034D4(eBattleInterfaceGfxBuffer, str);
 
     j = (value == 100) ? 3 : 2;

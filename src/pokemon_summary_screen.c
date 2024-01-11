@@ -2216,6 +2216,8 @@ static void sub_80A00F4(u8 a)
 {
     if (pssData.moveToLearn != 0 || a != 4)
     {
+        Menu_EraseWindowRect(0, 15, 2, 18);
+
         if (pssData.page == PSS_PAGE_BATTLE_MOVES)
         {
             SummaryScreen_PrintColoredText(gOtherText_Power2, 13, 2, 15);
