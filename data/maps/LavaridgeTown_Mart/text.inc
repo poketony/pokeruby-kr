@@ -1,10 +1,17 @@
 LavaridgeTown_Mart_Text_176DA6:: @ 8176DA6
-	.string "Use X SPEED to add to a POKéMON's\n"
-	.string "SPEED in battle.\p"
-	.string "That will help it get in the first\n"
-	.string "strike - a decided advantage!$"
+	.string "스피드업을 사용해서\n"
+	.string "포켓몬의 스피드를 올리는 게야!\p"
+	.string "그러면 선제공격할 수 있어서\n"
+	.string "배틀에서 유리해지거든!$"
+	// スピ-ダ- つかってｎ
+	// ポケモンの すばやさ あげるんじゃ!ｐ
+	// そうすりゃ せんせいこうげき できてｎ
+	// たたかいが ゆうりに なるからのう!
 
 LavaridgeTown_Mart_Text_176E1A:: @ 8176E1A
-	.string "On MT. CHIMNEY's peak, there's a local\n"
-	.string "specialty that you can buy only there.\p"
-	.string "Give it to a POKéMON - it will be elated.$"
+	.string "굴뚝산의 정상에서만\n"
+	.string "살 수 있는 명물 과자는\l"
+	.string "포켓몬에게 주면 아주 좋아한단다!$"
+	// えんとつやまの ちょうじょう だけでｎ
+	// かうことが できる おみやげはｌ
+	// ポケモンに あげると よろこぶよ!

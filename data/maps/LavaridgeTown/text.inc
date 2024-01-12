@@ -1,129 +1,211 @@
 LavaridgeTown_Text_16BDA4:: @ 816BDA4
-	.string "MAY: {PLAYER}{KUN}! Long time no see!\p"
-	.string "Oh? While I was visiting the hot springs,\n"
-	.string "you got the LAVARIDGE GYM BADGE.\p"
-	.string "You must have caught good POKéMON...\n"
-	.string "No, I guess you raised some.\p"
-	.string "I guess it would be okay for you to\n"
-	.string "have this.$"
+	.string "봄이: {PLAYER}{K_AYA}! 오랜만이야!\p"
+	.string "어라? 내가 온천에\n"
+	.string "들어간 사이에\l"
+	.string "용암마을의 체육관 배지를 얻었구나!\p"
+	.string "꽤 포켓몬도 모으고 아니\n"
+	.string "키우고 있네!\p"
+	.string "그럼 이걸 줘도\n"
+	.string "괜찮겠다$"
+	// ハルカ『§あ§お! ひさしぶり!ｐ
+	// あら? あたしが おんせんにｎ
+	// はいったり してる あいだにｌ
+	// フエンの ジムバッジ てに いれたんだ!ｐ
+	// かなり ポケモン あつめてる っていうかｎ
+	// そだてて いるんだね!ｐ
+	// じゃあ これを あげてもｎ
+	// だいじょうぶ だよね
 
 LavaridgeTown_Text_16BE7D:: @ 816BE7D
-	.string "MAY: With those GO-GOGGLES, you'll\n"
-	.string "have no trouble getting through the\l"
-	.string "desert near ROUTE 111.\p"
-	.string "But, wow, {PLAYER}{KUN}...\n"
-	.string "Challenging GYMS...\p"
-	.string "You're trying hard because you don't\n"
-	.string "want to lose to me, I bet!\p"
-	.string "{PLAYER}{KUN}, I think I should challenge\n"
-	.string "your dad in PETALBURG GYM.\p"
-	.string "{PLAYER}{KUN}, see you again!$"
+	.string "봄이: 그 고고고글이 있으면\n"
+	.string "111번 도로에 있는 사막에도\l"
+	.string "갈 수 있게 돼!\p"
+	.string "그건 그렇고 {PLAYER}\n"
+	.string "포켓몬체육관에 도전이라니...\p"
+	.string "나한테 지고 싶지 않아서\n"
+	.string "열심히 하고 있는 거구나!\p"
+	.string "그럼 난 등화도시에서 {PLAYER}의\n"
+	.string "아빠에게 도전해 볼까?\p"
+	.string "{PLAYER}{K_AYA} 그럼 다음에 보자!$"
+	// ハルカ『その ゴ-ゴ-ゴ-グルが あるとｎ
+	// 111ばん どうろの さばくにもｌ
+	// はいれるように なるんだよ!ｐ
+	// それにしても §あ§おｎ
+	// ポケモンジムに ちょうせん だなんて……ｐ
+	// あたしに まけたくない からってｎ
+	// がんばって いるのね!ｐ
+	// じゃあ あたし トウカで §あ§おのｎ
+	// おとうさんに ちょうせん しようかな?ｐ
+	// §あ§お じゃあ またね!
 
 LavaridgeTown_Text_16BF92:: @ 816BF92
-	.string "BRENDAN: {PLAYER}, hey, it's been a while.\n"
-	.string "How's it going?\p"
-	.string "Hmm...\n"
-	.string "That's a decent collection of BADGES.\p"
-	.string "All right, then.\n"
-	.string "You may as well have this.$"
+	.string "휘웅: {PLAYER}{K_AYA} 오랜만이네\n"
+	.string "상태는 어때?\p"
+	.string "흐음...\n"
+	.string "배지를 제법 모았구나\p"
+	.string "그럼\n"
+	.string "이걸 줄까?$"
+	// ユウキ『§あ ひさしぶり だなｎ
+	// ちょうしは どう?ｐ
+	// ふうん……ｎ
+	// バッジは けっこう あつめてるんだなｐ
+	// じゃｎ
+	// こいつを やろうかな?
 
 LavaridgeTown_Text_16C020:: @ 816C020
-	.string "BRENDAN: Keep those with you if you're\n"
-	.string "planning on going into that desert near\l"
-	.string "ROUTE 111.\p"
-	.string "There should be some POKéMON that\n"
-	.string "are exclusively desert-dwellers.\l"
-	.string "You might look around for those.\p"
-	.string "As for me...\n"
-	.string "I'm considering challenging NORMAN,\l"
-	.string "the GYM LEADER of PETALBURG.\p"
-	.string "Unlike you, {PLAYER}, your dad looks like\n"
-	.string "he really is tough.\p"
-	.string "See you around!$"
+	.string "휘웅: 그걸 가지고 있으면\n"
+	.string "111번 도로의 사막에도 들어갈 수 있어\p"
+	.string "사막에서밖에 없는\n"
+	.string "포켓몬도 있을 테니까\l"
+	.string "괜찮다면 가보지 그래...?\p"
+	.string "나는...\n"
+	.string "등화도시의 체육관 관장 종길님에게\l"
+	.string "도전해 볼까...\p"
+	.string "{PLAYER}의 아빠는\n"
+	.string "{PLAYER}{K_WAGWA} 달리 강해 보이거든\p"
+	.string "그럼 이만!$"
+	// ユウキ『それを もっていればｎ
+	// 111ばん どうろの さばくに はいれるよｐ
+	// さばくにしか いないｎ
+	// ポケモンも いるはず だからｌ
+	// よかったら いけば……?ｐ
+	// オレは……ｎ
+	// トウカの ジムリ-ダ- センリさんにｌ
+	// ちょうせん してみようかな……ｐ
+	// §あの とうさんｎ
+	// §あと ちがって つよそうだからなｐ
+	// じゃな!
 
 LavaridgeTown_Text_16C174:: @ 816C174
-	.string "I have here an EGG.\p"
-	.string "I'd hoped to hatch it by covering it in\n"
-	.string "hot sand by the hot springs.\l"
-	.string "But that doesn't seem to be enough...\p"
-	.string "I've heard it would be best if it were\n"
-	.string "kept together with POKéMON and\l"
-	.string "carried about.\p"
-	.string "You are a TRAINER, yes?\n"
-	.string "And your POKéMON radiate vitality.\p"
-	.string "So, what say you?\n"
-	.string "Will you take this EGG to hatch?$"
+	.string "알을 부화시키려고\n"
+	.string "모래찜질로 따뜻하게 해주고 있었는데\l"
+	.string "그것만으로는 안 되는 모양일세...\p"
+	.string "듣자 하니 건강한 포켓몬이랑 같이\n"
+	.string "데리고 걸어다니는 게 좋다던데...\p"
+	.string "자네 트레이너지?\n"
+	.string "게다가 건강한 포켓몬도 데리고 있구먼\p"
+	.string "어떤가?\n"
+	.string "알을 부화시켜 보지 않겠나?$"
+	// タマゴを かえそうと おもってｎ
+	// すなぶろに いれて あたためていたがｌ
+	// それだけ じゃあ だめらしいの……ｐ
+	// なんでも げんきな ポケモンと いっしょにｎ
+	// つれてあるいた ほうが いいそうな……ｐ
+	// おまえさん トレ-ナ- じゃろ?ｎ
+	// しかも げんきな ポケモンを つれておるｐ
+	// どうかね?ｎ
+	// タマゴを かえして みるかね?
 
 LavaridgeTown_Text_16C2B6:: @ 816C2B6
-	.string "Good! I hope you'll walk plenty with\n"
-	.string "this here EGG!$"
+	.string "알이랑 같이\n"
+	.string "잔-뜩 걷고 오게나!$"
+	// タマゴと いっしょにｎ
+	// た-っぷり あるいて おくれ!
 
 LavaridgeTown_Text_16C2EA:: @ 816C2EA
-	.string "{PLAYER} received the EGG.$"
+	.string "{PLAYER}{K_EUNNEUN}\n"
+	.string "알을 받았다!$"
+	// §あはｎ
+	// タマゴを もらった!
 
 LavaridgeTown_Text_16C2FF:: @ 816C2FF
-	.string "Oh? You've too many POKéMON.\n"
-	.string "There's no room for this EGG...$"
+	.string "어라? 포켓몬이 가득해서\n"
+	.string "알을 데리고 걸을 수 없겠구나...$"
+	// あれ? ポケモン いっぱいでｎ
+	// タマゴを つれて あるけないよ……
 
 LavaridgeTown_Text_16C33C:: @ 816C33C
-	.string "As you wish, then...\p"
-	.string "If you have a change of heart about\n"
-	.string "hatching this EGG, I will be here.$"
+	.string "그렇구먼...\p"
+	.string "뭐 알을 부화시키고 싶어지면\n"
+	.string "또 말을 걸어주게$"
+	// そうかね……ｐ
+	// まあ タマゴを かえしたく なったらｎ
+	// また はなしかけて おくれよ
 
 LavaridgeTown_Text_16C398:: @ 816C398
-	.string "Every so often, an EGG will be found at\n"
-	.string "the POKéMON DAY CARE.\p"
-	.string "Or at least that's how the rumor goes.$"
+	.string "포켓몬의 알은\n"
+	.string "가끔씩 키우미집에서 발견된다...\p"
+	.string "그런 소문을 들은 적이 있다네$"
+	// ポケモンの タマゴはｎ
+	// ときどき そだてやさんで みつかる……ｐ
+	// そんな うわさを きいたよ
 
 LavaridgeTown_Text_16C3FD:: @ 816C3FD
-	.string "We draw as much hot water as we need,\n"
-	.string "and yet the hot springs never run dry.\p"
-	.string "Isn't it magical?\p"
-	.string "These hot springs appear near active\n"
-	.string "volcanoes. Veins of water under the\l"
-	.string "ground are heated by magma to well up\l"
-	.string "as hot springs.$"
+	.string "퍼도 퍼도 따뜻한 물이 나와\n"
+	.string "주전자도 아니면서 따뜻한 물이 나와\p"
+	.string "...신기하지 않은가?\p"
+	.string "화산이 가까이 있는 곳에서는\n"
+	.string "용암의 열로 지하수가\l"
+	.string "데워지게 되거든!$"
+	// くめども くめども おゆが でるｎ
+	// ポットでも ないのに おゆが でるｐ
+	// ……ふしぎ じゃろ?ｐ
+	// かざんが ちかくに あるところ ではｎ
+	// ちかすいが ようがんの ねつでｌ
+	// あたためられて いるのじゃよ!
 
 LavaridgeTown_Text_16C4DB:: @ 816C4DB
-	.string "Being buried in this hot sand is...\n"
-	.string "Sigh...\p"
-	.string "So warm and heavenly...\p"
-	.string "Eh? Gyaah! Ouch!\p"
-	.string "A POKéMON nipped my backside!$"
+	.string "이렇게 모래에 묻혀 있으면\n"
+	.string "하아아...\p"
+	.string "따뜻해서 좋은 기분...\p"
+	.string "...음? 아얏!\p"
+	.string "포켓몬한테 엉덩이를 물렸다!$"
+	// こうして すなに うまっているとｎ
+	// はあぁ……ｐ
+	// あたたかくって イイキモチ……ｐ
+	// ……ん? イテテッ!ｐ
+	// しりを ポケモンに かまれた!
 
 LavaridgeTown_Text_16C54E:: @ 816C54E
-	.string "Oh, you like hot springs, do you?\p"
-	.string "That's surprising for one as young\n"
-	.string "as you.$"
+	.string "음? 자네\n"
+	.string "온천을 좋아하는 겐가?\p"
+	.string "아직 젊은데 특이하구먼...$"
+	// おや あんたｎ
+	// おんせんが すき なのかい?ｐ
+	// まだ わかいのに めずらしいねえ……
 
 LavaridgeTown_Text_16C59B:: @ 816C59B
-	.string "I bathe in the hot springs every day.\p"
-	.string "I want to become a beautiful and strong\n"
-	.string "GYM LEADER like FLANNERY.$"
+	.string "나 민지님 같은\n"
+	.string "멋있고 강한 체육관 관장이 되려고\l"
+	.string "매일 온천에 들어가고 있어!$"
+	// あたし アスナさん みたいにｎ
+	// すてきで つよい ジムリ-ダ-に なるためｌ
+	// まいにち おんせんに はいってるの!
 
 LavaridgeTown_Text_16C603:: @ 816C603
-	.string "If people put POKéMON in hot springs,\n"
-	.string "it might be seriously strange.\p"
-	.string "Why, it might be an electric bath, or\n"
-	.string "a bubble bath, or even a lava bath...$"
+	.string "온천에 포켓몬을 넣으면\n"
+	.string "전기온천이나 거품온천 또는\l"
+	.string "용암온천이 돼서 엄청날 거 같구먼$"
+	// おんせんに ポケモン いれるとｎ
+	// でんきぶろや あわぶろ はたまたｌ
+	// ようがんぶろに なって すごそうだわ
 
 LavaridgeTown_Text_16C694:: @ 816C694
-	.string "They're claiming that these hot springs\n"
-	.string "are good for calming nervous tension,\l"
-	.string "relieving aching muscles, solving\l"
-	.string "romantic problems, and attracting\l"
-	.string "money...$"
+	.string "이 온천은...\p"
+	.string "신경통과 근육통 그리고\n"
+	.string "연애운이랑 재물운에도\l"
+	.string "효과적이라고 하더군...$"
+	// この おんせんは……ｐ
+	// しんけいつう きんにくつう それからｎ
+	// れんあいのなやみ おかねもうけ などにｌ
+	// こうかてき なんだとさ……
 
 LavaridgeTown_Text_16C72F:: @ 816C72F
-	.string "LAVARIDGE TOWN\p"
-	.string "“POKéMON CENTER HOT SPRINGS\n"
-	.string "An excellent place for relaxing!”$"
+	.string "여기는 용암마을\p"
+	.string "포켓몬센터와 온천이 좋은 곳$"
+	// ここは フエン タウンｎ
+	// ポケセン おんせん よいところ
 
 LavaridgeTown_Text_16C77C:: @ 816C77C
-	.string "LAVARIDGE TOWN POKéMON GYM\n"
-	.string "LEADER: FLANNERY\l"
-	.string "“One with a fiery passion that burns!”$"
+	.string "용암마을 포켓몬체육관\n"
+	.string "관장 민지\l"
+	.string "화상 입을 정도로 열정적인 사람$"
+	// フエン タウン ポケモンジムｎ
+	// リ-ダ- アスナｌ
+	// やけど しそうな じょうねつの ひと
 
 LavaridgeTown_Text_16C7CF:: @ 816C7CF
-	.string "POKéMON HERB SHOP\n"
-	.string "“Bitter taste - better cure!”$"
+	.string "“포켓몬 한방약국”\n"
+	.string "몸에 좋은 약이 입에 쓰다!$"
+	// 「ポケモン かんぽうやく」ｎ
+	// りょうやく くちに にがし!

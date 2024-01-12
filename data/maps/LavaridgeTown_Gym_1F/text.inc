@@ -1,140 +1,223 @@
 LavaridgeTown_Gym_1F_Text_176312:: @ 8176312
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "LAVARIDGE's GYM LEADER FLANNERY\n"
-	.string "uses FIRE-type POKéMON.\p"
-	.string "Her passion for POKéMON burns stronger\n"
-	.string "and hotter than a volcano.\p"
-	.string "Don't get too close to her - you'll burn!\n"
-	.string "Hose her down with water and then\l"
-	.string "go for it!$"
+	.string "잘 있었나!!\n"
+	.string "챔피언을 목표로 하는 {PLAYER}!!\p"
+	.string "용암마을 체육관 관장 민지는\n"
+	.string "불꽃타입 포켓몬 사용자다!\p"
+	.string "포켓몬에 대한 정열은\n"
+	.string "화산보다 격렬하고 뜨겁지!\p"
+	.string "잘못해서 가까이라도 가면\n"
+	.string "화상 입으니 물로 식히면서\l"
+	.string "힘내라-구!!$"
+	// げんき しとぉや!!ｎ
+	// チャンピオンを めざす §あ!!ｐ
+	// フエンタウン ジムの リ-ダ- アスナはｎ
+	// ほのおタイプ ポケモンの つかいてだ!ｐ
+	// ポケモンに たいする じょうねつはｎ
+	// かざん よりも はげしく あちィ!ｐ
+	// うっかり ちかづくと やけど するからｎ
+	// みずで ひやしながらｌ
+	// きばってこ- な!!
 
 LavaridgeTown_Gym_1F_Text_17640C:: @ 817640C
-	.string "Yow! That was a scorching hot battle!$"
+	.string "이야- 뜨거운 배틀이었어!$"
+	// いやあ- あちィ たたかい だった!
 
 LavaridgeTown_Gym_1F_Text_176432:: @ 8176432
-	.string "Owowowowow!\n"
-	.string "Yikes, it's hot!$"
+	.string "아뜨뜨뜨뜨뜨거!\n"
+	.string "푸하-앗! 뜨거웠어-!$"
+	// あちちちちちっ!ｎ
+	// ぷは-っ! あつかった-っ!
 
 LavaridgeTown_Gym_1F_Text_17644F:: @ 817644F
-	.string "I'm blinded by sweat in my eyes...$"
+	.string "땀이 눈에 들어갔어...$"
+	// あせが めに しみるぜ……
 
 LavaridgeTown_Gym_1F_Text_176472:: @ 8176472
-	.string "Being buried in hot sand promotes\n"
-	.string "circulation.\p"
-	.string "It's effective for healing pain in\n"
-	.string "your joints.$"
+	.string "모래찜질은 혈액순환을 도와서\n"
+	.string "관절 통증에 효과적이라고!$"
+	// すなブロは けっこうが よくなってｎ
+	// かんせつの いたみに こうかてき だぜ!
 
 LavaridgeTown_Gym_1F_Text_1764D1:: @ 81764D1
-	.string "I'm trying to relieve my stress.\n"
-	.string "Don't come along and stress me out!$"
+	.string "내 소중한 스트레스 해소 시간을\n"
+	.string "방해하지 마-!$"
+	// ストレスを かいしょう するｎ
+	// おれの ひとときを ジャマ するな-っ!
 
 LavaridgeTown_Gym_1F_Text_176516:: @ 8176516
-	.string "I hope FLANNERY flames you good!$"
+	.string "민지님에게 져버려랏-!$"
+	// アスナさんに まけてしまえ-っ!
 
 LavaridgeTown_Gym_1F_Text_176537:: @ 8176537
-	.string "Haaah... Whew...\p"
-	.string "If you spend too much time buried in\n"
-	.string "hot sand, it tuckers you out...$"
+	.string "하아 후우...\p"
+	.string "모래찜질을 하고 있으면\n"
+	.string "꽤 피곤해져...$"
+	// はあ ふう……ｐ
+	// すなブロに ながく はいっているとｎ
+	// けっこう つかれちゃう もんだよ……
 
 LavaridgeTown_Gym_1F_Text_17658D:: @ 817658D
-	.string "You must be getting tired by now.\n"
-	.string "You'd like to rest in the hot sand,\l"
-	.string "wouldn't you?\p"
-	.string "But you should know that maintaining\n"
-	.string "your willpower is an important ability\l"
-	.string "for all TRAINERS.$"
+	.string "역시 지친 것 같군\n"
+	.string "모래찜질하면서 한숨 쉬었다 가고 싶지?\p"
+	.string "하지만 기력을 유지하는 것도\n"
+	.string "트레이너에게 필요한 능력 중 하나다$"
+	// さすがに つかれてきた ようだねｎ
+	// すなブロで ひとやすみ したいだろう?ｐ
+	// だが きりょくを たもつ こともｎ
+	// トレ-ナ-に ひつような さいのう だよ
 
 LavaridgeTown_Gym_1F_Text_17663F:: @ 817663F
-	.string "Play with fire, and be burned...$"
+	.string "불장난이 부상의 원인인 건가...$"
+	// ひあそびは けがのもと だったか……
 
 LavaridgeTown_Gym_1F_Text_176660:: @ 8176660
-	.string "Your skill is real...\n"
-	.string "But our LEADER FLANNERY is strong.\p"
-	.string "If you don't watch yourself, you'll be\n"
-	.string "burned seriously.$"
+	.string "네 실력은 진짜다...\n"
+	.string "하지만 관장인 민지님은 강해!\p"
+	.string "방심하면 크게 화상 입을 거다!$"
+	// きみの ちからは ほんものだ……ｎ
+	// でも リ-ダ- アスナさんは つよいよ!ｐ
+	// あまく みていると おおやけど するぜ!
 
 LavaridgeTown_Gym_1F_Text_1766D2:: @ 81766D2
-	.string "Can your POKéMON withstand\n"
-	.string "392-degree heat?$"
+	.string "네 포켓몬은\n"
+	.string "200도의 열기를 이겨낼 수 있나!?$"
+	// おまえの ポケモンｎ
+	// 200どの あつさに たえられるかよ!?
 
 LavaridgeTown_Gym_1F_Text_1766FE:: @ 81766FE
-	.string "It didn't burn hotly enough...$"
+	.string "불태우는 방법이 이상했나...$"
+	// もえかたが たりなかったか……
 
 LavaridgeTown_Gym_1F_Text_17671D:: @ 817671D
-	.string "The temperature of magma is\n"
-	.string "392 degrees.\p"
-	.string "Your POKéMON beat me, so they should\n"
-	.string "easily survive in magma.$"
+	.string "200도의 열기라는 건\n"
+	.string "용암의 온도!\p"
+	.string "네 포켓몬은 나를 이겼으니까\n"
+	.string "용암 속에서도 문제없겠군!$"
+	// 200どの あつさ ってのはｎ
+	// ようがんの おんど!ｐ
+	// おまえの ポケモン おれに かてたんだからｎ
+	// ようがんの なかでも へいき だろうな!
 
 LavaridgeTown_Gym_1F_Text_176784:: @ 8176784
-	.string "Um...\n"
-	.string "Okay, I'll battle with you.$"
+	.string "으-음!\n"
+	.string "그럼 상대해 줄게!$"
+	// え-っと!ｎ
+	// じゃあ しょうぶの あいて しますね!
 
 LavaridgeTown_Gym_1F_Text_1767A6:: @ 81767A6
-	.string "Oh, but you're too strong.$"
+	.string "왜 이렇게 강해!?$"
+	// なんて つよいの!?
 
 LavaridgeTown_Gym_1F_Text_1767C1:: @ 81767C1
-	.string "I'm going to be a pretty and strong\n"
-	.string "TRAINER just like FLANNERY.$"
+	.string "나도 민지님처럼\n"
+	.string "아름답고 강한 트레이너가 될 거야!$"
+	// あたしも アスナさんと いっしょにｎ
+	// きれいで つよい トレ-ナ-に なるんだ!
 
 LavaridgeTown_Gym_1F_Text_176801:: @ 8176801
-	.string "Welcome... No, wait.\p"
-	.string "Puny TRAINER, how good to see you've\n"
-	.string "made it here!\p"
-	.string "I have been entrusted with the...\n"
-	.string "No, wait.\p"
-	.string "I am FLANNERY, and I'm the GYM\n"
-	.string "LEADER here!\p"
-	.string "Uh...\n"
-	.string "Dare not underestimate me, though\l"
-	.string "I have been LEADER only a short time!\p"
-	.string "With skills inherited from my grand-\n"
-	.string "father, I shall, uh...demonstrate the\l"
-	.string "hot moves we have honed on this land!$"
+	.string "어서 오세요 ...가 아니라\p"
+	.string "용케 여기까지 왔군!\p"
+	.string "전 여기 체육관 관장을\n"
+	.string "맡게 된 ...이 아니라\p"
+	.string "체육관 관장을 맡은 민지다!\p"
+	.string "크윽...\n"
+	.string "체육관 관장 된 지 얼마 안 됐다고\l"
+	.string "방심하지 마라!\p"
+	.string "할아버지에게 물려받은 재능과\n"
+	.string "이 땅에서 갈고닦은 핫한 기술\l"
+	.string "너에게 보여주겠어!$"
+	// ようこそ ……じゃなくてｐ
+	// よくぞ ここまで きた ものだな!ｐ
+	// わたしは ここの ジムリ-ダ-をｎ
+	// つとめさせて いただく ……じゃなくてｐ
+	// ジムリ-ダ-を まかされた アスナだ!ｐ
+	// くう……ｎ
+	// ジムリ-ダ-に なりたて だからってｌ
+	// ゆだん など しないことだ!ｐ
+	// おじいちゃん ゆずりの さいのうとｎ
+	// このとちで みがきあげた ホットな わざｌ
+	// あなたに みせてやる!
 
 LavaridgeTown_Gym_1F_Text_176960:: @ 8176960
-	.string "Oh...\n"
-	.string "I guess I was trying too hard...\p"
-	.string "I... I've only recently become a GYM\n"
-	.string "LEADER.\p"
-	.string "I tried too hard to be someone I'm not.\p"
-	.string "I have to do things my natural way.\n"
-	.string "If I don't, my POKéMON will be confused.\p"
-	.string "Thanks for teaching me that.\n"
-	.string "For that, you deserve this.$"
+	.string "크윽...\n"
+	.string "어깨에 힘이 들어가고 말았네...\p"
+	.string "나...\n"
+	.string "체육관 관장 된 지 얼마 안 됐다고\l"
+	.string "좀 무리한 걸까...\p"
+	.string "역시 나답게 하지 않으면\n"
+	.string "같이 싸워주는\l"
+	.string "포켓몬도 힘들 거야!\p"
+	.string "그걸 가르쳐준\n"
+	.string "너에게 이걸 줄게!$"
+	// くう……ｎ
+	// かたに ちから はいっちゃって……ｐ
+	// あたし……ｎ
+	// ジムリ-ダ-に なりたて だからってｌ
+	// ちょっと むり していたのかな……ｐ
+	// やっぱ じぶんらしく でないとｎ
+	// いっしょに たたかってくれるｌ
+	// ポケモンも こまっちゃうよね!ｐ
+	// それを おしえてくれたｎ
+	// あなたに これ あげる!
 
 LavaridgeTown_Gym_1F_Text_176A62:: @ 8176A62
-	.string "{PLAYER} received the HEAT BADGE\n"
-	.string "from FLANNERY.$"
+	.string "{PLAYER}{K_EUNNEUN} 민지에게서\n"
+	.string "히트배지를 받았다!$"
+	// §あは アスナからｎ
+	// ヒ-トバッジを もらった!
 
 LavaridgeTown_Gym_1F_Text_176A8C:: @ 8176A8C
-	.string "If you have a HEAT BADGE, all POKéMON\n"
-	.string "up to Level 50, even those you get in\l"
-	.string "trades from other people, will obey\l"
-	.string "you completely.\p"
-	.string "And, it lets POKéMON use the HM move\n"
-	.string "STRENGTH outside of battle.\p"
-	.string "This is a token of my appreciation.\n"
-	.string "Don't be shy about taking it!$"
+	.string "히트배지가 있으면\n"
+	.string "레벨 50까지는\l"
+	.string "다른 사람에게 받은 포켓몬도\l"
+	.string "말을 잘 들어줘!\p"
+	.string "그리고 비전기술 괴력을\n"
+	.string "사용할 수 있게 되지!\p"
+	.string "이건 감사의 마음이야\n"
+	.string "사양하지 말고 받아줘!$"
+	// ヒ-トバッジが あればｎ
+	// レベル50 までならｌ
+	// ひとから もらった ポケモンでもｌ
+	// いうことを きいて くれるんだ!ｐ
+	// それに ひでんわざの かいりき がｎ
+	// つかえるようにも なるよ!ｐ
+	// これは かんしゃの きもちｎ
+	// えんりょ せずに もらって!
 
 LavaridgeTown_Gym_1F_Text_176B8F:: @ 8176B8F
-	.string "That TM50 contains OVERHEAT.\p"
-	.string "That move inflicts serious damage on\n"
-	.string "the opponent.\p"
-	.string "But it also sharply cuts the SP. ATK\n"
-	.string "of the POKéMON using it. It might not\l"
-	.string "be suitable for longer battles.$"
+	.string "기술머신50에는\n"
+	.string "오버히트가 들어 있어!\p"
+	.string "그 기술은 상대에게\n"
+	.string "큰 데미지를 주지!\p"
+	.string "하지만 특수공격이\n"
+	.string "크게 떨어지니까\l"
+	.string "장기전엔 안 맞을지도...$"
+	// わざマシン50 にはｎ
+	// オ-バ-ヒ-トが はいってるよ!ｐ
+	// その わざは あいてにｎ
+	// おおきな ダメ-ジを あたえるんだ!ｐ
+	// だけど とくこうがｎ
+	// がくっと さがっちゃう からｌ
+	// ながい しょうぶには むかないかも……
 
 LavaridgeTown_Gym_1F_Text_176C4A:: @ 8176C4A
-	.string "Your power reminds me of someone...\p"
-	.string "Oh! I know! You battle like NORMAN,\n"
-	.string "the GYM LEADER of PETALBURG.$"
+	.string "너의 강함\n"
+	.string "누군가를 떠올리게 하네...\p"
+	.string "그래! 등화도시의 체육관 관장\n"
+	.string "종길님과 닮았어!$"
+	// あなたの つよさｎ
+	// だれかを おもいださせるの よね……ｐ
+	// そうだ! トウカシティの ジムリ-ダ-ｎ
+	// センリさんに にているんだ!
 
 LavaridgeTown_Gym_1F_Text_176CAF:: @ 8176CAF
-	.string "LAVARIDGE TOWN POKéMON GYM$"
+	.string "용암마을 포켓몬체육관$"
+	// フエンタウン ポケモンジム
 
 LavaridgeTown_Gym_1F_Text_176CCA:: @ 8176CCA
-	.string "LAVARIDGE TOWN POKéMON GYM\p"
-	.string "FLANNERY'S CERTIFIED TRAINERS:\n"
+	.string "용암마을 포켓몬체육관\p"
+	.string "민지 인정 트레이너!\n"
 	.string "{PLAYER}$"
+	// フエンタウン ポケモンジムｐ
+	// アスナ にんてい トレ-ナ-!ｎ
+	// §あ

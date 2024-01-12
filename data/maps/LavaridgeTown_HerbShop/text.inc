@@ -1,22 +1,33 @@
 LavaridgeTown_HerbShop_Text_17615C:: @ 817615C
-	.string "Welcome to the HERB SHOP, home of\n"
-	.string "effective and inexpensive medicine!$"
+	.string "어서 오세요!\n"
+	.string "싸고 효과 좋은 한방약국입니다$"
+	// どうも!ｎ
+	// やすくて よく きく かんぽうや です
 
 LavaridgeTown_HerbShop_Text_1761A2:: @ 81761A2
-	.string "You've come to look at herbal medicine\n"
-	.string "in LAVARIDGE?\p"
-	.string "That's rather commendable.\p"
-	.string "I like you! Take this!$"
+	.string "용암마을의 한약을\n"
+	.string "보러 오다니 뭘 좀 아는구먼\p"
+	.string "마음에 들었네! 이걸 가져가게나!$"
+	// フエンの かんぽうやくをｎ
+	// みにくるとは なかなか しぶいのうｐ
+	// きにいった! これを もってけ!
 
 LavaridgeTown_HerbShop_Text_176209:: @ 8176209
-	.string "That CHARCOAL I gave you, it's used\n"
-	.string "for making herbal medicine.\p"
-	.string "It also does wonders when held by\n"
-	.string "a POKéMON.\p"
-	.string "It intensifies the power of FIRE-type\n"
-	.string "moves.$"
+	.string "자네에게 준 목탄은\n"
+	.string "한약을 만들 때 쓰는 물건이지만\l"
+	.string "포켓몬에게 지니게 해도 굉장하지!\p"
+	.string "불꽃타입 기술의 위력을\n"
+	.string "높여 주거든!$"
+	// おまえさんに あげた もくたんはｎ
+	// かんぽうやくを つくるのに つかうがｌ
+	// ポケモンに もたせても すごいぞ!ｐ
+	// ほのおタイプの わざの いりょくをｎ
+	// たかめて くれるのじゃよ!
 
 LavaridgeTown_HerbShop_Text_1762A3:: @ 81762A3
-	.string "Herbal medicine works impressively well.\n"
-	.string "But your POKéMON will dislike you for it.\l"
-	.string "It must be horribly bitter!$"
+	.string "한약의 효과는 엄청나지만\n"
+	.string "포켓몬에게 마시게 하면 미움받는다네\l"
+	.string "분명 엄청 써서 그런 것일 테지!$"
+	// かんぽうやくの ききめは すごいがｎ
+	// ポケモンに のませると きらわれるぞよｌ
+	// きっと すっごく にがいんじゃろうな!

@@ -1,8 +1,15 @@
 LavaridgeTown_House_Text_176D07:: @ 8176D07
-	.string "My wife's warming an EGG in the hot\n"
-	.string "springs. This is what she told me.\p"
-	.string "She left two POKéMON with the DAY CARE.\n"
-	.string "And they discovered that EGG!$"
+	.string "온천에서 알을 따뜻하게 하고 있는\n"
+	.string "할멈에게서 들었는데...\p"
+	.string "키우미집에 포켓몬을\n"
+	.string "두 마리 같이 맡겼더니\l"
+	.string "무려 알이 발견됐다고 하더구나!!$"
+	// おんせんで タマゴを あたためているｎ
+	// ばあさんから きいたんじゃが……ｐ
+	// そだてやに ポケモンをｎ
+	// 2ひき いっしょに あずけたらのｌ
+	// なんと タマゴが みつかったそうじゃ!!
 
 LavaridgeTown_House_Text_176D94:: @ 8176D94
-	.string "ZIGZAGOON: Pshoo!$"
+	.string "지그제구리: 푸샤-!$"
+	// ジグザグマ『ぷしゅ-!
