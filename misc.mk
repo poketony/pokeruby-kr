@@ -97,11 +97,13 @@ $(TITLEGFXDIR)/press_start.4bpp: GFX_OPTS := -num_tiles 41
 #### Interface ####
 
 MENUGFXDIR := graphics/interface
+MODERNMENUGFXDIR := graphics-modern/interface
 
 $(MENUGFXDIR)/menu.gbapal: $(MENUGFXDIR)/menu_0.gbapal $(MENUGFXDIR)/menu_1.gbapal
 	@cat $(MENUGFXDIR)/menu_0.gbapal $(MENUGFXDIR)/menu_1.gbapal >$@
 
 $(MENUGFXDIR)/wordgroup_frame.4bpp: GFX_OPTS := -num_tiles 65
+$(MODERNMENUGFXDIR)/wordgroup_frame.4bpp: GFX_OPTS := -num_tiles 65
 
 $(MENUGFXDIR)/party_menu_misc.4bpp: GFX_OPTS := -num_tiles 116
 

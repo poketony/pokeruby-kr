@@ -917,8 +917,15 @@ const u8 gBuyMenuFrame_Gfx[] = INCBIN_U8("graphics/interface/mart_frame.4bpp.lz"
 const u8 gMenuMoneyPal[] = INCBIN_U8("graphics/interface/money.gbapal.lz");
 const u8 gBuyMenuFrame_Tilemap[] = INCBIN_U8("graphics/interface/mart_frame.bin.lz");
 const u8 gMenuMoneyGfx[] = INCBIN_U8("graphics/interface/money.4bpp.lz");
+
+#if MODERN
+const u8 gMenuPokeblock_Gfx[] = INCBIN_U8("graphics-modern/interface/pokeblock_case_frame.4bpp.lz");
+const u8 gMenuPokeblock_Pal[] = INCBIN_U8("graphics-modern/interface/pokeblock_case_frame.gbapal.lz");
+#else
 const u8 gMenuPokeblock_Gfx[] = INCBIN_U8("graphics/interface/pokeblock_case_frame.4bpp.lz");
 const u8 gMenuPokeblock_Pal[] = INCBIN_U8("graphics/interface/pokeblock_case_frame.gbapal.lz");
+#endif
+
 const u8 gMenuPokeblockDevice_Gfx[] = INCBIN_U8("graphics/interface/pokeblock_device.4bpp.lz");
 const u8 gMenuPokeblockDevice_Pal[] = INCBIN_U8("graphics/interface/pokeblock_device.gbapal.lz");
 const u8 gMenuPokeblock_Tilemap[] = INCBIN_U8("graphics/interface/pokeblock.bin.lz");
@@ -938,8 +945,15 @@ const u8 gPokeblockBlack_Pal[] = INCBIN_U8("graphics/pokeblock/black.gbapal.lz")
 const u8 gPokeblockWhite_Pal[] = INCBIN_U8("graphics/pokeblock/white.gbapal.lz");
 const u8 gPokeblockGold_Pal[] = INCBIN_U8("graphics/pokeblock/gold.gbapal.lz");
 const u8 gUnknown_08E782FC[] = INCBIN_U8("graphics/interface/pokeblock_feeding_bg_map.bin.lz");
+
+#if MODERN
+const u8 gBerryCheck_Gfx[] = INCBIN_U8("graphics-modern/interface/check_berry.4bpp.lz");
+const u8 gBerryCheck_Pal[] = INCBIN_U8("graphics-modern/interface/check_berry.gbapal.lz");
+#else
 const u8 gBerryCheck_Gfx[] = INCBIN_U8("graphics/interface/check_berry.4bpp.lz");
 const u8 gBerryCheck_Pal[] = INCBIN_U8("graphics/interface/check_berry.gbapal.lz");
+#endif
+
 const u8 gUnknown_08E788E4[] = INCBIN_U8("graphics/interface/berry_tag.bin.lz");
 const u8 gUnknown_08E78A84[] = INCBIN_U8("graphics/interface/berry_tag_title.bin.lz");
 const u8 gBerryCheckCircle_Gfx[] = INCBIN_U8("graphics/interface/check_berry_circle.4bpp.lz");
@@ -1039,14 +1053,18 @@ const u16 gNamingScreenPalettes[][16] =
 };
 
 const u8 gUnknown_08E86258[] = INCBIN_U8("graphics/unknown/unknown_E86258.bin");
+
+#if MODERN
+const u8 gPokedexMenu_Gfx[] = INCBIN_U8("graphics-modern/pokedex/menu.4bpp.lz");
+#else
 const u8 gPokedexMenu_Gfx[] = INCBIN_U8("graphics/pokedex/menu.4bpp.lz");
+#endif
+
 const u8 gPokedexMenu2_Gfx[] = INCBIN_U8("graphics/pokedex/menu2.4bpp.lz");
 const u16 gPokedexMenu_Pal[] = INCBIN_U16("graphics/pokedex/menu1.gbapal");
 const u16 gPokedexMenu2_Pal[] = INCBIN_U16("graphics/pokedex/menu2.gbapal");
-
 const u8 gAreaUnknownTiles[] = INCBIN_U8("graphics/pokedex/area_unknown.4bpp.lz");
 const u16 gAreaUnknownPalette[] = INCBIN_U16("graphics/pokedex/area_unknown.gbapal");
-
 const u8 gPokedexMenuSearch_Gfx[] = INCBIN_U8("graphics/pokedex/menu_search.4bpp.lz");
 const u16 gPokedexMenuSearch_Pal[] = INCBIN_U16("graphics/pokedex/menu3.gbapal");
 
@@ -1070,7 +1088,13 @@ const u8 gPokenavConditionMenuCancel_Gfx[] = INCBIN_U8("graphics/pokenav/conditi
 const u8 gPokenavConditionPokeball_Pal[] = INCBIN_U8("graphics/pokenav/condition3.gbapal");//
 const u16 gPokenavCondition4_Pal[] = INCBIN_U16("graphics/pokenav/condition4.gbapal");
 const u8 gPokenavConditionMenuOptions2_Gfx[] = INCBIN_U8("graphics/pokenav/condition_menu_options2.4bpp.lz");
+
+#if MODERN
+const u8 gPokenavConditionMenuMisc_Gfx[] = INCBIN_U8("graphics-modern/pokenav/condition_menu_misc.4bpp");
+#else
 const u8 gPokenavConditionMenuMisc_Gfx[] = INCBIN_U8("graphics/pokenav/condition_menu_misc.4bpp");
+#endif
+
 const u16 gPokenavCondition5_Pal[] = INCBIN_U16("graphics/pokenav/condition5.gbapal");
 const u8 gPokenavConditionSearch_Gfx[] = INCBIN_U8("graphics/pokenav/condition_search.4bpp.lz");
 const u16 gPokenavCondition6_Pal[] = INCBIN_U16("graphics/pokenav/condition6.gbapal");
@@ -1104,7 +1128,12 @@ const u8 gHallOfFame_Gfx[] = INCBIN_U8("graphics/misc/hof.4bpp.lz");
 const u16 gHallOfFame_Pal[] = INCBIN_U16("graphics/misc/hof.gbapal");
 
 const u8 gMenuWordGroupIndicator_Gfx[] = INCBIN_U8("graphics/interface/wordgroup_indicator.4bpp.lz");
+
+#if MODERN
+const u8 gMenuWordGroupFrame_Gfx[] = INCBIN_U8("graphics-modern/interface/wordgroup_frame.4bpp.lz");
+#else
 const u8 gMenuWordGroupFrame_Gfx[] = INCBIN_U8("graphics/interface/wordgroup_frame.4bpp.lz");
+#endif
 
 const u16 gMenuWordGroupIndicator_Pal[] = INCBIN_U16("graphics/interface/wordgroup_indicator.gbapal");
 const u16 gMenuWordGroupFrame1_Pal[] = INCBIN_U16("graphics/interface/wordgroup_pink.gbapal");
