@@ -4008,12 +4008,12 @@ static void VBlankCB_TradeEvolutionScene(void)
 
 static void EvolutionScene_DrawMenuCursor(void)
 {
-    Text_InitWindow(&gUnknown_03004828->window, gMenuCursorText_Cursor, gUnknown_03004828->textWindowBaseTileNum + 128, 25, 9 + sEvoCursorPos);
+    Text_InitWindow(&gUnknown_03004828->window, gMenuCursorText_EvolutionSceneYesNoMenuCursor, gUnknown_03004828->textWindowBaseTileNum + 128, 25, 9 + sEvoCursorPos * 2);
     Text_PrintWindow8002F44(&gUnknown_03004828->window);
 }
 
 static void EvolutionScene_EraseMenuCursor(void)
 {
-    Text_InitWindow(&gUnknown_03004828->window, gMenuCursorText_Space, gUnknown_03004828->textWindowBaseTileNum + 128, 25, 9 + sEvoCursorPos);
+    Text_InitWindow(&gUnknown_03004828->window, gMenuCursorText_Space, gUnknown_03004828->textWindowBaseTileNum + 128, 25, 9 + sEvoCursorPos * 2);
     Text_PrintWindow8002F44(&gUnknown_03004828->window);
 }

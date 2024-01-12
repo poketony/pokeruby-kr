@@ -9610,14 +9610,18 @@ void sub_802BBD4(u8 r0, u8 r1, u8 r2, u8 r3, u8 sp0)
 
 void DrawMenuCursor(void)
 {
-    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, gMenuCursorText_Cursor, 0x100, 25, 9 + gBattleCommunication[1]);
-    Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
+    u16 *tilemapPtr = (u16 *)0x600C272;
+    u16 index = gBattleCommunication[1] * TILE_SIZE_4BPP * 2;
+    *(tilemapPtr + index) = 1;
+    *(tilemapPtr + index + TILE_SIZE_4BPP) = 2;
 }
 
 void EraseMenuCursor(void)
 {
-    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, gMenuCursorText_Space, 0x100, 25, 9 + gBattleCommunication[1]);
-    Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
+    u16 *tilemapPtr = (u16 *)0x600C272;
+    u16 index = gBattleCommunication[1] * TILE_SIZE_4BPP * 2;
+    *(tilemapPtr + index) = 32;
+    *(tilemapPtr + index + TILE_SIZE_4BPP) = 32;
 }
 
 static void atkF3_trygivecaughtmonnick(void)

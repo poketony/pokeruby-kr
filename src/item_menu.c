@@ -1097,9 +1097,9 @@ static void sub_80A41E0(u8 *a, u16 b, const u8 *c, u16 d, u8 e)
     *(a++) = EXT_CTRL_CODE_CLEAR_TO;
     *(a++) = 28;
 
-    a = AlignStringInMenuWindow(a, c, 104 - (e + 1) * 6, 0);
+    a = AlignStringInMenuWindow(a, c, 112 - (e + 1) * 6, 0);
     *(a++) = CHAR_MULT_SIGN;
-    AlignInt1InMenuWindow(a, d, 104, 1);
+    AlignInt1InMenuWindow(a, d, 112, 1);
 }
 
 static u8 *sub_80A425C(u8 taskId, u8 *text, u8 itemSlot)

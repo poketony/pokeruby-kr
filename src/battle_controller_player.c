@@ -723,8 +723,8 @@ static void HandleAction_ChooseMove(void)
             else
                 gUnknown_03004344 = gMoveSelectionCursor[gActiveBattler] + 1;
             BattleControllerPlayer_DrawMovesMenuCursor(gUnknown_03004344, 27);
-            Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 0x17, 0x37, 0x1C, 0x3A);
-            Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_SwitchWhich, 0x290, 0x17, 0x37);
+            Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 20, 55, 28, 58);
+            Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_SwitchWhich, 0x290, 20, 55);
             Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
             gBattlerControllerFuncs[gActiveBattler] = sub_802CA60;
         }
@@ -869,8 +869,8 @@ void sub_802CA60(void)
         gBattlerControllerFuncs[gActiveBattler] = HandleAction_ChooseMove;
         gMoveSelectionCursor[gActiveBattler] = gUnknown_03004344;
         BattleControllerPlayer_DrawMovesMenuCursor(gMoveSelectionCursor[gActiveBattler], 0);
-        Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 0x17, 0x37, 0x1C, 0x3A);
-        Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_PP, 0x290, 0x17, 0x37);
+        Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 20, 55, 28, 58);
+        Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_PP, 0x290, 20, 55);
         Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
         sub_802E220();
         sub_802E2D4();
@@ -882,8 +882,8 @@ void sub_802CA60(void)
         BattleControllerPlayer_DrawMovesMenuCursor(gMoveSelectionCursor[gActiveBattler], 0);
         sub_802E12C(gMoveSelectionCursor[gActiveBattler], BattleText_Format);
         gBattlerControllerFuncs[gActiveBattler] = HandleAction_ChooseMove;
-        Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 0x17, 0x37, 0x1C, 0x3A);
-        Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_PP, 0x290, 0x17, 0x37);
+        Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 20, 55, 28, 58);
+        Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_PP, 0x290, 20, 55);
         Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
         sub_802E220();
         sub_802E2D4();
@@ -1576,8 +1576,8 @@ void sub_802E12C(s32 a, const u8 *b)
       &gWindowTemplate_Contest_MoveDescription,
       gDisplayedStringBattle,
       0x300 + a * 20,
-      (a & 1) ? 11 : 2,
-      (a < 2) ? 0x37 : 0x39);
+      (a & 1) ? 10 : 2,
+      (a < 2) ? 55 : 57);
     Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
 }
 
@@ -1587,7 +1587,7 @@ void sub_802E1B0(void)
     s32 i;
 
     gUnknown_03004348 = 0;
-    Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 1, 55, 20, 58);
+    Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 1, 55, 17, 58);
     for (i = 0; i < 4; i++)
     {
         BattleControllerPlayer_EraseMovesMenuCursor(i);
@@ -1628,8 +1628,8 @@ void sub_802E2D4(void)
 {
     if (gBattleBufferA[gActiveBattler][2] == 1)
     {
-        Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 0x17, 0x37, 0x1C, 0x3A);
-        Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_ForgetMove, 0x290, 0x13, 0x37);
+        Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 20, 55, 28, 58);
+        Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_ForgetMove, 0x290, 19, 55);
     }
     else
     {
@@ -1638,18 +1638,18 @@ void sub_802E2D4(void)
 
         str = StringCopy(str, BattleText_Format);
         StringCopy(str, gTypeNames[gBattleMoves[r4->moves[gMoveSelectionCursor[gActiveBattler]]].type]);
-        Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 0x17, 0x39, 0x1C, 0x3A);
-        Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, gDisplayedStringBattle, 0x2C0, 0x17, 0x39);
+        Text_FillWindowRect(&gWindowTemplate_Contest_MoveDescription, 0x1016, 23, 57, 28, 58);
+        Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, gDisplayedStringBattle, 0x2C0, 23, 57);
     }
     Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
 }
 
 const u8 sMovesMenuCursorCoords[][2] =
 {
-    { 1, 15},
-    {10, 15},
-    { 1, 17},
-    {10, 17},
+    {1, 15},
+    {9, 15},
+    {1, 17},
+    {9, 17},
 };
 
 const u8 sMainMenuCursorCoords[][2] =
@@ -2654,7 +2654,7 @@ void sub_80304A8(void)
     BattleControllerPlayer_DrawMovesMenuCursor(gMoveSelectionCursor[gActiveBattler], 0);
     if (gBattleBufferA[gActiveBattler][2] != 1)
     {
-        Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_PP, 656, 23, 55);
+        Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_PP, 656, 20, 55);
         Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
     }
     sub_802E220();

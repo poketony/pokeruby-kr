@@ -940,4 +940,6 @@ const u8 gSystemText_Saving[] = _("포켓몬 리포트를 작성하고 있습니
 const u8 gMenuCursorText_Space[] = _(" ");
 const u8 gMenuCursorText_Cursor[] = _("▶");
 const u8 gMenuCursorText_SelectedCursor[] = _("{COLOR WHITE2}▶");
+const u8 gMenuCursorText_PCItemSelectedCursor[] = _("{PALETTE 13}▶");
 const u8 gMenuCursorText_ContestMovesCursor[] = _("{COLOR WHITE2}▶");
+const u8 gMenuCursorText_EvolutionSceneYesNoMenuCursor[] = _("{COLOR DARK_GREY}{HIGHLIGHT WHITE2}{SHADOW LIGHT_GREY}▶");

@@ -924,6 +924,8 @@ extern const u8 gSystemText_Saving[];
 extern const u8 gMenuCursorText_Space[];
 extern const u8 gMenuCursorText_Cursor[];
 extern const u8 gMenuCursorText_SelectedCursor[];
+extern const u8 gMenuCursorText_PCItemSelectedCursor[];
 extern const u8 gMenuCursorText_ContestMovesCursor[];
+extern const u8 gMenuCursorText_EvolutionSceneYesNoMenuCursor[];
 
 #endif

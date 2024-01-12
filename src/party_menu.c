@@ -2153,6 +2153,9 @@ void PrintPartyMenuPromptText(u8 textId, u8 b)
         case 3:
             Menu_DrawStdWindowFrame(0, 16, 18, 19);
             break;
+        case 4:
+            Menu_DrawStdWindowFrame(0, 16, 20, 19);
+            break;
         }
 
         Menu_PrintText(PartyMenuPromptTexts[textId], 1, 17);
@@ -4080,16 +4083,14 @@ void PrintStatGrowthsInLevelUpWindow(u8 taskId)
         ePartyMenu2.pmStatGrowths[i] = stat - ePartyMenu2.pmStatGrowths[i];
 
         x = (i / 3) * 9 + 11;
-        y = ((i % 3) << 1) + 1;
+        y = (i % 3) * 2 + 1;
 
         Menu_PrintTextPixelCoords(StatNames[i], (x + 1) * 8, y * 8, 1);
-        if (i == 2)
-            Menu_PrintTextPixelCoords(gOtherText_TallPlusAndRightArrow, (x + 6) * 8 + 6, y * 8, 0);
-        else
-            Menu_PrintTextPixelCoords(gOtherText_TallPlusAndRightArrow, (x + 6) * 8 + 6, y * 8, 1);
+        Menu_PrintTextPixelCoords(gOtherText_TallPlusAndRightArrow, (x + 6) * 8 + 6, y * 8, 1);
+
         gStringVar1[0] = EXT_CTRL_CODE_BEGIN;
-        gStringVar1[1] = 0x14;
-        gStringVar1[2] = 0x06;
+        gStringVar1[1] = EXT_CTRL_CODE_MIN_LETTER_SPACING;
+        gStringVar1[2] = 6;
         ConvertIntToDecimalStringN(gStringVar1 + 3, ePartyMenu2.pmStatGrowths[i], 1, 2);
         Menu_PrintTextPixelCoords(gStringVar1, (x + 6) * 8 + 12, y * 8, 0);
     }
@@ -4110,13 +4111,12 @@ void PrintNewStatsInLevelUpWindow(u8 taskId)
         newStatIndex = i + 6;
         ePartyMenu2.pmStatGrowths[newStatIndex] = stat;
 
-        x = ((i / 3) * 9) + 11;
-        y = ((i % 3) << 1) + 1;
+        x = (i / 3) * 9 + 11;
+        y = (i % 3) * 2 + 1;
 
         gStringVar1[0] = EXT_CTRL_CODE_BEGIN;
-        gStringVar1[1] = 0x14;
-        gStringVar1[2] = 0x06;
-
+        gStringVar1[1] = EXT_CTRL_CODE_MIN_LETTER_SPACING;
+        gStringVar1[2] = 6;
         ConvertIntToDecimalStringN(gStringVar1 + 3, ePartyMenu2.pmStatGrowths[newStatIndex], 1, 3);
         Menu_PrintTextPixelCoords(gStringVar1, (x + 6) * 8 + 6, y * 8, 0);
     }

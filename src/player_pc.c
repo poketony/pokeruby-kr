@@ -61,6 +61,7 @@ static void ItemStorage_HandleRemoveItem(u8);
 static void ItemStorage_WaitPressHandleResumeProcessInput(u8);
 static void ItemStorage_HandleResumeProcessInput(u8);
 static void ItemStorage_DoItemSwap(u8, bool8);
+static void ItemStorage_DrawMenuCursor(u8);
 static void ItemStorage_DrawItemList(u8);
 static void ItemStorage_PrintItemPcResponse(u16);
 static void ItemStorage_DrawBothListAndDescription(u8);
@@ -314,8 +315,8 @@ static void InitItemStorageMenu(u8 var)
 
 static void ItemStorageMenuPrint(const u8 *textPtr)
 {
-    Menu_BlankWindowRect(2, 15, 27, 18);
-    Menu_PrintText(textPtr, 2, 15);
+    Menu_BlankWindowRect(4, 15, 25, 18);
+    Menu_PrintText(textPtr, 4, 15);
 }
 
 static void ItemStorageMenuProcessInput(u8 var)
@@ -452,6 +453,8 @@ static void ItemStorage_ProcessInput(u8 taskId)
             PlaySE(SE_SELECT);
             PAGE_INDEX = Menu_MoveCursor(-1);
             trueIndex = ITEMS_ABOVE_TOP + PAGE_INDEX;
+            ItemStorage_DrawMenuCursor(taskId);
+
             if (SWITCH_MODE_ACTIVE == FALSE) // are we not currently switching items?
             {
                 if (trueIndex == NUM_ITEMS) // if the cursor is on top of cancel, print the go back to prev description.
@@ -484,6 +487,7 @@ static void ItemStorage_ProcessInput(u8 taskId)
             PlaySE(SE_SELECT);
             PAGE_INDEX = Menu_MoveCursor(1);
             trueIndex = ITEMS_ABOVE_TOP + PAGE_INDEX;
+            ItemStorage_DrawMenuCursor(taskId);
 
             if(SWITCH_MODE_ACTIVE != FALSE)
                 return;
@@ -516,6 +520,7 @@ static void ItemStorage_ProcessInput(u8 taskId)
             }
             // _0813A3DC
             ItemStorage_DrawItemList(taskId);
+            Menu_MoveCursor(0);
         }
         else // _0813A3E8
         {
@@ -723,7 +728,7 @@ static void ItemStorage_ResumeInputFromNoToss(u8 taskId)
     s16 *data = TASK.data;
 
     Menu_EraseWindowRect(0x6, 0x6, 0xD, 0xB);
-    InitMenu(0, 16, 2, NUM_PAGE_ITEMS, PAGE_INDEX);
+    InitMenu(0, 15, 2, NUM_PAGE_ITEMS, PAGE_INDEX);
     StartVerticalScrollIndicators(TOP_ARROW);
     StartVerticalScrollIndicators(BOTTOM_ARROW);
     ItemStorage_PrintItemPcResponse(gSaveBlock1.pcItems[ITEMS_ABOVE_TOP + PAGE_INDEX].itemId);
@@ -746,7 +751,7 @@ static void ItemStorage_HandleRemoveItem(u8 taskId)
 
         ItemStorage_SetItemAndMailCount(taskId);
         ItemStorage_HandleResumeProcessInput(taskId);
-        InitMenu(0, 16, 2, NUM_PAGE_ITEMS, PAGE_INDEX);
+        InitMenu(0, 15, 2, NUM_PAGE_ITEMS, PAGE_INDEX);
     }
 }
 
@@ -815,11 +820,7 @@ static void ItemStorage_DoItemSwap(u8 taskId, bool8 switchModeDisabled)
 static void ItemStorage_DrawItemQuantity(u16 arg1, enum StringConvertMode arg2, u8 arg3, u8 arg4, int isSwapSelected)
 {
     sub_80A4164(gStringVar1, arg1, arg2, arg4);
-
-    if(isSwapSelected != FALSE)
-        Menu_PrintText(gSelectedItemQuantityFormatText, 0x1A, arg3);
-    else
-        Menu_PrintText(gNonSelectedItemQuantityFormatText, 0x1A, arg3);
+    Menu_PrintText(gNonSelectedItemQuantityFormatText, 0x1A, arg3);
 }
 
 static void ItemStorage_DrawItemVoidQuantity(u8 var)
@@ -830,11 +831,7 @@ static void ItemStorage_DrawItemVoidQuantity(u8 var)
 static void ItemStorage_DrawItemName(struct ItemSlot *itemSlot, u8 var, int isSwapSelected)
 {
     CopyItemName(itemSlot->itemId, gStringVar1);
-
-    if(isSwapSelected != FALSE)
-        Menu_PrintText(gSelectedItemFormattedText, 17, var);
-    else
-        Menu_PrintText(gNonSelectedItemFormattedText, 17, var);
+    Menu_PrintText(gNonSelectedItemFormattedText, 16, var);
 }
 
 static void ItemStorage_DrawNormalItemEntry(struct ItemSlot *itemSlot, u8 var, int var2)
@@ -857,6 +854,23 @@ static void ItemStorage_DrawTMHMEntry(struct ItemSlot *itemSlot, u8 var, int var
         ItemStorage_DrawItemQuantity(itemSlot->quantity, STR_CONV_MODE_RIGHT_ALIGN, var, 3, var2);
     else
         ItemStorage_DrawItemVoidQuantity(var); // HMs do not have a quantity.
+}
+
+static void ItemStorage_DrawMenuCursor(u8 taskId)
+{
+    u8 i;
+    s16 *data = TASK.data;
+
+    for (i = ITEMS_ABOVE_TOP; i < ITEMS_ABOVE_TOP + NUM_PAGE_ITEMS; i++)
+    {
+        if (i == NUM_ITEMS || PAGE_INDEX == i - ITEMS_ABOVE_TOP)
+            continue;
+
+        if (SWITCH_MODE_ACTIVE != FALSE && i == SWAP_ITEM_INDEX)
+            Menu_PrintText(gMenuCursorText_PCItemSelectedCursor, 15, 2 + (i - ITEMS_ABOVE_TOP) * 2);
+        else
+            Menu_PrintText(gMenuCursorText_Space, 15, 2 + (i - ITEMS_ABOVE_TOP) * 2);
+    }
 }
 
 static void ItemStorage_DrawItemList(u8 taskId)
@@ -900,17 +914,19 @@ static void ItemStorage_DrawItemList(u8 taskId)
     }
 
     if (i - ITEMS_ABOVE_TOP < 8)
-        Menu_BlankWindowRect(16, yCoord + 4, 28, 18);
+        Menu_BlankWindowRect(15, yCoord + 4, 28, 18);
 
     if (ITEMS_ABOVE_TOP != 0)
-        CreateVerticalScrollIndicators(TOP_ARROW, 0xB8, 8);
+        CreateVerticalScrollIndicators(TOP_ARROW, 176, 8);
     else
         DestroyVerticalScrollIndicator(TOP_ARROW);
 
     if (ITEMS_ABOVE_TOP + NUM_PAGE_ITEMS <= NUM_ITEMS)
-        CreateVerticalScrollIndicators(BOTTOM_ARROW, 0xB8, 0x98);
+        CreateVerticalScrollIndicators(BOTTOM_ARROW, 176, 152);
     else
         DestroyVerticalScrollIndicator(BOTTOM_ARROW);
+
+    ItemStorage_DrawMenuCursor(taskId);
 }
 
 static void ItemStorage_PrintItemPcResponse(u16 itemId)
@@ -951,7 +967,7 @@ static void ItemStorage_PrintItemPcResponse(u16 itemId)
             break;
     }
 
-    sub_8072AB0(string, 8, 0x68, 0x68, 0x30, 1);
+    sub_8072AB0(string, 8, 104, 96, 48, 1);
 }
 
 static void ItemStorage_DrawBothListAndDescription(u8 taskId)
@@ -977,13 +993,13 @@ static void ItemStorage_GoBackToItemPCMenu(u8 taskId, u8 var)
     ClearVerticalScrollIndicatorPalettes();
     LoadScrollIndicatorPalette();
     ItemStorage_LoadPalette();
-    Menu_DrawStdWindowFrame(0xF, 0, 0x1D, 0x13);
-    Menu_DrawStdWindowFrame(0, 0xC, 0xE, 0x13);
-    Menu_DrawStdWindowFrame(0, 0, 0xB, 3);
+    Menu_DrawStdWindowFrame(14, 0, 29, 19);
+    Menu_DrawStdWindowFrame(0, 12, 13, 19);
+    Menu_DrawStdWindowFrame(0, 0, 10, 3);
     ItemStorage_PrintItemPcResponse(gSaveBlock1.pcItems[0].itemId);
     Menu_PrintText(gPCText_ItemPCOptionsText[var].text, 1, 1);
     ItemStorage_DrawItemList(taskId);
-    InitMenu(0, 16, 2, NUM_PAGE_ITEMS, PAGE_INDEX);
+    InitMenu(0, 15, 2, NUM_PAGE_ITEMS, PAGE_INDEX);
 }
 
 static void ItemStorage_LoadPalette(void)
@@ -1232,8 +1248,6 @@ static const u8 gHighlightedMoveToBagFormatText[] = _("{COLOR RED}{STR_VAR_1}");
 static void Mailbox_MoveToBag(u8 taskId)
 {
     Menu_DestroyCursor();
-    StringCopy(gStringVar1, gOtherText_MoveToBag);
-    Menu_PrintText(gHighlightedMoveToBagFormatText, 1, 3); // gHighlightedMoveToBagFormatText
     DisplayItemMessageOnField(taskId, gOtherText_MessageWillBeLost, Mailbox_DrawYesNoBeforeMove, 0);
 }
 

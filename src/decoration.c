@@ -1500,15 +1500,15 @@ void Task_DecorationPCProcessMenuInput(u8 taskId)
 
 void sub_80FE394(void)
 {
-    Menu_BlankWindowRect(2, 15, 27, 18);
-    Menu_PrintText(gUnknown_083EC624[gUnknown_020388D4], 2, 15);
+    Menu_BlankWindowRect(4, 15, 25, 18);
+    Menu_PrintText(gUnknown_083EC624[gUnknown_020388D4], 4, 15);
 }
 
 void gpu_pal_decompress_alloc_tag_and_upload(u8 taskId)
 {
     Menu_DestroyCursor();
     Menu_EraseWindowRect(0, 0, 10, 9);
-    Menu_BlankWindowRect(2, 15, 27, 18);
+    Menu_BlankWindowRect(4, 15, 25, 18);
     FreeSpritePaletteByTag(6);
     if (sDecorationContext.isPlayerRoom == 0)
     {

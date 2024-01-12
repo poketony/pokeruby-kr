@@ -245,9 +245,9 @@ static void sub_8089C7C(u8 arg0)
 {
     u32 r4 = (u8)(18 - (sPokeMenuOptionsNo << 1));
 
-    sub_8089BDC(19, r4, 10, sPokeMenuOptionsNo, sPokemonMenuActions, sPokeMenuOptionsOrder, 3);
+    sub_8089BDC(20, r4, 9, sPokeMenuOptionsNo, sPokemonMenuActions, sPokeMenuOptionsOrder, 1);
     r4 |= 1;
-    InitMenu(0, 20, r4, sPokeMenuOptionsNo, arg0);
+    InitMenu(0, 21, r4, sPokeMenuOptionsNo, arg0);
 }
 
 void HandleDefaultPartyMenu(u8 taskID)
@@ -404,7 +404,7 @@ static void sub_808A060(u8 taskID)
 static void sub_808A100(u8 taskID)
 {
     ShowPartyPopupMenu(0, &sUnknown_0839F578, (void*)(sPokemonMenuActions), 0);
-    PrintPartyMenuPromptText(0xD, 2);
+    PrintPartyMenuPromptText(0xD, 4);
     gTasks[taskID].func = sub_808A060;
 }
 

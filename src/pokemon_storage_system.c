@@ -242,7 +242,7 @@ s16 StorageSystemGetNextMonIndex(struct BoxPokemon *box, s8 startIdx, u8 stopIdx
 
 void StorageSystemClearMessageWindow(void)
 {
-    Menu_BlankWindowRect(2, 15, 27, 18);
+    Menu_BlankWindowRect(4, 15, 25, 18);
 }
 
 void Task_PokemonStorageSystem(u8 taskId)
@@ -253,7 +253,7 @@ void Task_PokemonStorageSystem(u8 taskId)
         case 0:
             StorageSystemCreatePrimaryMenu(task->data[1]);
             Menu_DisplayDialogueFrame();
-            Menu_PrintText(gUnknown_083B600C[task->data[1]].desc, 2, 15);
+            Menu_PrintText(gUnknown_083B600C[task->data[1]].desc, 4, 15);
             task->data[0]++;
             break;
         case 1:
@@ -277,7 +277,7 @@ void Task_PokemonStorageSystem(u8 taskId)
                     {
                         task->data[1] = task->data[3];
                         StorageSystemClearMessageWindow();
-                        Menu_PrintText(gUnknown_083B600C[task->data[1]].desc, 2, 15);
+                        Menu_PrintText(gUnknown_083B600C[task->data[1]].desc, 4, 15);
                     }
                     break;
                 case -1:
@@ -292,13 +292,13 @@ void Task_PokemonStorageSystem(u8 taskId)
                     if (task->data[2] == 0 && StorageSystemGetPartySize() == PARTY_SIZE)
                     {
                         StorageSystemClearMessageWindow();
-                        Menu_PrintText(gPCText_PartyFull2, 2, 15);
+                        Menu_PrintText(gPCText_PartyFull2, 4, 15);
                         task->data[0] = 3;
                     }
                     else if (task->data[2] == 1 && StorageSystemGetPartySize() == 1)
                     {
                         StorageSystemClearMessageWindow();
-                        Menu_PrintText(gPCText_OnlyOne, 2, 15);
+                        Menu_PrintText(gPCText_OnlyOne, 4, 15);
                         task->data[0] = 3;
                     }
                     else
@@ -313,7 +313,7 @@ void Task_PokemonStorageSystem(u8 taskId)
             if (gMain.newKeys & (A_BUTTON | B_BUTTON))
             {
                 StorageSystemClearMessageWindow();
-                Menu_PrintText(gUnknown_083B600C[task->data[1]].desc, 2, 15);
+                Menu_PrintText(gUnknown_083B600C[task->data[1]].desc, 4, 15);
                 task->data[0] = 2;
             }
             else if (gMain.newKeys & DPAD_UP)
@@ -323,7 +323,7 @@ void Task_PokemonStorageSystem(u8 taskId)
                 Menu_MoveCursor(-1);
                 task->data[1] = Menu_GetCursorPos();
                 StorageSystemClearMessageWindow();
-                Menu_PrintText(gUnknown_083B600C[task->data[1]].desc, 2, 15);
+                Menu_PrintText(gUnknown_083B600C[task->data[1]].desc, 4, 15);
                 task->data[0] = 2;
             }
             else if (gMain.newKeys & DPAD_DOWN)
@@ -333,7 +333,7 @@ void Task_PokemonStorageSystem(u8 taskId)
                 Menu_MoveCursor(1);
                 task->data[1] = Menu_GetCursorPos();
                 StorageSystemClearMessageWindow();
-                Menu_PrintText(gUnknown_083B600C[task->data[1]].desc, 2, 15);
+                Menu_PrintText(gUnknown_083B600C[task->data[1]].desc, 4, 15);
                 task->data[0] = 2;
             }
             break;

@@ -652,10 +652,10 @@ static void DrawMultichoiceMenu(u8 left, u8 top, u8 count, const struct MenuActi
 
     bottom = top + (2 * count + 1);
 
-    Menu_DrawStdWindowFrame(left, top, right, bottom);
+    Menu_DrawStdWindowFrame(left, top, right + 1, bottom);
     Menu_PrintItems(left + 2, top + 1, count, list);
     InitMenu(0, left + 1, top + 1, count, cursorPos);
-    StartScriptMenuTask(left, top, right, bottom, ignoreBPress, count);
+    StartScriptMenuTask(left, top, right + 1, bottom, ignoreBPress, count);
 }
 
 #define tLeft         data[0]

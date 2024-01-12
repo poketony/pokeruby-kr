@@ -1828,7 +1828,7 @@ void PrintStorageActionText(u8 index)
 {
     u8 *ptr;
 
-    Menu_DrawStdWindowFrame(10, 16, 29, 19);
+    Menu_DrawStdWindowFrame(9, 16, 29, 19);
 
     switch (gPCStorageActionTexts[index].format)
     {
@@ -1889,7 +1889,7 @@ void PrintStorageActionText(u8 index)
     }
 
     ptr[0] = EOS;
-    Menu_PrintText(gPokemonStorageSystemPtr->unk_2694, 11, 17);
+    Menu_PrintText(gPokemonStorageSystemPtr->unk_2694, 10, 17);
 }
 
 const struct OamData gOamData_83B6EAC = {
@@ -1950,7 +1950,7 @@ void sub_8098A38(s8 a0)
 void sub_8098A5C(void)
 {
     Menu_DestroyCursor();
-    Menu_EraseWindowRect(10, 16, 29, 19);
+    Menu_EraseWindowRect(9, 16, 29, 19);
     Menu_EraseWindowRect(23, 10, 29, 15);
 }
 

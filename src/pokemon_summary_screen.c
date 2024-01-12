@@ -58,7 +58,7 @@ static void sub_80A0390(void);
 extern u8 SummaryScreen_CreatePokemonSprite(struct Pokemon *);
 static void SummaryScreen_PrintColoredIntPixelCoords(s32, u8, u8, u8, u8, u16, s32);
 static void SummaryScreen_PrintColoredIntPixelCoordsRightAlign(s32, u8, u8, u8, u8, u16, s32, u8);
-static void sub_80A0958(struct Pokemon *);
+static void PokemonSummaryScreen_PrintPrimaryInfo(struct Pokemon *);
 static void PokemonSummaryScreen_PrintTrainerMemo(struct Pokemon *, u8, u8);
 static void PokemonSummaryScreen_PrintEggTrainerMemo(struct Pokemon *, u8, u8);
 static void SummaryScreen_PrintColoredTextPixelCoords(const u8 *, u8, u8, u16, s32);
@@ -121,7 +121,7 @@ static void sub_80A0428(struct Pokemon *, u8 *);
 static void sub_80A18E4(u8);
 static u8 *SummaryScreen_SetTextColor(u8 *, u8);
 static u8 *SummaryScreen_CopyColoredString(u8 *, const u8 *, u8);
-static void sub_80A0A2C(struct Pokemon *, u8, u8);
+static void PokemonSummaryScreen_PrintGenderIcon(struct Pokemon *, u8, u8);
 static void SummaryScreen_PrintColoredText(const u8 *, u8, u8, u8);
 
 extern u8 StorageSystemGetNextMonIndex(struct BoxPokemon *, u8, u8, u8);
@@ -2031,7 +2031,7 @@ static void sub_809FAC8(struct Pokemon *mon)
             Menu_EraseWindowRect(1, 2, 4, 3);
         }
 
-        sub_80A0958(mon);
+        PokemonSummaryScreen_PrintPrimaryInfo(mon);
     }
 }
 
@@ -2612,7 +2612,7 @@ static void PokemonSummaryScreen_PrintTrainerMemo(struct Pokemon *mon, u8 left, 
     Menu_PrintText(gStringVar4, left++, top++);
 }
 
-static void sub_80A0958(struct Pokemon *mon)
+static void PokemonSummaryScreen_PrintPrimaryInfo(struct Pokemon *mon)
 {
     u16 species;
     u8 *buffer;
@@ -2620,13 +2620,7 @@ static void sub_80A0958(struct Pokemon *mon)
 
     species = GetMonData(mon, MON_DATA_SPECIES);
 
-    buffer = gStringVar1;
-    buffer = SummaryScreen_SetTextColor(buffer, 13);
-    buffer = StringCopy(buffer, gSpeciesNames[species]);
-    Menu_PrintText(gStringVar1, 4, 14);
-    sub_80A0A2C(mon, 4 + StringLength_Multibyte(gSpeciesNames[species]), 14);
-
-    Menu_EraseWindowRect(3, 12, 10, 13);
+    Menu_EraseWindowRect(3, 12, 10, 15);
 
     level = GetMonData(mon, MON_DATA_LEVEL);
     buffer = SummaryScreen_SetTextColor(gStringVar1, 13);
@@ -2638,9 +2632,15 @@ static void sub_80A0958(struct Pokemon *mon)
     buffer = SummaryScreen_SetTextColor(gStringVar1, 13);
     buffer = GetMonNickname(mon, buffer);
     Menu_PrintText(gStringVar1, level == 100 ? 5 : 4, 12);
+
+    buffer = gStringVar1;
+    buffer = SummaryScreen_SetTextColor(buffer, 13);
+    buffer = StringCopy(buffer, gSpeciesNames[species]);
+    Menu_PrintText(gStringVar1, 4, 14);
+    PokemonSummaryScreen_PrintGenderIcon(mon, 4 + StringLength_Multibyte(gSpeciesNames[species]), 14);
 }
 
-static void sub_80A0A2C(struct Pokemon *mon, u8 left, u8 top)
+static void PokemonSummaryScreen_PrintGenderIcon(struct Pokemon *mon, u8 left, u8 top)
 {
     const u8 *genderSymbol;
     u8 color;
@@ -3118,7 +3118,7 @@ _080A1410:\n\
     bl Menu_EraseWindowRect\n\
     adds r4, 0x10\n\
     adds r0, r4, 0\n\
-    bl sub_80A0958\n\
+    bl PokemonSummaryScreen_PrintPrimaryInfo\n\
     adds r0, r4, 0\n\
     bl GetMonStatusAndPokerus\n\
     lsls r0, 24\n\
@@ -3314,7 +3314,7 @@ _080A15DC:\n\
     bl Menu_EraseWindowRect\n\
     adds r4, 0x10\n\
     adds r0, r4, 0\n\
-    bl sub_80A0958\n\
+    bl PokemonSummaryScreen_PrintPrimaryInfo\n\
     adds r0, r4, 0\n\
     bl GetMonStatusAndPokerus\n\
     lsls r0, 24\n\
