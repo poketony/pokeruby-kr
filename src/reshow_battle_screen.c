@@ -173,7 +173,7 @@ static void CB2_ReshowBattleScreenAfterMenu(void)
                 species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[opponentBank]], MON_DATA_SPECIES);
                 sub_8032984(opponentBank, species);
             }
-            sub_802E3E4(gActionSelectionCursor[gBankInMenu], 0);
+            BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gBankInMenu], 0);
         }
         break;
     default:

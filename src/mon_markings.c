@@ -1,13 +1,10 @@
 #include "global.h"
 #include "main.h"
-#include "menu_cursor.h"
 #include "text_window.h"
 #include "constants/songs.h"
 #include "sound.h"
 #include "sprite.h"
 #include "mon_markings.h"
-
-#define MENU_TEXT_SPRITE_X_OFFSET 32
 
 extern u8 gPokenavConditionMenuMisc_Gfx[];
 extern u16 gUnknown_08E966B8[];
@@ -279,7 +276,6 @@ static EWRAM_DATA struct PokemonMarkMenu *sMenu = NULL;
 static void sub_80F761C(s16, s16, u16, u16);
 static void nullsub_65(struct Sprite *);
 static void sub_80F78CC(struct Sprite *);
-static void sub_80F7908(struct Sprite *);
 static struct Sprite *sub_80F7960(u16, u16, const u16 *, u16);
 
 void sub_80F727C(struct PokemonMarkMenu *ptr)
@@ -352,7 +348,6 @@ void sub_80F7418(u8 markings, s16 x, s16 y)
     sMenu->markings = markings;
     for (i = 0; i < 4; i++)
         sMenu->markingsArray[i] = (sMenu->markings >> i) & 1;
-    DestroyMenuCursor();
     sub_80F761C(x, y, sMenu->baseTileTag, sMenu->basePaletteTag);
 }
 
@@ -382,10 +377,11 @@ void sub_80F7470(void)
         DestroySprite(sMenu->menuMarkingSprites[i]);
     }
 
-    DestroyMenuCursor();
-
     if (sMenu->menuTextSprite)
         DestroySprite(sMenu->menuTextSprite);
+
+    if (sMenu->menuCursorSprite)
+        DestroySprite(sMenu->menuCursorSprite);
 }
 
 bool8 sub_80F7500(void)
@@ -489,7 +485,7 @@ void sub_80F761C(s16 x, s16 y, u16 baseTileTag, u16 basePaletteTag)
     for (i = 0; i < 2; i++)
     {
         spriteId = CreateSprite(&sprTemplate, x + 32, y + 32, 2);
-        if (spriteId != 64)
+        if (spriteId != MAX_SPRITES)
         {
             sMenu->menuWindowSprites[i] = &gSprites[spriteId];
             StartSpriteAnim(&gSprites[spriteId], i);
@@ -512,7 +508,7 @@ void sub_80F761C(s16 x, s16 y, u16 baseTileTag, u16 basePaletteTag)
     for (i = 0; i < 4; i++)
     {
         spriteId = CreateSprite(&sprTemplate, x + 32, y + 16 + 16 * i, 1);
-        if (spriteId != 64)
+        if (spriteId != MAX_SPRITES)
         {
             sMenu->menuMarkingSprites[i] = &gSprites[spriteId];
             gSprites[spriteId].data[0] = i;
@@ -527,14 +523,13 @@ void sub_80F761C(s16 x, s16 y, u16 baseTileTag, u16 basePaletteTag)
     sprTemplate.callback = SpriteCallbackDummy;
 
     spriteId = CreateSprite(&sprTemplate, 0, 0, 1);
-
-    if (spriteId != 64)
+    if (spriteId != MAX_SPRITES)
     {
         sMenu->menuTextSprite = &gSprites[spriteId];
         sMenu->menuTextSprite->oam.shape = ST_OAM_H_RECTANGLE;
         sMenu->menuTextSprite->oam.size = 3;
         StartSpriteAnim(sMenu->menuTextSprite, 9);
-        sMenu->menuTextSprite->x = x + MENU_TEXT_SPRITE_X_OFFSET;
+        sMenu->menuTextSprite->x = x + 32;
         sMenu->menuTextSprite->y = y + 80;
         CalcCenterToCornerVec(sMenu->menuTextSprite, 1, 2, 0);
     }
@@ -543,10 +538,22 @@ void sub_80F761C(s16 x, s16 y, u16 baseTileTag, u16 basePaletteTag)
         sMenu->menuTextSprite = NULL;
     }
 
-    sMenu->cursorBaseY = y + 8;
-    MenuCursor_Create814A5C0(0, basePaletteTag + 1, 15, 0, 0x30);
-    MenuCursor_SetPos814A880(x + 8, sMenu->cursorBaseY);
-    sub_814AABC(sub_80F7908);
+    spriteId = CreateSprite(&sprTemplate, 0, 0, 1);
+    if (spriteId != MAX_SPRITES)
+    {
+        sMenu->menuCursorSprite = &gSprites[spriteId];
+        sMenu->menuCursorSprite->oam.shape = ST_OAM_SQUARE;
+        sMenu->menuCursorSprite->oam.size = ST_OAM_SIZE_0;
+        StartSpriteAnim(sMenu->menuCursorSprite, 8);
+        sMenu->menuCursorSprite->x = x + 12;
+        sMenu->menuCursorSprite->y = y + 16;
+    }
+    else
+    {
+        sMenu->menuCursorSprite = NULL;
+    }
+
+    sMenu->cursorBaseY = y + 16;
 }
 
 void nullsub_65(struct Sprite *sprite)
@@ -559,11 +566,9 @@ void sub_80F78CC(struct Sprite *sprite)
         StartSpriteAnim(sprite, 2 * sprite->data[0] + 1);
     else
         StartSpriteAnim(sprite, 2 * sprite->data[0]);
-}
 
-void sub_80F7908(struct Sprite *sprite)
-{
-    sprite->y = 16 * sMenu->cursorPos + sMenu->cursorBaseY;
+    if (sMenu->menuCursorSprite)
+        sMenu->menuCursorSprite->y = sMenu->cursorBaseY + 16 * sMenu->cursorPos;
 }
 
 struct Sprite *sub_80F7920(u16 tileTag, u16 paletteTag, const u16 *palette)

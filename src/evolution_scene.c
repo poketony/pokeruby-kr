@@ -22,7 +22,7 @@
 #include "overworld.h"
 #include "battle_message.h"
 #include "pokemon_summary_screen.h"
-#include "menu_cursor.h"
+#include "strings.h"
 #include "strings2.h"
 #include "ewram.h"
 
@@ -59,9 +59,9 @@ struct EvoInfo
 void EvolutionRenameMon(struct Pokemon *mon, u16 oldSpecies, u16 newSpecies);
 void sub_8024CEC(void);
 void sub_8023A80(void);
-void sub_802BC6C(void);
+void DrawMenuCursor(void);
 void sub_8023AD8(void);
-void nullsub_6(void);
+void EraseMenuCursor(void);
 bool32 IsHMMove2(u16 move);
 
 extern struct Window gWindowTemplate_Contest_MoveDescription;
@@ -88,10 +88,10 @@ static void Task_TradeEvolutionScene(u8 taskID);
 static void CB2_EvolutionSceneUpdate(void);
 static void CB2_TradeEvolutionSceneUpdate(void);
 static void EvoDummyFunc(void);
-static void EvoDummyFunc2(void);
+static void EvolutionScene_EraseMenuCursor(void);
 static void VBlankCB_EvolutionScene(void);
 static void VBlankCB_TradeEvolutionScene(void);
-static void sub_81150D8(void);
+static void EvolutionScene_DrawMenuCursor(void);
 
 // iwram common
 MainCallback gCB2_AfterEvolution;
@@ -760,23 +760,23 @@ static void Task_EvolutionScene(u8 taskID)
                 sub_8023A80();
                 gTasks[taskID].tLearnMoveState++;
                 sEvoCursorPos = 0;
-                sub_802BC6C();
+                DrawMenuCursor();
             }
             break;
         case 4:
             if (gMain.newKeys & DPAD_UP && sEvoCursorPos != 0)
             {
                 PlaySE(SE_SELECT);
-                nullsub_6();
+                EraseMenuCursor();
                 sEvoCursorPos = 0;
-                sub_802BC6C();
+                DrawMenuCursor();
             }
             if (gMain.newKeys & DPAD_DOWN && sEvoCursorPos == 0)
             {
                 PlaySE(SE_SELECT);
-                nullsub_6();
+                EraseMenuCursor();
                 sEvoCursorPos = 1;
-                sub_802BC6C();
+                DrawMenuCursor();
             }
             if (gMain.newKeys & A_BUTTON)
             {
@@ -1109,10 +1109,9 @@ static void Task_TradeEvolutionScene(u8 taskID)
             {
                 TextWindow_DrawStdFrame(&gUnknown_03004828->window, 24, 8, 29, 13);
                 sEvoCursorPos = 0;
-                Text_InitWindow(&gUnknown_03004828->window, gOtherText_YesNoAndPlayer, gUnknown_03004828->textWindowBaseTileNum + 128, 25, 9);
+                Text_InitWindow(&gUnknown_03004828->window, gOtherText_YesNoAndPlayer, gUnknown_03004828->textWindowBaseTileNum + 128, 26, 9);
                 Text_PrintWindow8002F44(&gUnknown_03004828->window);
-                MenuCursor_Create814A5C0(0, 0xFFFF, 0xC, 0x2D9F, 0x20);
-                sub_81150D8();
+                EvolutionScene_DrawMenuCursor();
                 gTasks[taskID].tLearnMoveState++;
                 sEvoCursorPos = 0;
             }
@@ -1121,21 +1120,20 @@ static void Task_TradeEvolutionScene(u8 taskID)
             if (gMain.newKeys & DPAD_UP && sEvoCursorPos != 0)
             {
                 PlaySE(SE_SELECT);
-                EvoDummyFunc2();
+                EvolutionScene_EraseMenuCursor();
                 sEvoCursorPos = 0;
-                sub_81150D8();
+                EvolutionScene_DrawMenuCursor();
             }
             if (gMain.newKeys & DPAD_DOWN && sEvoCursorPos == 0)
             {
                 PlaySE(SE_SELECT);
-                EvoDummyFunc2();
+                EvolutionScene_EraseMenuCursor();
                 sEvoCursorPos = 1;
-                sub_81150D8();
+                EvolutionScene_DrawMenuCursor();
             }
             if (gMain.newKeys & A_BUTTON)
             {
                 Text_EraseWindowRect(&gUnknown_03004828->window, 0x18, 8, 0x1D, 0xD);
-                DestroyMenuCursor();
                 BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[292]);
                 Contest_StartTextPrinter(&gUnknown_03004828->window,
                     gDisplayedStringBattle,
@@ -1155,7 +1153,6 @@ static void Task_TradeEvolutionScene(u8 taskID)
             if (gMain.newKeys & B_BUTTON)
             {
                 Text_EraseWindowRect(&gUnknown_03004828->window, 0x18, 8, 0x1D, 0xD);
-                DestroyMenuCursor();
                 BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[292]);
                 Contest_StartTextPrinter(&gUnknown_03004828->window,
                     gDisplayedStringBattle,
@@ -4009,12 +4006,14 @@ static void VBlankCB_TradeEvolutionScene(void)
     ScanlineEffect_InitHBlankDmaTransfer();
 }
 
-static void sub_81150D8(void)
+static void EvolutionScene_DrawMenuCursor(void)
 {
-    MenuCursor_SetPos814A880(200, 72 + (sEvoCursorPos * 16));
+    Text_InitWindow(&gUnknown_03004828->window, gMenuCursorText_Cursor, gUnknown_03004828->textWindowBaseTileNum + 128, 25, 9 + sEvoCursorPos);
+    Text_PrintWindow8002F44(&gUnknown_03004828->window);
 }
 
-static void EvoDummyFunc2(void)
+static void EvolutionScene_EraseMenuCursor(void)
 {
-
+    Text_InitWindow(&gUnknown_03004828->window, gMenuCursorText_Space, gUnknown_03004828->textWindowBaseTileNum + 128, 25, 9 + sEvoCursorPos);
+    Text_PrintWindow8002F44(&gUnknown_03004828->window);
 }

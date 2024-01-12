@@ -8,7 +8,6 @@
 #include "data2.h"
 #include "link.h"
 #include "main.h"
-#include "menu_cursor.h"
 #include "palette.h"
 #include "pokemon.h"
 #include "constants/songs.h"
@@ -298,8 +297,8 @@ void sub_81372BC(void)
         if (--gBattleStruct->unk160AA == 0)
         {
             PlaySE(SE_SELECT);
-            nullsub_8(0);
-            sub_802E3E4(1, 0);
+            BattleControllerPlayer_EraseMainMenuCursor(0);
+            BattleControllerPlayer_DrawMainMenuCursor(1, 0);
             gBattleStruct->unk160AA = 64;
             gBattleStruct->unk160A8++;
         }
@@ -308,7 +307,6 @@ void sub_81372BC(void)
         if (--gBattleStruct->unk160AA == 0)
         {
             PlaySE(SE_SELECT);
-            DestroyMenuCursor();
             BtlController_EmitTwoReturnValues(1, 1, 0);
             WallyBufferExecCompleted();
         }
@@ -1236,8 +1234,6 @@ void WallyHandlePrintString(void)
     gBattle_BG0_X = 0;
     gBattle_BG0_Y = 0;
     ptr = (u16 *)&gBattleBufferA[gActiveBattler][2];
-    if (*ptr == 2)
-        DestroyMenuCursor();
     BufferStringBattle(*ptr);
     Contest_StartTextPrinter(&gWindowTemplate_Contest_MoveDescription, gDisplayedStringBattle, 0x90, 2, 15);
     gBattlerControllerFuncs[gActiveBattler] = sub_8137454;
@@ -1261,18 +1257,13 @@ void WallyHandlecmd18(void)
     Text_FillWindowRectDefPalette(&gWindowTemplate_Contest_MoveDescription, 10, 2, 15, 27, 18);
     Text_FillWindowRectDefPalette(&gWindowTemplate_Contest_MoveDescription, 10, 2, 35, 16, 36);
     gBattlerControllerFuncs[gActiveBattler] = sub_81372BC;
-    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_MenuOptions, 400, 18, 35);
+    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_MenuOptions, 400, 19, 35);
     Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
-    MenuCursor_Create814A5C0(0, 0xFFFF, 12, 0x2D9F, 0);
     for (i = 0; i < 4; i++)
-        nullsub_8(i);
-    sub_802E3E4(0, 0);
+        BattleControllerPlayer_EraseMainMenuCursor(i);
+    BattleControllerPlayer_DrawMainMenuCursor(0, 0);
     BattleStringExpandPlaceholdersToDisplayedString(BattleText_WallyMenu);
-#ifdef ENGLISH
     Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, gDisplayedStringBattle, 440, 2, 35);
-#else
-    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, gDisplayedStringBattle, 444, 2, 35);
-#endif
     Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
 }
 
@@ -1294,7 +1285,6 @@ void WallyHandlecmd20(void)
         gBattleStruct->unk160AB--;
         if (gBattleStruct->unk160AB == 0)
         {
-            DestroyMenuCursor();
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(1, 10, 256);
             WallyBufferExecCompleted();

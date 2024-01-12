@@ -7,7 +7,6 @@
 #include "data2.h"
 #include "link.h"
 #include "main.h"
-#include "menu_cursor.h"
 #include "palette.h"
 #include "constants/songs.h"
 #include "sound.h"
@@ -205,7 +204,6 @@ void bx_battle_menu_t6_2(void)
     if (gMain.newKeys & A_BUTTON)
     {
         PlaySE(SE_SELECT);
-        DestroyMenuCursor();
 
         // Useless switch statement.
         switch (gActionSelectionCursor[gActiveBattler])
@@ -230,9 +228,9 @@ void bx_battle_menu_t6_2(void)
         if (gActionSelectionCursor[gActiveBattler] & 1)
         {
             PlaySE(SE_SELECT);
-            nullsub_8(gActionSelectionCursor[gActiveBattler]);
+            BattleControllerPlayer_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
             gActionSelectionCursor[gActiveBattler] ^= 1;
-            sub_802E3E4(gActionSelectionCursor[gActiveBattler], 0);
+            BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
     else if (gMain.newKeys & DPAD_RIGHT)
@@ -240,9 +238,9 @@ void bx_battle_menu_t6_2(void)
         if (!(gActionSelectionCursor[gActiveBattler] & 1))
         {
             PlaySE(SE_SELECT);
-            nullsub_8(gActionSelectionCursor[gActiveBattler]);
+            BattleControllerPlayer_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
             gActionSelectionCursor[gActiveBattler] ^= 1;
-            sub_802E3E4(gActionSelectionCursor[gActiveBattler], 0);
+            BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
     else if (gMain.newKeys & DPAD_UP)
@@ -250,9 +248,9 @@ void bx_battle_menu_t6_2(void)
         if (gActionSelectionCursor[gActiveBattler] & 2)
         {
             PlaySE(SE_SELECT);
-            nullsub_8(gActionSelectionCursor[gActiveBattler]);
+            BattleControllerPlayer_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
             gActionSelectionCursor[gActiveBattler] ^= 2;
-            sub_802E3E4(gActionSelectionCursor[gActiveBattler], 0);
+            BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
     else if (gMain.newKeys & DPAD_DOWN)
@@ -260,9 +258,9 @@ void bx_battle_menu_t6_2(void)
         if (!(gActionSelectionCursor[gActiveBattler] & 2))
         {
             PlaySE(SE_SELECT);
-            nullsub_8(gActionSelectionCursor[gActiveBattler]);
+            BattleControllerPlayer_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
             gActionSelectionCursor[gActiveBattler] ^= 2;
-            sub_802E3E4(gActionSelectionCursor[gActiveBattler], 0);
+            BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
 #if DEBUG
@@ -480,14 +478,13 @@ void SafariHandlecmd18(void)
     Text_FillWindowRectDefPalette(&gWindowTemplate_Contest_MoveDescription, 10, 2, 35, 16, 36);
     gBattlerControllerFuncs[gActiveBattler] = bx_battle_menu_t6_2;
 
-    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_MenuOptionsSafari, 400, 18, 35);
+    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_MenuOptionsSafari, 400, 19, 35);
     Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
-    MenuCursor_Create814A5C0(0, 0xFFFF, 12, 11679, 0);
 
     for (i = 0; i < 4; i++)
-        nullsub_8(i);
+        BattleControllerPlayer_EraseMainMenuCursor(i);
 
-    sub_802E3E4(gActionSelectionCursor[gActiveBattler], 0);
+    BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
     BattleStringExpandPlaceholdersToDisplayedString(BattleText_PlayerMenu);
 
     Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, gDisplayedStringBattle, SUB_812BB10_TILE_DATA_OFFSET, 2, 35);

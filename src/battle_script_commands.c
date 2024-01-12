@@ -24,6 +24,7 @@
 #include "task.h"
 #include "decompress.h"
 #include "string_util.h"
+#include "strings.h"
 #include "pokemon_summary_screen.h"
 #include "naming_screen.h"
 #include "ewram.h"
@@ -162,13 +163,11 @@ u16 GiveMoveToBattleMon(struct BattlePokemon *mon, u16 move);
 void IncrementGameStat(u8 index);
 u8 GetScaledHPFraction(s16 hp, s16 maxhp, u8 scale);
 u16 GetPokedexHeightWeight(u16 national_num, u8 heightweight);
-u8 MenuCursor_Create814A5C0(u8 a1, u16 a2, u8 a3, u16 a4, u8 a5);
-void DestroyMenuCursor(void);
-void sub_802BC6C(void);
+void DrawMenuCursor(void);
 u8 sub_809FA30(void);
 bool32 IsHMMove2(u16 move);
 void sub_802BBD4(u8 r0, u8 r1, u8 r2, u8 r3, u8 sp0);
-void nullsub_6(void);
+void EraseMenuCursor(void);
 void ReshowBattleScreenAfterMenu(void);
 void BattleMainCB2(void);
 void AddMoney(u32* moneySaveblock, u32 to_give);
@@ -181,7 +180,6 @@ u8 Overworld_GetMapTypeOfSaveblockLocation(void);
 u8 CalculatePlayerPartyCount(void);
 u16 Sqrt(u32 num);
 u8 sub_809070C(u16 nationalNum, u32 TiD, u32 PiD); //task prepare poke dex display
-void MenuCursor_SetPos814A880(u8 a1, u8 a2);
 u8 CheckMoveLimitations(u8 bank, u8 unusable_moves, u8 flags);
 bool8 IsLinkDoubleBattle(void);
 void sub_8094B6C(u8 bank, u8 partyID, u8 r2);
@@ -5270,16 +5268,14 @@ void atk59_handlelearnnewmove(void)
 
 void sub_8023A80(void)
 {
-    sub_802BBD4(0x18, 8, 0x1D, 0xD, 0);
-    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_YesNo, 0x100, 0x19, 0x9);
+    sub_802BBD4(24, 8, 29, 13, 0);
+    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, BattleText_YesNo, 0x100, 26, 9);
     Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
-    MenuCursor_Create814A5C0(0, 0xFFFF, 0xC, 0x2D9F, 0x20);
 }
 
 void sub_8023AD8(void)
 {
-    sub_802BBD4(0x18, 8, 0x1D, 0xD, 1);
-    DestroyMenuCursor();
+    sub_802BBD4(24, 8, 29, 13, 1);
 }
 
 static void atk5A_yesnoboxlearnmove(void)
@@ -5291,22 +5287,22 @@ static void atk5A_yesnoboxlearnmove(void)
         sub_8023A80();
         gBattleStruct->atk5A_StateTracker++;
         gBattleCommunication[1] = 0;
-        sub_802BC6C();
+        DrawMenuCursor();
         break;
     case 1:
         if (gMain.newKeys & DPAD_UP && gBattleCommunication[1] != 0)
         {
             PlaySE(SE_SELECT);
-            nullsub_6();
+            EraseMenuCursor();
             gBattleCommunication[1] = 0;
-            sub_802BC6C();
+            DrawMenuCursor();
         }
         if (gMain.newKeys & DPAD_DOWN && gBattleCommunication[1] == 0)
         {
             PlaySE(SE_SELECT);
-            nullsub_6();
+            EraseMenuCursor();
             gBattleCommunication[1] = 1;
-            sub_802BC6C();
+            DrawMenuCursor();
         }
         if (gMain.newKeys & A_BUTTON)
         {
@@ -5403,22 +5399,22 @@ static void atk5B_yesnoboxstoplearningmove(void)
         sub_8023A80();
         gBattleStruct->atk5A_StateTracker++;
         gBattleCommunication[1] = 0;
-        sub_802BC6C();
+        DrawMenuCursor();
         break;
     case 1:
         if (gMain.newKeys & DPAD_UP && gBattleCommunication[1] != 0)
         {
             PlaySE(SE_SELECT);
-            nullsub_6();
+            EraseMenuCursor();
             gBattleCommunication[1] = 0;
-            sub_802BC6C();
+            DrawMenuCursor();
         }
         if (gMain.newKeys & DPAD_DOWN && gBattleCommunication[1] == 0)
         {
             PlaySE(SE_SELECT);
-            nullsub_6();
+            EraseMenuCursor();
             gBattleCommunication[1] = 1;
-            sub_802BC6C();
+            DrawMenuCursor();
         }
         if (gMain.newKeys & A_BUTTON)
         {
@@ -5661,22 +5657,22 @@ static void atk67_yesnobox(void)
         sub_8023A80();
         gBattleCommunication[0]++;
         gBattleCommunication[1] = 0;
-        sub_802BC6C();
+        DrawMenuCursor();
         break;
     case 1:
         if (gMain.newKeys & DPAD_UP && gBattleCommunication[1] != 0)
         {
             PlaySE(SE_SELECT);
-            nullsub_6();
+            EraseMenuCursor();
             gBattleCommunication[1] = 0;
-            sub_802BC6C();
+            DrawMenuCursor();
         }
         if (gMain.newKeys & DPAD_DOWN && gBattleCommunication[1] == 0)
         {
             PlaySE(SE_SELECT);
-            nullsub_6();
+            EraseMenuCursor();
             gBattleCommunication[1] = 1;
-            sub_802BC6C();
+            DrawMenuCursor();
         }
         if (gMain.newKeys & B_BUTTON)
         {
@@ -9612,14 +9608,16 @@ void sub_802BBD4(u8 r0, u8 r1, u8 r2, u8 r3, u8 sp0)
     }
 }
 
-void sub_802BC6C(void)
+void DrawMenuCursor(void)
 {
-    MenuCursor_SetPos814A880(0xC8, ((gBattleCommunication[1] << 28) + 1207959552) >> 24); //what could that be?
+    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, gMenuCursorText_Cursor, 0x100, 25, 9 + gBattleCommunication[1]);
+    Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
 }
 
-void nullsub_6(void)
+void EraseMenuCursor(void)
 {
-    return;
+    Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, gMenuCursorText_Space, 0x100, 25, 9 + gBattleCommunication[1]);
+    Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
 }
 
 static void atkF3_trygivecaughtmonnick(void)
@@ -9630,22 +9628,22 @@ static void atkF3_trygivecaughtmonnick(void)
         sub_8023A80();
         gBattleCommunication[0]++;
         gBattleCommunication[1] = 0;
-        sub_802BC6C();
+        DrawMenuCursor();
         break;
     case 1:
         if (gMain.newKeys & DPAD_UP && gBattleCommunication[1] != 0)
         {
             PlaySE(SE_SELECT);
-            nullsub_6();
+            EraseMenuCursor();
             gBattleCommunication[1] = 0;
-            sub_802BC6C();
+            DrawMenuCursor();
         }
         if (gMain.newKeys & DPAD_DOWN && gBattleCommunication[1] == 0)
         {
             PlaySE(SE_SELECT);
-            nullsub_6();
+            EraseMenuCursor();
             gBattleCommunication[1] = 1;
-            sub_802BC6C();
+            DrawMenuCursor();
         }
         if (gMain.newKeys & A_BUTTON)
         {

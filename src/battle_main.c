@@ -2696,36 +2696,36 @@ void debug_sub_8012D10(u8 taskId)
         Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, Str_821F7BD, 400, 19, 35);
         Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
         gTasks[taskId].data[0]++;
-        sub_802E3E4(gTasks[taskId].data[2], 0);
+        BattleControllerPlayer_DrawMainMenuCursor(gTasks[taskId].data[2], 0);
         break;
     case 1:
         if (gMain.newKeys & DPAD_UP)
         {
             PlaySE(SE_SELECT);
-            nullsub_8(gTasks[taskId].data[2]);
+            BattleControllerPlayer_EraseMainMenuCursor(gTasks[taskId].data[2]);
             gTasks[taskId].data[2] &= ~2;
-            sub_802E3E4(gTasks[taskId].data[2], 0);
+            BattleControllerPlayer_DrawMainMenuCursor(gTasks[taskId].data[2], 0);
         }
         else if (gMain.newKeys & DPAD_DOWN)
         {
             PlaySE(SE_SELECT);
-            nullsub_8(gTasks[taskId].data[2]);
+            BattleControllerPlayer_EraseMainMenuCursor(gTasks[taskId].data[2]);
             gTasks[taskId].data[2] |= 2;
-            sub_802E3E4(gTasks[taskId].data[2], 0);
+            BattleControllerPlayer_DrawMainMenuCursor(gTasks[taskId].data[2], 0);
         }
         else if (gMain.newKeys & DPAD_LEFT)
         {
             PlaySE(SE_SELECT);
-            nullsub_8(gTasks[taskId].data[2]);
+            BattleControllerPlayer_EraseMainMenuCursor(gTasks[taskId].data[2]);
             gTasks[taskId].data[2] &= ~1;
-            sub_802E3E4(gTasks[taskId].data[2], 0);
+            BattleControllerPlayer_DrawMainMenuCursor(gTasks[taskId].data[2], 0);
         }
         else if (gMain.newKeys & DPAD_RIGHT)
         {
             PlaySE(SE_SELECT);
-            nullsub_8(gTasks[taskId].data[2]);
+            BattleControllerPlayer_EraseMainMenuCursor(gTasks[taskId].data[2]);
             gTasks[taskId].data[2] |= 1;
-            sub_802E3E4(gTasks[taskId].data[2], 0);
+            BattleControllerPlayer_DrawMainMenuCursor(gTasks[taskId].data[2], 0);
         }
         else if (gMain.newAndRepeatedKeys & A_BUTTON)
         {

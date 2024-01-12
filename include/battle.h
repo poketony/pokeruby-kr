@@ -689,8 +689,8 @@ void nullsub_91(void);
 void SetBankFuncToPlayerBufferRunCommand(void);
 void sub_802C098();
 void c3_0802FDF4(u8);
-void sub_802E3E4(u8, int);
-void nullsub_8(u8);
+void BattleControllerPlayer_DrawMainMenuCursor(u8, u8);
+void BattleControllerPlayer_EraseMainMenuCursor(u8);
 void sub_802E414(void);
 void sub_802E424(void);
 
