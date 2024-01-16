@@ -1,8 +1,13 @@
 LilycoveCity_House1_Text_18B7B0:: @ 818B7B0
-	.string "POKéMON are partners to people.\n"
-	.string "They aren't our tools.\p"
-	.string "Unfortunately, there are some people\n"
-	.string "who fail to understand that...$"
+	.string "포켓몬은 인간의 파트너지\n"
+	.string "절대 인간의 도구가 아니다\p"
+	.string "그걸 이해 못 하는\n"
+	.string "인간들도 가끔 있단 말이지...$"
+	// ポケモンは にんげんの パ-トナ-であってｎ
+	// けっして にんげんの どうぐ じゃないよｐ
+	// そこを かんちがい しておるｎ
+	// にんげんも たまに いるんだよ……
 
 LilycoveCity_House1_Text_18B82B:: @ 818B82B
-	.string "KECLEON: Ruroro?$"
+	.string "켈리몬: 루로로...?$"
+	// カクレオン『るろろ……?

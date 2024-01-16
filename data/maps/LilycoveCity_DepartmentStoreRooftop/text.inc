@@ -1,33 +1,49 @@
 LilycoveCity_DepartmentStoreRooftop_Text_18C61F:: @ 818C61F
-	.string "Don't they have set dates for their\n"
-	.string "clear-out sales?\p"
-	.string "I watch TV, but they never show any\n"
-	.string "commercials.$"
+	.string "득템 가게...\n"
+	.string "언제 열 건지 안 정해진 걸까?\p"
+	.string "TV를 봐도\n"
+	.string "전혀 광고가 없단 말이지$"
+	// ほりだしものいち……ｎ
+	// いつ やるのか きまって ないのかな?ｐ
+	// テレビ みててもｎ
+	// ぜんぜん コマ-シャル ないんだよね
 
 LilycoveCity_DepartmentStoreRooftop_Text_18C685:: @ 818C685
-	.string "Yes! I've been waiting a long time for\n"
-	.string "this clear-out sale.\p"
-	.string "They have items that you can only get\n"
-	.string "here. I'm going to load up, that I am!$"
+	.string "기다리고 기다리던 득템 가게!\n"
+	.string "이곳에서만 살 수 있는 것들이 잔뜩!\l"
+	.string "좋-았어 마음껏 사야지!$"
+	// まちに まった ほりだしものいち!ｎ
+	// ここでしか かえないもの ばかり!ｌ
+	// よ-し たくさん かっちゃうぞお!
 
 LilycoveCity_DepartmentStoreRooftop_Text_18C70E:: @ 818C70E
-	.string "Ohh... I'm bone-dry thirsty!$"
+	.string "아아 목이 말라$"
+	// ああ のどが かわいたなあ
 
 LilycoveCity_DepartmentStoreRooftop_Text_18C72B:: @ 818C72B
-	.string "It's a VENDING MACHINE.\n"
-	.string "Which drink would you like?$"
+	.string "자동 판매기가 있다!\n"
+	.string "마시고 싶은 음료수는...$"
+	// じどう はんばいき がある!ｎ
+	// ほしい のみもの は……
 
 LilycoveCity_DepartmentStoreRooftop_Text_18C75F:: @ 818C75F
-	.string "Clang!\p"
-	.string "A can of {STR_VAR_1} dropped down.$"
+	.string "덜컹!\p"
+	.string "{STR_VAR_1}{K_IGA} 나왔다!$"
+	// ガゴン!ｐ
+	// §いが でてきた!
 
 LilycoveCity_DepartmentStoreRooftop_Text_18C780:: @ 818C780
-	.string "Clang!\p"
-	.string "Score! An extra can of {STR_VAR_1}\n"
-	.string "dropped down!$"
+	.string "덜컹!\p"
+	.string "당첨이다! 하나 더\n"
+	.string "{STR_VAR_1}{K_IGA} 나왔다!$"
+	// ガゴン!ｐ
+	// あたりだ! もういっぽんｎ
+	// §いが でてきた!
 
 LilycoveCity_DepartmentStoreRooftop_Text_18C7AF:: @ 818C7AF
-	.string "Not enough money...$"
+	.string "돈이 모자라!$"
+	// おかねが たりない!
 
 LilycoveCity_DepartmentStoreRooftop_Text_18C7C3:: @ 818C7C3
-	.string "Decided against buying a drink.$"
+	.string "...... ...... 역시 그만뒀다!$"
+	// …… …… やっぱり やめた!

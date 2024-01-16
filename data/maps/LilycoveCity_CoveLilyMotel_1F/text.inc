@@ -1,53 +1,93 @@
 LilycoveCity_CoveLilyMotel_1F_Text_186B71:: @ 8186B71
-	.string "Hm, so they doubled the guests by\n"
-	.string "using POKéMON as attractions?\p"
-	.string "Hm, well, maybe I should make a cute\n"
-	.string "POKéMON our inn's mascot.\p"
-	.string "I wonder if that will attract more\n"
-	.string "guests to stay with us?$"
+	.string "흠흠 포켓몬의 매력으로\n"
+	.string "손님들이 급격히 늘어났다고!?\p"
+	.string "그렇구나 그럼 우리도 귀여운 포켓몬을\n"
+	.string "민박의 마스코트로 삼으면\p"
+	.string "더 많은 손님이\n"
+	.string "찾아와 주려나?$"
+	// ほほう ポケモンの みりょくでｎ
+	// おきゃくさまが ばいぞう したって!?ｐ
+	// そうかあ うちも かわいい ポケモンをｎ
+	// りょかんの マスコットに すればｐ
+	// もっと たくさんの おきゃくさまがｎ
+	// とまりに きてくれるように なるかな?
 
 LilycoveCity_CoveLilyMotel_1F_Text_186C2B:: @ 8186C2B
-	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV!\p"
-	.string "Since that TEAM {EVIL_TEAM} came to town,\n"
-	.string "the tourists have been staying away.$"
+	.string "아 미안 미안!\n"
+	.string "TV 보는 데 집중하고 있어서!\p"
+	.string "{EVIL_TEAM}단이라고 하는 녀석들이\n"
+	.string "마을에 오는 바람에\l"
+	.string "관광객의 발길도 끊겼어$"
+	// あ ごめん ごめん!ｎ
+	// テレビに むちゅう だったもんで!ｐ
+	// §くだん とかいう れんちゅうがｎ
+	// まちに やってきた おかげでｌ
+	// かんこうきゃくも さっぱり なんだよね
 
 LilycoveCity_CoveLilyMotel_1F_Text_186CA6:: @ 8186CA6
-	.string "Hey, down in front!\n"
-	.string "I can't see the TV!$"
+	.string "아- 방해하지 말아줄래!\n"
+	.string "TV가 안 보이잖아!$"
+	// あ- ちょっと じゃま しないで!ｎ
+	// テレビが みえない じゃないか!
 
 LilycoveCity_CoveLilyMotel_1F_Text_186CCE:: @ 8186CCE
-	.string "Amazing! You're telling me a POKéMON\n"
-	.string "found someone's lost item?\p"
-	.string "That's something. If we had some smart\n"
-	.string "POKéMON like that...\p"
-	.string "We could recover anything that our\n"
-	.string "guests mislaid...$"
+	.string "뭐라고! 잃어버린 도구를\n"
+	.string "포켓몬이 주워줬다고!?\p"
+	.string "그렇군 우리 집에도 그런\n"
+	.string "똑똑한 포켓몬이 있다면\p"
+	.string "손님들의 잃어버린 물건도\n"
+	.string "금세 찾을 수 있을 텐데...$"
+	// なんと! なくした どうぐをｎ
+	// ポケモンが ひろって きたって!?ｐ
+	// そうかあ うちも そんな ｎ
+	// かしこい ポケモンが いてくれればｐ
+	// おきゃくさまの なくした ものもｎ
+	// すぐに みつかるのになぁ……
 
 LilycoveCity_CoveLilyMotel_1F_Text_186D7F:: @ 8186D7F
-	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV!\p"
-	.string "I heard that someone busted the\n"
-	.string "TEAM {EVIL_TEAM} HIDEOUT.\p"
-	.string "Thanks to that, we just booked a\n"
-	.string "reservation from a big group.\p"
-	.string "It was a company called... Uh...\n"
-	.string "GAME something...$"
+	.string "아 미안 미안!\n"
+	.string "TV 보는 데 집중하고 있어서!\p"
+	.string "그러고 보니 누군가가 {EVIL_TEAM}단의\n"
+	.string "아지트를 괴멸시켰대!\p"
+	.string "덕분에 아까 단체 손님의\n"
+	.string "숙박 예약이 들어왔어!\p"
+	.string "뭐더라... GAME 어쩌고 라는\n"
+	.string "회사였던 거 같은데...$"
+	// あ ごめん ごめん!ｎ
+	// テレビに むちゅう だったもんで!ｐ
+	// そういえば だれかが §くだんのｎ
+	// アジトを かいめつ させた らしいね!ｐ
+	// おかげで さっき だんたいさん からのｎ
+	// しゅくはく よやくが はいったよ!ｐ
+	// たしか…… ゲ-ムなんとか っていうｎ
+	// かいしゃ だったかな……
 
 LilycoveCity_CoveLilyMotel_1F_Text_186E57:: @ 8186E57
-	.string "Amazing! A house-sitting POKéMON\n"
-	.string "caught a burglar?\p"
-	.string "That's something. If we had a tough\n"
-	.string "POKéMON as a security guard...\p"
-	.string "We would be able to provide our guests\n"
-	.string "with greater safety.$"
+	.string "뭐라고! 숨어 들어온 도둑을\n"
+	.string "집을 보던 포켓몬이 잡았다고!?\p"
+	.string "그렇군 우리 집에도 경비원 대신\n"
+	.string "강한 포켓몬이 있다면\p"
+	.string "손님을 안전하게\n"
+	.string "지켜드릴 수 있을 텐데...$"
+	// なんと! しのびこんだ どろぼうをｎ
+	// るすばんの ポケモンが つかまえたって!?ｐ
+	// そうかあ うちも ガ-ドマンの かわりにｎ
+	// つよい ポケモンが いてくれればｐ
+	// おきゃくさまの あんぜんをｎ
+	// まもることが できそうだなぁ……
 
 LilycoveCity_CoveLilyMotel_1F_Text_186F09:: @ 8186F09
-	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV.\p"
-	.string "Oh, yes. A big group of guests arrived\n"
-	.string "a little while ago.\p"
-	.string "They booked in as GAME FREAK, so I\n"
-	.string "guess they must make games.\p"
-	.string "Uh-oh, I'd better get working on\n"
-	.string "their dinner!$"
+	.string "아 미안 미안!\n"
+	.string "TV 보는 데 집중하고 있어서!\p"
+	.string "그러고 보니까 아까\n"
+	.string "단체 손님이 도착했어!\p"
+	.string "GAME FREAK라고 하던데\n"
+	.string "게임 회사 사람들인가?\l"
+	.string "아 식사 준비를 해야겠다...$"
+	// あ ごめん ごめん!ｎ
+	// テレビに むちゅう だったもんで!ｐ
+	// そういえば さっきｎ
+	// だんたいさん が とうちゃく したよ!ｐ
+	// ゲ-ムフリ-クって いうからｎ
+	// ゲ-ムの かいしゃの ひとたち かなぁ?ｌ
+	// ああ ごはんの じゅんびを しなくちゃ……

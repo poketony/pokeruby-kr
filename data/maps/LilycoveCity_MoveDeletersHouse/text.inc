@@ -1,32 +1,53 @@
 LilycoveCity_MoveDeletersHouse_Text_18B622:: @ 818B622
-	.string "Uh...\n"
-	.string "Oh, yes, I'm the MOVE DELETER.\p"
-	.string "I can make POKéMON forget their moves.\p"
-	.string "Would you like me to do that?$"
+	.string "그러니까...\n"
+	.string "그렇지 나는 깜빡할아버지\p"
+	.string "포켓몬의 기술을\n"
+	.string "잊게 만들 수 있다네!\p"
+	.string "기술을 잊게 할 텐가?$"
+	// え-と……ｎ
+	// そうじゃ わし わすれじいさんｐ
+	// ポケモンの わざをｎ
+	// わすれさせる ことが できるんじゃ!ｐ
+	// わざを わすれ させるかね?
 
 LilycoveCity_MoveDeletersHouse_Text_18B68C:: @ 818B68C
-	.string "Which POKéMON should forget a move?$"
+	.string "어느 포켓몬으로 할 겐가?$"
+	// どの ポケモンに するんじゃ?
 
 LilycoveCity_MoveDeletersHouse_Text_18B6B0:: @ 818B6B0
-	.string "Which move should be forgotten?$"
+	.string "어느 기술을\n"
+	.string "잊게 할 겐가?$"
+	// どの わざをｎ
+	// わすれ させるんじゃ?
 
 LilycoveCity_MoveDeletersHouse_Text_18B6D0:: @ 818B6D0
-	.string "{STR_VAR_1} seems to know only one\n"
-	.string "move...$"
+	.string "{STR_VAR_1}{K_EUNNEUN} 기술을 하나밖에\n"
+	.string "배우지 않은 모양이다만...$"
+	// §いは わざを 1つしかｎ
+	// もってない ようじゃ……
 
 LilycoveCity_MoveDeletersHouse_Text_18B6F2:: @ 818B6F2
-	.string "Hm! {STR_VAR_1}'s {STR_VAR_2}?\n"
-	.string "That move should be forgotten?$"
+	.string "으음!\n"
+	.string "{STR_VAR_1}의 {STR_VAR_2} 말이지?$"
+	// むむ! ｎ
+	// §いの §うじゃな?
 
 LilycoveCity_MoveDeletersHouse_Text_18B71E:: @ 818B71E
-	.string "It worked to perfection!\p"
-	.string "{STR_VAR_1} has forgotten\n"
-	.string "{STR_VAR_2} completely.$"
+	.string "대성공이군!\p"
+	.string "{STR_VAR_1}{K_EUNNEUN} {STR_VAR_2}{K_EULREUL}\n"
+	.string "잊어버린 것 같구먼!$"
+	// だいせいこう じゃ!ｐ
+	// §いは §うをｎ
+	// わすれた ようじゃ!
 
 LilycoveCity_MoveDeletersHouse_Text_18B757:: @ 818B757
-	.string "Come again if there are other moves\n"
-	.string "to be forgotten.$"
+	.string "잊게 하고 싶은 기술이 있다면\n"
+	.string "또 오게!$"
+	// わすれさせたい わざが あったらｎ
+	// また くるのじゃぞ!
 
 LilycoveCity_MoveDeletersHouse_Text_18B78C:: @ 818B78C
-	.string "What?\n"
-	.string "No EGG should know any moves.$"
+	.string "뭐야!? 알은\n"
+	.string "배운 기술이 없는 모양인데...?$"
+	// なぬ!? タマゴはｎ
+	// わざを おぼえていない ようじゃが……?

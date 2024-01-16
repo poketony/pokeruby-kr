@@ -1,301 +1,521 @@
 LilycoveCity_Text_1679BF:: @ 81679BF
-	.string "MAY: Oh, hey?\n"
-	.string "{PLAYER}{KUN}, are you shopping, too?\p"
-	.string "I bought a whole bunch of DOLLS and\n"
-	.string "POSTERS.\p"
-	.string "Of course, I've also caught a lot of\n"
-	.string "POKéMON, and I'm raising them\l"
-	.string "properly, too.\p"
-	.string "Actually, I'm more worried if you're\n"
-	.string "raising POKéMON properly, {PLAYER}{KUN}.\p"
-	.string "I'll battle with you, so you can show\n"
-	.string "me your POKéMON, {PLAYER}{KUN}.$"
+	.string "봄이: 어라!?\n"
+	.string "{PLAYER}도 쇼핑하러 왔어?\p"
+	.string "난 봉제인형이랑 포스터\n"
+	.string "잔뜩 사버렸어!\p"
+	.string "물론 포켓몬도 잔뜩 잡았고\n"
+	.string "제대로 키우고 있다고!\p"
+	.string "나로서는 {PLAYER}{K_IGA}\n"
+	.string "포켓몬을 제대로 키우고 있는지 걱정되네\p"
+	.string "승부해 줄 테니까\n"
+	.string "{PLAYER}의 포켓몬도 보여줘!$"
+	// ハルカ『あら!?ｎ
+	// §あ§おも おかいもの?ｐ
+	// あたし ぬいぐるみとか ポスタ-ｎ
+	// いっぱい かっちゃった!ｐ
+	// もちろん ポケモン いっぱい つかまえたしｎ
+	// ちゃんと そだてて いるんだから!ｐ
+	// あたし としては §あ§おがｎ
+	// ポケモン そだててるか しんぱい だなｐ
+	// しょうぶ してあげるからｎ
+	// §あ§おの ポケモン みせてよ!
 
 LilycoveCity_Text_167AEB:: @ 8167AEB
-	.string "MAY: Oh, why? {PLAYER}{KUN}, haven't you\n"
-	.string "been raising your POKéMON?\p"
-	.string "That's not a very good showing as a\n"
-	.string "TRAINER...$"
+	.string "봄이: 에- 어째서?\n"
+	.string "{PLAYER} 포켓몬 안 키운 거야?\p"
+	.string "그러면 트레이너로서\n"
+	.string "아직 멀었네!$"
+	// ハルカ『え- なんで?ｎ
+	// §あ§お ポケモン そだてていないの?ｐ
+	// それじゃあ トレ-ナ-としてｎ
+	// まだまだ ね!
 
 LilycoveCity_Text_167B55:: @ 8167B55
-	.string "MAY: Come on, battle with me, so I can\n"
-	.string "check out your POKéMON!$"
+	.string "봄이: 승부해 줄 테니까\n"
+	.string "{PLAYER}의 포켓몬도 보여줘!$"
+	// ハルカ『しょうぶ してあげるからｎ
+	// §あ§おの ポケモン みせてよ!
 
 LilycoveCity_Text_167B94:: @ 8167B94
-	.string "MAY: The POKéMON I raised won't be\n"
-	.string "beaten by your POKéMON, {PLAYER}{KUN}!$"
+	.string "봄이: 내가 키운 포켓몬이\n"
+	.string "{PLAYER}의 포켓몬에게\l"
+	.string "질 리가 없지!$"
+	// ハルカ『あたしの そだてた ポケモンがｎ
+	// §あ§おの ポケモンにｌ
+	// まけるわけ ないんだから!
 
 LilycoveCity_Text_167BD5:: @ 8167BD5
-	.string "... ... ... ... ... ... ... ...\p"
-	.string "I remember the battle I had with you,\n"
-	.string "{PLAYER}{KUN}, on ROUTE 103.\p"
-	.string "That battle helped you become this\n"
-	.string "strong, {PLAYER}{KUN}, didn't it?$"
+	.string "...... ...... ...... ......\p"
+	.string "103번 도로에서\n"
+	.string "{PLAYER}{K_WAGWA} 승부했던 일이\l"
+	.string "떠올랐어!\p"
+	.string "그 승부 덕분에\n"
+	.string "{PLAYER}{K_IGA}\l"
+	.string "이만큼 강해진 거야!$"
+	// …… …… …… ……ｐ
+	// 103ばん どうろでｎ
+	// §あ§おと しょうぶ したことｌ
+	// おもいだしちゃった!ｐ
+	// あの しょうぶが あったからｎ
+	// §あ§お ここまでｌ
+	// つよく なったんだね!
 
 LilycoveCity_Text_167C6B:: @ 8167C6B
-	.string "MAY: I'm thinking of going back to\n"
-	.string "LITTLEROOT soon.\p"
-	.string "I've caught a decent group of POKéMON,\n"
-	.string "and my POKéDEX is coming along, so\l"
-	.string "I'm going home to show my dad.$"
+	.string "봄이: 나 슬슬\n"
+	.string "미로마을로 돌아가려고\p"
+	.string "다양한 포켓몬을 잡아서\n"
+	.string "도감도 꽤 모았으니까\l"
+	.string "아빠한테 보여 줄 거야!$"
+	// ハルカ『あたし そろそろｎ
+	// ミシロタウンに かえる つもりなのｐ
+	// いろいろ ポケモン つかまえてｎ
+	// ずかんも けっこう できてきたからｌ
+	// おとうさんに みせるんだ!
 
 LilycoveCity_Text_167D08:: @ 8167D08
-	.string "{PLAYER}{KUN}, what are you going to do?\p"
-	.string "Collect all the GYM BADGES and take\n"
-	.string "the POKéMON LEAGUE challenge?\p"
-	.string "Well, while you're collecting BADGES,\n"
-	.string "{PLAYER}{KUN}, I'm going to work on my\l"
-	.string "POKéDEX. I'll complete it before you!\p"
-	.string "See you!$"
+	.string "{PLAYER}{K_EUNNEUN} 어떡할 거야?\p"
+	.string "이곳저곳의 체육관 배지를 모아서\n"
+	.string "포켓몬리그에 도전할 거야?\p"
+	.string "그럼 나는 {PLAYER}{K_IGA}\n"
+	.string "배지 모으고 있는 사이에\l"
+	.string "포켓몬 도감을 완성시켜 놔야지!\p"
+	.string "그럼 안녕!$"
+	// §あ§おは どうするの?ｐ
+	// あちこちの ジムバッジを あつめてｎ
+	// ポケモンリ-グ ちょうせん するの?ｐ
+	// じゃあ あたし §あ§おがｎ
+	// バッジを あつめている あいだにｌ
+	// ポケモンずかんを かんせい させちゃお!ｐ
+	// じゃね!
 
 LilycoveCity_Text_167DDD:: @ 8167DDD
-	.string "{PLAYER}{KUN}, what are you going to do?\p"
-	.string "Are you taking the POKéMON LEAGUE\n"
-	.string "challenge?\p"
-	.string "Or, are you going to complete your\n"
-	.string "POKéDEX?\p"
-	.string "I might've lost to you in battling,\n"
-	.string "but I'll finish my POKéDEX before you!\p"
-	.string "See you!$"
+	.string "{PLAYER}{K_EUNNEUN} 어떡할 거야?\p"
+	.string "포켓몬리그에 도전할 거야?\p"
+	.string "아니면 포켓몬 도감\n"
+	.string "완성시킬 거야?\p"
+	.string "포켓몬 승부로는 졌지만\n"
+	.string "도감은 내가\l"
+	.string "먼저 완성시킬 거야!\p"
+	.string "그럼 안녕!$"
+	// §あ§おは どうするの?ｐ
+	// ポケモンリ-グ ちょうせん するの?ｐ
+	// それとも ポケモンずかんｌ
+	// かんせい させるの?ｐ
+	// ポケモンしょうぶ じゃ まけちゃったけどｎ
+	// ずかんは あたしの ほうがｌ
+	// さきに かんせい させるんだから!ｐ
+	// じゃね!
 
 LilycoveCity_Text_167EAA:: @ 8167EAA
-	.string "{PLAYER}{KUN}, what are you going to do?\p"
-	.string "Are you taking the BATTLE TOWER\n"
-	.string "challenge?\p"
-	.string "Or, are you going to complete your\n"
-	.string "POKéDEX?\p"
-	.string "I might've lost to you in battling,\n"
-	.string "but I'll finish my POKéDEX before you!\p"
-	.string "See you!$"
+	.string "{PLAYER}{K_EUNNEUN} 어떡할 거야?\p"
+	.string "배틀타워에 도전할 거야?\p"
+	.string "아니면 포켓몬 도감\n"
+	.string "완성시킬 거야?\p"
+	.string "포켓몬 승부로는 졌지만\n"
+	.string "도감은 내가\l"
+	.string "먼저 완성시킬 거야!\p"
+	.string "그럼 안녕!$"
+	// §あ§おは どうするの?ｐ
+	// バトルタワ-に ちょうせん するの?ｐ
+	// それとも ポケモンずかんｌ
+	// かんせい させるの?ｐ
+	// ポケモンしょうぶ じゃ まけちゃったけどｎ
+	// ずかんは あたしの ほうがｌ
+	// さきに かんせい させるんだから!ｐ
+	// じゃね!
 
 LilycoveCity_Text_167F75:: @ 8167F75
-	.string "BRENDAN: Oh, hey, it's {PLAYER}.\p"
-	.string "I'm running an errand for my dad.\n"
-	.string "No, I'm not buying any DOLLS.\p"
-	.string "Anyways, it's been a while.\p"
-	.string "Want to have a battle to see who's been\n"
-	.string "raising POKéMON better?$"
+	.string "휘웅: 뭐야 {PLAYER}{K_I}구나\p"
+	.string "난 아빠에게 부탁받은\n"
+	.string "심부름을 하고 있었어\l"
+	.string "딱히 봉제인형 같은 건 안 샀다고\p"
+	.string "그것보다 오랜만에 만났으니까\p"
+	.string "누가 포켓몬을\n"
+	.string "더 잘 키워 왔는지\l"
+	.string "승부해 볼래?$"
+	// ユウキ『なんだ §あかｐ
+	// オレ とうさんに たのまれたｎ
+	// かいものを してたんだｌ
+	// べつに ぬいぐるみ なんか かってないよｐ
+	// それよりも ひさしぶりに あったんだｐ
+	// どっちが うまくｎ
+	// ポケモン そだてているかｌ
+	// しょうぶ してやろうか?
 
 LilycoveCity_Text_16802C:: @ 816802C
-	.string "BRENDAN: Oh, what's the matter?\n"
-	.string "Don't have the confidence?$"
+	.string "휘웅: 뭐야\n"
+	.string "자신이 없구나$"
+	// ユウキ『なんだよｎ
+	// じしんが ないのかよ
 
 LilycoveCity_Text_168067:: @ 8168067
-	.string "BRENDAN: Want to battle to see who's\n"
-	.string "been raising POKéMON better?$"
+	.string "휘웅: 누가 포켓몬을\n"
+	.string "더 잘 키워 왔는지\l"
+	.string "승부해 볼래?$"
+	// ユウキ『どっちが うまくｎ
+	// ポケモン そだてているかｌ
+	// しょうぶ してやろうか?
 
 LilycoveCity_Text_1680A9:: @ 81680A9
-	.string "BRENDAN: Aww, but you know I'm not\n"
-	.string "going to lose to no {PLAYER}.$"
+	.string "휘웅: 뭐 내가\n"
+	.string "{PLAYER}한테 질 리는 없지만 말야$"
+	// ユウキ『まあ オレがｎ
+	// §あに まけるわけ ないんだけど
 
 LilycoveCity_Text_1680E4:: @ 81680E4
-	.string "Humph...\n"
-	.string "You've done a lot of raising.\p"
-	.string "That stings a bit - I had a head start\n"
-	.string "on you as a TRAINER...$"
+	.string "흐으음...\n"
+	.string "제법 잘 키우고 있구나\p"
+	.string "조금 분하네\n"
+	.string "트레이너로서는 내가\l"
+	.string "선배였는데 말이지...$"
+	// ふうん……ｎ
+	// かなり そだててるんだなｐ
+	// ちょっと くやしいなｎ
+	// トレ-ナ-としては オレの ほうがｌ
+	// センパイ だったのに……
 
 LilycoveCity_Text_168149:: @ 8168149
-	.string "BRENDAN: I...\n"
-	.string "I plan on going home to LITTLEROOT.\p"
-	.string "You know I'm helping out my dad on his\n"
-	.string "POKéDEX. It's coming together pretty\l"
-	.string "decently, so I should go show him.$"
+	.string "휘웅: 나...\n"
+	.string "미로마을로 돌아가려고\p"
+	.string "아빠 도와주려고 만들고 있는\n"
+	.string "포켓몬 도감도 꽤 완성돼서\l"
+	.string "아빠한테 한번 보여줘야 되거든$"
+	// ユウキ『オレ……ｎ
+	// ミシロタウンに もどるつもり なんだｐ
+	// とうさんの てつだいで つくっているｎ
+	// ポケモンずかんも けっこう できてきたしｌ
+	// いちど とうさんに みせておかないと
 
 LilycoveCity_Text_1681EA:: @ 81681EA
-	.string "{PLAYER}, what are you going to do?\p"
-	.string "Collect all the GYM BADGES and take\n"
-	.string "the POKéMON LEAGUE challenge?\p"
-	.string "Maybe I'll do that, too...\p"
-	.string "Well, anyway, hang in there!$"
+	.string "{PLAYER}{K_EUNNEUN} 어떡할 거야?\p"
+	.string "역시 모든 체육관 배지를 모아서\n"
+	.string "포켓몬리그에 도전할 거야?\p"
+	.string "나도 그렇게 할까\p"
+	.string "뭐든 상관없나\n"
+	.string "어쨌든 힘내!$"
+	// §あは どうする?ｐ
+	// やっぱり ぜんぶの ジムバッジ あつめてｎ
+	// ポケモンリ-グ ちょうせん するのか?ｐ
+	// オレも そうしようかなｐ
+	// まあ いいやｎ
+	// とにかく がんばれよ!
 
 LilycoveCity_Text_168282:: @ 8168282
-	.string "{PLAYER}, what are you going to do?\p"
-	.string "Since you're that strong, are you\n"
-	.string "taking the POKéMON LEAGUE challenge?\p"
-	.string "Heh, even me - if I trained my POKéMON\n"
-	.string "a bit more, I should be stronger than\l"
-	.string "you, {PLAYER}.\p"
-	.string "Well, anyway, hang in there!$"
+	.string "{PLAYER}{K_EUNNEUN} 어떡할 거야?\p"
+	.string "그 정도로 강하니까\n"
+	.string "포켓몬리그에 도전할 거야?\p"
+	.string "나도 좀 더\n"
+	.string "포켓몬을 키우면 {PLAYER}보다도\l"
+	.string "강해질 수 있긴 하겠다\p"
+	.string "뭐든 상관없나\n"
+	.string "어쨌든 힘내!$"
+	// §あは どうする?ｐ
+	// そんなに つよいんだからｎ
+	// ポケモンリ-グに ちょうせん するのか?ｐ
+	// オレだって もうちょっとｎ
+	// ポケモン そだてれば §あよりもｌ
+	// つよくなれる はずだからなｐ
+	// まあ いいやｎ
+	// とにかく がんばれよ!
 
 LilycoveCity_Text_16835A:: @ 816835A
-	.string "{PLAYER}, what are you going to do?\p"
-	.string "Since you're that strong, are you\n"
-	.string "taking the BATTLE TOWER challenge?\p"
-	.string "Heh, even me - if I trained my POKéMON\n"
-	.string "a bit more, I should be stronger than\l"
-	.string "you, {PLAYER}.\l"
-	.string "Maybe I will go to the BATTLE TOWER.\p"
-	.string "Well, anyway, hang in there!$"
+	.string "{PLAYER}{K_EUNNEUN} 어떡할 거야?\p"
+	.string "그렇게나 강하니까\n"
+	.string "배틀타워에 도전할 거야?\p"
+	.string "나도 좀 더\n"
+	.string "포켓몬을 키우면 {PLAYER}보다도\l"
+	.string "강해질 수 있을 테니까\l"
+	.string "배틀타워에 가볼까?\p"
+	.string "뭐든 상관없나\n"
+	.string "어쨌든 힘내!$"
+	// §あは どうする?ｐ
+	// そんなに つよいんだからｎ
+	// バトルタワ-に ちょうせん するのか?ｐ
+	// オレだって もうちょっとｎ
+	// ポケモン そだてれば §あよりもｌ
+	// つよくなれる はずだからなｌ
+	// オレも バトルタワ-に いこうかな?ｐ
+	// まあ いいやｎ
+	// とにかく がんばれよ!
 
 LilycoveCity_Text_168455:: @ 8168455
-	.string "Fufufu...\p"
-	.string "We moved more loot into our secret\n"
-	.string "HIDEOUT today...\p"
-	.string "Wh-who are you?!\n"
-	.string "I was just talking to myself!$"
+	.string "후후후...\p"
+	.string "오늘도 빼앗은 물건을\n"
+	.string "아지트로 옮겼다...\p"
+	.string "뭐 뭐야 넌!\n"
+	.string "바 방금 건 혼잣말이야!$"
+	// ふふふ……ｐ
+	// きょうも うばった ブツをｎ
+	// アジトに はこびこんだぞ……ｐ
+	// なっ なんだ おまえ!ｎ
+	// いっ いまのは ひとりごと だぞ!
 
 LilycoveCity_Text_1684C2:: @ 81684C2
-	.string "I'm just a GRUNT, so I don't know what\n"
-	.string "the BOSS is thinking...\p"
-	.string "But being on TEAM {EVIL_TEAM}, I know I'll get\n"
-	.string "the chance to do big things!\p"
-	.string "Wh-who are you?!\n"
-	.string "I was just talking to myself!$"
+	.string "리더께서 무슨 생각을 하시는지\n"
+	.string "조무래기인 나는 모르겠지만\p"
+	.string "{EVIL_TEAM}단에 있으면\n"
+	.string "엄청난 일을 할 수 있을 거 같아!\p"
+	.string "뭐 뭐야 넌!\n"
+	.string "지 지금 건 혼잣말이야!$"
+	// リ-ダ-が なに かんがえてるのかｎ
+	// したっぱの オレには わからんがｐ
+	// §くだんに いるとｎ
+	// すごいこと できそうだぜ!ｐ
+	// なっ なんだ おまえ!ｎ
+	// いっ いまのは ひとりごと だぞ!
 
 LilycoveCity_Text_168573:: @ 8168573
-	.string "Hey, you!\p"
-	.string "Don't go near the cave in the cove!\p"
-	.string "Why? You don't need a reason why!\n"
-	.string "I'm an adult, so you just listen to me!$"
+	.string "잠깐 너!\p"
+	.string "저기 구석진 곳에 있는\n"
+	.string "동굴에는 접근하지 마!\p"
+	.string "왜냐고? 이유는 뭐든 상관없잖아!\n"
+	.string "어른이 하는 말을 들어!!$"
+	// おい おまえ!ｐ
+	// いりえに あるｎ
+	// どうくつには ちかづくなよ!ｐ
+	// なぜって? りゆうは どうでも いいんだ!ｎ
+	// おとなの いうこと きけよな!!
 
 LilycoveCity_Text_1685EB:: @ 81685EB
-	.string "If this whole wide world becomes ours,\n"
-	.string "TEAM {EVIL_TEAM}'s, it will be a happier\l"
-	.string "place for POKéMON, too.$"
+	.string "이 넓은 세상의 모든 것이\n"
+	.string "우리 {EVIL_TEAM}단의 것이 되면\l"
+	.string "포켓몬들도 행복해질 거야!$"
+	// この ひろい せかい すべてがｎ
+	// おれら §くだんの ものに なったらｌ
+	// ポケモンも しあわせに なれるはずだ!
 
 LilycoveCity_Text_16864A:: @ 816864A
-	.string "There! WAILMER!\n"
-	.string "Leap out of the water now!$"
+	.string "자! 고래왕자!\n"
+	.string "거기 수면에서 점프하는 거야!$"
+	// それっ! ホエルコ!ｎ
+	// そこで すいめんから ジャンプするのだ!
 
 LilycoveCity_Text_168675:: @ 8168675
-	.string "Hunh? What do you want?\p"
-	.string "You're messing up our training, so can\n"
-	.string "you, like, get lost?$"
+	.string "...응? 뭐야 넌?\p"
+	.string "트레이닝에 방해되니까\n"
+	.string "저리로 가 줘!$"
+	// ……ん? なんだ おまえは?ｐ
+	// トレ-ニングの じゃまに なるからｎ
+	// あっちに いっててくれ!
 
 LilycoveCity_Text_1686C9:: @ 81686C9
-	.string "The POKéMON that come to this CONTEST\n"
-	.string "HALL are all prizewinners.\l"
-	.string "They come from all over the country.\p"
-	.string "My heart swells with excitement!$"
+	.string "이 콘테스트 회장에는\n"
+	.string "전국에서 계속 우승해 온\l"
+	.string "포켓몬들이 모여있다고 하더구나!\p"
+	.string "이 몸의 심장이 두근두근거리는구나!$"
+	// この コンテスト かいじょう にはｎ
+	// ぜんこく から かちぬいてきたｌ
+	// ポケモンが あつまって いるんだな!ｐ
+	// わしの ハ-トは わくわく なんだな!
 
 LilycoveCity_Text_168750:: @ 8168750
-	.string "Have you seen that strange cave in\n"
-	.string "the cove at the edge of town?$"
+	.string "마을 변두리에 있는 구석진 곳에\n"
+	.string "이상한 동굴 있는 거 봤어?$"
+	// まちの はずれの いりえにｎ
+	// おかしな どうくつが あるの みた?
 
 LilycoveCity_Text_168791:: @ 8168791
-	.string "I'm going to teach my POKéMON some new\n"
-	.string "moves for entering a CONTEST.\p"
-	.string "So, I'm going to see the MOVE DELETER\n"
-	.string "and make it forget HM moves.$"
+	.string "나 포켓몬\n"
+	.string "콘테스트를 위해서 새로운 기술을\l"
+	.string "배우게 할 거야!\p"
+	.string "그래서 기술잊기 할아버지한테 부탁해서\n"
+	.string "비전기술을 잊게 할 거야!$"
+	// あたしの ポケモンｎ
+	// コンテストの ために あたらしい わざをｌ
+	// おぼえさせる つもりなの!ｐ
+	// だからね わざわすれ じいさんに たのんでｎ
+	// ひでんわざを わすれさせて もらうのよ!
 
 LilycoveCity_Text_168819:: @ 8168819
-	.string "I came from KANTO.\p"
-	.string "The HOENN region is beautiful with\n"
-	.string "all its water and verdant nature.\p"
-	.string "Hunh? Wait a second...\p"
-	.string "Could there be rare POKéMON that live\n"
-	.string "only in this area?$"
+	.string "저는 관동에서 왔습니다!\p"
+	.string "호연지방은 물과 초목이\n"
+	.string "넘쳐흐르는 곳이네요!\p"
+	.string "...응? 그렇다는 건?\p"
+	.string "이 땅에서만 서식하는\n"
+	.string "희귀한 포켓몬이 있을 수도?$"
+	// ぼくは カント-から きました!ｐ
+	// ホウエン ちほうは みずと みどりにｎ
+	// あふれた うつくしい ところ ですね!ｐ
+	// ……ん? ということは?ｐ
+	// この とち だけに せいそくするｎ
+	// めずらしい ポケモンが いるのかも?
 
 LilycoveCity_Text_1688C1:: @ 81688C1
-	.string "TEAM {EVIL_TEAM}'s been training their\n"
-	.string "WAILMER in the cove.\p"
-	.string "We SAILORS can't get our boats out\n"
-	.string "to sea with them in the way!$"
+	.string "{EVIL_TEAM}단 녀석들이\n"
+	.string "구석진 곳에서 고래왕자를\l"
+	.string "트레이닝시키고 있더라고!\p"
+	.string "이대로는 우리 선원들이\n"
+	.string "바다에 나갈 수가 없어!$"
+	// §くだんの れんちゅうがｎ
+	// いりえで ホエルコをｌ
+	// トレ-ニング してるんだよ!ｐ
+	// おいらたち ふなのりｎ
+	// このままじゃ うみに でられないよ!
 
 LilycoveCity_Text_168934:: @ 8168934
-	.string "Ahoy, did you know?\p"
-	.string "Someone punted TEAM {EVIL_TEAM} out of the\n"
-	.string "way for us!\p"
-	.string "That got the WAILMER out of the cove,\n"
-	.string "so we can get our boats out again.$"
+	.string "너 그거 알아?\p"
+	.string "누군가가 {EVIL_TEAM}단을\n"
+	.string "혼쭐을 내줬다고 하더라고!\p"
+	.string "덕분에 고래왕자가 없어져서\n"
+	.string "바다로 나갈 수 있게 됐어!$"
+	// あんた しってるかい?ｐ
+	// だれかが §くだんをｎ
+	// けちらしてくれた らしいんだ!ｐ
+	// おかげで ホエルコ いなくなってｎ
+	// うみに でられるように なったよ!
 
 LilycoveCity_Text_1689BF:: @ 81689BF
-	.string "I was taking a relaxing snooze at the\n"
-	.string "seaside inn to the sound of waves...\p"
-	.string "When someone stole my POKéMON!\p"
-	.string "Who's the abductor?\n"
-	.string "TEAM {EVIL_TEAM}? Is it TEAM {EVIL_TEAM}?$"
+	.string "해변의 숙소에서 파도 소리를\n"
+	.string "들으면서 여유롭게 낮잠\l"
+	.string "...을 자고 있었더니\p"
+	.string "내 포켓몬을 도둑맞았어!\p"
+	.string "범인은 누구지!?\n"
+	.string "{EVIL_TEAM}단? {EVIL_TEAM}단이야!?$"
+	// うみべの やどで なみの おとをｎ
+	// ききながら のんびり おひるねｌ
+	// ……を していたらｐ
+	// わたしの ポケモン とられちゃった!ｐ
+	// はんにんは だれ-!?ｎ
+	// §くだん? §くだん なの-!?
 
 LilycoveCity_Text_168A55:: @ 8168A55
-	.string "My missing POKéMON...\n"
-	.string "It came back without me noticing!$"
+	.string "없어진 내 포켓몬이\n"
+	.string "어느샌가 돌아와 있었어!$"
+	// いなくなってた わたしの ポケモンｎ
+	// いつのまにか かえってきたの!
 
 LilycoveCity_Text_168A8D:: @ 8168A8D
-	.string "I'm an ART DEALER.\p"
-	.string "I am a buyer and seller of fine art,\n"
-	.string "especially paintings.\p"
-	.string "I've heard that the MUSEUM here has\n"
-	.string "magnificent works on exhibit...$"
+	.string "전 화상입니다!\p"
+	.string "아니 이름이 화상이라는 게 아니라\n"
+	.string "가치 있는 그림을 사고팔고 하는\l"
+	.string "직업의 이름이에요!\p"
+	.string "이 마을의 미술관에 정말 멋진\n"
+	.string "명화가 있다고 들었는데...$"
+	// わたしは ガショウ です!ｐ
+	// いや そういう なまえ なのではなくｎ
+	// かちのある えを かったり うったりするｌ
+	// しょくぎょうの なまえ なんです!ｐ
+	// このまちの びじゅつかんに すばらしいｎ
+	// めいが が あると きいたの ですが……
 
 LilycoveCity_Text_168B1F:: @ 8168B1F
-	.string "Even as we grow old and wrinkled, the\n"
-	.string "sea remains forever young with the\l"
-	.string "vivid brilliance of life...\p"
-	.string "Fwohoho fwohohohoho...$"
+	.string "우리가 쭈글쭈글해져도\n"
+	.string "이 바다는 늘 싱그럽고\l"
+	.string "생명의 반짝임으로 가득하구려\p"
+	.string "으하하 으하하하하...$"
+	// わしらが しわくちゃに なってもｎ
+	// このうみは いつまでも わかわかしくｌ
+	// いのちの かがやきに あふれとるｐ
+	// ふほほ ふほほほほ……
 
 LilycoveCity_Text_168B9B:: @ 8168B9B
-	.string "It was sixty years ago that my husband\n"
-	.string "proposed to me here.\l"
-	.string "The sea remains as beautiful as ever.\p"
-	.string "Mufufufu mufufufufufu...$"
+	.string "60년 전에 여기서 할아범이\n"
+	.string "나한테 프러포즈했을 때부터\l"
+	.string "이 바다는 변함없이 아름다워요\p"
+	.string "오호호 오호호호호...$"
+	// 60ねんまえ ここで おじいしゃんがｎ
+	// わしに プロポ-ズ してくれた ときからｌ
+	// このうみは うつくしいまま ですのじゃｐ
+	// むふふ むふふふふ……
 
 LilycoveCity_Text_168C16:: @ 8168C16
-	.string "Hm, you know of the peculiar cavern\n"
-	.string "in this cove?\p"
-	.string "That had been a natural formation, but\n"
-	.string "then that TEAM {EVIL_TEAM} lot came along\l"
-	.string "and made their renovations.\p"
-	.string "They call themselves the “nature-loving\n"
-	.string "TEAM {EVIL_TEAM}”!\p"
-	.string "But what they do and what they say\n"
-	.string "don't match at all!$"
+	.string "여기 구석진 곳에 이상한\n"
+	.string "동굴의 입구가 있지?\p"
+	.string "예전에는 천연동굴이었는데\n"
+	.string "{EVIL_TEAM}단이라는 녀석들이\l"
+	.string "저렇게 개조해 버렸지 뭔가!\p"
+	.string "“자연을 사랑하는 {EVIL_TEAM}단!”\n"
+	.string "...이라고 하지만\p"
+	.string "말과 행동이 다르지 않은가!$"
+	// この いりえの ところに おかしなｎ
+	// どうくつの いりぐちが ある じゃろう?ｐ
+	// いぜんは てんねんの どうくつ だったがｎ
+	// §くだん とかいう れんちゅうがｌ
+	// かいぞうして あんなふうに したんじゃ!ｐ
+	// 「しぜんを あいする §くだん!」ｎ
+	// ……と いっておるがｐ
+	// いうことと やることが ちがっとる!
 
 LilycoveCity_Text_168D15:: @ 8168D15
-	.string "That cave in the cove...\n"
-	.string "It seems someone sealed the entrance,\l"
-	.string "so no one can enter it anymore.\p"
-	.string "That TEAM {EVIL_TEAM} lot, they must\n"
-	.string "have gone away for good.$"
+	.string "구석진 곳에 있는 동굴...\n"
+	.string "어느샌가 입구가 없어져서\l"
+	.string "안에 들어갈 수 없게 되었다네!\p"
+	.string "{EVIL_TEAM}단 녀석들\n"
+	.string "어딘가로 가버린 것 같구먼$"
+	// いりえに あった どうくつ……ｎ
+	// いつのまにやら いりぐちが なくなってｌ
+	// なかに はいれなく なっておるんじゃ!ｐ
+	// きっと §くだんの れんちゅうｎ
+	// どこか とおくへ いって しまったんじゃ!
 
 LilycoveCity_Text_168DA9:: @ 8168DA9
-	.string "LILYCOVE CITY\p"
-	.string "“Where the land ends and the\n"
-	.string "sea begins.”$"
+	.string "여기는 해안시티\n"
+	.string "육지가 끝나고 바다가 시작되는 곳$"
+	// ここは ミナモ シティｎ
+	// りくちの さいはて うみの はじまり
 
 LilycoveCity_Text_168DE1:: @ 8168DE1
-	.string "POKéMON CONTESTS\n"
-	.string "MASTER RANK REGISTRATION\p"
-	.string "“Enter CONTESTS with your friends!”$"
+	.string "포켓몬 콘테스트 마스터랭크 접수처\n"
+	.string "친구들과 함께 참가할 수도 있습니다!$"
+	// ポケモンコンテスト マスタ-ランク うけつけｎ
+	// おともだち とも いっしょに でられます!
 
 LilycoveCity_Text_168E2F:: @ 8168E2F
-	.string "COVE LILY MOTEL\p"
-	.string "“Remember us as COVE LILY of\n"
-	.string "LILYCOVE.”$"
+	.string "“안해민박”\n"
+	.string "해안의 안해로 기억해 주세요$"
+	// 「みんしゅく モナミ」ｎ
+	// ミナモのモナミ と おぼえて ください
 
 LilycoveCity_Text_168E67:: @ 8168E67
-	.string "LILYCOVE MUSEUM\p"
-	.string "“POKéMON Masterpiece Collection\n"
-	.string "on exhibit!”$"
+	.string "“해안 미술관”\n"
+	.string "포켓몬 명화전 개최 중!$"
+	// 「ミナモ びじゅつかん」ｎ
+	// ポケモン めいがてん かいさい ちゅう!
 
 LilycoveCity_Text_168EA4:: @ 8168EA4
-	.string "LILYCOVE MUSEUM\p"
-	.string "“{PLAYER}'s POKéMON Collection\n"
-	.string "on exhibit!”$"
+	.string "“해안 미술관”\p"
+	.string "{PLAYER}의 포켓몬 컬렉션\n"
+	.string "개최 중!$"
+	// 「ミナモ びじゅつかん」ｐ
+	// §あの ポケモン コレクションｎ
+	// かいさい ちゅう!
 
 LilycoveCity_Text_168EDA:: @ 8168EDA
-	.string "LILYCOVE CITY HARBOR\p"
-	.string "“The ferry S.S. TIDAL is under\n"
-	.string "construction in SLATEPORT CITY.\p"
-	.string "“Service is scheduled to begin\n"
-	.string "shortly.”$"
+	.string "“해안시티 배 타는 곳”\p"
+	.string "연락선 타이드립호는\n"
+	.string "현재 잿빛도시에서 건조 중!\p"
+	.string "조금만 더 기다려주세요!$"
+	// 「ミナモ シティ ふねのりば」ｐ
+	// れんらくせん タイドリップごう はｎ
+	// カイナシティにて けんぞう ちゅう!ｐ
+	// もう しばらく おまちください!
 
 LilycoveCity_Text_168F57:: @ 8168F57
-	.string "LILYCOVE CITY HARBOR\p"
-	.string "“Enjoy a delightful cruise on the\n"
-	.string "ferry S.S. TIDAL.”$"
+	.string "“해안시티 배 타는 곳”\p"
+	.string "연락선 타이드립호로\n"
+	.string "배 여행을 만끽해 주세요!$"
+	// 「ミナモ シティ ふねのりば」ｐ
+	// れんらくせん タイドリップごうでｎ
+	// ふねの たびを おたのしみ ください!
 
 LilycoveCity_Text_168FA1:: @ 8168FA1
-	.string "POKéMON TRAINER FAN CLUB\p"
-	.string "The names of TRAINERS are scribbled\n"
-	.string "all over the sign...$"
+	.string "“포켓몬 트레이너 팬클럽”\p"
+	.string "간판에는 여러 트레이너들의\n"
+	.string "이름이 낙서처럼 써져 있다...$"
+	// 「ポケモン トレ-ナ- ファンクラブ」ｐ
+	// かんばんに いろんな トレ-ナ-のｎ
+	// なまえが らくがき されている……
 
 LilycoveCity_Text_168FF3:: @ 8168FF3
-	.string "LILYCOVE DEPARTMENT STORE\p"
-	.string "“Overflowing with great merchandise\n"
-	.string "and excitement!\p"
-	.string "“A great place to find that something\n"
-	.string "you need!”$"
+	.string "“해안백화점”\p"
+	.string "굿즈 한가득! 설렘 한가득!\n"
+	.string "무언가를 발견할 수 있는 멋진 장소$"
+	// 「ミナモ デパ-ト」ｐ
+	// グッズ いっぱい! ドキドキ いっぱい!ｎ
+	// なにかが みつかる すてきな ところ
 
 LilycoveCity_Text_169072:: @ 8169072
-	.string "MOVE DELETER'S HOUSE\p"
-	.string "“Unwanted POKéMON moves deleted.”$"
+	.string "“기술잊기 할아버지의 집”\n"
+	.string "포켓몬 기술을 잊게 합니다$"
+	// 「わざわすれ じいさんの いえ」ｎ
+	// ポケモンの わざ わすれさせます

@@ -1,26 +1,47 @@
 LilycoveCity_PokemonCenter_1F_Text_189FC9:: @ 8189FC9
-	.string "I wonder how many kinds of POKéMON\n"
-	.string "there are in the world?\p"
-	.string "It'd be great to cross seas and\n"
-	.string "trade POKéMON with people far away.$"
+	.string "이 세상에는\n"
+	.string "포켓몬이 과연 얼마나 있는 걸까?\p"
+	.string "언젠가 바다를 넘어서\n"
+	.string "먼 나라 사람과\l"
+	.string "포켓몬 교환하고 싶다!$"
+	// この せかいにはｎ
+	// どれだけの ポケモンが いるのかな?ｐ
+	// いつのひか うみを こえてｎ
+	// とおい くにの ひととｌ
+	// ポケモン こうかん したいなあ!
 
 LilycoveCity_PokemonCenter_1F_Text_18A048:: @ 818A048
-	.string "I've been hearing about some rotten\n"
-	.string "scoundrels who steal POKéMON and rip\l"
-	.string "off METEORITES.$"
+	.string "최근 사람들의 포켓몬을 뺏거나\n"
+	.string "운석을 훔치거나 하는\l"
+	.string "골치 아픈 놈들이 있다고 하더라고!$"
+	// ちかごろ ひとの ポケモンを うばったりｎ
+	// いんせきを よこどり したりするｌ
+	// ろくでもない やつらが いるらしいな!
 
 LilycoveCity_PokemonCenter_1F_Text_18A0A1:: @ 818A0A1
-	.string "Those rotten scoundrels who steal\n"
-	.string "POKéMON and rip off METEORITES...\p"
-	.string "I haven't seen them around recently.$"
+	.string "사람들의 포켓몬을 뺏거나\n"
+	.string "운석을 훔치거나 했던\l"
+	.string "골치 아픈 놈들...\p"
+	.string "요즘 안 보이더라$"
+	// ひとの ポケモンを うばったりｎ
+	// いんせきを よこどり していたｌ
+	// ろくでもない やつら……ｐ
+	// ちかごろ すがたを みなくなったよ
 
 UnknownString_818A10A: @ 818A10A
-	.string "I'm going to get X ATTACK to raise\n"
-	.string "ATTACK during battle.\p"
-	.string "That way, I'll be guaranteed to win!$"
+	.string "플러스파워를 포켓몬에게 써서\n"
+	.string "공격력을 올릴 거야!\p"
+	.string "이걸로 승리는 틀림없이 내 거라구!$"
+	// プラスパワ-を ポケモンに つかってｎ
+	// こうげきりょくを たかめるんだ!ｐ
+	// これで しょうり まちがいなし さ!
 
 UnknownString_818A168: @ 818A168
-	.string "FULL HEAL is a little expensive,\n"
-	.string "but it is convenient.\p"
-	.string "Just one of these can cure any\n"
-	.string "POKéMON status problem.$"
+	.string "조금 비쌀지도 모르지만\n"
+	.string "만병통치제는 편리해\p"
+	.string "포켓몬이 어떤 상태 이상에 걸려도\n"
+	.string "이거 하나면 낫게 할 수 있어!$"
+	// ちょっと たかいかも しれないけどｎ
+	// なんでもなおし って べんりよｐ
+	// ポケモンの どんな いじょうもｎ
+	// これひとつで なおせるんだもんね!
