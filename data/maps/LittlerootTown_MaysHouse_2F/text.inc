@@ -1,86 +1,179 @@
 LittlerootTown_BrendansHouse_2F_Text_17337E:: @ 817337E
-	.string "POKéMON fully restored!\n"
-	.string "Items ready, and... Huh?$"
+	.string "포켓몬 체력 문제없고!\n"
+	.string "도구도 이걸로... 됐어!$"
+	// ポケモンは たいりょく まんたん!ｎ
+	// どうぐも これで よし……と!
 
 LittlerootTown_BrendansHouse_2F_Text_1733AF:: @ 81733AF
-	.string "Huh?\n"
-	.string "Who... Who are you?\p"
-	.string "... ... ... ... ... ... ... ...\n"
-	.string "... ... ... ... ... ... ... ...\p"
-	.string "Oh, you're {PLAYER}{KUN}.\n"
-	.string "So your move was today.\p"
-	.string "Um... I'm MAY.\n"
-	.string "Glad to meet you!\p"
-	.string "I...\n"
-	.string "I have this dream of becoming friends\l"
-	.string "with POKéMON all over the world.\p"
-	.string "I... I heard about you, {PLAYER}{KUN}, from\n"
-	.string "my dad, PROF. BIRCH.\p"
-	.string "I was hoping that you would be nice,\n"
-	.string "{PLAYER}{KUN}, and that we could be friends.\p"
-	.string "Oh, this is silly, isn't it?\n"
-	.string "I... I've just met you, {PLAYER}{KUN}.\p"
-	.string "Eheheh...\p"
-	.string "Oh, no! I forgot!\p"
-	.string "I was supposed to go help Dad catch\n"
-	.string "some wild POKéMON!\p"
-	.string "{PLAYER}{KUN}, I'll catch you later!$"
+	.string "에...!?\n"
+	.string "너 누...구야?\p"
+	.string "...... ...... ...... ......\n"
+	.string "...... ...... ...... ......\p"
+	.string "네가 {PLAYER}...\n"
+	.string "아 오늘 이사 오는 거였구나...\p"
+	.string "나 난 봄이야!\n"
+	.string "자 잘 부탁해\p"
+	.string "난...\n"
+	.string "온 세상 포켓몬들과\l"
+	.string "친구가 되는 게 꿈이야...\p"
+	.string "그 그래서\n"
+	.string "아빠... 털보박사님한테\l"
+	.string "{PLAYER}의 얘기를 듣고\p"
+	.string "나 {PLAYER}{K_I}랑도\n"
+	.string "친구가 됐으면 좋겠다고...\l"
+	.string "생각하고 있었어...\p"
+	.string "앗 나도 참 {PLAYER}{K_I}랑\n"
+	.string "처음 만나서 얘기하는 건데\l"
+	.string "무슨 얘길 하는 건지...\p"
+	.string "에헤헤...\p"
+	.string "앗 이런!\p"
+	.string "나 아빠 심부름으로\n"
+	.string "야생 포켓몬\l"
+	.string "잡으러 가려던 참이었어!\p"
+	.string "{PLAYER}\n"
+	.string "그 그럼 나중에 또 보자!$"
+	// えっ……!?ｎ
+	// あなた だれ…… なの?ｐ
+	// …… …… …… ……ｎ
+	// …… …… …… ……ｐ
+	// あなたが §あ§お……ｎ
+	// そうか きょう ひっこし だったんだ……ｐ
+	// あ あたし ハルカ!ｎ
+	// よ よろしくねｐ
+	// あたし……ｎ
+	// せかいじゅうの ポケモンとｌ
+	// ともだちに なるのが ゆめ なの……ｐ
+	// で でねｎ
+	// おとうさん…… オダマキはかせ からｌ
+	// §あ§おの おなはし きいてｐ
+	// あたし §あ§お ともｎ
+	// おともだちに なれたらなあ……ｌ
+	// なんて おもってたの……ｐ
+	// あっ あたしったら §あ§おとｎ
+	// はじめて おはなし してるのにｌ
+	// なに いってんだろ……ｐ
+	// てへへ……ｐ
+	// あっ いけない!ｐ
+	// あたし おとうさんの おてつだいでｎ
+	// やせいの ポケモンｌ
+	// つかまえに いくところ だったんだ!ｐ
+	// §あ§おｎ
+	// まっ また あとでね!
 
 LittlerootTown_BrendansHouse_2F_Text_1735C9:: @ 81735C9
-	.string "POKéMON fully restored...\n"
-	.string "Items all packed, and...$"
+	.string "포켓몬 체력 가득 찼고!\n"
+	.string "도구도 이걸로... 됐고$"
+	// ポケモンは たいりょく まんたんｎ
+	// どうぐも これで だいじょうぶ ……か
 
 LittlerootTown_BrendansHouse_2F_Text_1735FC:: @ 81735FC
-	.string "Hey!\n"
-	.string "You...\p"
-	.string "Who are you?\p"
-	.string "Oh, you're {PLAYER}, aren't you?\n"
-	.string "Moved in next door, right?\p"
-	.string "I didn't know that you're a girl.\p"
-	.string "Dad, PROF. BIRCH, said that our new\n"
-	.string "next-door neighbor is a GYM LEADER's\l"
-	.string "kid, so I assumed you'd be a guy.\p"
-	.string "My name's BRENDAN.\n"
-	.string "So, hi, neighbor!\p"
-	.string "Huh? Hey, {PLAYER}, don't you have\n"
-	.string "a POKéMON?\p"
-	.string "Do you want me to go catch you one?\p"
-	.string "Aw, darn, I forgot...\p"
-	.string "I'm supposed to go help my dad catch\n"
-	.string "some wild POKéMON.\p"
-	.string "Some other time, okay?$"
+	.string "너...\p"
+	.string "누구야?\p"
+	.string "앗 네가 옆집에\n"
+	.string "이사 온 {PLAYER}{K_I}구나...\p"
+	.string "흐음\n"
+	.string "여자애였구나...\p"
+	.string "아빠... 털보박사님한테\n"
+	.string "옆집으로 이사 오는 건\l"
+	.string "체육관 관장의 아이라고 들어서\l"
+	.string "멋대로 남자애라고 생각하고 있었어\p"
+	.string "난 휘웅이야\n"
+	.string "뭐 이웃이 됐으니\l"
+	.string "앞으로 잘 부탁할게\p"
+	.string "응? {PLAYER} 너\n"
+	.string "포켓몬 없어?\p"
+	.string "괜찮으면 내가\n"
+	.string "잡아줄까?\p"
+	.string "아 맞다 까먹고 있었네...\p"
+	.string "나 아빠 심부름으로\n"
+	.string "야생 포켓몬\l"
+	.string "잡으러 가려고 하던 중이었어\p"
+	.string "다음에 또 보자!$"
+	// おまえ……ｐ
+	// だれ?ｐ
+	// あっ おまえが となりにｎ
+	// ひっこして きた §あか……ｐ
+	// ふうんｎ
+	// おんなのこ だったんだ……ｐ
+	// とうさん…… オダマキはかせ からｎ
+	// となりに ひっこして くるのはｌ
+	// ジムリ-ダ-の こども って きいてたからｌ
+	// かってに おとこ だと おもってたよｐ
+	// オレは ユウキｎ
+	// まあ おとなりさんに なったことだしｌ
+	// これから よろしくなｐ
+	// おや? §あはｎ
+	// ポケモン もってないのか?ｐ
+	// よかったら オレがｎ
+	// つかまえてきて やろうか?ｐ
+	// って わすれてた……ｐ
+	// オレ とうさんの てつだいでｎ
+	// やせいの ポケモンｌ
+	// つかまえに いく ところ だったんだｐ
+	// また こんどな!
 
 LittlerootTown_BrendansHouse_2F_Text_1737AE:: @ 81737AE
-	.string "MAY: {PLAYER}{KUN}!\p"
-	.string "I was just checking my POKéDEX.\p"
-	.string "There's still a lot of POKéMON that\n"
-	.string "I've seen but haven't caught.\p"
-	.string "And there are many others that\n"
-	.string "I think will evolve.\p"
-	.string "I wonder where I should go catch\n"
-	.string "some POKéMON next?$"
+	.string "봄이: {PLAYER}{K_AYA}!\p"
+	.string "나 지금 있지\n" 
+	.string "포켓몬 도감 보고 있었어\p"
+	.string "발견만 하고\n"
+	.string "잡지 못한 포켓몬이랑\l"
+	.string "곧 진화할 거 같은 포켓몬이\l"
+	.string "아직 많이 남아 있어\p"
+	.string "이번엔 어디로\n"
+	.string "포켓몬 잡으러 갈까?$"
+	// ハルカ『§あ§お!ｐ
+	// あたし いまねｎ
+	// ポケモンずかんを ながめていたのｐ
+	// みつけた だけでｎ
+	// つかまえていない ポケモンやｌ
+	// しんか しそうな ポケモンｌ
+	// まだまだ いっぱい いるんだよねｐ
+	// こんどは どこにｎ
+	// ポケモン つかまえに いこうかな?
 
 LittlerootTown_BrendansHouse_2F_Text_173883:: @ 8173883
-	.string "MAY: I wonder where I should go catch\n"
-	.string "some POKéMON next?\p"
-	.string "Wouldn't it be funny if we ran into each\n"
-	.string "other, {PLAYER}{KUN}?$"
+	.string "봄이: 이번엔 어디로\n"
+	.string "포켓몬 잡으러 갈까?\p"
+	.string "간 곳에서 또\n"
+	.string "{PLAYER}{K_I}랑 만나는 거 아냐!?$"
+	// ハルカ『こんどは どこにｎ
+	// ポケモン つかまえに いこうかな?ｐ
+	// いった さきで またｎ
+	// §あ§おと であったりして!?
 
 LittlerootTown_BrendansHouse_2F_Text_1738F2:: @ 81738F2
-	.string "BRENDAN: Hey, it's {PLAYER}.\p"
-	.string "I was just checking out my POKéDEX.\p"
-	.string "There are still many POKéMON that\n"
-	.string "I need to catch, I know, but this\l"
-	.string "is looking pretty good.\p"
-	.string "Checking this POKéDEX out gives me\n"
-	.string "the urge to hit the road again.$"
+	.string "휘웅: {PLAYER}{K_I}구나\p"
+	.string "지금 포켓몬 도감을\n"
+	.string "체크하고 있었어\p"
+	.string "아직 잡지 못한\n"
+	.string "포켓몬도 있긴 한데\l"
+	.string "꽤 괜찮은 느낌이지 않아?\p"
+	.string "이렇게 도감을 보고 있으면\n"
+	.string "또 모험하러 떠나고 싶어져$"
+	// ユウキ『§あかｐ
+	// いま ポケモンずかんをｎ
+	// チェック してたんだｐ
+	// まだまだ つかまえていないｎ
+	// ポケモンも いるけどｌ
+	// かなり いい かんじだろ?ｐ
+	// こうして ずかんを みているとｎ
+	// また ぼうけんに いきたくなるな
 
 LittlerootTown_BrendansHouse_2F_Text_1739CC:: @ 81739CC
-	.string "BRENDAN: I'm having a hard time deciding\n"
-	.string "where I should catch POKéMON next.\p"
-	.string "Hey, {PLAYER}, if I see you while I'm out\n"
-	.string "catching POKéMON, I can pitch you a\l"
-	.string "battle if you'd like.$"
+	.string "휘웅: 이번엔 어디서\n"
+	.string "포켓몬 잡을지 고민되네...\p"
+	.string "만약 포켓몬 잡을 때\n"
+	.string "{PLAYER}{K_EULREUL} 만나게 되면\l"
+	.string "승부해 줄래?$"
+	// ユウキ『こんどは どこでｎ
+	// ポケモン つかまえるか なやむな……ｐ
+	// もし ポケモン つかまえているときｎ
+	// §あと であったらｌ
+	// しょうぶ してやろうか?
 
 UnknownString_8173A76: @ 8173A76
-	.string "It's lined with POKéMON picture books.$"
+	.string "포켓몬 그림책이\n"
+	.string "잔뜩 모여 있다!$"
+	// ポケモンの えほんがｎ
+	// たくさん そろっている!
