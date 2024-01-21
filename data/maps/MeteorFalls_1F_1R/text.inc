@@ -1,93 +1,163 @@
 MeteorFalls_1F_1R_Text_193237:: @ 8193237
-	.string "Hehehe!\p"
-	.string "With this METEORITE, MT. CHIMNEY\n"
-	.string "will...$"
+	.string "우효효...!\p"
+	.string "이 운석이 있으면\n"
+	.string "굴뚝산이...$"
+	// ウヒョヒョ……!ｐ
+	// この いんせきが あればｎ
+	// えんとつやまが……
 
 MeteorFalls_1F_1R_Text_193268:: @ 8193268
-	.string "Heh?\p"
-	.string "I don't know who you are, but if you get\n"
-	.string "in the way of TEAM {EVIL_TEAM}, don't\l"
-	.string "expect any mercy!$"
+	.string "우효?\p"
+	.string "네가 누군지는 모르겠지만\n"
+	.string "우리 {EVIL_TEAM}단을 방해하겠다면\l"
+	.string "용서하지 않겠다!$"
+	// ウヒョ?ｐ
+	// おまえが だれだか しらないがｎ
+	// おれたち §くだんの じゃまを するならｌ
+	// ようしゃは しないぜ!
 
 MeteorFalls_1F_1R_Text_1932C5:: @ 81932C5
-	.string "Hold it right there, TEAM {EVIL_TEAM}!\p"
-	.string "We, TEAM {GOOD_TEAM}, won't allow you to\n"
-	.string "get away with your misdeeds!$"
+	.string "멈춰라!\n"
+	.string "{EVIL_TEAM}단!\p"
+	.string "너희들의 악행은\n"
+	.string "우리 {GOOD_TEAM}단이 막을 거다!$"
+	// まてッ!ｎ
+	// §くだん!ｐ
+	// おまえらの あくじはｎ
+	// われわれ §けだんが ゆるさん!
 
 MeteorFalls_1F_1R_Text_193320:: @ 8193320
-	.string "Hehehe!\n"
-	.string "Even TEAM {GOOD_TEAM} joins us!\p"
-	.string "But it's too much trouble to deal with\n"
-	.string "you all...\p"
-	.string "Heh, it doesn't matter!\p"
-	.string "We've got the METEORITE, so off to\n"
-	.string "MT. CHIMNEY we go!\p"
-	.string "Hehehe! Be seeing you, you TEAM\n"
-	.string "{GOOD_TEAM} dingbats!$"
+	.string "우효효...!\n"
+	.string "{GOOD_TEAM}단까지 온 건가!\p"
+	.string "하나하나 상대하는 것도\n"
+	.string "귀찮군...\p"
+	.string "뭐 됐어!\n"
+	.string "운석은 손에 넣었고\l"
+	.string "서둘러 굴뚝산에 가볼까!\p"
+	.string "우효효!\n"
+	.string "안녕이다! 멍청한 {GOOD_TEAM}단!$"
+	// ウヒョヒョ……!ｎ
+	// §けだん まで やってきたのかよ!ｐ
+	// いちいち あいてを してやるのもｎ
+	// めんどうだな……ｐ
+	// まあ いいや!ｎ
+	// いんせきは てに いれたしｌ
+	// さっさと えんとつやまに いくか!ｐ
+	// ウヒョヒョ!ｎ
+	// あばよ! まぬけな §けだん!
 
 MeteorFalls_1F_1R_Text_1933EC:: @ 81933EC
-	.string "And you are?\p"
-	.string "... ... ... ... ... ... ... ...\n"
-	.string "... ... ... ... ... ... ... ...\p"
-	.string "Fine, so you are {PLAYER}{KUN}.\p"
-	.string "I am MAXIE. As the head of TEAM MAGMA,\n"
-	.string "I have dedicated myself to thwarting\l"
-	.string "the dangerous plans of TEAM AQUA.\p"
-	.string "Why? Because TEAM AQUA is a grave\n"
-	.string "threat to us all.\p"
-	.string "They have committed many destructive\n"
-	.string "acts in their bid to enlarge the sea.\p"
-	.string "We, TEAM MAGMA, love dry land above\n"
-	.string "all! TEAM AQUA is our sworn enemy!$"
+	.string "너는...?\p"
+	.string "...... ...... ...... ......\n"
+	.string "...... ...... ...... ......\p"
+	.string "그런가 {PLAYER}{K_I}라고 하는군\p"
+	.string "나는 마적!\n"
+	.string "마그마단을 이끌고 아쿠아단의\l"
+	.string "야망을 저지하려고 한다!\p"
+	.string "왜냐하면 녀석들 아쿠아단은\n"
+	.string "바다를 넓히려고 하면서\p"
+	.string "파괴활동을 계속하는\n"
+	.string "위험한 집단이라...\p"
+	.string "대지를 각별히 사랑하는\n"
+	.string "우리 마그마단의 적이기 때문이지!$"
+	// きみは……?ｐ
+	// …… …… …… ……ｎ
+	// …… …… …… ……ｐ
+	// そうか §あ§おと いうのかｐ
+	// わたしは マツブサ!ｎ
+	// マグマだんを ひきいて アクアだんのｌ
+	// やぼうを そし しているんだ!ｐ
+	// なぜなら あいつら アクアだんはｎ
+	// うみを ふやす といってｐ
+	// はかいかつどうを つづけるｎ
+	// きけんな しゅうだん だからね……ｐ
+	// だいちを こよなく あいするｎ
+	// われわれ マグマだんの てき だよ!
 
 MeteorFalls_1F_1R_Text_193584:: @ 8193584
-	.string "Who might you be?\p"
-	.string "... ... ... ... ... ... ... ...\n"
-	.string "... ... ... ... ... ... ... ...\p"
-	.string "Ah, so you are {PLAYER}{KUN}.\p"
-	.string "I am ARCHIE. As the head of TEAM AQUA,\n"
-	.string "I have dedicated myself to thwarting\l"
-	.string "the dangerous plans of TEAM MAGMA.\p"
-	.string "Why? Because TEAM MAGMA is a grave\n"
-	.string "threat to us all.\p"
-	.string "They have committed many destructive\n"
-	.string "acts in their bid to expand the land.\p"
-	.string "We, TEAM AQUA, love the sea above\n"
-	.string "all! TEAM MAGMA is our sworn enemy!$"
+	.string "너는...?\p"
+	.string "...... ...... ...... ......\n"
+	.string "...... ...... ...... ......\p"
+	.string "그런가 {PLAYER}{K_I}라고 하는군\p"
+	.string "나는 아강!\n"
+	.string "아쿠아단을 이끌고 마그마단의\l"
+	.string "야망을 저지하려고 한다!\p"
+	.string "왜냐하면 녀석들 마그마단은\n"
+	.string "땅을 넓히려고 하면서\p"
+	.string "파괴활동을 계속하는\n"
+	.string "위험한 집단이라...\p"
+	.string "바다를 각별히 사랑하는\n"
+	.string "우리 아쿠아단의 적이기 때문이지!$"
+	// きみは……?ｐ
+	// …… …… …… ……ｎ
+	// …… …… …… ……ｐ
+	// そうか §あ§おと いうのかｐ
+	// わたしは アオギリ!ｎ
+	// アクアだんを ひきいて マグマだんのｌ
+	// やぼうを そし しているんだ!ｐ
+	// なぜなら あいつら マグマだんはｎ
+	// りくを ふやす といってｐ
+	// はかいかつどうを つづけるｎ
+	// きけんな しゅうだん だからね……ｐ
+	// うみを こよなく あいするｎ
+	// われわれ アクアだんの てき だよ!
 
 MeteorFalls_1F_1R_Text_193720:: @ 8193720
-	.string "{GOOD_LEADER}, we should give chase to\n"
-	.string "TEAM {EVIL_TEAM}...$"
+	.string "{GOOD_LEADER}님\n"
+	.string "도망간 {EVIL_TEAM}단을 쫓아가야 합니다...$"
+	// §ささまｎ
+	// にげた §くだんを おいかけないと……
 
 MeteorFalls_1F_1R_Text_193747:: @ 8193747
-	.string "{GOOD_LEADER}: Yes, yes, we must!\n"
-	.string "We've got to hurry.\p"
-	.string "There's no telling what TEAM {EVIL_TEAM}\n"
-	.string "will do at MT. CHIMNEY!$"
+	.string "{GOOD_LEADER}: 그래!\p"
+	.string "서두르지 않으면 {EVIL_TEAM}단 녀석들이\n"
+	.string "굴뚝산에서 무슨 짓을 할지 모른다!$"
+	// §さ『そうだな!ｐ
+	// いそがねば §くだんの やつらｎ
+	// えんとつやまで なにを するか わからない!
 
 MeteorFalls_1F_1R_Text_1937AA:: @ 81937AA
-	.string "{GOOD_LEADER}: {PLAYER}{KUN}, you should keep\n"
-	.string "an eye out for TEAM {EVIL_TEAM}, too.\p"
-	.string "Farewell!$"
+	.string "{GOOD_LEADER}: {PLAYER} 너도\n"
+	.string "{EVIL_TEAM}단에게는 전력을 다해라!\p"
+	.string "그럼 작별이다!$"
+	// §さ『§あ§お きみもｎ
+	// §くだんには きを つけたまえ!ｐ
+	// では さらばだ!
 
 MeteorFalls_1F_1R_Text_1937EB:: @ 81937EB
-	.string "I... I'm COZMO...\n"
-	.string "I'm a PROFESSOR...\p"
-	.string "I usually study METEORITES in\n"
-	.string "FALLARBOR TOWN...\p"
-	.string "Then some people from TEAM {EVIL_TEAM}\n"
-	.string "made me guide them to METEOR FALLS...\p"
-	.string "They promised me that they would\n"
-	.string "excavate METEORITES for me...\p"
-	.string "But, I...\n"
-	.string "TEAM {EVIL_TEAM} tricked me...\p"
-	.string "Oh... That METEORITE...\n"
-	.string "It will never be mine now...\p"
-	.string "But that TEAM {EVIL_TEAM}...\p"
-	.string "What are they going to do with that\n"
-	.string "METEORITE at MT. CHIMNEY?$"
+	.string "난... 공석박사야\n"
+	.string "매일 단풍마을에서 운석\l"
+	.string "연구를 하고 있는 박사인데...\p"
+	.string "{EVIL_TEAM}단이라고 하는 녀석들이\n"
+	.string "“유성의 폭포로 안내해라!”\l"
+	.string "“운석을 발굴해 줄 테니까”라고\l"
+	.string "해서 여기로 데려다주었어...\p"
+	.string "하지만 난...\n"
+	.string "{EVIL_TEAM}단에게 속았어...\p"
+	.string "아아... 이제 그 운석\n"
+	.string "내 것이 아니겠지...\p"
+	.string "그나저나 {EVIL_TEAM}단은...\n"
+	.string "굴뚝산에서 운석을 써서\l"
+	.string "뭘 하려는 걸까...?$"
+	// ぼく…… ソライシｎ
+	// いつもは ハジツゲで いんせきのｌ
+	// けんきゅうを している はかせ だけど……ｐ
+	// §くだん という れんちゅうがｎ
+	// 「りゅうせいのたきに あんない しろ!」ｌ
+	// 「いんせきを とりだして やるから」ってｌ
+	// いうから ここに つれてきたんだ……ｐ
+	// だけど ぼく……ｎ
+	// §くだんに だまされたよ……ｐ
+	// ああ…… もう あの いんせきｎ
+	// ぼくの モノには ならないよな……ｐ
+	// しかし §くだん……ｎ
+	// えんとつやまで いんせきを つかってｌ
+	// なにを するんだろう……?
 
 MeteorFalls_1F_1R_Text_19396A:: @ 819396A
-	.string "PROF. COZMO: That TEAM {EVIL_TEAM}...\p"
-	.string "What are they going to do with that\n"
-	.string "METEORITE at MT. CHIMNEY?$"
+	.string "공석박사: {EVIL_TEAM}단...\n"
+	.string "굴뚝산에서 운석을 써서\l"
+	.string "뭘 하려는 걸까...?$"
+	// ソライシ『§くだん……ｎ
+	// えんとつやまで いんせきを つかってｌ
+	// なにを するんだろう……?
