@@ -1,174 +1,305 @@
 MauvilleCity_Text_165B76:: @ 8165B76
-	.string "UNCLE: It's because of POKéMON that\n"
-	.string "this boy's got more pep, I suppose...\l"
-	.string "But he's become a bit too peppy...$"
+	.string "작은아버지: 이 애는 포켓몬 덕분에\n"
+	.string "건강해진 모양이지만\l"
+	.string "너무 건강해진 걸지도 몰라...$"
+	// おじさん『このこは ポケモンの おかげでｎ
+	// げんきに なれたような もんだけどｌ
+	// ちょっと げんきに なりすぎ なんだ……
 
 MauvilleCity_Text_165BE3:: @ 8165BE3
-	.string "WALLY: Aww, UNCLE, please?\p"
-	.string "I want to challenge this GYM and see\n"
-	.string "how much better I've become.\p"
-	.string "Please? May I, please?$"
+	.string "민진: 작은아버지 부탁이에요!\p"
+	.string "제가 얼마나 강해졌는지\n"
+	.string "이 체육관에서 확인하고 싶어요!\p"
+	.string "네 네 괜찮죠!?$"
+	// ミツル『おじさん おねがい だから!ｐ
+	// じぶんが どれくらい つよくなったかｎ
+	// このジムで ためして みたいんだ!ｐ
+	// ね ね いいでしょう!?
 
 MauvilleCity_Text_165C57:: @ 8165C57
-	.string "UNCLE: Now hold on, WALLY.\p"
-	.string "Since you started living with POKéMON,\n"
-	.string "you have grown quite a lot stronger.\p"
-	.string "But don't you think you're pushing it\n"
-	.string "to suddenly challenge a GYM?$"
+	.string "작은아버지: 이것 참 민진아!\p"
+	.string "확실히 포켓몬과 같이\n"
+	.string "살게 되면서\l"
+	.string "너는 많이 건강해졌어!\p"
+	.string "그렇다고 갑자기 포켓몬체육관에\n"
+	.string "도전이라니 무리하는 거 아니냐?$"
+	// おじさん『まあまあ ミツルくん!ｐ
+	// たしかに ポケモンと いっしょにｎ
+	// くらすように なってからｌ
+	// きみは ずいぶん げんきに なった!ｐ
+	// だからって いきなり ポケモンジムにｎ
+	// ちょうせん なんて むり してないかい?
 
 MauvilleCity_Text_165D01:: @ 8165D01
-	.string "WALLY: I'm not pushing it.\p"
-	.string "If I combine forces with RALTS,\n"
-	.string "we can beat anyone!$"
+	.string "민진: 무리가 아니에요\p"
+	.string "저와 랄토스가 힘을 합치면\n"
+	.string "누구든지 이길 수 있다구요!$"
+	// ミツル『むり なんか してませんｐ
+	// ぼくと ラルトスが ちからを あわせればｎ
+	// だれにだって かてる はずです!
 
 MauvilleCity_Text_165D50:: @ 8165D50
-	.string "WALLY: Oh! Hi, {PLAYER}!\p"
-	.string "I've gotten a lot stronger since we\n"
-	.string "met.\p"
-	.string "{PLAYER}, I want you and my UNCLE to\n"
-	.string "understand that.\p"
-	.string "{PLAYER}, please, will you have a\n"
-	.string "battle with me?$"
+	.string "민진: 앗! {PLAYER}님!\p"
+	.string "저 그때보다 강해졌어요!\p"
+	.string "그걸 {PLAYER}님도\n"
+	.string "작은아버지도 알아주셨으면 좋겠어요!\p"
+	.string "{PLAYER}님 부탁입니다!\n"
+	.string "저와 승부해 주세요$"
+	// ミツル『あっ! §あさん!ｐ
+	// ぼく あれから つよくなったんだ!ｐ
+	// それを §あさんにも ｎ
+	// おじさんにも わかって もらいたいんです!ｐ
+	// §あさん おねがいです!ｎ
+	// ぼくと しょうぶ してください
 
 MauvilleCity_Text_165DE8:: @ 8165DE8
-	.string "WALLY: Oh... If you won't battle me,\n"
-	.string "{PLAYER}, my UNCLE won't know that I've\l"
-	.string "become really strong.$"
+	.string "민진: {PLAYER}님이\n"
+	.string "저와 승부해 주지 않으면...\p"
+	.string "작은아버지는 제가 강해졌다는 걸\n"
+	.string "알아주지 않을 거라구요...$"
+	// ミツル『§あさんがｎ
+	// ぼくと しょうぶ してくれないと……ｐ
+	// おじさんに ぼくが つよくなったことｎ
+	// わかって もらえないよ……
 
 MauvilleCity_Text_165E45:: @ 8165E45
-	.string "UNCLE: {PLAYER}{KUN}, was it?\n"
-	.string "On WALLY's behalf, can I ask you to\l"
-	.string "battle with him just this once?\p"
-	.string "I don't think he's going to listen to\n"
-	.string "any reason the way he is now.$"
+	.string "작은아버지: {PLAYER}{K_I}라고 했지\n"
+	.string "미안하지만 민진이와\l"
+	.string "승부해 주지 않을래?\p"
+	.string "이대로라면 무슨 말을 해도\n"
+	.string "안 들을 것 같아$"
+	// おじさん『§あ§おとやらｎ
+	// わるいけど ミツルくんとｌ
+	// しょうぶ してあげて くれないかな?ｐ
+	// このままだと なにを いってもｎ
+	// きいて もらえそうに ないよ
 
 MauvilleCity_Text_165EE2:: @ 8165EE2
-	.string "WALLY: {PLAYER}, please!\n"
-	.string "Battle with me, please.$"
+	.string "민진: {PLAYER}님 부탁입니다!\n"
+	.string "저와 승부해 주세요$"
+	// ミツル『§あさん おねがいです!ｎ
+	// ぼくと しょうぶ してください
 
 MauvilleCity_Text_165F0D:: @ 8165F0D
-	.string "WALLY: {PLAYER}, thank you.\p"
-	.string "Okay... Here I come!$"
+	.string "민진: 고맙습니다 {PLAYER}님\p"
+	.string "그럼... 시작할게요!$"
+	// ミツル『ありがとう §あさんｐ
+	// それでは…… いきますね!
 
 MauvilleCity_Text_165F38:: @ 8165F38
-	.string "WALLY: ... ... ... ... ... ... ...\p"
-	.string "... ... ... ... ... ... ... ...\p"
-	.string "I lost...$"
+	.string "민진: ...... ...... ...... ......\p"
+	.string "...... ...... ...... ......\p"
+	.string "제 패배입니다...$"
+	// ミツル『…… …… …… ……ｐ
+	// …… …… …… ……ｐ
+	// ぼくの まけ です……
 
 MauvilleCity_Text_165F85:: @ 8165F85
-	.string "WALLY: UNCLE...\n"
-	.string "I'll go back to VERDANTURF...$"
+	.string "민진: 작은아버지...\n"
+	.string "저 잔디마을로 돌아갈게요$"
+	// ミツル『おじさん……ｎ
+	// ぼく シダケに もどります
 
 MauvilleCity_Text_165FB3:: @ 8165FB3
-	.string "{PLAYER}, thank you.\n"
-	.string "Being a TRAINER is tough, isn't it?\p"
-	.string "It's not enough just to have POKéMON\n"
-	.string "and make them battle. That isn't what\l"
-	.string "being a real TRAINER is about.$"
+	.string "{PLAYER}님 고맙습니다\n"
+	.string "역시 트레이너란 대단하네요\p"
+	.string "그저 포켓몬을 지니고\n"
+	.string "배틀하는 것만으로는 진정한 의미의\l"
+	.string "트레이너가 될 수 없는 걸까요...$"
+	// §あさん ありがとうｎ
+	// やっぱり トレ-ナ-って すごいんですねｐ
+	// ただ ポケモンを もっていてｎ
+	// たたかわせる だけじゃ ほんとうの いみでｌ
+	// トレ-ナ-には なれないんだ……
 
 MauvilleCity_Text_166050:: @ 8166050
-	.string "UNCLE: WALLY, there's no need to be so\n"
-	.string "down on yourself.\p"
-	.string "Why, what's keeping you from becoming\n"
-	.string "stronger and stronger?\p"
-	.string "Come on, let's go home.\n"
-	.string "Everyone's waiting for you.$"
+	.string "작은아버지: 민진아\n"
+	.string "그렇게 기죽을 것 없단다\p"
+	.string "앞으로 더욱더\n"
+	.string "강해지면 되잖니!\p"
+	.string "자 집으로 돌아가자\n"
+	.string "다들 기다리고 있어$"
+	// おじさん『ミツルくんｎ
+	// そんなに しょげることは ないよｐ
+	// これから もっともっとｎ
+	// つよくなれば いいじゃないか!ｐ
+	// さあ うちに かえろうｎ
+	// みんな まってるよ
 
 MauvilleCity_Text_1660FA:: @ 81660FA
-	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
-	.string "that you must be the TRAINER who kept\l"
-	.string "an eye out for WALLY when he caught\l"
-	.string "his POKéMON.\p"
-	.string "Why don't you visit us in VERDANTURF\n"
-	.string "sometime?\l"
-	.string "I'm sure WALLY would enjoy it.$"
+	.string "작은아버지: 그렇군 민진이가\n"
+	.string "포켓몬을 잡는 걸\l"
+	.string "지켜봐 준 사람은 {PLAYER}!\l"
+	.string "너였구나\p"
+	.string "괜찮다면 잔디마을로\n"
+	.string "놀러오는 건 어때?\l"
+	.string "민진이도 분명 기뻐할 거야$"
+	// おじさん『なるほど ミツルくんがｎ
+	// ポケモンを つかまえるのをｌ
+	// みまもって くれたのは §あ§お!ｌ
+	// きみ だったんだねｐ
+	// よかったら シダケにもｎ
+	// あそびに きてくれないか?ｌ
+	// ミツルくん きっと よろこぶから
 
 MauvilleCity_Text_1661C1:: @ 81661C1
-	.string "WATTSON: Oh, {PLAYER}{KUN}!\n"
-	.string "You look like you have a lot of zip!\l"
-	.string "That's a good thing, wahahahaha!\p"
-	.string "Fine! I've decided!\n"
-	.string "I need a favor, {PLAYER}{KUN}!\p"
-	.string "MAUVILLE CITY has an underground\n"
-	.string "sector called NEW MAUVILLE.\p"
-	.string "{PLAYER}{KUN}, I'd like you to go there and\n"
-	.string "switch off the GENERATOR.\p"
-	.string "The GENERATOR has been running a bit\n"
-	.string "haywire. It's getting unsafe.\p"
-	.string "Here, this is the KEY to get into NEW\n"
-	.string "MAUVILLE.$"
+	.string "암페어: 오오 {PLAYER}\n"
+	.string "건강해 보이는구나\l"
+	.string "와하하하핫! 좋은데!\p"
+	.string "좋아! 결정했다!\n"
+	.string "{PLAYER}에게 부탁을 하마!\p"
+	.string "사실 이 보라시티에는\n"
+	.string "뉴보라라고 하는 지하도시가 있단다\p"
+	.string "그래서 {PLAYER}에게는\n"
+	.string "그곳의 발전 장치의 스위치를\l"
+	.string "꺼주었으면 좋겠구나!\p"
+	.string "요즘 발전 장치가\n"
+	.string "폭주해서 위험하니까 말이다\p"
+	.string "자 여기 뉴보라의\n"
+	.string "문을 여는 열쇠를 주마!$"
+	// テッセン『おお §あ§おｎ
+	// げんきそうに しておるのうｌ
+	// わっはははは! いいこと じゃよ!ｐ
+	// よしっ! きめた!ｎ
+	// §あ§おに おねがいを するぞい!ｐ
+	// じつは この キンセツにはｎ
+	// ニュ-キンセツ という ちかとしが あるｐ
+	// で §あ§お にはｎ
+	// そこの はつでんそうちの スイッチをｌ
+	// きってきて ほしいんじゃよ!ｐ
+	// さいきん はつでんそうちがｎ
+	// ぼうそうぎみで なにかと あぶないからのうｐ
+	// ほら これが ニュ-キンセツのｎ
+	// とびらを あける カギじゃ!
 
 MauvilleCity_Text_166331:: @ 8166331
-	.string "WATTSON: Don't you worry about it.\n"
-	.string "It won't be a challenge to you.\p"
-	.string "The entrance to NEW MAUVILLE is just\n"
-	.string "a short SURF away from ROUTE 110.\p"
-	.string "That's it, then, you have my trust!\n"
-	.string "Wahahahaha!$"
+	.string "암페어: 뭘 그러나\n"
+	.string "자네라면 잘할 걸세\p"
+	.string "참고로 뉴보라의 입구는\n"
+	.string "110번 도로에서 파도타기로\l"
+	.string "금방 갈 수 있단다\p"
+	.string "그럼 잘 부탁하마!\n"
+	.string "와하하하핫!$"
+	// テッセン『な-にｎ
+	// おまえさんなら だいじょうぶ じゃｐ
+	// ちなみに ニュ-キンセツの いりぐちはｎ
+	// 110ばんどうろで なみのりを してｌ
+	// すぐの ところに あるからのうｐ
+	// では よろしく たのんだぞ!ｎ
+	// わっはははは!
 
 MauvilleCity_Text_1663EB:: @ 81663EB
-	.string "WATTSON: Wahahahaha!\p"
-	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
-	.string "the right choice asking you!\p"
-	.string "This is my thanks - a TM containing\n"
-	.string "THUNDERBOLT!\p"
-	.string "Go on, you've earned it!$"
+	.string "암페어: 와하하하핫!\p"
+	.string "역시 {PLAYER}! 자네에게\n"
+	.string "부탁한 게 정답이었군!\p"
+	.string "이건 답례라네\n"
+	.string "10만볼트의 기술머신\l"
+	.string "사양 말고 가져가게나!$"
+	// テッセン『わっはははは!ｐ
+	// さすがは §あ§お! おまえさんにｎ
+	// たのんで せいかい じゃったよ!ｐ
+	// これは おれいじゃｎ
+	// 10まんボルトの わざマシンｌ
+	// えんりょせずに もっていくが いいぞ!
 
 MauvilleCity_Text_166488:: @ 8166488
-	.string "WATTSON: Wahahahaha!\p"
-	.string "It pleases me to no end to see the\n"
-	.string "young step up and take charge!$"
+	.string "암페어: 와하하하핫!\p"
+	.string "젊은이들의 모습을 보는 건\n"
+	.string "즐거운걸!$"
+	// テッセン『わっはははは!ｐ
+	// わかものの たのもしい すがたを みるのはｎ
+	// よろこばしい こと じゃな!
 
 MauvilleCity_Text_1664DF:: @ 81664DF
-	.string "You know, it's cool to have POKéMON\n"
-	.string "battles and stuff...\p"
-	.string "But if your POKéMON gets hurt, you\n"
-	.string "have to nurse it back to health.$"
+	.string "포켓몬 승부도 좋지만\p"
+	.string "만약 자기 포켓몬이\n"
+	.string "배틀에서 다쳤다면\l"
+	.string "상냥하게 돌봐줘야지!$"
+	// ポケモンしょうぶを するのも いいけどｐ
+	// もしも じぶんの ポケモンがｎ
+	// たたかいで きずついたり したならｌ
+	// やさしく いたわって あげなきゃね!
 
 MauvilleCity_Text_16655C:: @ 816655C
-	.string "The roads of this town stretch north\n"
-	.string "and south, and east and west.\p"
-	.string "Because of that, we get all sorts of\n"
-	.string "people coming through.$"
+	.string "이 마을은 동서남북으로\n"
+	.string "길이 뻗어 있어서\l"
+	.string "다양한 사람이 찾아오죠!$"
+	// この まちは とうざい なんぼく にｎ
+	// みちが つうじて いるからｌ
+	// いろんな ひとが やってきます!
 
 MauvilleCity_Text_1665DB:: @ 81665DB
-	.string "Have you been to RYDEL'S CYCLES yet?\p"
-	.string "RYDEL, the owner, is a very generous\n"
-	.string "man.$"
+	.string "너 사이클숍에는\n"
+	.string "벌써 가봤니?\p"
+	.string "그곳의 주인인 카제노님은\n"
+	.string "정말 인심이 좋단다!$"
+	// あなた サイクルショップ にはｎ
+	// もう いってみた?ｐ
+	// あそこの ごしゅじんの カゼノさんはｎ
+	// すごく きまえが いいのよね!
 
 MauvilleCity_Text_16662A:: @ 816662A
-	.string "Even if you're riding a BIKE, wild\n"
-	.string "POKéMON could jump you.$"
+	.string "자전거에 타고 있어도\n"
+	.string "야생 포켓몬은 튀어나오지!$"
+	// じてんしゃに のっていてもｎ
+	// やせいの ポケモンは とびだしてくるよ!
 
 MauvilleCity_Text_166665:: @ 8166665
-	.string "MAUVILLE CITY\n"
-	.string "“The bright and shiny city of fun!”$"
+	.string "여기는 보라시티\n"
+	.string "밝게 빛나는 즐거운 마을$"
+	// ここは キンセツ シティｎ
+	// あかるく かがやく たのしい まち
 
 MauvilleCity_Text_166697:: @ 8166697
-	.string "MAUVILLE CITY POKéMON GYM\n"
-	.string "LEADER: WATTSON\l"
-	.string "“The cheerfully electrifying man!”$"
+	.string "보라시티 포켓몬체육관\n"
+	.string "관장 암페어\l"
+	.string "밝은 전격 아저씨!$"
+	// キンセツ シティ ポケモンジムｎ
+	// リ-ダ- テッセンｌ
+	// あっかるい でんげき オヤジ!
 
 MauvilleCity_Text_1666E4:: @ 81666E4
-	.string "“Ride in gravel and shake up your\n"
-	.string "soul!”\l"
-	.string "RYDEL'S CYCLES$"
+	.string "자갈길 달리면 마음도 즐거워진다!\n"
+	.string "“사이클숍 카제노”$"
+	// じゃりみち はしれば こころも はずむ!ｎ
+	// 「サイクルショップ カゼノ」
 
 MauvilleCity_Text_16671C:: @ 816671C
-	.string "“The play spot for all!”\n"
-	.string "MAUVILLE GAME CORNER$"
+	.string "누구나 놀 수 있는 근사한 장소!\n"
+	.string "“보라시티 게임코너”$"
+	// だれもが あそべる すてきな スポット!ｎ
+	// 「キンセツ ゲ-ムコ-ナ-」
 
 MauvilleCity_Text_16674A:: @ 816674A
-	.string "Hi, do you check out TV at all?\p"
-	.string "They've added a bunch of cool new\n"
-	.string "shows recently.\p"
-	.string "TV is so cool. I've seen my friends on\n"
-	.string "TV just out of the blue.\p"
-	.string "And, sometimes, they even put you on TV\n"
-	.string "without telling you.\p"
-	.string "I wish I would be on TV sometime.\p"
-	.string "That's why I think you should check\n"
-	.string "out TVs whenever you can.$"
+	.string "있지 너\n"
+	.string "TV 확인하고 있니?\p"
+	.string "최근 재미있는\n"
+	.string "방송이 갑자기 늘어났어!\p"
+	.string "TV는 참 좋지\n"
+	.string "갑자기 친구가\l"
+	.string "소개되거나\p"
+	.string "모르는 새에 자기가\n"
+	.string "방송에 나오기도 한다고\p"
+	.string "언젠가 나도 TV에\n"
+	.string "나오면 좋겠다-\p"
+	.string "너도 다음부턴\n"
+	.string "제대로 확인해 보라구!$"
+	// ねえ きみｎ
+	// テレビって チェック してるかい?ｐ
+	// さいきんに なって おもしろいｎ
+	// ばんぐみが きゅうに ふえたんだぜ!ｐ
+	// いいよね テレビって ｎ
+	// いきなり ともだちの ことがｌ
+	// しょうかい されたりｐ
+	// しらない うちに じぶんがｎ
+	// テレビに でていたり するんだよｐ
+	// こんど ぼくも テレビに ｎ
+	// うつんない かな-ｐ
+	// きみも こんどからｎ
+	// ちゃんと チェックを してみなよ!
 
 MauvilleCity_Text_166879:: @ 8166879
-	.string "Hi, have you been checking out TVs?$"
+	.string "안녕!\n"
+	.string "TV 제대로 확인하고 있니?$"
+	// やあ!ｎ
+	// テレビは ちゃんと チェック してる?

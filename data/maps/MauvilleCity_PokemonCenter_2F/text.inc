@@ -1,7 +1,11 @@
 MauvilleCity_PokemonCenter_2F_Text_182724:: @ 8182724
-	.string "Did you know that you can link battle\n"
-	.string "at the COLOSSEUM here?\p"
-	.string "They put up your record on the wall\n"
-	.string "for everyone to see.\p"
-	.string "It's embarrassing if you lose more\n"
-	.string "often than you win...$"
+	.string "여기 콜로세움에서\n"
+	.string "통신대전할 수 있는 거 알아?\p"
+	.string "자신의 전적은\n"
+	.string "벽을 보면 알 수 있어서\l"
+	.string "많이 지면 부끄러워져...$"
+	// ここの コロシアムでｎ
+	// つうしんたいせん できるの しってる?ｐ
+	// じぶんの せいせき ってｎ
+	// かべを みると わかるからｌ
+	// まけてばかりだと はずかしくなっちゃう……

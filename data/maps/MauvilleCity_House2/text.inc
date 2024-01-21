@@ -1,22 +1,35 @@
 MauvilleCity_House2_Text_18244E:: @ 818244E
-	.string "If I had a BIKE, it'd be easy to cycle to\n"
-	.string "SLATEPORT for some shopping.\p"
-	.string "I'd be able to buy HARBOR MAIL at the\n"
-	.string "POKéMON MART in SLATEPORT...$"
+	.string "자전거에 타면\n"
+	.string "잿빛도시에 금방 갈 텐데...\p"
+	.string "그리고 잿빛도시의 프렌들리숍에서\n"
+	.string "항구메일을 살 수 있을 텐데...$"
+	// あたしが じてんしゃに のれたらｎ
+	// カイナに いくのも すぐなのに……ｐ
+	// そして カイナの フレンドリィショップでｎ
+	// ハ-バ-メ-ルを かえるのに……
 
 MauvilleCity_House2_Text_1824D8:: @ 81824D8
-	.string "Oh! You have HARBOR MAIL?\n"
-	.string "Will you trade it for a COIN CASE?$"
+	.string "그거! 항구메일 맞지!\n"
+	.string "동전케이스랑 교환하지 않을래?$"
+	// それ! ハ-バ-メ-ルでしょ!ｎ
+	// コインケ-スと こうかん してくれない?
 
 MauvilleCity_House2_Text_182515:: @ 8182515
-	.string "Oh, I'm so happy!\n"
-	.string "Okay, I'll trade you a COIN CASE!$"
+	.string "정말 기뻐!\n"
+	.string "그럼 동전케이스랑 교환하자!$"
+	// うれしい!ｎ
+	// じゃ コインケ-スと こうかんね!
 
 MauvilleCity_House2_Text_182549:: @ 8182549
-	.string "That COIN CASE can be used at the\n"
-	.string "GAME CORNER.$"
+	.string "동전케이스가 있으면 게임코너에서\n"
+	.string "룰렛과 슬롯을 즐길 수 있어!$"
+	// コインケ-スが あれば ゲ-ムコ-ナ-でｎ
+	// ル-レットや スロットを たのしめるわ!
 
 MauvilleCity_House2_Text_182578:: @ 8182578
-	.string "Oh, that's disappointing.\p"
-	.string "A COIN CASE is needed for the\n"
-	.string "GAME CORNER.$"
+	.string "그렇구나... 아쉽네\p"
+	.string "동전케이스가 있으면 게임코너에서\n"
+	.string "룰렛과 슬롯을 즐길 수 있을 텐데...$"
+	// そう…… ざんねん ねｐ
+	// コインケ-スが あれば ゲ-ムコ-ナ-でｎ
+	// ル-レットや スロットを たのしめるのに……

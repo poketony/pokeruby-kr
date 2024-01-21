@@ -1,144 +1,263 @@
 MauvilleCity_BikeShop_Text_180F9F:: @ 8180F9F
-	.string "Well, well, what have we here?\n"
-	.string "A most energetic customer!\p"
-	.string "Me? You may call me RYDEL.\n"
-	.string "I'm the owner of this cycle shop.$"
+	.string "...어라? 이거 참 꽤나\n"
+	.string "활기찬 손님이 오셨군!\p"
+	.string "사람들은 날 미스터 카제노라 부르지\n"
+	.string "이 사이클숍의 오너란다!$"
+	// ……おや? こりゃまた ずいぶんｎ
+	// げんきそうな おきゃくさんが きたのう!ｐ
+	// わたしは ひとよんで ミスタ-カゼノｎ
+	// この サイクルショップの オ-ナ-さ!
 
 MauvilleCity_BikeShop_Text_181016:: @ 8181016
-	.string "RYDEL: Your RUNNING SHOES...\n"
-	.string "They're awfully filthy.\p"
-	.string "Did you come from far away?$"
+	.string "카제노: 네 러닝슈즈\n"
+	.string "굉장히 지저분한데\l"
+	.string "어디 멀리서 왔니?$"
+	// カゼノ『きみの ランニングシュ-ズｎ
+	// ものすごく よごれて いるけどｌ
+	// どこか とおくから やってきたのかい?
 
 MauvilleCity_BikeShop_Text_181067:: @ 8181067
-	.string "RYDEL: Is that right?\p"
-	.string "Then, I guess you have no need for\n"
-	.string "any of my BIKES.$"
+	.string "카제노: 그러니?\n"
+	.string "그럼 내 자전거는\l"
+	.string "필요 없을 것 같구나$"
+	// カゼノ『そうかい?ｎ
+	// じゃあ わたしの じてんしゃはｌ
+	// ひつよう なさそうだね
 
 MauvilleCity_BikeShop_Text_1810B1:: @ 81810B1
-	.string "RYDEL: Hm, hm... ... ... ... ...\n"
-	.string "... ... ... ... ... ... ... ...\p"
-	.string "You're saying that you came all this\n"
-	.string "way from LITTLEROOT?\p"
-	.string "My goodness!\n"
-	.string "That's ridiculously far!\p"
-	.string "If you had one of my BIKES, you could\n"
-	.string "go anywhere easily while feeling the\l"
-	.string "gentle caress of the wind!\p"
-	.string "I'll tell you what!\n"
-	.string "I'll give you a BIKE!\p"
-	.string "Oh, wait a second!\p"
-	.string "I forgot to tell you that there are\n"
-	.string "two kinds of BIKES!\p"
-	.string "They are the MACH BIKE and the\n"
-	.string "ACRO BIKE!\p"
-	.string "MACH BIKE is for cyclists who want\n"
-	.string "to feel the wind with their bodies!\p"
-	.string "And an ACRO BIKE is for those who\n"
-	.string "prefer technical rides!\p"
-	.string "I'm a real sweetheart, so you can\n"
-	.string "have whichever one you like!\p"
-	.string "Which one will you choose?$"
+	.string "카제노: 흠흠...\n"
+	.string "...... ...... ...... ......\p"
+	.string "뭐라고 미로마을에서 이곳까지!?\n"
+	.string "굉장히 먼 곳이잖아!\p"
+	.string "내 자전거가 있으면\n"
+	.string "기분 좋은 바람을 느끼며\l"
+	.string "여러 곳에 편하게 갈 수 있을 텐데!\p"
+	.string "좋-아!\n"
+	.string "너에게 자전거를 줄게!\p"
+	.string "아니 잠깐만 기다려!\p"
+	.string "자전거에는 두 가지\n"
+	.string "타입이 있다는 걸 잊고 있었군!\p"
+	.string "그건 말이지...\n"
+	.string "마하자전거와 더트자전거야!\p"
+	.string "마하자전거는\n"
+	.string "온몸으로 바람을 느끼고 싶은 사람에게!\p"
+	.string "더트자전거는\n"
+	.string "테크닉을 즐기고 싶은 사람에게!\p"
+	.string "아저씨는 친절한 사람이니까\n"
+	.string "네가 좋아하는 쪽을 주겠어!\p"
+	.string "자! 어느 쪽을 선택할래?$"
+	// カゼノ『フムフム……ｎ
+	// …… …… …… ……ｐ
+	// なんと ミシロタウンから はるばると!?ｎ
+	// すごい とおく じゃないか?ｐ
+	// わたしの じてんしゃが あればｎ
+	// ここちよい かぜを かんじながらｌ
+	// らくに いろんな ところへ いけるのに!ｐ
+	// よ-し!ｎ
+	// きみに じてんしゃを あげよう!ｐ
+	// いや ちょっと まて!ｐ
+	// じてんしゃ には 2しゅるいのｎ
+	// タイプが あるのを わすれとった!ｐ
+	// それはな……ｎ
+	// マッハじてんしゃと ダ-トじてんしゃだ!ｐ
+	// マッハじてんしゃはｎ
+	// ぜんしんで かぜを かんじたい ひとに!ｐ
+	// ダ-トじてんしゃはｎ
+	// テクニックを たのしみたい ひとに!ｐ
+	// おじさん しんせつ だからｎ
+	// きみの すきな ほうを あげちゃうよ!ｐ
+	// さあ! どちらを えらぶ?
 
 MauvilleCity_BikeShop_Text_181332:: @ 8181332
-	.string "{PLAYER} chose the MACH BIKE.$"
+	.string "{PLAYER}{K_EUNNEUN}\n"
+	.string "마하자전거를 선택했다!$"
+	// §あはｎ
+	// マッハじてんしゃを えらんだ!
 
 MauvilleCity_BikeShop_Text_18134A:: @ 818134A
-	.string "{PLAYER} chose the ACRO BIKE.$"
+	.string "{PLAYER}{K_EUNNEUN}\n"
+	.string "더트자전거를 선택했다!$"
+	// §あはｎ
+	// ダ-トじてんしゃを えらんだ!
 
 MauvilleCity_BikeShop_Text_181362:: @ 8181362
-	.string "RYDEL: If you get the urge to switch\n"
-	.string "BIKES, just come see me!$"
+	.string "카제노: 만일 다른 타입으로\n"
+	.string "교환하고 싶을 때는\l"
+	.string "언제든지 내게 말을 걸어 주렴!$"
+	// カゼノ『もしも べつの タイプとｎ
+	// こうかん したくなった ときにはｌ
+	// いつでも わたしに こえを かけてくれ!
 
 MauvilleCity_BikeShop_Text_1813A0:: @ 81813A0
-	.string "RYDEL: Oh? Were you thinking about\n"
-	.string "switching BIKES?$"
+	.string "카제노: 응? 다른 타입의\n"
+	.string "자전거로 갈아타고 싶어진 거냐?$"
+	// カゼノ『おや? ちがう タイプのｎ
+	// じてんしゃに のりかえたく なったのかな?
 
 MauvilleCity_BikeShop_Text_1813D4:: @ 81813D4
-	.string "RYDEL: Okay, no problem!\n"
-	.string "I'll switch BIKES for you!$"
+	.string "카제노: 그럼 네가 지금 가지고 있는\n"
+	.string "자전거와 교환해주지!$"
+	// カゼノ『じゃあ きみが いま もっているｎ
+	// じてんしゃを こうかん してあげよう!
 
 MauvilleCity_BikeShop_Text_181408:: @ 8181408
-	.string "{PLAYER} got the MACH BIKE exchanged\n"
-	.string "for an ACRO BIKE.$"
+	.string "{PLAYER}{K_EUNNEUN} 마하자전거를\n"
+	.string "더트자전거로 교환받았다!$"
+	// §あは マッハじてんしゃをｎ
+	// ダ-トじてんしゃに かえてもらった!
 
 MauvilleCity_BikeShop_Text_181439:: @ 8181439
-	.string "{PLAYER} got the ACRO BIKE exchanged\n"
-	.string "for a MACH BIKE.$"
+	.string "{PLAYER}{K_EUNNEUN} 더트자전거를\n"
+	.string "마하자전거로 교환받았다!$"
+	// §あは ダ-トじてんしゃをｎ
+	// マッハじてんしゃに かえてもらった!
 
 MauvilleCity_BikeShop_Text_181469:: @ 8181469
-	.string "RYDEL: Good, good!\n"
-	.string "I'm happy that you like it!$"
+	.string "카제노: 그래그래!\n"
+	.string "맘에 들어하니 기쁘구나!$"
+	// カゼノ『そうか そうか!ｎ
+	// きにいってくれて うれしいぞ!
 
 MauvilleCity_BikeShop_Text_181498:: @ 8181498
-	.string "Oh? What happened to that BIKE I\n"
-	.string "gave you?\p"
-	.string "Oh, I get it, you stored it using your PC.\p"
-	.string "Well, take it out of PC storage,\n"
-	.string "and I'll be happy to exchange it!\p"
-	.string "May the wind always be at your back\n"
-	.string "on your adventure!$"
+	.string "...응?\n"
+	.string "너에게 주었던 자전거는 어쨌니?\p"
+	.string "그렇군 PC에 맡겨놓았구나\p"
+	.string "PC에서 꺼내서 가지고 오면\n"
+	.string "교환해줄게!\p"
+	.string "너의 모험이...\n"
+	.string "순조롭게 풀리길 기원하마!$"
+	// ……おや?ｎ
+	// きみに あげた じてんしゃ どうした?ｐ
+	// そうか パソコンに あずけてあるのかｐ
+	// パソコンから とりだして もってきたらｎ
+	// こうかんして あげる からな!ｐ
+	// きみの ぼうけんに……ｎ
+	// おいかぜが ふくことを いのってるよ!
 
 MauvilleCity_BikeShop_Text_181568:: @ 8181568
-	.string "I'm learning about BIKES while\n"
-	.string "I work here.\p"
-	.string "If you need advice on how to ride your\n"
-	.string "BIKE, there're a couple handbooks in\l"
-	.string "the back.$"
+	.string "나는 여기에서 일하면서\n"
+	.string "자전거를 공부하고 있어\p"
+	.string "자전거 타는 방법 중에\n"
+	.string "잘 모르는 것이 있으면\p"
+	.string "안쪽 방에 설명서가 있으니까\n"
+	.string "그걸 읽어보는 게 좋아!$"
+	// ぼくは ここで はたらき ながらｎ
+	// じてんしゃの べんきょうを してるんだｐ
+	// じてんしゃの のりかたでｎ
+	// なにか わからないことが あったらｐ
+	// おくのへやに かいせつしょが あるからｎ
+	// それを よんでみると いいよ!
 
 MauvilleCity_BikeShop_Text_1815EA:: @ 81815EA
-	.string "It's a handbook on the MACH BIKE.\p"
-	.string "Which page do you want to read?$"
+	.string "마하자전거의\n"
+	.string "설명서가 놓여 있다!\p"
+	.string "어느 페이지를 읽어볼까?$"
+	// マッハじてんしゃのｎ
+	// かいせつしょが おいてある!ｐ
+	// どの ペ-ジを よもうかな?
 
 MauvilleCity_BikeShop_Text_18162C:: @ 818162C
-	.string "A BIKE moves in the direction that\n"
-	.string "the + Control Pad is pressed.\p"
-	.string "It will speed up once it gets rolling.\p"
-	.string "To stop, release the + Control Pad.\n"
-	.string "The BIKE will slow to a stop.\p"
-	.string "Want to read a different page?$"
+	.string "자전거에 타서 십자 버튼을\n"
+	.string "조작하는 방향으로 자전거가 달립니다!\p"
+	.string "달리는 동안에 조금씩\n"
+	.string "속도가 빨라질 겁니다!\p"
+	.string "멈추고 싶을 때는 십자 버튼에서\n"
+	.string "손을 떼면 속도가 느려져\l"
+	.string "자연스레 멈추게 됩니다!\p"
+	.string "...다른 페이지를 읽겠습니까?$"
+	// じてんしゃに のって じゅうじボタンをｎ
+	// おしたほうに じてんしゃは はしります!ｐ
+	// すこし はしっていく うちにｎ
+	// スピ-ドが あがっていく でしょう!ｐ
+	// とまりたいときは じゅうじボタンからｎ
+	// てを はなせば スピ-ドが おちてｌ
+	// しぜんに とまって くれるはずです!ｐ
+	// ……べつの ペ-ジを よみますか?
 
 MauvilleCity_BikeShop_Text_1816F5:: @ 81816F5
-	.string "A MACH BIKE is speedy, but it can't\n"
-	.string "stop very quickly.\p"
-	.string "It gets a little tricky to get around\n"
-	.string "a corner.\p"
-	.string "Release the + Control Pad a little\n"
-	.string "before the corner and slow down.\p"
-	.string "Want to read a different page?$"
+	.string "마하자전거는 스피드가 빨라\n"
+	.string "갑자기 멈출 수는 없습니다\p"
+	.string "그래서 모퉁이를 돌기 위해서는\n"
+	.string "약간의 요령이 필요합니다!\p"
+	.string "돌고 싶은 모퉁이보다 조금 앞에서\n"
+	.string "십자 버튼에서 손을 떼면\l"
+	.string "속도를 떨어뜨려 돌 수 있을 겁니다!\p"
+	.string "...다른 페이지를 읽겠습니까?$"
+	// マッハじてんしゃは スピ-ドが はやくてｎ
+	// きゅうに とまることは できませんｐ
+	// だから かどを まがるときにはｎ
+	// ちょっとした コツが ひつようです!ｐ
+	// まがりたい かどの すこし てまえでｎ
+	// じゅうじボタンから てを はなしてｌ
+	// スピ-ドを おとして まがりましょう!ｐ
+	// ……べつの ペ-ジを よみますか?
 
 MauvilleCity_BikeShop_Text_1817BF:: @ 81817BF
-	.string "There are small sandy slopes throughout\n"
-	.string "the HOENN region.\p"
-	.string "The loose, crumbly sand makes it\n"
-	.string "impossible to climb normally.\p"
-	.string "But if you have a MACH BIKE, you can\n"
-	.string "zip up a sandy slope.\p"
-	.string "Want to read a different page?$"
+	.string "호연지방에는 여기저기에\n"
+	.string "모래 비탈길이 있습니다!\p"
+	.string "그곳은 모래가 무너지기 쉬워서\n"
+	.string "일반적으로는 넘어갈 수 없지만\l"
+	.string "마하자전거를 타고 있으면\l"
+	.string "넘어갈 수 있습니다!\p"
+	.string "...다른 페이지를 읽겠습니까?$"
+	// ホウエンちほうには ところどころにｎ
+	// ちいさな すなのさかが あります!ｐ
+	// そこは すなが くずれやすい ためにｎ
+	// ふつうは のぼることが できませんがｐ
+	// マッハじてんしゃに のっていればｎ
+	// のぼることが できるのです!ｐ
+	// ……べつの ペ-ジを よみますか?
 
 MauvilleCity_BikeShop_Text_181892:: @ 8181892
-	.string "It's a handbook on the ACRO BIKE.\p"
-	.string "Which page do you want to read?$"
+	.string "더트자전거의\n"
+	.string "설명서가 놓여 있다!\p"
+	.string "어느 페이지를 읽어볼까?$"
+	// ダ-トじてんしゃのｎ
+	// かいせつしょが おいてある!ｐ
+	// どの ペ-ジを よもうかな?
 
 MauvilleCity_BikeShop_Text_1818D4:: @ 81818D4
-	.string "Press the B Button while riding, and the\n"
-	.string "front wheel lifts up.\p"
-	.string "You can zip around with the front\n"
-	.string "wheel up using the + Control Pad.\p"
-	.string "This technique is called a wheelie.\p"
-	.string "Want to read a different page?$"
+	.string "자전거를 타고 B 버튼을 누르면\n"
+	.string "그 장소에서 앞바퀴가 들립니다!\p"
+	.string "그 상태에서 십자 버튼을 조작하면\n"
+	.string "앞바퀴를 든 상태로\l"
+	.string "달릴 수 있습니다!\p"
+	.string "이것이 윌리라고 불리는 테크닉입니다!\p"
+	.string "...다른 페이지를 읽겠습니까?$"
+	// じてんしゃに のって ビ-ボタンを おすとｎ
+	// そのばで ぜんりんが もちあがります!ｐ
+	// そのままで じゅうじボタンを おせばｎ
+	// ぜんりんを あげた じょうたいでｌ
+	// はしることが できるのです!ｐ
+	// それが ウイリ-という テクニック!ｐ
+	// ……べつの ペ-ジを よみますか?
 
 MauvilleCity_BikeShop_Text_18199A:: @ 818199A
-	.string "Keeping the B Button pressed, your\n"
-	.string "BIKE can hop on the spot.\p"
-	.string "This technique is called a bunny hop.\p"
-	.string "You can ride while hopping, too.\p"
-	.string "Want to read a different page?$"
+	.string "B 버튼을 누른 채로 있으면\n"
+	.string "윌리를 하며 그 장소에서 뿅뿅\l"
+	.string "튀어오를 수 있습니다!\p"
+	.string "이것이 다니엘이라 불리는 테크닉입니다!\p"
+	.string "다니엘 상태에서 달리는 것도 가능합니다!\p"
+	.string "...다른 페이지를 읽겠습니까?$"
+	// ビ-ボタンを おしたままに しているとｎ
+	// ウイリ-しながら そのばで ピョンピョンｌ
+	// とびはねることが できます!ｐ
+	// それが ダニエルという テクニック!ｐ
+	// ダニエルのまま はしることも できます!ｐ
+	// ……べつの ペ-ジを よみますか?
 
 MauvilleCity_BikeShop_Text_181A3D:: @ 8181A3D
-	.string "Press the B Button and the + Control\n"
-	.string "Pad at the same time to jump.\p"
-	.string "Press the + Control Pad to the side\n"
-	.string "to jump sideways.\p"
-	.string "Press it backwards to make the BIKE\n"
-	.string "change directions while jumping.\p"
-	.string "Want to read a different page?$"
+	.string "더트자전거에 탔을 때\n"
+	.string "B 버튼과 십자 버튼을\l"
+	.string "동시에 조작하면 점프합니다!\p"
+	.string "옆쪽으로 조작하면 옆으로 점프!\p"
+	.string "뒤쪽으로 조작하면 점프하면서\n"
+	.string "방향을 바꿀 수 있습니다!\p"
+	.string "...다른 페이지를 읽겠습니까?$"
+	// ダ-トじてんしゃに のっているときｎ
+	// じゅうじボタンと ビ-ボタンをｌ
+	// どうじに おすと ジャンプします!ｐ
+	// よこへ おせば よこに ジャンプ!ｐ
+	// うしろへ おせば ジャンプしながらｎ
+	// ほうこうを かえることが できます!ｐ
+	// ……べつの ペ-ジを よみますか?

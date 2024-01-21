@@ -1,116 +1,189 @@
 MauvilleCity_Gym_Text_180815:: @ 8180815
-	.string "Hey, how's it going, the CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "WATTSON, the LEADER of MAUVILLE\n"
-	.string "GYM, uses ELECTRIC-type POKéMON.\p"
-	.string "If you challenge him with WATER-type\n"
-	.string "POKéMON, he'll zap them! Bzzt!\p"
-	.string "And, he's put in switch-controlled doors\n"
-	.string "all over his GYM! Eccentric!\p"
-	.string "Hey, go for it!$"
+	.string "잘 있었나!!\n"
+	.string "챔피언을 노리는 {PLAYER}!!\p"
+	.string "보라시티의 체육관 관장 암페어는\n"
+	.string "전기타입 포켓몬 사용자다!\p"
+	.string "물타입의 포켓몬으로 대항하면\n"
+	.string "찌릿찌릿 마비가 올지도 몰라!\p"
+	.string "게다가 스위치로 여는\n"
+	.string "묘한 문의 장치를\l"
+	.string "체육관에 만들어버렸어!\p"
+	.string "그럼 힘내-!$"
+	// げんき しとぉや!!ｎ
+	// チャンピオンを めざす §あ!!ｐ
+	// キンセツシティの ジムリ-ダ- テッセンはｎ
+	// でんきタイプ ポケモンの つかいてだ!ｐ
+	// みずタイプの ポケモンで むかうとｎ
+	// ビリビリ しびれさせられるぞ!ｐ
+	// しかも スイッチで あけたり するｎ
+	// けったいな とびらをｌ
+	// ジムに つくって しまったんだ!ｐ
+	// きばってこ- な!
 
 MauvilleCity_Gym_Text_18091D:: @ 818091D
-	.string "Whoa, you're electrifying!\n"
-	.string "You've powered the door open!$"
+	.string "이거 깜짝 놀랐구나!\n"
+	.string "네 덕분에 문이 열렸어!$"
+	// こりゃ びっくり たまげたッ!ｎ
+	// きみの おかげで とびらは ひらかれた!
 
 MauvilleCity_Gym_Text_180956:: @ 8180956
-	.string "My electric soul, it'll shatter your\n"
-	.string "dreams whole, whoah-yeahah!$"
+	.string "짜릿한 내 하트로\n"
+	.string "네 야망을 산산조각 내주마!$"
+	// しびれる オレの ハ-トがｎ
+	// きみの やぼうを ふんさい するっ!
 
 MauvilleCity_Gym_Text_180997:: @ 8180997
-	.string "That was plugged in, amped up,\n"
-	.string "over-driven electric, man!$"
+	.string "짜릿한 승부였다...$"
+	// しびれる たたかい だったぜ……
 
 MauvilleCity_Gym_Text_1809D1:: @ 81809D1
-	.string "POKéMON and rock, it's all about heart,\n"
-	.string "whoah yeah!$"
+	.string "포켓몬도 록도 하트가 전부다\n"
+	.string "이예-이!$"
+	// ポケモンも ロックも ハ-トが すべてｎ
+	// いぇ-い!
 
 MauvilleCity_Gym_Text_180A05:: @ 8180A05
-	.string "I trained under WATTSON!\n"
-	.string "There ain't no way I'd lose easily!$"
+	.string "암페어님 밑에서 수련한 이 몸을\n"
+	.string "간단히 쓰러뜨릴 순 없을 거다!$"
+	// テッセンさんに きたえられた この オレがｎ
+	// そう かんたんに まける はずがねえ!
 
 MauvilleCity_Gym_Text_180A42:: @ 8180A42
-	.string "Unplugged and turned off...$"
+	.string "징 징리징징지잉...$"
+	// キュ キュイィィィン……
 
 MauvilleCity_Gym_Text_180A5E:: @ 8180A5E
-	.string "WATTSON, our GYM LEADER, has been\n"
-	.string "around for a long, long time.\p"
-	.string "He was battling even before your\n"
-	.string "daddy was born, that tough coot.$"
+	.string "이 체육관의 관장인 암페어님은\n"
+	.string "네 아버지가 태어나기도 전부터\l"
+	.string "포켓몬과 배틀해온 강자라고!$"
+	// このジムの リ-ダ- テッセンさんはｎ
+	// きみの おやじが うまれる まえからｌ
+	// ポケモンと たたかってきた つわものさ!
 
 MauvilleCity_Gym_Text_180AE0:: @ 8180AE0
-	.string "This GYM's got puzzles!\n"
-	.string "Isn't it fun?$"
+	.string "이 포켓몬체육관엔\n"
+	.string "장치가 있어서 재밌네!$"
+	// この ポケモンジムはｎ
+	// しかけが あって たのしいな!
 
 MauvilleCity_Gym_Text_180B06:: @ 8180B06
-	.string "It's no fun to lose...$"
+	.string "지는 건 재미없어$"
+	// まけると たのしくないよ
 
 MauvilleCity_Gym_Text_180B1D:: @ 8180B1D
-	.string "WATTSON says he likes setting up\n"
-	.string "little traps with switches.$"
+	.string "암페어님은 스위치를 이용한\n"
+	.string "장치를 만드는 게 취미래!$"
+	// テッセンさんは スイッチを つかったｎ
+	// しかけを つくるのが しゅみ なんだって!
 
 MauvilleCity_Gym_Text_180B5A:: @ 8180B5A
-	.string "With my charm and my POKéMON's moves,\n"
-	.string "you'll be shocked!$"
+	.string "나의 매력과\n"
+	.string "포켓몬의 기술로 짜릿하게 만들어 줄게!$"
+	// あたしの みりょくとｎ
+	// ポケモンの わざで しびれさせちゃう!
 
 MauvilleCity_Gym_Text_180B93:: @ 8180B93
-	.string "I'm shocked by your power!$"
+	.string "네 강함에 짜릿했어!$"
+	// あなたの つよさに しびれたわ!
 
 MauvilleCity_Gym_Text_180BAE:: @ 8180BAE
-	.string "I've heard that MAUVILLE was founded\n"
-	.string "by WATTSON.\p"
-	.string "He was a TRAINER long before we\n"
-	.string "became TRAINERS.\l"
-	.string "He must know all sorts of things!$"
+	.string "이곳 보라시티는\n"
+	.string "암페어님이 만들었다고 해\p"
+	.string "너하고 내가\n"
+	.string "태어나기 전부터 트레이너셨으니까\l"
+	.string "분명 알고 계신 게 많겠지$"
+	// この キンセツシティはｎ
+	// テッセンさんが つくったって はなしｐ
+	// あなたや わたしがｎ
+	// うまれる まえからの トレ-ナ-だものｌ
+	// きっと いろんな ことを しってるわ
 
 MauvilleCity_Gym_Text_180C32:: @ 8180C32
-	.string "I've given up on my plans to convert\n"
-	.string "the city, I have.\p"
-	.string "And so, I put my time into making\n"
-	.string "door traps in my GYM.\p"
-	.string "Oh? Now, what are you doing here?\p"
-	.string "What's that? You say you've gotten\n"
-	.string "past all my rigged doors?\p"
-	.string "Wahahahah!\n"
-	.string "Now, that is amusing!\p"
-	.string "Then, I, WATTSON, the LEADER of\n"
-	.string "MAUVILLE GYM, shall electrify you!$"
+	.string "나는 마을을 개조하는 계획은\n"
+	.string "포기했지만\p"
+	.string "지금은 이 체육관의 문의 장치를\n"
+	.string "만드는 데 몰두하고 있지!\p"
+	.string "...어라? 너\n"
+	.string "왜 내 앞에 있는 거냐?\p"
+	.string "뭐라-! 문의 장치를\n"
+	.string "통과해서 왔다는 건가!\p"
+	.string "와하하하핫! 이거 재밌구만!\p"
+	.string "보라시티 체육관의\n"
+	.string "관장 암페어가\l"
+	.string "포켓몬 승부로 찌릿찌릿하게 해주마!$"
+	// まちを かいぞうする けいかくはｎ
+	// あきらめた わし じゃがｐ
+	// いまは このジムの とびらの しかけをｎ
+	// つくることに うちこんで おるのじゃ!ｐ
+	// ……あれ? おまえさんｎ
+	// なんで わしの まえに いるんじゃ?ｐ
+	// なに-! とびらの しかけをｎ
+	// くぐりぬけて きたと いうのかっ!ｐ
+	// わっはははは! こりゃ おもしろい!ｐ
+	// ならば この キンセツ ポケモン ジムのｎ
+	// リ-ダ- テッセンがｌ
+	// ポケモンで しびれさせて やるぞい!
 
 MauvilleCity_Gym_Text_180D64:: @ 8180D64
-	.string "Wahahahah!\n"
-	.string "Fine, I lost!\p"
-	.string "You ended up giving me a thrill!\n"
-	.string "Take this BADGE!$"
+	.string "와하하하핫! 내가 졌다!\n"
+	.string "너에게 내가 마비되었군\l"
+	.string "이 배지를 가져가도록 하게나!$"
+	// わっはははは! わしの まけじゃ!ｎ
+	// おまえさんには しびれた わいｌ
+	// この バッジ もっていくが いいぞ!
 
 MauvilleCity_Gym_Text_180DAF:: @ 8180DAF
-	.string "{PLAYER} received the DYNAMO BADGE\n"
-	.string "from WATTSON.$"
+	.string "{PLAYER}{K_EUNNEUN} 암페어에게서\n"
+	.string "다이나모배지를 받았다!$"
+	// §あは テッセンからｎ
+	// ダイナモバッジを もらった!
 
 MauvilleCity_Gym_Text_180DDA:: @ 8180DDA
-	.string "With the DYNAMO BADGE, POKéMON can\n"
-	.string "use ROCK SMASH out of battle.\p"
-	.string "And, it will make your POKéMON a little\n"
-	.string "bit faster, too.\p"
-	.string "Hmm...\n"
-	.string "You should take this, too!$"
+	.string "다이나모배지를 가지고 있으면\n"
+	.string "비전기술인 바위깨기를\l"
+	.string "사용할 수 있게 된다네!\p"
+	.string "게다가 자네의 포켓몬이\n"
+	.string "조금 빨라질 거라네!\p"
+	.string "음...\n"
+	.string "이것도 가져가면 좋을 걸세!$"
+	// ダイナモバッジを もっておるとｎ
+	// ひでんの いわくだきがｌ
+	// つかえるように なるんじゃ!ｐ
+	// それに おまえさんの ポケモンｎ
+	// いっそう すばやく なるぞい!ｐ
+	// うむ……ｎ
+	// これも もっていくが いいぞ!
 
 MauvilleCity_Gym_Text_180E76:: @ 8180E76
-	.string "That TM34 there contains SHOCK WAVE.\p"
-	.string "It's a trustworthy move that never\n"
-	.string "misses! You can count on it!$"
+	.string "그 기술머신34에는\n"
+	.string "전격파가 들어 있지!\p"
+	.string "반드시 명중하는\n"
+	.string "믿음직한 기술이라고!$"
+	// その わざマシン34 にはｎ
+	// でんげきは が はいっておる!ｐ
+	// かならず めいちゅう するｎ
+	// たのもしい わざ なんじゃよ!
 
 MauvilleCity_Gym_Text_180EDB:: @ 8180EDB
-	.string "I swell with optimism, seeing a promising\n"
-	.string "young TRAINER like you!$"
+	.string "장래성이 있는 젊은이의 출현\n"
+	.string "정말로 기대가 되는군!$"
+	// みどころの ある わかものの しゅつげんｎ
+	// じつに たのもしい ことじゃ!
 
 MauvilleCity_Gym_Text_180F1D:: @ 8180F1D
-	.string "Wahahahah!\n"
-	.string "Go forth and endeavor, youngster!$"
+	.string "와하하하하!\n"
+	.string "젊은이여 더욱더 힘내거라!$"
+	// わっはははは!ｎ
+	// わかものよ もっともっと がんばるんじゃ!
 
 MauvilleCity_Gym_Text_180F4A:: @ 8180F4A
-	.string "MAUVILLE CITY POKéMON GYM$"
+	.string "보라시티 포켓몬체육관$"
+	// キンセツシティ ポケモンジム
 
 MauvilleCity_Gym_Text_180F64:: @ 8180F64
-	.string "MAUVILLE CITY POKéMON GYM\p"
-	.string "WATTSON'S CERTIFIED TRAINERS:\n"
+	.string "보라시티 포켓몬체육관\p"
+	.string "암페어 인정 트레이너!\n"
 	.string "{PLAYER}$"
+	// キンセツシティ ポケモンジムｐ
+	// テッセン にんてい トレ-ナ-!ｎ
+	// §あ
