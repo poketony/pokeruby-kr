@@ -1,168 +1,279 @@
 MossdeepCity_Gym_Text_18C7E3:: @ 818C7E3
-	.string "Yo, how's it going, CHAMPION-bound\n"
-	.string "{PLAYER}?\p"
-	.string "The GYM LEADERS here use PSYCHIC-type\n"
-	.string "POKéMON.\p"
-	.string "If you go up against them with\n"
-	.string "FIGHTING- or POISON-type POKéMON,\l"
-	.string "they'll inflict horrible damage!\p"
-	.string "Plus, they'll come at you with\n"
-	.string "outstanding combination attacks.\p"
-	.string "If you want to win, you'll need to show\n"
-	.string "them how tight you are with your\l"
-	.string "POKéMON. Go for it!$"
+	.string "잘 있었나!!\n"
+	.string "챔피언을 노리는 {PLAYER}!!\p"
+	.string "이 체육관의 체육관 관장은\n"
+	.string "에스퍼타입 포켓몬을 쓴다!\p"
+	.string "격투타입이나 독타입\n"
+	.string "포켓몬으로 도전했다가는\l"
+	.string "굉장한 데미지를 입게 될 거야!\p"
+	.string "게다가 끝내주는\n"
+	.string "콤비네이션으로 공격해 오지!\p"
+	.string "그러니까 너도 이기기 위해 포켓몬과의\n"
+	.string "유대감을 용기내서 보여 줘!$"
+	// げんき しとぉや!!ｎ
+	// チャンピオンを めざす §あ!!ｐ
+	// このジムの ジムリ-ダ-はｎ
+	// エスパ-タイプの ポケモンつかい!ｐ
+	// かくとうタイプや どくタイプのｎ
+	// ポケモンで いどむとｌ
+	// ものすごい ダメ-ジを くらうぞ!ｐ
+	// しかも ばつぐんのｎ
+	// コンビネ-ションで せめてくる!ｐ
+	// だから きみも かつために ポケモンとのｎ
+	// きずなを きばって みせて やれ!
 
 MossdeepCity_Gym_Text_18C938:: @ 818C938
-	.string "Wow, you're astounding!\n"
-	.string "You're one great TRAINER!$"
+	.string "이거 믿기질 않는걸!!\n"
+	.string "넌 정말 엄청난 트레이너야!$"
+	// こりゃあ たまげた!!ｎ
+	// きみは すごか トレ-ナ-だ!
 
 MossdeepCity_Gym_Text_18C96A:: @ 818C96A
-	.string "Battles hinge on the strength of your\n"
-	.string "spirit! The weak-spirited will never win!$"
+	.string "승부는 마음의 강함으로 결정된다\n"
+	.string "마음이 약한 자는 이길 수 없다!$"
+	// しょうぶは こころの つよさで きまるｎ
+	// こころ よわき ものは かてない!
 
 MossdeepCity_Gym_Text_18C9BA:: @ 818C9BA
-	.string "I lost! I must temper my spirit again!$"
+	.string "져버렸군!\n"
+	.string "나도 다시 단련해야겠어!$"
+	// まけたか!ｎ
+	// オレも きたえ なおさねばっ!
 
 MossdeepCity_Gym_Text_18C9E1:: @ 818C9E1
-	.string "The indecisive lose.\n"
-	.string "That's my warning to you.$"
+	.string "망설이는 쪽이 진다\n"
+	.string "내가 해주는 충고다!$"
+	// まよった ほうが まけるｎ
+	// オレからの ちゅうこくだ!
 
 MossdeepCity_Gym_Text_18CA10:: @ 818CA10
-	.string "Let me see your talent!$"
+	.string "네 재능을 한번 보여 줘야겠다!$"
+	// キミの さいのうを みせて もらおうか!
 
 MossdeepCity_Gym_Text_18CA28:: @ 818CA28
-	.string "You possess spectacular talent!$"
+	.string "훌륭한 재능을 지녔군!$"
+	// すばらしい さいのうの もちぬしだ!
 
 MossdeepCity_Gym_Text_18CA48:: @ 818CA48
-	.string "If there are prodigies in the world,\n"
-	.string "then our GYM LEADERS are them!\p"
-	.string "However, you may be even more talented\n"
-	.string "than them...$"
+	.string "세상에 천재가 있다면\n"
+	.string "이곳의 체육관 관장이 좋은 예시겠지...\p"
+	.string "하지만 어쩌면 네 재능이\n"
+	.string "더 위일지도 모르겠군...$"
+	// よのなかに てんさいが いるならばｎ
+	// ここの ジムリ-ダ-が そうだ……ｐ
+	// だが もしかすると キミの ほうがｎ
+	// さいのうは うえかも しれない……
 
 MossdeepCity_Gym_Text_18CAC0:: @ 818CAC0
-	.string "Fufufufu... Watch me levitate a POKé\n"
-	.string "BALL telekinetically!\p"
-	.string "Wrooooooooaaaar!\n"
-	.string "... ... ... ... ... ... ...\p"
-	.string "Sometimes, I'm out of sync...$"
+	.string "후후후...\n"
+	.string "염동력으로 몬스터볼을\l"
+	.string "공중에 띄워 보이마...\p"
+	.string "이야아아아아아압...!\n"
+	.string "...... ......\l"
+	.string "...... ...... ......\l"
+	.string "컨디션이 나쁠 때도 있다...$"
+	// ふふふ……ｎ
+	// ねんりきで モンスタ-ボ-ルをｌ
+	// くうちゅうに うかせて みせよう……ｐ
+	// うおおぉぉぉぉぉ……!ｎ
+	// …… ……ｌ
+	// …… …… ……ｌ
+	// ちょうしの わるい ときも ある……
 
 MossdeepCity_Gym_Text_18CB46:: @ 818CB46
-	.string "My POKéMON battling skills are out\n"
-	.string "of sync, too!$"
+	.string "포켓몬 승부도\n"
+	.string "컨디션이 나빠-!$"
+	// ポケモン しょうぶもｎ
+	// ちょうし わり-っ!
 
 MossdeepCity_Gym_Text_18CB77:: @ 818CB77
-	.string "A POKé BALL was too heavy to lift\n"
-	.string "psychically. But this dust bunny...\p"
-	.string "Whoooooooooooooooh!\n"
-	.string "... ... ... ... ... ...\p"
-	.string "No, I'm not cheating!\n"
-	.string "I didn't blow on it! Honestly!$"
+	.string "몬스터볼은 너무 컸다\n"
+	.string "이 먼지덩어리라면 반드시...\p"
+	.string "후우우우우우우웁...!\n"
+	.string "...... ......\l"
+	.string "아니닷!\n"
+	.string "콧바람으로 날린 게 아니란 말이다!$"
+	// モンスタ-ボ-ルは おおきすぎたｎ
+	// この わたぼこり なら ぜったいに……ｐ
+	// ふううううううっ……!ｎ
+	// …… ……ｌ
+	// ちがうぞ!ｌ
+	// はないきで とばして なんか いないぞ!
 
 MossdeepCity_Gym_Text_18CC1E:: @ 818CC1E
-	.string "When you lose to me, don't be too hard\n"
-	.string "on yourself.\p"
-	.string "It's not that you're weak - I'm just\n"
-	.string "too strong!$"
+	.string "나한테 지더라도\n"
+	.string "풀죽을 필요는 없어!\p"
+	.string "네가 약한 게 아니라\n"
+	.string "내가 너무 강한 거니까!$"
+	// あなたが アタシに まけた としてもｎ
+	// おちこまない ことね!ｐ
+	// あなたが よわい わけじゃ なくてｎ
+	// アタシが つよすぎる からよ!
 
 MossdeepCity_Gym_Text_18CC83:: @ 818CC83
-	.string "You're just too strong!$"
+	.string "넌 너무 강한 거 같아!$"
+	// あなたは さらに つよすぎた!
 
 MossdeepCity_Gym_Text_18CC9B:: @ 818CC9B
-	.string "I'm not going to get down on myself for\n"
-	.string "losing. I just need to train harder.\p"
-	.string "Positive thinking - that's my strong\n"
-	.string "point!$"
+	.string "졌다고 끙끙거리진 않을 거야\n"
+	.string "더욱 수행하면 되는 거니까!\p"
+	.string "긍정이야말로 나의 힘!$"
+	// まけたから って クヨクヨ しないわｎ
+	// もっと しゅぎょう すれば いいんだもの!ｐ
+	// まえむきな ところが アタシの とりえ!
 
 MossdeepCity_Gym_Text_18CD14:: @ 818CD14
-	.string "I see it...\n"
-	.string "I see your future...\p"
-	.string "If you can beat me, I will tell you\n"
-	.string "your future!$"
+	.string "보인다...\n"
+	.string "너의 미래가 보여...\p"
+	.string "날 이기면\n"
+	.string "너의 미래를 가르쳐 줄게!$"
+	// みえる……ｎ
+	// あなたの みらいが みえる……ｐ
+	// わたくしに かてたらｎ
+	// あなたの みらいを おしえて あげる!
 
 MossdeepCity_Gym_Text_18CD66:: @ 818CD66
-	.string "I surrender!$"
+	.string "졌다...!$"
+	// まいりました……!
 
 MossdeepCity_Gym_Text_18CD73:: @ 818CD73
-	.string "You will wage a terrifically intense\n"
-	.string "battle with our GYM LEADERS...\p"
-	.string "The result...\n"
-	.string "You won't hear it from me!$"
+	.string "너와 체육관 관장님의 승부...\n"
+	.string "엄청나게 격렬한 전개...\p"
+	.string "결과는...\n"
+	.string "내 입으론 말할 수 없어...!$"
+	// あなたと ジムリ-ダ-さまの しょうぶ……ｎ
+	// ものすごく はげしい てんかい……ｐ
+	// けっかは……ｎ
+	// わたくしの くちからは いえない……!
 
 MossdeepCity_Gym_Text_18CDE0:: @ 818CDE0
-	.string "The roads you have traveled...\n"
-	.string "What you have experienced...\p"
-	.string "Come at me with everything you've\n"
-	.string "learned!$"
+	.string "네가 지금까지 밟아온 여정\n"
+	.string "네가 겪어온 경험\p"
+	.string "모든 것을 이용해 나에게 덤벼!$"
+	// あなたが これまで あゆんできた みちのりｎ
+	// あなたが けいけん してきた ことがらｐ
+	// すべてを ぶつけて きなさい!
 
 MossdeepCity_Gym_Text_18CE47:: @ 818CE47
-	.string "You've traveled a path of greatness!$"
+	.string "훌륭한 여정이었구나...!$"
+	// すばらしい みちのり だわ……!
 
 MossdeepCity_Gym_Text_18CE6C:: @ 818CE6C
-	.string "A bright future awaits those who have\n"
-	.string "worked diligently.\p"
-	.string "For those who lazed idly, there is\n"
-	.string "only despair at the end.\p"
-	.string "What goes around comes around...$"
+	.string "노력한 자에겐 밝은 미래\n"
+	.string "게으른 자에겐 절망적인 내일\p"
+	.string "인과응보...\n"
+	.string "모든 것은 자신에게 돌아오는 거야...$"
+	// がんばった ものには あかるい みらいがｎ
+	// なまけた ものには ぜつぼうの あしたがｐ
+	// いんがおうほう……ｎ
+	// すべては じぶんに はねかえる ものよ……
 
 MossdeepCity_Gym_Text_18CF02:: @ 818CF02
-	.string "TATE: Hehehe... Were you surprised?\p"
-	.string "LIZA: Fufufu... Were you surprised?\p"
-	.string "TATE: That there are two GYM LEADERS?\n"
-	.string "LIZA: That there are two GYM LEADERS?\p"
-	.string "TATE: We're twins!\n"
-	.string "LIZA: We're twins!\p"
-	.string "TATE: We don't need to talk because...\n"
-	.string "LIZA: We can each determine what...\p"
-	.string "TATE: The other is thinking...\n"
-	.string "LIZA: All in our minds!\p"
-	.string "TATE: This combination of ours...\n"
-	.string "LIZA: Can you beat it?$"
+	.string "풍: 헤헤헤... 체육관 관장이\p"
+	.string "란: 후후후... 체육관 관장이\p"
+	.string "풍: 두 명이나 있어서 놀랐어?\n"
+	.string "란: 두 명이나 있어서 놀랐어?\p"
+	.string "풍: 우리는 쌍둥이!\n"
+	.string "란: 우리는 쌍둥이!\p"
+	.string "풍: 아무 말 하지 않아도\n"
+	.string "란: 서로 무슨 생각을 하고 있는지\p"
+	.string "풍: 머릿속에 떠오르니까\n"
+	.string "란: 호흡을 척척 맞출 수가 있지!\p"
+	.string "풍: 그런 우리들의 콤비네이션을\n"
+	.string "란: 네가 깨뜨릴 수 있을까?$"
+	// フウ『へへへ…… ジムリ-ダ-がｐ
+	// ラン『ふふふ…… ジムリ-ダ-がｐ
+	// フウ『ふたりも いるんで おどろいた?ｎ
+	// ラン『ふたりも いるんで おどろいた?ｐ
+	// フウ『ぼくたち ふたご!ｎ
+	// ラン『あたしたち ふたご!ｐ
+	// フウ『なにも ことばに しなくてもｎ
+	// ラン『おたがいの かんがえて いることがｐ
+	// フウ『あたまの なかに うかぶからｎ
+	// ラン『つうじあうことが できるのヨ!ｐ
+	// フウ『そんな ぼくたちの コンビネ-ションｎ
+	// ラン『きみに やぶることが できる?
 
 MossdeepCity_Gym_Text_18D077:: @ 818D077
-	.string "TATE: What?! Our combination...\n"
-	.string "LIZA: Was shattered!\p"
-	.string "TATE: It can't be helped. You've won...\n"
-	.string "LIZA: So, in recognition, take this.$"
+	.string "풍: 우 우리들의\n"
+	.string "란: 콤비네이션이...!\p"
+	.string "풍: 졌으니까 어쩔 수 없지\n"
+	.string "란: 패배를 인정하고 이걸 줄게!$"
+	// フウ『ぼっ ぼくたちのｎ
+	// ラン『コンビネ-ションが……!ｐ
+	// フウ『やぶれた からには しかたないｎ
+	// ラン『まけを みとめて これを あげるヨ!
 
 MossdeepCity_Gym_Text_18D0F9:: @ 818D0F9
-	.string "{PLAYER} received the MIND BADGE\n"
-	.string "from LIZA and TATE.$"
+	.string "{PLAYER}{K_EUNNEUN} 풍&란에게서\n"
+	.string "마인드배지를 받았다!$"
+	// §あは フウと ランからｎ
+	// マインドバッジを もらった!
 
 MossdeepCity_Gym_Text_18D128:: @ 818D128
-	.string "TATE: The MIND BADGE enhances the\n"
-	.string "SP. ATK and SP. DEF of POKéMON.\p"
-	.string "LIZA: It also lets you use the HM move\n"
-	.string "DIVE outside of battle.\p"
-	.string "TATE: You should also take this, too.$"
+	.string "풍: 마인드배지엔 포켓몬의\n"
+	.string "특수공격과 특수방어를 올리는\l"
+	.string "효과가 담겨 있어!\p"
+	.string "란: 게다가 다이빙이라고 하는\n"
+	.string "비전머신도 사용할 수 있게 되지!\p"
+	.string "풍: 그리고 이것도 가져가!$"
+	// フウ『マインドバッジには ポケモンのｎ
+	// とくこうと とくぼうを たかめるｌ
+	// こうかが ひめられている!ｐ
+	// ラン『それから ダイビング というｎ
+	// ひでんわざも つかえるように なるヨ!ｐ
+	// フウ『あと これも もっていきなよ!
 
 MossdeepCity_Gym_Text_18D1CF:: @ 818D1CF
-	.string "TATE: That TM04 contains...\n"
-	.string "LIZA: CALM MIND!\p"
-	.string "TATE: It raises SP. ATK and...\n"
-	.string "LIZA: It raises SP. DEF!\p"
-	.string "TATE: It's a move that's perfect...\n"
-	.string "LIZA: For PSYCHIC POKéMON!$"
+	.string "풍: 그 기술머신04에는\n"
+	.string "란: 명상이 들어 있어!\p"
+	.string "풍: 포켓몬의 특수공격과\n"
+	.string "란: 포켓몬의 특수방어를\p"
+	.string "풍: 올려주는 기술이야!\n"
+	.string "란: 에스퍼포켓몬에게 딱이지!$"
+	// フウ『その わざマシン04にはｎ
+	// ラン『めいそうが はいってるヨ!ｐ
+	// フウ『ポケモンの とくこうとｎ
+	// ラン『ポケモンの とくぼうをｐ
+	// フウ『たかめてくれる わざ なんだ!ｎ
+	// ラン『エスパ-ポケモンに ぴったりだヨ!
 
 MossdeepCity_Gym_Text_18D273:: @ 818D273
-	.string "TATE: Looks like the bond between you\n"
-	.string "and your POKéMON is far stronger than\l"
-	.string "the bond that we share as twins.\p"
-	.string "LIZA: You will become even stronger!\n"
-	.string "We've battled you, so we know.$"
+	.string "풍: 남매의 유대감보다\n"
+	.string "너와 포켓몬의 유대감이\l"
+	.string "훨씬 더 강했나봐...\p"
+	.string "란: 넌 분명 더 강해질 거야!\n"
+	.string "배틀했으니까 우린 알 수 있어!$"
+	// フウ『きょうだいの きずな よりｎ
+	// きみと ポケモンとの きずなの ほうがｌ
+	// はるかに つよかった みたいだね……ｐ
+	// ラン『あなたなら もっと つよくなれる!ｎ
+	// たたかった あたしたちには わかるわ!
 
 MossdeepCity_Gym_Text_18D324:: @ 818D324
-	.string "TATE: Hehehe... Were you surprised?\p"
-	.string "LIZA: That there are two GYM LEADERS?\p"
-	.string "TATE: Oops, you have only one...\n"
-	.string "LIZA: POKéMON that can battle.\p"
-	.string "TATE: We can't battle that way!\p"
-	.string "LIZA: If you want to challenge us,\n"
-	.string "bring some more POKéMON.$"
+	.string "풍: 헤헤헤... 체육관 관장이\p"
+	.string "란: 두 명이나 있어서 놀랐어?\p"
+	.string "풍: 어라? 싸울 수 있는 포켓몬이\n"
+	.string "란: 한 마리밖에 없어!\p"
+	.string "풍: 그러면 배틀할 수 없어!\n"
+	.string "란: 승부를 하고 싶다면\l"
+	.string "더 포켓몬을 데려와!$"
+	// フウ『へへへ…… ジムリ-ダ-がｐ
+	// ラン『ふたりも いるんで おどろいた?ｐ
+	// フウ『あら? たたかえる ポケモンがｎ
+	// ラン『いっぴき しか いないヨ!ｐ
+	// フウ『それでは たたかえないね!ｎ
+	// ラン『しょうぶを たのしみたいからｌ
+	// もっと ポケモン つれてきてヨ!
 
 MossdeepCity_Gym_Text_18D40A:: @ 818D40A
-	.string "MOSSDEEP CITY POKéMON GYM$"
+	.string "이끼시티 포켓몬체육관$"
+	// トクサネシティ ポケモンジム
 
 MossdeepCity_Gym_Text_18D424:: @ 818D424
-	.string "MOSSDEEP CITY POKéMON GYM\p"
-	.string "LIZA AND TATE'S CERTIFIED TRAINERS:\n"
+	.string "이끼시티 포켓몬체육관\p"
+	.string "풍 란 인정 트레이너!\n"
 	.string "{PLAYER}$"
+	// トクサネシティ ポケモンジムｐ
+	// フウ ラン にんてい トレ-ナ-!ｎ
+	// §あ

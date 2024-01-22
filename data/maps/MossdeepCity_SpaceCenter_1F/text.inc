@@ -1,33 +1,59 @@
 MossdeepCity_SpaceCenter_1F_Text_18E1F3:: @ 818E1F3
-	.string "The rocket's launch is imminent!$"
+	.string "이제 곧 로켓 발사할 거야!$"
+	// もうすぐ ロケットが はっしゃ するぞ!
 
 MossdeepCity_SpaceCenter_1F_Text_18E214:: @ 818E214
-	.string "The rocket launched safely!\n"
-	.string "That's successful launch no. {STR_VAR_1}!$"
+	.string "로켓이 발사됐어!\n"
+	.string "이걸로 {STR_VAR_1}번째 발사 성공이야!$"
+	// ロケットが はっしゃ したよ!ｎ
+	// これで §いかい うちあげ せいこうだ!
 
 MossdeepCity_SpaceCenter_1F_Text_18E251:: @ 818E251
-	.string "A rocket launch demands perfection.\n"
-	.string "Not even a 1% margin of error is allowed.\p"
-	.string "Even if it's 99% okay, the whole thing\n"
-	.string "is useless if 1% happens to be no good.\p"
-	.string "Despite that, we never stop trying.\n"
-	.string "Why? It's a dream that never ends.$"
+	.string "로켓을 발사하는 데에는\n"
+	.string "1퍼센트의 실수도 용납되지 않아\p"
+	.string "99퍼센트 문제가 없다고 해도\n"
+	.string "1퍼센트의 실수로\l"
+	.string "모든 게 실패하게 되는 혹독한 세계지\p"
+	.string "그럼에도 반드시 성공시키려는 건\n"
+	.string "거기에 로망이 가득 차 있기 때문이야$"
+	// ロケットを はっしゃ するにはｎ
+	// 1パ-セントの ミスも ゆるされないｐ
+	// 99パ-セント だいじょうぶ でもｎ
+	// 1パ-セント ダメならｌ
+	// すべてが ダメになる きびしい ものだｐ
+	// それでも やりとげようと するのはｎ
+	// そこに ロマンが つまっている からだな
 
 MossdeepCity_SpaceCenter_1F_Text_18E335:: @ 818E335
-	.string "I was taking a stroll down the beach\n"
-	.string "when I found this.\p"
-	.string "It's not anything I need, so you can\n"
-	.string "have it.$"
+	.string "해안에서 산책하면서\n"
+	.string "이걸 발견했는데\l"
+	.string "난 필요 없으니까 너 줄게!$"
+	// かいがんを さんぽ していてｎ
+	// これを みつけたんだけどｌ
+	// ぼくは いらないから きみに あげる!
 
 MossdeepCity_SpaceCenter_1F_Text_18E39B:: @ 818E39B
-	.string "The HOENN region has been famous for \n"
-	.string "its meteor showers for a long time.$"
+	.string "예로부터 호연지방은\n"
+	.string "운석이 많은 곳으로\l"
+	.string "유명하단 말이지$"
+	// むかしから ホウエンちほうはｎ
+	// いんせきの おおい ばしょ としてｌ
+	// ゆうめい なんだよね
 
 MossdeepCity_SpaceCenter_1F_Text_18E3E5:: @ 818E3E5
-	.string "Some people claim that POKéMON came\n"
-	.string "from space. Could it be true?$"
+	.string "사람에 따라선\n"
+	.string "포켓몬은 우주에서 왔다!\l"
+	.string "라고도 하던데 진짜일까-?$"
+	// ひとに よってはｎ
+	// ポケモンは うちゅうから やってきた!ｌ
+	// って いうよね! ほんとう かな-?
 
 MossdeepCity_SpaceCenter_1F_Text_18E427:: @ 818E427
-	.string "A giant chunk of metal bursts through\n"
-	.string "the skies and flies into space...\p"
-	.string "It boggles my mind!$"
+	.string "거대한 철 덩어리가\n"
+	.string "창공을 뚫고\l"
+	.string "우주까지 날아간다...\p"
+	.string "정말 끝내주지$"
+	// でっかい てつの かたまりがｎ
+	// おおぞらを つきぬけｌ
+	// うちゅうまで とんで いく……ｐ
+	// たまげた もん だわい

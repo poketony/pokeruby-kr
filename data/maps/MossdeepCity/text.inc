@@ -1,84 +1,145 @@
 MossdeepCity_Text_1690A9:: @ 81690A9
-	.string "I got this from STEVEN, but I don't\n"
-	.string "know what it's good for.\p"
-	.string "I think it's called KING'S ROCK.\n"
-	.string "Do you want it?$"
+	.string "이거... 성호님한테 받은 건데\n"
+	.string "뭔지 잘 모르겠어!\p"
+	.string "왕의징표석이라고 하는 거 같은데\n"
+	.string "너 가질래?$"
+	// これ…… ダイゴさんに もらったけどｎ
+	// なんだか よく わかんないや!ｐ
+	// おうじゃのしるし って いうらしいけどｎ
+	// おまえ ほしい?
 
 MossdeepCity_Text_169117:: @ 8169117
-	.string "Why would you want it?\n"
-	.string "You're weird.\p"
-	.string "You can keep it, but keep it a secret\n"
-	.string "from STEVEN.$"
+	.string "이걸 가지고 싶어 하다니\n"
+	.string "너도 참 별나구나!\p"
+	.string "줄 순 있는데 그 대신\n"
+	.string "성호님한테는 비밀이야!$"
+	// これが ほしいなんてｎ
+	// おまえも かわってるよな!ｐ
+	// やるけど そのかわりｎ
+	// ダイゴさんには ないしょ だぜ!
 
 MossdeepCity_Text_16916F:: @ 816916F
-	.string "Is it really that fun collecting\n"
-	.string "rocks? I don't get it.$"
+	.string "돌을 모으는 게 그렇게 재밌나?\n"
+	.string "나한테는 이해가 안 돼!$"
+	// いし あつめて たのしいのかな?ｎ
+	// おれには わかんないや!
 
 MossdeepCity_Text_1691A7:: @ 81691A7
-	.string "Yeah, you think so, too! What are you\n"
-	.string "supposed to do with some weird rock?$"
+	.string "그치! 이런 이상한 돌을 받아도\n"
+	.string "어떻게 해야 할지 모르겠다니까!$"
+	// そうだろ! へんてこな いしをｎ
+	// もらっても こまっちゃうよな!
 
 MossdeepCity_Text_1691F2:: @ 81691F2
-	.string "Around MOSSDEEP, you can see wild\n"
-	.string "WAILMER.\p"
-	.string "It's called, uh...\n"
-	.string "What was it now...\p"
-	.string "WAI, WAI, WAI...\p"
-	.string "WAILMER watching!$"
+	.string "이 이끼시티 주변에서는\n"
+	.string "야생 고래왕자를 볼 수 있어\p"
+	.string "그걸 음...\n"
+	.string "뭐라고 하더라...\p"
+	.string "고래 고래 고래...\p"
+	.string "고래왕자 워칭이라고 했었어!$"
+	// この トクサネの しゅうへん ではｎ
+	// やせいの ホエルコが けんぶつ できるんだｐ
+	// そ-いうのを え-と……ｎ
+	// なんて いったっけ かな……ｐ
+	// ホエ ホエ ホエ……ｐ
+	// ホエルコ ウオッチング だ!
 
 MossdeepCity_Text_169266:: @ 8169266
-	.string "The island's SPACE CENTER has been\n"
-	.string "launching huge rockets.$"
+	.string "섬에 있는 우주센터에서는\n"
+	.string "엄청난 로켓을 날리고 있어!$"
+	// しまの うちゅうセンタ- ではｎ
+	// すんごい ロケットを とばしてるのよ!
 
 MossdeepCity_Text_1692A1:: @ 81692A1
-	.string "I'd heard from my mates in LILYCOVE\n"
-	.string "that the herd of WAILMER has\l"
-	.string "disappeared.\p"
-	.string "What went down over there, I wonder?$"
+	.string "해안시티에 있는 동료한테\n"
+	.string "고래왕자가 없어졌어! 라는\l"
+	.string "연락을 받았어\p"
+	.string "이거 도대체 해안시티에서\n"
+	.string "무슨 일이 일어나고 있는 거지?$"
+	// ミナモの なかま からｎ
+	// ホエルコが いなくなった! ってｌ
+	// れんらくが あったんだｐ
+	// いったいぜんたいｎ
+	// ミナモで なにが あったんだろうな?
 
 MossdeepCity_Text_169314:: @ 8169314
-	.string "Wouldn't it be nice?\p"
-	.string "If the whole world was covered in\n"
-	.string "plants and flowers like this island?$"
+	.string "전 세계가!\p"
+	.string "이 섬처럼 풀과 꽃으로\n"
+	.string "가득 차면 좋을 텐데!$"
+	// せかいじゅうの すべてが!ｐ
+	// このしま みたいに くさばなでｎ
+	// いっぱいに なれば いいのにね!
 
 MossdeepCity_Text_169370:: @ 8169370
-	.string "All life needs the sea to live, even\n"
-	.string "though it makes its home on the land.\p"
-	.string "Life, having run its course, becomes\n"
-	.string "soil and returns to the land.\p"
-	.string "And the sea is always connected to\n"
-	.string "the land.\p"
-	.string "Yes, like the very shoreline here.$"
+	.string "생명의 근원은 모두 바다에서 태어나\n"
+	.string "육지로 올라왔다\p"
+	.string "역할을 마친 생명은\n"
+	.string "흙이 되어 대지로 돌아가지\p"
+	.string "그리고 바다와 대지는\n"
+	.string "언제나 이어져 있어...\p"
+	.string "그래 저 해안선처럼$"
+	// いのちの みなもとは うみから うまれてｎ
+	// りくに あがって きたｐ
+	// やくめを おえた いのちはｎ
+	// つち となって だいちに かえって いくｐ
+	// そして うみと だいちはｎ
+	// いつでも つながって いる……ｐ
+	// そう この かいがんせんの ようにな
 
 MossdeepCity_Text_16944E:: @ 816944E
-	.string "A voyage on a ship is fine.\p"
-	.string "But crossing the sea with POKéMON\n"
-	.string "using SURF...\p"
-	.string "Now that's an exhilarating trip!\n"
-	.string "Wouldn't you agree, youngster?$"
+	.string "배 여행도 좋지만 말이지\p"
+	.string "포켓몬과 함께 파도타기로\n"
+	.string "바다를 이동하면 말로 표현하기 힘든\l"
+	.string "상쾌함을 느낄 수 있다네...\p"
+	.string "그렇게 생각 안 하나? 젊은이$"
+	// ふねのたびも いいけどなｐ
+	// ポケモンと ともに なみのりでｎ
+	// うみを わたるのは なんとも いえないｌ
+	// きもちよさが あるよな……ｐ
+	// そう おもわないか? わかものよ
 
 MossdeepCity_Text_1694DA:: @ 81694DA
-	.string "This rock has a special meaning to\n"
-	.string "the people at the SPACE CENTER.\p"
-	.string "They put it here as their wish for\n"
-	.string "their rockets to fly safely.\p"
-	.string "When you make a wish, what do you use?\n"
-	.string "Do you wish upon a star?\p"
-	.string "I use a wish tag to make it happen.\n"
-	.string "That's what I do.$"
+	.string "이 바위는 있지\n"
+	.string "우주센터 사람들에게\l"
+	.string "정말 소중한 바위야\p"
+	.string "로켓이 무사히 날아가길 빌며\n"
+	.string "여기에 놓아두었대!\p"
+	.string "너는 소원을 이루고 싶을 때\n"
+	.string "어떻게 해?\l"
+	.string "별똥별을 보고 빌어?\p"
+	.string "나라면 역시 큰 종이에\n"
+	.string "소원을 적어 놓을 거 같아!$"
+	// この いわ ってｎ
+	// うちゅうセンタ-の みんなに とってｌ
+	// だいじな いわ なのｐ
+	// ロケットが ぶじに とぶように ねがってｎ
+	// ここに おいたんだって!ｐ
+	// あなたは ねがいごとを かなえたいときｎ
+	// どうするの?ｌ
+	// ながれぼしに ねがうの?ｐ
+	// あたしなら たんざくにｎ
+	// おねがいごとを かくかな やっぱ!
 
 MossdeepCity_Text_1695D3:: @ 81695D3
-	.string "It's a white rock.$"
+	.string "하얀 바위다!$"
+	// しろい いわ だ!
 
 MossdeepCity_Text_1695E6:: @ 81695E6
-	.string "MOSSDEEP CITY POKéMON GYM\n"
-	.string "LEADERS: LIZA & TATE\p"
-	.string "“The mystic combination!”$"
+	.string "이끼시티 포켓몬체육관\n"
+	.string "관장 풍 란\l"
+	.string "신비의 콤비네이션!!$"
+	// トクサネ シティ ポケモンジムｎ
+	// リ-ダ- フウ ランｌ
+	// しんぴの コンビネ-ション!!
 
 MossdeepCity_Text_16962F:: @ 816962F
-	.string "MOSSDEEP CITY\n"
-	.string "“Our slogan: Cherish POKéMON!”$"
+	.string "여기는 이끼시티\n"
+	.string "신조는 “포켓몬을 소중히!”$"
+	// ここは トクサネ シティｎ
+	// 「ポケモンを たいせつに!」が あいことば
 
 MossdeepCity_Text_16965C:: @ 816965C
-	.string "MOSSDEEP SPACE CENTER\n"
-	.string "“The closest place to space.”$"
+	.string "“이끼 우주센터”\n"
+	.string "우주와 가장 가까운 곳$"
+	// 「トクサネ うちゅうセンタ-」ｎ
+	// うちゅうに いちばん ちかい ばしょ

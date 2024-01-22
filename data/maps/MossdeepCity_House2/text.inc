@@ -1,14 +1,19 @@
 MossdeepCity_House2_Text_18D536:: @ 818D536
-	.string "My little sister exchanges MAIL with\n"
-	.string "her boyfriend in FORTREE.\p"
-	.string "I don't envy her one bit at all.$"
+	.string "내 여동생은 검방울시티에 사는\n"
+	.string "남자 친구랑 편지를 주고받고 있는데\p"
+	.string "난 조금도 부럽지 않아!$"
+	// おれの いもうとは ヒワマキのｎ
+	// ボ-イフレンドと ぶんつう してるｐ
+	// ちっとも うらやましく ないぞ!
 
 MossdeepCity_House2_Text_18D596:: @ 818D596
-	.string "Even though I can't see my friend in\n"
-	.string "FORTREE, my POKéMON carries MAIL back\l"
-	.string "and forth for us.\p"
-	.string "I'm not lonesome, even though we're\n"
-	.string "apart.$"
+	.string "검방울시티에 사는 친구랑 못 만나도\n"
+	.string "포켓몬이 편지를 전달해 줘\l"
+	.string "떨어져 있어도 외롭지 않아!$"
+	// ヒワマキの おともだちに あえなくてもｎ
+	// ポケモンが おてがみを はこんでくれるのｌ
+	// はなれていても さみしくないわ!
 
 MossdeepCity_House2_Text_18D61E:: @ 818D61E
-	.string "WINGULL: Pihyoh!$"
+	.string "갈모매: 삐뾰-!$"
+	// キャモメ『ぴひょ-!
