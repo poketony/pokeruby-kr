@@ -3124,8 +3124,8 @@ void sub_80EE658()
         gPokenavStructPtr->unk304++;
         break;
     case 5:
-        sub_80F700C((u8 *)(gSharedMem + 0x8788), *(u16 *)(gSharedMem + 0x8788 - 0x1A));
-        sub_80F42C4((u8 *)(gSharedMem + 0x8788));
+        sub_80F700C(gPokenavStructPtr->unk8788, gPokenavStructPtr->unk876E);
+        sub_80F42C4(gPokenavStructPtr->unk8788);
         gPokenavStructPtr->unk304++;
         break;
     case 6:
