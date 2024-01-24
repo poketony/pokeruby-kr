@@ -1,145 +1,227 @@
 PetalburgWoods_Text_194D71:: @ 8194D71
-	.string "Hmmm...\n"
-	.string "Not a one to be found...$"
+	.string "으-음...\n"
+	.string "없네...$"
+	// う-んｎ
+	// いないなあ……
 
 PetalburgWoods_Text_194D92:: @ 8194D92
-	.string "Hello, have you seen any POKéMON\n"
-	.string "called SHROOMISH around here?\p"
-	.string "I really love that POKéMON.$"
+	.string "저기 자네 이 근처에서\n"
+	.string "버섯꼬라는 포켓몬 본 적 없나?\p"
+	.string "내가 그 포켓몬을 정말 좋아하거든$"
+	// ねえ きみきみ このあたりでｎ
+	// キノココって ポケモン みなかった?ｐ
+	// おじさん あの ポケモン すき なのよね
 
 PetalburgWoods_Text_194DED:: @ 8194DED
-	.string "I was going to ambush you, but you\n"
-	.string "had to dawdle in PETALBURG WOODS\l"
-	.string "forever, didn't you?\p"
-	.string "I got sick of waiting, so here I am!$"
+	.string "계속 숨어서 기다리고 있었는데\n"
+	.string "언제까지 등화숲에서 어슬렁어슬렁...\p"
+	.string "기다리다 지쳐서 그냥 내가 왔다!$"
+	// まちぶせ していたのにｎ
+	// いつまでも トウカのもりで うろうろと……ｐ
+	// まちくたびれたから きてやったぞ!
 
 PetalburgWoods_Text_194E6B:: @ 8194E6B
-	.string "You! DEVON RESEARCHER!\p"
-	.string "Hand over those papers!$"
+	.string "야! 데봉의 연구원!\p"
+	.string "그 서류를 일로 내놔!$"
+	// やい! デボンの けんきゅういん!ｐ
+	// その しょるいを こっちに よこしやがれ!
 
 PetalburgWoods_Text_194E9A:: @ 8194E9A
-	.string "Aiyeeeh!\p"
-	.string "You're a POKéMON TRAINER, aren't you?\n"
-	.string "You've got to help me, please!$"
+	.string "히엑-!\p"
+	.string "자네 포켓몬 트레이너지?\n"
+	.string "아저씨 좀 살려줘$"
+	// ひや-!ｐ
+	// きみ ポケモントレ-ナ- だよねｎ
+	// おじさんを たすけてよぉ
 
 PetalburgWoods_Text_194EE8:: @ 8194EE8
-	.string "Hunh? What do you think you're doing?\n"
-	.string "What, you're going to protect him?\p"
-	.string "No one who crosses TEAM {EVIL_TEAM}\n"
-	.string "gets any mercy, not even a kid!\p"
-	.string "Come on and battle me!$"
+	.string "...응? 뭐야 넌?\n"
+	.string "그 녀석을 도와주려고?\p"
+	.string "{EVIL_TEAM}단을 방해하는 녀석은\n"
+	.string "아이라도 봐주지 않는다!\l"
+	.string "승부로 덤벼봐!$"
+	// ……ん? なんだ おまえ?ｎ
+	// そいつを かばおう ってのか?ｐ
+	// §くだんの じゃまを する やつはｎ
+	// こどもでも ようしゃ しねえ!ｌ
+	// しょうぶ しやがれ!
 
 PetalburgWoods_Text_194F83:: @ 8194F83
-	.string "You're kidding me! You're tough!$"
+	.string "...가 강하잖아-!$"
+	// ……つ つよい じゃね-か!
 
 PetalburgWoods_Text_194FA4:: @ 8194FA4
-	.string "Grrr... You've got some nerve\n"
-	.string "meddling with TEAM {EVIL_TEAM}!\l"
-	.string "Come on and battle me again!\p"
-	.string "I wish I could say that, but I'm out of\n"
-	.string "POKéMON...\p"
-	.string "And, hey, we of TEAM {EVIL_TEAM} are also\n"
-	.string "after something in RUSTBORO.\p"
-	.string "I'll let you go today!$"
+	.string "으으윽... {EVIL_TEAM}단을\n"
+	.string "방해하다니 이 건방진 녀석!\l"
+	.string "다시 한 번 승부하자!\p"
+	.string "...라고 하고 싶지만\n"
+	.string "더 이상 지닌 포켓몬이 없어\p"
+	.string "게다가 금탄도시에도 {EVIL_TEAM}단이\n"
+	.string "노리고 있는 게 있거든!\p"
+	.string "오늘은 이 정도로 봐준다!$"
+	// むむむ…… §くだんのｎ
+	// じゃまを するとは なんて やつ!ｌ
+	// もう いっかい しょうぶ しろ!ｐ
+	// ……と いいたい ところ だがｎ
+	// もう てもちの ポケモンは いないｐ
+	// それに カナズミ シティにも §くだんがｎ
+	// ねらっている ものが あるからな!ｐ
+	// きょうは これぐらいに しといてやらぁ!
 
 PetalburgWoods_Text_19507E:: @ 819507E
-	.string "Whew...\n"
-	.string "That was awfully close!\p"
-	.string "Thanks to you, he didn't rob me of\n"
-	.string "these important papers.\p"
-	.string "I know, I'll give you a GREAT BALL as\n"
-	.string "my thanks!$"
+	.string "...휴우\n"
+	.string "큰일 날 뻔했네!\p"
+	.string "자네 덕분에 중요한 서류를\n"
+	.string "빼앗기지 않을 수 있었어!\p"
+	.string "...그래! 감사의 표시로\n"
+	.string "수퍼볼을 줄게!$"
+	// ……ふぅｎ
+	// あぶない ところ だった!ｐ
+	// きみの おかげで だいじな しょるいをｎ
+	// うばわれないで すんだよ!ｐ
+	// ……そうだ! おれいにｎ
+	// ス-パ-ボ-ルを あげちゃおう!
 
 PetalburgWoods_Text_19510A:: @ 819510A
-	.string "Didn't that TEAM {EVIL_TEAM} thug say\n"
-	.string "they were after something in\l"
-	.string "RUSTBORO, too?$"
+	.string "...그러고 보니 아까 아쿠아단이\n"
+	.string "“금탄도시에도 노리고 있는 게 있다”\l"	
+	.string "라고 말했었지...?$"
+	// ……そういえば さっき §くだんはｎ
+	// 「カナズミにも ねらっている ものがある」ｌ
+	// とか いってたよね……?
 
 PetalburgWoods_Text_195153:: @ 8195153
-	.string "Uh-oh! It's a crisis!\n"
-	.string "I can't be wasting time!$"
+	.string "큰일 났다!!\n"
+	.string "이러고 있을 때가 아냐!$"
+	// たいへんだ!!ｎ
+	// こうしちゃ いられない!
 
 PetalburgWoods_Text_195182:: @ 8195182
-	.string "You're loaded with items.\n"
-	.string "I can't give you this GREAT BALL.$"
+	.string "가방이 가득 차서\n"
+	.string "수퍼볼은 줄 수 없겠네$"
+	// どうぐ いっぱいでｎ
+	// ス-パ-ボ-ル あげられないね
 
 PetalburgWoods_Text_1951BE:: @ 81951BE
-	.string "I caught a whole bunch of POKéMON!\p"
-	.string "Go, go, go!\n"
-	.string "My BUG POKéMON team!$"
+	.string "포켓몬을 잔뜩 잡았어!\p"
+	.string "자 가랏!\n"
+	.string "나의 벌레포켓몬 팀!$"
+	// ポケモン いっぱい つかまえた!ｐ
+	// そら いけ!ｎ
+	// ぼくの むしポケモン チ-ム!
 
 PetalburgWoods_Text_195202:: @ 8195202
-	.string "I have all these POKéMON, but I\n"
-	.string "couldn't win...$"
+	.string "이렇게 포켓몬이 많은데\n"
+	.string "이길 수 없다니...$"
+	// こんなに ポケモン いるのにｎ
+	// かてなかったのか……
 
 PetalburgWoods_Text_195232:: @ 8195232
-	.string "I caught a bunch of POKéMON.\n"
-	.string "Now I'm out of POKé BALLS.$"
+	.string "잔뜩 포켓몬을 잡았더니\n"
+	.string "몬스터볼이 부족해졌어$"
+	// たくさん ポケモン つかまえたらｎ
+	// モンスタ-ボ-ル なくなっちゃったよ
 
 PetalburgWoods_Text_19526A:: @ 819526A
-	.string "If you take BUG POKéMON to school,\n"
-	.string "you get to be instantly popular!$"
+	.string "벌레포켓몬을 학교에 가지고 가면\n"
+	.string "그만큼 인기쟁이가 되겠지!?$"
+	// むしポケモンを がっこうに もっていくとｎ
+	// それだけで にんきもの だろ!?
 
 PetalburgWoods_Text_1952AE:: @ 81952AE
-	.string "I can't be popular if I lose.$"
+	.string "져버리면 인기쟁이가 될 수 없어$"
+	// まけると にんきものに なれないや
 
 PetalburgWoods_Text_1952CC:: @ 81952CC
-	.string "If you have a big BUG POKéMON, people\n"
-	.string "respect you for it.$"
+	.string "커다란 벌레포켓몬을 가지고 있으면\n"
+	.string "그만큼 존경받지 않을까!?$"
+	// でかい むしポケモン もってるとｎ
+	// それだけで そんけ- されるだろ!?
 
 PetalburgWoods_Text_195306:: @ 8195306
-	.string "My BUG POKéMON have grown.\n"
-	.string "I'll be popular again.$"
+	.string "내 벌레포켓몬 많이 컸어!\n"
+	.string "이걸로 또 인기쟁이가 될 거야!$"
+	// ぼくの むしポケモン そだったぞ!ｎ
+	// これで また にんきもの だぜ!
 
 PetalburgWoods_Text_195338:: @ 8195338
-	.string "I can't be popular if I lose.$"
+	.string "져버리면 인기쟁이가 될 수 없어$"
+	// まけると にんきものに なれないや
 
 PetalburgWoods_Text_195356:: @ 8195356
-	.string "You get to be popular if you have\n"
-	.string "strong POKéMON, right?\l"
-	.string "So, I've been training hard.$"
+	.string "강한 포켓몬을 가지고 있으면\n"
+	.string "인기쟁이가 될 수 있겠지?\l"
+	.string "그래서 열심히 키우고 있는 거야!$"
+	// つよい ポケモン もってるとｎ
+	// にんきものに なれるだろ?ｌ
+	// だから がんばって そだててるのさ!
 
 PetalburgWoods_Text_1953AC:: @ 81953AC
-	.string "Yo, there!\n"
-	.string "Your POKéMON doing okay?\p"
-	.string "If your POKéMON are weak and you want\n"
-	.string "to avoid battles, you should stay out\l"
-	.string "of tall grass.$"
+	.string "여어! 네 포켓몬 괜찮아?\p"
+	.string "지닌 포켓몬이 약해져서\n"
+	.string "배틀시키고 싶지 않을 때는 되도록이면\l"
+	.string "풀숲을 피해서 움직이는 게 좋을 거야!$"
+	// よお! おまえの ポケモン げんき?ｐ
+	// てもちの ポケモンが よわっていてｎ
+	// たたかわせたく ないときは なるべくｌ
+	// くさむらを よけて あるくと いいよ!
 
 PetalburgWoods_Text_19542B:: @ 819542B
-	.string "Sometimes, there are things on the\n"
-	.string "ground even if you can't see them.\p"
-	.string "That's why I always check where I'm\n"
-	.string "walking.$"
+	.string "보이진 않아도\n"
+	.string "도구가 떨어져 있을 때가 있어서\l"
+	.string "발밑을 살펴보고 있어!$"
+	// みえて いなくてもｎ
+	// どうぐが おちてることが あるからｌ
+	// あしもとを しらべて いるんだ!
 
 PetalburgWoods_Text_19549E:: @ 819549E
-	.string "Oh, neat!\n"
-	.string "That's the BADGE from RUSTBORO GYM!\p"
-	.string "You must be a TRAINER.\n"
-	.string "You should try using this item.$"
+	.string "그건 금탄도시의 체육관 배지!\p"
+	.string "너 트레이너구나\n"
+	.string "이 도구 한번 써보는 건 어때?$"
+	// それって カナズミの ジムバッジ!ｐ
+	// あなた トレ-ナ-なのねｎ
+	// この どうぐ つかってみたら どうかしら?
 
 PetalburgWoods_Text_195503:: @ 8195503
-	.string "It's a MIRACLE SEED.\n"
-	.string "If a POKéMON holds that item, its\l"
-	.string "GRASS-type moves become stronger.\p"
-	.string "Besides MIRACLE SEED, I think there are\n"
-	.string "other convenient items for POKéMON\l"
-	.string "to hold.$"
+	.string "기적의씨를\n"
+	.string "포켓몬에게 지니게 하면 풀타입\l"
+	.string "기술의 위력이 올라가\p"
+	.string "기적의씨 외에도\n"
+	.string "포켓몬에게 지니게 하면 편리한\l"
+	.string "도구가 있다고 하더라고$"
+	// きせきのタネをｎ
+	// ポケモンに もたせてあげると くさタイプのｌ
+	// わざの いりょくが あがるのよｐ
+	// きせきのタネの ほかにもｎ
+	// ポケモンに もたせると べんりなｌ
+	// どうぐが あるらしいわね
 
 PetalburgWoods_Text_1955B0:: @ 81955B0
-	.string "TRAINER TIPS\p"
-	.string "Any POKéMON that appears even once\n"
-	.string "in a battle is awarded EXP Points.\p"
-	.string "To raise a weak POKéMON, put it at the\n"
-	.string "top of the team list.\p"
-	.string "As soon as a battle starts, switch it\n"
-	.string "out. It will earn EXP Points without\l"
-	.string "being exposed to any harm.$"
+	.string "정보 나눔 게시판!!\p"
+	.string "승부할 때\n"
+	.string "한 번이라도 배틀에 나온 포켓몬은\l"
+	.string "경험치를 받을 수 있습니다!\p"
+	.string "약한 포켓몬을 리스트의 왼쪽에 놓고\n"
+	.string "승부할 때 바로 교체!\l"
+	.string "이러면 약한 포켓몬도 키울 수 있어요!$"
+	// おとくな けいじばん!!ｐ
+	// しょうぶの ときｎ
+	// いちど でも かおをだした ポケモンはｌ
+	// けいけんちが もらえます!ｐ
+	// よわい ポケモンを リストの うえに してｎ
+	// しょうぶのとき すぐに こうたい!ｌ
+	// これで よわい ポケモンも そだちます!
 
 PetalburgWoods_Text_1956A6:: @ 81956A6
-	.string "TRAINER TIPS\p"
-	.string "In addition to Hit Points (HP), POKéMON\n"
-	.string "have Power Points (PP) that are used to\l"
-	.string "make moves during battle.\p"
-	.string "If a POKéMON runs out of PP, it must be\n"
-	.string "taken to a POKéMON CENTER.$"
+	.string "정보 나눔 게시판!!\p"
+	.string "포켓몬에겐 히트포인트 말고도\n"
+	.string "기술을 사용하기 위한 힘의 근원인\l"
+	.string "파워포인트라는 것이 있습니다\p"
+	.string "기술의 파워포인트를 다 썼을 때도\n"
+	.string "포켓몬센터로 갑시다!$"
+	// おとくな けいじばん!!ｐ
+	// ポケモンには ヒットポイントの ほかにｎ
+	// わざを くりだす ちからの もとｌ
+	// パワ-ポイント というものが ありますｐ
+	// わざの パワ-ポイントが なくなったときもｎ
+	// ポケモンセンタ-に いきましょう!

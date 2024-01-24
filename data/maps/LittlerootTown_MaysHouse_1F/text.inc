@@ -31,8 +31,8 @@ LittlerootTown_BrendansHouse_1F_Text_1731E3:: @ 81731E3
 	.string "이 사람은 어딜 간 거지?\n"
 	.string "모처럼 {PLAYER}{K_IGA}\l"
 	.string "인사하러 왔는데...\p"
-	.string "그 사람 가만히 있지를 못해서\n"
-	.string "연구소에 있는 걸지도$"
+	.string "그 사람 가만히 있질 못하니까\n"
+	.string "연구소에 있는 걸지도 모르겠다$"
 	// おとうさん ったら どこかしら?ｎ
 	// せっかく §あ§おがｌ
 	// あいさつに きてくれたのに……ｐ

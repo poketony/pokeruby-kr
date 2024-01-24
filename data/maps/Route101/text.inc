@@ -1,39 +1,65 @@
 Route101_Text_16D10E:: @ 816D10E
-	.string "H-help me!$"
+	.string "사 살려줘-!!$"
+	// たっ たすけて くれ-っ!!
 
 Route101_Text_16D119:: @ 816D119
-	.string "Hello! You over there!\n"
-	.string "Please! Help!\p"
-	.string "In my BAG!\n"
-	.string "There's a POKé BALL!$"
+	.string "어-이! 거기 자네!\n"
+	.string "제발 좀 살려줘!!\p"
+	.string "거기 있는 가방 안에\n"
+	.string "몬스터볼이 들어 있어!$"
+	// お-い! そこの きみ!ｎ
+	// たすけて おくれ-っ!!ｐ
+	// そこに ある カバンにｎ
+	// モンスタ-ボ-ルが はいってる!
 
 Route101_Text_16D15E:: @ 816D15E
-	.string "Wh-Where are you going?!\n"
-	.string "Don't leave me like this!$"
+	.string "어 어디 가는 거야!?\n"
+	.string "날 버리지 말아줘-!$"
+	// どっ どこへ いくんだ!?ｎ
+	// わたしを みすてないで おくれ-っ!
 
 Route101_Text_16D191:: @ 816D191
-	.string "PROF. BIRCH: Whew...\p"
-	.string "I was in the tall grass studying wild\n"
-	.string "POKéMON when I was jumped.\p"
-	.string "You saved me.\n"
-	.string "Thanks a lot!\p"
-	.string "Oh?\p"
-	.string "Hi, you're {PLAYER}{KUN}!\p"
-	.string "This is not the place to chat, so come\n"
-	.string "by my POKéMON LAB later, okay?$"
+	.string "털보박사: 하아 하아...\p"
+	.string "야생 포켓몬을 조사하려고\n"
+	.string "풀숲에 들어갔더니\l"
+	.string "갑자기 포켓몬이 덮쳐 와서...\p"
+	.string "어쨌든 구해줘서 고마워!\p"
+	.string "...으응?\p"
+	.string "자넨 종길씨네 {PLAYER}{K_I}잖아!\p"
+	.string "이런 곳에서 얘기하긴 뭐하니까\n"
+	.string "잠깐 연구소까지 와줘$"
+	// オダマキ『はあ はあ……ｐ
+	// やせいの ポケモンを ちょうさ しようとｎ
+	// くさむらに はいったらｌ
+	// とつぜん ポケモンに おそわれて……ｐ
+	// とにかく たすかったよ ありがとう!ｐ
+	// ……おや?ｐ
+	// きみは §あ§お じゃないか!ｐ
+	// こんな ところでは なんだからｎ
+	// ちょっと けんきゅうじょ まで きておくれ
 
 Route101_Text_16D25E:: @ 816D25E
-	.string "If POKéMON get tired, take them to\n"
-	.string "a POKéMON CENTER.\p"
-	.string "There's a POKéMON CENTER in OLDALE\n"
-	.string "TOWN right close by.$"
+	.string "포켓몬이 약해지면\n"
+	.string "포켓몬센터로 가는 게 좋을 거야!\p"
+	.string "포켓몬센터는 근처에 있는\n"
+	.string "고도마을에 있어$"
+	// ポケモンが よわってきたらｎ
+	// ポケモンセンタ-に いくと いいよ!ｐ
+	// ポケモンセンタ-なら すぐ ちかくｎ
+	// コトキタウンに あるからね
 
 Route101_Text_16D2CB:: @ 816D2CB
-	.string "Wild POKéMON will jump out at you in\n"
-	.string "tall grass.\p"
-	.string "If you want to catch POKéMON, you have\n"
-	.string "to go into the tall grass and search.$"
+	.string "야생 포켓몬은\n"
+	.string "풀숲에서 튀어나오니까!\p"
+	.string "이렇게 풀숲으로 들어가서\n"
+	.string "잡고 싶은 포켓몬을 찾으면 돼!$"
+	// やせいの ポケモンはｎ
+	// くさむらから とびだしてくる からな!ｐ
+	// こうして くさむらの なかに はいってｎ
+	// つかまえたい ポケモンを さがすんだよ!
 
 Route101_Text_16D349:: @ 816D349
-	.string "ROUTE 101\n"
-	.string "{0x79} OLDALE TOWN$"
+	.string "여기는 101번 도로\n"
+	.string "{0x79} 고도마을$"
+	// ここは 101ばん どうろｎ
+	// ©し  コトキタウン

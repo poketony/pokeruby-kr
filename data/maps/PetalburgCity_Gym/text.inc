@@ -1,411 +1,691 @@
 PetalburgCity_Gym_Text_179DF6:: @ 8179DF6
-	.string "DAD: Hm?\p"
-	.string "Well, if it isn't {PLAYER}!\n"
-	.string "So you're all finished moving in?\p"
-	.string "I'm surprised that you managed to\n"
-	.string "get here by yourself.\p"
-	.string "Oh, I see.\n"
-	.string "You're with your POKéMON.\p"
-	.string "Hm... Then I guess you're going to\n"
-	.string "become a TRAINER like me, {PLAYER}.\p"
-	.string "That's great news!\n"
-	.string "I'll be looking forward to it!$"
+	.string "아빠: 응?\p"
+	.string "{PLAYER}{K_I}잖아!\n"
+	.string "그래 이사가 다 끝났나 보네\p"
+	.string "그건 그렇고\n"
+	.string "용케 여기까지 혼자 왔는걸\p"
+	.string "그렇군...\n"
+	.string "포켓몬과 함께인 거구나\p"
+	.string "흠... 그럼 {PLAYER}{K_I}도\n"
+	.string "나 같은\l"
+	.string "포켓몬 트레이너가 되는 건가\p"
+	.string "그거 기대되는걸!$"
+	// パパ『ん?ｐ
+	// §あじゃ ないか!ｎ
+	// そうか ひっこしが おわったんだねｐ
+	// それにしてもｎ
+	// よく ここまで ひとりで これたなｐ
+	// なるほど……ｎ
+	// ポケモンと いっしょ なのかｐ
+	// ふむ…… じゃあ §あもｎ
+	// わたしの ようにｌ
+	// ポケモントレ-ナ-に なるのかｐ
+	// それは たのしみ だな!
 
 PetalburgCity_Gym_Text_179F07:: @ 8179F07
-	.string "Um... I... I'd like to get a\n"
-	.string "POKéMON, please...$"
+	.string "저기... 저...\n"
+	.string "포켓몬이 가지고 싶은데요...$"
+	// あの…… ぼく……ｎ
+	// ポケモンが ほしいん ですけど……
 
 PetalburgCity_Gym_Text_179F37:: @ 8179F37
-	.string "DAD: Hm? You're... Uh... Oh, right.\n"
-	.string "You're WALLY, right?$"
+	.string "아빠: 음? 너는... 분명\n"
+	.string "민진이라고 했었지$"
+	// パパ『ん? きみは…… たしかｎ
+	// ミツルくんと いったよね
 
 PetalburgCity_Gym_Text_179F70:: @ 8179F70
-	.string "WALLY: I'm going to go stay with my\n"
-	.string "relatives in VERDANTURF TOWN.\p"
-	.string "I thought I would be lonely by myself,\n"
-	.string "so I wanted to take a POKéMON along.\p"
-	.string "But I've never caught a POKéMON before.\n"
-	.string "I don't know how...$"
+	.string "민진: 전 오늘부터 잔디마을의\n"
+	.string "친척 집에 가는데\p"
+	.string "혼자서는 외로우니까 포켓몬을\n"
+	.string "데려갈까 해서요...\p"
+	.string "하지만 지금까지 스스로 포켓몬을\n"
+	.string "잡아본 적이 없어서\l"
+	.string "어떻게 해야 할지...$"
+	// ミツル『ぼく きょうから シダケタウンのｎ
+	// しんせきの うちに いくんですけどｐ
+	// ひとりじゃ さみしいから ポケモンをｎ
+	// つれて いこうかと おもって……ｐ
+	// でも いままで じぶんで ポケモンをｎ
+	// つかまえた ことが ないからｌ
+	// どう やったら いいのか……
 
 PetalburgCity_Gym_Text_17A03A:: @ 817A03A
-	.string "DAD: Hm. I see.$"
+	.string "아빠: ...흠 그렇군$"
+	// パパ『……ふむ なるほど
 
 PetalburgCity_Gym_Text_17A04A:: @ 817A04A
-	.string "DAD: {PLAYER}, you heard that,\n"
-	.string "right?\p"
-	.string "Go with WALLY and make sure that he\n"
-	.string "safely catches a POKéMON.$"
+	.string "아빠: {PLAYER}! 얘기는 들었겠지?\p"
+	.string "민진군이 무사히\n"
+	.string "포켓몬을 잡을 수 있도록\l"
+	.string "지켜봐 주도록 하거라$"
+	// パパ『§あ! はなしは きいたねｐ
+	// ミツルくんが ぶじにｎ
+	// ポケモンを つかまえられるかｌ
+	// みまもって あげるんだ
 
 PetalburgCity_Gym_Text_17A0A8:: @ 817A0A8
-	.string "WALLY, here, I'll loan you my POKéMON.\p"
-	.string "WALLY received a ZIGZAGOON!$"
+	.string "민진군\n"
+	.string "나의 포켓몬을 빌려주겠네!\p"
+	.string "민진은\n"
+	.string "지그제구리를 받았다!$"
+	// ミツルくんｎ
+	// わたしの ポケモンを かして あげよう!ｐ
+	// ミツルはｎ
+	// ジグザグマを あずかった!
 
 PetalburgCity_Gym_Text_17A0EB:: @ 817A0EB
-	.string "WALLY: Oh, wow!\n"
-	.string "A POKéMON!\p"
-	.string "DAD: Hm. I'll give you a POKé BALL, too.\n"
-	.string "Go for it!\p"
-	.string "WALLY received a POKé BALL!$"
+	.string "민진: 우와...\n"
+	.string "포켓몬이다...!\p"
+	.string "아빠: 흠...\n"
+	.string "몬스터볼을 줄 테니\l"
+	.string "열심히 해보거라!\p"
+	.string "민진은\n"
+	.string "몬스터볼을 받았다!$"
+	// ミツル『わあ……ｎ
+	// ポケモンだぁ……!ｐ
+	// パパ『うむ……ｎ
+	// モンスタ-ボ-ルは あげるからｌ
+	// がんばって みなさい!ｐ
+	// ミツルはｎ
+	// モンスタ-ボ-ルを もらった!
 
 PetalburgCity_Gym_Text_17A156:: @ 817A156
-	.string "WALLY: Oh, wow!\n"
-	.string "Thank you!$"
+	.string "민진: 아저씨 감사합니다!$"
+	// ミツル『おじさん ありがとう!
 
 PetalburgCity_Gym_Text_17A171:: @ 817A171
-	.string "{PLAYER}... Would you really come\n"
-	.string "with me?$"
+	.string "{PLAYER}님...\n"
+    .string "저랑 같이 가주실 거죠?$"
+	// §あさん……ｎ
+	// ぼくと いっしょに きてくれますよね
 
 PetalburgCity_Gym_Text_17A196:: @ 817A196
-	.string "DAD: So, did it work out?$"
+	.string "아빠: 잘 잡고 왔니?$"
+	// パパ『うまく いったかい?
 
 PetalburgCity_Gym_Text_17A1B0:: @ 817A1B0
-	.string "WALLY: Thank you, yes, it did.\n"
-	.string "Here's your POKéMON back.\p"
-	.string "{PLAYER}, thank you for coming along\n"
-	.string "with me.\p"
-	.string "You two are why I was able to catch\n"
-	.string "my POKéMON.\p"
-	.string "I promise I'll take really good\n"
-	.string "care of it.\p"
-	.string "Oh! My mom's waiting for me, so I\n"
-	.string "have to go!\p"
-	.string "Bye, {PLAYER}!$"
+	.string "민진: 아저씨\n"
+	.string "빌려주신 포켓몬 돌려 드릴게요\p"
+	.string "{PLAYER}님 저랑 같이 가주셔서\n"
+	.string "정말 감사했습니다...\p"
+	.string "포켓몬을 잡을 수 있었던 건\n"
+	.string "두 분 덕분이에요!\l"
+	.string "잡은 포켓몬 소중히 키울게요\p"
+	.string "...아! 엄마가 기다리셔서\n"
+	.string "이제 가야 해요!\p"
+	.string "그럼 또 봐요 {PLAYER}님!$"
+	// ミツル『おじさんｎ
+	// おかりした ポケモン おかえし しますｐ
+	// §あさん いっしょに きてくれてｎ
+	// どうも ありがとう……ｐ
+	// ポケモンを つかまえることが できたのはｎ
+	// ふたりの おかげです!ｌ
+	// つかまえた ポケモン たいせつに しますねｐ
+	// ……あ! おかあさんが まってるからｎ
+	// ぼくは もう いかなきゃ!ｐ
+	// じゃあね §あさん!
 
 PetalburgCity_Gym_Text_17A2A4:: @ 817A2A4
-	.string "DAD: Now...\p"
-	.string "{PLAYER}, if you want to become a\n"
-	.string "strong TRAINER, here's my advice.\p"
-	.string "Head for RUSTBORO CITY beyond this\n"
-	.string "town.\p"
-	.string "There, you should challenge the GYM\n"
-	.string "LEADER, ROXANNE.\p"
-	.string "After her, go on to other POKéMON\n"
-	.string "GYMS and defeat their LEADERS.\p"
-	.string "Collect BADGES from them,\n"
-	.string "understood?\p"
-	.string "Of course, I'm a GYM LEADER, too.\n"
-	.string "We'll battle one day, {PLAYER}.\p"
-	.string "But that's only after you become\n"
-	.string "stronger, {PLAYER}.$"
+	.string "아빠: 자 그럼...\p"
+	.string "{PLAYER}! 포켓몬 트레이너로서\n"
+	.string "강해지고 싶다면\l"
+	.string "내 어드바이스를 듣거라\p"
+	.string "먼저 이 앞에 있는\n"
+	.string "금탄도시로 가거라\p"
+	.string "거기서 원규라는 체육관 관장과\n"
+	.string "배틀하도록 해!\p"
+	.string "그렇게 각지의 포켓몬체육관에서\n"
+	.string "체육관 관장을 쓰러뜨리고\l"
+	.string "체육관 배지를 모아가는 거다\p"
+	.string "물론 나도 체육관 관장이다\n"
+	.string "언젠가는 {PLAYER}{K_WAGWA} 승부하겠지\p"
+	.string "하지만 그건 {PLAYER}{K_IGA}\n"
+	.string "강해졌을 때의 이야기다$"
+	// パパ『さて……ｐ
+	// §あ! ポケモントレ-ナ- としてｎ
+	// つよく なりたいのならｌ
+	// わたしの アドバイスを ききなさいｐ
+	// まずは この さきにあるｎ
+	// カナズミシティに いくんだｐ
+	// そこで ツツジ という ジムリ-ダ-とｎ
+	// たたかうと いい!ｐ
+	// そうやって かくちの ポケモンジムでｎ
+	// ジムリ-ダ-を たおしてｌ
+	// ジムバッジを あつめて いくんだｐ
+	// もちろん わたしも ジムリ-ダ-だｎ
+	// いずれ §あと しょうぶ するだろうｐ
+	// だが それは §あがｎ
+	// つよくなってからの はなし だよ
 
 PetalburgCity_Gym_Text_17A41E:: @ 817A41E
-	.string "DAD: Hm? Aren't you going to the\n"
-	.string "POKéMON GYM in RUSTBORO CITY?\p"
-	.string "There's no challenge for me to\n"
-	.string "battle a greenhorn TRAINER.\p"
-	.string "{PLAYER}, I want you to challenge me\n"
-	.string "when you become a lot stronger.\p"
-	.string "I'll battle you, {PLAYER}, when you\n"
-	.string "can show me four GYM BADGES, okay?$"
+	.string "아빠: 응? 금탄도시의\n"
+	.string "포켓몬체육관에 안 가는 거니?\p"
+	.string "아직 신출내기인 트레이너와\n"
+	.string "배틀해도 재미가 없거든\p"
+	.string "{PLAYER}{K_IGA} 더욱 강해져서\n"
+	.string "내 앞에 나타나 줬으면 좋겠구나\p"
+	.string "그래 체육관 배지를\n"
+	.string "4개 모으면 그때는\l"
+	.string "{PLAYER}{K_WAGWA} 승부하마!$"
+	// パパ『ん? カナズミのｎ
+	// ポケモンジムには いかないのか?ｐ
+	// まだまだ かけだしの トレ-ナ-とｎ
+	// たたかっても おもしろく ないからなｐ
+	// §あには もっと つよくなってｎ
+	// わたしの まえに あらわれて ほしいんだｐ
+	// そうだな ジムバッジをｎ
+	// 4つ あつめられたら そのときはｌ
+	// §あと しょうぶ しよう!
 
 PetalburgCity_Gym_Text_17A518:: @ 817A518
-	.string "DAD: I see... So, you've beaten the\n"
-	.string "GYM LEADER in RUSTBORO CITY.\p"
-	.string "But there are many more TRAINERS\n"
-	.string "who are stronger than you, {PLAYER}.\p"
-	.string "Across the sea in DEWFORD TOWN is a\n"
-	.string "GYM LEADER named BRAWLY.\p"
-	.string "You should go challenge him.$"
+	.string "아빠: 그렇군...\n"
+	.string "금탄도시의 체육관 관장을 이겼구나\p"
+	.string "하지만 아직도 {PLAYER}{K_I}보다\n"
+	.string "강한 트레이너는 많이 있지\p"
+	.string "바다의 저편 무로마을에는\n"
+	.string "철구라고 하는 체육관 관장이 있단다\p"
+	.string "그하고도 승부해 보도록 해$"
+	// パパ『なるほど……ｎ
+	// カナズミの ジムリ-ダ-に かったのかｐ
+	// だが まだまだ §あよりｎ
+	// つよい トレ-ナ-は いっぱい いるｐ
+	// うみの むこう ムロタウンにはｎ
+	// トウキ という ジムリ-ダ-が いるｌ
+	// かれとも しょうぶ してみると いい
 
 PetalburgCity_Gym_Text_17A5F3:: @ 817A5F3
-	.string "DAD: Hm... {PLAYER}, you have gotten\n"
-	.string "stronger.\p"
-	.string "I can tell by the number of BADGES\n"
-	.string "that you've earned.$"
+	.string "아빠: 흐음...\n"
+	.string "{PLAYER}{K_EUNNEUN} 강해지고 있구나\p"
+	.string "배지의 수를 보면 알 수 있지$"
+	// パパ『ふむ……ｎ
+	// §あは つよくなって いるなｐ
+	// その バッジの かずを みれば わかるよ
 
 PetalburgCity_Gym_Text_17A653:: @ 817A653
-	.string "DAD: Hm...\n"
-	.string "So, you did get four GYM BADGES.\p"
-	.string "Fine, as I promised, we will have a\n"
-	.string "POKéMON battle.\p"
-	.string "{PLAYER}...\p"
-	.string "I'm so happy that I can have a \n"
-	.string "real battle with my own child.\p"
-	.string "But, a battle is a battle!\p"
-	.string "I will do everything in my power as\n"
-	.string "a GYM LEADER to win.\p"
-	.string "{PLAYER}, you'd better give it your\n"
-	.string "best shot, too!$"
+	.string "아빠: 그래...\n"
+	.string "체육관 배지를 4개 모았구나\p"
+	.string "그럼 약속대로\n"
+	.string "포켓몬 승부를 해야겠지...\p"
+	.string "{PLAYER}{K_AYA}...\p"
+	.string "난 지금 이렇게\n"
+	.string "자신의 아이와\l"
+	.string "진검승부를 할 수 있다는 게\l"
+	.string "기뻐서 참을 수 없단다!\p"
+	.string "하지만 승부는 승부!\p"
+	.string "난 체육관 관장으로서\n"
+	.string "전력을 다할 거다!\l"
+	.string "{PLAYER}도 진심으로 덤비도록!$"
+	// パパ『そうか……ｎ
+	// ジムバッジを 4つ あつめたのかｐ
+	// では やくそく どおりｎ
+	// ポケモンしょうぶ だな……ｐ
+	// §あ……ｐ
+	// わたしは いま こうしてｎ
+	// じぶんの こどもとｌ
+	// しんけん しょうぶ できることがｌ
+	// うれしくて たまらない!ｐ
+	// だが しょうぶは しょうぶ!ｐ
+	// わたしは ジムリ-ダ-としてｎ
+	// ぜんりょくを つくす!ｌ
+	// §あも ほんきで かかってくるんだ!
 
 PetalburgCity_Gym_Text_17A77A:: @ 817A77A
-	.string "...\p"
-	.string "I... I can't...\p"
-	.string "I can't believe it. {PLAYER}...\p"
-	.string "I lost to {PLAYER}?\p"
-	.string "But, rules are rules!\n"
-	.string "Here, take this.$"
+	.string "...!\p"
+	.string "설마...\p"
+	.string "설마 {PLAYER}에게...\p"
+	.string "{PLAYER}에게 질 줄이야...\p"
+	.string "...알았다! 규칙은 규칙이지!\n"
+	.string "이걸 주도록 하마$"
+	// ……!ｐ
+	// まさか……ｐ
+	// まさか §あに……ｐ
+	// §あに まける とは……ｐ
+	// ……わかった! きまりは きまりだ!ｎ
+	// これを わたそう
 
 PetalburgCity_Gym_Text_17A7DD:: @ 817A7DD
-	.string "{PLAYER} received the BALANCE BADGE\n"
-	.string "from DAD!$"
+	.string "{PLAYER}{K_EUNNEUN} 아빠에게서\n"
+	.string "밸런스배지를 받았다!!$"
+	// §あは パパからｎ
+	// バランスバッジを もらった!
 
 PetalburgCity_Gym_Text_17A805:: @ 817A805
-	.string "DAD: With that BADGE, the DEFENSE\n"
-	.string "of all your POKéMON will increase.\p"
-	.string "POKéMON that know the HM move SURF\n"
-	.string "will be able to travel over water.\p"
-	.string "This is my gift to you. {PLAYER}, I'm\n"
-	.string "sure you can use it correctly.$"
+	.string "아빠: 그 밸런스배지로\n"
+	.string "{PLAYER}의 포켓몬의\l"
+	.string "방어력이 올라가게 될 거다\p"
+	.string "비전기술 파도타기를\n"
+	.string "배운 포켓몬이 있다면\l"
+	.string "물 위를 이동할 수 있게 되지\p"
+	.string "이건 내가 주는 선물이란다\n"
+	.string "{PLAYER}{K_I}라면 잘 다룰 수 있겠지!$"
+	// パパ『その バランスバッジでｎ
+	// §あの ポケモンのｌ
+	// ぼうぎょりょくが たかくなるｐ
+	// ひでんわざの なみのり をｎ
+	// おぼえた ポケモンが いるならｌ
+	// みずのうえを すすめるように なるｐ
+	// これは わたしからの おくりものｎ
+	// §あなら つかいこなせるだろう!
 
 PetalburgCity_Gym_Text_17A8CF:: @ 817A8CF
-	.string "DAD: TM42 contains FACADE.\p"
-	.string "It doubles the power of moves if\n"
-	.string "the POKéMON is poisoned, paralyzed,\l"
-	.string "or burned.\p"
-	.string "It might be able to turn a bad\n"
-	.string "situation into an advantage.$"
+	.string "아빠: 기술머신42는 객기\p"
+    .string "독이나 마비, 화상에 걸리면\n"
+	.string "기술의 위력이 2배가 되지!\p"
+	.string "위기를 기회로\n"
+	.string "바꿀 수 있을지도 모른다$"
+	// パパ『わざマシン42は からげんきｐ
+	// どくや まひ やけどに なるとｎ
+	// わざの いりょくが ばいに なる!ｐ
+	// ピンチを チャンスにｎ
+	// かえることが できるかも しれないな
 
 PetalburgCity_Gym_Text_17A976:: @ 817A976
-	.string "DAD: As the GYM LEADER, I can't\n"
-	.string "express how upset I am...\p"
-	.string "But as a father, it makes me both\n"
-	.string "happy and a little sad. It's odd...$"
+	.string "아빠: 체육관 관장으로서\n"
+	.string "분해서 말이 안 나오는군...\p"
+	.string "하지만 부모로서는\n"
+	.string "기쁘면서도 쓸쓸한\l"
+	.string "이상한 기분이야...$"
+	// パパ『ジムリ-ダ-としてｎ
+	// いいようが ないくらい くやしい……ｐ
+	// だが おや としてはｎ
+	// うれしいような さびしいようなｌ
+	// ふしぎな きもち だ……
 
 PetalburgCity_Gym_Text_17A9F6:: @ 817A9F6
-	.string "DAD: Oh, yes...\p"
-	.string "WALLY's parents came calling\n"
-	.string "earlier.\p"
-	.string "They said that they had something\n"
-	.string "they wanted to give you, {PLAYER}.$"
+	.string "아빠: 아 맞다...\p"
+	.string "방금 민진이의 부모님께서\n"
+	.string "오셔서 {PLAYER}한테\l"
+	.string "건네줄 게 있다고 하셨단다!$"
+	// パパ『そうだ……ｐ
+	// さっき ミツルくんの ごりょうしんがｎ
+	// いらして §あにｌ
+	// わたしたい ものが あると いってたぞ!
 
 PetalburgCity_Gym_Text_17AA6B:: @ 817AA6B
-	.string "DAD: {PLAYER}, you should go visit\n"
-	.string "your mother every so often.\p"
-	.string "I'm going to stay here and redouble\n"
-	.string "my training.\p"
-	.string "It would bother me as a TRAINER to\n"
-	.string "not avenge my loss to you, {PLAYER}!$"
+	.string "아빠: {PLAYER}{K_AYA}! 가끔은 엄마도\n"
+	.string "만나러 가도록 하렴!\p"
+	.string "나는 여기서\n"
+	.string "스스로를 단련할 거란다!\p"
+	.string "{PLAYER} 너에게 진 채로는\n"
+	.string "트레이너로서 분하니까 말이야$"
+	// パパ『§あ! たまには ママにもｎ
+	// あいに いって あげるんだぞ!ｐ
+	// わたしは ここでｎ
+	// じぶんを きたえなおす!ｐ
+	// §あに まけた ままではｎ
+	// トレ-ナ-として くやしすぎる からな
 
 PetalburgCity_Gym_Text_17AB17:: @ 817AB17
-	.string "DAD: {PLAYER}, how are things going?\p"
-	.string "The world of POKéMON is deep.\p"
-	.string "I honestly think that no amount of\n"
-	.string "training would ever be enough.$"
+	.string "아빠: {PLAYER}{K_AYA}!\n"
+    .string "상태는 어떠니?\p"
+	.string "포켓몬은 심오하단다!\n"
+	.string "나는 아무리 수행해도\l"
+	.string "부족하다고 느끼는 중이야$"
+	// パパ『§あ!ｎ
+	// ちょうしは どうだ?ｐ
+	// ポケモンは おくが ふかい!ｎ
+	// わたしは いくら しゅぎょう してもｌ
+	// たりなく おもっている ところだよ
 
 PetalburgCity_Gym_Text_17AB96:: @ 817AB96
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "The doors in this GYM open when you\n"
-	.string "beat the awaiting TRAINERS.\p"
-	.string "Whoops! The doors in this room are\n"
-	.string "already open, so don't attack me!\p"
-	.string "The TRAINERS of PETALBURG GYM use\n"
-	.string "all kinds of items.\p"
-	.string "The door at the left leads to the\n"
-	.string "SPEED ROOM.\p"
-	.string "The door at the right leads to the\n"
-	.string "ACCURACY ROOM.\p"
-	.string "The room's name will be on the\n"
-	.string "door, so choose carefully.\p"
-	.string "Once you've chosen the door...\n"
-	.string "Well, hey, go for it!$"
+	.string "잘 있었나!!\n"
+	.string "챔피언을 노리는 {PLAYER}!!\p"
+	.string "이 체육관은 방에 있는 트레이너를\n"
+	.string "쓰러뜨리면 안쪽에 있는 문이 열려!\p"
+	.string "...앗! 이 방은 이미\n"
+	.string "문이 열리게 되어 있으니\l"
+	.string "날 쓰러뜨리지는 말라고!\p"
+	.string "이곳 등화체육관의 트레이너들은\n"
+	.string "다양한 도구를 쓰지!\p"
+	.string "참고로 여기서 갈 수 있는 곳은\n"
+	.string "왼쪽... 스피드의 방과\l"
+	.string "오른쪽... 명중의 방이야!\p"
+	.string "문에도 적혀 있으니\n"
+	.string "잘 읽고 들어가 봐\p"
+	.string "자! 어느 쪽으로 갈지 정했으면\n"
+	.string "그럼 힘내라고-!!$"
+	// げんき しとぉや!!ｎ
+	// チャンピオンを めざす §あ!!ｐ
+	// この ジムは へやにいる トレ-ナ-をｎ
+	// たおせば おくの とびらが ひらくッ!ｐ
+	// ……おっと! この へやは すでにｎ
+	// とびらが ひらく ように なってるからｌ
+	// ぼくを たおしたり しないで くれよ!ｐ
+	// この トウカジムの トレ-ナ-たちはｎ
+	// いろんな どうぐを つかってくるぞ!ｐ
+	// ちなみに ここから いけるのはｎ
+	// ひだり…… すばやさの へやｌ
+	// みぎ…… めいちゅうの へや だ!ｐ
+	// とびらにも かいてあるから それをｎ
+	// よんでから すすむんだｐ
+	// さあ! すきな ほうを えらんだらｎ
+	// きばってこォ-!!
 
 PetalburgCity_Gym_Text_17AD49:: @ 817AD49
-	.string "{PLAYER}! Whoa! You've overcome even\n"
-	.string "your own father!\p"
-	.string "Like, whoa!\n"
-	.string "What a stunning turn of events!$"
+	.string "{PLAYER}{K_EUNNEUN} 자신의 아버지마저\n"
+	.string "뛰어넘은 것인가!?\p"
+	.string "이거 정말 놀라운데!!$"
+	// §あは じぶんの パパさえもｎ
+	// のりこえて しまったのか!?ｐ
+	// こらァ びっくり たまげたッ!!
 
 PetalburgCity_Gym_Text_17ADA5:: @ 817ADA5
-	.string "The ability to attack before the\n"
-	.string "opponent...\p"
-	.string "Just that alone puts me at a great\n"
-	.string "advantage, don't you agree?$"
+	.string "상대보다 먼저 공격할 수 있다...\p"
+	.string "그것만으로도 승부는\n"
+	.string "상당히 유리해지겠지?$"
+	// あいてよりも さきに こうげき できる……ｐ
+	// それだけで しょうぶはｎ
+	// かなり ゆうりに なるだろう?
 
 PetalburgCity_Gym_Text_17AE11:: @ 817AE11
-	.string "That was a magnificent battle!$"
+	.string "굉장한 승부였다...!$"
+	// すばらしい しょうぶ だった……!
 
 PetalburgCity_Gym_Text_17AE30:: @ 817AE30
-	.string "Go on to the next room where a new\n"
-	.string "challenge awaits you.\p"
-	.string "At the left is the ZERO REDUCTION\n"
-	.string "ROOM.\p"
-	.string "The right door leads to the DEFENSE\n"
-	.string "ROOM.$"
+	.string "안쪽 방으로 나아가라!\n"
+	.string "더 혹독한 시련이 널 기다리고 있다\p"
+	.string "왼쪽은 떨어지지 않는 방\n"
+	.string "오른쪽은 방어의 방이다!$"
+	// おくの へやに すすみたまえ!ｎ
+	// さらなる しれんが きみを まっているｐ
+	// ひだりは さがらずの へや!ｎ
+	// みぎは まもりの へや だ!
 
 PetalburgCity_Gym_Text_17AEBB:: @ 817AEBB
-	.string "Whomever you beat, and whomever you\n"
-	.string "may lose to, you never shirk from\l"
-	.string "training yourself and your POKéMON.\p"
-	.string "That's what I think being a\n"
-	.string "GYM LEADER is all about.$"
+	.string "누구한테 이기든\n"
+	.string "누구한테 지든\l"
+	.string "자신과 포켓몬을 계속 단련시킨다...\p"
+	.string "그게 바로 체육관 관장이야$"
+	// だれに かとうともｎ
+	// だれに まけようともｌ
+	// おのれと ポケモンを きたえつづける……ｐ
+	// それが ジムリ-ダ- なのさ
 
 PetalburgCity_Gym_Text_17AF5A:: @ 817AF5A
-	.string "Don't waste your time trying to\n"
-	.string "lower my POKéMON's abilities!$"
+	.string "내 포켓몬의 능력을\n"
+	.string "아무리 낮추려 해도 소용없어!$"
+	// ぼくの ポケモンに たいしてｎ
+	// のうりょくを さげようとしても ムダだね!
 
 PetalburgCity_Gym_Text_17AF98:: @ 817AF98
-	.string "My POKéMON's abilities weren't\n"
-	.string "harmed, but I still lost...$"
+	.string "능력은 떨어지지 않았지만\n"
+	.string "그래도 이길 수 없었다...$"
+	// のうりょくは さがらなかったけどｎ
+	// それでも かてなかった……
 
 PetalburgCity_Gym_Text_17AFD3:: @ 817AFD3
-	.string "The next room is the STRENGTH ROOM.\n"
-	.string "Can you withstand brute force?$"
+	.string "다음은 힘의 방!\n"
+	.string "그 공격력을 버틸 수 있을까?$"
+	// つぎは ちからの へや!ｎ
+	// その こうげきりょくに たえられるかい?
 
 PetalburgCity_Gym_Text_17B016:: @ 817B016
-	.string "After you beat our LEADER, the\n"
-	.string "training has become a lot tougher.$"
+	.string "체육관 관장이 너에게 지고 나서부터\n"
+	.string "훈련의 강도가 더 세졌어!$"
+	// ジムリ-ダ-が きみに まけてからｎ
+	// くんれんが さらに きびしく なったよ!
 
 PetalburgCity_Gym_Text_17B058:: @ 817B058
-	.string "Just when you think you're going to\n"
-	.string "win, your opponent restores HP...\p"
-	.string "Can you just imagine how awful that\n"
-	.string "must feel?\p"
-	.string "I'll show you exactly how awful it\n"
-	.string "feels!$"
+	.string "거의 쓰러뜨렸다고 생각했을 때\n"
+	.string "상대의 HP가 회복된다\l"
+	.string "그게 얼마나 혹독한 일인지...\p"
+	.string "그 고통을 맛보게 해주지!$"
+	// あとすこしで たおせると おもったときｎ
+	// あいての たいりょくが かいふく するｌ
+	// それが どんなに つらい ことか……ｐ
+	// その つらさ あじわってもらうよ!
 
 PetalburgCity_Gym_Text_17B0F7:: @ 817B0F7
-	.string "I couldn't restore HP enough...\n"
-	.string "What ATTACK power...$"
+	.string "미처 다 회복하지 못했어...\n"
+	.string "엄청난 공격력이다...$"
+	// かいふく しきれなかった……ｎ
+	// すごい こうげきりょく だ……
 
 PetalburgCity_Gym_Text_17B12C:: @ 817B12C
-	.string "I should have expected no less from\n"
-	.string "our LEADER's kid.\p"
-	.string "No, wait! A TRAINER's abilities are\n"
-	.string "earned only through effort.\p"
-	.string "I lost because my own efforts\n"
-	.string "weren't enough.\p"
-	.string "Go on! The ONE-HIT KO ROOM is next.$"
+	.string "과연 체육관 관장의 아이...\p"
+	.string "아니지! 트레이너의 재능은\n"
+	.string "노력을 바탕으로 만들어지는 것...\p"
+	.string "너에게 진 건 나의 노력이\n"
+	.string "부족했기 때문이다...!\p"
+	.string "자 다음은 일격의 방이다!$"
+	// さすがは ジムリ-ダ-の こども……ｐ
+	// いや! トレ-ナ-の さいのうはｎ
+	// どりょくで つちかわれる もの……ｐ
+	// きみに まけたのは ぼくの どりょくがｎ
+	// たりなかった から なんだ……!ｐ
+	// さあ つぎは いちげきの へや だ!
 
 PetalburgCity_Gym_Text_17B1F4:: @ 817B1F4
-	.string "I'm going to keep training at GYMS.\n"
-	.string "One day, I'll become a LEADER.$"
+	.string "포켓몬체육관에서 계속 수행해서\n"
+	.string "언젠가는 체육관 관장이 되고야 말겠어$"
+	// ポケモンジムで しゅぎょうを かさねｎ
+	// いつかは ジムリ-ダ-に なってみせるよ
 
 PetalburgCity_Gym_Text_17B237:: @ 817B237
-	.string "I'm not going to take it easy just\n"
-	.string "because you're our LEADER's kid.\p"
-	.string "I'll show you how horrid it is for\n"
-	.string "a POKéMON to take a critical hit!$"
+	.string "체육관 관장의 아이라고 해서\n"
+	.string "봐주진 않을 거야!\p"
+	.string "급소를 맞는 두려움을\n"
+	.string "실컷 맛보게 해줄게!$"
+	// ジムリ-ダ-の こども だからってｎ
+	// てかげんは しない!ｐ
+	// きゅうしょに あたる こわさｎ
+	// とくと あじわって もらうよ!
 
 PetalburgCity_Gym_Text_17B2C0:: @ 817B2C0
-	.string "Your power...\n"
-	.string "You're the real deal.$"
+	.string "네 실력은 진짜다...!$"
+	// きみの つよさは ほんものだ……!
 
 PetalburgCity_Gym_Text_17B2E4:: @ 817B2E4
-	.string "Your father really is strong. He's\n"
-	.string "a TRAINER worth my respect.\p"
-	.string "And, I sense the same glow coming\n"
-	.string "from you as your father.\p"
-	.string "I hope that you'll stage a terrific\n"
-	.string "battle with your father!$"
+	.string "네 아빠는 정말 강하면서도\n"
+	.string "존경받아 마땅한 트레이너야!\p"
+	.string "그리고 너에게도\n"
+	.string "네 아빠와 같은\l"
+	.string "반짝임이 느껴져...\p"
+	.string "가족이 서로의 실력을 겨루는\n"
+	.string "최고의 명승부를 보여줘!$"
+	// きみの パパは ほんとうに つよいｎ
+	// そんけいに あたいする トレ-ナ-だ!ｐ
+	// そして きみにもｎ
+	// きみの パパと おなじｌ
+	// かがやきを かんじる……ｐ
+	// おやこ ふたりが のうりょくを きそうｎ
+	// さいこうの めいしょうぶを みせてくれ!
 
 PetalburgCity_Gym_Text_17B39B:: @ 817B39B
-	.string "Since your dad became the LEADER,\n"
-	.string "the TRAINERS of PETALBURG CITY have\l"
-	.string "become a lot tougher.$"
+	.string "네 아빠가 체육관 관장이 되고 나서\n"
+	.string "등화도시의 트레이너들도 강해졌어$"
+	// きみの パパが ジムリ-ダ-に なってからｎ
+	// トウカの トレ-ナ-たちも つよくなった
 
 PetalburgCity_Gym_Text_17B3F7:: @ 817B3F7
-	.string "Giggle...\n"
-	.string "This is the ACCURACY ROOM.\p"
-	.string "It's pretty nasty when every attack\n"
-	.string "lands without fail.$"
+	.string "후후후...\n"
+	.string "여긴 명중의 방!\p"
+	.string "모든 공격이 맞게 되면\n"
+	.string "꽤 성가실 거야$"
+	// ふふふ……ｎ
+	// ここは めいちゅうの へや!ｐ
+	// すべての こうげきが あたるのってｎ
+	// けっこう いやな ものよ
 
 PetalburgCity_Gym_Text_17B454:: @ 817B454
-	.string "You were a cut above me...$"
+	.string "네 쪽이 한 수 위구나...$"
+	// あなたの ほうが いちまい うわてね……
 
 PetalburgCity_Gym_Text_17B46F:: @ 817B46F
-	.string "There are some even stronger\n"
-	.string "TRAINERS waiting for you.\p"
-	.string "The left is the DEFENSE ROOM, and\n"
-	.string "the right is the RECOVERY ROOM.\p"
-	.string "Your POKéMON's ATTACK power will be\n"
-	.string "on trial either way.$"
+	.string "안에는 더욱더 강한 트레이너가\n"
+	.string "널 기다리고 있어\p"
+	.string "왼쪽은 방어의 방\n"
+	.string "오른쪽은 회복의 방이야\p"
+	.string "네 포켓몬의\n"
+	.string "공격력이 시험받게 되겠지$"
+	// おくで さらに てごわい トレ-ナ-がｎ
+	// あなたを まっているｐ
+	// ひだりは まもりの へやｎ
+	// みぎは かいふくの へや よｐ
+	// あなたの ポケモンのｎ
+	// こうげきりょくが とわれるわ
 
 PetalburgCity_Gym_Text_17B521:: @ 817B521
-	.string "Do you know what we're trying to\n"
-	.string "achieve as TRAINERS?\p"
-	.string "We're striving to become soul mates\n"
-	.string "with our POKéMON.$"
+	.string "넌 우리들 트레이너가\n"
+	.string "무엇을 목표로 하고 있는지 아니?\p"
+	.string "...그건 말이지 포켓몬과\n"
+	.string "한마음이 되는 거야!$"
+	// あなたは わたしたち トレ-ナ-がｎ
+	// なにを めざしているか しってる?ｐ
+	// ……それはね ポケモンとｎ
+	// こころを ひとつに する ことよ!
 
 PetalburgCity_Gym_Text_17B58D:: @ 817B58D
-	.string "The higher the DEFENSE, the more\n"
-	.string "reckless I can be in attack.$"
+	.string "방어가 강하면 강할수록\n"
+	.string "과감하게 공격할 수 있어$"
+	// まもりが かたければ かたいほどｎ
+	// おもいきった こうげきが できるのよ
 
 PetalburgCity_Gym_Text_17B5CB:: @ 817B5CB
-	.string "Our defenses weren't enough...$"
+	.string "방어할 수 없었어...$"
+	// まもりきれなかった……
 
 PetalburgCity_Gym_Text_17B5EA:: @ 817B5EA
-	.string "I think you've taught me a valuable\n"
-	.string "lesson here.\p"
-	.string "Now, go on! The left door goes to\n"
-	.string "the STRENGTH ROOM.\p"
-	.string "The right door opens to the\n"
-	.string "ONE-HIT KO ROOM.\p"
-	.string "Both of them have TRAINERS who are\n"
-	.string "offensively skilled.$"
+	.string "너에게는 중요한 무언가를\n"
+	.string "배운 거 같아...\p"
+	.string "자 계속 나아가봐!\n"
+	.string "왼쪽은 힘의 방\l"
+	.string "오른쪽은 일격의 방\p"
+	.string "양쪽 모두 공격을 중시하고 있지!$"
+	// あなたには たいせつな ことをｎ
+	// おしえて もらった きが するわ……ｐ
+	// さあ すすみなさい!ｎ
+	// ひだりは ちからの へやｌ
+	// みぎは いちげきの へやｐ
+	// ともに こうげきを とくいと しているわ!
 
 PetalburgCity_Gym_Text_17B6B5:: @ 817B6B5
-	.string "Hi! Have you tried using SURF?$"
+	.string "어때? 파도타기는 잘 쓰고 있어?$"
+	// どう? なみのりは つかってる?
 
 PetalburgCity_Gym_Text_17B6D4:: @ 817B6D4
-	.string "Our GYM LEADER told us to go all out\n"
-	.string "and beat you.\p"
-	.string "Even if you happen to be the\n"
-	.string "LEADER's kid!$"
+	.string "전력으로 너를 쓰러뜨리라고\n"
+	.string "체육관 관장한테 들었어...\p"
+	.string "설령 그 상대가\n"
+	.string "관장의 아이라고 해도 말이지!$"
+	// ぜんりょくで あなたを たおせとｎ
+	// ジムリ-ダ-から いわれている……ｐ
+	// たとえ その あいてがｎ
+	// リ-ダ-の こども だとしても!
 
 PetalburgCity_Gym_Text_17B732:: @ 817B732
-	.string "But... I went all out!$"
+	.string "전력을 냈는데도...!$"
+	// ぜんりょくを だしたのに……!
 
 PetalburgCity_Gym_Text_17B749:: @ 817B749
-	.string "The way you use your POKéMON...\n"
-	.string "It's like your father's style.\p"
-	.string "Go on through! The GYM LEADER, your\n"
-	.string "father, is waiting!$"
+	.string "네가 포켓몬을 다루는 방법...\n"
+	.string "어딘지 모르게 네 아빠와 닮았어\p"
+	.string "자! 이 안쪽에는 체육관 관장인\n"
+	.string "네 아빠가 기다리고 있어!$"
+	// あなたの ポケモンの つかいかた……ｎ
+	// どことなく おとうさんに にているわｐ
+	// さあ! この おくには ジムリ-ダ-ｎ
+	// あなたの おとうさんが まっているわ!
 
 PetalburgCity_Gym_Text_17B7C0:: @ 817B7C0
-	.string "Sure, it's fine to make your POKéMON\n"
-	.string "stronger.\p"
-	.string "But what decides the winner?\p"
-	.string "Why, it's the feelings TRAINERS have for\n"
-	.string "their POKéMON.$"
+	.string "포켓몬을 강하게 키우는 것도 좋지만\n"
+	.string "승부의 승패를 정하는 건\n"
+	.string "그 사람의 포켓몬을 생각하는\l"
+	.string "마음이야...!$"
+	// ポケモンを つよく するのも いいけどｐ
+	// しょうぶの ゆくえを きめるのはｎ
+	// そのひと じしんの ポケモンに たいするｌ
+	// きもち なのよね……!
 
 PetalburgCity_Gym_Text_17B844:: @ 817B844
-	.string "This door appears to be locked\n"
-	.string "right now...$"
+	.string "지금 이 문은\n"
+	.string "아직 잠겨 있는 것 같다...$"
+	// いまは まだ この とびらはｎ
+	// とざされて いる ようだ……
 
 PetalburgCity_Gym_Text_17B870:: @ 817B870
-	.string "“SPEED ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "이 앞은 스피드의 방\p"
+	.string "...이라고 쓰여 있다\n"
+	.string "안으로 들어가겠습니까?$"
+	// このさき すばやさの へやｐ
+	// ……と かいてあるｎ
+	// おくに すすみますか?
 
 UnknownString_817B8A8: @ 817B8A8
-	.string "This door appears to be locked\n"
-	.string "right now...$"
+	.string "지금 이 문은\n"
+	.string "아직 잠겨 있는 것 같다...$"
+	// いまは まだ この とびらはｎ
+	// とざされて いる ようだ……
 
 PetalburgCity_Gym_Text_17B8D4:: @ 817B8D4
-	.string "“ACCURACY ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "이 앞은 명중의 방\p"
+	.string "...이라고 쓰여 있다\n"
+	.string "안으로 들어가겠습니까?$"
+	// このさき めいちゅうの へやｐ
+	// ……と かいてあるｎ
+	// おくに すすみますか?
 
 PetalburgCity_Gym_Text_17B90F:: @ 817B90F
-	.string "“ZERO REDUCTION ROOM,” the sign\n"
-	.string "says.\p"
-	.string "Do you want to go through?$"
+	.string "이 앞은 혼란의 방\p"
+	.string "...이라고 쓰여 있다\n"
+	.string "안으로 들어가겠습니까?$"
+	// このさき さがらずの へやｐ
+	// ……と かいてあるｎ
+	// おくに すすみますか?
 
 PetalburgCity_Gym_Text_17B950:: @ 817B950
-	.string "“DEFENSE ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "이 앞은 방어의 방\p"
+	.string "...이라고 쓰여 있다\n"
+	.string "안으로 들어가겠습니까?$"
+	// このさき まもりの へやｐ
+	// ……と かいてあるｎ
+	// おくに すすみますか?
 
 PetalburgCity_Gym_Text_17B98A:: @ 817B98A
-	.string "“RECOVERY ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "이 앞은 회복의 방\p"
+	.string "...이라고 쓰여 있다\n"
+	.string "안으로 들어가겠습니까?$"
+	// このさき かいふくの へやｐ
+	// ……と かいてあるｎ
+	// おくに すすみますか?
 
 PetalburgCity_Gym_Text_17B9C5:: @ 817B9C5
-	.string "“STRENGTH ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "이 앞은 힘의 방\p"
+	.string "...이라고 쓰여 있다\n"
+	.string "안으로 들어가겠습니까?$"
+	// このさき ちからの へやｐ
+	// ……と かいてあるｎ
+	// おくに すすみますか?
 
 PetalburgCity_Gym_Text_17BA00:: @ 817BA00
-	.string "“ONE-HIT KO ROOM,” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "이 앞은 일격의 방\p"
+	.string "...이라고 쓰여 있다\n"
+	.string "안으로 들어가겠습니까?$"
+	// このさき いちげきの へやｐ
+	// ……と かいてあるｎ
+	// おくに すすみますか?
 
 PetalburgCity_Gym_Text_17BA3D:: @ 817BA3D
-	.string "“GYM LEADER'S ROOM\p"
-	.string "“See for yourself what POKéMON await\n"
-	.string "you!” the sign says.\p"
-	.string "Do you want to go through?$"
+	.string "이 앞은 체육관 관장\p"
+	.string "어떤 포켓몬이 기다리고 있는지는\n"
+	.string "자신의 눈으로 확인해라!\p"
+	.string "...라고 쓰여 있다\n"
+	.string "안으로 들어가겠습니까?$"
+	// このさき ジムリ-ダ-ｐ
+	// どんな ポケモンが まっているか はｎ
+	// じぶんの めで たしかめよ!ｐ
+	// ……と かいてあるｎ
+	// おくに すすみますか?
 
 PetalburgCity_Gym_Text_17BAA5:: @ 817BAA5
-	.string "PETALBURG CITY POKéMON GYM$"
+	.string "등화도시 포켓몬체육관$"
+	// トウカシティ ポケモンジム
 
 PetalburgCity_Gym_Text_17BAC0:: @ 817BAC0
-	.string "PETALBURG CITY POKéMON GYM\p"
-	.string "NORMAN'S CERTIFIED TRAINERS:\n"
+	.string "등화도시 포켓몬체육관\p"
+	.string "종길 인정 트레이너!\n"
 	.string "{PLAYER}$"
+	// トウカシティ ポケモンジムｐ
+	// センリ にんてい トレ-ナ-!ｎ
+	// §あ

@@ -1,12 +1,21 @@
 PetalburgCity_House2_Text_17BC4F:: @ 817BC4F
-	.string "NORMAN became our town's new GYM\n"
-	.string "LEADER.\p"
-	.string "I think he called his family over from\n"
-	.string "the JOHTO region.$"
+	.string "이 마을의 새로운\n"
+	.string "체육관 관장이 되신 종길님은\p"
+	.string "성도지방에 살고 있던 가족을\n"
+	.string "이리로 데려오셨나 봐$"
+	// この まちの あたらしいｎ
+	// ジムリ-ダ-に なった センリさんｐ
+	// ジョウトちほうの ごかぞくをｎ
+	// こっちに よびよせた らしいのよね
 
 PetalburgCity_House2_Text_17BCB1:: @ 817BCB1
-	.string "I battled NORMAN once, but, whew,\n"
-	.string "he was way too strong.\p"
-	.string "How would I put it?\p"
-	.string "I just got the feeling that he\n"
-	.string "lives for POKéMON.$"
+	.string "전에 한번 승부해봤었는데\n"
+	.string "역시 종길님은 진짜 강해!\p"
+	.string "뭐랄까 음...\p"
+	.string "“포켓몬을 위해 산다!”\n"
+	.string "는 느낌이 마구마구 느껴져!$"
+	// まえに いちど しょうぶ してみたけどｎ
+	// さすがに センリさんは つよいね!ｐ
+	// なんというか こう……ｐ
+	// 「ポケモン ひとすじに いきる!」ｎ
+	// っていうのを ヒシヒシと かんじたよ!

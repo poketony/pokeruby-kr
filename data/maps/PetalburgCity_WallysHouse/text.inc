@@ -1,72 +1,125 @@
 PetalburgCity_WallysHouse_Text_179805:: @ 8179805
-	.string "You're...\n"
-	.string "Ah, you must be {PLAYER}{KUN}, right?\p"
-	.string "Thank you for playing with WALLY a\n"
-	.string "little while ago.\p"
-	.string "He's been frail and sickly ever\n"
-	.string "since he was a baby.\p"
-	.string "We've sent him to stay with my relatives\n"
-	.string "in VERDANTURF TOWN for a while.\p"
-	.string "The air is a lot cleaner there\n"
-	.string "than it is here.\p"
-	.string "What's that? Where's WALLY?\n"
-	.string "He's already left, our WALLY.\p"
-	.string "I wonder where he could have\n"
-	.string "gotten by now?$"
+	.string "넌...\n"
+	.string "그렇구나 {PLAYER}{K_I} 맞지?\p"
+	.string "아까 민진이를 도와줘서\n"
+	.string "고맙구나...\p"
+	.string "그 애는 태어났을 때부터\n"
+	.string "몸이 별로 안 좋단다\p"
+	.string "그래서 잠깐 잔디마을의\n"
+	.string "친척 집에서\l"
+	.string "신세 좀 지라고 했지\p"
+	.string "거긴 여기보다 훨씬\n"
+	.string "공기가 깨끗한 곳이거든!\p"
+	.string "...그래서 민진이는 어딨냐고? 민진이라면\n"
+	.string "이미 출발했단다\p"
+	.string "지금이면 어디쯤 갔으려나...$"
+	// きみは……ｎ
+	// そうか §あ§お だね?ｐ
+	// さっきは ミツルの あいてを してくれてｎ
+	// ありがとう……ｐ
+	// あのこは うまれた ときからｎ
+	// からだが じょうぶでは なくてねｐ
+	// それで すこしの あいだ シダケタウンのｎ
+	// わたしの しんせきの うちでｌ
+	// あずかってもらう ことに したんだよｐ
+	// あそこは ここよりも ずっとｎ
+	// くうきが きれいな ところ だからね!ｐ
+	// ……で ミツルかい? ミツルならｎ
+	// もう しゅっぱつ していったよｐ
+	// いまごろは どの あたりかなあ……
 
 PetalburgCity_WallysHouse_Text_179975:: @ 8179975
-	.string "I wonder how our WALLY is doing?$"
+	.string "민진이는 잘 있으려나...$"
+	// ミツルは どうしてるかなあ……
 
 PetalburgCity_WallysHouse_Text_179996:: @ 8179996
-	.string "Hi there, {PLAYER}{KUN}!\p"
-	.string "Our WALLY's become very healthy\n"
-	.string "since he went to VERDANTURF TOWN.\p"
-	.string "We owe it all to you!\p"
-	.string "When WALLY left town, you helped\n"
-	.string "him catch a POKéMON, right?\p"
-	.string "I think that made WALLY really\n"
-	.string "happy.\p"
-	.string "Actually, not just WALLY.\n"
-	.string "It made me, his father, happy too.\p"
-	.string "Happy that he's got such a great\n"
-	.string "friend as you.\p"
-	.string "This isn't a bribe or anything, but\n"
-	.string "I'd really like you to have this.$"
+	.string "안녕 {PLAYER}{K_AYA}!\p"
+	.string "민진이는 잔디마을에 가고 나서\n"
+	.string "훨씬 건강해졌단다!\p"
+	.string "모두 네 덕분이야!\p"
+	.string "무엇보다 이 마을을 떠날 때\n"
+	.string "민진이가 포켓몬을 잡는 걸\l"
+	.string "도와줬었지?\p"
+	.string "민진이는 그 일에 대해\n"
+	.string "아주 기뻤다고 하더구나!\p"
+	.string "아니 민진이뿐만이 아니지\n"
+	.string "아버지인 나도 기쁘단다!\p"
+	.string "그 애에게 너 같은\n"
+	.string "상냥한 친구가 생긴 게 말이지!\p"
+	.string "보답이라고 하긴 좀 그렇다만\n"
+	.string "이걸 받아주지 않겠니!$"
+	// やあ §あ§お!ｐ
+	// ミツルは シダケタウンに いってからｎ
+	// すっかり げんきを とりもどしたよ!ｐ
+	// それも みんな きみの おかげさ!ｐ
+	// なにしろ このまちを でるときにｎ
+	// ミツルが ポケモンを つかまえるのをｌ
+	// てつだって くれただろう?ｐ
+	// あのときの ことが ミツルは とってもｎ
+	// うれしかった らしいんだ!ｐ
+	// いや ミツル だけじゃないｎ
+	// ちちおやの わたしも うれしいよ!ｐ
+	// あのこに きみの ようなｎ
+	// やさしい ともだちが できたことが ね!ｐ
+	// そのおれい という わけでは ないけどｎ
+	// これを うけとって くれないか!
 
 PetalburgCity_WallysHouse_Text_179B14:: @ 8179B14
-	.string "If your POKéMON can SURF, you'll be\n"
-	.string "able to go to all sorts of places.$"
+	.string "파도타기를 쓸 수 있게 되면\n"
+	.string "여러 장소에 갈 수 있게 될 거다!$"
+	// なみのりを つかえるように なればｎ
+	// いろんな ばしょに いけるように なるよ!
 
 PetalburgCity_WallysHouse_Text_179B5B:: @ 8179B5B
-	.string "WALLY's coming home soon.\n"
-	.string "I'm looking forward to that.$"
+	.string "곧 민진이가 돌아온단다!\n"
+	.string "기대되는걸...!$"
+	// もうすぐ ミツルが かえってくるぞ!ｎ
+	// たのしみだなあ……!
 
 PetalburgCity_WallysHouse_Text_179B92:: @ 8179B92
-	.string "Oh? You met WALLY in EVER GRANDE\n"
-	.string "CITY?\p"
-	.string "Oh, {PLAYER}{KUN}, don't be silly.\p"
-	.string "He may have gotten healthy, but he\n"
-	.string "can't go somewhere far away like\l"
-	.string "that all by himself.$"
+	.string "에엥!? 그랜드시티에서\n"
+	.string "민진이를 만났다고...?\p"
+	.string "에이 {PLAYER}{K_AYA}-\p"
+	.string "아무리 그 애가 건강해졌다고 해도\n"
+	.string "그렇게 먼 곳까지\l"
+	.string "혼자 갈 수 있을 리가 없잖니...$"
+	// ええっ!? サイユウシティでｎ
+	// ミツルと であった だって……?ｐ
+	// んもう §あ§おってば-ｐ
+	// いくら あのこが げんきに なったからってｎ
+	// そんな とおくの まち までｌ
+	// ひとりで いけるわけ ないよねえ……
 
 PetalburgCity_WallysHouse_Text_179C2C:: @ 8179C2C
-	.string "WALLY was really happy when he told\n"
-	.string "us that he caught a POKéMON.\p"
-	.string "It's been ages since I've seen him\n"
-	.string "smile like that.$"
+	.string "민진이가 포켓몬 잡았다면서\n"
+	.string "엄청 기쁜 듯이 얘기했단다\p"
+	.string "그 애의 그런 미소는 오랜만이었지$"
+	// ミツルが ポケモンを つかまえた ってｎ
+	// すごく うれしそうに はなしていたのｐ
+	// あのこの あんな えがお ひさしぶり
 
 PetalburgCity_WallysHouse_Text_179CA1:: @ 8179CA1
-	.string "Oh, hello, {PLAYER}! We've got\n"
-	.string "something we want you to have.\p"
-	.string "My husband has it, so please have a\n"
-	.string "word with him, dear.$"
+	.string "어머 {PLAYER}{K_AYA}!\n"
+	.string "네게 건네주고 싶은 게 있단다!\p"
+	.string "우리 남편에게 말을 걸어서\n"
+	.string "꼭 받아가 주렴!$"
+	// あら §あさん!ｎ
+	// あなたに わたしたい ものが あるの!ｐ
+	// うちの しゅじんに こえを かけてｎ
+	// ぜひ うけとって くださいな!
 
 PetalburgCity_WallysHouse_Text_179D12:: @ 8179D12
-	.string "I want you to keep this a secret\n"
-	.string "from my husband...\p"
-	.string "But our WALLY left VERDANTURF TOWN\n"
-	.string "without telling anyone.\p"
-	.string "You know, WALLY is frail, but\n"
-	.string "he's surprisingly strong-willed.\p"
-	.string "I'm sure that he'll come back safe\n"
-	.string "and sound one day!$"
+	.string "우리 남편한테는 비밀인데\p"
+	.string "사실 민진이가 잔디마을을\n"
+	.string "멋대로 나가버렸다고 하더구나...\p"
+	.string "그 애는 몸이 약하지만\n"
+	.string "의외로 활기찬 성격이니까\l"
+	.string "반드시 무사히 돌아올 거라고\l"
+	.string "난 믿고 있단다!$"
+	// うちの しゅじんには ないしょ だけどｐ
+	// じつは ミツルったら シダケタウンをｎ
+	// かってに でて いっちゃった らしいの……ｐ
+	// あのこ からだは よわかったけどｎ
+	// あんがい しっかりした せいかく だからｌ
+	// かならず ぶじで かえってくるとｌ
+	// わたしは しんじてるわ!

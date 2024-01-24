@@ -1,17 +1,27 @@
 PetalburgCity_Mart_Text_17BFFD:: @ 817BFFD
-	.string "Even if a POKéMON is weak now,\n"
-	.string "it will grow stronger.\p"
-	.string "The most important thing is love!\n"
-	.string "Love for your POKéMON!$"
+	.string "지금은 약한 포켓몬이라도\n"
+	.string "소중히 키우면 분명 강해질 거야!\p"
+	.string "중요한 건\n"
+	.string "포켓몬을 향한 사랑이란 거지!$"
+	// いまは よわい ポケモンでもｎ
+	// そだててあげれば きっと つよくなる!ｐ
+	// だいじ なのはｎ
+	// ポケモンへの あいじょうよ!
 
 PetalburgCity_Mart_Text_17C06C:: @ 817C06C
-	.string "Do you use REPEL?\n"
-	.string "It keeps POKéMON away, so it's\l"
-	.string "useful when you're in a hurry.$"
+	.string "벌레회피스프레이는 쓰고 있니?\n"
+	.string "그걸 쓰면 포켓몬이 나타나지 않아서\l"
+	.string "서둘러야 할 때 편리하다고!$"
+	// むしよけスプレ- つかってる?ｎ
+	// つかうと ポケモンが よってこないからｌ
+	// いそぐとき べんり なんだぜ!
 
 PetalburgCity_Mart_Text_17C0BC:: @ 817C0BC
-	.string "Do you have any ANTIDOTES with\n"
-	.string "you?\p"
-	.string "If you walk around with a poisoned\n"
-	.string "POKéMON, it will lose HP until it faints.\l"
-	.string "Take some ANTIDOTES with you.$"
+	.string "자네 해독제는 가지고 있나?\p"
+	.string "포켓몬은 독에 걸린 채로\n"
+	.string "걸어다니고 있으면 체력이 줄어들어서\l"
+	.string "쓰러져버리니까 가지고 있으면 좋겠지!$"
+	// きみ どくけし もってるかい?ｐ
+	// ポケモン どくを くらったままｎ
+	// あるいていると たいりょく なくなってｌ
+	// たおれちゃうから もっておくと いいよ!

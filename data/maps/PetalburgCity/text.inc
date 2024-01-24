@@ -1,44 +1,75 @@
 PetalburgCity_Text_16433E:: @ 816433E
-	.string "Where has our WALLY gone?\p"
-	.string "We have to leave for VERDANTURF TOWN\n"
-	.string "very soon...$"
+	.string "우리 민진이는 어디까지\n"
+	.string "놀러 간 걸까...\p"
+	.string "이제 곧 잔디마을로\n"
+	.string "출발해야 할 시간인데...$"
+	// うちの ミツルは どこまでｎ
+	// あそびに いっちゃったの かしら……ｐ
+	// もう そろそろ シダケタウンにｎ
+	// でかける じかん だって いうのに……
 
 PetalburgCity_Text_16438A:: @ 816438A
-	.string "Hiya! Are you maybe...\n"
-	.string "A rookie TRAINER?\p"
-	.string "Do you know what POKéMON TRAINERS\n"
-	.string "do when they reach a new town?\p"
-	.string "They first check what kind of GYM\n"
-	.string "is in the town.$"
+	.string "안녕! 혹시...\n"
+	.string "신참 트레이너야?\p"
+	.string "우리들 포켓몬 트레이너는\n"
+	.string "새로운 마을에 도착하면\p"
+	.string "먼저 그 마을에 어떤 체육관이 있는지\n"
+	.string "확인하는 게 기본이라고!$"
+	// きみ! もしかして……ｎ
+	// トレ-ナ-に なりたて かい?ｐ
+	// ぼくら ポケモン トレ-ナ-はｎ
+	// あたらしい まちに とうちゃく したらｐ
+	// まずは そこに どんな ジムがあるのかｎ
+	// かくにん しておく ものなんだ!
 
 PetalburgCity_Text_164426:: @ 8164426
-	.string "See? This is PETALBURG CITY's GYM.$"
+	.string "자 여기가 등화도시의 체육관이야!$"
+	// ほら ここが トウカシティの ジムさ!
 
 PetalburgCity_Text_164449:: @ 8164449
-	.string "This is the GYM's sign. Look for it\n"
-	.string "whenever you're looking for a GYM.$"
+	.string "이게 체육관의 간판이니까\n"
+	.string "모양을 잘 기억해 두면 좋겠지!$"
+	// これが ジムの かんばん だからｎ
+	// かたちを よく おぼえておくと いいね!
 
 PetalburgCity_Text_164490:: @ 8164490
-	.string "My face is reflected in the water.\p"
-	.string "It's a shining grin full of hope...\p"
-	.string "Or it could be a look of somber silence\n"
-	.string "struggling with fear...\p"
-	.string "What do you see reflected in your face?$"
+	.string "내 얼굴이 수면에 비치고 있어...\p"
+	.string "희망에 가득 차\n"
+	.string "반짝이는 미소...\p"
+	.string "불안과 맞서 싸우는\n"
+	.string "조용한 침묵...\p"
+	.string "네 얼굴은 어떻게 비치고 있어?$"
+	// ぼくの かおが すいめんに うつってる……ｐ
+	// きぼうに あふれたｎ
+	// かがやく えがお……ｐ
+	// ふあんと たたかうｎ
+	// しずかな ちんもく……ｐ
+	// きみの かおは どんなふうに うつってる?
 
 PetalburgCity_Text_16453F:: @ 816453F
-	.string "Let's say you have six POKéMON.\n"
-	.string "If you catch another one...\p"
-	.string "It is automatically sent to a STORAGE\n"
-	.string "BOX over a PC connection.$"
+	.string "포켓몬을 이미 6마리 데리고 있을 때\n"
+	.string "새로운 포켓몬을 잡는다\p"
+	.string "그러면 PC 통신에 의해 자동적으로\n"
+	.string "박스에 보내지게 되지!$"
+	// ポケモンを すでに 6ぴき もってるときにｎ
+	// あたらしく ポケモンを つかまえるｐ
+	// すると パソコン つうしんで じどうてきにｎ
+	// ボックスに おくられるのだよ!
 
 PetalburgCity_Text_1645BB:: @ 81645BB
-	.string "PETALBURG CITY POKéMON GYM\n"
-	.string "LEADER: NORMAN\l"
-	.string "“A man in pursuit of power!”$"
+	.string "등화도시 포켓몬체육관\n"
+	.string "관장 종길\l"
+	.string "강함을 추구하는 남자!$"
+	// トウカ シティ ポケモンジムｎ
+	// リ-ダ- センリｌ
+	// つよさを おいもとめる おとこ!
 
 PetalburgCity_Text_164602:: @ 8164602
-	.string "PETALBURG CITY\n"
-	.string "“Where people mingle with nature.”$"
+	.string "여기는 등화도시\n"
+	.string "자연과 사람이 어우러지는 마을$"
+	// ここは トウカ シティｎ
+	// しぜんと ひとが ふれあう まち
 
 PetalburgCity_Text_164634:: @ 8164634
-	.string "WALLY'S HOUSE$"
+	.string "“민진의 집”$"
+	// 「ミツルの いえ」
