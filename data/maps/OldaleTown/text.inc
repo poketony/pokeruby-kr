@@ -1,55 +1,85 @@
 OldaleTown_Text_16AEC0:: @ 816AEC0
-	.string "I want to take a rest, so I'm saving my\n"
-	.string "progress.$"
+	.string "잠시 쉬고 싶어서\n"
+	.string "리포트를 작성하고 있어$"
+	// ちょっと ひとやすみ したいからｎ
+	// レポ-ト かいてるの
 
 OldaleTown_Text_16AEF2:: @ 816AEF2
-	.string "Hi!\n"
-	.string "I work at a POKéMON MART.\p"
-	.string "Can I get you to come with me?$"
+	.string "난 프렌들리숍의 점원!\p"
+	.string "너! 거기 너!\n"
+	.string "잠깐 따라와 봐!$"
+	// おれ フレンドリィショップの てんいん!ｐ
+	// きみ! きみ!ｎ
+	// ちょっと ついてきて!
 
 OldaleTown_Text_16AF2F:: @ 816AF2F
-	.string "This is a POKéMON MART.\n"
-	.string "Just look for our blue roof.\p"
-	.string "We sell a variety of goods including\n"
-	.string "POKé BALLS for catching POKéMON.\p"
-	.string "Here, I'd like you to have this as a\n"
-	.string "promotional item.$"
+	.string "여기는 프렌들리숍!\n"
+	.string "파란 지붕이 특징이지!\p"
+	.string "포켓몬을 잡기 위한 볼이나\n"
+	.string "다양한 상품을 팔고 있어!\p"
+	.string "너에게는 서비스로\n"
+	.string "이걸 줄게!$"
+	// ここが フレンドリィショップ!ｎ
+	// あおい やねが めじるし なのさ!ｐ
+	// ポケモンを つかまえる ボ-ルとかｎ
+	// いろんな グッズを うってるよ!ｐ
+	// キミには サ-ビスとしてｎ
+	// これを あげよう!
 
 OldaleTown_Text_16AFE1:: @ 816AFE1
-	.string "A POTION can be used anytime, so it's\n"
-	.string "even more useful than a POKéMON CENTER\l"
-	.string "in certain situations.$"
+	.string "어떤 때라도 쓸 수 있는\n"
+	.string "상처약은 경우에 따라서\l"
+	.string "포켓몬센터보다 도움이 돼$"
+	// どんな ときでも つかえるｎ
+	// キズぐすりは ばあいに よってはｌ
+	// ポケモンセンタ-より たよりに なるからね
 
 OldaleTown_Text_16B045:: @ 816B045
-	.string "Aaaaah! Wait!\n"
-	.string "Please don't come in here.\p"
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "아--!\n"
+	.string "이쪽에 들어오지 말아줘!\p"
+	.string "희귀한 포켓몬의 발자국을\n"
+	.string "발견했단 말야!\l"
+	.string "스케치가 끝날 때까지 기다려줘$"
+	// あ--!ｎ
+	// こっちに はいらないで くれよ!ｐ
+	// めずらしい ポケモンの あしあとをｎ
+	// はっけん したんだ!ｌ
+	// スケッチが おわるまで まっててくれよ
 
 OldaleTown_Text_16B0CC:: @ 816B0CC
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "희귀한 포켓몬의 발자국을\n"
+	.string "발견했단 말야!\l"
+	.string "스케치가 끝날 때까지 기다려줘$"
+	// めずらしい ポケモンの あしあとをｎ
+	// はっけん したんだ!ｌ
+	// スケッチが おわるまで まっててくれよ
 
 OldaleTown_Text_16B12A:: @ 816B12A
-	.string "I finished sketching the footprints of\n"
-	.string "a rare POKéMON.\p"
-	.string "But it turns out they were only my\n"
-	.string "own footprints...$"
+	.string "완성한 희귀한\n"
+	.string "포켓몬의 발자국 스케치\l"
+	.string "잘 보니까 내 발자국이었어...$"
+	// かんせい させた めずらしいｎ
+	// ポケモンの あしあとの スケッチｌ
+	// よくみたら じぶんの あしあと だったよ……
 
 OldaleTown_Text_16B196:: @ 816B196
-	.string "MAY: {PLAYER}{KUN}!\n"
-	.string "Over here!\l"
-	.string "Let's hurry home!$"
+	.string "봄이: {PLAYER}{K_AYA}!\n"
+	.string "이쪽이야 이쪽!\l"
+	.string "빨리 돌아가자!$"
+	// ハルカ『§あ§お!ｎ
+	// こっち こっち!ｌ
+	// はやく かえろうよ!
 
 OldaleTown_Text_16B1BE:: @ 816B1BE
-	.string "BRENDAN: I'm heading back to my dad's\n"
-	.string "LAB now.\l"
-	.string "{PLAYER}, you should hustle back, too.$"
+	.string "휘웅: 난 먼저\n"
+	.string "연구소로 돌아갈 테니까\l"
+	.string "{PLAYER}도 빨리 와$"
+	// ユウキ『オレ さきにｎ
+	// けんきゅうじょに もどるからｌ
+	// §あも はやく こいよな
 
 OldaleTown_Text_16B20E:: @ 816B20E
-	.string "OLDALE TOWN\n"
-	.string "“Where things start off scarce.”$"
+	.string "여기는 고도마을\n"
+	.string "무언가가 희미하게 시작되는 곳$"
+	// ここは コトキ タウンｎ
+	// なにかが かすかに はじまる ところ

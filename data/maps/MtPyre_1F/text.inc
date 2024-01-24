@@ -1,19 +1,31 @@
 MtPyre_1F_Text_196151:: @ 8196151
-	.string "All sorts of beings wander the slopes\n"
-	.string "of MT. PYRE...\p"
-	.string "There is no telling what may happen.\n"
-	.string "Take this. It's for your own good.$"
+	.string "이 송화산에는\n"
+	.string "다양한 존재가 떠돌고 있지...\p"
+	.string "그래서 무슨 일이 일어날지 모른다네\n"
+	.string "만약을 위해 이걸 가지고 가게$"
+	// この おくりびやま にはｎ
+	// いろんな ものが さまよっておる……ｐ
+	// なにが おきるか わからんｎ
+	// ねんのため これを もっていきなされ
 
 MtPyre_1F_Text_1961CE:: @ 81961CE
-	.string "Have a POKéMON hold that\n"
-	.string "CLEANSE TAG.\p"
-	.string "It will help ward off wild POKéMON.$"
+	.string "순결의부적을\n"
+	.string "포켓몬에게 지니게 하게\p"
+	.string "그럼 야생 포켓몬이\n"
+	.string "별로 안 튀어나오게 될 게야$"
+	// きよめのおふだ をなｎ
+	// ポケモンに もたせて おくｐ
+	// すると やせいの ポケモンがｎ
+	// あんまり とびだして こなくなるぞよ
 
 MtPyre_1F_Text_196218:: @ 8196218
-	.string "Did you come to pay your respect\n"
-	.string "to the spirits of departed POKéMON?\p"
-	.string "You must care for your POKéMON a lot.$"
+	.string "너도 떠나보낸 포켓몬을 보러 왔니?\n"
+	.string "포켓몬을 생각하는 마음이 깊구나$"
+	// あなたも おはか まいりに きたの?ｎ
+	// ずいぶんと ポケモン おもい なのね
 
 MtPyre_1F_Text_196283:: @ 8196283
-	.string "This is the final resting place of my\n"
-	.string "ZIGZAGOON. I cherished it...$"
+	.string "여기엔 내가 소중히 키우던\n"
+	.string "지그제구리가 편히 잠들어 있다...$"
+	// ここには ぼくが たいせつに していたｎ
+	// ジグザグマが やすらかに ねむってる……

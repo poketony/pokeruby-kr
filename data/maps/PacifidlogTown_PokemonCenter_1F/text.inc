@@ -1,17 +1,27 @@
 PacifidlogTown_PokemonCenter_1F_Text_178E47:: @ 8178E47
-	.string "What color is your TRAINER'S CARD?\n"
-	.string "Mine's copper!$"
+	.string "너의 트레이너카드는 무슨 색이야?\n"
+	.string "나는 코퍼야!$"
+	// きみの トレ-ナ-カ-ドは なにいろ?ｎ
+	// あたしのは カッパ- なんだよ!
 
 PacifidlogTown_PokemonCenter_1F_Text_178E79:: @ 8178E79
-	.string "PACIFIDLOG TOWN floats on top of\n"
-	.string "a colony of CORSOLA.\p"
-	.string "If I told you that, would you believe me?$"
+	.string "황금마을은 코산호들이\n"
+	.string "모여 있는 곳 위에 떠 있어\p"
+	.string "...라고 말하면\n"
+	.string "넌 믿을 거야?$"
+	// キナギタウンって サニ-ゴたちのｎ
+	// あつまりの うえに うかんでいるのｐ
+	// ……なんて いったらｎ
+	// あなたは しんじるかしら?
 
 PacifidlogTown_PokemonCenter_1F_Text_178ED9:: @ 8178ED9
-	.string "The ancestors of the people in\n"
-	.string "PACIFIDLOG were said to have been\l"
-	.string "born on boats and then lived and died \l"
-	.string "aboard them.\p"
-	.string "I understand that they lived that way\n"
-	.string "because they were searching for\l"
-	.string "something.$"
+	.string "황금마을 사람들의 선조는\n"
+	.string "배 위에서 태어나\l"
+	.string "배 위에서 죽었다고 하지\p"
+	.string "뭔가를 찾기 위해\n"
+	.string "그런 삶을 살았던 모양일세$"
+	// キナギで くらす ひとびとの せんぞはｎ
+	// ふねの うえで うまれてｌ
+	// そして ふねの うえで しんだ というｐ
+	// なにかを さがすためにｎ
+	// そんな いきかたを していたそうじゃ

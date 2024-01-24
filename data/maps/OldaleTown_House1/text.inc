@@ -1,7 +1,13 @@
 OldaleTown_House1_Text_17476D:: @ 817476D
-	.string "When a POKéMON battle starts, the one\n"
-	.string "at the left of the list goes out first.\p"
-	.string "So, when you get more POKéMON in your\n"
-	.string "party, try switching around the order\l"
-	.string "of your POKéMON.\p"
-	.string "It could give you an advantage.$"
+	.string "포켓몬 승부를 할 때는\n"
+	.string "지닌 포켓몬 리스트 왼쪽에 있는\l"
+	.string "포켓몬이 나가서 싸워\p"
+	.string "그래서 데리고 걷는 포켓몬이 많아졌을 경우\n"
+	.string "포켓몬의 순서를 바꿔 놓으면\l"
+	.string "승부가 유리해질 수도 있어!$"
+	// ポケモンしょうぶの ときｎ
+	// ポケモンの リストの ひだりに いるｌ
+	// ポケモンが とびだして たたかうのｐ
+	// だから つれあるく ポケモンが ふえてきたらｎ
+	// ポケモンの じゅんばんを かえるとｌ
+	// しょうぶが ゆうりに なるかも!

@@ -1,63 +1,97 @@
 MtPyre_2F_Text_1962C6:: @ 81962C6
-	.string "LUKE: We're here on a dare.\p"
-	.string "Heheh, if I show her how cool I am,\n"
-	.string "she'll fall for me. I know it!\p"
-	.string "I know! I'll cream you and show her\n"
-	.string "how cool I am!$"
+	.string "테르: 좋아! 담력 훈련을 하는 거야!\n"
+	.string "멋진 내 모습을 보면\l"
+	.string "여자 친구가 나한테 더 반할 테니까!\p"
+	.string "그래! 널 쓰러뜨리고\n"
+	.string "멋진 모습을 보여주겠어!$"
+	// テル『きもだめし するんだ!ｎ
+	// ぼくの かっこいい ところ みればｌ
+	// かのじょ もっと ほれるからね!ｐ
+	// そうだ! きみを たおしてｎ
+	// かっこいい ところ みせちゃおう!
 
 MtPyre_2F_Text_196358:: @ 8196358
-	.string "LUKE: Whoopsie!$"
+	.string "테르: 어이쿠-!$"
+	// テル『あっちゃ-
 
 MtPyre_2F_Text_196368:: @ 8196368
-	.string "LUKE: Well, we lost but that's okay!\n"
-	.string "I'm right here by your side.\l"
-	.string "We'll make it through this dare!$"
+	.string "테르: 져버렸지만 괜찮아!\n"
+	.string "내가 있잖아!\l"
+	.string "담력 훈련 같은 건 아무것도 아니라고!$"
+	// テル『まけちゃったけど だいじょうぶ!ｎ
+	// ぼくが いるからさｌ
+	// きもだめし なんて へっちゃら だよ!
 
 MtPyre_2F_Text_1963CB:: @ 81963CB
-	.string "LUKE: If you want to take me on, bring\n"
-	.string "some more POKéMON.\p"
-	.string "If you don't, I won't be able to show\n"
-	.string "off how cool I am to my girl!$"
+	.string "테르: 나랑 승부하려면\n"
+	.string "포켓몬을 더 데려오라고!\p"
+	.string "더 데려와야 내가 여자 친구 앞에서\n"
+	.string "멋진 모습을 보여줄 수 있으니까!$"
+	// テル『ぼくと しょうぶ するならｎ
+	// もっと ポケモン つれてきなよ!ｐ
+	// そうでないと ぼく かのじょの まえでｎ
+	// かっこいい ところ みせちゃうからさ!
 
 MtPyre_2F_Text_196449:: @ 8196449
-	.string "DEZ: I came here on a dare with my\n"
-	.string "boyfriend.\p"
-	.string "It's really scary, but I'm with my\n"
-	.string "boyfriend. It's okay.\p"
-	.string "I know! I'll get my boyfriend to look\n"
-	.string "cool by beating you!$"
+	.string "마코: 남자 친구랑 담력 훈련을 하러 왔어\n"
+	.string "엄청 무섭지만\l"
+	.string "남자 친구가 있으니까 괜찮아!\p"
+	.string "그래! 널 쓰러뜨리는\n"
+	.string "남자 친구의 멋진 모습을 보여줄게!$"
+	// マコ『かれしと きもだめしに きたのｎ
+	// すっごく こわいけどｌ
+	// かれしが いるから だいじょうぶ!ｐ
+	// そうだ! あなたを たおすｎ
+	// かれしの かっこいい ところ みせちゃう!
 
 MtPyre_2F_Text_1964EB:: @ 81964EB
-	.string "DEZ: Waaaah! I'm scared!$"
+	.string "마코: 아-앙 무서워-!$"
+	// マコ『あ-ん こわ-い!
 
 MtPyre_2F_Text_196504:: @ 8196504
-	.string "DEZ: We're lovey-dovey, so we don't\n"
-	.string "care if we lose!$"
+	.string "마코: 우리들은 러브러브니까\n"
+	.string "져도 괜찮아!$"
+	// マコ『あたしたち ラブラブだからｎ
+	// まけても へいき なんだもん!
 
 MtPyre_2F_Text_196539:: @ 8196539
-	.string "DEZ: If you want to challenge us, you\n"
-	.string "should bring at least two POKéMON.\p"
-	.string "My boyfriend's strong.\n"
-	.string "Just one POKéMON won't do at all.$"
+	.string "마코: 우리랑 승부하고 싶으면\n"
+	.string "포켓몬이 적어도 두 마리는 있어야 해\p"
+	.string "우리 자기는 엄청 강하거든\n"
+	.string "한 마리 가지고는 어림도 없어$"
+	// マコ『あたしたちと たたかいたいならｎ
+	// せめて 2ひきは ポケモン いないとｐ
+	// あたしの かれし つよいんだからｎ
+	// いっぴきじゃ はなしに ならないわ
 
 MtPyre_2F_Text_1965BB:: @ 81965BB
-	.string "Memories of my darling SKITTY...\n"
-	.string "My eyes overflow thinking about it.$"
+	.string "귀여웠던 에나비와의 추억...\n"
+	.string "떠올리기만 해도 눈물이 흘러...$"
+	// かわいかった エネコとの おもいで……ｎ
+	// おもいだすだけで なみだが あふれる……
 
 MtPyre_2F_Text_196600:: @ 8196600
-	.string "Ooch, ouch... There are holes in the\n"
-	.string "ground here and there.\p"
-	.string "I didn't notice and took a tumble from\n"
-	.string "the floor above.$"
+	.string "아야야야야... 바닥의 여기저기에\n"
+	.string "구멍이 뚫려 있는데 못 봐서\l"
+	.string "아저씨 위에서 여기로 떨어져버렸어$"
+	// アイタタタ…… ゆかの そこかしこにｎ
+	// あなが あいているのに きづかないでｌ
+	// おじさん うえから おちてしまったよ
 
 MtPyre_2F_Text_196674:: @ 8196674
-	.string "Hey! Are you searching for POKéMON?\n"
-	.string "You came along after me! You're rude!$"
+	.string "너도 포켓몬을 찾으러 온 건가?\n"
+	.string "나중에 온 주제에 건방지군!$"
+	// おまえも ポケモン さがしに きたのか?ｎ
+	// あとから きた くせに なまいきだ!
 
 MtPyre_2F_Text_1966BE:: @ 81966BE
-	.string "Ayieeeeh!\n"
-	.string "I'm sorry, forgive me, please!$"
+	.string "흐에에에에에엑!\n"
+	.string "용서해 주십쇼-!$"
+	// ふええええええっ!ｎ
+	// ゆるして ください-っ!
 
 MtPyre_2F_Text_1966E7:: @ 81966E7
-	.string "People don't come here often, so\n"
-	.string "I thought there'd be rare POKéMON.$"
+	.string "거의 사람이 드나들지 않는 산이니\n"
+	.string "희귀한 포켓몬이 있을 것 같았어$"
+	// めったに ひとが はいらない やま だからｎ
+	// めずらしい ポケモンが いると おもってさ

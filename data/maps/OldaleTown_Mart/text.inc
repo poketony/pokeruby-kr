@@ -1,13 +1,21 @@
 OldaleTown_Mart_Text_174A8A:: @ 8174A8A
-	.string "The clerk says they're all sold out.\n"
-	.string "I can't buy any POKé BALLS.$"
+	.string "물건들이 다 팔려서\n"
+	.string "몬스터볼을 살 수가 없어...$"
+	// なんでも うりきれ らしくてｎ
+	// モンスタ-ボ-ル かえないの……
 
 OldaleTown_Mart_Text_174ACB:: @ 8174ACB
-	.string "I'm going to buy a bunch of POKé BALLS\n"
-	.string "and catch a bunch of POKéMON!$"
+	.string "엄청 몬스터볼을 많이 사서\n"
+	.string "엄청 포켓몬을 많이 잡을 거야!$"
+	// どんどん モンスタ-ボ-ル かってｎ
+	// どんどん ポケモン つかまえちゃうわよ!
 
 OldaleTown_Mart_Text_174B10:: @ 8174B10
-	.string "If a POKéMON gets hurt and loses its HP\n"
-	.string "and faints, it won't be able to battle.\p"
-	.string "To prevent your POKéMON from fainting,\n"
-	.string "restore its HP with a POTION.$"
+	.string "포켓몬은 체력이 약해지면\n"
+	.string "싸울 힘도 없어져\p"
+	.string "그럴 때는 상처약을 써서\n"
+	.string "체력을 회복시켜줘야 돼!$"
+	// ポケモンは たいりょくが なくなるとｎ
+	// たたかう げんきも なくなるｐ
+	// そんな ときは キズぐすりを つかってｎ
+	// たいりょくを かいふく してあげるんだ!

@@ -1,27 +1,37 @@
 MtPyre_3F_Text_19672B:: @ 819672B
-	.string "The rich atmosphere of the mountain\n"
-	.string "has elevated my psychic power!\p"
-	.string "A mere child like you...\n"
-	.string "You dream of winning?$"
+	.string "영험하고 신통한 산의 힘으로\n"
+	.string "사이코 파워가 업한 나를\l"
+	.string "어린애인 네가 이길 수 있을까!?$"
+	// れいげん あらたかな やまの ちからでｎ
+	// サイコパワ-の アップした わたしにｌ
+	// こどもの おまえが かてるかな!?
 
 MtPyre_3F_Text_19679D:: @ 819679D
-	.string "I drown in self-pity...$"
+	.string "업... 업...$"
+	// アップ アップ……
 
 MtPyre_3F_Text_1967B5:: @ 81967B5
-	.string "My psychic powers have surely\n"
-	.string "grown several times, but...$"
+	.string "나의 사이코 파워는 분명히\n"
+	.string "강해졌을 텐데...$"
+	// わたしの サイコパワ-は かくじつにｎ
+	// つよく なっている はずなのに……
 
 MtPyre_3F_Text_1967EF:: @ 81967EF
-	.string "Ahahahaha!\p"
-	.string "This is no place for children, least\n"
-	.string "of all you!$"
+	.string "오호호호홋!\p"
+	.string "여기는 너 같은 어린애가\n"
+	.string "올 곳이 아니란다!$"
+	// おほほほほっ!ｐ
+	// ここは あなたの ような こどもがｎ
+	// くる ばしょ では ないのよっ!
 
 MtPyre_3F_Text_19682B:: @ 819682B
-	.string "I lost that cleanly...$"
+	.string "깨끗이 졌어...!$"
+	// あっさり まけたわっ……!
 
 MtPyre_3F_Text_196842:: @ 8196842
-	.string "This means my training is still not\n"
-	.string "enough...\p"
-	.string "I've got to keep working toward the\n"
-	.string "summit...\p"
-	.string "Go, me!$"
+	.string "아직 수행이 부족하구나...\n"
+	.string "정상을 노리겠어...!\p"
+	.string "파이팅! 나!$"
+	// まだまだ しゅぎょうが たりないのね……ｎ
+	// さんちょうを めざすわよ……!ｐ
+	// ファイト! わたし!

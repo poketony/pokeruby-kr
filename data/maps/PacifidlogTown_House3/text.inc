@@ -1,27 +1,43 @@
 PacifidlogTown_House3_Text_17940E:: @ 817940E
-	.string "Hello, TRAINER. Would you do me a favor\n"
-	.string "and trade POKéMON with me?\p"
-	.string "Living in PACIFIDLOG, I can only catch\n"
-	.string "certain kinds of POKéMON.\p"
-	.string "{STR_VAR_1}? Do you have one?\n"
-	.string "I'll trade you my {STR_VAR_2} for it.$"
+	.string "트레이너님! 괜찮다면\n"
+	.string "나랑 포켓몬 교환하자!\p"
+	.string "황금마을에만 있으면 잡을 수 있는\n"
+	.string "포켓몬이 한정되어 있거든!\p"
+	.string "혹시 {STR_VAR_1} 없어?\n"
+	.string "난 {STR_VAR_2}{K_EULREUL} 줄게!$"
+	// トレ-ナ-さん! よかったらｎ
+	// ポケモンを こうかん して くださいなｐ
+	// キナギだけに いると つかまえられるｎ
+	// ポケモンが かぎられるのよね!ｐ
+	// あなた §い もってない?ｎ
+	// あたしは §うを あげるわ!
 
 PacifidlogTown_House3_Text_1794C4:: @ 81794C4
-	.string "Wow!\n"
-	.string "This {STR_VAR_1} is so fluffy!$"
+	.string "와아!\n"
+	.string "{STR_VAR_1} 정말 푹신푹신하다!$"
+	// わあ!ｎ
+	// §い って ふわふわ してるのね!
 
 PacifidlogTown_House3_Text_1794DF:: @ 81794DF
-	.string "That's no {STR_VAR_1}.$"
+	.string "그거 {STR_VAR_1} 아니잖아$"
+	// それ §い と ちがうわよ
 
 PacifidlogTown_House3_Text_1794ED:: @ 81794ED
-	.string "I'm a little disappointed...$"
+	.string "조금 실망했어...$"
+	// ちょっと がっかり……
 
 PacifidlogTown_House3_Text_17950A:: @ 817950A
-	.string "Since we traded, you and me,\n"
-	.string "we're friends, aren't we?$"
+	.string "이렇게 포켓몬 교환을 했으니\n"
+	.string "너랑 난 이제 친구네!$"
+	// こうやって ポケモン こうかん したらｎ
+	// あなたと あたし もう ともだち よね!
 
 PacifidlogTown_House3_Text_179541:: @ 8179541
-	.string "Is that a POKéDEX?\p"
-	.string "Did you get to meet a lot of different\n"
-	.string "POKéMON?\p"
-	.string "I wish I was like you.$"
+	.string "그거 포켓몬 도감이야?\p"
+	.string "그 말은 너 많은 포켓몬이랑\n"
+	.string "만났다는 소리 아니야?\p"
+	.string "그거 정말 부러워!$"
+	// それって ポケモンずかん?ｐ
+	// それって あなた たくさんのｎ
+	// ポケモンと であった ってこと?ｐ
+	// それって すっごい うらやましい!

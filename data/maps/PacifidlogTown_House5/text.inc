@@ -1,14 +1,21 @@
 PacifidlogTown_House5_Text_179718:: @ 8179718
-	.string "I can't see MIRAGE ISLAND today...$"
+	.string "오늘은 환상섬이 보이지 않는구먼...$"
+	// きょうは マボロシじま みえんのう……
 
 PacifidlogTown_House5_Text_17973B:: @ 817973B
-	.string "Oh! Oh my!\n"
-	.string "I can see MIRAGE ISLAND today!$"
+	.string "이 이럴 수가!\n"
+	.string "오늘은 환상섬이 보이는구먼!$"
+	// なっ なんと!ｎ
+	// きょうは マボロシじま みえるのじゃ!
 
 PacifidlogTown_House5_Text_179765:: @ 8179765
-	.string "MIRAGE ISLAND...\p"
-	.string "It must become visible and invisible\n"
-	.string "depending on the weather conditions\l"
-	.string "that make mirages appear.\p"
-	.string "Or is it really appearing and\n"
-	.string "disappearing?$"
+	.string "환상섬...\n"
+	.string "아마도 신기루 때문에\l"
+	.string "보였다 안 보였다 하는 것 같아\p"
+	.string "아니 어쩌면 진짜로\n"
+	.string "나타났다 사라졌다 하는 건가...?$"
+	// マボロシじま……ｎ
+	// おそらく しんきろうの かんけいでｌ
+	// みえたり みえなかったり するんだろうｐ
+	// いや ひょっとしたら ほんとうにｎ
+	// あらわれたり きえたり しているのか……?
