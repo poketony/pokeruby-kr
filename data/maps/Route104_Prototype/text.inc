@@ -1,115 +1,117 @@
 Route104_Prototype_Text_19AD9B:: @ 819AD9B
-	.string "Oh? You look like a good TRAINER.\n"
-	.string "Will you look at my POKéMON?$"
+	.string "실력 좋아 보이는 트레이너군요\n"
+	.string "제 포켓몬 보실래요?$"
 
 Route104_Prototype_Text_19ADDA:: @ 819ADDA
-	.string "I'm not good enough for you.$"
+	.string "저는 당신에게\n"
+    .string "충분하지 않았군요...$"
 
 Route104_Prototype_Text_19ADF7:: @ 819ADF7
-	.string "I enjoyed our battle very much.\n"
-	.string "Please battle with me some other time.$"
+	.string "즐거운 배틀이었어요!\n"
+	.string "시간이 된다면 언제든지 다시 해요!$"
 
 Route104_Prototype_Text_19AE3E:: @ 819AE3E
-	.string "Go!\n"
-	.string "Go, our POKéMON!$"
+	.string "가랏!\n"
+	.string "우리의 포켓몬들!$"
 
 Route104_Prototype_Text_19AE53:: @ 819AE53
-	.string "Oh... We couldn't win.$"
+	.string "이런... 이길 수 없었어...$"
 
 Route104_Prototype_Text_19AE6A:: @ 819AE6A
-	.string "Did it surprise you that two POKéMON\n"
-	.string "battled at the same time?$"
+	.string "포켓몬 두 마리가 동시에\n"
+	.string "배틀해서 놀라지 않았어?$"
 
 Route104_Prototype_Text_19AEA9:: @ 819AEA9
-	.string "You can't battle with us if you have\n"
-	.string "only one POKéMON.\l"
-	.string "Why? Because we're strong!$"
+	.string "포켓몬이 1마리밖에 없다면\n"
+	.string "우리와 승부할 수 없어!\l"
+	.string "왜냐면 우린 강하니까!$"
 
 Route104_Prototype_Text_19AEFB:: @ 819AEFB
-	.string "Hey, hey! This is my first battle in\n"
-	.string "a while. I'll give it my all!$"
+	.string "이봐! 이건 내 첫 배틀이라고\n"
+	.string "그러니 최선을 다하겠어!$"
 
 Route104_Prototype_Text_19AF3E:: @ 819AF3E
-	.string "But I gave it my all...$"
+	.string "최선을 다했지만...$"
 
 Route104_Prototype_Text_19AF56:: @ 819AF56
-	.string "You're far too strong!\n"
-	.string "You must be a great TRAINER!$"
+	.string "넌 너무 강해!\n"
+	.string "훌륭한 트레이너가 될 것 같은걸?$"
 
 Route104_Prototype_Text_19AF8A:: @ 819AF8A
-	.string "My POKéMON are extremely cute and\n"
-	.string "extremely strong.\l"
-	.string "Please allow me to show you.$"
+	.string "제 포켓몬은 정말 귀엽고\n"
+	.string "정말 강하답니다\l"
+	.string "당신에게도 보여드리도록 하죠$"
 
 Route104_Prototype_Text_19AFDB:: @ 819AFDB
-	.string "I must concede defeat.\n"
-	.string "After all, you are strong.$"
+	.string "패배를 인정하죠\n"
+	.string "당신은 정말로 강하군요$"
 
 Route104_Prototype_Text_19B00D:: @ 819B00D
-	.string "The next time we meet, I will have raised\n"
-	.string "my POKéMON much more.\p"
-	.string "Don't expect mercy then!$"
+	.string "다음에 만났을 때는\n"
+	.string "포켓몬을 더 키울 겁니다\p"
+	.string "그때는 봐주지 않겠어요$"
 
 Route104_Prototype_Text_19B066:: @ 819B066
-	.string "We HIKERS are always full of energy!\n"
-	.string "My POKéMON are also full of energy, too.\l"
-	.string "We're always itching for a battle!$"
+	.string "등산가는 언제나 풀-에너지!\n"
+	.string "내 포켓몬들도 풀-에너지!\l"
+	.string "포켓몬 승부를 기다리고 있었다!$"
 
 Route104_Prototype_Text_19B0D7:: @ 819B0D7
-	.string "We ran out of energy...$"
+	.string "에너지를 다 써버렸어...$"
 
 Route104_Prototype_Text_19B0EF:: @ 819B0EF
-	.string "Wahahah! Sure, we lost!\n"
-	.string "But we had a great battle, didn't we?\l"
-	.string "We're satisfied with that!$"
+	.string "와하하! 져버렸구먼!\n"
+	.string "하지만 대단한 승부였구먼\l"
+	.string "만족했다!$"
 
 Route104_Prototype_Text_19B148:: @ 819B148
-	.string "You look like a strong TRAINER,\n"
-	.string "but can you beat us?$"
+	.string "강해 보이지만...\n"
+	.string "우리를 이길 수 있을까?$"
 
 Route104_Prototype_Text_19B17D:: @ 819B17D
-	.string "Waaah!\n"
-	.string "We lost!$"
+	.string "우와!\n"
+	.string "져버렸다...$"
 
 Route104_Prototype_Text_19B18D:: @ 819B18D
-	.string "If two POKéMON can battle at the same\n"
-	.string "time, all sorts of new things can happen.$"
+	.string "포켓몬 두 마리가 동시에 배틀하면\n"
+	.string "여러 새로운 상황이 생겨나죠!$"
 
 Route104_Prototype_Text_19B1DD:: @ 819B1DD
-	.string "Do you only have one POKéMON that can\n"
-	.string "battle?\p"
-	.string "Then we can't battle with you yet.$"
+	.string "포켓몬을 1마리밖에\n"
+	.string "가지고 있지 않다면\p"
+	.string "우리와 배틀할 수 없어!$"
 
 Route104_Prototype_Text_19B22E:: @ 819B22E
-	.string "Have you tried beating all the other\n"
-	.string "TRAINERS in battle?$"
+	.string "다른 트레이너들과 싸워서\n"
+	.string "모두 이겨봤나요?$"
 
 Route104_Prototype_Text_19B267:: @ 819B267
-	.string "Thanks for coming today!\p"
-	.string "I hope you're looking forward to this\n"
-	.string "game's release!$"
+	.string "오늘 와주셔서 감사해요!\p"
+	.string "이 게임의 발매를\n"
+	.string "기대하시길 바라겠습니다!$"
 
 Route104_Prototype_Text_19B2B6:: @ 819B2B6
-	.string "Huh? Did you battle with all the\n"
-	.string "TRAINERS already?$"
+	.string "음? 이미 다른 트레이너들과\n"
+	.string "다 싸워보셨나요?$"
 
 Route104_Prototype_Text_19B2E9:: @ 819B2E9
-	.string "Thank you for coming today!\p"
-	.string "I hope you're looking forward to this\n"
-	.string "game's release!$"
+	.string "오늘 와주셔서 감사해요!\p"
+	.string "이 게임의 발매를\n"
+	.string "기대하시길 바라겠습니다!$"
 
 Route104_Prototype_Text_19B33B:: @ 819B33B
-	.string "I've never seen the POKéMON you have.\n"
-	.string "It makes me envious a little.$"
+	.string "본 적 없는 포켓몬을 가지고 있군\n"
+	.string "조금 부러운걸$"
 
 Route104_Prototype_Text_19B37F:: @ 819B37F
-	.string "Look at all those TRAINERS!\n"
-	.string "They have different POKéMON, too.\l"
-	.string "And they're all waiting for you!$"
+	.string "저 트레이너들을 보세요!\n"
+	.string "그들도 다른 포켓몬들을 지니고 있답니다!\l"
+	.string "모두 당신을 기다리고 있어요!$"
 
 Route104_Prototype_Text_19B3DE:: @ 819B3DE
-	.string "Welcome to the World of POKéMON!$"
+	.string "포켓몬스터의 세계에\n"
+	.string "오신 걸 환영합니다!$"
 
 Route104_Prototype_Text_19B3FF:: @ 819B3FF
-	.string "May all POKéMON battles be bright,\n"
-	.string "fun, and ferocious!$"
+	.string "모든 포켓몬 승부가\n"
+	.string "재밌고 격렬할 거예요!$"

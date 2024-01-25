@@ -1,67 +1,103 @@
 Route104_MrBrineysHouse_Text_191A82:: @ 8191A82
-	.string "MR. BRINEY: Hold on, lass!\n"
-	.string "Wait up, PEEKO!$"
+	.string "하기: 이 녀석!\n"
+	.string "거기 서라 피코!$"
+	// ハギ『こらこら!ｎ
+	// まて まて ピ-コちゃん!
 
 Route104_MrBrineysHouse_Text_191AAD:: @ 8191AAD
-	.string "Hm? You're {PLAYER}{KUN}!\n"
-	.string "You saved my darling PEEKO!\l"
-	.string "We owe so much to you!\p"
-	.string "What's that?\n"
-	.string "You want to sail with me?\p"
-	.string "Hmhm...\p"
-	.string "You have a LETTER bound for DEWFORD\n"
-	.string "and a package for SLATEPORT, then?\p"
-	.string "Quite the busy life you must lead!\p"
-	.string "But, certainly, what you're asking is\n"
-	.string "no problem at all.\p"
-	.string "You've come to the right man!\n"
-	.string "We'll set sail for DEWFORD.$"
+	.string "으응? 자네는 분명 피코를\n"
+	.string "구해 줬었던 {PLAYER} 아닌가!\l"
+	.string "그때는 정말 신세를 졌구먼!\p"
+	.string "...뭣이? 배를 타고 싶다고?\p"
+	.string "흐음흐음?\n"
+	.string "무로마을에 편지를 전달하고\l"
+	.string "잿빛도시에 화물을 갖다줄 거라고...\l"
+	.string "왠지 바쁘구먼 자네는\p"
+	.string "하지만 그 정도는 식은 죽 먹기지!\n"
+	.string "나에게 맡기게나!\l"
+	.string "그럼 바로 무로마을로 가볼까!$"
+	// おや? きみは たしか ピ-コちゃんをｎ
+	// たすけて くれた §あ§お!ｌ
+	// そのせつは せわに なったのう!ｐ
+	// ……なぬ? ふねに のりたい とな?ｐ
+	// ふむふむ?ｎ
+	// ムロに てがみを とどけてｌ
+	// カイナへ にもつを とどける……ｌ
+	// なんだか いそがしいのう きみはｐ
+	// じゃが それくらい おやすい ごようだ!ｎ
+	// わしに まかせて おきなさい!ｌ
+	// では まず ムロに むかうとするか!
 
 Route104_MrBrineysHouse_Text_191BFD:: @ 8191BFD
-	.string "MR. BRINEY: DEWFORD, here we come!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "하기: 무로마을 말이지\p"
+	.string "좋아! 가자 피코!$"
+	// ハギ『ムロタウン かｐ
+	// よっしゃ! いくぞ ピ-コちゃん!
 
 Route104_MrBrineysHouse_Text_191C57:: @ 8191C57
-	.string "MR. BRINEY: Is that so?\n"
-	.string "Your deliveries can wait?\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail!$"
+	.string "하기: 그렇군\n"
+	.string "부탁받은 일은 괜찮나?\p"
+	.string "뭐 배를 타야 할 때는\n"
+	.string "언제든지 사양 말고 말해주게나!$"
+	// ハギ『そうかねｎ
+	// たのまれごとは いいのかね?ｐ
+	// まあ ふねに のる ひつようが あるときはｎ
+	// いつでも えんりょなく いっておくれ!
 
 Route104_MrBrineysHouse_Text_191CC3:: @ 8191CC3
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "I know exactly what you want to say!\p"
-	.string "You're to deliver a LETTER to DEWFORD\n"
-	.string "and a package to SLATEPORT.\p"
-	.string "What you need me to do is no problem\n"
-	.string "at all - I'm the man for the job!\p"
-	.string "First, we'll set sail for DEWFORD.$"
+	.string "하기: 자네가 하고 싶은 말은 알고 있네!\p"
+	.string "무로마을로 편지를 전달하고\n"
+	.string "잿빛도시에 화물을 갖다줘야 하는 게지?\p"
+	.string "그 정도는 식은 죽 먹기라네!\n"
+	.string "나한테 맡기게나!\l"
+	.string "그럼 우선 무로마을로 출발하자꾸나!$"
+	// ハギ『きみの いいたいことは わかっとる!ｐ
+	// ムロに てがみを とどけてｎ
+	// カイナへ にもつを とどけるんだろうｐ
+	// それくらい おやすい ごようだ!ｎ
+	// わしに まかせて おきなさい!ｌ
+	// では まず ムロに むかうとするか!
 
 Route104_MrBrineysHouse_Text_191DA6:: @ 8191DA6
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "I know exactly what you want to say!\p"
-	.string "You're to deliver a package to\n"
-	.string "CAPT. STERN in SLATEPORT.\p"
-	.string "What you need me to do is no problem\n"
-	.string "at all - I'm the man for the job!\p"
-	.string "First, we'll set sail for DEWFORD.$"
+	.string "하기: 자네가 하고 싶은 말은 알고 있네!\p"
+	.string "잿빛도시에 있는 해양씨한테\n"
+	.string "화물을 갖다줘야 하는 게지?\p"
+	.string "그 정도는 식은 죽 먹기라네!\n"
+	.string "나한테 맡기게나!\l"
+	.string "그럼 우선 무로마을로 출발하자꾸나!$"
+	// ハギ『きみの いいたいことは わかっとる!ｐ
+	// カイナの クスノキさんにｎ
+	// にもつを とどけるんだろうｐ
+	// それくらい おやすい ごようだ!ｎ
+	// わしに まかせて おきなさい!ｌ
+	// では まず ムロに むかうとするか!
 
 Route104_MrBrineysHouse_Text_191E80:: @ 8191E80
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "For you, I'll go out to sea anytime!\p"
-	.string "Now, my friend, where are we bound?$"
+	.string "하기: 여어! 자네가 원한다면\n"
+	.string "언제든지 배를 준비시키지!\p"
+	.string "자네가 가고 싶은 곳은 어디인가?$"
+	// ハギ『やあ! きみのため ならｎ
+	// いつでも ふねを だそう!ｐ
+	// きみが いきたいのは どこ かな?
 
 Route104_MrBrineysHouse_Text_191EDB:: @ 8191EDB
-	.string "MR. BRINEY: Is that so?\n"
-	.string "Well, PEEKO owes her life to you.\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail!$"
+	.string "하기: 그렇군... 자넨\n"
+	.string "피코의 생명의 은인일세\p"
+	.string "배를 타야 할 때는\n"
+	.string "언제든지 사양 말고 말해주게나!$"
+	// ハギ『そうか…… きみはｎ
+	// ピ-コちゃんの いのちの おんじんだｐ
+	// ふねに のる ひつようが あるときはｎ
+	// いつでも えんりょなく いっておくれ!
 
 UnknownString_8191F4F: @ 8191F4F
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "We've made land in PETALBURG!\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail!$"
+	.string "하기: 호이! 등화도시에 도착!\p"
+	.string "배를 타야 할 때는\n"
+	.string "언제든지 사양 말고 말해주게나!$"
+	// ハギ『ほい! トウカに とうちゃく!ｐ
+	// ふねに のる ひつようが あるときはｎ
+	// いつでも えんりょなく いっておくれ!
 
 Route104_MrBrineysHouse_Text_191FB9:: @ 8191FB9
-	.string "PEEKO: Pii pihyoroo!$"
+	.string "피코: 피- 피뾰-!$"
+	// ピ-コちゃん『ピ- ピひょろ-!

@@ -1,43 +1,65 @@
 PetalburgCity_Text_16D361:: @ 816D361
-	.string "WALLY: {PLAYER}...\n"
-	.string "POKéMON hide in tall grass like this,\l"
-	.string "don't they?\p"
-	.string "Please watch me and see if I can\n"
-	.string "catch one properly.\p"
-	.string "...Whoa!$"
+	.string "민진: {PLAYER}님...\n"
+	.string "포켓몬은 이런 풀숲에\l"
+	.string "잘 있지 않나요...?\p"
+	.string "제가 잘 잡는지\n"
+	.string "옆에서 지켜봐 주세요...\p"
+	.string "...우왓!!$"
+	// ミツル『§あさん……ｎ
+	// ポケモンって こういう くさむらにｌ
+	// いたり するんでしょ……?ｐ
+	// ぼくが じょうずに つかまえられるかｎ
+	// そこで みてて くださいね……ｐ
+	// ……うわっ!!
 
 PetalburgCity_Text_16D3DE:: @ 816D3DE
-	.string "WALLY: I did it... It's my...\n"
-	.string "My POKéMON!$"
+	.string "민진: 해냈어... 내...\n"
+	.string "내 포켓몬이다...!!$"
+	// ミツル『やった…… ぼくの……ｎ
+	// ぼくの ポケモンだ……!!
 
 PetalburgCity_Text_16D408:: @ 816D408
-	.string "{PLAYER}, thank you!\n"
-	.string "Let's go back to the GYM!$"
+	.string "{PLAYER}님 감사합니다!\n"
+	.string "체육관으로 돌아가죠!$"
+	// §あさん ありがとう!ｎ
+	// ジムに もどろうよ!
 
 Route102_Text_16D431:: @ 816D431
-	.string "I'm...not very tall, so I sink right\n"
-	.string "into tall grass.\p"
-	.string "The grass goes up my nose and...\n"
-	.string "Fwafwafwafwafwa...\p"
-	.string "Fwatchoo!$"
+	.string "난... 키가 작아서\n"
+	.string "풀숲을 걸으면 풀에 파묻히지\p"
+	.string "나뭇잎이 코에 들어가서\n"
+	.string "흐에 흐에 흐에 흐에...\p"
+	.string "흐엣취-!$"
+	// ぼく…… せが ひくいからｎ
+	// くさむらを あるくと もぐっちゃうんだｐ
+	// ハッパが はなの あなに はいってｎ
+	// ふぁ ふぁ ふぁ ふぁ……ｐ
+	// ぶわっくしょ-ん!
 
 UnknownString_816D4A5: @ 816D4A5
-	.string "Fufufufu...\n"
-	.string "Watch me.$"
+	.string "후후후 잘 봐봐!$"
+	// ふふふ みてて ごらん!
 
 UnknownString_816D4BB: @ 816D4BB
-	.string "Ta-daaaah! Awesome, huh?\p"
-	.string "There are some ledges that you can't\n"
-	.string "climb up, but you can jump down.$"
+	.string "어때? 멋지지!\p"
+	.string "올라갈 수 없는 턱도 위에서라면\n"
+	.string "뛰어내릴 수 있어!$"
+	// どうだ? すごいだろ!ｐ
+	// あがれない だんさも うえから ならばｎ
+	// とびおりる ことが できるのだ!
 
 Route102_Text_16D51A:: @ 816D51A
-	.string "I'm going to catch a whole bunch of\n"
-	.string "POKéMON!$"
+	.string "포켓몬 잔뜩 잡아야지-!$"
+	// ポケモン たくさん つかまえよ-っと!
 
 Route102_Text_16D547:: @ 816D547
-	.string "ROUTE 102\n"
-	.string "{0x7C} OLDALE TOWN$"
+	.string "여기는 102번 도로\n"
+	.string "{0x7C} 고도마을$"
+	// ここは 102ばん どうろｎ
+	// ©しｌ コトキタウン
 
 Route102_Text_16D55F:: @ 816D55F
-	.string "ROUTE 102\n"
-	.string "{0x7B} PETALBURG CITY$"
+	.string "여기는 102번 도로\n"
+	.string "{0x7B} 등화도시$"
+	// ここは 102ばん どうろｎ
+	// ©し© トウカシティ

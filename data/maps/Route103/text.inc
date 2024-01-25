@@ -1,64 +1,115 @@
 Route103_Text_16D57A:: @ 816D57A
-	.string "MAY: Let's see... The POKéMON found\n"
-	.string "on ROUTE 103 include...$"
+	.string "봄이: 음- 103번 도로에 있는\n"
+	.string "포켓몬은 저거랑 저거고...$"
+	// ハルカ『え-と 103ばん どうろに いるｎ
+	// ポケモンは あれと あれね……
 
 Route103_Text_16D5B6:: @ 816D5B6
-	.string "Oh, hi, {PLAYER}{KUN}!\p"
-	.string "...Oh, I see, my dad gave you a\n"
-	.string "POKéMON as a gift.\p"
-	.string "Since we're here, let's have a quick\n"
-	.string "battle!\p"
-	.string "I'll give you a taste of what being a\n"
-	.string "TRAINER is like.$"
+	.string "어라 {PLAYER}{K_AYA}!\p"
+	.string "...아! 아빠한테\n"
+	.string "포켓몬을 선물받은 거구나!\p"
+	.string "모처럼이니까 잠깐\n"
+	.string "포켓몬 승부를 해보자!\p"
+	.string "트레이너가 어떤 건지\n"
+	.string "내가 알려 줄게!$"
+	// あら §あ§お!ｐ
+	// ……そうか! おとうさん からｎ
+	// ポケモンを プレゼントして もらったのね!ｐ
+	// せっかくだから ちょっとｎ
+	// ポケモンしょうぶ しようよ!ｐ
+	// トレ-ナ-って どんな ものかｎ
+	// あたしが おしえて あげるから!
 
 Route103_Text_16D65B:: @ 816D65B
-	.string "Wow! That's great!\n"
-	.string "{PLAYER}{KUN}, you're pretty good!$"
+	.string "우와! 굉장해 굉장해!\n"
+	.string "{PLAYER}{K_EUNNEUN} 강하구나!$"
+	// うわっ! すごい すごい!ｎ
+	// §あ§お つよい じゃない!
 
 Route103_Text_16D688:: @ 816D688
-	.string "MAY: I think I know why my dad has an\n"
-	.string "eye out for you now.\p"
-	.string "I mean, you just got that POKéMON but\n"
-	.string "it already likes you.\p"
-	.string "You might be able to befriend any\n"
-	.string "kind of POKéMON easily.\p"
-	.string "Well, it's time to head back to the\n"
-	.string "LAB.$"
+	.string "봄이: 나 왜 아빠가\n"
+	.string "너를 주목하는지\l"
+	.string "알 거 같은 기분이 들어!\p"
+	.string "왜냐하면 받은 지 얼마 안 된 포켓몬이\n"
+	.string "벌써 널 따르고 있잖아!\p"
+	.string "너라면 어떤 포켓몬이랑도\n"
+	.string "친해질 수 있을 것 같아!\p"
+	.string "그럼\n"
+	.string "연구소로 같이 돌아가자!$"
+	// ハルカ『あたし おとうさんがｎ
+	// あなたの ことを ちゅうもく するのもｌ
+	// わかるような きが する!ｐ
+	// だって もらって すぐの ポケモンがｎ
+	// もう あなたに なついているもの!ｐ
+	// あなたなら どんな ポケモンとでもｎ
+	// なかよく なれるかも!ｐ
+	// じゃあｎ
+	// けんきゅうじょに かえろっか!
 
 Route103_Text_16D762:: @ 816D762
-	.string "BRENDAN: Okay, so it's this one and\n"
-	.string "that one that live on ROUTE 103...$"
+	.string "휘웅: 그렇구나 쟤랑 쟤가\n"
+	.string "103번 도로에 있는 포켓몬이군...$"
+	// ユウキ『そうか あいつと あいつがｎ
+	// 103ばん どうろに いる ポケモンか……
 
 Route103_Text_16D7A9:: @ 816D7A9
-	.string "Hey, it's {PLAYER}!\p"
-	.string "...Oh, yeah, Dad gave you a POKéMON.\p"
-	.string "Since we're here, how about a little\n"
-	.string "battle?\p"
-	.string "I'll teach you what being a TRAINER's\n"
-	.string "about!$"
+	.string "으응? {PLAYER}{K_AYA}!\p"
+	.string "...그렇구나 아빠한테서\n"
+	.string "포켓몬을 받았다고\p"
+	.string "그럼 마침 잘됐다\n"
+	.string "포켓몬 승부 한번 해볼래?\p"
+	.string "트레이너라는 게 어떤 건지\n"
+	.string "내가 알려 줄게!$"
+	// おや? §あ!ｐ
+	// ……そうか とうさん からｎ
+	// ポケモンを もらったのかｐ
+	// じゃあ ついでだｎ
+	// ポケモンしょうぶ してやろうか?ｐ
+	// トレ-ナ-って どんな ものかｎ
+	// オレが おしえてやるよ!
 
 Route103_Text_16D836:: @ 816D836
-	.string "Huh, {PLAYER}, you're not too shabby.$"
+	.string "흐음\n"
+	.string "{PLAYER}{K_EUNNEUN} 강하구나$"
+	// ふうんｎ
+	// §あって つよいんだね
 
 Route103_Text_16D856:: @ 816D856
-	.string "BRENDAN: I think I get it.\n"
-	.string "I think I know why my dad has his eye\l"
-	.string "out for you now.\p"
-	.string "Look, your POKéMON already likes you,\n"
-	.string "even though you just got it.\p"
-	.string "{PLAYER}, I get the feeling that you\n"
-	.string "could befriend any POKéMON with ease.\p"
-	.string "We should head back to the LAB.$"
+	.string "휘웅: 아빠가 왜\n"
+	.string "{PLAYER}{K_EULREUL} 주목하는지\l"
+	.string "안 거 같은 기분이 들어...\p"
+	.string "받은 지 얼마 안 된 포켓몬이\n"
+	.string "벌써 이렇게 잘 따르고 있잖아\p"
+	.string "{PLAYER} 너라면 어떤 포켓몬이랑도\n"
+	.string "친해질 수 있겠다\p"
+	.string "자 그럼\n"
+	.string "연구소로 같이 돌아가자$"
+	// ユウキ『とうさんがｎ
+	// §あの ことを ちゅうもく するのもｌ
+	// わかったような きが する……ｐ
+	// もらって すぐの ポケモンがｎ
+	// もう なついているよｐ
+	// §あなら どんな ポケモンとでもｎ
+	// なかよく なれるかも しれないなｐ
+	// じゃｎ
+	// けんきゅうじょに もどろうか
 
 Route103_Text_16D950:: @ 816D950
-	.string "My POKéMON is staggeringly tired...\n"
-	.string "I should have brought a POTION...$"
+	.string "내 포켓몬 휘청휘청거려...\n"
+	.string "상처약 챙겨 올 걸 그랬어...$"
+	// ぼくの ポケモン もう へろへろ……ｎ
+	// キズぐすり もってくれば よかった……
 
 Route103_Text_16D996:: @ 816D996
-	.string "If you cross the sea from here,\n"
-	.string "it'll be a shortcut to OLDALE TOWN.\p"
-	.string "Fufufu, that's useful, isn't it?$"
+	.string "여기에서 바다를 건너면\n"
+	.string "고도마을까지 가는 지름길이야!\p"
+	.string "후후후 꽤 쓸만한 정보지?$"
+	// ここから うみを わたっていけばｎ
+	// コトキタウンまで ちかみちが できるぞ!ｐ
+	// ふふふ おとくな じょうほう だろ? 
 
 Route103_Text_16D9FB:: @ 816D9FB
-	.string "ROUTE 103\n"
-	.string "{0x7A} OLDALE TOWN$"
+	.string "여기는 103번 도로\n"
+	.string "{0x7A} 고도마을$"
+	// ここは 103ばん どうろｎ
+	// ©し© コトキタウン

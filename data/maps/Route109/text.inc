@@ -1,86 +1,129 @@
 DewfordTown_Text_16E080:: @ 816E080
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "We've made land in SLATEPORT!\p"
-	.string "I suppose you're going to visit CAPT.\n"
-	.string "STERN and deliver the DEVON GOODS?$"
+	.string "하기: 호이! 잿빛도시에 도착!\p"
+	.string "분명 해양씨한테\n"
+	.string "데봉화물을 전달한다고 했었지!$"
+	// ハギ『ほい! カイナに とうちゃく!ｐ
+	// たしか クスノキさんにｎ
+	// デボンのにもつを とどけるんだったな!
 
 Route109_Text_16E0F9:: @ 816E0F9
-	.string "MR. BRINEY: Aren't you delivering the\n"
-	.string "DEVON GOODS?\p"
-	.string "Or were you meaning to sail back to\n"
-	.string "DEWFORD?$"
+	.string "하기: 화물을 전달하지 않을 겐가?\p"
+	.string "아니면 무로마을로 돌아갈 텐가?$"
+	// ハギ『にもつを とどけないのかい?ｐ
+	// それとも ムロに もどるのかね?
 
 Route109_Text_16E159:: @ 816E159
-	.string "MR. BRINEY: DEWFORD it is, then!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "하기: 무로마을 말이지\p"
+	.string "좋다! 가자 피코!$"
+	// ハギ『ムロタウン かｐ
+	// よっしゃ! いくぞ ピ-コちゃん!
 
 Route109_Text_16E1B1:: @ 816E1B1
-	.string "MR. BRINEY: Then you go on and deliver\n"
-	.string "the DEVON GOODS. I'll be waiting.$"
+	.string "하기: 그럼 화물을 전달하고 오게\n"
+	.string "난 여기서 기다릴 테니$"
+	// ハギ『では にもつを とどけておいでｎ
+	// わしは ここに いるから
 
 DewfordTown_Text_16E1FA:: @ 816E1FA
-	.string "MR. BRINEY: Ahoy! We've made land in\n"
-	.string "SLATEPORT!\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail again!$"
+	.string "하기: 호이! 잿빛도시에 도착!\p"
+	.string "배를 타고 싶어지면\n"
+	.string "또 나한테 말을 걸어 주게나!$"
+	// ハギ『ほい! カイナに とうちゃく!ｐ
+	// ふねに のりたくなったらｎ
+	// また わしに こえを かけておくれ!
 
 Route109_Text_16E26A:: @ 816E26A
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "For you, I'll go out to sea anytime!\p"
-	.string "Now, my friend, where are we bound?$"
+	.string "하기: 여어! 자네를 위해서라면\n"
+	.string "언제든지 배를 준비시키겠네!\p"
+	.string "자네가 가고 싶은 곳은 어디인가?$"
+	// ハギ『やあ! きみのため ならｎ
+	// いつでも ふねを だそう!ｐ
+	// きみが いきたいのは どこ かな?
 
 Route109_Text_16E2C5:: @ 816E2C5
-	.string "MR. BRINEY: You just tell me whenever\n"
-	.string "you need to set sail again!$"
+	.string "하기: 배를 타야 할 때는\n"
+	.string "언제든지 말해 주게나$"
+	// ハギ『ふねに のる ひつようが あるときはｎ
+	// いつでも こえを かけておくれ
 
 Route109_Text_16E307:: @ 816E307
-	.string "Yo, TRAINERS!\n"
-	.string "Whether you're hot to trot,\l"
-	.string "or cool cat not,\l"
-	.string "chill at my papa's spot!$"
+	.string "뜨거운 트레이너분들도\n"
+	.string "뜨겁지 않은 트레이너분들도\l"
+	.string "아빠의 가게에 들러주세요-!$"
+	// あつい トレ-ナ-さんもｎ
+	// あつくない トレ-ナ-さんもｌ
+	// おとうさんの おみせに よってって-!
 
 Route109_Text_16E35B:: @ 816E35B
-	.string "Little kids can dart around so quickly...\p"
-	.string "You don't dare take your eyes off them\n"
-	.string "for an instant. It's very taxing.\p"
-	.string "Mine's with my POKéMON, so they should\n"
-	.string "be okay, but...$"
+	.string "아이는 이곳저곳 돌아다니니까\n"
+	.string "걱정이 돼서 눈을 뗄 수가 없어!\p"
+	.string "포켓몬이 같이 있으니까\n"
+	.string "괜찮을 거라고 생각하지만...$"
+	// こどもって あちこち うごきまわるからｎ
+	// めを はなせなくて たいへん!ｐ
+	// ポケモンが いっしょ だからｎ
+	// だいじょうぶ だと おもってるけど……
 
 Route109_Text_16E405:: @ 816E405
-	.string "Our sand castle's taking a long time\n"
-	.string "to make.$"
+	.string "좀처럼 모래성이 완성이 안 돼$"
+	// なかなか すなの おしろ できないね
 
 Route109_Text_16E433:: @ 816E433
-	.string "You can have this!$"
+	.string "{K_GIRL_CALL}한테 이거 줄게!$"
+	// §い これ あげる!
 
 Route109_Text_16E446:: @ 816E446
-	.string "We're going to get all the sand from\n"
-	.string "the beach and make a big castle!\p"
-	.string "And then we're going to be a king and\n"
-	.string "queen.\p"
-	.string "We'll let you be a servant.$"
+	.string "모래사장의 모래를 전-부 모아서\n"
+	.string "커다란 성을 만들 거야\p"
+	.string "그리고 우리는\n"
+	.string "왕이랑 여왕이 될 거야\p"
+	.string "{K_GIRL_CALL}는\n"
+	.string "신하 하게 해줄게$"
+	// すなはまの すなを ぜ-んぶ あつめてｎ
+	// おっきな おしろを つくるのｐ
+	// それで あたしたちｎ
+	// おうさまと おうじょさまに なるのｐ
+	// §いはｎ
+	// けらいに してあげるね
 
 Route109_Text_16E4D5:: @ 816E4D5
-	.string "The water around these parts is clean.\p"
-	.string "But, I get my ZIGZAGOON to pick up\n"
-	.string "litter from the shoreline at times.\p"
-	.string "Dirty water becomes rain and joins our\n"
-	.string "rivers, which we drink from...\p"
-	.string "If we pollute the sea, it all comes\n"
-	.string "back to haunt us eventually.$"
+	.string "이 주변 바다는 깨끗하긴 한데\p"
+	.string "그래도 가끔씩 이렇게 버려지는\n"
+	.string "쓰레기를 지그제구리가 모아주고 있단다\p"
+	.string "더러워진 물은 비가 돼서\n"
+	.string "강으로 흘러들어 마시는 물이 되지...\p"
+	.string "바다를 더럽히면\n"
+	.string "결국 피해를 보는 건 우리라는 소리란다$"
+	// この あたりの うみは きれいだがなｐ
+	// それでも たまに こうして すてられたｎ
+	// ゴミを ジグザグマに あつめてもらうよｐ
+	// よごれた みずは あめと なってｎ
+	// かわに ながれこみ のみみずと なる……ｐ
+	// うみを よごすとｎ
+	// けっきょく じぶんらが こまるからの
 
 Route109_Text_16E5CA:: @ 816E5CA
-	.string "ZIGZAGOON: Guguu?$"
+	.string "지그제구리: 구구?$"
+	// ジグザグマ『ぐぐ?
 
 Route109_Text_16E5DC:: @ 816E5DC
-	.string "SEASHORE HOUSE\p"
-	.string "“May hot battles rage on hot sands!\n"
-	.string "The place for hot TRAINERS!”$"
+	.string "“바다의 집”\p"
+	.string "모래사장 하면 또 포켓몬 승부지!\n"
+	.string "뜨거운 트레이너들은 여기 모여라!$"
+	// 「うみの いえ」ｐ
+	// すなはま といえば ポケモンしょうぶ!ｎ
+	// あつい トレ-ナ- ここに つどえ!
 
 Route109_Text_16E62C:: @ 816E62C
-	.string "TRAINER TIPS\p"
-	.string "POKéMON at the same level may not\n"
-	.string "always have identical stats.\p"
-	.string "POKéMON raised by TRAINERS are said\n"
-	.string "to grow stronger than wild POKéMON.$"
+	.string "정보 나눔 게시판!!\p"
+	.string "포켓몬의 레벨이 같아도\n"
+	.string "강함까지 같지는 않습니다!\p"
+	.string "그리고 트레이너가 키운\n"
+	.string "포켓몬이 더 강해진다고\l"
+	.string "알려져 있지요!$"
+	// おとくな けいじばん!!ｐ
+	// ポケモンの レベルが おなじ でもｎ
+	// つよさまで おなじとは かぎりません!ｐ
+	// それに トレ-ナ-が そだてたｎ
+	// ポケモンの ほうが つよくなるとｌ
+	// いわれて います!
