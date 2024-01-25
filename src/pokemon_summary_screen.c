@@ -2827,7 +2827,7 @@ static void PrintSummaryWindowHeaderText(void)
     }
 
     buffer = gStringVar1;
-    buffer = SummaryScreen_SetTextColor(buffer, 13);
+    buffer = SummaryScreen_SetTextColor(buffer, 15);
     buffer = StringCopy(buffer, sPageHeaderTexts[pssData.headerActionTextId]);
 
     buffer[0] = EXT_CTRL_CODE_BEGIN;
