@@ -731,7 +731,7 @@ static bool8 sub_8101E3C(struct Task *task)
 static void sub_8101F2C(const u8 *str)
 {
     Menu_DisplayDialogueFrame();
-    Menu_PrintText(str, 2, 15);
+    Menu_PrintText(str, 4, 15);
 }
 
 static bool8 sub_8101F44(struct Task *task)

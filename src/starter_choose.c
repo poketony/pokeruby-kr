@@ -474,19 +474,15 @@ void AddTextColorCtrlCode(u8 *string, u8 bgColor, u8 textColor, u8 shadowColor)
     *(string++) = shadowColor;
 }
 
-#define SET_CHAR(str, index, c) \
-{                               \
-    u8 *p = str + index;        \
-    *p = c;                     \
-}
-
 static void CreateStarterPokemonLabel(u8 prevSelection, u8 selection)
 {
+    u8 textBuffer[32];
+    u8 printBuffer[32];
+    u8 *textPtr;
 
-    u8 labelText[72];
     const u8 *category;
     u8 srcIndex;
-    u8 dstIndex;
+
     u16 species;
 
     u8 labelLeft;
@@ -496,7 +492,7 @@ static void CreateStarterPokemonLabel(u8 prevSelection, u8 selection)
 
     if (prevSelection != 0xFF)
     {
-        //Remove the old Pokemon label
+        // Remove the old Pokemon label
         Menu_EraseWindowRect(
             gStarterChoose_LabelCoords[prevSelection][0],
             gStarterChoose_LabelCoords[prevSelection][1],
@@ -506,41 +502,36 @@ static void CreateStarterPokemonLabel(u8 prevSelection, u8 selection)
         REG_WIN0V = 0;
     }
 
+    // Copy category string to label
     species = GetStarterPokemon(selection);
     category = GetPokemonCategory(SpeciesToNationalPokedexNum(species));
-    AddTextColorCtrlCode(labelText, 0, 15, 8);
-#if ENGLISH
-    dstIndex = 5;
-    SET_CHAR(labelText, 5, EXT_CTRL_CODE_BEGIN);
-    SET_CHAR(labelText, 6, EXT_CTRL_CODE_CLEAR);
-    SET_CHAR(labelText, 7, dstIndex);
-#endif
-
-    //Copy category string to label
-    dstIndex = 8;
     srcIndex = 0;
+    textPtr = textBuffer;
     while (category[srcIndex] != EOS && srcIndex <= 10)
     {
-        labelText[dstIndex] = category[srcIndex];
+        *(textPtr++) = category[srcIndex];
         srcIndex++;
-        dstIndex++;
     }
-    labelText[dstIndex++] = CHAR_SPACE;
+    *(textPtr++) = CHAR_SPACE;
 
-    //Copy POKEMON string to label
-    StringCopy(labelText + dstIndex, gOtherText_Poke);
+    // Copy POKEMON string to label
+    textPtr = StringCopy(textPtr, gOtherText_Poke);
+    AddTextColorCtrlCode(printBuffer, 0, 15, 8);
+    AlignStringInMenuWindow(printBuffer + 5, textBuffer, 112, 2);
     Menu_PrintText(
-        labelText,
+        printBuffer,
         gStarterChoose_LabelCoords[selection][0],
-        gStarterChoose_LabelCoords[selection][1]);
-    AddTextColorCtrlCode(labelText, 0, 15, 8);
+        gStarterChoose_LabelCoords[selection][1]
+    );
 
-    //Copy Pokemon name to label
-    AlignStringInMenuWindow(labelText + 5, gSpeciesNames[species], 0x6B, 1);
+    // Copy Pokemon name to label
+    AddTextColorCtrlCode(printBuffer, 0, 15, 8);
+    AlignStringInMenuWindow(printBuffer + 5, gSpeciesNames[species], 112, 2);
     Menu_PrintText(
-        labelText,
+        printBuffer,
         gStarterChoose_LabelCoords[selection][0],
-        gStarterChoose_LabelCoords[selection][1] + 2);
+        gStarterChoose_LabelCoords[selection][1] + 2
+    );
 
     labelLeft = gStarterChoose_LabelCoords[selection][0] * 8 + 4;
     labelRight = (gStarterChoose_LabelCoords[selection][0] + 13) * 8 + 4;
