@@ -83,7 +83,7 @@ PetalburgWoods_Text_19507E:: @ 819507E
 	// ス-パ-ボ-ルを あげちゃおう!
 
 PetalburgWoods_Text_19510A:: @ 819510A
-	.string "...그러고 보니 아까 아쿠아단이\n"
+	.string "...그러고 보니 아까 {EVIL_TEAM}단이\n"
 	.string "“금탄도시에도 노리고 있는 게 있다”\l"	
 	.string "라고 말했었지...?$"
 	// ……そういえば さっき §くだんはｎ

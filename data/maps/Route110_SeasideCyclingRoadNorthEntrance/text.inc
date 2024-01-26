@@ -1,10 +1,17 @@
 Route110_SeasideCyclingRoadNorthEntrance_Text_19E406:: @ 819E406
-	.string "On CYCLING ROAD, you can go all out\n"
-	.string "and cycle as fast as you'd like.\p"
-	.string "It feels great to go that fast, but try\n"
-	.string "not to crash into anyone!$"
+	.string "사이클링 로드에서는\n"
+	.string "마음껏 스피드를 낼 수 있어!\p"
+	.string "아무에게도 부딪히지 않고 달리면\n"
+	.string "엄청 기분이 좋아!$"
+	// サイクリング ロ-ドではｎ
+	// おもいっきり スピ-ドを だせるんだ!ｐ
+	// だれにも ぶつからずに かけぬけるとｎ
+	// すごく きもち いいよ!
 
 UnknownString_819E48D: @ 819E48D
-	.string "Sorry, you can't walk on CYCLING\n"
-	.string "ROAD. It's too dangerous.\p"
-	.string "Please come back with a BIKE.$"
+	.string "사이클링 로드를\n"
+	.string "걸어가는 건 위험해요!\l"
+	.string "자전거를 타고 와주세요$"
+	// サイクリング ロ-ドをｎ
+	// あるいて すすむのは あぶない です!ｌ
+	// じてんしゃに のって きてください
