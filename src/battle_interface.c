@@ -2401,17 +2401,17 @@ static u8 sub_80457E8(u8 a, u8 b)
 /*static*/ void sub_80458B0(u8 a)
 {
     u8 *r6;
-    u8 r8;
     u8 i;
     s32 r7;
     u8 *addr;
 
     r6 = &eBattleInterfaceGfxBuffer[0x520 + GetBattlerPosition(gSprites[a].data[6]) * 0x180];
-    r8 = 7;
     sub_80034D4(r6, BattleText_SafariBalls);
-    for (i = 0; i < r8; i++)
+
+    for (i = 0; i < 7; i++)
         CpuCopy32(sub_8043CDC(0x2B), r6 + i * 64, 32);
-    for (r7 = 3; r7 < 3 + r8; r7++)
+
+    for (r7 = 2; r7 <= 5; r7++)
     {
         addr = OBJ_VRAM0 + (gSprites[a].oam.tileNum + MACRO1(r7)) * 32;
         CpuCopy32(r6, addr, 32);
@@ -2428,18 +2428,26 @@ static u8 sub_80457E8(u8 a, u8 b)
 {
     u8 *r7;
     u8 status;
-    s32 r6;
     s32 i;
 
-    r7 = StringCopy(gDisplayedStringBattle, BattleText_SafariBallsLeft);
-    r7 = Text_AlignInt2(r7, gNumSafariBalls, 10, 1);
-    StringAppend(r7, BattleText_HighlightRed);
+    r7 = StringCopy(gDisplayedStringBattle, BattleText_HighlightRed);
+
+    *(r7++) = EXT_CTRL_CODE_BEGIN;
+    *(r7++) = EXT_CTRL_CODE_CLEAR_TO;
+    *(r7++) = 6;
+    *(r7++) = EXT_CTRL_CODE_BEGIN;
+    *(r7++) = EXT_CTRL_CODE_JPN;
+    r7 = ConvertIntToDecimalString(r7, gNumSafariBalls);
+
+    *(r7++) = EXT_CTRL_CODE_BEGIN;
+    *(r7++) = EXT_CTRL_CODE_ENG;
+    r7 = StringCopy(r7, BattleText_SafariBallsLeft);
+
     status = GetBattlerPosition(gSprites[a].data[6]);
-    r7 = &eBattleInterfaceGfxBuffer[0x520 + status * 0x180];
-    r6 = 5;
-    sub_80034D4(r7, gDisplayedStringBattle);
+    sub_80034D4(&eBattleInterfaceGfxBuffer[0x520 + status * 0x180], gDisplayedStringBattle);
+
     r7 = &eBattleInterfaceGfxBuffer[0x520 + status * 0x180 + 32];
-    for (i = 6; i < 6 + r6; i++)
+    for (i = 6; i <= 11; i++)
     {
         CpuCopy32(r7, OBJ_VRAM0 + (gSprites[a].oam.tileNum + 0x18 + MACRO1(i)) * 32, 32);
         r7 += 64;

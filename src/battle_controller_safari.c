@@ -199,6 +199,34 @@ void SafariBufferRunCommand(void)
     }
 }
 
+const u8 sSafariMainMenuCursorCoords[][2] =
+{
+    {18, 15},
+    {23, 15},
+    {18, 17},
+    {23, 17},
+};
+
+void BattleControllerSafari_DrawMainMenuCursor(u8 a, u8 selectedCursorTileNum)
+{
+    u8 x = sSafariMainMenuCursorCoords[a][0];
+    u8 y = sSafariMainMenuCursorCoords[a][1];
+    u16 *tilemapPtr = (u16 *)((u8 *)0x600C500 + (x * 2) + (y * 0x40));
+
+    *tilemapPtr = 1 + selectedCursorTileNum;
+    *(tilemapPtr + 0x20) = 2 + selectedCursorTileNum;
+}
+
+void BattleControllerSafari_EraseMainMenuCursor(u8 a)
+{
+    u8 x = sSafariMainMenuCursorCoords[a][0];
+    u8 y = sSafariMainMenuCursorCoords[a][1];
+    u16 *tilemapPtr = (u16 *)((u8 *)0x600C500 + (x * 2) + (y * 0x40));
+
+    *tilemapPtr = 32;
+    *(tilemapPtr + 0x20) = 32;
+}
+
 void bx_battle_menu_t6_2(void)
 {
     if (gMain.newKeys & A_BUTTON)
@@ -228,9 +256,9 @@ void bx_battle_menu_t6_2(void)
         if (gActionSelectionCursor[gActiveBattler] & 1)
         {
             PlaySE(SE_SELECT);
-            BattleControllerPlayer_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
+            BattleControllerSafari_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
             gActionSelectionCursor[gActiveBattler] ^= 1;
-            BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
+            BattleControllerSafari_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
     else if (gMain.newKeys & DPAD_RIGHT)
@@ -238,9 +266,9 @@ void bx_battle_menu_t6_2(void)
         if (!(gActionSelectionCursor[gActiveBattler] & 1))
         {
             PlaySE(SE_SELECT);
-            BattleControllerPlayer_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
+            BattleControllerSafari_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
             gActionSelectionCursor[gActiveBattler] ^= 1;
-            BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
+            BattleControllerSafari_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
     else if (gMain.newKeys & DPAD_UP)
@@ -248,9 +276,9 @@ void bx_battle_menu_t6_2(void)
         if (gActionSelectionCursor[gActiveBattler] & 2)
         {
             PlaySE(SE_SELECT);
-            BattleControllerPlayer_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
+            BattleControllerSafari_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
             gActionSelectionCursor[gActiveBattler] ^= 2;
-            BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
+            BattleControllerSafari_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
     else if (gMain.newKeys & DPAD_DOWN)
@@ -258,9 +286,9 @@ void bx_battle_menu_t6_2(void)
         if (!(gActionSelectionCursor[gActiveBattler] & 2))
         {
             PlaySE(SE_SELECT);
-            BattleControllerPlayer_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
+            BattleControllerSafari_EraseMainMenuCursor(gActionSelectionCursor[gActiveBattler]);
             gActionSelectionCursor[gActiveBattler] ^= 2;
-            BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
+            BattleControllerSafari_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
 #if DEBUG
@@ -482,9 +510,9 @@ void SafariHandlecmd18(void)
     Text_PrintWindow8002F44(&gWindowTemplate_Contest_MoveDescription);
 
     for (i = 0; i < 4; i++)
-        BattleControllerPlayer_EraseMainMenuCursor(i);
+        BattleControllerSafari_EraseMainMenuCursor(i);
 
-    BattleControllerPlayer_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
+    BattleControllerSafari_DrawMainMenuCursor(gActionSelectionCursor[gActiveBattler], 0);
     BattleStringExpandPlaceholdersToDisplayedString(BattleText_PlayerMenu);
 
     Text_InitWindow(&gWindowTemplate_Contest_MoveDescription, gDisplayedStringBattle, SUB_812BB10_TILE_DATA_OFFSET, 2, 35);
