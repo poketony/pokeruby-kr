@@ -4359,7 +4359,7 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
     u16 koreanGlyph;
     s32 retVal = 0;
 
-    if (IsKoreanGlyph(glyph))
+    if (win->language != LANGUAGE_JAPANESE && IsKoreanGlyph(glyph))
     {
         koreanGlyph = (glyph << 8) | win->text[win->textIndex++];
         koreanGlyph -= 0x3700;
