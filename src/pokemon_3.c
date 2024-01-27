@@ -1113,6 +1113,9 @@ u16 GetMUS_ForBattle(void)
         return MUS_VS_TRAINER;
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
+         if (gTrainerBattleOpponent == SECRET_BASE_OPPONENT || gTrainerBattleOpponent == LINK_BATTLE_OPPONENT)
+            return MUS_VS_TRAINER;
+
         switch (gTrainers[gTrainerBattleOpponent].trainerClass)
         {
         case 2:
