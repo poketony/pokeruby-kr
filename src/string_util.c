@@ -640,6 +640,32 @@ u8 *StringFillWithTerminator(u8 *dest, u16 n)
     return StringFill(dest, EOS, n);
 }
 
+u8 *StringCopyN_Multibyte(u8 *dest, const u8 *src, u8 len)
+{
+    u8 currentLength = 0;
+
+    for (;;)
+    {
+        *(dest) = *(src++);
+
+        if (IsKoreanGlyph(*dest))
+        {
+            dest++;
+            *(dest) = *(src++);
+        }
+
+        dest++;
+        currentLength++;
+
+        if (*src == EOS || currentLength == len)
+            break;
+    }
+
+    *dest = EOS;
+
+    return dest;
+}
+
 u32 StringLength_Multibyte(const u8 *str)
 {
     u32 length = 0;

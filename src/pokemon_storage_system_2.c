@@ -460,7 +460,7 @@ void sub_8096C84(void)
         case 6:
             if (gPokemonStorageSystemPtr->unk_0005 == 2)
             {
-                if (sub_809BF20() && ItemIsMail(gPokemonStorageSystemPtr->unk_11f2))
+                if (sub_809BF20() && ItemIsMail(gPokemonStorageSystemPtr->heldItemNum))
                     gPokemonStorageSystemPtr->unk_0004 = 5;
                 else
                     SetPSSCallback(sub_8097004);
@@ -507,7 +507,7 @@ void sub_8096C84(void)
         case 11:
             if (!sub_809BE80())
             {
-                if (ItemIsMail(gPokemonStorageSystemPtr->unk_11f2))
+                if (ItemIsMail(gPokemonStorageSystemPtr->heldItemNum))
                 {
                     gPokemonStorageSystemPtr->unk_0004 = 5;
                 }
@@ -703,7 +703,7 @@ void sub_8097078(void)
             {
                 gPokemonStorageSystemPtr->unk_0004 = 2;
             }
-            else if (ItemIsMail(gPokemonStorageSystemPtr->unk_11f2))
+            else if (ItemIsMail(gPokemonStorageSystemPtr->heldItemNum))
             {
                 gPokemonStorageSystemPtr->unk_0004 = 3;
             }
@@ -719,11 +719,11 @@ void sub_8097078(void)
             {
                 gPokemonStorageSystemPtr->unk_0004 = 2;
             }
-            else if (gPokemonStorageSystemPtr->unk_11f9)
+            else if (gPokemonStorageSystemPtr->isEgg)
             {
                 gPokemonStorageSystemPtr->unk_0004 = 4;
             }
-            else if (ItemIsMail(gPokemonStorageSystemPtr->unk_11f2))
+            else if (ItemIsMail(gPokemonStorageSystemPtr->heldItemNum))
             {
                 gPokemonStorageSystemPtr->unk_0004 = 3;
             }
@@ -1103,8 +1103,8 @@ void sub_80977E4(void)
     {
     case 0:
         PrintStorageActionText(PC_TEXT_MARK_POKE);
-        gPokemonStorageSystemPtr->unk_12bc.markings = gPokemonStorageSystemPtr->unk_11f7;
-        sub_80F7418(gPokemonStorageSystemPtr->unk_11f7, 0xb0, 0x10);
+        gPokemonStorageSystemPtr->unk_12bc.markings = gPokemonStorageSystemPtr->markings;
+        sub_80F7418(gPokemonStorageSystemPtr->markings, 176, 16);
         gPokemonStorageSystemPtr->unk_0004++;
         break;
     case 1:
@@ -1464,8 +1464,8 @@ void sub_8097F58(void)
     gPokemonStorageSystemPtr->unk_12ac = sub_80F7940(0x000d, 0xdace, 0);
     gPokemonStorageSystemPtr->unk_12ac->oam.priority = 0;
     gPokemonStorageSystemPtr->unk_12ac->subpriority = 1;
-    gPokemonStorageSystemPtr->unk_12ac->x = 0x28;
-    gPokemonStorageSystemPtr->unk_12ac->y = 0x95;
+    gPokemonStorageSystemPtr->unk_12ac->x = 40;
+    gPokemonStorageSystemPtr->unk_12ac->y = 144;
     gPokemonStorageSystemPtr->unk_12b8 = BG_CHAR_ADDR(4) + 32 * GetSpriteTileStartByTag(0x000d);
 }
 
@@ -1486,7 +1486,7 @@ void sub_8097FB8(void)
 
 void sub_809801C(void)
 {
-    sub_80981F0(gPokemonStorageSystemPtr->unk_11f0, gPokemonStorageSystemPtr->unk_11ec);
+    sub_80981F0(gPokemonStorageSystemPtr->speciesNum, gPokemonStorageSystemPtr->unk_11ec);
     sub_80982B4();
     sub_8098350();
 }
@@ -1566,7 +1566,7 @@ void sub_80980D4(void)
         if (paletteNum == 0xFF)
             break;
 
-        spriteId = CreateSprite(&spriteTemplate, 0x28, 0x30, 0);
+        spriteId = CreateSprite(&spriteTemplate, 40, 48, 0);
         if (spriteId == MAX_SPRITES)
             break;
 
@@ -1602,9 +1602,9 @@ void sub_80981F0(u16 species, u32 pid)
 
 void sub_80982B4(void)
 {
-    if (gPokemonStorageSystemPtr->unk_11f0)
+    if (gPokemonStorageSystemPtr->speciesNum)
     {
-        sub_80F7A10(gPokemonStorageSystemPtr->unk_11f7, gPokemonStorageSystemPtr->unk_12b8);
+        sub_80F7A10(gPokemonStorageSystemPtr->markings, gPokemonStorageSystemPtr->unk_12b8);
         gPokemonStorageSystemPtr->unk_12ac->invisible = FALSE;
     }
     else
@@ -1612,17 +1612,17 @@ void sub_80982B4(void)
         gPokemonStorageSystemPtr->unk_12ac->invisible = TRUE;
     }
     Menu_EraseWindowRect(0, 11, 9, 17);
-    Menu_PrintText(gPokemonStorageSystemPtr->unk_127a, 1, 16);
-    Menu_PrintText(gPokemonStorageSystemPtr->unk_120f, 1, 11);
-    Menu_PrintText(gPokemonStorageSystemPtr->unk_1234, 0, 13);
-    Menu_PrintText(gPokemonStorageSystemPtr->unk_1259, 1, 15);
+    Menu_PrintText(gPokemonStorageSystemPtr->levelStringBuffer, 6, 11);
+    Menu_PrintText(gPokemonStorageSystemPtr->nicknameStringBuffer, 1, 11);
+    Menu_PrintText(gPokemonStorageSystemPtr->monNameStringBuffer, 0, 13);
+    Menu_PrintText(gPokemonStorageSystemPtr->heldItemStringBuffer, 1, 15);
 }
 
 void sub_8098350(void)
 {
     u16 i;
 
-    if (gPokemonStorageSystemPtr->unk_11f0)
+    if (gPokemonStorageSystemPtr->speciesNum)
     {
         sub_809D034(BG_SCREEN_ADDR(15), 1, 0, gUnknown_02039760, 1, 0, 8, 2);
         for (i = 0; i < 2; i++)
@@ -1828,13 +1828,13 @@ void PrintStorageActionText(u8 index)
 {
     u8 *ptr;
 
-    Menu_DrawStdWindowFrame(9, 16, 29, 19);
+    Menu_DrawStdWindowFrame(10, 16, 29, 19);
 
     switch (gPCStorageActionTexts[index].format)
     {
     case PC_TEXT_FMT_UNK_02:
         ptr = StringCopy(gPokemonStorageSystemPtr->unk_2694, gPCStorageActionTexts[index].text);
-        ptr = StringCopy(ptr, gPokemonStorageSystemPtr->unk_11fa);
+        ptr = StringCopy(ptr, gPokemonStorageSystemPtr->nickname);
         break;
     case PC_TEXT_FMT_UNK_05:
         ptr = StringCopy(gPokemonStorageSystemPtr->unk_2694, gPCStorageActionTexts[index].text);
@@ -1842,7 +1842,7 @@ void PrintStorageActionText(u8 index)
         break;
     case PC_TEXT_FMT_MON_NAME:
         // {var} + " is selected."
-        ptr = StringCopy(gPokemonStorageSystemPtr->unk_2694, gPokemonStorageSystemPtr->unk_11fa);
+        ptr = StringCopy(gPokemonStorageSystemPtr->unk_2694, gPokemonStorageSystemPtr->nickname);
         ptr = StringCopy(ptr, gPCStorageActionTexts[index].text);
         break;
     case PC_TEXT_FMT_MON_NAME_2:
@@ -1859,7 +1859,7 @@ void PrintStorageActionText(u8 index)
             stringLength = &text[StringLength(text)] + 1;
 
             ptr = StringCopy(gPokemonStorageSystemPtr->unk_2694, gPCStorageActionTexts[index].text);
-            ptr = StringCopy(ptr, gPokemonStorageSystemPtr->unk_11fa);
+            ptr = StringCopy(ptr, gPokemonStorageSystemPtr->nickname);
             ptr = StringCopy(ptr, stringLength);
         }
         break;
@@ -1889,7 +1889,7 @@ void PrintStorageActionText(u8 index)
     }
 
     ptr[0] = EOS;
-    Menu_PrintText(gPokemonStorageSystemPtr->unk_2694, 10, 17);
+    Menu_PrintText(gPokemonStorageSystemPtr->unk_2694, 11, 17);
 }
 
 const struct OamData gOamData_83B6EAC = {
@@ -1950,7 +1950,7 @@ void sub_8098A38(s8 a0)
 void sub_8098A5C(void)
 {
     Menu_DestroyCursor();
-    Menu_EraseWindowRect(9, 16, 29, 19);
+    Menu_EraseWindowRect(10, 16, 29, 19);
     Menu_EraseWindowRect(23, 10, 29, 15);
 }
 

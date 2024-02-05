@@ -15,6 +15,7 @@
 #include "strings2.h"
 #include "text.h"
 #include "trainer.h"
+#include "korean.h"
 #include "util.h"
 #include "ewram.h"
 
@@ -1162,6 +1163,36 @@ void GetSpeciesName(u8 *name, u16 species)
             name[i] = gSpeciesNames[species][i];
 
         if (name[i] == EOS)
+            break;
+    }
+
+    name[i] = EOS;
+}
+
+void GetSpeciesName5(u8 *name, u16 species)
+{
+    u8 i, length = 0;
+
+    for (i = 0; i <= POKEMON_NAME_LENGTH; i++)
+    {
+        if (species > NUM_SPECIES)
+            name[i] = gSpeciesNames[0][i];
+        else
+            name[i] = gSpeciesNames[species][i];
+
+        if (IsKoreanGlyph(name[i]))
+        {
+            i++;
+
+            if (species > NUM_SPECIES)
+                name[i] = gSpeciesNames[0][i];
+            else
+                name[i] = gSpeciesNames[species][i];
+        }
+
+        length++;
+
+        if (name[i] == EOS || length == 5)
             break;
     }
 

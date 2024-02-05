@@ -2630,7 +2630,7 @@ static void PokemonSummaryScreen_PrintPrimaryInfo(struct Pokemon *mon)
     Menu_PrintText(gStringVar1, 1, 12);
 
     buffer = SummaryScreen_SetTextColor(gStringVar1, 13);
-    buffer = GetMonNickname(mon, buffer);
+    buffer = GetMonNickname5(mon, buffer);
     Menu_PrintText(gStringVar1, level == 100 ? 5 : 4, 12);
 
     buffer = gStringVar1;

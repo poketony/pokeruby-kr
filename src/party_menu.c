@@ -2595,6 +2595,35 @@ u8 *GetMonNickname(struct Pokemon *pokemon, u8 *stringBuffer)
     return StringGetEnd10(stringBuffer);
 }
 
+u8 *GetMonNickname5(struct Pokemon *pokemon, u8 *stringBuffer)
+{
+    u8 *tempBuffer = stringBuffer;
+    u8 length = 0;
+
+    GetMonData(pokemon, MON_DATA_NICKNAME, stringBuffer);
+    StringGetEnd10(stringBuffer);
+
+    while (*tempBuffer != EOS)
+    {
+        if (IsKoreanGlyph(*tempBuffer))
+        {
+            length++;
+            tempBuffer += 2;
+            continue;
+        }
+
+        tempBuffer++;
+        length++;
+
+        if (length == 5)
+            break;
+    }
+
+    *tempBuffer = EOS;
+
+    return tempBuffer;
+}
+
 void PartyMenuPutStatusTilemap(u8 monIndex, u8 menuLayout, u8 status)
 {
     u8 i;
