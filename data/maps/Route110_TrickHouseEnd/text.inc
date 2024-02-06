@@ -1,110 +1,176 @@
 Route110_TrickHouseEnd_Text_19C281:: @ 819C281
-	.string "Aak!\n"
-	.string "You've made it to me?\l"
-	.string "Hmmm... You're sharp!$"
+	.string "앗!\n"
+	.string "자네 여기까지 온 건가!\l"
+	.string "으-음... 대단한데!$"
+	// あっ!ｎ
+	// あんた ここまで こられたのか!ｌ
+	// う-む…… できる!
 
 Route110_TrickHouseEnd_Text_19C2B2:: @ 819C2B2
-	.string "It took me all night to plant all those\n"
-	.string "trees...\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three, four, five, six places!$"
+	.string "밤을 새서 나무를 심었는데...\p"
+	.string "이 몸 다음 다음 다음 다음\n"
+	.string "다음 다음으로 대단하군!$"
+	// てつやで きを うえたのに……ｐ
+	// わがはいの つぎの つぎの つぎの つぎのｎ
+	// つぎの つぎ くらいに すごい!
 
 Route110_TrickHouseEnd_Text_19C333:: @ 819C333
-	.string "It took me all night to make the maze...\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three, four, five places!$"
+	.string "밤을 새서 미로를 만들었는데...\p"
+	.string "이 몸 다음 다음 다음 다음\n"
+	.string "다음으로 대단하군!$"
+	// てつやで めいろを つくったのに……ｐ
+	// わがはいの つぎの つぎの つぎの つぎのｎ
+	// つぎ くらいに すごい!
 
 Route110_TrickHouseEnd_Text_19C3A7:: @ 819C3A7
-	.string "It took me all night to bring in those\n"
-	.string "boulders...\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three, four places!$"
+	.string "밤을 새서 바위를 옮겨 놓았는데...\p"
+	.string "이 몸 다음 다음 다음 다음으로\n"
+	.string "대단하군!$"
+	// てつやで いわを はこび こんだのに…ｐ
+	// わがはいの つぎの つぎの つぎの つぎｎ
+	// くらいに すごい!
 
 Route110_TrickHouseEnd_Text_19C41F:: @ 819C41F
-	.string "It took me all night to shove in those\n"
-	.string "boulders...\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three places!$"
+	.string "밤을 새서 바위를 밀어 놨는데...\p"
+	.string "이 몸 다음 다음 다음으로\n"
+	.string "대단하군!$"
+	// てつやで いわを おして きたのに……ｐ
+	// わがはいの つぎの つぎの つぎｎ
+	// くらいに すごい!
 
 Route110_TrickHouseEnd_Text_19C491:: @ 819C491
-	.string "It took me all night to make MECHADOLLS\n"
-	.string "and another to think up the quiz...\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two places!$"
+	.string "밤을 새서 인형을 만들고\n"
+	.string "밤을 새서 퀴즈도 생각했는데...\p"
+	.string "이 몸 다음 다음으로\n"
+	.string "대단하군!$"
+	// てつやで にんぎょう つくってｎ
+	// てつやで クイズも かんがえたのに……ｐ
+	// わがはいの つぎの つぎｎ
+	// くらいに すごい!
 
 Route110_TrickHouseEnd_Text_19C515:: @ 819C515
-	.string "It took me all night to install\n"
-	.string "the doors...\p"
-	.string "You're almost my equal in greatness!$"
+	.string "밤을 새서 문을 설치해 놓았는데...\p"
+	.string "이 몸 다음으로\n"
+	.string "대단하군!$"
+	// てつやで とびらを とりつけたのに……ｐ
+	// わがはいの つぎｎ
+	// くらいに すごい!
 
 Route110_TrickHouseEnd_Text_19C567:: @ 819C567
-	.string "It took me all night setting up arrows...\p"
-	.string "You're my equal in greatness!$"
+	.string "밤을 새서 화살표를 정렬해 놨는데...\p"
+	.string "이 몸과 동급으로 대단하군!$"
+	// てつやで やじるしを ならべたのに……ｐ
+	// わがはいと おなじ くらい すごい!
 
 Route110_TrickHouseEnd_Text_19C5AF:: @ 819C5AF
-	.string "It took me all night polishing floors...\p"
-	.string "You're above me in greatness!\n"
-	.string "Possibly...$"
+	.string "밤을 새서 바닥을 닦아 놨는데...\p"
+	.string "이 몸보다 더 대단! 할지도...$"
+	// てつやで ゆかを みがいたのに……ｐ
+	// わがはい より すごい! のかも……
 
 Route110_TrickHouseEnd_Text_19C602:: @ 819C602
-	.string "Wh-what should I do?\n"
-	.string "My fountain of ideas for tricks has\l"
-	.string "run dry...\p"
-	.string "Perhaps it is time I toured the country\n"
-	.string "on a quest to devise new tricks...$"
+	.string "어 어쩌지...\n"
+	.string "숨겨진 장치를 만들 만한\l"
+	.string "아이디어가 다 떨어져버렸어...\l"
+	.string "또 전국 각지를 돌면서\l"
+	.string "새로운 장치를 생각해 와야겠다...$"
+	// ど どうしよう……ｎ
+	// もう カラクリの ネタがｌ
+	// つきて しまった……ｌ
+	// また ぜんこく かくちを まわってｌ
+	// しかけを いろいろ かんがえて くるか……
 
 Route110_TrickHouseEnd_Text_19C691:: @ 819C691
-	.string "I hate to admit defeat, but you have\n"
-	.string "bested me!\p"
-	.string "Still, you must have been reeled in by\n"
-	.string "my charisma for you to visit me again\l"
-	.string "and again. Yes, you must have!\p"
-	.string "But that has nothing to do with my\n"
-	.string "losing!\p"
-	.string "In recognition of the friendship\n"
-	.string "between you, the driven, and the genius\l"
-	.string "that is myself, I demand that you take\l"
-	.string "this keepsake!$"
+	.string "인정하고 싶진 않지만\n"
+	.string "자네한테 졌다...!\l"
+	.string "뭐 몇 번이나 와준 걸 보면\l"
+	.string "그만큼 이 몸이\l"
+	.string "매력 있었단 소리겠지만 말야\l"
+	.string "그거랑 이 몸이 진 거랑은 관계없어!\p"
+	.string "아 그래!\n"
+	.string "열심히 한 자네와\l"
+	.string "천재인 이 몸의\l"
+	.string "우정을 기념해서...\l"
+	.string "이걸 받아줘!$"
+	// みとめたくは ないんだがｎ
+	// あんたには まけた……!ｌ
+	// まあ なんども きてくれた あたりｌ
+	// よっぽど わがはいにｌ
+	// みりょくを かんじたの だろうがｌ
+	// それと わがはいの まけは かんけいなし!ｐ
+	// そうだ!ｎ
+	// がんばりやの あんたとｌ
+	// てんさいの わがはいのｌ
+	// ゆうじょうを きねんして…ｌ
+	// これを うけとって くれ!
 
 Route110_TrickHouseEnd_Text_19C7D7:: @ 819C7D7
-	.string "What? No room in your PC?\n"
-	.string "What am I to make of that?\p"
-	.string "I wish I could say that, but I am much\n"
-	.string "too kind and caring, so come back later!$"
+	.string "뭐 PC에 들어가지 않는다고?\n"
+	.string "그런 건 내 알 바 아냐!\p"
+	.string "...라고 말하고 싶지만\n"
+	.string "이 몸은 착하니까 맡아주지!$"
+	// なに パソコンに はいりきらない?ｎ
+	// そんなの わがはいが しるか!ｐ
+	// ……と いいたい ところだけどｎ
+	// わがはいは やさしいので あとで やろう!
 
 Route110_TrickHouseEnd_Text_19C85C:: @ 819C85C
-	.string "... ... ... ... ... ...\p"
-	.string "I am leaving on a journey of discovery.\n"
-	.string "A quest in search of new tricks.\p"
-	.string "I wish that you will one day visit and\n"
-	.string "entertain me again.\p"
-	.string "And now, farewell!$"
+	.string "...... ...... ......\p"
+	.string "이 몸은 이제부터\n"
+	.string "새로운 아이디어를 찾으러\l"
+	.string "여행을 떠날까 해...\l"
+	.string "자네도 언젠가 여기 와서\l"
+	.string "또 놀다 가도록 해!\p"
+	.string "그럼 안녕...!$"
+	// …… …… ……ｐ
+	// わがはいは これからｎ
+	// あらたな しかけを もとめてｌ
+	// たびに でる ことに する……ｌ
+	// あんたも いつか ここにきてｌ
+	// また あそんで いってくれ!ｐ
+	// それでは さらば…!
 
 Route110_TrickHouseEnd_Text_19C90B:: @ 819C90B
-	.string "Fine!\n"
-	.string "You have earned this reward!$"
+	.string "좋아 자네에게\n"
+	.string "선물을 주지!$"
+	// よしっ あんたにｎ
+	// ほうびを やろう!
 
 Route110_TrickHouseEnd_Text_19C92E:: @ 819C92E
-	.string "What? Have you no room for this?\n"
-	.string "What manner of items do you carry?\p"
-	.string "But fine, since you've reached me,\n"
-	.string "your reward will be with me till later.$"
+	.string "뭣 지닐 수가 없다고?\n"
+	.string "뭘 그렇게 많이 들고 있길래?\l"
+	.string "뭐 그래도 여기까지 와주었으니까\l"
+	.string "상품은 다음에 주도록 하지!$"
+	// なにっ もちきれない?ｎ
+	// そんなに なにを もちあるいてるんだ?ｌ
+	// まあ せっかく ここまで こられたんだしｌ
+	// ほうびは あとで やろう!
 
 Route110_TrickHouseEnd_Text_19C9BD:: @ 819C9BD
-	.string "Scrub that smug smirk from your face!\n"
-	.string "It's much too early to think you've won!\p"
-	.string "I'll make new tricks to stump you, I will.\n"
-	.string "You may mock me only when you're done.\p"
-	.string "Come back for the next exciting\n"
-	.string "installment!$"
+	.string "뭘 그렇게 자신만만해\n"
+	.string "이 몸을 완전히 이기려면\l"
+	.string "아직 멀었다고!\l"
+	.string "앞으로 또 새로운 장치를 만들 테니\l"
+	.string "그거나 끝낸 다음에 날 비웃어 봐!\p"
+	.string "그럼 다음을 기대하도록!$"
+	// なんだ とくいそうな かお してからにｎ
+	// わがはいに かった きに なるのはｌ
+	// まだ はやいわ!ｌ
+	// このあとも また しかけを つくるからｌ
+	// それが おわってから わがはいを わらえ!ｐ
+	// それでは じかいを おたのしみに!
 
 Route110_TrickHouseEnd_Text_19CA8B:: @ 819CA8B
-	.string "Now, now! You're ignoring me now?\n"
-	.string "Now that, I consider heartbreaking!$"
+	.string "어이어이\n"
+	.string "이 몸을 무시하는 거냐고!\l"
+	.string "그것참 서러운걸$"
+	// おいおいｎ
+	// わがはいの ことは むし か!ｌ
+	// ずいぶん さみしい じゃないか
 
 UnknownString_819CAD1: @ 819CAD1
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
-	.string "“TRICK MASTER is fabulous.”\n"
-	.string "... ... ... ... ... ... ... ...\p"
-	.string "The lock clicked open!$"
+	.string "{PLAYER}{K_EUNNEUN} 암호를\n"
+	.string "문에 적었다!\p"
+	.string "“미궁대왕님 짱이야”\p"
+	.string "...... ...... ......\p"
+	.string "문의 자물쇠가 풀렸다!$"
