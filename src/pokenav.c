@@ -1268,7 +1268,7 @@ void sub_80F0A74(u16 arg0, u16 arg1)
     sub_80F700C(gPokenavStructPtr->unk8788, arg0);
     arg1 &= 0x1F;
     BasicInitMenuWindow(&gWindowTemplate_81E70D4);
-    Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 97, arg1 * 8, 0);
+    Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 104, arg1 * 8, 0);
     if (arg0 < gPokenavStructPtr->unkD158 && gPokenavStructPtr->trainersEye[arg0].rematchNo != 0)
         sub_8095C8C((void *)VRAM + 0xF000, 29, arg1, gUnknown_083E039C, 0, 0, 1, 2, 1);
     else
@@ -1398,29 +1398,29 @@ bool8 sub_80F0D5C(void)
     default:
         return FALSE;
     case 0:
-        Menu_PrintTextPixelCoords(gOtherText_Strategy, 97, r5 * 8, 0);
+        Menu_PrintTextPixelCoords(gOtherText_Strategy, 104, r5 * 8, 0);
         break;
     case 1:
-        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[0], 136, 0);
-        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 97, r5 * 8, 0);
+        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[0], 128, 0);
+        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 112, r5 * 8, 0);
         break;
     case 2:
-        Menu_PrintTextPixelCoords(gOtherText_TrainersPokemon, 97, r5 * 8, 0);
+        Menu_PrintTextPixelCoords(gOtherText_TrainersPokemon, 104, r5 * 8, 0);
         break;
     case 3:
-        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[1], 136, 0);
-        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 97, r5 * 8, 0);
+        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[1], 128, 0);
+        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 112, r5 * 8, 0);
         break;
     case 4:
-        Menu_PrintTextPixelCoords(gOtherText_SelfIntroduction, 97, r5 * 8, 0);
+        Menu_PrintTextPixelCoords(gOtherText_SelfIntroduction, 104, r5 * 8, 0);
         break;
     case 5:
-        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[2], 136, 0);
-        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 97, r5 * 8, 0);
+        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[2], 128, 0);
+        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 112, r5 * 8, 0);
         break;
     case 6:
-        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[3], 136, 0);
-        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 97, r5 * 8, 0);
+        AlignStringInMenuWindow(gPokenavStructPtr->unk8788, gPokenavStructPtr->trainerEyeDescriptionLines[3], 128, 0);
+        Menu_PrintTextPixelCoords(gPokenavStructPtr->unk8788, 112, r5 * 8, 0);
         return FALSE;
     }
     gPokenavStructPtr->unkD15C++;
@@ -2779,7 +2779,7 @@ void sub_80F3008(u8 arg0)
 
     LoadSpriteSheets(spriteSheets);
     LoadSpritePalette(&spritePalette);
-    spriteId = CreateSprite(&gSpriteTemplate_83E45B8, 95, 0, 0);
+    spriteId = CreateSprite(&gSpriteTemplate_83E45B8, 108, 0, 0);
     if (spriteId == MAX_SPRITES)
     {
         gPokenavStructPtr->unk87CC = NULL;
@@ -3569,7 +3569,6 @@ void sub_80F4194(u8 *arg0, u8 *text)
     for (i = 0; i < 5; i++)
     {
         DmaCopy16(3, &tileBuffer[128 * i], &arg0[i * 256], 128);
-        i++;i--; // fakematch
         DmaCopy16(3, &tileBuffer[128 * i + 0x400], &arg0[32 * ((i * 8) + 4)], 128);
     }
 }
@@ -3589,9 +3588,9 @@ void sub_80F42C4(u8 *arg0)
     LoadSpritePalette(&gUnknown_083E4868);
 
     tileOffset = 0;
-    for (i = 0; i < 5; i++)
+    for (i = 0; i < 4; i++)
     {
-        spriteId = CreateSprite(&gSpriteTemplate_83E4878, i * 32 + 113, 16, 0);
+        spriteId = CreateSprite(&gSpriteTemplate_83E4878, i * 32 + 120, 16, 0);
         if (spriteId != MAX_SPRITES)
         {
             gSprites[spriteId].oam.tileNum += tileOffset;
