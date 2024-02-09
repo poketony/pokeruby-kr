@@ -1,119 +1,201 @@
 Route116_Text_17032A:: @ 817032A
-	.string "Ohhh, what am I to do?\p"
-	.string "We were on our walk, PEEKO and I, when\n"
-	.string "we were jumped by an odd thug...\p"
-	.string "The scoundrel made off with my\n"
-	.string "darling PEEKO!\p"
-	.string "Wrrrooooooaaaar! PEEKO!$"
+	.string "아아아 이거 어쩌지!\p"
+	.string "피코랑 같이 산책하고 있었는데\n"
+	.string "갑자기 이상한 녀석이 와서\p"
+	.string "내 귀여운 피코를\n"
+	.string "뺏어 갔다네!\p"
+	.string "오오-! 피코야-!$"
+	// あああ なんという ことだ!ｐ
+	// ピ-コちゃんと さんぽを していたらｎ
+	// いきなり おかしな やつが やってきてｐ
+	// わしの かわいい ピ-コちゃんがｎ
+	// うばわれて しまったのじゃ!ｐ
+	// うお-! ピ-コちゃ-ん!
 
 Route116_Text_1703CF:: @ 81703CF
-	.string "Nnn... Roar!\p"
-	.string "I want to dig that tunnel!$"
+	.string "우오-!!\p"
+	.string "터널 파고 싶어-!!$"
+	// ぬぉ-!!ｐ
+	// トンネル ほりて-!!
 
 Route116_Text_1703F7:: @ 81703F7
-	.string "Nnn... Roar!\n"
-	.string "What's going on?\p"
-	.string "I was digging the tunnel without any\n"
-	.string "tools when some goon ordered me out!\p"
-	.string "That tunnel's filled with POKéMON\n"
-	.string "that react badly to loud noises.\l"
-	.string "They could cause an uproar.\p"
-	.string "That's why we stopped using heavy\n"
-	.string "equipment for tunneling...\p"
-	.string "I'm worried that the goon will do\n"
-	.string "something stupid and startle the\l"
-	.string "POKéMON into an uproar.$"
+	.string "우오-!!\n"
+	.string "뭐가 어떻게 된 거지!?\p"
+	.string "도구고 뭐고 안 쓰고\n"
+	.string "터널을 파고 있었는데\l"
+	.string "이상한 남자한테 쫓겨났어!\p"
+	.string "저 터널에는\n"
+	.string "큰 소리에 반응해서\l"
+	.string "동요하는 포켓몬이 있어\p"
+	.string "그래서 기계를 사용한\n"
+	.string "개발 공사도 중지했는데...\p"
+	.string "괜한 소란을 피워서\n"
+	.string "포켓몬이 겁먹지 않을까 걱정이야!$"
+	// ぬぉ-!!ｎ
+	// なんて ことだ!?ｐ
+	// どうぐも なにも つかわずにｎ
+	// トンネルを ほっていたのにｌ
+	// へんな おとこに おいだされた!ｐ
+	// あの トンネルにはｎ
+	// おおきな ものおとに はんのう してｌ
+	// さわぎだす ポケモンが いるｐ
+	// だから きかいを つかってのｎ
+	// かいはつ こうじを やめたのに……ｐ
+	// へんに さわぎを おこされるとｎ
+	// ポケモンが おびえないか しんぱいだ!
 
 Route116_Text_170556:: @ 8170556
-	.string "Nnn... Roar!\p"
-	.string "That goofy goon hightailed it out of\n"
-	.string "the tunnel! I can go back to digging!$"
+	.string "우오-!!\p"
+	.string "이상한 남자가 뛰쳐나왔어!\n"
+	.string "이제 다시 터널을 팔 수 있어!$"
+	// ぬぉ-!!ｐ
+	// へんな おとこが とびだしていった!ｎ
+	// これで トンネルを ほれるよ!
 
 Route116_Text_1705AE:: @ 81705AE
-	.string "Oh! It's you!\p"
-	.string "You're that person who not only helped\n"
-	.string "me in PETALBURG WOODS, but also got\l"
-	.string "back my stolen package and then even\l"
-	.string "graciously delivered it to SLATEPORT!\p"
-	.string "CAPT. STERN informed us that the\n"
-	.string "package arrived, too!\p"
-	.string "I thank you very, very much!\p"
-	.string "Why, if I were a rain cloud, I would\n"
-	.string "shower you with gratitude and hail\l"
-	.string "you as a hero!\p"
-	.string "For you, the most wonderful TRAINER,\n"
-	.string "I bear good news!\p"
-	.string "Recently, our company developed a new\n"
-	.string "kind of POKé BALL.\p"
-	.string "As a token of our appreciation, this\n"
-	.string "is our gift to our wonderful TRAINER!$"
+	.string "아앗!\n"
+	.string "당신은!!\p"
+	.string "등화숲에서 도와준 것뿐만 아니라\n"
+	.string "도둑맞은 짐도 되찾아주고\l"
+	.string "거기다가 잿빛도시로의 물건 배달도\l"
+	.string "흔쾌히 해준 사람!!\p"
+	.string "해양관장에게\n"
+	.string "“짐은 잘 도착했다”고\l"
+	.string "연락이 왔었어요!\p"
+	.string "정말 감사합니다!\n"
+	.string "너무 감사해서 눈물이 날 정도예요\p"
+	.string "그런 멋진 트레이너님에게\n"
+	.string "아주 좋은 뉴스!\p"
+	.string "최근 저희 회사에서\n"
+	.string "새로운 몬스터볼의\l"
+	.string "개발에 성공했어요!\p"
+	.string "감사의 마음을 담아서\n"
+	.string "트레이너님께도 선물할게요!$"
+	// ああっ!ｎ
+	// きみは!!ｐ
+	// トウカのもりで たすけてくれた だけでなくｎ
+	// ぬすまれた にもつを とりかえしｌ
+	// はたまた カイナへの とどけものをｌ
+	// こころよく ひきうけてくれた ひと!!ｐ
+	// クスノキかんちょう からｎ
+	// 「にもつが とどいた」とｌ
+	// れんらくが ありましたよ!ｐ
+	// どうも ありがとう なのです!ｎ
+	// かんしゃ かんげき あめ あられ なのですｐ
+	// そんな すてきな トレ-ナ-さんにｎ
+	// グッド ニュ-ス!ｐ
+	// さいきん わがしゃ ではｎ
+	// あたらしい モンスタ-ボ-ルのｌ
+	// かいはつに せいこう したのです!ｐ
+	// かんしゃの きもちとしてｎ
+	// トレ-ナ-さんにも プレゼント なのよね!
 
 Route116_Text_1707B8:: @ 81707B8
-	.string "Our new POKé BALL will be available\n"
-	.string "at the POKéMON MART in RUSTBORO.\p"
-	.string "Please do try it out!\n"
-	.string "Thank you and bye-bye!$"
+	.string "새로운 몬스터볼은\n"
+	.string "금탄도시의 프렌들리숍에서도\l"
+	.string "팔고 있습니다!\p"
+	.string "부디 한번 사용해 보세요!\n"
+	.string "그럼 이만...$"
+	// あたらしい モンスタ-ボ-ルはｎ
+	// カナズミの フレンドリィ ショップでｌ
+	// うってますからね!ｐ
+	// ぜひ つかって みてください!ｎ
+	// ではでは……
 
 Route116_Text_17082A:: @ 817082A
-	.string "Your BAG is jam-packed.\n"
-	.string "I can't give you this REPEAT BALL.$"
+	.string "가방이 가득 차서\n"
+	.string "리피드볼은 드릴 수 없겠네요$"
+	// どうぐ いっぱいでｎ
+	// リピ-トボ-ル あげられないね
 
 Route116_Text_170865:: @ 8170865
-	.string "As a token of our appreciation for\n"
-	.string "your delivering our package, I have a\l"
-	.string "gift of a new kind of POKé BALL for our\l"
-	.string "most wonderful TRAINER!$"
+	.string "화물을 전달해주신 것에 대한\n"
+	.string "감사의 표시로\l"
+	.string "트레이너님께 새로운\l"
+	.string "몬스터볼을 선물할게요!$"
+	// にもつを とどけてくれた ことへのｎ
+	// かんしゃの きもちとしてｌ
+	// トレ-ナ-さん にも あたらしいｌ
+	// モンスタ-ボ-ルを プレゼント なのよね!
 
 Route116_Text_1708EE:: @ 81708EE
-	.string "I dropped my glasses...\n"
-	.string "Can you help me find them?$"
+	.string "안경을 떨어뜨렸어...\n"
+	.string "너도 찾는 것 좀 도와줘$"
+	// メガネを おとしたんだ……ｎ
+	// きみも さがすの てつだってよ
 
 Route116_Text_170921:: @ 8170921
-	.string "Those glasses!\n"
-	.string "May I see them for a second?$"
+	.string "그 안경...?\n"
+	.string "잠깐 좀 보여줘 봐!$"
+	// その メガネ……?ｎ
+	// ちょっと みせてよ!
 
 Route116_Text_17094D:: @ 817094D
-	.string "Hmm...\n"
-	.string "These are BLACKGLASSES.\l"
-	.string "They're not what I'm looking for...\p"
-	.string "Maybe my glasses aren't around\n"
-	.string "here...$"
+	.string "으-음...\n"
+	.string "이건 검은안경이네\l"
+	.string "내가 찾는 게 아니야...\p"
+	.string "여기엔 내 안경이 없는 걸까$"
+	// う-む……ｎ
+	// これは くろいメガネ だねｌ
+	// ぼくが さがしているのと ちがうなあ……ｐ
+	// ここには ぼくの メガネ ないのかなあ
 
 Route116_Text_1709B7:: @ 81709B7
-	.string "Hmm...\n"
-	.string "I can't find my glasses anywhere...\l"
-	.string "Maybe they're not around here...$"
+	.string "으-음...\n"
+	.string "아무리 봐도 안경을 못 찾겠어\l"
+	.string "여기에는 내 안경이 없는 걸까$"
+	// う-む……ｎ
+	// どうにも メガネが みつからないんだｌ
+	// ここには ぼくの メガネ ないのかなあ
 
 Route116_Text_170A03:: @ 8170A03
-	.string "Hmm...\n"
-	.string "These are BLACKGLASSES.\l"
-	.string "They're not what I'm looking for...$"
+	.string "으-음...\n"
+	.string "이건 검은안경이네\l"
+	.string "내가 찾는 게 아니야...$"
+	// う-む……ｎ
+	// これは くろいメガネ だねｌ
+	// ぼくが さがしているのと ちがうなあ……
 
 Route116_Text_170A46:: @ 8170A46
-	.string "ROUTE 116\n"
-	.string "{0x7B} RUSTBORO CITY$"
+	.string "여기는 116번 도로\n"
+	.string "{0x7B} 금탄도시$"
+	// ここは 116ばん どうろｎ
+	// ©し© カナズミシティ
 
 Route116_Text_170A60:: @ 8170A60
-	.string "RUSTURF TUNNEL\n"
-	.string "“Linking RUSTBORO and VERDANTURF\p"
-	.string "“The tunnel project has been\n"
-	.string "canceled.”$"
+	.string "금탄도시와 잔디마을을 연결하는\n"
+	.string "“금잔터널”\p"
+	.string "개통 공사는 중지되었습니다$"
+	// カナズミと シダケを むすぶｎ
+	// 「カナシダ トンネル」ｐ
+	// かいつう こうじは ちゅうしに なりました
 
 Route116_Text_170AB8:: @ 8170AB8
-	.string "TUNNELER'S REST HOUSE$"
+	.string "터널공사 작업원 대기실$"
+	// トンネルこうじ さぎょういん つめしょ
 
 Route116_Text_170ACE:: @ 8170ACE
-	.string "TRAINER TIPS\p"
-	.string "If you want to stop a POKéMON from\n"
-	.string "evolving, press the B Button while it\l"
-	.string "is trying to evolve.\l"
-	.string "The startled POKéMON will stop.\p"
-	.string "This is called an evolution cancel.$"
+	.string "정보 나눔 게시판!!\p"
+	.string "포켓몬이 진화할 것 같을 때\n"
+	.string "B 버튼을 누르면\l"
+	.string "놀라서 진화를 멈춰버려요!\p"
+	.string "이걸 진화캔슬이라고 해요$"
+	// おとくな けいじばん!ｐ
+	// ポケモンが しんか しそうなときｎ
+	// ビ-ボタンを おすとｌ
+	// びっくりして しんかを やめます!ｐ
+	// これを しんかキャンセルと いいます
 
 Route116_Text_170B7D:: @ 8170B7D
-	.string "TRAINER TIPS\p"
-	.string "Your BAG has several POCKETS.\p"
-	.string "Items you obtain are automatically\n"
-	.string "placed in the appropriate POCKETS.\p"
-	.string "No TRAINER can afford to be without\n"
-	.string "a BAG of their own.$"
+	.string "정보 나눔 게시판!!\p"
+	.string "가방에는 몇 개의 포켓이 있고\n"
+	.string "넣는 도구의 종류에 따라\l"
+	.string "각 포켓에\l"
+	.string "자동으로 분류됩니다\p"
+	.string "정말 트레이너의 필수품이에요!$"
+	// おとくな けいじばん!!ｐ
+	// バッグには いくつかの ポケットが ありｎ
+	// いれる どうぐの しゅるい によってｌ
+	// それぞれの ポケットにｌ
+	// オ-トで ぶんるい されますｐ
+	// まさに トレ-ナ-の ひつじゅひん です!
