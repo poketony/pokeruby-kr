@@ -1,43 +1,79 @@
 Route111_WinstrateFamilysHouse_Text_191FCE:: @ 8191FCE
-	.string "You're the first TRAINER I've seen who\n"
-	.string "deploys POKéMON so masterfully.\p"
-	.string "But, I should tell you - my son is\n"
-	.string "stronger than you.\p"
-	.string "He even took the POKéMON LEAGUE\n"
-	.string "challenge, I'll have you know.$"
+	.string "자네만큼 포켓몬을 능숙하게\n"
+	.string "다루는 트레이너는 처음이군!\p"
+	.string "하지만 자네보다\n"
+	.string "우리 아들이 더 강하다!\p"
+	.string "뭐니 뭐니 해도 포켓몬리그에\n"
+	.string "도전하러 갔을 정도니 말이다!$"
+	// きみほど ポケモンを じょうずにｎ
+	// つかいこなす トレ-ナ-は はじめてだ!ｐ
+	// だが きみよりもｎ
+	// わたしの むすこの ほうが つよいぞ!ｐ
+	// なんたって ポケモン リ-グへｎ
+	// ちょうせんに いった ぐらい だからな!
 
 Route111_WinstrateFamilysHouse_Text_19208A:: @ 819208A
-	.string "We use this MACHO BRACE to more\n"
-	.string "effectively strengthen our POKéMON\l"
-	.string "in training.\p"
-	.string "Since you've beaten our entire family,\n"
-	.string "I don't know if you need it, but we\l"
-	.string "would like you to have our MACHO BRACE.$"
+	.string "이 교정깁스를 써서\n"
+	.string "우리 가족은\l"
+	.string "포켓몬을 단련시키고 있어요!\p"
+	.string "우리 가족 모두를 이긴\n"
+	.string "당신에겐 필요 없을지도 모르지만\l"
+	.string "꼭 받아주셨으면 해요!$"
+	// この きょうせいギプスを つかってｎ
+	// わたしたち かぞくはｌ
+	// ポケモンを きたえて います!ｐ
+	// わたしたち かぞく ぜんいんに かったｎ
+	// あなたには ひつようない かもしれませんがｌ
+	// ぜひ うけとって くださいな!
 
 Route111_WinstrateFamilysHouse_Text_19214D:: @ 819214D
-	.string "When it comes to POKéMON battles,\n"
-	.string "we tend to be pretty passionate.$"
+	.string "우리는 포켓몬 승부에\n"
+	.string "정열을 쏟아붓고 있어요!$"
+	// わたしたちは ポケモンでの しょうぶにｎ
+	// じょうねつを そそいで います!
 
 Route111_WinstrateFamilysHouse_Text_192190:: @ 8192190
-	.string "Mommy is stronger than Daddy.\p"
-	.string "I'm stronger than Mommy.\p"
-	.string "And Grandma's stronger than me!\p"
-	.string "But my big brother is even stronger\n"
-	.string "than Grandma.$"
+	.string "아빠보다 엄마가 강하고\p"
+	.string "엄마보다 내가 강하고\p"
+	.string "나보다 할머니가 강하지\p"
+	.string "하지만 할머니보다 강한 건\n"
+	.string "우리 오빠야!$"
+	// パパより ママが つよくてｐ
+	// ママより あたしが つよくてｐ
+	// あたしより おばあちゃんが つよくてｐ
+	// でも おばあちゃんより つよかったのがｎ
+	// あたしの あにき なの!
 
 Route111_WinstrateFamilysHouse_Text_192219:: @ 8192219
-	.string "There's no question that you're strong.\p"
-	.string "But if you were to battle my grandson,\n"
-	.string "you'd end up crying in frustration.\p"
-	.string "He's much stronger than any TRAINER\n"
-	.string "our family knows.\p"
-	.string "He must be challenging the POKéMON\n"
-	.string "LEAGUE CHAMPION by now.\p"
-	.string "Knowing my grandson, he could be the\n"
-	.string "CHAMPION already!$"
+	.string "네가 아무리 강해도\n"
+	.string "우리 손자를 만나면\l"
+	.string "패배의 눈물을 흘리게 될 게다...\p"
+	.string "우리 가족이 아는 그 어떤 트레이너보다\n"
+	.string "강했으니까 말이지!\p"
+	.string "손주 녀석도 지금쯤\n"
+	.string "포켓몬리그 챔피언에\l"
+	.string "도전하고 있을걸?\p"
+	.string "아니면 내 손주답게\n"
+	.string "이미 챔피언이 됐을지도 모르지... 우히히!$"
+	// あんたが いくら つよくてもｎ
+	// わしの まごに あったらｌ
+	// かてなくて なきだすこと じゃろう……ｐ
+	// わしら かぞくが しってる トレ-ナ-のｎ
+	// だれよりも つよかった からのう!ｐ
+	// まごの やつも いまごろはｎ
+	// ポケモンリ-グの チャンピオンにｌ
+	// ちょうせん しているの じゃろうか?ｐ
+	// それとも わしの まご じゃからｎ
+	// もう チャンピオン かもな…… ウヒヒ!
 
 Route111_WinstrateFamilysHouse_Text_192334:: @ 8192334
-	.string "My grandson must be challenging the\n"
-	.string "POKéMON LEAGUE CHAMPION by now.\p"
-	.string "Knowing my grandson, he could be the\n"
-	.string "CHAMPION already!$"
+	.string "손주 녀석도 지금쯤\n"
+	.string "포켓몬리그 챔피언에\l"
+	.string "도전하고 있을걸?\p"
+	.string "아니면 내 손주답게\n"
+	.string "이미 챔피언이 됐을지도 모르지... 우히히!$"
+	// まごの やつも いまごろはｎ
+	// ポケモンリ-グの チャンピオンにｌ
+	// ちょうせん しているの じゃろうか?ｐ
+	// それとも わしの まご じゃからｎ
+	// もう チャンピオン かもな…… ウヒヒ!

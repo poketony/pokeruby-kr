@@ -1,86 +1,141 @@
 Route113_GlassWorkshop_Text_19E4E6:: @ 819E4E6
-	.string "This area is covered in volcanic ash,\n"
-	.string "huff-puff!\p"
-	.string "I'm specially gifted, huff-puff.\p"
-	.string "I make glass out of volcanic ash\n"
-	.string "and make items, huff-puff.\p"
-	.string "Go collect ashes with this, huff-puff.$"
+	.string "요 주변에는\n"
+	.string "온통 화산재뿐이야 콜록콜록!\p"
+	.string "그리고 난 대단해 콜록콜록\p"
+	.string "화산재를 유리로 만들어서\n"
+	.string "그걸로 도구를 만들 수 있어 콜록콜록!\p"
+	.string "너도 이걸로\n"
+	.string "화산재를 모아 봐 콜록콜록!$"
+	// この あたりはｎ
+	// かざんばい だらけ ペコペコ!ｐ
+	// わたし すごいよ ペコペコｐ
+	// かざんばいを ガラスに してねｎ
+	// それで どうぐ つくるよ ペコペコ!ｐ
+	// きみも これでｎ
+	// かざんばいを あつめなさい ペコペコ!
 
 Route113_GlassWorkshop_Text_19E59B:: @ 819E59B
-	.string "Just take that SOOT SACK and walk\n"
-	.string "through piles of ash, huff-puff.\p"
-	.string "And it will fill up with the volcanic ash,\n"
-	.string "huff-puff.\p"
-	.string "Once you think you've collected a good\n"
-	.string "amount, come see me, huff-puff.$"
+	.string "그 주머니를 가지고\n"
+	.string "재가 쌓여 있는 곳에 들어가면\l"
+	.string "어머 신기해라!\p"
+	.string "주머니 속에 화산재가\n"
+	.string "점점 모일 거야 콜록콜록!\p"
+	.string "화산재가 많이 모였다고 생각되면\n"
+	.string "나한테 와 봐 콜록콜록!$"
+	// その ふくろを もってｎ
+	// はいの つもった ところを あるくとｌ
+	// あら ふしぎ!ｐ
+	// ふくろの なかに かざんばいがｎ
+	// どんどん たまっていくよ ペコペコ!ｐ
+	// かざんばいが たまったと おもったらｎ
+	// わたしの ところに きなさい ペコペコ!
 
 Route113_GlassWorkshop_Text_19E65B:: @ 819E65B
-	.string "Have you collected ashes, huff-puff?\n"
-	.string "Let me see, huff-puff.$"
+	.string "화산재 있으려나 콜록콜록!\n"
+	.string "어디 어디 한번 보여 줘 콜록쿨럭!$"
+	// かざんばい あるのかね ペコペコ!ｎ
+	// どれどれ みせてごらん ペコポコ!
 
 Route113_GlassWorkshop_Text_19E697:: @ 819E697
-	.string "Hmmm...\n"
-	.string "There's not enough ash here, huff-puff.\l"
-	.string "I can't make glass with this, huff-puff.\p"
-	.string "Let's see... {STR_VAR_1} is the number of steps\n"
-	.string "you'll need to walk for me to make you\l"
-	.string "a BLUE FLUTE, huff-puff.$"
+	.string "으-음...\n"
+	.string "화산재가 얼마 없어 콜록콜록!\l"
+	.string "유리 도구를 만들 수 없어 콜록콜록!\p"
+	.string "앞으로 {STR_VAR_1}걸음 더 걸으면\n"
+	.string "파랑비드로를 만들 수 있어 콜록콜록!$"
+	// う-ん……ｎ
+	// かざんばいが すくないよ ペコペコ!ｌ
+	// ガラスのどうぐ できないよ ペコペコ!ｐ
+	// あと §いほ あるけばｎ
+	// あおいビ-ドロ つくれるよ ペコペコ!
 
 Route113_GlassWorkshop_Text_19E757:: @ 819E757
-	.string "Oh!\n"
-	.string "You've got a lot of ashes, huff-puff!\p"
-	.string "I'll make you a glass item, huff-puff!\n"
-	.string "Which one would you like, huff-puff?$"
+	.string "오오!\n"
+	.string "화산재 모여 있어 콜록콜록!\l"
+	.string "유리 도구 만들 수 있어 콜록콜록!\p"
+	.string "어떤 게 좋을까 콜록콜록$"
+	// おほっｎ
+	// かざんばい あつまってるよ ペコペコ!ｌ
+	// ガラスのどうぐ つくるよ ペコペコ!ｐ
+	// どれが いいかね ペコペコ
 
 Route113_GlassWorkshop_Text_19E7CD:: @ 819E7CD
-	.string "A {STR_VAR_1}, huff-puff?\n"
-	.string "Is that the one for you, huff-puff?$"
+	.string "{STR_VAR_1} 말이지 콜록콜록!\n"
+	.string "정말 이걸로 할 거지? 콜록콜록$"
+	// §い だね ペコペコ!ｎ
+	// ほんとうに それで いいんだね? ペコペコ
 
 Route113_GlassWorkshop_Text_19E802:: @ 819E802
-	.string "Which one would you like, huff-puff?$"
+	.string "어떤 게 좋을까 콜록콜록$"
+	// どれが いいかね ペコペコ
 
 Route113_GlassWorkshop_Text_19E827:: @ 819E827
-	.string "A {STR_VAR_1} it is, then, huff-puff!\p"
-	.string "Okay! I'll make it for you, huff-puff.\n"
-	.string "Just wait a little while, huff-puff.$"
+	.string "{STR_VAR_1} 말이지 콜록콜록!\p"
+	.string "좋아! 도구 만들게 콜록콜록!\n"
+	.string "잠깐 기다리고 있어 콜록콜록$"
+	// §い だね ペコペコ!ｐ
+	// よしっ! どうぐを つくるよ ペコペコ!ｎ
+	// ちょっと まってなさいよ ペコペコ
 
 Route113_GlassWorkshop_Text_19E890:: @ 819E890
-	.string "A {STR_VAR_1}, huff-puff?\p"
-	.string "There's not enough ash here to make\n"
-	.string "that, though, huff-puff.\p"
-	.string "Let's see... {STR_VAR_2} is the number of steps\n"
-	.string "you'll need to walk through volcanic ash\l"
-	.string "for me to make that item, huff-puff.\p"
-	.string "Which item would you rather have me\n"
-	.string "make instead, huff-puff?$"
+	.string "{STR_VAR_1} 말이지 콜록콜록!\p"
+	.string "그치만 그걸 만들기 위해선\n"
+	.string "아직 화산재가 부족해 콜록콜록!\p"
+	.string "화산재가 쌓여 있는 곳을\n"
+	.string "앞으로 {STR_VAR_2}걸음 더 걸어야 해 콜록콜록!\p"
+	.string "어떤 게 좋을까 콜록콜록$"
+	// §い だね ペコペコ!ｐ
+	// だけど それを つくるにはｎ
+	// かざんばいが たりないよ ペコペコ!ｐ
+	// かざんばいの つもっている ところをｎ
+	// あと §うほ あるかないと ペコペコ!ｐ
+	// どれが いいかね ペコペコ
 
 Route113_GlassWorkshop_Text_19E990:: @ 819E990
-	.string "You've collected all that ash, but you\n"
-	.string "don't want anything, huff-puff?$"
+	.string "기껏 화산재를 모아 왔는데\n"
+	.string "갖고 싶은 건 없나 콜록콜록...$"
+	// せっかく かざんばいを あつめたのにｎ
+	// ほしい ものは ないのかね ペコペコ……
 
 Route113_GlassWorkshop_Text_19E9D7:: @ 819E9D7
-	.string "Ah, I've finished your {STR_VAR_1}.\n"
-	.string "Take it, huff-puff.$"
+	.string "오오 {STR_VAR_1} 다 만들었어\n"
+	.string "가져가 콜록콜록$"
+	// おお §い できたよｎ
+	// もって いきなさいよ ペコペコ
 
 Route113_GlassWorkshop_Text_19EA06:: @ 819EA06
-	.string "Oh?\n"
-	.string "You've no room in your BAG, huff-puff.\p"
-	.string "I'll hold on to it, so come back later,\n"
-	.string "huff-puff.$"
+	.string "어라?\n"
+	.string "그 이상은 가지고 다닐 수 없어 콜록콜록\p"
+	.string "맡아 둘 테니까\n"
+	.string "다음에 와 콜록콜록$"
+	// あら?ｎ
+	// それいじょう もてないよ ペコペコｐ
+	// あずかって おくからｎ
+	// こんど きなさい ペコペコ
 
 Route113_GlassWorkshop_Text_19EA64:: @ 819EA64
-	.string "Oh?\n"
-	.string "You've no room in your PC, huff-puff?\p"
-	.string "I'll hold on to it, so come back later,\n"
-	.string "huff-puff.$"
+	.string "어라?\n"
+	.string "PC가 가득 찼네 콜록콜록\p"
+	.string "맡아 둘 테니까\n"
+	.string "다음에 와 콜록콜록$"
+	// あら?ｎ
+	// パソコン いっぱい なのか ペコペコｐ
+	// あずかって おくからｎ
+	// こんど きなさい ペコペコ
 
 Route113_GlassWorkshop_Text_19EAC1:: @ 819EAC1
-	.string "Hah? You haven't got your SOOT SACK\n"
-	.string "with you, huff-puff.\p"
-	.string "You have to keep it with you to collect\n"
-	.string "volcanic ash, huff-puff.$"
+	.string "어라?\n"
+	.string "재주머니가 없네 콜록콜록\p"
+	.string "가지고 다니지 않으면\n"
+	.string "화산재를 모을 수 없어 콜록콜록$"
+	// あら?ｎ
+	// はいぶくろ もっていないのか ペコペコｐ
+	// もちあるかないとｎ
+	// かざんばい たまらないよ ペコペコ
 
 Route113_GlassWorkshop_Text_19EB3B:: @ 819EB3B
-	.string "It's fun to blow a glass flute while my\n"
-	.string "boss is talking.\p"
-	.string "Huff-huff! Puff-puff!$"
+	.string "스승님이 말씀하시는 거에 맞춰서\n"
+	.string "비드로를 불면 즐거워!\p"
+	.string "콜록콜록! 콜록쿨럭!$"
+	// おやかたが はなすのに あわせてｎ
+	// ビ-ドロ ふくと たのしか!ｐ
+	// ペコペコ! ペコポコ!

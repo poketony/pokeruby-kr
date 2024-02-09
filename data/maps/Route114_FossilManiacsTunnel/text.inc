@@ -1,26 +1,45 @@
 Route114_FossilManiacsTunnel_Text_192795:: @ 8192795
-	.string "I'm the FOSSIL MANIAC...\n"
-	.string "I'm a nice guy who loves fossils...\p"
-	.string "Do you want a fossil?\p"
-	.string "But the fossils around these parts all\n"
-	.string "belong to me... None for you...\p"
-	.string "If you can't go without a fossil, go to\n"
-	.string "the desert on ROUTE 111...\p"
-	.string "From what I've heard, fossils that were\n"
-	.string "buried in the sand sometimes rise to\l"
-	.string "the surface from sandstorms...$"
+	.string "나는 화석마니아...\n"
+	.string "화석을 좋아하는 나이스 가이야...\p"
+	.string "너도 화석을 가지고 싶니...?\p"
+	.string "여기서 발견되는 화석은\n"
+	.string "모두 내 거라서 줄 수가 없어...\p"
+	.string "어떻게든 가지고 싶으면\n"
+	.string "111번 도로에 있는 사막에 가봐...\p"
+	.string "들은 얘기로는 모래폭풍으로\n"
+	.string "모래 안에 잠들어 있던 화석이\l"
+	.string "위로 떠오르는 일도 있대...$"
+	// ぼく かせきマニア……ｎ
+	// かせき だいすき ナイスガイ さ……ｐ
+	// きみも カセキが ほしいの……?ｐ
+	// ここで みつかる カセキはｎ
+	// ぜんぶ ぼくの ものだから あげないよ……ｐ
+	// どうしても ほしければｎ
+	// 111ばんどうろの さばくに いきなよ……ｐ
+	// きいた はなしでは すなあらしでｎ
+	// すなの なかに ねむっていた カセキがｌ
+	// ひょうめんに うかぶことが あるそうだよ……
 
 Route114_FossilManiacsTunnel_Text_1928DE:: @ 81928DE
-	.string "You found a FOSSIL, didn't you?\n"
-	.string "That's so nice... It's so dreamy...\p"
-	.string "What are you going to do with that\n"
-	.string "FOSSIL?\p"
-	.string "From what I've heard, DEVON is doing\n"
-	.string "research on reviving POKéMON from\l"
-	.string "FOSSILS...\p"
-	.string "I love my FOSSILS, so I would never\n"
-	.string "do anything like that...$"
+	.string "너도 화석을 발견했구나...\n"
+	.string "멋져... 넋 놓고 바라보게 돼...\p"
+	.string "너 그 화석 어떻게 할 거니...?\p"
+	.string "소문으로는 데봉에서\n"
+	.string "화석을 포켓몬으로 부활시키는\l"
+	.string "연구를 하고 있대...\p"
+	.string "나는 화석이 더 좋으니까\n"
+	.string "그런 건 안 할 거지만...$"
+	// きみも カセキを みつけたんだね……ｎ
+	// すてき…… うっとり しちゃうよ……ｐ
+	// きみ その カセキ どうするの……?ｐ
+	// きいた はなしでは デボンではｎ
+	// カセキを ポケモンに いきかえらせるｌ
+	// けんきゅうを している そうだよ……ｐ
+	// ぼくは カセキが すきだからｎ
+	// そんなこと しないけどね……
 
 Route114_FossilManiacsTunnel_Text_1929DC:: @ 81929DC
-	.string "FOSSILS are so... Wonderful...\n"
-	.string "It's so dreamy...$"
+	.string "화석은...\n"
+	.string "멋져... 넋 놓고 바라보게 돼...$"
+	// カセキって……ｎ
+	// すてき…… うっとり しちゃうよ……
