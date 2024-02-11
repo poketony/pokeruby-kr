@@ -1,14 +1,23 @@
 RustboroCity_House3_Text_185584:: @ 8185584
-	.string "For my own POKéMON, I give them\n"
-	.string "perfectly suited nicknames!\p"
-	.string "It's my expression of, uh...\n"
-	.string "originality, yes, that's it!$"
+	.string "자신의 포켓몬에게\n"
+	.string "딱 어울리는 별명을 지어주게나\l"
+	.string "이른바 오리지널리티라는 게지!$"
+	// じぶんの ポケモンにはｎ
+	// ぴったりの ニックネ-ムを つけるんじゃｌ
+	// いわゆる おりじなりてぃ じゃ!
 
 RustboroCity_House3_Text_1855FA:: @ 81855FA
-	.string "But giving the name PEKACHU to a\n"
-	.string "PIKACHU? It seems pointless.\p"
-	.string "I suppose it is good to use a name\n"
-	.string "that's easy to understand, but...$"
+	.string "그렇다고 피카츄에게\n"
+	.string "“페카츄”라는 이름을 붙여도\l"
+	.string "바뀐 게 거의 없는데 말이지...\p"
+	.string "뭐 이해하기 쉽게 짓는 것도\n"
+	.string "별명의 중요한 점이지만$"
+	// だからって ピカチュウにｎ
+	// 「ペカチュウ」って つけてもｌ
+	// ほとんど かわって ないでしょうに……ｐ
+	// まあ わかりやすいのもｎ
+	// ニックネ-ムには だいじ ですけどねぇ
 
 RustboroCity_House3_Text_18567D:: @ 818567D
-	.string "PEKACHU: Peka!$"
+	.string "페카츄: 페카-!$"
+	// ペカチュウ『ぺか-!

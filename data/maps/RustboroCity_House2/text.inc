@@ -1,9 +1,15 @@
 RustboroCity_House2_Text_18532D:: @ 818532D
-	.string "The TRAINER'S SCHOOL is excellent.\p"
-	.string "If you study there, you could even\n"
-	.string "become a GYM LEADER.$"
+	.string "트레이너스쿨은 참 좋아!\p"
+	.string "거기서 포켓몬을 공부하면\n"
+	.string "체육관 관장도 될 수 있어!$"
+	// トレ-ナ-ズ スク-ルは いいわよ!ｐ
+	// あそこで ポケモンの べんきょう すればｎ
+	// ジムリ-ダ-に だって なれますもの!
 
 RustboroCity_House2_Text_185388:: @ 8185388
-	.string "ROXANNE, the GYM LEADER, really knows\n"
-	.string "a lot about POKéMON.\p"
-	.string "She's really strong, too!$"
+	.string "체육관 관장인 원규 언니는\n"
+	.string "엄청 포켓몬을 잘 알고\l"
+	.string "엄청 포켓몬 배틀에도 잘해!$"
+	// ジムリ-ダ-の ツツジ ね-ちゃんｎ
+	// すっごい ポケモン くわしくてｌ
+	// すっごい ポケモン つよいんだから!

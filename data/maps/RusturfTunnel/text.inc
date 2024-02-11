@@ -1,105 +1,175 @@
 RusturfTunnel_Text_194159:: @ 8194159
-	.string "What, are you coming?\n"
-	.string "Come and get some, then!$"
+	.string "덤빌 거야?\n"
+	.string "덤빌 테면 덤벼 봐!$"
+	// くるのか?ｎ
+	// くるなら こいよ!
 
 RusturfTunnel_Text_194188:: @ 8194188
-	.string "PEEKO: Pii pihyoh!$"
+	.string "피코: 삐- 삐요-!$"
+	// ピ-コちゃん『ピ ピひょ-!
 
 RusturfTunnel_Text_19419B:: @ 819419B
-	.string "Grah, keelhaul it all!\p"
-	.string "That hostage POKéMON turned out to\n"
-	.string "be worthless!\p"
-	.string "And to think I made a getaway...\n"
-	.string "In this tunnel to nowhere!\p"
-	.string "Hey! You!\n"
-	.string "So you want to battle me?$"
+	.string "에-잇 젠장-!\p"
+	.string "빼앗은 포켓몬은\n"
+	.string "전혀 도움도 안 되지\p"
+	.string "적당한 곳으로 도망쳤다고 생각했는데\n"
+	.string "이 터널은 막혀 있잖아-!\p"
+	.string "어이! 너!\n"
+	.string "나랑 승부할 거지!?$"
+	// え-い くっそ-!ｐ
+	// うばった ポケモンはｎ
+	// なんの やくにも たたないしｐ
+	// いいところへ にげこめたと おもったのにｎ
+	// この トンネル いきどまり じゃね-か!ｐ
+	// やい! おまえ!ｎ
+	// おれと しょうぶ するんだな!?
 
 RusturfTunnel_Text_194243:: @ 8194243
-	.string "Urrrggh! My career in crime comes to\n"
-	.string "a dead end!$"
+	.string "으 으으윽-!\n"
+	.string "나의 악행도 막다른 길인가!$"
+	// む むぐぐ-!ｎ
+	// おれの あくじも いきどまりかっ!
 
 RusturfTunnel_Text_194274:: @ 8194274
-	.string "This is plain not right...\p"
-	.string "The BOSS told me this would be a\n"
-	.string "slick-and-easy job to pull.\p"
-	.string "All I had to do was steal some package\n"
-	.string "from DEVON.\p"
-	.string "Tch!\n"
-	.string "You want it back that badly, take it!$"
+	.string "이상하네...\p"
+	.string "리더의 말로는 뭔가의 화물을\n"
+	.string "데봉에서 훔쳐 오기만 하면 되는\l"
+	.string "편한 일이었는데...\p"
+	.string "쳇!\n"
+	.string "이딴 거 그냥 돌려주고 만다!$"
+	// おかしいなあ……ｐ
+	// リ-ダ-の はなしでは なにかの にもつをｎ
+	// デボンから ぬすんでくる っていうｌ
+	// らくな しごと だった はずなのに……ｐ
+	// ちぇっ!ｎ
+	// こんなもん かえして やらあ!
 
 RusturfTunnel_Text_19432A:: @ 819432A
-	.string "PEEKO! Am I glad to see you're safe!$"
+	.string "피코! 무사해서 다행이구나!$"
+	// ピ-コちゃん! ぶじで よかった!
 
 RusturfTunnel_Text_19434F:: @ 819434F
-	.string "PEEKO owes her life to you!\p"
-	.string "They call me MR. BRINEY.\n"
-	.string "And, you are?\p"
-	.string "... ... ... ... ... ... ... ...\n"
-	.string "... ... ... ... ... ... ... ...\p"
-	.string "Ah, so you are {PLAYER}{KUN}!\n"
-	.string "I sincerely thank you!\p"
-	.string "Now, if there's anything that troubles\n"
-	.string "you, don't hesitate to tell me!\p"
-	.string "You can usually find me in my cottage\n"
-	.string "by the sea near PETALBURG WOODS.\p"
-	.string "Come, PEEKO, we should make our way\n"
-	.string "home.\p"
-	.string "PEEKO: Pihyoh!$"
+	.string "자넨 피코의\n"
+	.string "생명의 은인일세!\p"
+	.string "난 하기라고 하는데\n"
+	.string "자네는 이름이...?\p"
+	.string "...... ...... ...... ......\n"
+	.string "...... ...... ...... ......\p"
+	.string "그렇군 {PLAYER}{K_I}라고 하는구먼!\n"
+	.string "정말 고맙네!\p"
+	.string "앞으로 곤란한 일이 있으면\n"
+	.string "사양 말고 나한테 말하게나!\p"
+	.string "평소에는 등화숲 가까이에 있는\n"
+	.string "해변의 작은 집에 있으니 말이야!\p"
+	.string "자 피코\n"
+	.string "우리 집으로 돌아가자꾸나!\p"
+	.string "피코: 삐요오--!!$"
+	// あんたは ピ-コちゃんのｎ
+	// いのちの おんじん じゃよ!ｐ
+	// わしは ハギと いうのじゃがｎ
+	// きみは……?ｐ
+	// …… …… …… ……ｎ
+	// …… …… …… ……ｐ
+	// そうか §あ§おと いうのか!ｎ
+	// ほんとうに ありがとうよ!ｐ
+	// これからさき こまった ことが あったらｎ
+	// えんりょなく わしに いっとくれ!ｐ
+	// いつもは トウカのもりの ちかくに あるｎ
+	// はまべの こやに いるからの!ｐ
+	// さあ ピ-コちゃんｎ
+	// わしらの おうちに かえろうな!ｐ
+	// ピ-コちゃん『ピひょ-っ!!
 
 RusturfTunnel_Text_1944C5:: @ 81944C5
-	.string "... ...\p"
-	.string "Why can't they keep digging?\n"
-	.string "Is the bedrock too hard?\p"
-	.string "My beloved awaits me in VERDANTURF\n"
-	.string "TOWN just beyond here...\p"
-	.string "If RUSTBORO and VERDANTURF were\n"
-	.string "joined by this tunnel, I could visit\l"
-	.string "her every day...\p"
-	.string "But this...\n"
-	.string "What am I to do?$"
+	.string "......\p"
+	.string "어째서 더 파지 못하는 거지...\n"
+	.string "이 바위가 너무 딱딱해서 그런가?\p"
+	.string "이 앞에 있는 잔디마을이라는 곳에\n"
+	.string "사랑하는 여자친구가 있는데...\p"
+	.string "금탄도시랑 잔디마을을 터널로 연결하면\n"
+	.string "매일 여자친구를 보러 갈 수 있어\p"
+	.string "그런데 이건...\n"
+	.string "난 도대체 어쩌면 좋은 거야...$"
+	// ……ｐ
+	// どうして これいじょう ほれない……ｎ
+	// この いわが かたすぎるのか?ｐ
+	// このさきの シダケタウンという ところにｎ
+	// あいする かのじょが いるのに……ｐ
+	// カナズミと シダケを トンネルで むすべばｎ
+	// まいにち かのじょに あいに いけるｐ
+	// それなのに……ｎ
+	// おれは どうすれば いいんだ……
 
 RusturfTunnel_Text_1945B2:: @ 81945B2
-	.string "To get from RUSTBORO to VERDANTURF,\n"
-	.string "you need to go to DEWFORD, then pass\l"
-	.string "through SLATEPORT and MAUVILLE...$"
+	.string "금탄도시에서 잔디마을로 가기 위해선\n"
+	.string "무로마을에서 잿빛도시와 보라시티를 거쳐서\l"
+	.string "지나가지 않으면 안 돼...$"
+	// カナズミから シダケに いこうと するとｎ
+	// ムロから カイナと キンセツを とおってｌ
+	// いかなきゃ ならないんだ……
 
 RusturfTunnel_Text_19461D:: @ 819461D
-	.string "Wow! You shattered that boulder\n"
-	.string "blocking the way.\p"
-	.string "To show you how much I appreciate it,\n"
-	.string "I'd like you to have this HM.$"
+	.string "이럴 수가! 네가 이 바위를\n"
+	.string "부숴준 거구나\p"
+	.string "감사의 표시로\n"
+	.string "이 비전머신을 너한테 줄게$"
+	// なんと! きみが この いわをｎ
+	// くだいて くれたんだねｐ
+	// かんしゃの しるし としてｎ
+	// この ひでんマシンを うけとってくれ
 
 RusturfTunnel_Text_194693:: @ 8194693
-	.string "That HM contains STRENGTH.\p"
-	.string "If a muscular POKéMON were to learn\n"
-	.string "that, it would be able to move even\l"
-	.string "large boulders.$"
+	.string "거기에는 괴력이 들어 있어\n"
+	.string "힘센 포켓몬에게 배우게 하면\l"
+	.string "큰 바위도 움직일 수 있게 되지$"
+	// そいつには かいりきが はいっているｎ
+	// ちからもちの ポケモンに おぼえさせればｌ
+	// おおきな いわを うごかせるよ
 
 RusturfTunnel_Text_194706:: @ 8194706
-	.string "WANDA!\n"
-	.string "Now I can see you anytime!\p"
-	.string "WANDA: That's...wonderful.\p"
-	.string "Please, take some rest at my home.$"
+	.string "미진씨!\n"
+	.string "앞으로는 언제든지 볼 수 있어요!\p"
+	.string "미진: 정말... 잘됐네요\p"
+	.string "자 저희 집에서\n"
+	.string "푹 쉬었다 가세요$"
+	// ミチルさん!ｎ
+	// これから いつでも あえます!ｐ
+	// ミチル『よかった…… ですｐ
+	// さあ わたしの いえでｎ
+	// ゆっくり やすんで ください
 
 RusturfTunnel_Text_194766:: @ 8194766
-	.string "On the other side of this rock...\n"
-	.string "My boyfriend is there.\p"
-	.string "He... He's not just digging the tunnel\n"
-	.string "to come see me.\p"
-	.string "He works his hands raw and rough\n"
-	.string "for the benefit of everyone.$"
+	.string "이 바위 건너편에는...\n"
+	.string "내 남자친구가 있어\p"
+	.string "그는... 나를 만나려는 이유만으로\n"
+	.string "이 터널을 파고 있는 건 아니야\p"
+	.string "모두를 위해\n"
+	.string "손을 다쳐가면서도 힘내고 있어$"
+	// この いわの むこうに……ｎ
+	// わたしの かれが いるのｐ
+	// かれ…… わたしに あうため だけにｎ
+	// トンネルを ほってるわけ じゃないわｐ
+	// みんなの ためにｎ
+	// てを きずつけながらも がんばってるの
 
 RusturfTunnel_Text_194814:: @ 8194814
-	.string "What do you call a wild man up in the\n"
-	.string "mountains? A mountain man, right?\p"
-	.string "So why don't they call a POKéMON in the\n"
-	.string "mountains a mountain POKéMON?$"
+	.string "등산하는 사람은 등산가!\p"
+	.string "그런데 왜 포켓몬이 등산하면\n"
+	.string "등산포켓몬이라고 부르지 않는 거지?$"
+	// おとこが やまに いるから やまおとこ!ｐ
+	// なのに ポケモンが やまに いてもｎ
+	// やまポケモンと いわないのは なぜだ?
 
 RusturfTunnel_Text_1948A2:: @ 81948A2
-	.string "My POKéMON...\n"
-	.string "Ran out of power...$"
+	.string "포켓몬...\n"
+	.string "힘이 다했다...$"
+	// ポケモン……ｎ
+	// ちから つきた……
 
 RusturfTunnel_Text_1948C4:: @ 81948C4
-	.string "They halted development here to\n"
-	.string "protect POKéMON, right?\l"
-	.string "There's a feel-good story!$"
+	.string "이곳의 포켓몬을 지키기 위해\n"
+	.string "개발 공사를 중지했다지?\l"
+	.string "정말 훈훈한 이야기야$"
+	// ここって ポケモンを まもるためｎ
+	// かいはつ こうじを やめたんだろ?ｌ
+	// それって いい はなし だよな
