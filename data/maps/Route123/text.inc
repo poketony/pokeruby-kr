@@ -1,25 +1,45 @@
 Route123_Text_171D83:: @ 8171D83
-	.string "I love GRASS-type POKéMON!\p"
-	.string "Do you have any GRASS-type POKéMON?$"
+	.string "난 풀타입 포켓몬이\n"
+	.string "너무 좋아!\p"
+	.string "넌 풀타입 포켓몬이\n"
+	.string "없구나...?$"
+	// あたし くさタイプの ポケモンｎ
+	// だいすき なの!ｐ
+	// あなたは くさタイプの ポケモンｎ
+	// もって いないの……?
 
 Route123_Text_171DC2:: @ 8171DC2
-	.string "Oh?\p"
-	.string "You like GRASS-type POKéMON, too,\n"
-	.string "don't you?\p"
-	.string "I'm so happy, you can have this!\n"
-	.string "It's a token of our friendship.$"
+	.string "어라?\p"
+	.string "너도 풀타입 포켓몬을\n"
+	.string "정말 좋아하는구나!\p"
+	.string "기쁘니까 이거 줄게!\n"
+	.string "우리가 친구라는 증표야!$"
+	// あら!?ｐ
+	// あなたも くさタイプの ポケモンがｎ
+	// だいすき なのね!ｐ
+	// うれしいから これ あげちゃう!ｎ
+	// ともだちの しるし よ!
 
 Route123_Text_171E34:: @ 8171E34
-	.string "I check trees with my GRASS-type\n"
-	.string "POKéMON. I'm like a tree doctor.$"
+	.string "풀포켓몬이랑 같이\n"
+	.string "나무의 상태를 보면서 다니고 있어\l"
+	.string "이름 붙이자면 나무 의사 같은 거지$"
+	// くさポケモンと いっしょにｎ
+	// きの ようすを みてまわってるのｌ
+	// いってみれば きの おいしゃさんね
 
 Route123_Text_171E76:: @ 8171E76
-	.string "{0x7C} ROUTE 123\n"
-	.string "{0x7B} ROUTE 118$"
+	.string "{0x7C} 123번 도로\n"
+	.string "{0x7B} 118번 도로$"
+	// ©しｌ 123ばん どうろｎ
+	// ©し© 118ばん どうろ
 
 Route123_Text_171E8E:: @ 8171E8E
-	.string "{0x79} MT. PYRE\n"
-	.string "“Forbidden to the faint of heart.”$"
+	.string "{0x79} ... 송화산\n"
+	.string "마음 약한 자 접근하지 말 것$"
+	// ©し©…… おくりびやまｎ
+	// こころ よわきもの ちかよる べからず
 
 Route123_Text_171EBC:: @ 8171EBC
-	.string "BERRY MASTER'S HOUSE$"
+	.string "“나무열매 명인의 집”$"
+	// 「きのみ めいじんの いえ」

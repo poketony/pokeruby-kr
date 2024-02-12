@@ -1,8 +1,13 @@
 RustboroCity_Flat1_2F_Text_184E0D:: @ 8184E0D
-	.string "Oh, it's so hard every day...\p"
-	.string "What's hard?\n"
-	.string "You need to ask?\p"
-	.string "It's trying to figure out what to\n"
-	.string "make for meals every day.\p"
-	.string "It really isn't easy coming up with\n"
-	.string "meals every day.$"
+	.string "정말 큰일이야!\p"
+	.string "뭐가 큰일이냐니?\n"
+	.string "당연하잖아!?\p"
+	.string "매일매일 먹을 반찬거리를\p"
+	.string "매일매일 고민해야 되니\n"
+	.string "이만저만 큰일이 아니라구!$"
+	// もうね たいへん なのよ!ｐ
+	// なにが たいへんってｎ
+	// そんなの きまってるでしょ!ｐ
+	// まいにちの おこんだて よッ!ｐ
+	// まいにち まいにち かんがえるのってｎ
+	// ほんとうに たいへん なんだからッ!

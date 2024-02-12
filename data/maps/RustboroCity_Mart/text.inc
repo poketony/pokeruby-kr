@@ -1,17 +1,25 @@
 RustboroCity_Mart_Text_184C76:: @ 8184C76
-	.string "I'm buying some PARLYZ HEALS and\n"
-	.string "ANTIDOTES.\p"
-	.string "Just in case I run into SHROOMISH\n"
-	.string "in PETALBURG WOODS.$"
+	.string "등화숲에서 버섯꼬가\n"
+	.string "튀어나왔을 때를 대비해서\l"
+	.string "마비치료제와 해독제를 사둘 거야!$"
+	// トウカのもりで キノココがｎ
+	// とびだして きたときの ためｌ
+	// まひなおしや どくけしを かっておくの!
 
 RustboroCity_Mart_Text_184CD8:: @ 8184CD8
-	.string "My POKéMON evolved.\n"
-	.string "It has a lot of HP now.\p"
-	.string "I should buy SUPER POTIONS for it\n"
-	.string "instead of ordinary POTIONS.$"
+	.string "포켓몬이 진화해서 체력이\n"
+	.string "늘어났으니 상처약 말고\l"
+	.string "좋은상처약을 사줘야 되나$"
+	// ポケモン しんかして たいりょくがｎ
+	// ふえたから キズぐすり じゃなくてｌ
+	// いいキズぐすりを かってあげようかな
 
 RustboroCity_Mart_Text_184D43:: @ 8184D43
-	.string "I'm getting an ESCAPE ROPE just in\n"
-	.string "case I get lost in a cave.\p"
-	.string "I just need to use it to get back to the\n"
-	.string "entrance.$"
+	.string "동굴에서 길을 잃었을 때를 대비해서\n"
+	.string "동굴탈출로프를 사두려고 해!\p"
+	.string "쓰면 눈 깜짝할 사이에\n"
+	.string "입구로 돌아갈 수 있거든!$"
+	// どうくつで まよった ときのためｎ
+	// あなぬけのヒモを かっておこう っと!ｐ
+	// つかうと いっしゅんでｎ
+	// いりぐちに もどれるもんね!

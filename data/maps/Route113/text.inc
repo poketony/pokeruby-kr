@@ -1,30 +1,47 @@
 Route113_Text_16FF7F:: @ 816FF7F
-	.string "Wahahaha! Today's technology is a\n"
-	.string "wondrous thing!\p"
-	.string "Take this volcanic ash here.\n"
-	.string "It can be fashioned into glass.$"
+	.string "와하하!!\n"
+	.string "요즘 과학의 힘은 정말 대단해요!\p"
+	.string "놀랍게도 이 화산재를\n"
+	.string "유리로 바꿀 수 있으니까요!$"
+	// ワハハ!!ｎ
+	// いまの かがくりょくは すごいですぞ!ｐ
+	// なんと この かざんばいをｎ
+	// ガラスに かえることが できるのです!
 
 Route113_Text_16FFEE:: @ 816FFEE
-	.string "It's fun walking through the volcano's\n"
-	.string "ashes on the ground and grass.\p"
-	.string "You can see where you walked - it's\n"
-	.string "really neat!$"
+	.string "화산재가 가득 쌓인 풀숲 위에서\n"
+	.string "걸으면 지나온 곳을 알 수 있어서\l"
+	.string "엄청 재밌어!$"
+	// かざんばい つもった くさむらの うえｎ
+	// あるくと どこを とおったか わかるからｌ
+	// たのしく なっちゃう!
 
 Route113_Text_170065:: @ 8170065
-	.string "ROUTE 113\n"
-	.string "{0x7C} ROUTE 111$"
+	.string "여기는 113번 도로\n"
+	.string "{0x7C} 111번 도로$"
+	// ここは 113ばん どうろｎ
+	// ©しｌ 111ばん どうろ
 
 Route113_Text_17007B:: @ 817007B
-	.string "ROUTE 113\n"
-	.string "{0x7B} FALLARBOR TOWN$"
+	.string "여기는 113번 도로\n"
+	.string "{0x7B} 단풍마을$"
+	// ここは 113ばん どうろｎ
+	// ©し© ハジツゲタウン
 
 Route113_Text_170096:: @ 8170096
-	.string "TRAINER TIPS\p"
-	.string "You may register one of the KEY ITEMS\n"
-	.string "in your BAG as SELECT.\p"
-	.string "Simply press SELECT to use the\n"
-	.string "registered item conveniently.$"
+	.string "정보 나눔 게시판!!\p"
+	.string "가방의 중요한 물건에 넣은\n"
+	.string "도구를 등록해 두면\l"
+	.string "SELECT 버튼을 누르는 것만으로도\l"
+	.string "쓸 수 있어서 편리해요!$"
+	// おとくな けいじばん!!ｐ
+	// バッグの たいせつなものに いれたｎ
+	// どうぐを とうろく しておくとｌ
+	// セレクトボタンを おすだけでｌ
+	// つかえるように なって べんり です!
 
 Route113_Text_17011D:: @ 817011D
-	.string "GLASS WORKSHOP\n"
-	.string "“Turning Volcanic Ash into Glass Items”$"
+	.string "“유리 세공 가게”\n"
+	.string "화산재로 유리를 만들어요$"
+	// 「ガラスざいくの おみせ」ｎ
+	// かざんばい から ガラスの どうぐ

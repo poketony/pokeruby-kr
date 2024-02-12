@@ -1,9 +1,15 @@
 Route119_House_Text_19F371:: @ 819F371
-	.string "I heard about a cave called the CAVE\n"
-	.string "OF ORIGIN.\p"
-	.string "People rumor that the spirits of\n"
-	.string "POKéMON are revived there.\l"
-	.string "Could something like that really happen?$"
+	.string "어딘가에 각성의 사당이라고 불리는\n"
+	.string "동굴이 있다고 해요!\p"
+	.string "포켓몬의 영혼이 부활하는 곳이라는\n"
+	.string "소문이 있던데\l"
+	.string "정말로 그런 일이 가능할까요?$"
+	// どこかに めざめのほこら とよばれるｎ
+	// どうくつが あるんですって!ｐ
+	// ポケモンの たましいが よみがえる ところｎ
+	// という うわさ だけどｌ
+	// そんなこと ほんとうに あるのかしら?
 
 Route119_House_Text_19F406:: @ 819F406
-	.string "WINGULL: Pihyo?$"
+	.string "갈모매: 삐효?$"
+	// キャモメ『ぴひょ?

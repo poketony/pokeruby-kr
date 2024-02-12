@@ -1,27 +1,43 @@
 Route112_Text_16FDF0:: @ 816FDF0
-	.string "Grumble...\p"
-	.string "What happened to the others who went\n"
-	.string "to FALLARBOR? They're late...$"
+	.string "중얼중얼...\p"
+	.string "단풍마을로 향한 동료는...\n"
+	.string "뭘 하고 있는 거지? 늦는걸...$"
+	// ブツブツ……ｐ
+	// ハジツゲに むかった なかまはｎ
+	// なにを やってるんだ? おそいなあ……
 
 Route112_Text_16FE3E:: @ 816FE3E
-	.string "Grumble...\p"
-	.string "I'd like to ride the CABLE CAR to the\n"
-	.string "top, too..$"
+	.string "중얼중얼...\p"
+	.string "나도 케이블카 타고\n"
+	.string "정상으로 가고 싶다...$"
+	// ブツブツ……ｐ
+	// おれも ロ-プウェイに のってｎ
+	// ちょうじょうに いきたいぜ……
 
 Route112_Text_16FE7A:: @ 816FE7A
-	.string "Eh, I'd like to get to MAUVILLE, but if\n"
-	.string "I went down these ledges, it'd be no\l"
-	.string "easy matter to get back to LAVARIDGE.$"
+	.string "으-음... 보라시티로 가고 싶은데...\n"
+	.string "이 턱을 내려가면\l"
+	.string "용암마을로 돌아가기가 어렵다고...$"
+	// う-む…… キンセツに いきたいのだが……ｎ
+	// この だんさを おりてしまうとｌ
+	// フエンに もどるのは たいへん だよな……
 
 Route112_Text_16FEED:: @ 816FEED
-	.string "MT. CHIMNEY CABLE CAR\n"
-	.string "“A short walk {0x79} way!”$"
+	.string "“굴뚝산 케이블카 승강장”\n"
+	.string "{0x79} 바로 이 앞!$"
+	// 「えんとつやま ロ-プウェイ のりば」ｎ
+	// ©し© このさき すぐ!
 
 Route112_Text_16FF19:: @ 816FF19
-	.string "MT. CHIMNEY\p"
-	.string "“For LAVARIDGE TOWN or the summit,\n"
-	.string "please take the CABLE CAR.”$"
+	.string "“굴뚝산”\p"
+	.string "용암마을이나 정상으로 가려면\n"
+	.string "케이블카를 이용해 주십시오$"
+	// 「えんとつやま」ｐ
+	// フエンタウンや ちょうじょう へはｎ
+	// ロ-プウェイを ごりよう ください
 
 Route112_Text_16FF64:: @ 816FF64
-	.string "ROUTE 112\n"
-	.string "{0x7B} LAVARIDGE TOWN$"
+	.string "여기는 112번 도로\n"
+	.string "{0x7B} 용암마을$"
+	// ここは 112ばん どうろｎ
+	// ©し© フエンタウン

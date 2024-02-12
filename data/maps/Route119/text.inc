@@ -1,102 +1,171 @@
 Route119_Text_1710BB:: @ 81710BB
-	.string "MAY: {PLAYER}{KUN}!\n"
-	.string "Where were you? I was looking for you!\p"
-	.string "How much stronger have you gotten?\n"
-	.string "Let me check for you!\p"
-	.string "Ready with your POKéMON?\n"
-	.string "Of course you are! Go!$"
+	.string "봄이: {PLAYER}{K_AYA}!\n"
+	.string "어디에 있었어? 찾았잖아!\p"
+	.string "얼마나 강해졌는지\n"
+	.string "잠깐 시험해 볼게!\p"
+	.string "포켓몬의 준비는...\n"
+	.string "당연히 끝났겠지! 간다!$"
+	// ハルカ『§あ§お!ｎ
+	// どこに いたのよ? さがしたわ!ｐ
+	// どれくらい つよく なったのかｎ
+	// ちょっと ためして あげる!ｐ
+	// ポケモンの じゅんびは……ｎ
+	// いいに きまってるよね! それっ!
 
 Route119_Text_171156:: @ 8171156
-	.string "Achah!\n"
-	.string "{PLAYER}{KUN}, you're strong!\p"
-	.string "I was worried that you might be\n"
-	.string "struggling with your training.$"
+	.string "으아-!\n"
+	.string "{PLAYER} 강하잖아!\p"
+	.string "포켓몬을 키우지 못해서\n"
+	.string "곤란할 거라고 걱정하고 있었는데$"
+	// あっちゃ-!ｎ
+	// §あ§お つよい じゃない!ｐ
+	// ポケモン そだってなくてｎ
+	// こまってるかも って しんぱい してたのに
 
 Route119_Text_1711B1:: @ 81711B1
-	.string "MAY: But I had absolutely nothing to\n"
-	.string "worry about! Keep it up!\p"
-	.string "And, here! I have a present for you.$"
+	.string "봄이: 전혀 아무렇지도 않아!\n"
+	.string "그 기세로 힘내도록 해!\p"
+	.string "이건 내가 주는 선물이야!$"
+	// ハルカ『ぜんぜん だいじょうぶ!ｎ
+	// その ちょうしで がんばってね!ｐ
+	// これは あたし からの プレゼントよ!
 
 Route119_Text_171214:: @ 8171214
-	.string "MAY: Use FLY, and your POKéMON will\n"
-	.string "instantly carry you to any town you've\l"
-	.string "already visited.\p"
-	.string "But, to use FLY, you have to get the\n"
-	.string "GYM BADGE from FORTREE CITY.\l"
-	.string "That's important, so don't forget.\p"
-	.string "You should FLY home and visit\n"
-	.string "LITTLEROOT for a change.\p"
-	.string "I bet your mom's worried about you,\n"
-	.string "{PLAYER}{KUN}.\p"
-	.string "Well, let's meet again somewhere!$"
+	.string "봄이: 공중날기를 쓰면\n"
+	.string "한 번 갔던 도시라면 순식간에\l"
+	.string "날아갈 수 있게 돼!\p"
+	.string "하지만 공중날기를 쓰려면\n"
+	.string "검방울시티의 체육관 배지가 필요하지\l"
+	.string "이거 중요한 거니까 잊지 마!\p"
+	.string "가끔씩 공중날기로\n"
+	.string "미로마을에 가보는 건 어때?\p"
+	.string "{PLAYER}네 엄마\n"
+	.string "걱정하고 계실지도 모르니까...\p"
+	.string "그럼\n"
+	.string "또 어딘가에서 보자!$"
+	// ハルカ『そらをとぶを つかえばｎ
+	// いちど いった まちなら いっしゅんでｌ
+	// とんでいく ことが できるの!ｐ
+	// でも そらをとぶを つかうにはｎ
+	// ヒワマキの ジムバッジが いるのよｌ
+	// これ だいじだから わすれないでね!ｐ
+	// たまには そらをとぶでｎ
+	// ミシロに かえるのも いいんじゃない?ｐ
+	// §あ§おの おかあさんｎ
+	// しんぱい してるかも しれないし……ｐ
+	// じゃあｎ
+	// また どこかで あおうね!
 
 Route119_Text_171358:: @ 8171358
-	.string "BRENDAN: {PLAYER}! So this is where\n"
-	.string "you've been looking for POKéMON?\p"
-	.string "Let me see how good you got.\n"
-	.string "I'll test you!\p"
-	.string "Now!\n"
-	.string "It's a battle, so battle!$"
+	.string "휘웅: {PLAYER}{K_AYA}!\n"
+	.string "여기에서 포켓몬 찾고 있었어?\p"
+	.string "얼마나 강해졌는지\n"
+	.string "시험해 줄게\p"
+	.string "자!\n"
+	.string "승부하자 승부!$"
+	// ユウキ『§あ!ｎ
+	// ここで ポケモン さがしてたのか?ｐ
+	// どれくらい つよく なったかｎ
+	// ためして やるよｐ
+	// さあ!ｎ
+	// しょうぶ しょうぶ だぜ!
 
 Route119_Text_1713E2:: @ 81713E2
-	.string "Hmm...\n"
-	.string "You've gotten pretty darn decent.$"
+	.string "흐음...\n"
+	.string "꽤 강해졌구나$"
+	// ふうん……ｎ
+	// けっこう つよく なってるんだな
 
 Route119_Text_17140B:: @ 817140B
-	.string "BRENDAN: I'd say you're good enough\n"
-	.string "to search for POKéMON anywhere.\p"
-	.string "Here, I'll give you this.\n"
-	.string "Try it out.$"
+	.string "휘웅: 그 정도면 어디에서 포켓몬을\n"
+	.string "찾아도 아무 문제 없겠는데\p"
+	.string "이거 줄 테니까 써 봐!$"
+	// ユウキ『それなら どこで ポケモンｎ
+	// さがしても だいじょうぶ だなｐ
+	// これ やるから つかってみろよ!
 
 Route119_Text_171475:: @ 8171475
-	.string "BRENDAN: Use FLY, and your POKéMON\n"
-	.string "instantly carries you to any town\l"
-	.string "you've already visited.\p"
-	.string "But you need the FORTREE GYM BADGE \n"
-	.string "to do that.\p"
-	.string "Anyway, I have to move along.$"
+	.string "휘웅: 공중날기를 쓰면\n"
+	.string "한 번 갔던 도시는\l"
+	.string "순식간에 날아갈 수 있어\p"
+	.string "단 검방울시티의\n"
+	.string "체육관 배지가 필요하지...\p"
+	.string "그럼 난 먼저 갈게$"
+	// ユウキ『そらをとぶを つかえばｎ
+	// いちど いった まちならｌ
+	// いっしゅんで とんでいけるｐ
+	// もっとも ヒワマキのｎ
+	// ジムバッジが ひつよう だけど……ｐ
+	// じゃ オレ さきにいくよ
 
 Route119_Text_171520:: @ 8171520
-	.string "We're standing lookout here.\p"
-	.string "Hey, you! Stay away from the WEATHER\n"
-	.string "INSTITUTE. It's not safe.$"
+	.string "우린 여기에서 망을 보고 있지\p"
+	.string "어이 너! 위험하니까\n"
+	.string "날씨 연구소에는 가까이 가지 마$"
+	// オレたち ここで みはりを しているのさｐ
+	// おい おまえ! あぶないからｎ
+	// てんき けんきゅうじょ には ちかづくなよ
 
 Route119_Text_17157C:: @ 817157C
-	.string "Lookout duty is surprisingly boring.\p"
-	.string "Hey, you! Please don't go near the\n"
-	.string "WEATHER INSTITUTE.$"
+	.string "망보는 건 의외로 한가롭네...\p"
+	.string "어이 너! 부탁이니까\n"
+	.string "연구소에는 가까이 가지 마$"
+	// みはりって いがいと ヒマだなあ……ｐ
+	// おい おまえ! おねがいだからｎ
+	// てんき けんきゅうじょ には ちかづくなよ
 
 Route119_Text_1715D7:: @ 81715D7
-	.string "I thought you FLY by catching a whole\n"
-	.string "flock of BIRD POKéMON, and then\l"
-	.string "hanging on to them somehow.\p"
-	.string "But it turns out there's an HM move\n"
-	.string "called FLY!\p"
-	.string "I wish I'd known about that a long\n"
-	.string "time ago...$"
+	.string "새포켓몬을 잔뜩 잡고\n"
+	.string "거기에 매달리면\l"
+	.string "하늘을 날 수 있을 거라 생각했어\p"
+	.string "그런데 “공중날기”라는\n"
+	.string "비전기술이 있다면서!?\p"
+	.string "좀 더 빨리 알았으면 좋았을걸...$"
+	// とりポケモンを たくさん あつめてｎ
+	// それに つかまればｌ
+	// そらが とべると おもって いたんだｐ
+	// そしたらさ 「そらをとぶ」っていうｎ
+	// ひでんわざが あるんだってね!?ｐ
+	// もっと はやく しりたかったよ……
 
 Route119_Text_171698:: @ 8171698
-	.string "Tch... It's a no-go...\p"
-	.string "The tall grass snares BIKE tires.\n"
-	.string "There's no way you can cycle here.$"
+	.string "큰일이야...\p"
+	.string "긴 풀이 타이어에 휘감기니까\n"
+	.string "자전거를 탈 수가 없어...$"
+	// まいったぜ……ｐ
+	// ながい くさが タイヤに からまるからｎ
+	// じてんしゃに のれないよ……
 
 Route119_Text_1716F4:: @ 81716F4
-	.string "Can your POKéMON use its SECRET POWER\n"
-	.string "on a big pile of grass and make a\l"
-	.string "SECRET BASE?$"
+	.string "너의 포켓몬\n"
+	.string "비밀의힘이라는 기술을 써서\l"
+	.string "커다란 풀 덩어리에\l"
+	.string "비밀기지를 만들 수 있어?$"
+	// きみの ポケモンｎ
+	// ひみつのちから つかってｌ
+	// おおきな くさの かたまりにｌ
+	// ひみつきちを つくれるかい?
 
 Route119_Text_171749:: @ 8171749
-	.string "ROUTE 119\n"
-	.string "{0x7C} FORTREE CITY$"
+	.string "여기는 119번 도로\n"
+	.string "{0x7C} 검방울시티$"
+	// ここは 119ばん どうろｎ
+	// ©しｌ ヒワマキシティ
 
 Route119_Text_171762:: @ 8171762
-	.string "WEATHER INSTITUTE$"
+	.string "“날씨 연구소”$"
+	// 「てんき けんきゅうじょ」
 
 Route119_Text_171774:: @ 8171774
-	.string "TRAINER TIPS\p"
-	.string "Up to sixteen decorations and\n"
-	.string "furniture items can be placed in\l"
-	.string "a SECRET BASE.\p"
-	.string "Pick your favorite items and create\n"
-	.string "your very own SECRET BASE exactly the\l"
-	.string "way you want.$"
+	.string "정보 나눔 게시판!!\p"
+	.string "비밀기지에는 굿즈를\n"
+	.string "16개까지 놓을 수 있습니다!\p"
+	.string "좋아하는 굿즈를 선택해서\n"
+	.string "당신의 마음에 드는\l"
+	.string "비밀기지를 만듭시다!$"
+	// おとくな けいじばん!!ｐ
+	// ひみつきち には グッズをｎ
+	// 16こ まで おけます!ｐ
+	// すきな グッズを えらんでｎ
+	// あなただけの おきにいりのｌ
+	// ひみつきち を つくりましょう!

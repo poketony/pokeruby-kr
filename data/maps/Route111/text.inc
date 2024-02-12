@@ -1,119 +1,189 @@
 Route111_Text_16F705:: @ 816F705
-	.string "Hello! I take it you're a traveler.\p"
-	.string "How's this? What do you say to taking\n"
-	.string "on our family of four in a series of\l"
-	.string "POKéMON battles?$"
+	.string "자네! 여행 중이겠지만\p"
+	.string "잠깐 어떤가? 지금 여기서\n"
+	.string "우리 가족 4명과\l"
+	.string "포켓몬 승부를 해보지 않겠나?$"
+	// きみ! たびの とちゅう だろうけれどｐ
+	// どうだ? ここは ひとつｎ
+	// わたしたち かぞく 4にんとｌ
+	// ポケモン しょうぶを してみないか?
 
 Route111_Text_16F785:: @ 816F785
-	.string "Is that so?\n"
-	.string "Drop in, if you change your mind!$"
+	.string "그렇군!\n"
+	.string "마음이 바뀌면 다시 오게!$"
+	// あっそ!ｎ
+	// きが むいたら また おいで!
 
 Route111_Text_16F7B3:: @ 816F7B3
-	.string "That's the spirit! I like you!$"
+	.string "멋진 배짱이군! 마음에 들었다!$"
+	// いい どきょうだ! きにいったぞ!
 
 Route111_Text_16F7D2:: @ 816F7D2
-	.string "Aiyah!\n"
-	.string "You're a lot tougher than I expected!$"
+	.string "으-헉!\n"
+	.string "생각했던 것보다 강하군 자넨!$"
+	// たは-っ!ｎ
+	// おもっていたより つよいんだね きみは!
 
 Route111_Text_16F7FF:: @ 816F7FF
-	.string "Hey, all!\n"
-	.string "I've found a pretty strong TRAINER!$"
+	.string "여보-!\n"
+	.string "상당히 강한 트레이너가 있어-!$"
+	// お-い!ｎ
+	// なかなか つよい トレ-ナ-が いたぞ-! 
 
 Route111_Text_16F82D:: @ 816F82D
-	.string "Oh, my goodness! Aren't you young?\p"
-	.string "You must be quite the TRAINER to beat\n"
-	.string "my husband, though.\p"
-	.string "It's my turn to battle now!$"
+	.string "어머머! 생각보다 어리네!\p"
+	.string "우리 남편을 이기다니\n"
+	.string "정말 굉장한 실력의 트레이너구나!\p"
+	.string "자 이번엔 나와 승부해주렴!$"
+	// あれま! いがいに わかいのね!ｐ
+	// うちの しゅじんに かってしまう とはｎ
+	// なんと すごうでの トレ-ナ- なの!ｐ
+	// じゃあ こんどは わたしと しょうぶよ!
 
 Route111_Text_16F8A6:: @ 816F8A6
-	.string "Oh, gosh!\n"
-	.string "I can't get over how strong you are!$"
+	.string "에구머니나-!\n"
+	.string "너 왜 그렇게 강한 거니!$"
+	// んま-っ!ｎ
+	// あなたって なんて つよいのかしら!
 
 Route111_Text_16F8D5:: @ 816F8D5
-	.string "There's a strong TRAINER here!\n"
-	.string "This one's really strong!$"
+	.string "강해-!\n"
+	.string "이 사람 엄청나게 강해-!$"
+	// つよいわよ-!ｎ
+	// このひと すっごく つよいわよ-! 
 
 Route111_Text_16F90E:: @ 816F90E
-	.string "You're stronger than Mommy? Wow!\p"
-	.string "But I'm strong, too!\n"
-	.string "Really! Honestly!$"
+	.string "엄마보다 강하다니 대단하다-!\p"
+	.string "하지만 나도 강하거든!\n"
+	.string "진짜라니까!$"
+	// ママより つよいなんて すご-い!ｐ
+	// でも あたし だって つよいんだから!ｎ
+	// ほんと なんだってば!
 
 Route111_Text_16F956:: @ 816F956
-	.string "Huh? Did I just lose?$"
+	.string "엇 설마 져버린 건가...$"
+	// えっ もしかして まけちゃった……
 
 Route111_Text_16F96C:: @ 816F96C
-	.string "This stinks...\p"
-	.string "...Snivel... Grandma!$"
+	.string "분해...\p"
+	.string "... 훌쩍! 할머니이-이!!$"
+	// くやしい……ｐ
+	// …… ぐっすん! おばあちゃ-ん!!
 
 Route111_Text_16F991:: @ 816F991
-	.string "How dare you make my granddaughter\n"
-	.string "cry!\p"
-	.string "For that, I'm going to smack you!\n"
-	.string "Prepare to lose!$"
+	.string "요 녀석-!\n"
+	.string "우리 귀여운 손녀에게 뭔 짓을 한 게냐!\p"
+	.string "이렇게 된 이상 내가 널\n"
+	.string "엉망진창 혼내줄 테니 각오하거라!$"
+	// こら-っ!ｎ
+	// わしの かわいい まごに なにすんじゃ!ｐ
+	// こうなったら わしが おまえさんをｎ
+	// メタメタに してやるから かくごせぇ!
 
 Route111_Text_16F9EC:: @ 816F9EC
-	.string "Kwah! You are strong...\n"
-	.string "My granddaughter was right...$"
+	.string "아이고! 강하구먼...\n"
+	.string "우리 손녀가 한 말이 사실이었어$"
+	// フガッ! つよいのう……ｎ
+	// まごの いうことは ほんとう じゃった
 
 Route111_Text_16FA22:: @ 816FA22
-	.string "If you're not in any hurry, visit with\n"
-	.string "us awhile.$"
+	.string "얘야... 갈 길이 바쁘지 않으면\n"
+	.string "우리 집에 들렀다 가거라...$"
+	// あんた…… いそぎのたびで ないのならｎ
+	// うちに よっていって おくれ……
 
 Route111_Text_16FA54:: @ 816FA54
-	.string "You found the ROOT FOSSIL.\p"
-	.string "If this FOSSIL is taken, the other\n"
-	.string "one will sink into the sand...\p"
-	.string "Take the ROOT FOSSIL anyway?$"
+	.string "뿌리화석을 발견했다!\p"
+	.string "이 화석을 캐면\n"
+	.string "다른 화석은 가라앉을 것 같다...\p"
+	.string "뿌리화석을 캐겠습니까?$"
+	// ねっこのカセキを みつけた!ｐ
+	// こっちの カセキを とるとｎ
+	// もう ひとつの カセキは しずみそうだ……ｐ
+	// ねっこのカセキを とりますか?
 
 Route111_Text_16FACE:: @ 816FACE
-	.string "{PLAYER} left the ROOT FOSSIL alone.$"
+	.string "{PLAYER}{K_EUNNEUN} 뿌리화석을\n"
+	.string "그대로 놔뒀다$"
+	// §あは ねっこのカセキをｎ
+	// そのままに しておいた
 
 Route111_Text_16FAED:: @ 816FAED
-	.string "You found the CLAW FOSSIL.\p"
-	.string "If this FOSSIL is taken, the other\n"
-	.string "one will sink into the sand...\p"
-	.string "Take the CLAW FOSSIL anyway?$"
+	.string "발톱화석을 발견했다!\p"
+	.string "이 화석을 캐면\n"
+	.string "다른 화석은 가라앉을 것 같다...\p"
+	.string "발톱화석을 캐겠습니까?$"
+	// ツメのカセキを みつけた!ｐ
+	// こっちの カセキを とるとｎ
+	// もう ひとつの カセキは しずみそうだ……ｐ
+	// ツメのカセキを とりますか?
 
 Route111_Text_16FB67:: @ 816FB67
-	.string "{PLAYER} left the CLAW FOSSIL alone.$"
+	.string "{PLAYER}{K_EUNNEUN} 발톱화석을\n"
+	.string "그대로 놔뒀다$"
+	// §あは ツメのカセキをｎ
+	// そのままに しておいた
 
 Route111_Text_16FB86:: @ 816FB86
-	.string "If you don't raise your POKéMON some\n"
-	.string "more, it could be tough to keep winning\l"
-	.string "up through the ranks.\p"
-	.string "I've heard the POKéMON LEAGUE's\n"
-	.string "ELITE FOUR are far stronger than\l"
-	.string "any GYM LEADER.$"
+	.string "좀 더 포켓몬을 단련시키지 않으면\n"
+	.string "이겨 나가기 어려울 것 같아\p"
+	.string "여태까지의 체육관 관장보다\n"
+	.string "훨씬 강하다고 들었거든\l"
+	.string "포켓몬리그에 있는 사천왕이 말야$"
+	// もっと ポケモン きたえないとｎ
+	// かちぬくのは きびしそうだｐ
+	// いままでの ジムリ-ダ-よりｎ
+	// はるかに つよいと きくからなｌ
+	// ポケモンリ-グにいる してんのうは!
 
 Route111_Text_16FC3A:: @ 816FC3A
-	.string "I challenged the WINSTRATE family,\n"
-	.string "but four matches in a row is tough\l"
-	.string "going... They destroyed me.$"
+	.string "연승가족에게 도전했는데\n"
+	.string "4명과 연속으로 포켓몬 승부를 하는 건\l"
+	.string "힘들더라... 완패하고 말았어$"
+	// カチヌキいっかに いどんだけれどｎ
+	// 4にん つづけての ポケモンしょうぶはｌ
+	// きびしいよな…… ボロまけ したよ
 
 Route111_Text_16FC9C:: @ 816FC9C
-	.string "ROUTE 111\n"
-	.string "{0x7A} MAUVILLE CITY$"
+	.string "여기는 111번 도로\n"
+	.string "{0x7A} 보라시티$"
+	// ここは 111ばん どうろｎ
+	// ©し© キンセツシティ
 
 Route111_Text_16FCB6:: @ 816FCB6
-	.string "“Our family's hearts beat as one!”\n"
-	.string "THE WINSTRATE'S HOUSE$"
+	.string "우리 가족은 한마음\n"
+	.string "“연승가족의 집”$"
+	// われら かぞくの こころは ひとつｎ
+	// 「カチヌキ ファミリ-の いえ」
 
 Route111_Text_16FCEF:: @ 816FCEF
-	.string "ROUTE 111\n"
-	.string "{0x7B} ROUTE 112$"
+	.string "여기는 111번 도로\n"
+	.string "{0x7B} 112번 도로$"
+	// ここは 111ばん どうろｎ
+	// ©し© 112ばん どうろ
 
 Route111_Text_16FD05:: @ 816FD05
-	.string "ROUTE 111\n"
-	.string "{0x7B} ROUTE 113$"
+	.string "여기는 111번 도로\n"
+	.string "{0x7B} 113번 도로$"
+	// ここは 111ばん どうろｎ
+	// ©し© 113ばん どうろ
 
 Route111_Text_16FD1B:: @ 816FD1B
-	.string "OLD LADY'S REST STOP\n"
-	.string "“Come in and rest your tired bones.”$"
+	.string "“건강할머니의 집”\n"
+	.string "지쳤다고 느낀다면 들렀다 가렴!$"
+	// 「ケンコ-ばあさんの いえ」ｎ
+	// つかれたと おもうなら よってらっしゃい!
 
 Route111_Text_16FD55:: @ 816FD55
-	.string "TRAINER TIPS\p"
-	.string "One of the indicators of a POKéMON's\n"
-	.string "powerfulness is SP. ATK. It stands for\l"
-	.string "“SPECIAL ATTACK.”\p"
-	.string "Likewise, SP. DEF stands for “SPECIAL\n"
-	.string "DEFENSE.”$"
+	.string "정보 나눔 게시판!!\p"
+	.string "포켓몬의 능력을 나타내는 말 중에\n"
+	.string "특수공격이란\l"
+	.string "특수공격력을 뜻하고!\p"
+	.string "특수방어란\n"
+	.string "특수방어력을 뜻하는 말입니다!$"
+	// おとくな けいじばん!!ｐ
+	// ポケモンの つよさを あらわす ことばでｎ
+	// とくこう とはｌ
+	// とくしゅ こうげきりょく のこと!ｐ
+	// とくぼう とはｎ
+	// とくしゅ ぼうぎょりょく のこと です!

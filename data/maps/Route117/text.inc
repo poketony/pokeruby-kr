@@ -1,25 +1,39 @@
 Route117_Text_170C26:: @ 8170C26
-	.string "I left my POKéMON at the DAY CARE.\p"
-	.string "When I got it back, it had a new move\n"
-	.string "that I didn't teach it.\l"
-	.string "I was really, really surprised.$"
+	.string "키우미집에 포켓몬을 맡겨놓고 있었어\p"
+	.string "그랬더니 글쎄 내 포켓몬이 어느샌가\n"
+	.string "모르는 기술을 배우고 있어서\l"
+	.string "깜짝 놀랐지 뭐야!$"
+	// そだてやに ポケモン あずけていたのｐ
+	// そしたら あたしの ポケモンｎ
+	// いつのまにか しらない わざ おぼえていてｌ
+	// わたしが とまどっちゃった!
 
 Route117_Text_170CA7:: @ 8170CA7
-	.string "What do you think?\n"
-	.string "Aren't these flowers pretty?\p"
-	.string "I planted them all!$"
+	.string "어때?\n"
+	.string "예쁘게 늘어선 이 꽃들!\p"
+	.string "전-부 내가 심은 거야!$"
+	// どお?ｎ
+	// きれいに ならんだ この はな!ｐ
+	// ぜ-んぶ わたしが うえたのよ!
 
 Route117_Text_170CEB:: @ 8170CEB
-	.string "The air is tasty here!$"
+	.string "공기가 맛있어-!$"
+	// くうきが うま-い!
 
 Route117_Text_170D02:: @ 8170D02
-	.string "ROUTE 117\n"
-	.string "{0x7B} VERDANTURF TOWN$"
+	.string "여기는 117번 도로\n"
+	.string "{0x7B} 잔디마을$"
+	// ここは 117ばん どうろｎ
+	// ©し© シダケタウン
 
 Route117_Text_170D1E:: @ 8170D1E
-	.string "ROUTE 117\n"
-	.string "{0x7C} MAUVILLE CITY$"
+	.string "여기는 117번 도로\n"
+	.string "{0x7C} 보라시티$"
+	// ここは 117ばん どうろｎ
+	// ©しｌ キンセツシティ
 
 Route117_Text_170D38:: @ 8170D38
-	.string "POKéMON DAY CARE\n"
-	.string "“Let us raise your POKéMON.”$"
+	.string "“포켓몬 키우미집”\n"
+	.string "당신의 포켓몬을 키워 드립니다$"
+	// 「ポケモン そだてや」ｎ
+	// あなたの ポケモン そだてます

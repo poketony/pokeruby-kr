@@ -1,178 +1,301 @@
 RustboroCity_Text_16689D:: @ 816689D
-	.string "The DEVON CORPORATION...\n"
-	.string "We all just shorten it to DEVON.\p"
-	.string "That company makes all sorts of\n"
-	.string "convenient products.$"
+	.string "데봉 코포레이션...\n"
+	.string "길어서 다들 데봉이라고 줄여서 부르지\p"
+	.string "저 회사에서는 여러 가지\n"
+	.string "편리한 물건을 만들고 있어!$"
+	// デボン コ-ポレ-ション……ｎ
+	// ながいから みんな デボンって よぶけどｐ
+	// あの かいしゃ では いろいろとｎ
+	// べんりな ものを つくってるんだ!
 
 RustboroCity_Text_16690C:: @ 816690C
-	.string "Hm? A sneaky-looking man?\p"
-	.string "Come to think of it, yes, a shady-\n"
-	.string "looking guy went around the corner.$"
+	.string "응? 수상한 남자?\p"
+	.string "그러고 보니 인상이 험한 남자가\n"
+	.string "저기 모퉁이를 돌아갔어$"
+	// ん? あやしい おとこ?ｐ
+	// そういえば にんそうの わるい おとこがｎ
+	// そこの かどを まがっていったよ
 
 RustboroCity_Text_16696D:: @ 816696D
-	.string "Have you taken the POKéMON GYM\n"
-	.string "challenge?\p"
-	.string "When you get that shiny GYM BADGE\n"
-	.string "in hand, I guess TRAINERS begin to\l"
-	.string "realize what is required of them.$"
+	.string "포켓몬체육관에 도전했니?\p"
+	.string "그 반짝반짝 빛나는\n"
+	.string "체육관 배지를 가지면 트레이너로서의\l"
+	.string "자각이 싹트게 된다고!$"
+	// ポケモンジムに ちょうせん したかい?ｐ
+	// あの キラリと かがやくｎ
+	// ジムバッジを もつと トレ-ナ-としてのｌ
+	// じかくが めばえて くるんだな!
 
 RustboroCity_Text_1669FE:: @ 81669FE
-	.string "Hey, that's RUSTBORO's GYM BADGE!\p"
-	.string "Out of all the POKéMON GYM BADGES,\n"
-	.string "RUSTBORO's is the coolest, I'd say.$"
+	.string "앗! 금탄의 체육관 배지!\p"
+	.string "여러 배지 중에서도\n"
+	.string "금탄도시의 배지가 제일 멋지지!$"
+	// おっ! カナズミの ジムバッジ!ｐ
+	// いくつか ある バッジの なかでｎ
+	// カナズミの やつが いちばん かっこいいな!
 
 RustboroCity_Text_166A67:: @ 8166A67
-	.string "Oh? Who might you be?\n"
-	.string "You're a new face around these parts.\p"
-	.string "Have you just transferred into the\n"
-	.string "POKéMON TRAINER'S SCHOOL?$"
+	.string "어라? 넌 누구니?\n"
+	.string "이 근처에서 본 적 없는 얼굴이군\p"
+	.string "트레이너스쿨의 전학생?$"
+	// おや? きみは だれだい?ｎ
+	// この あたりでは みかけない かお だねｐ
+	// トレ-ナ-ズ スク-ルの てんこうせい?
 
 RustboroCity_Text_166AE0:: @ 8166AE0
-	.string "I challenged the GYM LEADER, but...\p"
-	.string "It's not going to be easy winning with\n"
-	.string "my FIRE-type POKéMON...\p"
-	.string "FIRE-type POKéMON don't match up\n"
-	.string "well against ROCK-type POKéMON...$"
+	.string "체육관 관장에게 도전했는데...\p"
+	.string "내 불꽃타입 포켓몬으론\n"
+	.string "이기기 조금 어려울 것 같아...\p"
+	.string "왜냐면 불꽃타입은\n"
+	.string "바위타입에게 상성이 나쁘잖아...$"
+	// ジムリ-ダ-に ちょうせん したけど……ｐ
+	// あたしの ほのおタイプの ポケモンじゃｎ
+	// ちょっと かつのは たいへんそう……ｐ
+	// だって ほのおタイプ ってｎ
+	// いわタイプに あいしょうが わるいもの……
 
 RustboroCity_Text_166B86:: @ 8166B86
-	.string "The old sailor MR. BRINEY lives in a\n"
-	.string "cottage by the sea.\p"
-	.string "He goes for walks in the tunnel every\n"
-	.string "so often.$"
+	.string "해변의 작은 집에 사는\n"
+	.string "선원인 하기노인은\l"
+	.string "가끔 터널로 산책을 가$"
+	// はまべの こやに すんでいるｎ
+	// ふなのりの ハギろうじんｌ
+	// ときどき トンネルに さんぽに いくんだよ
 
 RustboroCity_Text_166BEF:: @ 8166BEF
-	.string "The old sailor MR. BRINEY lives in a\n"
-	.string "cottage by the sea.\p"
-	.string "He said he was going shopping in\n"
-	.string "SLATEPORT for his pet, PEEKO.\p"
-	.string "That old seadog, he must really love\n"
-	.string "that PEEKO.$"
+	.string "해변의 작은 집에 사는\n"
+	.string "선원인 하기노인은\l"
+	.string "피코를 위해 잿빛도시에 가서\l"
+	.string "쇼핑을 한대\p"
+	.string "그 할아버지\n"
+	.string "정말 피코를 좋아하나봐!$"
+	// はまべの こやに すんでいるｎ
+	// ふなのりの ハギろうじんｌ
+	// ピ-コちゃんの ために カイナに いってｌ
+	// かいもの するんだってさｐ
+	// ほんとうに ピ-コちゃんが すきなんだな!ｎ
+	// あの じいさん
 
 RustboroCity_Text_166C98:: @ 8166C98
-	.string "Wow, you have POKéMON with you, too.\p"
-	.string "When I get bigger, I'm going to go\n"
-	.string "places with POKéMON, too.$"
+	.string "너도 포켓몬을 데리고 있구나\p"
+	.string "나도 어른이 되면\n"
+	.string "포켓몬과 어딘가로 떠날 거야!$"
+	// あなたも ポケモンを つれてるのねｐ
+	// あたしも おおきくなったらｎ
+	// ポケモンと どこかに いくんだ!
 
 RustboroCity_Text_166CFA:: @ 8166CFA
-	.string "POKéMON TRAINER'S SCHOOL!\p"
-	.string "If I go to this school, will I be able\n"
-	.string "to catch rare POKéMON easily?$"
+	.string "포켓몬 트레이너스쿨이라!\p"
+	.string "이곳에 입학하면\n"
+	.string "희귀한 포켓몬도 쉽게\l"
+	.string "잡을 수 있게 될까?$"
+	// ぽけもん とれ-な-ず すく-る かぁ!ｐ
+	// ここに にゅうがく すればｎ
+	// めずらしい ポケモンでも かんたんにｌ
+	// つかまえられるように なるのかな?
 
 RustboroCity_Text_166D59:: @ 8166D59
-	.string "If a POKéMON gains experience in\n"
-	.string "battles, it can sometimes change in\l"
-	.string "the way it looks.$"
+	.string "포켓몬은 배틀의 경험을\n"
+	.string "쌓아가면 생김새가\l"
+	.string "변하기도 한다고!$"
+	// ポケモンって たたかいの けいけんをｎ
+	// つんでいくと すがたかたち がｌ
+	// かわっちゃうことが あるんだよ!
 
 RustboroCity_Text_166DB0:: @ 8166DB0
-	.string "A POKéMON changes shape?\n"
-	.string "If one did that, I would be shocked!$"
+	.string "포켓몬의 생김새가 바뀐다고?\n"
+	.string "갑자기 바뀌면 놀라겠는데!$"
+	// ポケモンの すがたが かわっちゃうの?ｎ
+	// いきなり かわると ビックリしちゃう!
 
 RustboroCity_Text_166DEE:: @ 8166DEE
-	.string "A POKéMON you get in a trade from\n"
-	.string "someone grows fast.\p"
-	.string "But if you don't have certain GYM\n"
-	.string "BADGES, it may not obey you...$"
+	.string "다른 사람과 교환한 포켓몬은\n"
+	.string "성장이 빨라!\p"
+	.string "...하지만 체육관 배지가 없으면\n"
+	.string "말을 들어주질 않아$"
+	// ひとと こうかんした ポケモンはｎ
+	// そだつのが はやい!ｐ
+	// ……でも ジムバッジを もっていないとｎ
+	// いうことを きいて くれないんだ
 
 RustboroCity_Text_166E65:: @ 8166E65
-	.string "Get out! Out of the way!$"
+	.string "비켜-! 비켜 비켜-!!$"
+	// どけ-! どけどけ-!!
 
 RustboroCity_Text_166E7E:: @ 8166E7E
-	.string "Wait! Pleeeaaase!\p"
-	.string "Don't take my GOODS!$"
+	.string "거기 서-!\p"
+	.string "그 화물을 돌려줘어어어-!!$"
+	// まってぇ-!ｐ
+	// その にもつを かえしてぇぇぇ-!!
 
 RustboroCity_Text_166EA5:: @ 8166EA5
-	.string "Oh, it's you!\p"
-	.string "You're that fantastic TRAINER who\n"
-	.string "helped me in PETALBURG WOODS!\p"
-	.string "Help me! I was robbed by TEAM {EVIL_TEAM}!\n"
-	.string "I have to get the DEVON GOODS back!\p"
-	.string "If I don't...\n"
-	.string "I'm going to be in serious trouble.$"
+	.string "아아 당신은!\p"
+	.string "등화숲에서 도와주신\n"
+	.string "멋진 트레이너 아니신가요!\p"
+	.string "부탁합니다!\p"
+	.string "{EVIL_TEAM}단에게 빼앗긴\n"
+	.string "데봉화물을 되찾아 주십시오!\p"
+	.string "그게 없으면....\n"
+	.string "전 매우 곤란해집니다$"
+	// ああ きみは!ｐ
+	// トウカのもりで たすけてくれたｎ
+	// すてきな トレ-ナ-じゃ ないですか!ｐ
+	// おねがいです!ｐ
+	// §くだんに うばわれたｎ
+	// デボンのにもつ とりかえして ください!ｐ
+	// あれが ないと……ｎ
+	// わたし とても こまるんです
 
 RustboroCity_Text_166F6B:: @ 8166F6B
-	.string "That shady character, I think he took\n"
-	.string "off towards the tunnel over there.$"
+	.string "방금 전의 수상한 녀석은\n"
+	.string "건너편의 터널 쪽으로\l"
+	.string "도망갔을 거라고 생각합니다$"
+	// さっきの あやしい やつはｎ
+	// むこうの トンネルの ほうにｌ
+	// にげていったと おもうのですよ
 
 RustboroCity_Text_166FB4:: @ 8166FB4
-	.string "Oh! How did it go?\n"
-	.string "The DEVON GOODS?\p"
-	.string "You did!\n"
-	.string "You got them back!\p"
-	.string "You really are a great TRAINER!\p"
-	.string "I know! As my thanks, I'll give you\n"
-	.string "another GREAT BALL!$"
+	.string "아아! 어떻게 됐나요\n"
+	.string "데봉화물은...?\p"
+	.string "그렇군요!\n"
+	.string "되찾아 주신 건가요!\p"
+	.string "당신은 정말\n"
+	.string "대단한 트레이너군요!\p"
+	.string "...그래요! 답례로 또\n"
+	.string "수퍼볼을 드리죠!$"
+	// ああ! どうでしたｎ
+	// デボンのにもつ は……?ｐ
+	// そうですか!ｎ
+	// とりかえして くれたのですか!ｐ
+	// きみは ほんとうにｎ
+	// すごい トレ-ナ- ですね!ｐ
+	// ……そうだ! おれいに またｎ
+	// ス-パ-ボ-ルを あげちゃおう!
 
 RustboroCity_Text_16704C:: @ 816704C
-	.string "Your BAG's full.\n"
-	.string "I can't give you this GREAT BALL.$"
+	.string "가방이 가득 찼다면\n"
+	.string "수퍼볼은 드릴 수 없겠네요$"
+	// どうぐ いっぱいでｎ
+	// ス-パ-ボ-ル あげられないね
 
 RustboroCity_Text_16707F:: @ 816707F
-	.string "Excuse me, please!\n"
-	.string "Please come with me!$"
+	.string "저기! 저기!\n"
+	.string "절 따라와 주세요!$"
+	// きみ! きみ!ｎ
+	// わたしに ついてきて ください!
 
 RustboroCity_Text_1670A7:: @ 81670A7
-	.string "MAY: Oh, hi, {PLAYER}{KUN}!\n"
-	.string "How's your POKéDEX coming along?\p"
-	.string "Mine's looking pretty decent.\p"
-	.string "I caught POKéMON in PETALBURG WOODS\n"
-	.string "until I ran out of POKé BALLS.$"
+	.string "봄이: 앗 {PLAYER}{K_AYA}!\n"
+	.string "포켓몬 도감의 상태는 어때?\p"
+	.string "난 상당히 좋은 느낌이야\p"
+	.string "등화숲에서\n"
+	.string "몬스터볼을 다 쓸 정도로\l"
+	.string "포켓몬을 잡았거든!$"
+	// ハルカ『あっ §あ§お!ｎ
+	// ポケモンずかんの ちょうしは どう?ｐ
+	// あたしは かなり いい かんじよｐ
+	// トウカのもりでｎ
+	// モンスタ-ボ-ル なくなる ぐらいｌ
+	// ポケモン つかまえた もの!
 
 RustboroCity_Text_16713C:: @ 816713C
-	.string "MAY: Oh, by the way, I passed MR. BRINEY\n"
-	.string "in PETALBURG WOODS.\p"
-	.string "I guess he's on his way home to his\n"
-	.string "cottage by the sea.\p"
-	.string "{PLAYER}{KUN}, you just moved here so you\n"
-	.string "might not know this, but MR. BRINEY\l"
-	.string "was once a revered seafarer.$"
+	.string "봄이: 그러고 보니 등화숲에서\n"
+	.string "하기노인하고 스쳐 지나갔는데\p"
+	.string "아마...\n"
+	.string "해변의 작은 집으로 돌아가는 중이었을 거야!\p"
+	.string "{PLAYER}{K_EUNNEUN} 이사 와서\n"
+	.string "모를 수도 있겠지만\l"
+	.string "하기노인은 예전에\l"
+	.string "대단한 선원이었어!$"
+	// ハルカ『そういえば トウカのもりでｎ
+	// ハギろうじんと すれちがったわｐ
+	// たぶん……ｎ
+	// はまべのこやに もどるところ だったのよ!ｐ
+	// §あ§おは ひっこして きたからｎ
+	// しらないかも しれないけどｌ
+	// ハギろうじん って むかしはｌ
+	// すっごい ふなのり だったんだから!
 
 RustboroCity_Text_167213:: @ 8167213
-	.string "BRENDAN: {PLAYER}, how's your POKéDEX?\n"
-	.string "Have you filled in any pages yet?\p"
-	.string "Mine rules.\p"
-	.string "I went on a POKéMON-catching frenzy\n"
-	.string "in PETALBURG WOODS until I ran out\l"
-	.string "of POKé BALLS.$"
+	.string "휘웅: {PLAYER}\n"
+	.string "포켓몬 도감은 어때?\l"
+	.string "페이지 좀 채웠어?\p"
+	.string "난 완전 끝내줘\p"
+	.string "등화숲에서\n"
+	.string "포켓몬을 하도 많이 잡았더니\l"
+	.string "몬스터볼이 다 떨어졌다고!$"
+	// ユウキ『§あｎ
+	// ポケモンずかんは どう?ｌ
+	// ちょっとは ペ-ジ うまったか?ｐ
+	// オレは すごいよｐ
+	// トウカのもりでｎ
+	// ポケモン つかまえ まくってｌ
+	// モンスタ-ボ-ル なくなったよ!
 
 RustboroCity_Text_1672B8:: @ 81672B8
-	.string "BRENDAN: By the way, I walked by MR.\n"
-	.string "BRINEY in PETALBURG WOODS.\p"
-	.string "I bet he was on his way home to his\n"
-	.string "cottage by the sea.\p"
-	.string "I bet you didn't know this, but he's\n"
-	.string "always got a POKéMON with him.$"
+	.string "휘웅: 그러고 보니 등화숲에서\n"
+	.string "하기노인하고 스쳐 지나갔어\p"
+	.string "분명 해변의 작은 집으로\n"
+	.string "돌아가는 길이었을 거야\p"
+	.string "넌 모르겠지만\n"
+	.string "그 사람 언제나\l"
+	.string "포켓몬과 함께 다니거든$"
+	// ユウキ『そういえば トウカのもりでｎ
+	// ハギろうじんと すれちがったよｐ
+	// きっと はまべの こやにｎ
+	// かえる ところ だなｐ
+	// おまえ しらない だろうけどｎ
+	// あの ひと いつもｌ
+	// ポケモンと いっしょ なんだ
 
 RustboroCity_Text_167374:: @ 8167374
-	.string "“Timesaving tunnel nearing\n"
-	.string "completion!”\p"
-	.string "...Is what it says on the sign, but\n"
-	.string "there's also a big “X” splashed\l"
-	.string "across it in red paint...$"
+	.string "“편리한 터널 곧 완성!”\p"
+	.string "...이라고 간판에 적혀 있지만\n"
+	.string "그 위에 빨간 페인트로\l"
+	.string "크게 X 표시가 그려져 있다$"
+	// 「べんりな トンネル かんせい まぢか!」ｐ
+	// ……と かんばんに かかれているがｎ
+	// その うえに あかい ペンキでｌ
+	// おおきな バッテンが つけられている
 
 RustboroCity_Text_1673FA:: @ 81673FA
-	.string "DEVON CORPORATION\p"
-	.string "“For all your living needs, we make\n"
-	.string "it all.”$"
+	.string "“데봉 코포레이션”\p"
+	.string "여러분의 생활을 위해\n"
+	.string "무엇이든 만들고 있습니다!$"
+	// 「デボン コ-ポレ-ション」ｐ
+	// みなさんの せいかつの ためにｎ
+	// なんでも つくっています!
 
 RustboroCity_Text_167439:: @ 8167439
-	.string "RUSTBORO CITY POKéMON GYM\n"
-	.string "LEADER: ROXANNE\p"
-	.string "“The ROCK-loving honors student!”$"
+	.string "금탄도시 포켓몬체육관\n"
+	.string "관장 원규\l"
+	.string "바위를 보면 가슴이 뛰는 우등생!$"
+	// カナズミ シティ ポケモンジムｎ
+	// リ-ダ- ツツジｌ
+	// いわに ときめく ゆうとうせい!
 
 RustboroCity_Text_167485: @ 8167485
-	.string "DEVON CORP. BRANCH OFFICE\p"
-	.string "“Access limited to DEVON employees\n"
-	.string "and authorized personnel.”$"
+	.string "“데봉 코포레이션 분실”\p"
+	.string "관계자 외 출입 금지\n"
+	.string "양해 바랍니다!$"
+	// 「デボン コ-ポレ-ション ぶんしつ」ｐ
+	// かんけいしゃ いがいの たちいりはｎ
+	// どうぞ ごえんりょ ください!
 
 RustboroCity_Text_1674DD:: @ 81674DD
-	.string "RUSTBORO CITY\p"
-	.string "“The city probing the integration of\n"
-	.string "nature and science.”$"
+	.string "여기는 금탄도시\p"
+	.string "자연과 과학의 융합을\n"
+	.string "추구하는 마을$"
+	// ここは カナズミ シティｐ
+	// しぜんと かがくの ゆうごうをｎ
+	// ついきゅうする まち
 
 RustboroCity_Text_167525:: @ 8167525
-	.string "POKéMON TRAINER'S SCHOOL\p"
-	.string "“We'll teach you anything about\n"
-	.string "POKéMON!”$"
+	.string "“포켓몬 트레이너스쿨”\n"
+	.string "포켓몬에 대해 뭐든지 가르쳐 드립니다!$"
+	// 「ポケモン トレ-ナ-ズ スク-ル」ｎ
+	// ポケモンのことなら なんでも おしえます!
 
 RustboroCity_Text_167568:: @ 8167568
-	.string "CUTTER'S HOUSE$"
+	.string "“풀베기아저씨의 집”$"
+	// 「いあいぎりオヤジの いえ」

@@ -1,31 +1,53 @@
 Route116_TunnelersRestHouse_Text_192F33:: @ 8192F33
-	.string "That RUSTURF TUNNEL there...\p"
-	.string "At first, we had a huge work crew boring\n"
-	.string "through rock with the latest machinery.\l"
-	.string "But, we had to stop.\p"
-	.string "It turns out that we would have had\n"
-	.string "a negative effect on wild POKéMON in\l"
-	.string "the area.\p"
-	.string "So, we've got nothing to do but loll\n"
-	.string "around here doing nothing.$"
+	.string "저 금잔터널은...\p"
+	.string "처음엔 수많은 사람들과\n"
+	.string "최신식 기계로 파 나갔지\p"
+	.string "하지만 그대로 계속 파면\n"
+	.string "주변의 포켓몬에게\l"
+	.string "악영향을 끼친다는군\p"
+	.string "그래서 우리들은 어쩌지도 못하고\n"
+	.string "여기서 멍하니 있는 거야$"
+	// あの カナシダトンネル……ｐ
+	// はじめは たくさんの にんげんとｎ
+	// さいしんの キカイで ほりすすんでいたｐ
+	// だが そのまま ほりすすむとｎ
+	// あたりの ポケモンにｌ
+	// あくえいきょうを あたえる らしくてねｐ
+	// で おれら どうしようもなくｎ
+	// ここで ぼんやりと しているわけさ
 
 Route116_TunnelersRestHouse_Text_193049:: @ 8193049
-	.string "There's a man digging his way to\n"
-	.string "VERDANTURF all by his lonesome.\l"
-	.string "He's desperate to get through.\p"
-	.string "He says that if he digs little by little\n"
-	.string "without using machines, he won't\l"
-	.string "disturb POKéMON, and he'll avoid harming\l"
-	.string "the natural environment.$"
+	.string "어떻게 해서든 잔디마을에\n"
+	.string "가고 싶어 하는 녀석이\l"
+	.string "혼자서 터널을 파왔어\p"
+	.string "사람의 힘으로 조금씩 파내면\n"
+	.string "포켓몬을 놀라게 하지도 않고\l"
+	.string "주변 자연환경에도 나쁜 영향을\l"
+	.string "끼치지 않을 거라면서 말이야$"
+	// どうしても シダケに いきたいｎ
+	// やつが じぶんの ちから だけでｌ
+	// トンネルを ほっているよｐ
+	// にんげんの ちからで すこしずつ ほればｎ
+	// ポケモンを おどろかせなくて すむしｌ
+	// まわりの しぜんにも わるい えいきょうをｌ
+	// あたえないで すむって いってな
 
 Route116_TunnelersRestHouse_Text_193135:: @ 8193135
-	.string "To get to VERDANTURF without using\n"
-	.string "this TUNNEL, you'd have to cross the\l"
-	.string "sea to DEWFORD, sail on to SLATEPORT,\l"
-	.string "then travel through MAUVILLE.$"
+	.string "여기서 터널을 지나지 않고\n"
+	.string "잔디마을로 가려면 바다를 건너\l"
+	.string "무로마을에서 잿빛도시로 간 다음\l"
+	.string "보라시티를 통해서 가는 수밖에 없군!$"
+	// トンネルを つかわずに ここからｎ
+	// シダケに いくなら うみを わたりｌ
+	// ムロから カイナ そしてｌ
+	// キンセツを とおって いくしか ないな!
 
 Route116_TunnelersRestHouse_Text_1931C1:: @ 81931C1
-	.string "Did you hear? The TUNNEL to VERDANTURF\n"
-	.string "has gone through!\p"
-	.string "Sometimes, if you hope strongly enough,\n"
-	.string "dreams do come true.$"
+	.string "결국엔 잔디마을까지 가는\n"
+	.string "터널이 뚫린 모양이야!\p"
+	.string "이거야말로\n"
+	.string "“꿈은 이루어진다”로구만!$"
+	// なんでも シダケ までのｎ
+	// トンネルが つうじた らしいぞ!ｐ
+	// ねがい つづければｎ
+	// いつかは かなう って ことなんだな!

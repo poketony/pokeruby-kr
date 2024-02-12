@@ -1,55 +1,95 @@
 Route118_Text_170D66:: @ 8170D66
-	.string "STEVEN: Hi!\p"
-	.string "You're that TRAINER I met in DEWFORD!\p"
-	.string "... ... ... ... ... ... ... ...\n"
-	.string "... ... ... ... ... ... ... ...\p"
-	.string "Oh, okay, you're {PLAYER}{KUN}.\n"
-	.string "I'll remember it.\p"
-	.string "{PLAYER}{KUN}.\p"
-	.string "In this vast world, there are many\n"
-	.string "kinds of POKéMON.\l"
-	.string "They come in many types.\p"
-	.string "Do you raise different types?\n"
-	.string "Or do you raise only POKéMON of a\l"
-	.string "certain type?\p"
-	.string "What do you think as a TRAINER?\p"
-	.string "Sorry, it's not my place to ask, is it?\p"
-	.string "Well, anyway, I hope to see you\n"
-	.string "again.$"
+	.string "성호: 안녕!\p"
+	.string "넌 무로마을에서 만났던\n"
+	.string "트레이너였지!\p"
+	.string "...... ...... ...... ......\n"
+	.string "...... ...... ...... ......\p"
+	.string "그래 {PLAYER}{K_I}라고 하는구나\n"
+	.string "기억해둘게\p"
+	.string "{PLAYER}\p"
+	.string "이 넓은 세계에는\n"
+	.string "다양한 포켓몬이 있고\l"
+	.string "각자 여러 가지 타입을 가지고 있어\p"
+	.string "여러 타입의 포켓몬을 키울 것인가\n"
+	.string "아니면 좋아하는 타입의\l"
+	.string "포켓몬만을 키울 것인가...\p"
+	.string "넌 포켓몬 트레이너로서\n"
+	.string "어떻게 생각해?\p"
+	.string "내가 신경 쓸 건 아니긴 한데\p"
+	.string "그럼\n"
+	.string "또 만날 수 있으면 좋겠네$"
+	// ダイゴ『やあ!ｐ
+	// きみは ムロで であったｎ
+	// トレ-ナ- だよね!ｐ
+	// …… …… …… ……ｎ
+	// …… …… …… ……ｐ
+	// そうか §あ§おと いうのかｎ
+	// うん おぼえておくｐ
+	// §あ§おｐ
+	// この ひろい せかいにはｎ
+	// さまざまな ポケモンがいるｌ
+	// それぞれ さまざまな タイプを もっているｐ
+	// いろんな タイプの ポケモンを そだてるかｎ
+	// それとも すきな タイプのｌ
+	// ポケモンばかり そだてるか……ｐ
+	// きみは ポケモン トレ-ナ-としてｎ
+	// どう かんがえてる?ｐ
+	// ボクが きに すること ないけどねｐ
+	// じゃあｎ
+	// また あえると いいね
 
 Route118_Text_170F12:: @ 8170F12
-	.string "Hmm!\n"
-	.string "A GOOD ROD is really good!\p"
-	.string "Wouldn't you agree?$"
+	.string "음!\n"
+	.string "좋은낚싯대는 정말 좋은 거 같아!\p"
+	.string "너도 그렇게 생각하지?$"
+	// うむ!ｎ
+	// いいつりざおは ほんとうに いいよ!ｐ
+	// きみも そう おもうでしょ?
 
 Route118_Text_170F46:: @ 8170F46
-	.string "Hmm!\n"
-	.string "We're of identical minds!\p"
-	.string "Hmm!\n"
-	.string "Take this GOOD ROD!$"
+	.string "음!\n"
+	.string "너랑은 죽이 맞는데!\p"
+	.string "음!\n"
+	.string "좋은낚싯대를 줄게!$"
+	// うむ!ｎ
+	// きみとは きが あうよ!ｐ
+	// うむ!ｎ
+	// いいつりざおを あげよう!
 
 Route118_Text_170F7E:: @ 8170F7E
-	.string "Wherever there's water, try your luck\n"
-	.string "at fishing.$"
+	.string "물이 있는 곳이라면\n"
+	.string "어디서든 낚시를 해보라구!$"
+	// みずの ある ところならｎ
+	// どこでも つりを すると いいよ!
 
 Route118_Text_170FB0:: @ 8170FB0
-	.string "Don't you like to fish?$"
+	.string "낚시 싫어하니?$"
+	// つりは きらい かい?
 
 Route118_Text_170FC8:: @ 8170FC8
-	.string "Try catching all sorts of POKéMON\n"
-	.string "with your GOOD ROD.$"
+	.string "좋은낚싯대로\n"
+	.string "다양한 포켓몬을 낚아 봐!$"
+	// いいつりざおでｎ
+	// いろんな ポケモンを つると いいよ!
 
 Route118_Text_170FFE:: @ 8170FFE
-	.string "Even if there isn't a boat, you can\n"
-	.string "cross rivers and the sea if you have\l"
-	.string "a POKéMON that knows SURF.\p"
-	.string "POKéMON can be counted on to do so\n"
-	.string "much!$"
+	.string "배를 안 가지고 있어도\n"
+	.string "파도타기를 배운 포켓몬이 있으면\l"
+	.string "바다든 강이든 건너갈 수 있지!\p"
+	.string "포켓몬은 정말 믿음직스러워-!$"
+	// ふねを もって いなくてもｎ
+	// なみのりを おぼえた ポケモンが いればｌ
+	// うみや かわを わたって いけちゃうの!ｐ
+	// ポケモンって たのもし-い!
 
 Route118_Text_17108B:: @ 817108B
-	.string "ROUTE 118\n"
-	.string "{0x7B} MAUVILLE CITY$"
+	.string "여기는 118번 도로\n"
+	.string "{0x7B} 보라시티$"
+	// ここは 118ばん どうろｎ
+	// ©し© キンセツシティ
 
 Route118_Text_1710A5:: @ 81710A5
-	.string "ROUTE 118\n"
-	.string "{0x79} ROUTE 119$"
+	.string "여기는 118번 도로\n"
+	.string "{0x79} 119번 도로$"
+	// ここは 118ばん どうろｎ
+	// ©し© 119ばん どうろ
