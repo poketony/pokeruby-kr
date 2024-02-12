@@ -1,62 +1,62 @@
 static const u8 TrainerEyeDescription_AromaLady_Rose[] = _(
-    "Becalm fighting emotions.$"
-    "Fragrant GRASS POKéMON$"
-    "Soothing aromas make the$"
-    "body and mind healthy.");
+    "부드럽게 해줘야지$"
+    "좋은 향기의 풀포켓몬$"
+    "좋은 향기가 몸과$"
+    "마음을 건강하게 해줍니다!");
 
 static const u8 TrainerEyeDescription_RuinManiac_Dusty[] = _(
-    "Overwhelm with power!$"
-    "Craggy ROCK POKéMON$"
-    "In search of ancient lore,$"
-    "I travel the world.");
+    "힘으로 밀어붙이기가 신조!$"
+    "거친 바위포켓몬!$"
+    "고대의 로망을 찾아$"
+    "동서남북 어디든지!");
 
 static const u8 TrainerEyeDescription_Tuber_Lola[] = _(
-    "I'm going to try hard!$"
-    "Good swimmer POKéMON$"
-    "I wish I could swim without$"
-    "using an inner tube.");
+    "열심히 하겠습니다-!$"
+    "헤엄을 잘 치는 포켓몬$"
+    "튜브가 없어도$"
+    "헤엄칠 수 있도록 되고 싶어-");
 
 static const u8 TrainerEyeDescription_Tuber_Ricky[] = _(
-    "I don't know. I'll try hard.$"
-    "WATER POKéMON are buddies.$"
-    "It's not like I can't swim.$"
-    "I just like my inner tube.");
+    "잘 모르겠지만 힘낼 거야$"
+    "물포켓몬은 친구!$"
+    "헤엄을 못 치는 게 아니야!$"
+    "튜브를 좋아하는 것뿐이다!");
 
 static const u8 TrainerEyeDescription_SisAndBro_RitaAndSam[] = _(
-    "We split our duties.$"
-    "We like friendly POKéMON.$"
-    "We enjoy POKéMON together$"
-    "as sister and brother.");
+    "역할분담을 하고 있어$"
+    "사이가 좋은 포켓몬이야!$"
+    "남매가 사이좋게$"
+    "포켓몬을 즐긴다!");
 
 static const u8 TrainerEyeDescription_Cooltrainer_Brooke[] = _(
-    "Exploit the foe's weakness.$"
-    "Balance is crucial.$"
-    "My goal is to become the$"
-    "POKéMON CHAMPION.");
+    "상대의 약점을 공략한다$"
+    "밸런스가 생명이야!$"
+    "목표는 포켓몬 챔피언$"
+    "포기하지 않을 거야!");
 
 static const u8 TrainerEyeDescription_Cooltrainer_Wilton[] = _(
-    "Upset the opponent.$"
-    "Type doesn't matter.$"
-    "I'm a top student at the$"
-    "TRAINER'S SCHOOL.");
+    "상대가 싫어하는 배틀$"
+    "타입을 가리지 않고 무엇이든$"
+    "트레이너스쿨의$"
+    "우등생이란 말이다");
 
 static const u8 TrainerEyeDescription_HexManiac_Valerie[] = _(
-    "Slow, steady suffering$"
-    "Scary to meet at night.$"
-    "I see things that others$"
-    "can't see...");
+    "서서히 괴롭히겠습니다$"
+    "밤에 만나면 무섭습니다$"
+    "다른 사람에게는 보이지$"
+    "않는 것이 보인단다...");
 
 static const u8 TrainerEyeDescription_Lady_Cindy[] = _(
-    "Anything to win.$"
-    "Gorgeous type!$"
-    "I have a pool specially for$"
-    "my POKéMON at home.");
+    "이기면 되잖아?$"
+    "럭셔리한 타입이야!$"
+    "집에는 포켓몬 전용의$"
+    "풀장이 있어");
 
 static const u8 TrainerEyeDescription_Beauty_Jessica[] = _(
-    "I'll lead you astray.$"
-    "Cute, of course.$"
-    "I love the SAFARI ZONE.$"
-    "I seem to end up there.");
+    "홀려버리겠어$"
+    "귀여운 거$"
+    "사파리존 정말 좋아!$"
+    "나도 모르게 가게 돼");
 
 static const u8 TrainerEyeDescription_RichBoy_Winston[] = _(
     "Strategy? Who needs it?$"
