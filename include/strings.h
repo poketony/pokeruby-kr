@@ -240,7 +240,7 @@ extern const u8 gOtherText_BoxIsFull[];
 extern const u8 gOtherText_Size[];
 extern const u8 gOtherText_Firm[];
 
-extern const u8 gContestStatsText_Unknown1[];
+extern const u8 gOtherText_Centimeter[];
 
 extern const u8 ContestStatsText_VerySoft[];
 extern const u8 ContestStatsText_Soft[];
