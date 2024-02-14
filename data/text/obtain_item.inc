@@ -1,27 +1,28 @@
 Text_ObtainedTheItem: @ 81A0C68
-	.string "Obtained the {STR_VAR_2}.$"
+	.string "{STR_VAR_2}{K_EULREUL} 손에 넣었다!$"
 
 Text_TheBagIsFull:: @ 81A0C79
-	.string "The BAG is full...$"
+	.string "가방이 가득 찼다...$"
 
 Text_PutItemInPocket: @ 81A0C8C
-	.string "{PLAYER} put away the {STR_VAR_2}\n"
-	.string "in the {STR_VAR_3} POCKET.$"
+	.string "{PLAYER}{K_EUNNEUN} {STR_VAR_2}{K_EULREUL}\n"
+	.string "{STR_VAR_3} 포켓에 넣었다$"
 
 Text_FoundOneItem: @ 81A0CB1
-	.string "{PLAYER} found one {STR_VAR_2}!$"
+	.string "{PLAYER}{K_EUNNEUN}\n"
+    .string "{STR_VAR_2}{K_EULREUL} 발견했다!$"
 
 Text_TooBadBagIsFull:
-	.string "Too bad!\n"
-	.string "The BAG is full...$"
+	.string "아쉽다!\n"
+	.string "가방이 가득 찼다...$"
 
 Text_ObtainedTheDecor: @ 81A0CDE
-	.string "Obtained the {STR_VAR_2}.$"
+	.string "{STR_VAR_2}{K_EULREUL} 손에 넣었다!$"
 
 Text_NoRoomLeftForAnother:: @ 81A0CEF
-	.string "Too bad! There's no room left for\n"
-	.string "another {STR_VAR_2}...$"
+	.string "아쉽다! {STR_VAR_2}{K_EULREUL}\n"
+	.string "넣을 공간이 없다...$"
 
 Text_TheDecorWasTransferredToThePC: @ 81A0D1F
-	.string "The {STR_VAR_2} was transferred\n"
-	.string "to the PC.$"
+	.string "{STR_VAR_2}{K_EUNNEUN}\n"
+	.string "PC로 전송되었다!$"

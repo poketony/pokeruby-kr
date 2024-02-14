@@ -59,52 +59,52 @@ static const u8 TrainerEyeDescription_Beauty_Jessica[] = _(
     "나도 모르게 가게 돼");
 
 static const u8 TrainerEyeDescription_RichBoy_Winston[] = _(
-    "Strategy? Who needs it?$"
-    "I spent big money on it!$"
-    "I, being rich, sleep in a$"
-    "custom POKéMON bed.");
+    "작전 따위는 필요 없다고$"
+    "돈을 들여서 키웠단다!$"
+    "나는 부자라서$"
+    "포켓몬 침대에서 잠을 자지");
 
 static const u8 TrainerEyeDescription_PokeManiac_Steve[] = _(
-    "Wrestle down with power.$"
-    "Took all night to catch...$"
-    "Big, burly, and buff$"
-    "POKéMON are the best...");
+    "파워로 굴복시키겠다...$"
+    "밤을 꼬박 새워서 잡았다...$"
+    "크고 늠름한$"
+    "포켓몬이 최고...");
 
 static const u8 TrainerEyeDescription_Swimmer_Tony[] = _(
-    "Ram at full speed!$"
-    "Funky WATER type!$"
-    "If I can't be out swimming,$"
-    "I'll be pumping weights.");
+    "온 힘을 다하여 싸운다!$"
+    "좋은 물타입$"
+    "헤엄칠 수 없을 때는$"
+    "근육 단련을 하고 있다!");
 
 static const u8 TrainerEyeDescription_BlackBelt_Nob[] = _(
-    "Grand slam pummeling!$"
-    "FIGHTING type$"
-    "Not to brag, but I can bust$"
-    "ten roof tiles!");
+    "타격기술로 팍팍!$"
+    "격투타입$"
+    "자랑은 아니지만$"
+    "기왓장을 10개는 깬다고!");
 
 static const u8 TrainerEyeDescription_Guitarist_Dalton[] = _(
-    "I'll electrify you!$"
-    "They're ELECTRIC!$"
-    "I want to make people cry$"
-    "with songs from my heart.");
+    "찌릿찌릿 저리게 만들어주마!$"
+    "전기의 힘을 보여주겠어!$"
+    "내 마음의 멜로디로$"
+    "모두를 울려주고 싶어");
 
 static const u8 TrainerEyeDescription_Kindler_Bernie[] = _(
-    "Burn it all down!$"
-    "Burn-inducing POKéMON$"
-    "When you light a campfire,$"
-    "be sure there's some water.");
+    "불꽃으로 모두 불태운다!$"
+    "화상을 입을 것 같은 포켓몬$"
+    "캠프파이어를 할 때는$"
+    "불 끌 물을 잊지 마");
 
 static const u8 TrainerEyeDescription_Camper_Ethan[] = _(
-    "Hang in and be tenacious!$"
-    "I'll raise any POKéMON.$"
-    "POKéMON raised in the wild$"
-    "grow strong!");
+    "버티고 버티고 버틴다!$"
+    "어떤 포켓몬이든 키운다$"
+    "자연에서 자란 포켓몬은$"
+    "강해진다!");
 
 static const u8 TrainerEyeDescription_OldCouple_JohnAndJay[] = _(
-    "Our love lets us prevail.$"
-    "We've had them for years.$"
-    "Married 50 years, we've$"
-    "devotedly raised POKéMON.");
+    "부부간의 사랑으로 이길 거야$"
+    "긴 세월을 함께한 포켓몬$"
+    "결혼하고 50년$"
+    "포켓몬을 키워왔구먼");
 
 static const u8 TrainerEyeDescription_BugManiac_Brandon[] = _(
     "Attack in waves!$"

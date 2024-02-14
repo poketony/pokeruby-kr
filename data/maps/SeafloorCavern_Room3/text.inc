@@ -1,24 +1,43 @@
 SeafloorCavern_Room3_Text_1975DC:: @ 81975DC
-	.string "Ahahahaha!\p"
-	.string "How did you manage to get here without\n"
-	.string "a submarine?\l"
-	.string "What an impressive child!\p"
-	.string "But... It won't do to have you\n"
-	.string "meddling about here.\p"
-	.string "And, I do want payback for what\n"
-	.string "happened at the WEATHER INSTITUTE...\p"
-	.string "I'm going to give you a little taste\n"
-	.string "of pain! Resign yourself to it!$"
+	.string "오호호!\p"
+	.string "잠수정도 없는데\n"
+	.string "잘도 여기까지 쫓아왔네!\l"
+	.string "대단한 꼬맹이야!\p"
+	.string "하지만 말이지...\n"
+	.string "방해받는 건 싫거든\p"
+	.string "날씨 연구소에서의\n"
+	.string "빚도 갚아주고 싶고...\p"
+	.string "살짝 괴롭혀 줄 테니까\n"
+	.string "각오하도록 해-!!$"
+	// オ-ッホッホ!ｐ
+	// せんすいていも ないのにｎ
+	// よく ここまで おいかけて きたわね!ｌ
+	// たいした おこさま だわ!ｐ
+	// でもね……ｎ
+	// ジャマされると めんどう なのよねｐ
+	// てんき けんきゅうじょ でのｎ
+	// かりも かえしたいし……ｐ
+	// ちょっと いたい おもい させちゃうからｎ
+	// かくご しなさ-い!!
 
 SeafloorCavern_Room3_Text_1976F3:: @ 81976F3
-	.string "Ahahahaha!\p"
-	.string "Ouch!$"
+	.string "오호호!\p"
+	.string "괴로워-!$"
+	// オ-ッホッホ!ｐ
+	// いった-い!
 
 SeafloorCavern_Room3_Text_197704:: @ 8197704
-	.string "Ahahahaha!\n"
-	.string "You're so darn strong.\p"
-	.string "It's terribly disappointing that you're\n"
-	.string "not a TEAM {EVIL_TEAM} member.\p"
-	.string "You could have enjoyed the fabulous\n"
-	.string "world our BOSS has promised to one\l"
-	.string "of our own...$"
+	.string "오호호!\p"
+	.string "너 그렇게나 강한데\n"
+	.string "{EVIL_TEAM}단의 동료가 아니라서\l"
+	.string "무척 유감이야\p"
+	.string "리더가 실현해 줄\n"
+	.string "멋진 세계를\l"
+	.string "같이 즐길 수 있었을 텐데$"
+	// オ-ッホッホ!ｐ
+	// あなた そんなに つよいんだものｎ
+	// §くだんの なかま じゃなくてｌ
+	// とっても ざんねんだわｐ
+	// リ-ダ-が じつげん してくれるｎ
+	// すばらしい せかいをｌ
+	// いっしょに たのしむことが できたのに
