@@ -1,27 +1,43 @@
 SlateportCity_ContestLobby_Text_17C937:: @ 817C937
-	.string "I want to raise a POKéMON that's\n"
-	.string "the ultimate in “great” for both\l"
-	.string "battles and CONTESTS.\p"
-	.string "It's vexing, trying to figure out\n"
-	.string "which moves I should make it learn.$"
+	.string "승부에서든 콘테스트에서든\n"
+	.string "최고로 활약하는 포켓몬을\l"
+	.string "키우고 싶어...\l"
+	.string "배우게 할 기술 때문에 고민돼!$"
+	// しょうぶでも コンテストでもｎ
+	// さいきょう さいこうの ポケモンをｌ
+	// そだてたいなあ……ｌ
+	// おぼえさせる わざに なやむね!
 
 SlateportCity_ContestLobby_Text_17C9D5:: @ 817C9D5
-	.string "Do any of your friends have any\n"
-	.string "BERRIES?\p"
-	.string "You can use that BERRY BLENDER and\n"
-	.string "make {POKEBLOCK}S with your friends!\p"
-	.string "You should try it - it's a lot of fun!$"
+	.string "당신의 친구는 나무열매 가지고 있어?\p"
+	.string "저기에 있는 나무열매블렌더로\n"
+	.string "친구와 함께\l"
+	.string "포켓몬스넥을 만들 수 있지! 정말 재밌어!$"
+	// あなたの おともだちは きのみ もってる?ｐ
+	// あそこに ある きのみブレンダ-でｎ
+	// おともだちと いっしょにｌ
+	// ポロックを つくれるの! たのしいわよ-!
 
 SlateportCity_ContestLobby_Text_17CA67:: @ 817CA67
-	.string "I have two, so you can have one!$"
+	.string "두 개 있으니까\n"
+	.string "이거 하나 줄게!$"
+	// ふたつ あるからｎ
+	// これ ひとつ あげる!
 
 SlateportCity_ContestLobby_Text_17CA88:: @ 817CA88
-	.string "Make {POKEBLOCK}S and put them in there.\p"
-	.string "When you make a {POKEBLOCK}, everyone\n"
-	.string "has to put in a different BERRY.$"
+	.string "포켓몬스넥을 만들고 거기 넣으면 돼!\p"
+	.string "그리고 포켓몬스넥을 만들 때는\n"
+	.string "모두 다른 나무열매로\l"
+	.string "만들지 않으면 안 돼!$"
+	// ポロック つくって いれて!ｐ
+	// でね ポロック つくる ときはｎ
+	// みんなが ちがう きのみでｌ
+	// つくらないと ダメ なんだよ!
 
 SlateportCity_ContestLobby_Text_17CAEC:: @ 817CAEC
-	.string "If you win a CONTEST, they put up a\n"
-	.string "poster of your POKéMON on the wall.\p"
-	.string "It will have a portrait of your\n"
-	.string "POKéMON and both your names.$"
+	.string "콘테스트에서 우승하면\p"
+	.string "벽에 우승한 포켓몬의 초상화를\n"
+	.string "이름과 함께 장식하게 돼!$"
+	// コンテストで ゆうしょう するとｐ
+	// かべに ポケモンの にがおえをｎ
+	// なまえいりで はって もらえるのよ!

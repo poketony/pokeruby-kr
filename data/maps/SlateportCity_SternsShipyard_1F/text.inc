@@ -1,79 +1,137 @@
 SlateportCity_SternsShipyard_1F_Text_17C14B:: @ 817C14B
-	.string "Umm... If this goes here, and that\n"
-	.string "goes over there...\p"
-	.string "Then where does this thing go?\n"
-	.string "And what about that doohickey?\p"
-	.string "Aaargh! I can't make heads or tails\n"
-	.string "of this!$"
+	.string "으-음... 이게 이렇게 되고\n"
+	.string "그래서 저게 저렇게 되는데\l"
+	.string "아니 그럼 저거랑 이건 뭔데?\p"
+	.string "아 진짜 뭐가 뭔지 모르겠네!$"
+	// え-と…… これが こ-なってｎ
+	// そいでもって あれが あ-なってｌ
+	// と いうことは それと これは どれ?ｐ
+	// ああ もう わけが わからん!
 
 SlateportCity_SternsShipyard_1F_Text_17C1EC:: @ 817C1EC
-	.string "Hm?\n"
-	.string "Hi, I'm DOCK.\p"
-	.string "CAPT. STERN commissioned me to\n"
-	.string "design a ferry.\p"
-	.string "Oh! That there...\n"
-	.string "Are they DEVON GOODS?\p"
-	.string "But, hmm...\n"
-	.string "This won't do...\p"
-	.string "CAPT. STERN went off somewhere.\n"
-	.string "He said he had some work to do.\p"
-	.string "Could I get you to go find CAPT.\n"
-	.string "STERN and deliver that to him?$"
+	.string "...응?\p"
+	.string "난 해양관장의 지시로\n"
+	.string "연락선의 설계를 맡게 된\l"
+	.string "솔방울이라고 하는데...\p"
+	.string "앗!?\n"
+	.string "그건 데봉화물!\p"
+	.string "음...\n"
+	.string "곤란한데 이거...\p"
+	.string "해양관장\n"
+	.string "다른 할 일이 있다면서\l"
+	.string "어딘가로 가 버렸어\p"
+	.string "미안한데 네가 해양관장을\n"
+	.string "찾아서 그 화물 좀 전달해주라!$"
+	// ……ん?ｐ
+	// ぼくは クスノキかんちょう からｎ
+	// れんらくせんの せっけいを まかされたｌ
+	// ツガという ものだけど……ｐ
+	// あっ!?ｎ
+	// それは デボンのにもつ!ｐ
+	// う-ん……ｎ
+	// こまったな……ｐ
+	// クスノキかんちょうｎ
+	// ほかにも しごとが あるからってｌ
+	// どこかに いっちゃったんだｐ
+	// わるいけど きみ クスノキかんちょうｎ
+	// さがして にもつを わたしてあげてよ!
 
 SlateportCity_SternsShipyard_1F_Text_17C2F2:: @ 817C2F2
-	.string "DOCK: Where could CAPT. STERN have\n"
-	.string "gone off to?\p"
-	.string "Could you go find CAPT. STERN and\n"
-	.string "deliver that parcel to him?$"
+	.string "솔방울: 해양관장은\n"
+	.string "어디로 간 거지?\p"
+	.string "미안한데 네가 해양관장을\n"
+	.string "찾아서 그 화물 좀 전달해주라!$"
+	// ツガ『クスノキかんちょうｎ
+	// どこに いっちゃったのかな?ｐ
+	// わるいけど きみ クスノキかんちょうｎ
+	// さがして にもつを わたしてあげてよ!
 
 SlateportCity_SternsShipyard_1F_Text_17C360:: @ 817C360
-	.string "DOCK: Shipbuilding is an art.\p"
-	.string "A lot of things can't be figured out\n"
-	.string "just by calculating.\p"
-	.string "I really could use advice from a veteran\n"
-	.string "who knows the seas...$"
+	.string "솔방울: 배를 만드는 건\n"
+	.string "책상 위에서 하는 계산만으로는\l"
+	.string "알 수 없는 것도 많아서 말이지\p"
+	.string "역시 바다에 대해 자세히 알고 있는\n"
+	.string "베테랑의 지혜가 필요해...$"
+	// ツガ『ふねをつくる っていうのはｎ
+	// つくえの うえでの けいさん だけではｌ
+	// わからないことも おおくてねｐ
+	// やっぱり うみのことを しりつくしたｎ
+	// ベテランの ちえが ほしいところだよ……
 
 SlateportCity_SternsShipyard_1F_Text_17C3F7:: @ 817C3F7
-	.string "DOCK: Hi! MR. BRINEY's joined us to\n"
-	.string "lend us his help.\p"
-	.string "Thanks to the veteran sailor, the\n"
-	.string "ferry is steadily coming together.$"
+	.string "솔방울: 안녕! 하기노인이 여기서\n"
+	.string "도와주게 됐어!\p"
+	.string "전설의 선원이 도와줘서\n"
+	.string "연락선은 순조롭게\l"
+	.string "완성되어 가고 있다고!$"
+	// ツガ『やあ! ハギろうじんが ここでｎ
+	// てつだって くれるように なったよ!ｐ
+	// でんせつの ふなのりに てつだってもらえてｎ
+	// れんらくせんは ちゃくちゃくとｌ
+	// かんせいに むかっているよ!
 
 SlateportCity_SternsShipyard_1F_Text_17C472:: @ 817C472
-	.string "DOCK: The ferry is finally ready!\p"
-	.string "The new S.S. TIDAL is truly a marvel\n"
-	.string "of technology!\p"
-	.string "But, I get the feeling that we can\n"
-	.string "make something even better.\p"
-	.string "You know, there's never an end to\n"
-	.string "technology's march.$"
+	.string "솔방울: 드디어 배가 완성됐어!\p"
+	.string "완성된 연락선 타이드립호는\n"
+	.string "그야말로 최고의 걸작이야!\p"
+	.string "근데 더 잘 만들 수 있을 듯한...\n"
+	.string "생각도 들어\p"
+	.string "그래...\n"
+	.string "뭔가를 만드는 데 끝은 없으니까!$"
+	// ツガ『ついに ふねは かんせいしたよ!ｐ
+	// できた れんらくせん タイドリップごうはｎ
+	// まさに さいこう けっさく!ｐ
+	// だけど もっと いいものが できそうな……ｎ
+	// そんな きも するんだよｐ
+	// そう……ｎ
+	// ものづくりに おわりは ないのさ!
 
 SlateportCity_SternsShipyard_1F_Text_17C53D:: @ 817C53D
-	.string "MR. BRINEY: Ah, {PLAYER}{KUN}!\n"
-	.string "It's been too long!\p"
-	.string "Aye, since I met you, this old seadog's\n"
-	.string "been feeling frisky!\p"
-	.string "So I've decided to help DOCK make a\n"
-	.string "ferry.\p"
-	.string "Aye, after all, a ferry would be able\n"
-	.string "to carry a lot of people.\p"
-	.string "But, you know, that DOCK is really\n"
-	.string "something special.\p"
-	.string "With his knack for technology and\n"
-	.string "my experience, I'm sure that we can\l"
-	.string "build one great ship, aye!$"
+	.string "하기: 오오! {PLAYER}!\n"
+	.string "오랜만이구나!\p"
+	.string "아니 자네랑 만난 뒤로\n"
+	.string "선원의 피가 끓어올라서 말이지...\p"
+	.string "솔방울이랑 협력해서\n"
+	.string "연락선을 만들고 싶어졌지 뭔가!\p"
+	.string "연락선이 완성되면 많은\n"
+	.string "사람들을 옮길 수 있게 되니 말이지\p"
+	.string "그나저나... 흐음...\n"
+	.string "솔방울은 정말 대단하더군...\p"
+	.string "그의 기술과 내 경험을\n"
+	.string "하나로 합친다면 분명\l"
+	.string "엄청난 배가 만들어질 걸세!$"
+	// ハギ『おお! §あ§お!ｎ
+	// ひさしぶり じゃのう!ｐ
+	// いやあ きみと であってからｎ
+	// ふなのりの ちが さわいでな……ｐ
+	// ツガくんに きょうりょく してｎ
+	// れんらくせんを つくりたく なったんじゃ!ｐ
+	// れんらくせんが できると おおくのｎ
+	// ひとを はこべるように なるからのうｐ
+	// しかし…… ふむう……ｎ
+	// ツガくんは すごいのう……ｐ
+	// かれの ぎじゅつと わしの けいけんをｎ
+	// がったい させれば かならずやｌ
+	// すごい ふねが できるに ちがいない!
 
 UnknownString_817C6A6: @ 817C6A6
-	.string "PEEKO: Pii piihyoro!$"
+	.string "피코: 삐- 삐효로-!$"
+	// ピ-コちゃん『ピ- ピひょろ-!
 
 SlateportCity_SternsShipyard_1F_Text_17C6BB:: @ 817C6BB
-	.string "The seasons, the weather, where the\n"
-	.string "moon sits in the sky...\p"
-	.string "These and other conditions make the\n"
-	.string "sea change its expression.\p"
-	.string "That's right!\n"
-	.string "The sea is like a living thing!$"
+	.string "계절이나 날씨, 달의 위치 등\n"
+	.string "여러 가지 조건에 따라\l"
+	.string "바다는 항상 모습이 바뀐답니다\p"
+	.string "그렇죠! 바다는 바로\n"
+	.string "살아 있는 생물 같은 거예요!$"
+	// きせつや てんきや つきのいち などｎ
+	// さまざまな じょうけん によってｌ
+	// うみは つねに すがたを かえていきますｐ
+	// そう! うみ というのはｎ
+	// いきもの のような もの なんですよ!
 
 SlateportCity_SternsShipyard_1F_Text_17C764:: @ 817C764
-	.string "I get seasick real easily.\n"
-	.string "So I get to help out here instead.$"
+	.string "난 곧잘 뱃멀미를 한단 말이지\n"
+	.string "그래서 여기서 일하고 있는 거야$"
+	// ぼくは すぐに ふなよい するのよねｎ
+	// だから ここで おてつだい してるのよね

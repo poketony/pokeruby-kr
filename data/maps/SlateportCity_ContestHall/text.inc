@@ -1,105 +1,171 @@
 SlateportCity_ContestHall_Text_17CB71:: @ 817CB71
-	.string "Want a tasty little bit of advice\n"
-	.string "for CONTESTS?\p"
-	.string "Using a certain move after another\n"
-	.string "certain kind of move sometimes gets\l"
-	.string "you extra attention.\p"
-	.string "If you know what you're doing, you\n"
-	.string "can score big in appeal.\p"
-	.string "Of course, your opponents might try\n"
-	.string "disrupting your POKéMON's showing.$"
+	.string "콘테스트의 나이스한 정보를\n"
+	.string "알려 줄게!\p"
+	.string "몇몇 기술 다음에\n"
+	.string "특정 기술로 어필하면\l"
+	.string "엄청 눈에 띄는 경우가 있어!\p"
+	.string "잘하면 꽤나\n"
+	.string "유리한 어필이 가능하다고!\p"
+	.string "다만 방해받는 경우도 있어$"
+	// コンテストの ナイスな じょうほうｎ
+	// おしえて やるよ!ｐ
+	// ある わざの つぎにｎ
+	// とくていの わざで アピ-ルするとｌ
+	// すごく めだつ ときが あるんだ!ｐ
+	// うまくやれば かなりｎ
+	// ゆうりな アピ-ルが できるよ!ｐ
+	// ただ じゃまされちゃう ときも あるけどね
 
 SlateportCity_ContestHall_Text_17CC80:: @ 817CC80
-	.string "My papa, he's a CONTEST JUDGE.\p"
-	.string "I wonder what I should be when I\n"
-	.string "grow up, a JUDGE or a GYM LEADER?$"
+	.string "우리 아빠는 콘테스트의\n"
+	.string "심사위원을 맡고 있어!\p"
+	.string "나 어른이 되면\n"
+	.string "콘테스트의 심사위원하고\l"
+	.string "체육관 관장 중에서 뭘 할까?$"
+	// ぼくの おとうさん コンテストのｎ
+	// しんさいんを やって いるんだ!ｐ
+	// ぼくは おおきく なったらｎ
+	// コンテストの しんさいん とｌ
+	// ジムリ-ダ-と どっちに なろうかな?
 
 SlateportCity_ContestHall_Text_17CCE2:: @ 817CCE2
-	.string "Hey, man, I'm like majorly cheesed,\n"
-	.string "you know. Like, you know, I just\l"
-	.string "wanted to know why my POKéMON\l"
-	.string "never won, you know, like, hey?\p"
-	.string "So, like, I gave the JUDGE my two\n"
-	.string "cents, you know, they're free.\p"
-	.string "And he wouldn't hear me out, like, hey!\n"
-	.string "So, like, total bummer, man!\p"
-	.string "Hey, like, you! Zip it, you know?\n"
-	.string "Just, you know, take this!$"
+	.string "어째서 내 포켓몬이\n"
+	.string "우승하지 못했는지\l"
+	.string "전혀 납득할 수 없어서\l"
+	.string "심사위원한테 좀 따져봤는데\p"
+	.string "전혀 상대해 주질 않아서\n"
+	.string "너무 분해 죽겠어!\p"
+	.string "어이 너!\n"
+	.string "잠자코 이거나 받으시지!$"
+	// どうして おれの ポケモンがｎ
+	// ゆうしょう できなかったのかｌ
+	// ちぃっとも わからねえ からよぉｌ
+	// しんさいんに もんく いったけどよぉｐ
+	// ちぃっとも あいて してくれねぇのさｎ
+	// くやしいったら ありゃ しねぇぜ!ｐ
+	// おい おまえ!ｎ
+	// だまって これを うけとれよぉ!
 
 SlateportCity_ContestHall_Text_17CE28:: @ 817CE28
-	.string "That's, like, TM41, you know?\n"
-	.string "Hey, it's TORMENT, you hearing me?\p"
-	.string "Like, it won't let the other guy\n"
-	.string "use the same move twice in a row, see?\p"
-	.string "Hey, now, you listen here, like,\n"
-	.string "I'm not laying a torment on you!$"
+	.string "기술머신41은 트집!\p"
+	.string "상대가 같은 기술을 반복해서\n"
+	.string "사용할 수 없게 만드는 기술이지!\p"
+	.string "참고로 말하지만\n"
+	.string "난 트집 잡은 적 없다!$"
+	// わざマシン41は いちゃもん!ｐ
+	// あいてによぉ おなじ わざを つづけてｎ
+	// ださせねえように する わざ なんだよぉ!ｐ
+	// いっとくけどなぁｎ
+	// おれは いちゃもん つけてねぇぞ!
 
 SlateportCity_ContestHall_Text_17CEF3:: @ 817CEF3
-	.string "MC: Oh, my, my!\n"
-	.string "Now isn't that a dandy of a POKéMON?\p"
-	.string "Please! Do step right up and take\n"
-	.string "part in our splendid CONTESTS!\p"
-	.string "You'll do well! I'm sure of it!\n"
-	.string "My eyes have never failed me!$"
+	.string "사회자: 어머! 꽤 멋진\n"
+	.string "포켓몬을 데리고 있군요!\p"
+	.string "꼭! 콘테스트에\n"
+	.string "참가해 주세요!\p"
+	.string "분명 잘될 겁니다!\n"
+	.string "제 눈은 확실하거든요!$"
+	// しかい『あら! なかなか すてきなｎ
+	// ポケモンを つれて いますね!ｐ
+	// ぜひ! コンテストにｎ
+	// でて みて くださ-い!ｐ
+	// きっと いいセン いきますよ!ｎ
+	// わたしの みる めは たしかですよ!
 
 SlateportCity_ContestHall_Text_17CFA7:: @ 817CFA7
-	.string "JUDGE: Well, hello there!\n"
-	.string "I see that you're a TRAINER!\p"
-	.string "Then, it just wouldn't do for you\n"
-	.string "to miss a POKéMON CONTEST!\p"
-	.string "Get a CONTEST PASS in VERDANTURF\n"
-	.string "CITY and enter anytime!$"
+	.string "심사위원: 여어, 안녕하신가!\n"
+	.string "너도 트레이너인가 보구나!\p"
+	.string "그럼 포켓몬 콘테스트에\n"
+	.string "나올 수 있겠군!\p"
+	.string "콘테스트패스를 잔디마을에서 받고\n"
+	.string "지금 바로 참가하도록!$"
+	// しんさいん『やあ こんにちは!ｎ
+	// きみも トレ-ナ-の ようだね!ｐ
+	// だったら ポケモンコンテストにｎ
+	// でない ては ないよ!ｐ
+	// コンテストパスを シダケタウンで もらってｎ
+	// いますぐ エントリ-だ!
 
 SlateportCity_ContestHall_Text_17D054:: @ 817D054
-	.string "It's appeal time!\n"
-	.string "What should I lead with?$"
+	.string "드디어 이제부터 어필타임!\n"
+	.string "어느 기술부터 보여줄까?$"
+	// これから いよいよ アピ-ルタイム!ｎ
+	// どの わざから みせようかな?
 
 SlateportCity_ContestHall_Text_17D07F:: @ 817D07F
-	.string "They didn't pay much attention to\n"
-	.string "my POKéMON's appeal...\p"
-	.string "Humph, that JUDGE, he doesn't know\n"
-	.string "a good thing when he sees it.$"
+	.string "내 포켓몬의 어필\n"
+	.string "그다지 주목받지 못했어...\p"
+	.string "흥... 저 심사위원\n"
+	.string "보는 눈이 없군!$"
+	// オレの ポケモンの アピ-ルｎ
+	// あんまり みて もらえなかった……ｐ
+	// フッ…… あの しんさいんｎ
+	// みる めが ないな!
 
 SlateportCity_ContestHall_Text_17D0F9:: @ 817D0F9
-	.string "Oh, hi! You must be a serious fan to get\n"
-	.string "this close to the action.\p"
-	.string "I'll reward your enthusiasm with this\n"
-	.string "sage advice.\p"
-	.string "If a move goes over really well,\n"
-	.string "the audience will get excited.\p"
-	.string "The POKéMON that makes its appeal\n"
-	.string "right when everyone's excited...\p"
-	.string "Well, you'd think something good has\n"
-	.string "to happen!$"
+	.string "앗! 이런 곳까지 오다니\n"
+	.string "너 콘테스트에 진심이구나!\l"
+	.string "그러면 좋은 걸 알려줄게\p"
+	.string "보여준 기술의 반응이 좋으면\n"
+	.string "회장이 익사이트해져!\p"
+	.string "가장 익사이트해졌을 때\n"
+	.string "어필한 포켓몬에겐...\p"
+	.string "좋은 일이 일어날지도!$"
+	// おっ! こんな ところまで あがってきてｎ
+	// キミ けんきゅう ねっしんだね!ｌ
+	// じゃあ いいこと おしえて あげるよｐ
+	// だした わざが まわりに うけるとｎ
+	// かいじょうが エキサイト してくる!ｐ
+	// いちばん エキサイト したときｎ
+	// アピ-ルしてた ポケモンには……ｐ
+	// いいことが あるかもな!
 
 SlateportCity_ContestHall_Text_17D222:: @ 817D222
-	.string "I can't do this! I'm more freaked out\n"
-	.string "than my POKéMON.\p"
-	.string "I'm shivering and my heart is racing!$"
+	.string "아 안되겠어! 포켓몬보다\n"
+	.string "내가 더 긴장하고 있잖아!\l"
+	.string "부들부들.... 두근두근...$"
+	// だ だめだぁ! ポケモンよりｎ
+	// じぶんの ほうが きんちょう してる!ｌ
+	// ブルブル…… ドキドキ…
 
 SlateportCity_ContestHall_Text_17D27F:: @ 817D27F
-	.string "A battle and a CONTEST aren't the\n"
-	.string "same, but they are alike, too.\p"
-	.string "You need to work hard and believe\n"
-	.string "in the POKéMON you've raised.$"
+	.string "포켓몬 승부와 콘테스트는\n"
+	.string "다른 것 같으면서도 닮았어!\p"
+	.string "소중히 키운 포켓몬을\n"
+	.string "믿고 응원한다는 점이 말야!$"
+	// ポケモンしょうぶも コンテストもｎ
+	// ちがう ようで にて いるよね!ｐ
+	// だいじに そだてた ポケモンをｎ
+	// しんらいして がんばる ところがさ!
 
 SlateportCity_ContestHall_Text_17D300:: @ 817D300
-	.string "That POKéMON looks like it's on top\n"
-	.string "of its game, huh?\p"
-	.string "A POKéMON that does good in the\n"
-	.string "secondary judging seems to be more\l"
-	.string "relaxed when it's doing appeals.$"
+	.string "저 포켓몬 기세 좋아 보인다!\p"
+	.string "2차 심사에서 기세가 좋은\n"
+	.string "포켓몬은 별로 긴장하지 않아서\l"
+	.string "어필을 잘할 수 있나 봐$"
+	// あの ポケモン ちょうし よさそうだろ!ｐ
+	// 2じしんさで ちょうしが よくなったｎ
+	// ポケモンは あまり きんちょうしないでｌ
+	// アピ-ル できる ように なるみたいだな
 
 SlateportCity_ContestHall_Text_17D39A:: @ 817D39A
-	.string "Will you look at that sorry sight?\p"
-	.string "Heh, my POKéMON's absolutely better\n"
-	.string "than that lot!$"
+	.string "뭐야- 이 정도면\n"
+	.string "내 포켓몬이\l"
+	.string "훨씬 대단하다고!$"
+	// なんだあ- このぐらい ならｎ
+	// おれの ポケモンの ほうがｌ
+	// だんぜん うえ だね!
 
 SlateportCity_ContestHall_Text_17D3F0:: @ 817D3F0
-	.string "Don't you get the urge to move with\n"
-	.string "POKéMON if they're putting on an\l"
-	.string "energetic appeal?$"
+	.string "기운 넘치는 어필을 보고 있으면\n"
+	.string "같이 몸에서\l"
+	.string "기운이 넘치지 않아?$"
+	// げんきな アピ-ルを みているとｎ
+	// いっしょに からだをｌ
+	// うごかしたく なって こないか?
 
 SlateportCity_ContestHall_Text_17D447:: @ 817D447
-	.string "POKéMON CONTESTS\n"
-	.string "HYPER RANK STAGE!$"
+	.string "포켓몬 콘테스트\n"
+	.string "하이퍼랭크 스테이지!$"
+	// ポケモン コンテストｎ
+	// ハイパ-ランク ステ-ジ!
