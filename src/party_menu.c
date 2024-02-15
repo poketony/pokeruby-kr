@@ -2596,6 +2596,10 @@ u8 *GetMonNickname5(struct Pokemon *pokemon, u8 *stringBuffer)
     u8 *tempBuffer = stringBuffer;
     u8 length = 0;
 
+    // NOTE: 일어명 복사시 한글 코드와 겹치기 때문에 분리합니다.
+    if (GetMonData(pokemon, MON_DATA_LANGUAGE) == LANGUAGE_JAPANESE)
+        return GetMonNickname(pokemon, stringBuffer);
+
     GetMonData(pokemon, MON_DATA_NICKNAME, stringBuffer);
     StringGetEnd10(stringBuffer);
 

@@ -465,7 +465,6 @@ u8 GetSecretBaseTrainerNameIndex(void);
 u8 PlayerPartyAndPokemonStorageFull(void);
 u8 PokemonStorageFull(void);
 void GetSpeciesName(u8 *name, u16 species);
-void GetSpeciesName5(u8 *name, u16 species);
 u8 CalculatePPWithBonus(u16 move, u8 ppBonuses, u8 moveIndex);
 void RemoveMonPPBonus(struct Pokemon *mon, u8 moveIndex);
 void RemoveBattleMonPPBonus(struct BattlePokemon *mon, u8 moveIndex);

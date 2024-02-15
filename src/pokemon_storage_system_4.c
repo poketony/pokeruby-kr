@@ -1697,6 +1697,7 @@ void sub_809C04C(void *pokemon, u8 a1)
     u8 *buf2;
     u8 temp[16];
     u16 gender = MON_MALE;
+    u8 language = LANGUAGE_ENGLISH;
 
     gPokemonStorageSystemPtr->heldItemNum = 0;
 
@@ -1714,6 +1715,7 @@ void sub_809C04C(void *pokemon, u8 a1)
             gPokemonStorageSystemPtr->unk_11ec = GetMonData(pkmn, MON_DATA_PERSONALITY);
             gPokemonStorageSystemPtr->unk_11e8 = GetMonSpritePal(pkmn);
             gender = GetMonGender(pkmn);
+            language = GetMonData(pkmn, MON_DATA_LANGUAGE);
             gPokemonStorageSystemPtr->heldItemNum = GetMonData(pkmn, MON_DATA_HELD_ITEM);
         }
     }
@@ -1732,6 +1734,7 @@ void sub_809C04C(void *pokemon, u8 a1)
             gPokemonStorageSystemPtr->unk_11ec = GetBoxMonData(boxmon, MON_DATA_PERSONALITY);
             gPokemonStorageSystemPtr->unk_11e8 = GetMonSpritePalFromOtIdPersonality(gPokemonStorageSystemPtr->speciesNum, otId, gPokemonStorageSystemPtr->unk_11ec);
             gender = GetGenderFromSpeciesAndPersonality(gPokemonStorageSystemPtr->speciesNum, gPokemonStorageSystemPtr->unk_11ec);
+            language = GetBoxMonData(boxmon, MON_DATA_LANGUAGE);
             gPokemonStorageSystemPtr->heldItemNum = GetBoxMonData(boxmon, MON_DATA_HELD_ITEM);
         }
     }
@@ -1773,7 +1776,12 @@ void sub_809C04C(void *pokemon, u8 a1)
         *(buf++) = TEXT_COLOR_WHITE2;
         *(buf++) = TEXT_COLOR_TRANSPARENT;
         *(buf++) = TEXT_COLOR_BLACK;
-        buf = StringCopyN_Multibyte(buf, gPokemonStorageSystemPtr->nickname, 5);
+
+        // NOTE: 일어명 복사시 한글 코드와 겹치기 때문에 분리합니다.
+        if (language == LANGUAGE_JAPANESE)
+            buf = StringCopy(buf, gPokemonStorageSystemPtr->nickname);
+        else
+            buf = StringCopyN_Multibyte(buf, gPokemonStorageSystemPtr->nickname, 5);
 
         buf = gPokemonStorageSystemPtr->levelStringBuffer;
         *(buf++) = EXT_CTRL_CODE_BEGIN;

@@ -1169,36 +1169,6 @@ void GetSpeciesName(u8 *name, u16 species)
     name[i] = EOS;
 }
 
-void GetSpeciesName5(u8 *name, u16 species)
-{
-    u8 i, length = 0;
-
-    for (i = 0; i <= POKEMON_NAME_LENGTH; i++)
-    {
-        if (species > NUM_SPECIES)
-            name[i] = gSpeciesNames[0][i];
-        else
-            name[i] = gSpeciesNames[species][i];
-
-        if (IsKoreanGlyph(name[i]))
-        {
-            i++;
-
-            if (species > NUM_SPECIES)
-                name[i] = gSpeciesNames[0][i];
-            else
-                name[i] = gSpeciesNames[species][i];
-        }
-
-        length++;
-
-        if (name[i] == EOS || length == 5)
-            break;
-    }
-
-    name[i] = EOS;
-}
-
 u8 CalculatePPWithBonus(u16 move, u8 ppBonuses, u8 moveIndex)
 {
     u8 basePP = gBattleMoves[move].pp;
