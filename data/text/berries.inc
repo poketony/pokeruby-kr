@@ -2,6 +2,9 @@ PetalburgCity_Gym_Text_1C5570:: @ 81C5570
 	.string "DAD: Hi, {PLAYER}!\p"
 	.string "I just received a very rare BERRY.\n"
 	.string "I'd like you to have it.$"
+	// パパ『やあ §あ!ｐ
+	// めずらしい きのみを てに いれたからｎ
+	// プレゼント するよ!
 
 Route104_Text_1C55B9:: @ 81C55B9
 	.string "If you see BERRIES growing in loamy\n"
@@ -9,6 +12,11 @@ Route104_Text_1C55B9:: @ 81C55B9
 	.string "But make sure you plant a BERRY in the\n"
 	.string "same spot. That's common courtesy.\p"
 	.string "Here, I'll share this with you.$"
+	// ふかふかの つちに はえている きのみはｎ
+	// じゆうに とっても よいのじゃが…ｐ
+	// 1つだけ きのみを おなじ ばしょに うめるｎ
+	// それが れいぎと いうものじゃｐ
+	// ほれ これを わけてやろう
 
 Route104_Text_1C5665:: @ 81C5665
 	.string "The way you look, you must be a\n"
@@ -17,6 +25,10 @@ Route104_Text_1C5665:: @ 81C5665
 	.string "BERRIES.\p"
 	.string "It's up to you whether to grow BERRIES\n"
 	.string "or use them.$"
+	// あんた みたところ トレ-ナ-じゃろ?ｐ
+	// トレ-ナ-は よく きのみを ポケモンにｎ
+	// もたせとるわいｐ
+	// ふやすも つかうも あんた しだいじゃ
 
 Route111_Text_1C56F0:: @ 81C56F0
 	.string "I watered my plants lots and lots!\n"
@@ -25,29 +37,45 @@ Route111_Text_1C56F0:: @ 81C56F0
 	.string "appeared!\p"
 	.string "Here you go!\n"
 	.string "You can have this!$"
+	// いつも みずを あげてたらｎ
+	// たくさん はなが さいたんだｐ
+	// そしたら きのみも たくさん できた!ｐ
+	// はい!ｎ
+	// これ あげる
 
 Route111_Text_1C5781:: @ 81C5781
 	.string "I'm going to try really hard and make\n"
 	.string "some RED {POKEBLOCK}S!\p"
 	.string "I hope you try hard, too!$"
+	// がんばって あかいポロック つくるんだ!ｎ
+	// §いも がんばってね!
 
 Route111_Text_1C57D2:: @ 81C57D2
 	.string "I wonder what color BERRIES I'll look\n"
 	.string "for today?$"
+	// きょうは なにいろの きのみをｎ
+	// さがそっかな-
 
 Route114_Text_1C5803:: @ 81C5803
 	.string "I'm gathering BERRIES so I can win a\n"
 	.string "POKéMON CONTEST.\p"
 	.string "If you'd like, I'll share one with you.$"
+	// ポケモンコンテストの ゆうしょうを めざしてｎ
+	// きのみを あつめているんだｐ
+	// よかったら きみにも わけて あげるよ!
 
 Route114_Text_1C5861:: @ 81C5861
 	.string "Good luck to you, too!$"
+	// きみも がんばれ!
 
 Route114_Text_1C5878:: @ 81C5878
 	.string "What BERRIES should I plant today?\n"
 	.string "What color {POKEBLOCK}S should I make?\p"
 	.string "Fretting over stuff like that is fun\n"
 	.string "in its own way.$"
+	// きょうは どの きのみを うめるか…ｎ
+	// そして なにいろの ポロックを つくるか…ｐ
+	// なやむのも また たのしいよ
 
 Route120_Text_1C58F1:: @ 81C58F1
 	.string "Give the case a shake, and out pops\n"
@@ -55,24 +83,37 @@ Route120_Text_1C58F1:: @ 81C58F1
 	.string "And that {POKEBLOCK} is caught and eaten\n"
 	.string "by a POKéMON...\p"
 	.string "It's an expression of love, isn't it?$"
+	// ケ-スを ふると でてくる ポロック…ｐ
+	// そして それを キャッチしてｎ
+	// たべてくれる ポケモン…ｐ
+	// これって あい だよね?
 
 Route120_Text_1C5979:: @ 81C5979
 	.string "Yes, yes.\n"
 	.string "You understand what I mean.\p"
 	.string "You should take this.$"
+	// うん うん!ｎ
+	// やっぱ わかるひとには わかるよねｐ
+	// これ あげる
 
 Route120_Text_1C59B5:: @ 81C59B5
 	.string "Oh... But it is important to make your\n"
 	.string "own impressions, I guess...\p"
 	.string "You can have this.$"
+	// そっか……ｎ
+	// でも ちがうと かんじることも たいせつだねｐ
+	// これ あげる
 
 Route120_Text_1C5A0B:: @ 81C5A0B
 	.string "I think that BERRY is rare.\n"
 	.string "I hope you raise it with loving care.$"
+	// その きのみは めずらしいもの らしいからｎ
+	// たいせつに そだててね!
 
 Route120_Text_1C5A4D:: @ 81C5A4D
 	.string "I'll get more BERRIES from the\n"
 	.string "BERRY MASTER.$"
+	// また きのみめいじんに もらって こようっと
 
 LilycoveCity_Text_1C5A7A:: @ 81C5A7A
 	.string "When it gets right down to it...\p"
@@ -80,15 +121,25 @@ LilycoveCity_Text_1C5A7A:: @ 81C5A7A
 	.string "a crisp breeze suits the sea.\p"
 	.string "And you, a BERRY suits you to a “T”...\p"
 	.string "Why should that be so?$"
+	// やっぱりｐ
+	// わたしに ス-ツが にあうようにｎ
+	// うみには しおかぜが にあうなｌ
+	// そして きみには きのみが にあいそうだ……ｐ
+	// なんでだろうね?
 
 LilycoveCity_Text_1C5B1D:: @ 81C5B1D
 	.string "When it gets right down to it...\p"
 	.string "It's because you're a TRAINER!$"
+	// やっぱり それは…………ｐ
+	// きみが トレ-ナ-だからだ!
 
 LilycoveCity_Text_1C5B5D:: @ 81C5B5D
 	.string "When it gets right down to it...\p"
 	.string "The way dignified simplicity suits me,\n"
 	.string "{POKEBLOCK}S perfectly suit POKéMON.$"
+	// やっぱりｐ
+	// わたしに シンプルさが にあうようにｎ
+	// ポケモンには ポロックが にあうな
 
 Route123_BerryMastersHouse_Text_1C5BC4:: @ 81C5BC4
 	.string "You may call me the BERRY MASTER.\p"
@@ -96,20 +147,32 @@ Route123_BerryMastersHouse_Text_1C5BC4:: @ 81C5BC4
 	.string "beautiful flowers, so I raise BERRIES\l"
 	.string "and hand them out to everyone.\p"
 	.string "You're deserving of one!$"
+	// わしは きのみめいじんと よばれておるｐ
+	// わしは せかいじゅうを うつくしい はなでｎ
+	// うめつくそうと きのみを そだててｌ
+	// そして くばり まくって おるのじゃｐ
+	// きみにも きのみを わけて あげよう!
 
 Route123_BerryMastersHouse_Text_1C5C66:: @ 81C5C66
 	.string "Why be stingy?\n"
 	.string "Take another!$"
+	// ほれ えんりょ せずに もう ひとつ!
 
 Route123_BerryMastersHouse_Text_1C5C83:: @ 81C5C83
 	.string "Be sure to visit the PRETTY PETAL\n"
 	.string "flower shop near RUSTBORO.\p"
 	.string "Let flowers fill the world!$"
+	// カナズミの ちかくにある サン®トウカというｎ
+	// フラワ-ショップも よろしくのｐ
+	// せかいに はなを さかせましょう!
 
 Route123_BerryMastersHouse_Text_1C5CDC:: @ 81C5CDC
 	.string "I'm done for today.\n"
 	.string "Come again another day.\p"
 	.string "Let flowers fill the world!$"
+	// きょうは もう おしまいじゃｎ
+	// また おいでｐ
+	// せかいに はなを さかせましょう!
 
 Route123_BerryMastersHouse_Text_1C5D24:: @ 81C5D24
 	.string "The way my husband grows BERRIES,\n"
@@ -117,33 +180,52 @@ Route123_BerryMastersHouse_Text_1C5D24:: @ 81C5D24
 	.string "He makes me proud, that he does.\p"
 	.string "Incidentally, child, have you heard\n"
 	.string "a good saying lately?$"
+	// じいさんの きのみの そだてかたはｎ
+	// そりゃあ せかいいちじゃｐ
+	// わしも はなが たかいわいｐ
+	// ところで あんたｎ
+	// いい ことばを きいたことが ないかい?
 
 Route123_BerryMastersHouse_Text_1C5DC1:: @ 81C5DC1
 	.string "Ah! What a remarkable saying!\n"
 	.string "Inspirational, it is!\p"
 	.string "I want you to have this.$"
+	// おお! とても よい ことばじゃ!ｎ
+	// かんどう したわいｐ
+	// ほれ これを もっていきなされ
 
 Route123_BerryMastersHouse_Text_1C5E0E:: @ 81C5E0E
 	.string "Oh! A good saying it is.\n"
 	.string "You're quite remarkable.\p"
 	.string "I want you to have this.$"
+	// おお! なかなか よい ことばじゃｎ
+	// あんたも たいしたもんじゃｐ
+	// ほれ これを もっていきなされ
 
 Route123_BerryMastersHouse_Text_1C5E59:: @ 81C5E59
 	.string "Our four grandchildren should become\n"
 	.string "more accomplished than my husband.\p"
 	.string "Joy never goes out of my life!$"
+	// まごたち 4にんも じいさんを しのぐｎ
+	// おおものに なるじゃろうてｐ
+	// じんせい たのしいことが つきんのう!
 
 Route123_BerryMastersHouse_Text_1C5EC0:: @ 81C5EC0
 	.string "Ah...$"
+	// ほう……
 
 Route104_PrettyPetalFlowerShop_Text_1C5EC6:: @ 81C5EC6
 	.string "Hello!\p"
 	.string "This is the PRETTY PETAL flower shop.\n"
 	.string "Spreading flowers throughout the world!$"
+	// こんにちは!ｐ
+	// はなを せかいに ひろめるｎ
+	// フラワ-ショップ サン®トウカです!
 
 Route104_PrettyPetalFlowerShop_Text_1C5F1B:: @ 81C5F1B
 	.string "{PLAYER}{KUN}, would you like to learn about\n"
 	.string "BERRIES?$"
+	// §あ§お きのみの こと しりたい?
 
 Route104_PrettyPetalFlowerShop_Text_1C5F48:: @ 81C5F48
 	.string "Your name is?\p"
@@ -151,6 +233,10 @@ Route104_PrettyPetalFlowerShop_Text_1C5F48:: @ 81C5F48
 	.string "That's a nice name.\p"
 	.string "{PLAYER}{KUN}, would you like to learn about\n"
 	.string "BERRIES?$"
+	// あなたの なまえは……ｐ
+	// §あ§おね!ｎ
+	// とっても いい なまえだね!ｌ
+	// §あ§お きのみのこと しりたい?
 
 Route104_PrettyPetalFlowerShop_Text_1C5F9D:: @ 81C5F9D
 	.string "BERRIES grow on trees that thrive\n"
@@ -165,10 +251,24 @@ Route104_PrettyPetalFlowerShop_Text_1C5F9D:: @ 81C5F9D
 	.string "That's my dream.\p"
 	.string "Please help me, {PLAYER}{KUN}. Plant BERRIES\n"
 	.string "and bring more flowers into the world.$"
+	// きのみはね くろい ふかふかの つちのｎ
+	// ところで たまに とれるのｌ
+	// でね……ｐ
+	// とったら その1つを また うめるの!ｐ
+	// そうすると その きのみ からｎ
+	// めがでて みきが できて はながさいてｌ
+	// また きのみ が できるのｐ
+	// そうやって はなを ふやしてｎ
+	// せかいじゅうを はなに するのがｌ
+	// わたしの ゆめ なんだ!ｐ
+	// だから §あ§おも きのみを うめてｎ
+	// せかいに はなを ふやしてね!
 
 Route104_PrettyPetalFlowerShop_Text_1C6121:: @ 81C6121
 	.string "Flowers bring so much happiness to\n"
 	.string "people, don't they?$"
+	// おはなって とっても しあわせな きぶんにｎ
+	// してくれるよね
 
 Route104_PrettyPetalFlowerShop_Text_1C6158:: @ 81C6158
 	.string "Hello!\p"
@@ -176,6 +276,11 @@ Route104_PrettyPetalFlowerShop_Text_1C6158:: @ 81C6158
 	.string "the more beautifully they bloom.\p"
 	.string "You'll like tending flowers. I'm sure\n"
 	.string "of it. You can have this.$"
+	// こんにちは!ｐ
+	// おはなは せわを すれば するほどｎ
+	// たくさん きれいに さいて くれるのｐ
+	// あなたも せわを したく なった でしょ?ｎ
+	// これ あげるわ
 
 Route104_PrettyPetalFlowerShop_Text_1C61E8:: @ 81C61E8
 	.string "While BERRY plants are growing,\n"
@@ -186,11 +291,22 @@ Route104_PrettyPetalFlowerShop_Text_1C61E8:: @ 81C61E8
 	.string "But they'll sprout again.\p"
 	.string "Isn't that awesome?\n"
 	.string "It's like they have the will to live.$"
+	// きのみが そだつ たびにｎ
+	// じょうろで みずを あげてね!ｐ
+	// あとねｐ
+	// きのみは ずっと ずっと ほうっておくとｎ
+	// じめんに おちてしまうのｌ
+	// でもね そこから また めがでて くるの!ｐ
+	// すごいよね!ｎ
+	// いきものの ちからを かんじるよね
 
 Route104_PrettyPetalFlowerShop_Text_1C62DA:: @ 81C62DA
 	.string "I'm trying to be like my big sisters.\n"
 	.string "I'm growing flowers, too!\p"
 	.string "Here you go! It's for you!$"
+	// おね-ちゃんたちを みならってｎ
+	// がんばって おはなを そだててるのｐ
+	// はい! これあげる!
 
 Route104_PrettyPetalFlowerShop_Text_1C6335:: @ 81C6335
 	.string "You can plant a BERRY and grow it big,\n"
@@ -199,6 +315,12 @@ Route104_PrettyPetalFlowerShop_Text_1C6335:: @ 81C6335
 	.string "up different BERRIES and makes candies\l"
 	.string "for POKéMON.\p"
 	.string "I want some candy, too.$"
+	// きのみは うめて おおきく したりｎ
+	// ポケモンに もたせたり できるのｐ
+	// でも さいきん きのみを いくつか まぜるとｎ
+	// ポケモンの おかしになる きかいがｌ
+	// ある らしいんだｐ
+	// あたしも おかし ほし-
 
 SootopolisCity_Text_1C63F2:: @ 81C63F2
 	.string "Hi, what's your name?\p"
@@ -209,27 +331,48 @@ SootopolisCity_Text_1C63F2:: @ 81C63F2
 	.string "I would grow healthy and warmhearted.\l"
 	.string "That's what they wished.\p"
 	.string "You can have one of these.$"
+	// §い なまえ なんていうの?ｐ
+	// ……… ……… ………ｎ
+	// へ- いいね-ｐ
+	// わたしは キリ っていう なまえなのｐ
+	// パパと ママが すくすくと そだってｎ
+	// こころの あたたかい おんなのこに なってｌ
+	// ほしいっていう ねがいを こめたんだって!ｐ
+	// §いにも これ あげる
 
 SootopolisCity_Text_1C64D0:: @ 81C64D0
 	.string "KIRI will give you this BERRY, too!\n"
 	.string "I really like it lots!$"
+	// あと §いには キリの だいすきなｎ
+	// この きのみも あげちゃう!
 
 SootopolisCity_Text_1C650B:: @ 81C650B
 	.string "I wonder what kind of wish is included\n"
 	.string "in your name.$"
+	// §いの なまえにはｎ
+	// どんな ねがいが こめられてるの?
 
 SootopolisCity_Text_1C6540:: @ 81C6540
 	.string "Spring, summer, autumn, and winter.\p"
 	.string "If you're born in springtime, do you like\n"
 	.string "the spring, and if you're born in the\l"
 	.string "summer, do you like the summer?$"
+	// はる なつ あき ふゆｎ
+	// はるに うまれると はるが すきでｌ
+	// なつに うまれると なつが すきなのかな?
 
 SootopolisCity_Text_1C65D4:: @ 81C65D4
 	.string "Then KIRI was born in the autumn,\n"
 	.string "so I love the autumn!\p"
 	.string "Which season do you like?$"
+	// じゃあ キリは あきに うまれたからｎ
+	// あきが だいすき!ｐ
+	// §いは いつが すき?
 
 SootopolisCity_Text_1C6626:: @ 81C6626
 	.string "Oh...\n"
 	.string "It doesn't matter...\p"
 	.string "There's so much that I want to know...$"
+	// そっか…ｎ
+	// かんけいないのか…ｐ
+	// しりたいことって たくさんあるな-
