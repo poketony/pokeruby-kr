@@ -1,215 +1,381 @@
 ClosedSootopolisDoorText: @ 8169690
-	.string "The door is closed.$"
+	.string "문이 닫혀 있다!$"
+	// とびらは とざされて いる!
 
 SootopolisCity_Text_1696A4:: @ 81696A4
-	.string "Who might you be?\p"
-	.string "This is the CAVE OF ORIGIN.\p"
-	.string "The spirits of POKéMON, becalmed at\n"
-	.string "MT. PYRE, are said to be revived here.\p"
-	.string "Please leave.$"
+	.string "당신은 무슨 일로 오셨나요?\p"
+	.string "이곳은 각성의 사당...\p"
+	.string "송화산에서 잠든\n"
+	.string "포켓몬의 영혼이\l"
+	.string "되살아난다고 전해지는 장소...\p"
+	.string "부디 돌아가 주십시오$"
+	// あなたは なんですかな?ｐ
+	// ここは めざめのほこら……ｐ
+	// おくりびやまで しずめられたｎ
+	// ポケモンの たましいがｌ
+	// よみがえると いわれる ばしょ……ｐ
+	// どうか おひきとり ください
 
 SootopolisCity_Text_16972B:: @ 816972B
-	.string "Diving in the sea. Climbing up and\n"
-	.string "down stairs all the time...\p"
-	.string "If you live in this town, you end up\n"
-	.string "getting physically fit.$"
+	.string "바다로 잠수하거나\n"
+	.string "계단을 오르락내리락...\p"
+	.string "이 마을에서 살다 보면\n"
+	.string "몸이 꽤 튼튼해진단 말이지$"
+	// うみに もぐったりｎ
+	// かいだんを のぼったり おりたり……ｐ
+	// このまちで くらして いるとｎ
+	// けっこう たくましく なるんだよね
 
 SootopolisCity_Text_1697A7:: @ 81697A7
-	.string "I... I've never been out of this city.\p"
-	.string "I wonder what the world is like on the\n"
-	.string "other side of this round sky?$"
+	.string "나 아직 단 한 번도 이 마을에서\n"
+	.string "벗어나 본 적이 없어\p"
+	.string "저 동그란 하늘 저편에는\n"
+	.string "어떤 세계가 있는 걸까?$"
+	// ぼく…… まだ いちども このまちからｎ
+	// そとに でたこと ないんだｐ
+	// あの まあるい そらの むこうにはｎ
+	// どんな せかいが あるのかな?
 
 SootopolisCity_Text_169813:: @ 8169813
-	.string "Hm!\n"
-	.string "You've come all the way to SOOTOPOLIS?\l"
-	.string "You're no ordinary tourist.\p"
-	.string "But I suppose that doesn't make you an\n"
-	.string "extraordinary tourist, either.$"
+	.string "호오!\n"
+	.string "일부러 여기 루네시티까지 오다니\l"
+	.string "평범한 관광객은 아니군!\p"
+	.string "그렇다고 돈을 내고 온\n"
+	.string "관광객도 아니고...$"
+	// ほう!ｎ
+	// わざわざ ルネに やってくるとはｌ
+	// ただの かんこうきゃく じゃ ないな!ｐ
+	// だからといって おかねを はらったｎ
+	// かんこうきゃく でも ないな……
 
 SootopolisCity_Text_1698A0:: @ 81698A0
-	.string "SOOTOPOLIS sprang up as a town in the\n"
-	.string "crater of a volcano.\p"
-	.string "If you look up at the sky, the lip of\n"
-	.string "the crater is also visible.\l"
-	.string "So, all you see is the sky in a circle.\p"
-	.string "But that's what makes the sky above\n"
-	.string "SOOTOPOLIS the most beautiful.$"
+	.string "루네시티는 화산의\n"
+	.string "분화구 속에서 세워진 마을이야\p"
+	.string "위를 올려다보면\n"
+	.string "분화구도 같이 보여서\l"
+	.string "하늘 전체를 볼 수가 없지\p"
+	.string "하지만 그렇기 때문에\n"
+	.string "루네시티에서 보이는 하늘이\l"
+	.string "가장 아름다워$"
+	// ルネは かざんのｎ
+	// かこうの なかに できた まちｐ
+	// うえを みあげるとｎ
+	// かこうも いっしょに みえてしまってｌ
+	// そらの すべては みえないｐ
+	// でも だからこそｎ
+	// ルネから みえる そらがｌ
+	// いちばん うつくしいの
 
 SootopolisCity_Text_169988:: @ 8169988
-	.string "STEVEN: {PLAYER}{KUN}, you came, too?\n"
-	.string "In this terrible rainstorm, yet...\p"
-	.string "Oh, yes, can you hear out what my\n"
-	.string "friend has to say?$"
+	.string "성호: {PLAYER}\n"
+	.string "너도 온 거구나\l"
+	.string "이렇게 엄청난 비가 내리는데도...\p"
+	.string "맞다!\n"
+	.string "그의 얘기를 좀 들어줘$"
+	// ダイゴ『§あ§おｎ
+	// きみも きたのかｌ
+	// こんな ひどい あめ なのに……ｐ
+	// そうだ!ｎ
+	// かれの はなしを きいてくれ
 
 SootopolisCity_Text_1699FD:: @ 81699FD
-	.string "My name is WALLACE.\n"
-	.string "I'm this town's GYM LEADER.\p"
-	.string "I've also been entrusted with the\n"
-	.string "protection of the CAVE OF ORIGIN.\p"
-	.string "This downpour is caused by a power\n"
-	.string "emanating from the CAVE OF ORIGIN.$"
+	.string "난 윤진\n"
+	.string "이 마을의 체육관 관장\p"
+	.string "그리고\n"
+	.string "각성의 사당을 지키는 자\p"
+	.string "이 폭우는 각성의 사당에서 나오는\n"
+	.string "힘에 의해 발생한 거야$"
+	// わたしは ミクリｎ
+	// この まちの ジムリ-ダ-ｐ
+	// そしてｎ
+	// めざめのほこらを まもる ものｐ
+	// この おおあめは めざめのほこら からのｎ
+	// ちからに よって おこされています
 
 SootopolisCity_Text_169AB7:: @ 8169AB7
-	.string "That... That is the BLUE ORB.\p"
-	.string "I see.\n"
-	.string "Follow me.$"
+	.string "그건 쪽빛구슬\p"
+	.string "알았어\n"
+	.string "날 따라와$"
+	// それは あいいろのたまｐ
+	// わかりましたｎ
+	// わたしに ついて きなさい
 
 SootopolisCity_Text_169AE7:: @ 8169AE7
-	.string "STEVEN: This rain...\p"
-	.string "People and POKéMON need water to live...\p"
-	.string "But why does this rain fill us with\n"
-	.string "so much dread?\p"
-	.string "The rain clouds over SOOTOPOLIS will\n"
-	.string "keep building and soon extend all\l"
-	.string "over HOENN...\p"
-	.string "If that were to happen...$"
+	.string "성호: 사람이... 포켓몬이...\n"
+	.string "살아가기 위해 필요한 물이\p"
+	.string "어째서 우리들을\n"
+	.string "불안하게 만드는 거지...\p"
+	.string "루네시티 상공에 모인\n"
+	.string "먹구름은 더욱 거대해져서\l"
+	.string "호연 전체를 뒤덮을 거야...\p"
+	.string "이대로라면...$"
+	// ダイゴ『ひとが…… ポケモンが……ｎ
+	// いきていくのに ひつような みず なのにｐ
+	// どうして ボクたちをｎ
+	// ふあんな きもちに させるんだ……ｐ
+	// ルネの まうえに あつまったｎ
+	// あまぐもは さらに おおきく ひろがりｌ
+	// ホウエン すべてを おおうだろう……ｐ
+	// このままでは……
 
 SootopolisCity_Text_169BC7:: @ 8169BC7
-	.string "WALLACE: The CAVE OF ORIGIN is ahead.\p"
-	.string "No one from SOOTOPOLIS is permitted\n"
-	.string "to enter the CAVE OF ORIGIN.\p"
-	.string "But you must go.\n"
-	.string "Together with your BLUE ORB.\p"
-	.string "You must go regardless of what awaits\n"
-	.string "you inside the CAVE...$"
+	.string "윤진: 이 앞은 각성의 사당\p"
+	.string "우리들 루네 사람은\n"
+	.string "이 각성의 사당 안으로\l"
+	.string "들어갈 수 없어\p"
+	.string "하지만 너는 가야만 해\n"
+	.string "그 쪽빛구슬과 함께\p"
+	.string "사당 안에서 무슨 일이 일어나도\n"
+	.string "무엇이 기다리고 있더라도$"
+	// ミクリ『この さきが めざめのほこらｐ
+	// わたしたち ルネの にんげんはｎ
+	// この めざめのほこらの なかにｌ
+	// はいることを ゆるされて いませんｐ
+	// ですが きみは いかねば ならないｎ
+	// その あいいろのたまと ともにｐ
+	// ほこらの なかで なにが おころうともｎ
+	// なにが まっていようとも
 
 SootopolisCity_Text_169C99:: @ 8169C99
-	.string "STEVEN: {PLAYER}{KUN}, I never expected you\n"
-	.string "to be holding the BLUE ORB.\p"
-	.string "You'll be okay. With your POKéMON,\n"
-	.string "you'll get things done no matter what.\p"
-	.string "I'm convinced of it!$"
+	.string "성호: {PLAYER} 네가\n"
+	.string "쪽빛구슬을 가지고 있었을 줄이야\p"
+	.string "괜찮아!\n"
+	.string "너와 너의 포켓몬이라면\l"
+	.string "무슨 일이 있어도 잘 해낼 수 있어\p"
+	.string "나는 그렇게 믿어$"
+	// ダイゴ『§あ§お きみがｎ
+	// あいいろのたまを もっていた とはねｐ
+	// だいじょうぶ!ｎ
+	// きみと きみの ポケモンならｌ
+	// なにが おきても うまくやれるｐ
+	// ボクは そう しんじている
 
 SootopolisCity_Text_169D37:: @ 8169D37
-	.string "WALLACE: You must go together with\n"
-	.string "your BLUE ORB.\p"
-	.string "You must go regardless of what awaits\n"
-	.string "you inside the CAVE...$"
+	.string "윤진: 너는 가야만 해\n"
+	.string "그 쪽빛구슬과 함께\p"
+	.string "사당 안에서 무슨 일이 일어나도\n"
+	.string "무엇이 기다리고 있더라도$"
+	// ミクリ『きみは いかねば ならないｎ
+	// その あいいろのたまと ともにｐ
+	// ほこらの なかで なにが おころうともｎ
+	// なにが まっていようとも
 
 SootopolisCity_Text_169DA6:: @ 8169DA6
-	.string "STEVEN: You'll be okay. With your\n"
-	.string "POKéMON, you'll get things done\l"
-	.string "whatever happens.\p"
-	.string "I'm convinced of it!$"
+	.string "성호: 괜찮아!\n"
+	.string "너와 너의 포켓몬이라면\l"
+	.string "무슨 일이 있어도 잘 해낼 수 있어\p"
+	.string "나는 그렇게 믿어$"
+	// ダイゴ『だいじょうぶ!ｎ
+	// きみと きみの ポケモンならｌ
+	// なにが おきても うまくやれるｐ
+	// ボクは そう しんじている
 
 SootopolisCity_Text_169E0F:: @ 8169E0F
-	.string "STEVEN: {PLAYER}{KUN}, you came, too?\n"
-	.string "Under this scorching sun, yet...\p"
-	.string "Oh, yes, can you hear out what my\n"
-	.string "friend has to say?$"
+	.string "성호: {PLAYER}\n"
+	.string "너도 온 거구나\l"
+	.string "이렇게 심한 가뭄인데도...\p"
+	.string "맞다!\n"
+	.string "그의 얘기를 좀 들어줘$"
+	// ダイゴ『§あ§おｎ
+	// きみも きたのかｌ
+	// こんな ひどい ひでり なのに……ｐ
+	// そうだ!ｎ
+	// かれの はなしを きいてくれ
 
 SootopolisCity_Text_169E82:: @ 8169E82
-	.string "My name is WALLACE.\n"
-	.string "I'm this town's GYM LEADER.\p"
-	.string "I've also been entrusted with the\n"
-	.string "protection of the CAVE OF ORIGIN.\p"
-	.string "This sunshine is caused by a power\n"
-	.string "emanating from the CAVE OF ORIGIN.$"
+	.string "난 윤진\n"
+	.string "이 마을의 체육관 관장\p"
+	.string "그리고\n"
+	.string "각성의 사당을 지키는 자\p"
+	.string "이 가뭄은 각성의 사당에서 나오는\n"
+	.string "힘에 의해 발생한 거야$"
+	// わたしは ミクリｎ
+	// この まちの ジムリ-ダ-ｐ
+	// そしてｎ
+	// めざめのほこらを まもる ものｐ
+	// この ひでりは めざめのほこら からのｎ
+	// ちからに よって おこされています
 
 SootopolisCity_Text_169F3C:: @ 8169F3C
-	.string "That... That is the RED ORB.\p"
-	.string "I see.\n"
-	.string "Follow me.$"
+	.string "그건 주홍구슬\p"
+	.string "알았어\n"
+	.string "날 따라와$"
+	// それは べにいろのたまｐ
+	// わかりましたｎ
+	// わたしに ついて きなさい
 
 SootopolisCity_Text_169F6B:: @ 8169F6B
-	.string "STEVEN: This sunlight...\p"
-	.string "People and POKéMON need sunlight\n"
-	.string "to live...\p"
-	.string "But why does this sunlight fill us\n"
-	.string "with so much dread?\p"
-	.string "The blazing sun over SOOTOPOLIS is\n"
-	.string "intensifying... Soon, all of HOENN\l"
-	.string "will be under its withering glare...\p"
-	.string "If that were to happen...$"
+	.string "성호: 사람이... 포켓몬이...\n"
+	.string "살아가기 위해 필요한 빛이\p"
+	.string "어째서 우리들을\n"
+	.string "불안하게 만드는 거지...\p"
+	.string "루네시티의 상공에 보이는\n"
+	.string "태양은 더욱 그 빛을 더해서\l"
+	.string "호연 전체를 비추겠지...\p"
+	.string "이대로라면...$"
+	// ダイゴ『ひとが…… ポケモンが……ｎ
+	// いきていくのに ひつような ひかり なのにｐ
+	// どうして ボクたちをｎ
+	// ふあんな きもちに させるんだ……ｐ
+	// ルネの まうえに みえるｎ
+	// たいようは さらに かがやきを ましてｌ
+	// ホウエン すべてを てらしつくす……ｐ
+	// このままでは……
 
 SootopolisCity_Text_16A06C:: @ 816A06C
-	.string "WALLACE: The CAVE OF ORIGIN is ahead.\p"
-	.string "No one from SOOTOPOLIS is permitted\n"
-	.string "to enter the CAVE OF ORIGIN.\p"
-	.string "But you must go. \n"
-	.string "Together with your RED ORB.\p"
-	.string "You must go regardless of what awaits\n"
-	.string "you inside the CAVE...$"
+	.string "윤진: 이 앞은 각성의 사당\p"
+	.string "우리들 루네 사람은\n"
+	.string "이 각성의 사당 안으로\l"
+	.string "들어갈 수 없어\p"
+	.string "하지만 너는 가야만 해\n"
+	.string "그 주홍구슬과 함께\p"
+	.string "사당 안에서 무슨 일이 일어나도\n"
+	.string "무엇이 기다리고 있더라도$"
+	// ミクリ『この さきが めざめのほこらｐ
+	// わたしたち ルネの にんげんはｎ
+	// この めざめのほこらの なかにｌ
+	// はいることを ゆるされて いませんｐ
+	// ですが きみは いかねば ならないｎ
+	// その べにいろのたまと ともにｐ
+	// ほこらの なかで なにが おころうともｎ
+	// なにが まっていようとも
 
 SootopolisCity_Text_16A13E:: @ 816A13E
-	.string "STEVEN: {PLAYER}{KUN}, I never expected you\n"
-	.string "to be holding the RED ORB.\p"
-	.string "You'll be okay. With your POKéMON,\n"
-	.string "you'll get things done no matter what.\p"
-	.string "I'm convinced of it!$"
+	.string "성호: {PLAYER} 네가\n"
+	.string "주홍구슬을 가지고 있었을 줄이야\p"
+	.string "괜찮아!\n"
+	.string "너와 너의 포켓몬이라면\l"
+	.string "무슨 일이 있어도 잘 해낼 수 있어\p"
+	.string "나는 그렇게 믿어$"
+	// ダイゴ『§あ§お きみがｎ
+	// べにいろのたまを もっていた とはねｐ
+	// だいじょうぶ!ｎ
+	// きみと きみの ポケモンならｌ
+	// なにが おきても うまくやれるｐ
+	// ボクは そう しんじている
 
 SootopolisCity_Text_16A1DB:: @ 816A1DB
-	.string "WALLACE: You must go together with\n"
-	.string "your RED ORB.\p"
-	.string "You must go regardless of what awaits\n"
-	.string "you inside the CAVE...$"
+	.string "윤진: 너는 가야만 해\n"
+	.string "그 주홍구슬과 함께\p"
+	.string "사당 안에서 무슨 일이 일어나도\n"
+	.string "무엇이 기다리고 있더라도$"
+	// ミクリ『きみは いかねば ならないｎ
+	// その べにいろのたまと ともにｐ
+	// ほこらの なかで なにが おころうともｎ
+	// なにが まっていようとも
 
 SootopolisCity_Text_16A249:: @ 816A249
-	.string "STEVEN: You'll be okay. With your\n"
-	.string "POKéMON, you'll get things done\l"
-	.string "whatever happens.\p"
-	.string "I'm convinced of it!$"
+	.string "성호: 괜찮아!\n"
+	.string "너와 너의 포켓몬이라면\l"
+	.string "무슨 일이 있어도 잘 해낼 수 있어\p"
+	.string "나는 그렇게 믿어$"
+	// ダイゴ『だいじょうぶ!ｎ
+	// きみと きみの ポケモンならｌ
+	// なにが おきても うまくやれるｐ
+	// ボクは そう しんじている
 
 SootopolisCity_Text_16A2B2:: @ 816A2B2
-	.string "The legend told by the old man on\n"
-	.string "MT. PYRE... It wasn't a made-up story.$"
+	.string "송화산 할아버지의 말씀...\n"
+	.string "그건 사실이었던 거군요...$"
+	// おくりびやまの おじいさんの いいつたえ……ｎ
+	// あれは ほんとう だったのですね……
 
 SootopolisCity_Text_16A2FB:: @ 816A2FB
-	.string "The natural balance of HOENN is going\n"
-	.string "through a wrenching shift...$"
+	.string "지금 호연지방의 균형이\n"
+	.string "크게 무너지려고 합니다...$"
+	// いま ホウエンちほうの バランスがｎ
+	// おおきく くずれようと しています……
 
 SootopolisCity_Text_16A33E:: @ 816A33E
-	.string "STEVEN: {PLAYER}{KUN}, we owe it all to you.\p"
-	.string "The sky above SOOTOPOLIS has returned\n"
-	.string "to normal. For that, WALLACE sends his\l"
-	.string "thanks, too.\p"
-	.string "And, that same WALLACE is waiting for\n"
-	.string "you inside.\p"
-	.string "He's strong.\n"
-	.string "But the way you are now, you should be\l"
-	.string "on equal footing with him.\p"
-	.string "Give it your best shot.$"
+	.string "성호: {PLAYER}\n"
+	.string "네 덕분이야\p"
+	.string "루네의 하늘이 원래대로 돌아왔어\n"
+	.string "윤진도 감사하다고 전해 달래\p"
+	.string "그래그래 윤진 말인데\n"
+	.string "안에서 널 기다리고 있어\p"
+	.string "그는 강해\n"
+	.string "하지만 지금의 너라면\l"
+	.string "대등하게 싸울 수 있겠지\p"
+	.string "그럼\n"
+	.string "열심히 해$"
+	// ダイゴ『§あ§おｎ
+	// きみの おかげ なんだねｐ
+	// ルネの そらが もとどおりに なったｎ
+	// ミクリも かんしゃ していたよｐ
+	// そう その ミクリだけどｎ
+	// なかで きみを まっているｐ
+	// かれは つよいよｎ
+	// だけど いまの きみならｌ
+	// ごかくに わたりあえる だろうねｐ
+	// じゃあｎ
+	// がんばりなよ
 
 SootopolisCity_Text_16A455:: @ 816A455
-	.string "All life starts at the CAVE OF ORIGIN,\n"
-	.string "and it all ends on MT. PYRE...\p"
-	.string "Where do people and POKéMON come\n"
-	.string "from? Where are we bound?$"
+	.string "모든 일의 시작은 각성의 사당\n"
+	.string "모든 일의 끝은 송화산...\p"
+	.string "포켓몬도 사람도\n"
+	.string "어디에서 오고 어디로 가는 걸까요...$"
+	// すべての はじまりは めざめのほこらｎ
+	// すべての おわりは おくりびやま……ｐ
+	// ポケモンも ひともｎ
+	// どこから きて どこへ いくのでしょう……
 
 SootopolisCity_Text_16A4D6:: @ 816A4D6
-	.string "Let me guess, you're going to challenge\n"
-	.string "WALLACE?\p"
-	.string "Oh, you are really?\n"
-	.string "You're awfully brave!$"
+	.string "너 혹시\n"
+	.string "윤진님께 도전할 셈이야?\p"
+	.string "용기 있네-!$"
+	// あなた ひょっとしてｎ
+	// ミクリさまに ちょうせん するつもり?ｐ
+	// ゆうき あるのね-!
 
 SootopolisCity_Text_16A531:: @ 816A531
-	.string "Let me guess, you've beaten WALLACE!\n"
-	.string "Oh, you did, really?\p"
-	.string "Maybe I'll become your fan!$"
+	.string "너 혹시\n"
+	.string "윤진님을 이긴 거야!?\p"
+	.string "그럼 나\n"
+	.string "네 팬 할래!!$"
+	// あなた ひょっとしてｎ
+	// ミクリさまに かっちゃったの!?ｐ
+	// じゃあ あたしｎ
+	// あなたの ファンに なっちゃおうかな!!
 
 SootopolisCity_Text_16A587:: @ 816A587
-	.string "Hm!\n"
-	.string "You've come all the way to SOOTOPOLIS?\l"
-	.string "You're no ordinary tourist.\p"
-	.string "But I suppose that doesn't make you an\n"
-	.string "extraordinary tourist, either.$"
+	.string "호오!\n"
+	.string "일부러 루네시티까지 오다니\l"
+	.string "평범한 관광객은 아니군!\p"
+	.string "그렇다고 돈을 내고 온\n"
+	.string "관광객도 아니고...$"
+	// ほう!ｎ
+	// わざわざ ルネに やってくるとはｌ
+	// ただの かんこうきゃく じゃ ないな!ｐ
+	// だからといって おかねを はらったｎ
+	// かんこうきゃく でも ないな……
 
 SootopolisCity_Text_16A614:: @ 816A614
-	.string "A circle of a night sky framed by the\n"
-	.string "crater of a volcano...\p"
-	.string "And in that ring, stars flicker and\n"
-	.string "blink as if they were alive...\l"
-	.string "It's my favorite scenery.$"
+	.string "화산의 분화구라는\n"
+	.string "고리에 둘러싸인 둥근 밤하늘\p"
+	.string "그 안에서는 수많은 별이\n"
+	.string "살아 있는 것처럼 반짝여...\l"
+	.string "내가 제일 좋아하는 경치야$"
+	// かざんの かこう というｎ
+	// わっかに かこまれた まるい よぞらｐ
+	// その なかでは たくさんの ほしがｎ
+	// いきている みたいに またたくの……ｌ
+	// わたしが いちばん すきな けしき
 
 SootopolisCity_Text_16A6AE:: @ 816A6AE
-	.string "Hunh? Where is my house?$"
+	.string "어라? 우리 집이 어디더라?$"
+	// あれ? ぼくんち どこだっけ?
 
 SootopolisCity_Text_16A6C7:: @ 816A6C7
-	.string "SOOTOPOLIS CITY POKéMON GYM\n"
-	.string "LEADER: WALLACE\p"
-	.string "“Artist, and lover of WATER.”$"
+	.string "루네시티 포켓몬체육관\n"
+	.string "관장 윤진\l"
+	.string "물을 사랑하는 아티스트!$"
+	// ルネ シティ ポケモンジムｎ
+	// リ-ダ- ミクリｌ
+	// みずを あいする ア-ティスト!
 
 SootopolisCity_Text_16A711:: @ 816A711
-	.string "SOOTOPOLIS CITY\p"
-	.string "“The mystical city where history\n"
-	.string "slumbers.”$"
+	.string "여기는 루네시티\n"
+	.string "역사가 잠들어 있는 신비한 마을$"
+	// ここは ルネ シティｎ
+	// れきしが ねむる しんぴの まち
