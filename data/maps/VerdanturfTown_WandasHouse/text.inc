@@ -1,83 +1,133 @@
 VerdanturfTown_WandasHouse_Text_1783F6:: @ 81783F6
-	.string "WALLY: I lost to you, {PLAYER}, but I'm\n"
-	.string "not feeling down anymore.\p"
-	.string "Because I have a new purpose in life.\n"
-	.string "Together with my RALTS, I'm going\l"
-	.string "to challenge POKéMON GYMS and become\l"
-	.string "a great TRAINER.\p"
-	.string "Please watch me, {PLAYER}.\n"
-	.string "I'm going to be stronger than you.\p"
-	.string "When I do, I'm going to challenge you\n"
-	.string "to another battle.$"
+	.string "민진: {PLAYER}님에게는 졌지만\n"
+	.string "더는 우울해하지 않을 거예요\p"
+	.string "왜냐면 랄토스와 함께\n"
+	.string "이곳저곳의 체육관에 도전해서\l"
+	.string "굉장한 트레이너가 되겠다는\l"
+	.string "목표가 생겼으니까요!\p"
+	.string "언젠가 {PLAYER}님보다도\n"
+	.string "강해져서 한 번 더\l"
+	.string "포켓몬 승부를 신청할 거예요!$"
+	// ミツル『§あさんに まけたけどｎ
+	// もう おちこんでないよｐ
+	// だって ラルトスと いっしょにｎ
+	// あちこちの ジムで うでだめし してｌ
+	// すごい トレ-ナ-に なるってｌ
+	// もくひょうが できたから!ｐ
+	// いつか §あさん よりもｎ
+	// つよくなって もういちどｌ
+	// ポケモンしょうぶを おねがい するからね!
 
 VerdanturfTown_WandasHouse_Text_178521:: @ 8178521
-	.string "WALLY: Please watch me, {PLAYER}.\n"
-	.string "I'm going to get stronger than you.\p"
-	.string "When I do, I'm going to challenge you\n"
-	.string "to another battle.$"
+	.string "민진: 언젠가 {PLAYER}님보다도\n"
+	.string "강해져서 한 번 더\l"
+	.string "포켓몬 승부를 신청할 거예요!$"
+	// ミツル『いつか §あさん よりもｎ
+	// つよくなって もういちどｌ
+	// ポケモンしょうぶを おねがい するからね!
 
 VerdanturfTown_WandasHouse_Text_17859A:: @ 817859A
-	.string "UNCLE: Oh! {PLAYER}{KUN}!\n"
-	.string "WALLY's next door.\p"
-	.string "But, boy, there's something I have to\n"
-	.string "tell you.\p"
-	.string "This natural environment is doing\n"
-	.string "wonders for WALLY's health.\p"
-	.string "Maybe it's not just the environment.\n"
-	.string "It could be POKéMON that are giving the\l"
-	.string "boy hope.$"
+	.string "작은아버지: 오오! {PLAYER}{K_AYA}\n"
+	.string "민진이는 옆방에 있단다!\p"
+	.string "그나저나 대단하구나!\p"
+	.string "자연에 둘러싸인 환경 덕분에\n"
+	.string "민진이가 건강해지고 있어!\p"
+	.string "...아니 어쩌면\n"
+	.string "저 아이에게 희망을 주고 있는 건\p"
+	.string "포켓몬일지도 모르겠군...$"
+	// おじさん『おお! §あ§おｎ
+	// ミツルくんは となりに いるよ!ｐ
+	// しかし たいした もんだね!ｐ
+	// しぜんに かこまれた かんきょうがｎ
+	// ミツルくんを げんきに させている!ｐ
+	// ……いや もしかするとｎ
+	// あのこに きぼうを あたえて いるのはｐ
+	// ポケモンなのかも しれないな……
 
 VerdanturfTown_WandasHouse_Text_178683:: @ 8178683
-	.string "WALLY's gone away...\n"
-	.string "He slipped off on his own...$"
+	.string "민진이가...\n"
+	.string "어느새 사라져 버렸어...$"
+	// ミツルくん……ｎ
+	// いつのまにか いなくなっちゃった……
 
 VerdanturfTown_WandasHouse_Text_1786B5:: @ 81786B5
-	.string "UNCLE: Is that right?\n"
-	.string "WALLY's gone away that far all by\l"
-	.string "himself...\p"
-	.string "Well, I have to give him credit - he is\n"
-	.string "my little brother's son.$"
+	.string "작은아버지: 그렇구나...\n"
+	.string "그 민진이가\l"
+	.string "혼자서 그렇게 멀리까지...\p"
+	.string "역시 우리 형님의 아들이야!$"
+	// おじさん『そうですか……ｎ
+	// あの ミツルくんがｌ
+	// ひとりで そんな とおくまで……ｐ
+	// さすがは わたしの おとうとの むすこだ!
 
 VerdanturfTown_WandasHouse_Text_178739:: @ 8178739
-	.string "WANDA: You are?\n"
-	.string "Oh, right, I get it!\p"
-	.string "You're the {PLAYER} who WALLY was\n"
-	.string "telling me about.\p"
-	.string "I'm WALLY's cousin.\n"
-	.string "Glad to meet you!\p"
-	.string "I think WALLY's become a lot more lively\n"
-	.string "and healthy since he came here.$"
+	.string "미진: 당신은...?\n"
+	.string "...아 그렇구나!\p"
+	.string "민진이가 말했던\n"
+	.string "{PLAYER}님이 당신이구나!\p"
+	.string "나는 민진이의 사촌이야!\p"
+	.string "어때? 저 아이 이쪽으로 온 이후로\n"
+	.string "많이 건강해진 것 같지?$"
+	// ミチル『あなたは……?ｎ
+	// ………あ そうか!ｐ
+	// ミツルくんが いってたｎ
+	// §あさんって あなたの ことね!ｐ
+	// わたしは ミツルくんの いとこ なの!ｐ
+	// どう? あのこ こっちに きてからｎ
+	// ずいぶん げんきに なったでしょう?
 
 VerdanturfTown_WandasHouse_Text_1787FB:: @ 81787FB
-	.string "WANDA: Don't worry about WALLY.\n"
-	.string "He'll be just fine.\p"
-	.string "I know my little cousin, and he has\n"
-	.string "POKéMON with him, too.$"
+	.string "미진: 민진이라면\n"
+	.string "괜찮을 거야! 걱정하지 마!\p"
+	.string "왜냐면 내 사촌이잖아!\n"
+	.string "무엇보다 포켓몬이 같이 있는걸!$"
+	// ミチル『ミツルくんの ことならｎ
+	// だいじょうぶ! しんぱい ないわよ!ｐ
+	// だって わたしの いとこ だしｎ
+	// なにより ポケモンが いっしょ ですもの!
 
 VerdanturfTown_WandasHouse_Text_17886A:: @ 817886A
-	.string "Thanks to you, I can see my girlfriend\n"
-	.string "every day.\l"
-	.string "Happy? You bet I am!$"
+	.string "네 덕분에\n"
+	.string "매일 그녀와 만날 수 있어\l"
+	.string "난 해피해!$"
+	// きみの おかげでｎ
+	// まいにち かのじょに あえてｌ
+	// おれは ハッピ-だよ!
 
 VerdanturfTown_WandasHouse_Text_1788B1:: @ 81788B1
-	.string "My daughter's boyfriend is a very\n"
-	.string "driven and passionate sort of person.\p"
-	.string "He's been digging a tunnel nonstop\n"
-	.string "just so he can see my daughter.\p"
-	.string "My daughter's a little concerned,\n"
-	.string "so she goes out to the tunnel a lot.$"
+	.string "우리 딸 애인은\n"
+	.string "꽤 정열적인 사람이라서\p"
+	.string "딸아이를 만나기 위해\n"
+	.string "무작정 터널을 파고 있다고 하더라!\p"
+	.string "딸아이도 걱정되는지\n"
+	.string "항상 터널에 가고 있어$"
+	// うちの むすめの こいびとはｎ
+	// ずいぶん じょうねつてきな ひとでねｐ
+	// むすめに あうため だけにｎ
+	// ひたすら トンネルを ほってるってよ!ｐ
+	// むすめも しんぱい なのかｎ
+	// いつも トンネルに あしを はこんでるよ
 
 VerdanturfTown_WandasHouse_Text_178983:: @ 8178983
-	.string "It's amazing. My daughter's boyfriend\n"
-	.string "was digging the tunnel by hand!\p"
-	.string "It's so incredible!$"
+	.string "이럴 수가! 딸아이의 애인이\n"
+	.string "맨손으로 터널을 팠대!\p"
+	.string "이거 놀랄 일이야!$"
+	// なんと! むすめの こいびと ときたらｎ
+	// すでで トンネルを ほっていたって!ｐ
+	// そりゃあ たまげた もんだ!
 
 VerdanturfTown_WandasHouse_Text_1789DD:: @ 81789DD
-	.string "If anything were to happen to WALLY,\n"
-	.string "I would never be able to look his\l"
-	.string "parents in PETALBURG in the eye...$"
+	.string "민진이에게 만약 무슨 일이 생긴다면\n"
+	.string "난 등화도시에 있는 그 애의 부모를\l"
+	.string "볼 면목이 없어...$"
+	// ミツルくんに もしものことが あったらｎ
+	// あたしゃ トウカにいる ごりょうしんにｌ
+	// あわせる かおが ないよ……
 
 VerdanturfTown_WandasHouse_Text_178A47:: @ 8178A47
-	.string "WALLY was in EVER GRANDE?\p"
-	.string "His parents in PETALBURG would be\n"
-	.string "astonished to hear that!$"
+	.string "민진이가 그랜드시티로 갔다고!?\p"
+	.string "등화도시에 있는 그 애의 부모도\n"
+	.string "깜짝 놀라겠는걸$"
+	// ミツルくんが サイユウに いたって!?ｐ
+	// そりゃ トウカの ごりょうしんもｎ
+	// びっくり するだろうねぇ

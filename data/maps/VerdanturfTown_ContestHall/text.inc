@@ -1,26 +1,45 @@
 VerdanturfTown_ContestHall_Text_177FB4:: @ 8177FB4
-	.string "Which CONTEST are you entering?\n"
-	.string "Want a piece of advice?\p"
-	.string "In any CONTEST, for example, a CUTE\n"
-	.string "CONTEST, I don't think they judge you\l"
-	.string "only on cuteness in the first round.\p"
-	.string "You need to work out ways for raising\n"
-	.string "POKéMON better.$"
+	.string "넌 무슨 콘테스트에 나갈 거야?\n"
+	.string "하나 어드바이스해 줄게!\p"
+	.string "예를 들어 귀여움콘테스트에서는\n"
+	.string "1차 심사에서 귀여움만이\l"
+	.string "평가되는 게 아닌 것 같아\p"
+	.string "키우는 방법을 구분해 두는 게 좋아!$"
+	// きみ なにコンテストに でるの?ｎ
+	// ひとつ アドバイス してあげるよ!ｐ
+	// たとえば かわいさコンテスト でもｎ
+	// 1じしんさで かわいさ だけがｌ
+	// みられてる わけじゃ ないみたいなんだｐ
+	// そだてかたを くふう したほうが いいよ!
 
 VerdanturfTown_ContestHall_Text_178091:: @ 8178091
-	.string "I raised my POKéMON to be cute.\p"
-	.string "I found out you can put POKéMON in\n"
-	.string "a CONTEST for cuteness!\p"
-	.string "I'm so glad I raised my POKéMON with\n"
-	.string "loving care...$"
+	.string "포켓몬이 귀여워지도록\n"
+	.string "키우고 있는데\p"
+	.string "콘테스트에서는 귀여움으로도\n"
+	.string "경쟁할 수가 있구나!\p"
+	.string "소중하게 키워서 다행이다...$"
+	// ポケモンが かわいく なるようにｎ
+	// そだてて いたんだけどｐ
+	// コンテストって かわいらしさもｎ
+	// きそう ことが できるのね!ｐ
+	// だいじに そだてて よかった……
 
 VerdanturfTown_ContestHall_Text_178120:: @ 8178120
-	.string "My POKéMON rules!\p"
-	.string "It's cool, tough yet beautiful, cute,\n"
-	.string "and smart. It's complete!\p"
-	.string "I may as well go for wins in every\n"
-	.string "single CONTEST.$"
+	.string "내 포켓몬...\p"
+	.string "엄청나게 근사하고\n"
+	.string "강인하고 아름답고\l"
+	.string "귀엽고 슬기로운데 말야\p"
+	.string "이렇게 된 이상 모든 콘테스트에서\n"
+	.string "닥치는 대로 우승을 노릴 거야!$"
+	// おれの ポケモン……ｐ
+	// そりゃあ もう かっこよくてｎ
+	// たくましくて うつくしくてｌ
+	// かわいくて かしこいんだけど さｐ
+	// こうなったら ぜんぶの コンテストでｎ
+	// かたっぱし から ゆうしょう ねらうか!
 
 VerdanturfTown_ContestHall_Text_1781A5:: @ 81781A5
-	.string "POKéMON CONTESTS\n"
-	.string "NORMAL RANK STAGE!$"
+	.string "포켓몬 콘테스트\n"
+	.string "노말랭크 스테이지!$"
+	// ポケモン コンテストｎ
+	// ノ-マルランク ステ-ジ!

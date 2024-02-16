@@ -1,62 +1,95 @@
 VerdanturfTown_Text_16CAEB:: @ 816CAEB
-	.string "My papa told me.\p"
-	.string "He says this tunnel is full of\n"
-	.string "timid POKéMON.\p"
-	.string "They get all scared of loud noise and\n"
-	.string "make a big uproar.\p"
-	.string "So they had to stop the big tunnel\n"
-	.string "project.\p"
-	.string "But there's one man.\n"
-	.string "He's trying to dig the tunnel by himself!$"
+	.string "우리 아빠가 말했어\p"
+	.string "이 터널에는 커-다란 소리에\n"
+	.string "반응해서 소란 피우는\l"
+	.string "겁쟁이 포켓몬이 잔뜩 있대!\p"
+	.string "그래서 개발 공사를 그만뒀는데\n"
+	.string "어떤 남자가 혼자서\l"
+	.string "터널을 파려고 한다나 봐!$"
+	// わたしの パパが いってたのｐ
+	// この トンネルって お-きな おとにｎ
+	// はんのうして さわぎだす おくびょうなｌ
+	// ポケモンが いっぱい なんだって!ｐ
+	// だから かいはつ こうじ やめたんだけどｎ
+	// おとこの ひとが ひとりでｌ
+	// トンネルを ほろうと してるんだって!
 
 VerdanturfTown_Text_16CBCE:: @ 816CBCE
-	.string "There was a man who dug a tunnel for\n"
-	.string "a lady he loved.\p"
-	.string "I don't really get it, but hey!$"
+	.string "사랑하는 사람을 위해\n"
+	.string "동굴을 팠던 사람이 있어!\p"
+	.string "왠지 굉-장해!$"
+	// あいする ひとの ためにｎ
+	// どうくつを ほっていた ひとが いるの!ｐ
+	// なんだか すご-い!
 
 VerdanturfTown_Text_16CC24:: @ 816CC24
-	.string "The way the winds blow, volcanic ash\n"
-	.string "is never blown in this direction.\p"
-	.string "The air is clean and delicious here.\n"
-	.string "Living here should do wonders for even\l"
-	.string "frail and sickly people.$"
+	.string "바람의 방향 때문에 이 마을에는\n"
+	.string "화산재가 날아오지 않아!\p"
+	.string "공기가 맑은 이 마을에서 살면\n"
+	.string "몸이 튼튼하지 않은 사람도\l"
+	.string "분명 건강해질 거야!$"
+	// かざむきの かんけいで このまち にはｎ
+	// かざんばいが とんでくることは ない!ｐ
+	// くうきの おいしい このまちで くらせばｎ
+	// からだが じょうぶでない ひとでもｌ
+	// きっと げんきに なれる はずさ!
 
 VerdanturfTown_Text_16CCD0:: @ 816CCD0
-	.string "I'm feeling a little confident about the\n"
-	.string "cuteness of my POKéMON.\p"
-	.string "I wanted to make its CONTEST debut,\n"
-	.string "so that's why I'm here.$"
+	.string "내 포켓몬 귀여움에\n"
+	.string "조금 자신이 붙기 시작했거든\p"
+	.string "콘테스트에 데뷔시키고 싶어서\n"
+	.string "이 마을에 온 거야!$"
+	// ぼくの ポケモン かわいさにｎ
+	// すこし じしん でてきたからねｐ
+	// コンテスト デビュ- させたくてｎ
+	// この まちに きたんだ!
 
 VerdanturfTown_Text_16CD4D:: @ 816CD4D
-	.string "Did you see the cave next to the\n"
-	.string "POKéMON MART?\p"
-	.string "There's a guy in there who's trying to\n"
-	.string "bust up boulders so he can bust out\l"
-	.string "through to the other side.\p"
-	.string "It'd be great if we could go through...\n"
-	.string "It'll make it easy to visit RUSTBORO.$"
+	.string "프렌들리숍 옆에\n"
+	.string "동굴이 있지?\p"
+	.string "안을 막고 있는 바위를 부수고\n"
+	.string "지나갈 수 있게 하려고 노력하는\l"
+	.string "사람이 있다고 하더라!\p"
+	.string "동굴이 뚫리면 좋겠어...\n"
+	.string "금탄도시에도 가기 쉬워지니까!$"
+	// フレンドリィ ショップの となりにｎ
+	// どうくつが あるだろ?ｐ
+	// なかを ふさいでいる いわを こわしｎ
+	// とおれるように しようと がんばっているｌ
+	// やつが いるらしいんだ!ｐ
+	// とおれるように なると いいのに……ｎ
+	// カナズミにも いきやすく なるから!
 
 VerdanturfTown_Text_16CE30:: @ 816CE30
-	.string "That cave next to the POKéMON MART\n"
-	.string "is now a tunnel to the other side.\p"
-	.string "It's great - it's easy to go shop for new\n"
-	.string "DEVON products in RUSTBORO now.$"
+	.string "프렌들리숍 옆의 동굴 말이야\n"
+	.string "지나갈 수 있게 됐어!\p"
+	.string "금탄도시까지 데봉의 신제품을\n"
+	.string "사러 가기 쉬워져서 기뻐!$"
+	// フレンドリィ ショップの となりのｎ
+	// どうくつが とおれるように なっただろ!ｐ
+	// カナズミまで デボンの しんせいひんをｎ
+	// かいに いきやすくなって うれしいよ!
 
 VerdanturfTown_Text_16CEC0:: @ 816CEC0
-	.string "VERDANTURF TOWN\p"
-	.string "“The windswept highlands with the\n"
-	.string "sweet fragrance of grass.”$"
+	.string "여기는 잔디마을\n"
+	.string "풀 내음의 바람이 부는 고원$"
+	// ここは シダケ タウンｎ
+	// くさの においの かぜふく こうげん
 
 VerdanturfTown_Text_16CF0D:: @ 816CF0D
-	.string "WANDA'S HOUSE$"
+	.string "“미진의 집”$"
+	// 「ミチルの いえ」
 
 VerdanturfTown_Text_16CF1B:: @ 816CF1B
-	.string "POKéMON CONTESTS\n"
-	.string "NORMAL RANK REGISTRATION\p"
-	.string "“Gather here, all ye POKéMON TRAINERS!”$"
+	.string "포켓몬 콘테스트 노말랭크 접수처\n"
+	.string "모여라! 포켓몬 트레이너!$"
+	// ポケモンコンテスト ノ-マルランク うけつけｎ
+	// あつまれ! ポケモン トレ-ナ-!
 
 VerdanturfTown_Text_16CF6D:: @ 816CF6D
-	.string "RUSTURF TUNNEL\n"
-	.string "“Linking RUSTBORO and VERDANTURF\p"
-	.string "“The tunnel project has been\n"
-	.string "canceled.”$"
+	.string "금탄도시와 잔디마을을 연결하는\n"
+	.string "“금잔터널”\p"
+	.string "개통 공사는 중단되었습니다$"
+	// カナズミと シダケを むすぶｎ
+	// 「カナシダ トンネル」ｐ
+	// かいつう こうじは ちゅうしに なりました

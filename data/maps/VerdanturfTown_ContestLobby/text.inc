@@ -1,28 +1,43 @@
 VerdanturfTown_ContestLobby_Text_177D6C:: @ 8177D6C
-	.string "I went in through the entrance and\n"
-	.string "took a look around the CONTEST hall.\p"
-	.string "Getting up on that big stage...\n"
-	.string "It's going to be tense!$"
+	.string "거기 입구에서부터 들어와서\n"
+	.string "콘테스트 회장을 둘러보고 있었어\l"
+	.string "저렇게 큰 스테이지에\l"
+	.string "서게 된다니 긴장된다!$"
+	// そこの いりぐちから はいってｎ
+	// コンテストの かいじょうを みてきたんだｌ
+	// あんな おおきい ステ-ジにｌ
+	// のぼるなんて きんちょう するなあ!
 
 VerdanturfTown_ContestLobby_Text_177DEC:: @ 8177DEC
-	.string "Oh, my love for POKéMON...\n"
-	.string "The attraction they evoke in me...\p"
-	.string "Whoops!\n"
-	.string "You weren't meant to see that!\l"
-	.string "Well, anyway.\p"
-	.string "If you're entering a CONTEST, try this\n"
-	.string "move on for size.$"
+	.string "나의 포켓몬을 향한 마음...\n"
+	.string "그것이 바로 헤롱헤롱이야...\p"
+	.string "어머 이상한 모습을 들켰네\p"
+	.string "뭐 좋아\n"
+	.string "너 콘테스트에 나갈 거면\l"
+	.string "이 기술머신은 어때?$"
+	// あたしの ポケモンへの きもち……ｎ
+	// それは まさに メロメロなのよ……ｐ
+	// あら へんなところ みられちゃったｐ
+	// まあ いいわｎ
+	// あなた コンテストに でるのならｌ
+	// この わざマシンは いかが?
 
 VerdanturfTown_ContestLobby_Text_177E98:: @ 8177E98
-	.string "My feelings for POKéMON...\n"
-	.string "Oh, they attract me so...$"
+	.string "포켓몬의 나를 향한 마음도...\n"
+	.string "역시 헤롱헤롱인 게 틀림없어!$"
+	// ポケモンの あたしへの きもちも……ｎ
+	// やっぱり メロメロに ちがいないわ!
 
 VerdanturfTown_ContestLobby_Text_177ECD:: @ 8177ECD
-	.string "Which CONTEST are you planning on\n"
-	.string "entering?\p"
-	.string "If you're entering a COOL CONTEST,\n"
-	.string "a cool POKéMON has to be the one!\p"
-	.string "Pick a POKéMON worthy of the CONTEST\n"
-	.string "theme, and make sure it has the\l"
-	.string "right set of moves to match.\p"
-	.string "That's fundamental!$"
+	.string "넌 무슨 콘테스트에 나간다고?\p"
+	.string "만약 근사함콘테스트에 나갈 거라면\n"
+	.string "근사한 포켓몬이 좋을걸!\p"
+	.string "콘테스트가 어울리는 포켓몬에게\n"
+	.string "어울리는 기술을 배우게 해서\l"
+	.string "엔트리! 이건 상식이라구!$"
+	// きみは なにコンテストに でるんだい?ｐ
+	// たとえば かっこよさコンテストに だすならｎ
+	// かっこいい ポケモンで きまりさ!ｐ
+	// コンテストに ふさわしい ポケモンにｎ
+	// ふさわしい わざを もたせてｌ
+	// エントリ-! これ じょうしきさ!
