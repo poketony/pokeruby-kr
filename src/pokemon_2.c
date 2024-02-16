@@ -352,12 +352,33 @@ u32 GetBoxMonData(struct BoxPokemon *boxMon, s32 field, u8 *data)
         }
         else
         {
-            retVal = 0;
-
-            while (retVal < POKEMON_NAME_LENGTH && boxMon->nickname[retVal] != EOS)
+            if (boxMon->language == LANGUAGE_JAPANESE)
             {
-                data[retVal] = boxMon->nickname[retVal];
-                retVal++;
+                retVal = 0;
+                while (retVal < 5 && boxMon->nickname[retVal] != EOS)
+                {
+                    data[retVal] = boxMon->nickname[retVal];
+                    retVal++;
+                }
+            }
+            else
+            {
+                u8 length = 0;
+                while (boxMon->nickname[retVal] != EOS)
+                {
+                    data[retVal] = boxMon->nickname[retVal];
+                    retVal++;
+                    length++;
+
+                    if (IsKoreanGlyph(boxMon->nickname[retVal - 1]))
+                    {
+                        data[retVal] = boxMon->nickname[retVal];
+                        retVal++;
+                    }
+
+                    if (length == 5)
+                        break;
+                }
             }
 
             data[retVal] = EOS;
