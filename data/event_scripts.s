@@ -1013,10 +1013,10 @@ UnknownString_81A0DC6: @ 81A0DC6
 
 UnknownString_81A0DD4: @ 81A0DD4
 	.string "{STR_VAR_3}타입 포켓몬\n"
-	.string "{STR_VAR_1}{K_IGA} 마음에 들었니?!$"
+	.string "{STR_VAR_1}{K_IGA} 마음에 들었니!?$"
 
 UnknownString_81A0DF5: @ 81A0DF5
-	.string "포켓몬이 들어있다!$"
+	.string "포켓몬이 들어 있다!$"
 
 UnknownString_81A0E0C: @ 81A0E0C
 	.string "준비 중입니다$"
@@ -1054,7 +1054,7 @@ UnknownString_81A0F70: @ 81A0F70
 
 Route111_Text_1A0F93:: @ 81A0F93
 	.string "사막의 모래바람이 심해서\n"
-	.string "앞으로 갈 수 없어!$"
+	.string "앞으로 갈 수 없다!$"
 
 Text_NoRegisteredItem: @ 81A0FCC
 	.string "가방에 들어 있는 도구를\n"
@@ -1087,8 +1087,6 @@ RustboroCity_DevonCorp_2F_Text_1A1102:: @ 81A1102
 fieldPoisonText_PokemonFainted:: @ 81A1132
 	.string "{STR_VAR_1}{K_EUNNEUN}\n"
 	.string "기절했다\p$"
-	// §いはｎ
-	// ちからつきたｐ
 
 UnknownString_81A1141: @ 81A1141
 	.string "{PLAYER}에게는 이제\n"

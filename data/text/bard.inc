@@ -1,38 +1,35 @@
 gTextBard_BardTesting: @ 81B0A83
-	.string "BARD testing!$"
+	.string "싱어송아저씨는 테스트 중!$"
 
 gTextBard_HiImTheBard:: @ 81B0A91
-	.string "Hi, I'm the BARD.\n"
-	.string "Would you like to hear my song?$"
+	.string "난 싱어송아저씨\n"
+	.string "내 노래 한번 들어볼래?$"
 
 gTextBard_OhYouveLeftMe:: @ 81B0AC3
-	.string "Oh...\n"
-	.string "You've left me feeling the blues...$"
+	.string "그래...\n"
+	.string "아쉽네...$"
 
 gTextBard_OhWhatAMovingSong:: @ 81B0AED
-	.string "Oh, what a moving song...\n"
-	.string "I wish I could play it for others...$"
+	.string "아아 좋은 노래구나...\n"
+	.string "다른 사람들에게도 들려주고 싶다$"
 
 gTextBard_SoHowDoYouLikeMySong:: @ 81B0B2C
-	.string "So?\n"
-	.string "How do you like my song?\p"
-	.string "But I'm none too happy about the\n"
-	.string "lyrics.\p"
-	.string "How would you like to write some new\n"
-	.string "lyrics for me?$"
+	.string "내 노래 어때?\p"
+	.string "근데 좀 가사가\n"
+	.string "마음에 안 든단 말이지\p"
+	.string "그래서 너 잠깐 가사 좀 써줄래?$"
 
 gTextBard_OhYouveLeftMe2:: @ 81B0BA6
-	.string "Oh...\n"
-	.string "You've left me feeling the blues...$"
+	.string "그래...\n"
+	.string "아쉽네...$"
 
 gTextBard_ThankYouKindly:: @ 81B0BD0
-	.string "Thank you kindly!\n"
-	.string "Let me sing it for you.$"
+	.string "고마워!\n"
+	.string "자 그럼 부른다!$"
 
 gTextBard_WasThatHowYouWanted:: @ 81B0BFA
-	.string "Was that how you wanted your song\n"
-	.string "to go?$"
+	.string "이런 느낌이면 되나?$"
 
 gTextBard_OkayThatsIt:: @ 81B0C23
-	.string "Okay! That's it, then.\n"
-	.string "I'll sing this song for a while.$"
+	.string "좋아 알았어!\n"
+	.string "당분간 이 노래를 불러볼게!$"
