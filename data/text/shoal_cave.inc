@@ -1,10 +1,10 @@
 ShoalCave_LowTideEntranceRoom_Text_1C6668:: @ 81C6668
-	.string "Are you planning on going deep in\n"
-	.string "there?\p"
-	.string "How about bringing me back some\n"
-	.string "SHOAL SALT and SHOAL SHELLS?\p"
-	.string "I can make you something good if\n"
-	.string "you bring me the ingredients.$"
+	.string "이 앞으로 갈 겐가?\p"
+	.string "혹시 괜찮으면\n"
+	.string "여울소금과 여울조개껍질을\l"
+	.string "모아주지 않겠나?\p"
+	.string "재료가 모이면\n"
+	.string "내가 좋은 걸 만들어 줄 테니$"
 	// このさきに すすむのかね?ｐ
 	// もしで よかったらｎ
 	// あさせのしおと あさせのかいがらをｌ
@@ -13,11 +13,11 @@ ShoalCave_LowTideEntranceRoom_Text_1C6668:: @ 81C6668
 	// わたしが いいもの つくるんだがね
 
 ShoalCave_LowTideEntranceRoom_Text_1C670D:: @ 81C670D
-	.string "If you bring me four each of the\n"
-	.string "SHOAL SALT and SHOAL SHELLS,\l"
-	.string "I can make you a SHELL BELL...\p"
-	.string "You can get those ingredients\n"
-	.string "every day.$"
+	.string "여울소금과 여울조개껍질이\n"
+	.string "각각 4개씩 있으면\l"
+	.string "조개껍질방울을 만들 수 있네...\p"
+	.string "조개껍질방울의 재료라면\n"
+	.string "매일 캘 수 있지$"
 	// あさせのしおと あさせのかいがらｎ
 	// それぞれ 4つ あればｌ
 	// かいがらのすずが つくれるんだが……ｐ
@@ -25,21 +25,21 @@ ShoalCave_LowTideEntranceRoom_Text_1C670D:: @ 81C670D
 	// まいにち とれるよ
 
 ShoalCave_LowTideEntranceRoom_Text_1C6793:: @ 81C6793
-	.string "Oh, hey! SHOAL SALT and SHOAL\n"
-	.string "SHELLS! And enough of them, too!\p"
-	.string "Would you like me to make you a\n"
-	.string "SHELL BELL with them?$"
+	.string "오! 여울소금과 여울조개껍질!\n"
+	.string "양도 충분하구먼!\p"
+	.string "이걸로 조개껍질방울을\n"
+	.string "만들어도 되겠나?$"
 	// お! あさせのしおと あさせのかいがら!ｎ
 	// りょうも じゅうぶんだ!ｐ
 	// これで かいがらのすずｎ
 	// つくっても いいかね?
 
 ShoalCave_LowTideEntranceRoom_Text_1C6808:: @ 81C6808
-	.string "All righty, then! I'll make you a\n"
-	.string "SHELL BELL right away.\p"
-	.string "... ... ... ... ... ... ... ...\n"
-	.string "... ... ... ... ... ... ... ...\p"
-	.string "There! Done!$"
+	.string "그럼 바로\n"
+	.string "조개껍질방울을 만들겠네\p"
+	.string "...... ...... ...... ......\n"
+	.string "...... ...... ...... ......\p"
+	.string "자 됐다!$"
 	// かいがらのすずｎ
 	// さっそく つくらせて もらうよｐ
 	// …… …… …… ……ｎ
@@ -47,12 +47,12 @@ ShoalCave_LowTideEntranceRoom_Text_1C6808:: @ 81C6808
 	// よし できたっ!
 
 ShoalCave_LowTideEntranceRoom_Text_1C688E:: @ 81C688E
-	.string "Have a POKéMON hold on to that.\n"
-	.string "It'll love it, that's for certain.\p"
-	.string "Why, the SHELL BELL's chime...\n"
-	.string "It's simply sublime!\p"
-	.string "You can get its ingredients every\n"
-	.string "day, so I can make you more.$"
+	.string "포켓몬에게 지니게 하면 기뻐할 걸세\p"
+	.string "누가 뭐라 해도 조개껍질방울의 소리는\n"
+	.string "천하일품이거든\p"
+	.string "조개껍질방울의 재료라면\n"
+	.string "매일 캘 수 있으니\l"
+	.string "모이면 다시 만들어 주겠네$"
 	// ポケモンに もたせてあげると よろこぶよｐ
 	// なんたって かいがらのすずの ねいろはｎ
 	// てんか いっぴん だからねｐ
@@ -61,30 +61,29 @@ ShoalCave_LowTideEntranceRoom_Text_1C688E:: @ 81C688E
 	// そろえば また つくらせて もらうよ
 
 ShoalCave_LowTideEntranceRoom_Text_1C6944:: @ 81C6944
-	.string "Oh... Is that so...\n"
-	.string "I wanted to make a SHELL BELL...$"
+	.string "그렇구먼...\n"
+	.string "조개껍질방울 만들고 싶었는데...$"
 	// そうかね……ｎ
 	// かいがらのすず つくりたかった……
 
 ShoalCave_LowTideInnerRoom_Text_1C6979:: @ 81C6979
 ShoalCave_LowTideLowerRoom_Text_1C6979:: @ 81C6979
 ShoalCave_LowTideStairsRoom_Text_1C6979:: @ 81C6979
-	.string "There was some SHOAL SALT here.\n"
-	.string "But, there's nothing here now.$"
+	.string "여울소금을 모은 다음...\n"
+	.string "지금은 아무것도 없네...$"
 	// あさせのしおを とった あと……ｎ
 	// いまは なにも ない……
 
 ShoalCave_LowTideInnerRoom_Text_1C69B8:: @ 81C69B8
-	.string "There was a SHOAL SHELL here.\n"
-	.string "But, there's nothing here now.$"
+	.string "여울조개껍질을 찾은 다음...\n"
+	.string "지금은 아무것도 없네...$"
 	// あさせのかいがらを みつけた あと……ｎ
 	// いまは なにも ない……
 
 ShoalCave_LowTideEntranceRoom_Text_1C69F5:: @ 81C69F5
-	.string "You don't have space in your BAG\n"
-	.string "if I were to make it for you.\p"
-	.string "You should make room and come back\n"
-	.string "for a SHELL BELL.$"
+	.string "만들어도 가방이 가득 차서\n"
+	.string "지닐 수 없을 것 같구먼...\p"
+	.string "정리하고 다시 오게$"
 	// つくっても バッグが いっぱいでｎ
 	// もてない ようだね……ｐ
 	// せいりして また くると いいよ
