@@ -83,7 +83,7 @@ LilycoveCity_ContestLobby_Text_18878D:: @ 818878D
 
 LilycoveCity_ContestLobby_Text_1887C7:: @ 81887C7
 	.string "잠시 기다려 주십시오\n"
-	.string "...B 버튼으로 취소$"
+	.string "......B 버튼으로 취소$"
 	// しょうしょう おまち くださいｎ
 	// ……Bボタンで キャンセル
 
