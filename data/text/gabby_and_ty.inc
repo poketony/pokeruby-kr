@@ -1,244 +1,415 @@
 Route111_Text_1ABED8:: @ 81ABED8
-	.string "GABBY: Oh! We've just spotted a tough-\n"
-	.string "looking TRAINER here of all places!\p"
-	.string "Okay, roll camera!\n"
-	.string "Let's get this interview.$"
+	.string "마리: 오 이런 곳에서\n"
+	.string "강해보이는 트레이너 발견!\p"
+	.string "좋-아 카메라 돌리고\n"
+	.string "인터뷰 시작이야!$"
+	// マリ『おっ こんなところにｎ
+	// つよそうな トレ-ナ- はっけん!ｐ
+	// よ-し カメラを まわしてｎ
+	// インタビュ- かいしよ!
 
 Route111_Text_1ABF50:: @ 81ABF50
 Route118_Text_1ABF50:: @ 81ABF50
 Route120_Text_1ABF50:: @ 81ABF50
-	.string "GABBY: Oh! You're {PLAYER}! Hi!\n"
-	.string "Do you remember us from last time?\p"
-	.string "Can you show us how much stronger\n"
-	.string "you've become? Okay, cue interview!$"
+	.string "마리: 아! 당신은\n"
+	.string "지난번 배틀했던 {PLAYER}씨!\p"
+	.string "좋-아 얼마나 강해졌는지\n"
+	.string "바로 인터뷰 시작이야!$"
+	// マリ『あ! あなたはｎ
+	// このあいだの §あさん!ｐ
+	// よ-し どのくらい つよく なったかｎ
+	// さっそく インタビュ- かいしよ!
 
 Route111_Text_1ABFD3:: @ 81ABFD3
-	.string "GABBY: My eyes didn't lie!\n"
-	.string "I did discover an astonishing TRAINER!$"
+	.string "마리: 내 눈은 틀리지 않았어\n"
+	.string "엄청난 트레이너를 발견한 거야!$"
+	// マリ『わたしの めに くるいはないわｎ
+	// すごい トレ-ナ-の はっけんよ!
 
 Route111_Text_1AC015:: @ 81AC015
-	.string "GABBY: Awesome! Awesome!\n"
-	.string "Who are you?!\p"
-	.string "I knew we were onto something wild\n"
-	.string "when we spotted you!\p"
-	.string "Oh, please let me explain. We travel\n"
-	.string "around everywhere interviewing all\l"
-	.string "sorts of TRAINERS.\p"
-	.string "So, would you give us a bit of your time\n"
-	.string "for an interview?$"
+	.string "마리: 굉장해! 정말 굉장해!\n"
+	.string "당신 대체 뭐 하는 사람이야!?\p"
+	.string "역시 우리가\n"
+	.string "눈독들일 만해!\p"
+	.string "...앗 사실 우린\n"
+	.string "다양한 장소의 다양한 트레이너를\l"
+	.string "인터뷰하면서 돌아다니고 있거든\p"
+	.string "그러니까 잠깐만\n"
+	.string "인터뷰에 응해줄 수 있을까?$"
+	// マリ『すごい! すごい!ｎ
+	// あなた いったい なにもの!?ｐ
+	// さすが わたしたちがｎ
+	// めを つけただけ あるわ!ｐ
+	// ……あっ じつは わたしたちｎ
+	// いろんな ばしょの いろんな トレ-ナ-をｌ
+	// インタビュ-して まわっているのよｐ
+	// だから すこしだけｎ
+	// インタビュ- させて もらえないかな?
 
 Route111_Text_1AC10A:: @ 81AC10A
-	.string "GABBY: “{STR_VAR_1}!”\p"
-	.string "Do you remember? That's the quote you\n"
-	.string "gave us as the battle clincher last time.\p"
-	.string "I never, ever forget stuff like that!$"
+	.string "마리: “{STR_VAR_1}!”\p"
+	.string "기억나? 전에 배틀했을 때\n"
+	.string "당신이 말한 마무리 대사야\p"
+	.string "우린 제대로\n"
+	.string "기억하고 있다고!$"
+	// マリ『「§い!」ｐ
+	// おぼえてる? まえに たたかった ときｎ
+	// あなたが いった きめゼリフよｐ
+	// わたしたち ちゃ-んとｎ
+	// おぼえてるん だからね!
 
 Route111_Text_1AC18D:: @ 81AC18D
-	.string "The last time we battled, you stomped\n"
-	.string "us before we could brace ourselves...\p"
-	.string "Anyway, what do you think?\n"
-	.string "Do you want to be interviewed again?$"
+	.string "맞아 맞아 전에 배틀했을 때는\n"
+	.string "손도 발도 못 썼었지...\p"
+	.string "그래서 어때?\n"
+	.string "또 인터뷰 받아볼래?$"
+	// そうそう まえに たたかった ときはｎ
+	// ても あしも でなかった のよねぇ……ｐ
+	// ところで どう?ｎ
+	// また インタビュ- うけてみる?
 
 Route111_Text_1AC219:: @ 81AC219
-	.string "The last time we battled, didn't you\n"
-	.string "throw a POKé BALL at us?\p"
-	.string "We were shocked! So we told everyone,\n"
-	.string "just everyone, about it!\p"
-	.string "Anyway, what do you think?\n"
-	.string "Do you want to be interviewed again?$"
+	.string "맞아 맞아 전에 배틀했을 때는\n"
+	.string "우리한테 몬스터볼을 던졌었지...\p"
+	.string "정말 깜짝 놀라서 다른 사람들한테\n"
+	.string "떠들고 다녔다니까!\p"
+	.string "그래서 어때?\n"
+	.string "또 인터뷰 받아볼래?$"
+	// そうそう まえに たたかった ときはｎ
+	// ボ-ルを なげられ たんだっけ……ｐ
+	// もう びっくりして みんなにｎ
+	// いいふらし ちゃったわよ!ｐ
+	// ところで どう?ｎ
+	// また インタビュ- うけてみる?
 
 Route111_Text_1AC2D6:: @ 81AC2D6
-	.string "The last time we battled, your item\n"
-	.string "skills cleverly did us in.\p"
-	.string "Anyway, what do you think?\n"
-	.string "Do you want to be interviewed again?$"
+	.string "맞아 맞아 전에 배틀했을 때는\n"
+	.string "도구를 잘 써서\l"
+	.string "우리를 이겼었지\p"
+	.string "그래서 어때?\n"
+	.string "또 인터뷰 받아볼래?$"
+	// そうそう まえに たたかった ときはｎ
+	// どうぐを うまく つかわれてｌ
+	// まけちゃった のよねｐ
+	// ところで どう?ｎ
+	// また インタビュ- うけてみる?
 
 Route111_Text_1AC355:: @ 81AC355
-	.string "The last time we battled, we managed\n"
-	.string "to look respectable.\p"
-	.string "Anyway, what do you think?\n"
-	.string "Do you want to be interviewed again?$"
+	.string "맞아 맞아 전에 배틀했을 때는\n"
+	.string "제법 좋은 승부를 했었지...\p"
+	.string "그래서 어때?\n"
+	.string "또 인터뷰 받아볼래?$"
+	// そうそう まえに たたかった ときはｎ
+	// けっこう いいしょうぶ だったんだよね……ｐ
+	// ところで どう?ｎ
+	// また インタビュ- うけてみる?
 
 Route111_Text_1AC3CF:: @ 81AC3CF
-	.string "Anyway, what do you think?\n"
-	.string "Do you want to be interviewed again?$"
+	.string "그래서 어때?\n"
+	.string "또 인터뷰 받아볼래?$"
+	// ところで どう?ｎ
+	// また インタビュ- うけてみる?
 
 Route111_Text_1AC40F:: @ 81AC40F
-	.string "You will?\n"
-	.string "Thank you!\p"
-	.string "Okay, I need you to describe your\n"
-	.string "feelings about our battle, but it\l"
-	.string "has to be short and sweet. Go!$"
+	.string "정말!?\n"
+	.string "고마워!\p"
+	.string "그럼 배틀한 뒤의\n"
+	.string "감상을 팍 하고 한마디로\l"
+	.string "말해줘!$"
+	// ほんと!?ｎ
+	// ありがとう!ｐ
+	// じゃあ たたかいの あとのｎ
+	// かんそうを ビシッと ひとことでｌ
+	// どうぞ!
 
 Route111_Text_1AC487:: @ 81AC487
-	.string "GABBY: Mmm, yeah!\n"
-	.string "That's the perfect clincher!\p"
-	.string "I get the feeling that this will make\n"
-	.string "a great TV show.\p"
-	.string "There's a chance that they'll air this\n"
-	.string "on TV, so make sure to look for us!\p"
-	.string "Okay!\n"
-	.string "We'll be seeing you!$"
+	.string "마리: 음-!\n"
+	.string "최고의 마무리 대사야\p"
+	.string "왠지 좋은 TV 방송이\n"
+	.string "될 것 같은 예감이 들어!\p"
+	.string "어쩌면 이 인터뷰를\n"
+	.string "TV로 방송하게 될지도 모르니까\l"
+	.string "TV 체크하는 거 잊지 마!\p"
+	.string "그럼\n"
+	.string "또 어딘가에서 보자!$"
+	// マリ『ん-!ｎ
+	// さいこうの きめゼリフねｐ
+	// なんか いいテレビばんぐみがｎ
+	// できそうな よかん!ｐ
+	// もしかしたら このことをｎ
+	// テレビで ほうそうするかも しれないからｌ
+	// テレビの チェックを わすれないでね!ｐ
+	// それじゃあｎ
+	// また どこかで!
 
 Route111_Text_1AC553:: @ 81AC553
-	.string "GABBY: Oh...\p"
-	.string "Okay, but don't give up!\n"
-	.string "We'll be keeping an eye out for you!$"
+	.string "마리: 그래...\p"
+	.string "그래도 앞으로도 힘내!\n"
+	.string "당신을 주목하고 있을 거야!$"
+	// マリ『そう……ｐ
+	// でも これからも がんばってね!ｎ
+	// あなたのこと ちゅうもく してるわ!
 
 Route111_Text_1AC59E:: @ 81AC59E
 Route118_Text_1AC59E:: @ 81AC59E
 Route120_Text_1AC59E:: @ 81AC59E
-	.string "GABBY: We'll be keeping an eye out\n"
-	.string "for you!$"
+	.string "마리: 당신을\n"
+	.string "주목하고 있을 거야!$"
+	// マリ『あなたの ことｎ
+	// ちゅうもく してるわ!
 
 Route111_Text_1AC5CA:: @ 81AC5CA
 Route118_Text_1AC5CA:: @ 81AC5CA
 Route120_Text_1AC5CA:: @ 81AC5CA
-	.string "GABBY: Is there a strong TRAINER\n"
-	.string "anywhere with a lot of POKéMON?$"
+	.string "마리: 포켓몬을 잔뜩 데리고 있는\n"
+	.string "강한 트레이너 어디 없을까?$"
+	// マリ『ポケモンを いっぱい つれてるｎ
+	// つよい トレ-ナ-って いない かしら?
 
 Route111_Text_1AC60B:: @ 81AC60B
-	.string "GABBY: Wow, you are something!\p"
-	.string "You've gotten a lot stronger - a lot -\n"
-	.string "since we last battled.\p"
-	.string "We were right about you when we\n"
-	.string "spotted you as a hot TRAINER.\p"
-	.string "So, anyway, what do you think?\n"
-	.string "Are you willing to give us an interview\l"
-	.string "this time?$"
+	.string "마리: 음- 역시나!\p"
+	.string "전에 배틀했을 때보다\n"
+	.string "훨씬 강해졌어!\p"
+	.string "역시 우리가 찾아낸\n"
+	.string "트레이너야!\p"
+	.string "그래서 어때?\n"
+	.string "이번에야말로 인터뷰를\l"
+	.string "받아보지 않을래?$"
+	// マリ『う-ん さすがね!ｐ
+	// まえに たたかった ときよりｎ
+	// ずっと つよく なってる!ｐ
+	// やっぱり わたしたちが みつけたｎ
+	// トレ-ナ- よね!ｐ
+	// ところで どう?ｎ
+	// こんどこそ インタビュ-をｌ
+	// うけて もらえないかな?
 
 Route111_Text_1AC6F8:: @ 81AC6F8
 Route118_Text_1AC6F8:: @ 81AC6F8
 Route120_Text_1AC6F8:: @ 81AC6F8
-	.string "GABBY: That was an intense battle!\n"
-	.string "Did you get all that on camera?$"
+	.string "마리: 굉장한 배틀이었어!\n"
+	.string "이봐 제대로 카메라에 담았지!?$"
+	// マリ『すごい たたかいだったわ!ｎ
+	// ほら ちゃんと カメラにとった!?
 
 Route111_Text_1AC73B:: @ 81AC73B
-	.string "TY: Hey, lookie here! A tough-looking\n"
-	.string "TRAINER here, of all places!\l"
-	.string "Camera's rolling!$"
+	.string "다이: 오 이런 곳에서\n"
+	.string "강해보이는 트레이너 발견!\l"
+	.string "바로 녹화 개시다!$"
+	// ダイ『おっ こんなところにｎ
+	// つよそうな トレ-ナ- はっけん!ｌ
+	// さっそく ろくが かいしだ!
 
 Route111_Text_1AC790:: @ 81AC790
 Route118_Text_1AC790:: @ 81AC790
 Route120_Text_1AC790:: @ 81AC790
-	.string "TY: Hey, lookie here!\n"
-	.string "I remember you!\p"
-	.string "I'll get this battle all on this\n"
-	.string "here camera!$"
+	.string "다이: 넌 지난번의 그 애잖아!\p"
+	.string "좋-아 이 배틀을\n"
+	.string "모두 카메라에 담아주겠어$"
+	// ダイ『きみは このあいだの!ｐ
+	// よ-し この たたかいをｎ
+	// すべて カメラに おさめてやる
 
 Route111_Text_1AC7E4:: @ 81AC7E4
 Route118_Text_1AC7E4:: @ 81AC7E4
 Route120_Text_1AC7E4:: @ 81AC7E4
-	.string "TY: You're a natural!\n"
-	.string "Got me some prime footage right here!$"
+	.string "다이: 역시나!\n"
+	.string "좋은 영상을 얻을 수 있었어!$"
+	// ダイ『さすがだな!ｎ
+	// いい えいぞうを とることが できたよ! 
 
 Route111_Text_1AC820:: @ 81AC820
 Route118_Text_1AC820:: @ 81AC820
 Route120_Text_1AC820:: @ 81AC820
-	.string "TY: Do you only have the one POKéMON\n"
-	.string "and that's it?\p"
-	.string "If you had more POKéMON, it'd make for\n"
-	.string "better footage, but...$"
+	.string "다이: 넌 1마리밖에 포켓몬을\n"
+	.string "안 데리고 다니는 거야?\p"
+	.string "포켓몬이 잔뜩 있어야\n"
+	.string "좋은 영상이 나올 텐데...$"
+	// ダイ『きみは 1ぴきしか ポケモンをｎ
+	// もって ないのかい?ｐ
+	// ポケモンが いっぱい いたほうがｎ
+	// いい えいぞうに なるんだが……
 
 Route111_Text_1AC892:: @ 81AC892
-	.string "TY: Yep, we sure spotted a hot TRAINER.\n"
-	.string "This is a huge scoop for us!$"
+	.string "다이: 굉장한 트레이너를 발견했어\n"
+	.string "이건 대특종이야!$"
+	// ダイ『すごい トレ-ナ-の はっけんだｎ
+	// これは だいスク-プだぞ!
 
 Route111_Text_1AC8D7:: @ 81AC8D7
 Route118_Text_1AC8D7:: @ 81AC8D7
 Route120_Text_1AC8D7:: @ 81AC8D7
-	.string "TY: Yep, I got it all.\n"
-	.string "That whole battle's on camera.$"
+	.string "다이: 지금 한 배틀의 모든 게\n"
+	.string "이 카메라에 담겨 있어!$"
+	// ダイ『いまの たたかいの すべてがｎ
+	// この カメラのなかに!
 
 gTVGabbyAndTyText1:: @ 81AC90D
-	.string "IN SEARCH OF TRAINERS...\p"
-	.string "GABBY: Hi! Today I'm visiting an area\n"
-	.string "near {STR_VAR_1}.\p"
-	.string "We're trying to spot some up-and-coming\n"
-	.string "new talent in the field.\p"
-	.string "Today, we turned our lens on the\n"
-	.string "TRAINER {PLAYER}.\p"
-	.string "There's something about this TRAINER\n"
-	.string "that piqued our interest.$"
+	.string "“트레이너를 찾아서”\p"
+	.string "마리: 네-에! 저는 지금\n"
+	.string "{STR_VAR_1}에 와 있습니다!\p"
+	.string "오늘은 여기서 새로운 재능을\n"
+	.string "발굴할 생각입니다!\p"
+	.string "오늘 제가 주목한\n"
+	.string "트레이너는 {PLAYER}씨!\p"
+	.string "저는 이 트레이너에게서\n"
+	.string "뭔가가 느껴집니다!$"
+	// 『トレ-ナ-を もとめて』ｐ
+	// マリ『は-い わたしは いまｎ
+	// §いに きています!ｐ
+	// きょうは ここで あたらしい さいのうをｎ
+	// はっくつ しようと おもいます!ｐ
+	// きょう わたしが ちゅうもく したｎ
+	// トレ-ナ-は §あさん!ｐ
+	// わたしは この トレ-ナ-にｎ
+	// なにかを かんじます!
 
 gTVGabbyAndTyText2:: @ 81ACA02
-	.string "We've battled {PLAYER} before, but we\n"
-	.string "can attest that the TRAINER has most\l"
-	.string "definitely improved from before.\p"
-	.string "I knew we were onto someone special\n"
-	.string "when we spotted this TRAINER!$"
+	.string "{PLAYER}씨와는 전에\n"
+	.string "배틀해본 적이 있습니다만\p"
+	.string "확실히 전보다\n"
+	.string "강해진 느낌이 듭니다!\p"
+	.string "역시 제가\n"
+	.string "주목하는 트레이너예요!$"
+	// §あさんとは まえにｎ
+	// たたかった ことが あるのですがｐ
+	// かくじつに まえよりｎ
+	// つよく なっている かんじが します!ｐ
+	// さっすが わたしのｎ
+	// ちゅうもく した トレ-ナ-!
 
 gTVGabbyAndTyText3:: @ 81ACAAA
-	.string "The best way to determine how strong\n"
-	.string "a TRAINER is...\p"
-	.string "Well, the fastest way is to battle.\n"
-	.string "And so we began our investigation!\p"
-	.string "... ...\p"
-	.string "That's how we ended up in battle\n"
-	.string "with {PLAYER}.\p"
-	.string "In a dominating performance, we were\n"
-	.string "flattened, rolled up, and tossed aside!\p"
-	.string "{PLAYER} is ruthlessly strong...\p"
-	.string "We asked the TRAINER for a succinct\n"
-	.string "summation of the battle we shared.$"
+	.string "자 그럼 트레이너의 실력을\n"
+	.string "보려면...\p"
+	.string "배틀하는 게 제일 빠르죠!\n"
+	.string "바로 조사를 개시하겠습니다!\p"
+	.string "......\p"
+	.string "그렇게 일단\n"
+	.string "배틀을 해봤습니다만\p"
+	.string "완전히 엉망진창으로 당했습니다!\n"
+	.string "{PLAYER}씨는 역시 강하네요...\p"
+	.string "그래서 배틀한 감상을\n"
+	.string "말해 보자면$"
+	// さて トレ-ナ-の じつりょくをｎ
+	// みるには…ｐ
+	// たたかって みるのが いちばん はやい!ｎ
+	// さっそく ちょうさを かいし します!ｐ
+	// ……ｐ
+	// と いうわけでｎ
+	// たたかって みたの ですがｐ
+	// みごとに ボコボコに されました!ｎ
+	// §あさん やたら つよいですね……ｐ
+	// で たたかった かんそうをｎ
+	// いわせて もらいますと
 
 gTVGabbyAndTyText4:: @ 81ACC07
-	.string "The combination of {STR_VAR_1} and\n"
-	.string "{STR_VAR_3} was divine!\p"
-	.string "The sight of them - {STR_VAR_1} and\n"
-	.string "{STR_VAR_3} - selflessly supporting\l"
-	.string "each other in the thick of battle...\p"
-	.string "It was a marvelous sight to behold!\p"
-	.string "{STR_VAR_2} was the move the TRAINER\n"
-	.string "used last in our battle.\p"
-	.string "The move {STR_VAR_2} is {STR_VAR_1}\n"
-	.string "and {STR_VAR_3}'s sign of friendship!$"
+	.string "{STR_VAR_1}{K_WAGWA} {STR_VAR_3}의\n"
+	.string "콤비는 최고였습니다!\p"
+	.string "{STR_VAR_1}{K_WAGWA} {STR_VAR_3}{K_IGA} 서로\n"
+	.string "도와가며 싸우는 모습...\p"
+	.string "아아 이 얼마나\n"
+	.string "굉장한 광경인가요!\p"
+	.string "저희와의 승부에서\n"
+	.string "마지막으로 썼던 “{STR_VAR_2}”도\p"
+	.string "{STR_VAR_1}{K_WAGWA} {STR_VAR_3}의 우정의\n"
+	.string "“{STR_VAR_2}”인 거군요!$"
+	// §いと §えのｎ
+	// コンビが さいこう でしたね!ｐ
+	// §いと §えが おたがいｎ
+	// たすけあって たたかう すがた……ｐ
+	// あぁ なんてｎ
+	// すばらしいんでしょう!ｐ
+	// わたしたちとの しょうぶでｎ
+	// さいごに つかった 「§う」もｐ
+	// §いと §えの ゆうじょうのｎ
+	// 「§う」なんですね!
 
 gTVGabbyAndTyText5:: @ 81ACD13
-	.string "...I lost confidence in myself as\n"
-	.string "a result of our encounter.\p"
-	.string "We were beaten before we could launch\n"
-	.string "a single attack.\l"
-	.string "Ohhh... Snivel...\p"
-	.string "In spite of that, {PLAYER}'s battles\n"
-	.string "are worth seeing.\p"
-	.string "I recommend confident TRAINERS to\n"
-	.string "challenge {PLAYER}.$"
+	.string "...저 제정신을\n"
+	.string "잃을 뻔했네요\p"
+	.string "한 번 공격할 틈도 없이\n"
+	.string "바로 져버리고 말았습니다\l"
+	.string "아아 훌쩍...\p"
+	.string "그래도 {PLAYER}씨의 배틀은\n"
+	.string "볼 가치가 있었어요!\p"
+	.string "자신 있는 트레이너는 한번\n"
+	.string "배틀해보는 걸 추천드리겠습니다!$"
+	// ……わたくし じしんをｎ
+	// なくして しまいましたｐ
+	// いっかいも こうげきする ひまもなくｎ
+	// すぐに まけて しまいましたｌ
+	// ああ グスン……ｐ
+	// でも §あさんの たたかいはｎ
+	// いっけんのかち あり です!ｐ
+	// じしんの ある トレ-ナ-は いちどｎ
+	// たたかって みることを おすすめ しますよ!
 
 gTVGabbyAndTyText6:: @ 81ACDFA
-	.string "There's only one thing to be said.\n"
-	.string "Don't you dare throw a POKé BALL during\l"
-	.string "a TRAINER battle!\p"
-	.string "{PLAYER} is certainly strong, but has\n"
-	.string "no clue about the basic rules.\p"
-	.string "To our TV audience, I have a request.\p"
-	.string "If you see {PLAYER}, please caution\n"
-	.string "the TRAINER!$"
+	.string "트레이너와 배틀하고 있을 때는\n"
+	.string "몬스터볼을 던지지 마!\l"
+	.string "라고 말하고 싶네요\p"
+	.string "{PLAYER}씨는 승부에 강하지만\n"
+	.string "기본이 안 되어 있군요!\p"
+	.string "TV를 보고 계신 여러분!\p"
+	.string "{PLAYER}씨를 만나면\n"
+	.string "주의를 주세요!$"
+	// トレ-ナ-と たたかって いるときはｎ
+	// モンスタ-ボ-ルを なげるな!ｌ
+	// という ことですｐ
+	// §あさん しょうぶは つよいのにｎ
+	// きほんが なって ませんよ!ｐ
+	// もう テレビを みてる みんな!ｐ
+	// §あさんに あったらｎ
+	// ちゅういして やってね!
 
 gTVGabbyAndTyText7:: @ 81ACEE7
-	.string "{PLAYER} is adept at reading the\n"
-	.string "opponent's actions.\p"
-	.string "The timing of item usage was remarkably\n"
-	.string "effective!$"
+	.string "{PLAYER}씨는 상대의 행동을\n"
+	.string "굉장히 잘 읽더라고요!\p"
+	.string "아이템을 쓰는 타이밍 등이\n"
+	.string "상당히 좋았습니다!$"
+	// §あさん あいての こうどうをｎ
+	// よむのが とても うまいです!ｐ
+	// アイテムを つかう タイミング なんかｎ
+	// なかなかの ものでしたよ!
 
 gTVGabbyAndTyText8:: @ 81ACF49
-	.string "Honestly speaking, I thought that\n"
-	.string "I might even be pretty good.\p"
-	.string "While we did end up losing, we did have\n"
-	.string "a hotly contested battle.\p"
-	.string "But if you're struggling against me,\n"
-	.string "you have a ways to go, {PLAYER}!$"
+	.string "솔직히 제가 꽤\n"
+	.string "강한 건 아닐까 하는 생각이 들었습니다-!\p"
+	.string "마지막엔 결국 져버렸지만\n"
+	.string "좋은 시합이었어요-\p"
+	.string "하지만 저한테 고전하는 정도라니\n"
+	.string "아직 갈 길이 멀군요 {PLAYER}씨!$"
+	// しょうじき わたしも なかなかｎ
+	// つよいかも と おもっちゃい ました-!ｐ
+	// さいごは けっきょく まけちゃった けどｎ
+	// いい しあい だったな-ｐ
+	// でも わたしに くせん してるようじゃｎ
+	// まだまだ ですよ §あさん!
 
 gTVGabbyAndTyText9:: @ 81AD00A
-	.string "After our battle, we asked {PLAYER} for\n"
-	.string "a succinct summary.\p"
-	.string "The TRAINER replied, “{STR_VAR_1}.”\p"
-	.string "{PLAYER}'s POKéMON {STR_VAR_2} and\n"
-	.string "{STR_VAR_3}...\l"
-	.string "And “{STR_VAR_1}”...\p"
-	.string "Mmm! That's deep! There's deep\n"
-	.string "significance behind that quote!\p"
-	.string "It's no surprise - a good TRAINER has\n"
-	.string "good things to say.\p"
-	.string "That's all for today!\n"
-	.string "See you again on our next broadcast!$"
+	.string "대전 후 {PLAYER}씨에게\n"
+	.string "지금 대전한 감상을 물어보니\p"
+	.string "“{STR_VAR_1}”{K_I}라고\n"
+	.string "대답해 주었습니다\p"
+	.string "{PLAYER}씨의 포켓몬인\n"
+	.string "{STR_VAR_2}{K_WAGWA} {STR_VAR_3}\l"
+	.string "그리고 “{STR_VAR_1}”...\p"
+	.string "음-!!\n"
+	.string "뭔가 의미 깊은 말이네요!\p"
+	.string "역시 좋은 트레이너는\n"
+	.string "좋은 말을 하는 법이죠\p"
+	.string "자 그럼 또\n"
+	.string "다음 방송에서 봅시다!$"
+	// たいせんの あと §あさんにｎ
+	// いまの たいせんの かんそうを きくとｐ
+	// 「§い」ってｎ
+	// こたえて くれましたｐ
+	// §あさんの ポケモンのｎ
+	// §うと §えｌ
+	// そして 「§い」……ｐ
+	// ん-!!ｎ
+	// なんか いみのふかい ことば よね!ｐ
+	// やはり いい トレ-ナ-はｎ
+	// いいことを いって くれますねｐ
+	// さて それじゃあ またｎ
+	// じかいの ほうそうで おあい しましょう!

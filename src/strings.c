@@ -934,7 +934,7 @@ const u8 gSystemText_SaveCompleted[] = _("리포트를 작성했습니다!");
 const u8 gSystemText_SaveFailed[] = _("리포트를 작성하는 데\n실패했습니다...");
 const u8 gSystemText_NoSaveFileNoTime[] = _("리포트가 없으므로\n시간을 설정할 수 없습니다!");
 const u8 gSystemText_ClockAdjustmentUsable[] = _("게임 내 시간재생 시스템을\n다시 쓸 수 있게 되었습니다!");
-const u8 gSystemText_Saving[] = _("포켓몬 리포트를 작성하고 있습니다...\n전원을 끄지 않도록 해주십시오");
+const u8 gSystemText_Saving[] = _("포켓몬 리포트를 작성하고 있습니다\n전원을 끄지 않도록 해주십시오");
 
 const u8 gMenuCursorText_Space[] = _(" ");
 const u8 gMenuCursorText_Cursor[] = _("▶");
