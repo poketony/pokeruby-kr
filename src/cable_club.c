@@ -66,10 +66,10 @@ static void sub_8083CA4(u8 taskId);
 static u8 debug_sub_808B850(void);
 #endif
 
-const u8 TrainerCardColorName_Bronze[] = _("BRONZE");
-const u8 TrainerCardColorName_Copper[] = _("COPPER");
-const u8 TrainerCardColorName_Silver[] = _("SILVER");
-const u8 TrainerCardColorName_Gold[] = _("GOLD");
+const u8 TrainerCardColorName_Bronze[] = _("브론즈");
+const u8 TrainerCardColorName_Copper[] = _("코퍼");
+const u8 TrainerCardColorName_Silver[] = _("실버");
+const u8 TrainerCardColorName_Gold[] = _("골드");
 
 const u8 *const gTrainerCardColorNames[] =
 {

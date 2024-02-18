@@ -512,7 +512,6 @@ static void CreateStarterPokemonLabel(u8 prevSelection, u8 selection)
         *(textPtr++) = category[srcIndex];
         srcIndex++;
     }
-    *(textPtr++) = CHAR_SPACE;
 
     // Copy POKEMON string to label
     textPtr = StringCopy(textPtr, gOtherText_Poke);

@@ -1,72 +1,121 @@
 VictoryRoad_1F_Text_19782B:: @ 819782B
-	.string "WALLY: Hi! {PLAYER}!\p"
-	.string "I bet you're surprised to see me here!\p"
-	.string "I made it all the way here, and it's\n"
-	.string "all thanks to you!\p"
-	.string "{PLAYER}, losing to you that time\n"
-	.string "made me stronger!\p"
-	.string "But I'm not going to lose anymore!\p"
-	.string "I'm going to win! For the POKéMON who\n"
-	.string "gave me courage and strength!\p"
-	.string "Okay... Here I come!$"
+	.string "민진: 앗! {PLAYER}님!\p"
+	.string "제가 이런 곳에 있어서\n"
+	.string "놀라셨죠!\p"
+	.string "제가 여기까지 올 수 있었던 건\n"
+	.string "{PLAYER}님 덕분이에요!\p"
+	.string "그때 {PLAYER}님에게 져서\n"
+	.string "전 강해질 수 있었으니까요!\p"
+	.string "...하지만!\n"
+	.string "전 이제 안 질 거예요\p"
+	.string "제게 용기와 건강을 준\n"
+	.string "포켓몬을 위해서라도 이기겠어요!\p"
+	.string "그럼... 갑니다!$"
+	// ミツル『あっ! §あさん!ｐ
+	// ぼくが こんな ところに いるなんてｎ
+	// おどろいた でしょ!ｐ
+	// ぼくが ここまで これたのはｎ
+	// §あさんの おかげだよ!ｐ
+	// あのとき §あさんに まけたからｎ
+	// ぼくは つよく なれたんだ!ｐ
+	// ……だけど!ｎ
+	// ぼくは もう まけないｐ
+	// ぼくに ゆうきと げんきを くれたｎ
+	// ポケモンの ためにも かつんだ!ｐ
+	// それでは…… いきますよ!
 
 VictoryRoad_1F_Text_197943:: @ 8197943
-	.string "Wow!\n"
-	.string "{PLAYER}, you are strong, after all!$"
+	.string "우와아!\n"
+	.string "역시 {PLAYER}님은 강하네요!$"
+	// うわぁ!ｎ
+	// やっぱり §あさんは つよいよ!
 
 VictoryRoad_1F_Text_197967:: @ 8197967
-	.string "WALLY: I couldn't beat you today,\n"
-	.string "{PLAYER}, but one of these days, I'll\l"
-	.string "catch up to you!$"
+	.string "민진: ...이번에는\n"
+	.string "{PLAYER}님을 이기지 못했지만\l"
+	.string "언젠가 반드시 뒤쫓아 갈 거예요!$"
+	// ミツル『…… こんかいはｎ
+	// §あさんに かてなかった けどｌ
+	// いつか きっと おいついて みせるからね!
 
 VictoryRoad_1F_Text_1979BA:: @ 81979BA
-	.string "WALLY: Hi! {PLAYER}!\p"
-	.string "I've gotten stronger since that last\n"
-	.string "time! I wanted to show you, {PLAYER}!\p"
-	.string "Okay... Here I come!$"
+	.string "민진: 앗! {PLAYER}님!\p"
+	.string "저 그때보다 강해졌어요!\n"
+	.string "그걸 {PLAYER}님에게\l"
+	.string "보여 주고 싶어요!\p"
+	.string "그럼... 갑니다!$"
+	// ミツル『あっ! §あさん!ｐ
+	// ぼく あれから つよくなった はずだよ!ｎ
+	// それを §あさんにｌ
+	// みてもらいたいんだ!ｐ
+	// それでは…… いきますよ!
 
 VictoryRoad_1F_Text_197A23:: @ 8197A23
-	.string "Wow!\n"
-	.string "{PLAYER}, you are strong, after all!$"
+	.string "우와아!\n"
+	.string "역시 {PLAYER}님은 강하네요!$"
+	// うわぁ!ｎ
+	// やっぱり §あさんは つよいよ!
 
 VictoryRoad_1F_Text_197A47:: @ 8197A47
-	.string "WALLY: I couldn't beat you this time,\n"
-	.string "too... But one of these days, {PLAYER},\l"
-	.string "I'm going to catch up to you...\p"
-	.string "And challenge the POKéMON LEAGUE!$"
+	.string "민진: ...이번에는\n"
+	.string "{PLAYER}님을 이기지 못했지만\l"
+	.string "언젠가 반드시 뒤쫓아 가서...\p"
+	.string "포켓몬리그에 도전할 거예요!$"
+	// ミツル『…… こんかいもｎ
+	// §あさんに かてなかった けどｌ
+	// いつか きっと おいついて……ｐ
+	// ポケモンリ-グに ちょうせん するんだ!
 
 VictoryRoad_1F_Text_197AD1:: @ 8197AD1
-	.string "I've made it this far a couple times,\n"
-	.string "but the last stretch is so long...$"
+	.string "여기까지는 어떻게든 왔지만\n"
+	.string "앞으로가 엄청 멀어...$"
+	// ここまでは なんとか これたがｎ
+	// あと すこしが とても とおいよ……
 
 VictoryRoad_1F_Text_197B1A:: @ 8197B1A
-	.string "My dream ends here again...$"
+	.string "여기서 끝난 건가...$"
+	// ここで おわったか……
 
 VictoryRoad_1F_Text_197B36:: @ 8197B36
-	.string "You've made it this far. Keep the\n"
-	.string "momentum going and become the\l"
-	.string "CHAMPION! If anyone can, it's you!$"
+	.string "여기까지 왔으면\n"
+	.string "기세를 몰아서 챔피언이 되라고!\l"
+	.string "너라면 할 수 있을 거야!$"
+	// ここまで きたならｎ
+	// いきおいで チャンピオンに なれよ!ｌ
+	// きみなら できるさ!
 
 VictoryRoad_1F_Text_197B99:: @ 8197B99
-	.string "I didn't come all this way to lose now.\n"
-	.string "That possibility doesn't exist!$"
+	.string "모처럼 여기까지 왔는데\n"
+	.string "이제 와서 진다는 건 말이 안 되지!$"
+	// せっかく ここまで きたんだｎ
+	// いまさら まけるなんて ありえないよ!
 
 VictoryRoad_1F_Text_197BE1:: @ 8197BE1
-	.string "Impossible...\n"
-	.string "I lost?$"
+	.string "설마...\n"
+	.string "진 건가...?$"
+	// まさか……ｎ
+	// まけたのか……?
 
 VictoryRoad_1F_Text_197BF7:: @ 8197BF7
-	.string "I lost here...\p"
-	.string "That means I lack the qualifications\n"
-	.string "to become the CHAMPION...$"
+	.string "여기서 졌다...\p"
+	.string "졌다는 것은 아직 챔피언이 될\n"
+	.string "자격이 없다는 건가...$"
+	// ここで まけた……ｐ
+	// ということは まだ チャンピオンに なるｎ
+	// しかくが なかったと いうことか……
 
 VictoryRoad_1F_Text_197C45:: @ 8197C45
-	.string "This seemingly infinite and harsh road\n"
-	.string "lives up to its name of VICTORY.$"
+	.string "이 끝없이 험한 길이야말로\n"
+	.string "바로 챔피언으로 향하는 길인 거야!$"
+	// この はてしなく けわしい みち こそｎ
+	// まさに チャンピオンへの みち なのよ!
 
 VictoryRoad_1F_Text_197C8D:: @ 8197C8D
-	.string "Your battle style is fantastic...$"
+	.string "멋진 실력이야...$"
+	// すばらしい たたかいかた ね……
 
 VictoryRoad_1F_Text_197CAF:: @ 8197CAF
-	.string "You seem to have the potential for\n"
-	.string "becoming the CHAMPION.$"
+	.string "너에겐 챔피언이 될\n"
+	.string "가능성이 있는 것 같구나$"
+	// あなたには チャンピオンに なれるｎ
+	// かのうせいが あるみたいね

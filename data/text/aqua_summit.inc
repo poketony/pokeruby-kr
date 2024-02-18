@@ -1,156 +1,275 @@
 UnknownString_81B50C3: @ 81B50C3
-	.string "I'll show you exactly how scary\n"
-	.string "TEAM AQUA can be!$"
+	.string "아쿠아단의 진정한 무서움을\n"
+	.string "네게 알려주지!$"
+	// アクアだんの ほんとうの おそろしさｎ
+	// おまえに おしえてやるぜ!
 
 UnknownString_81B50F5: @ 81B50F5
-	.string "So you think you can stand up alone\n"
-	.string "to TEAM AQUA's might...$"
+	.string "그렇군 혼자서 아쿠아단에\n"
+	.string "맞설 생각인가$"
+	// なるほど ひとりで アクアだんにｎ
+	// さからおうって わけか
 
 UnknownString_81B5131: @ 81B5131
-	.string "Yeah, so you are strong...\n"
-	.string "But there're a lot of us!$"
+	.string "확실히 넌 강하군...\n"
+	.string "하지만 우리들은 아주 많다고!$"
+	// たしかに おまえは つよいな……ｎ
+	// だけど おれたちは たくさん いるんだぞ!
 
 UnknownString_81B5166: @ 81B5166
-	.string "What's up with you?\n"
-	.string "What does a single kid expect to do?$"
+	.string "뭐야 너?\n"
+	.string "꼬맹이가 혼자서 뭘 하려고?$"
+	// なんだ おまえ?ｎ
+	// こどもが ひとりで なにしよう ってんだ?
 
 UnknownString_81B519F: @ 81B519F
-	.string "Dang...\n"
-	.string "Too strong...$"
+	.string "젠장 강하잖아...$"
+	// くそう つよいな……
 
 UnknownString_81B51B5: @ 81B51B5
-	.string "You don't know anything.\n"
-	.string "Quit messing around with us!$"
+	.string "아무것도 모르는 주제에\n"
+	.string "우리를 방해하지 말라고!$"
+	// なにも しらないくせにｎ
+	// おれたちの じゃまを するんじゃないぜ!
 
 UnknownString_81B51EB: @ 81B51EB
-	.string "Hey, I remember you from MT. CHIMNEY!\n"
-	.string "It's payback time!$"
+	.string "너... 굴뚝산에서 만났었지!\n"
+	.string "그때의 복수를 해주마!$"
+	// おまえ…… えんとつやまで あったな!ｎ
+	// その しかえし させてもらうぜ!
 
 UnknownString_81B5224: @ 81B5224
-	.string "Urgggh...\n"
-	.string "Beaten by some kid again!$"
+	.string "크으윽...\n"
+	.string "또 꼬맹이한테 져버렸다$"
+	// ぐぐぐ……ｎ
+	// ま-た こどもに まけちまったよ
 
 UnknownString_81B5248: @ 81B5248
-	.string "Heh, it doesn't matter!\n"
-	.string "We bought ourselves some time!\p"
-	.string "The BOSS should have snatched what\n"
-	.string "he was after!$"
+	.string "뭐 됐어 시간은 벌었으니까!\n"
+	.string "리더는 여기 온 목적을\n"
+	.string "이미 이루셨겠지!$"
+	// まあいいさ じかんは かせげた!ｐ
+	// リ-ダ-の もくてきの ものｎ
+	// うばえた はずだぜ!
 
 UnknownString_81B52B0: @ 81B52B0
-	.string "ARCHIE: Not you again...\p"
-	.string "You've impeded our plans repeatedly,\n"
-	.string "but this time you're too late.\p"
-	.string "The RED ORB that rested atop\n"
-	.string "MT. PYRE...\l"
-	.string "I, ARCHIE, claim it as mine!\p"
-	.string "Fufufu... Finally, I can realize my\n"
-	.string "grand design...\p"
-	.string "Come on, crew!\n"
-	.string "It's SLATEPORT next!$"
+	.string "아강: 또 네 녀석인가...\p"
+	.string "네게는 여태까지 몇 번이나\n"
+	.string "방해를 받았지만\l"
+	.string "이번만큼은 늦은 모양이군!\p"
+	.string "이 송화산에 모셔져 있던\n"
+	.string "주홍구슬...\l"
+	.string "이 아강이 똑똑히 가져가마!\p"
+	.string "후후후... 이걸로 나의 목적도\n"
+	.string "달성할 수 있다...\p"
+	.string "다음은 잿빛도시다!\n"
+	.string "서둘러라!!$"
+	// アオギリ『また きみか……ｐ
+	// きみには これまで なんどもｎ
+	// じゃまを されたがｌ
+	// こんど ばかりは おそかった ようだな!ｐ
+	// この おくりびやまに まつられていたｎ
+	// べにいろのたま……ｌ
+	// たしかに この アオギリが いただいた!ｐ
+	// フフフ…… これで わたしの もくてきもｎ
+	// たっせい できる……ｐ
+	// つぎは カイナ だ!ｎ
+	// いそぐぞ!!
 
 UnknownString_81B53AB: @ 81B53AB
-	.string "Oh, no...\n"
-	.string "This cannot happen...\p"
-	.string "How could they take the RED ORB?\p"
-	.string "The BLUE ORB and RED ORB must never\n"
-	.string "be separated. They belong together.\p"
-	.string "... ... ... ... ... ... ... ...\n"
-	.string "Hmm...\p"
-	.string "Fine!\n"
-	.string "You take the remaining BLUE ORB.\p"
-	.string "Please take after that foul man and\n"
-	.string "get the other ORB back!$"
+	.string "아아 어쩌면 좋을꼬...!\p"
+	.string "주홍구슬을...\n"
+	.string "빼앗겨 버릴 줄이야...\p"
+	.string "주홍구슬과 쪽빛구슬이\n"
+	.string "서로 떨어져 버리다니\l"
+	.string "결코 있어선 안 될 일이거늘...\p"
+	.string "...... ...... ......\n"
+	.string "으음...\p"
+	.string "그래! 자네에게 남겨진\n"
+	.string "쪽빛구슬을 맡기겠네\p"
+	.string "방금 전 남자를 쫓아서\n"
+	.string "구슬을 되찾아주게나...!$"
+	// ああ なんという ことじゃ……!ｐ
+	// べにいろのたま が……ｎ
+	// うばわれて しまうとは……ｐ
+	// べにいろのたま と あいいろのたま がｎ
+	// はなればなれに なって しまうなどｌ
+	// けっして あっては ならないこと……ｐ
+	// ……… ……… ………ｎ
+	// ううむ……ｐ
+	// よし! おまえさんに のこされたｎ
+	// あいいろのたまを あずけようｐ
+	// さっきの おとこを おいかけてｎ
+	// たまを とりかえして おくれ……!
 
 UnknownString_81B54BE: @ 81B54BE
-	.string "The BLUE ORB you have been entrusted\n"
-	.string "with and the stolen RED ORB...\p"
-	.string "They must never be apart...\n"
-	.string "Something terrible will happen...$"
+	.string "자네에게 준 쪽빛구슬과\n"
+	.string "빼앗긴 주홍구슬...\p"
+	.string "따로 떨어져 있으면\n"
+	.string "분명 안 좋은 일이 일어날 게야...$"
+	// おまえさんに わたした あいいろのたまとｎ
+	// うばわれた べにいろのたま……ｐ
+	// はなればなれ ではｎ
+	// きっと よくないことが おこる……
 
 UnknownString_81B5540: @ 81B5540
-	.string "So...\n"
-	.string "KYOGRE has awoken...\p"
-	.string "The wondrous ORB that is said to have\n"
-	.string "becalmed the raging KYOGRE...\l"
-	.string "It is the BLUE ORB you bear.\p"
-	.string "That BLUE ORB was found buried inside\n"
-	.string "the CAVE OF ORIGIN in SOOTOPOLIS...\p"
-	.string "There is perhaps a link between\n"
-	.string "KYOGRE and the CAVE OF ORIGIN...$"
+	.string "그렇구나...\n"
+	.string "가이오가가 눈을 떴다고...\p"
+	.string "일찍이 가이오가의 분노를\n"
+	.string "잠재우는 신비한 구슬이 바로\l"
+	.string "그 쪽빛구슬이라고 전해지고 있지...\p"
+	.string "그리고 그 구슬을 발견한 곳이\n"
+	.string "루네시티에 있는 각성의 사당...\p"
+	.string "가이오가와 각성의 사당은\n"
+	.string "무슨 관계가 있을지도 모르겠구먼...$"
+	// そうか……ｎ
+	// カイオ-ガが めざめたのか……ｐ
+	// かつて カイオ-ガの いかりをｎ
+	// しずめた ふしぎな たま というのがｌ
+	// その あいいろのたま といわれておる……ｐ
+	// そして その たまが ほりだされたのはｎ
+	// ルネにある めざめのほこら……ｐ
+	// カイオ-ガと めざめのほこら にはｎ
+	// なにかしら かんけいが あるのかもな……
 
 UnknownString_81B5647: @ 81B5647
-	.string "That man, he returned the RED ORB.\p"
-	.string "Are you going to return the BLUE ORB\n"
-	.string "to its rightful place, too?$"
+	.string "방금 전 남자\n"
+	.string "주홍구슬을 돌려주었다네\p"
+	.string "자네도\n"
+	.string "쪽빛구슬을 돌려주지 않겠나?$"
+	// さっきの おとこｎ
+	// べにいろのたまを かえしに きよったｐ
+	// おまえさんもｎ
+	// あいいろのたまを かえすのかい?
 
 UnknownString_81B56AB: @ 81B56AB
-	.string "What's that?!\p"
-	.string "If the balance is not restored, there\n"
-	.string "is no telling what could happen.\p"
-	.string "You will return the BLUE ORB to its\n"
-	.string "rightful place, yes?$"
+	.string "뭐라고!?\n"
+	.string "이대로 균형이 무너진 채라면\l"
+	.string "무슨 일이 일어날지 모르는데?\p"
+	.string "자네\n"
+	.string "쪽빛구슬을 돌려놓을 거지?$"
+	// なんと!?ｎ
+	// このまま バランスが くずれた ままではｌ
+	// なにが おきるか わからんぞよ?ｐ
+	// おまえさんｎ
+	// あいいろのたまを もどすじゃろう?
 
 UnknownString_81B5739: @ 81B5739
-	.string "{PLAYER} handed the BLUE ORB to the\n"
-	.string "old woman.$"
+	.string "{PLAYER}{K_EUNNEUN} 할머니에게\n"
+	.string "쪽빛구슬을 건넸다!$"
+	// §あは ろうばにｎ
+	// あいいろのたまを わたした!
 
 UnknownString_81B5762: @ 81B5762
-	.string "Yes...\n"
-	.string "The two ORBS should remain here.\p"
-	.string "It is how it should be for the good\n"
-	.string "of all HOENN...$"
+	.string "그래...\n"
+	.string "2개의 구슬은 여기에 놓아두마...\p"
+	.string "그게 이 호연을 위해서도\n"
+	.string "가장 좋을 게야...$"
+	// うむ……ｎ
+	// 2つの たまは ここに おいておこう……ｐ
+	// それが このホウエンの ためにもｎ
+	// いちばん よい すがた だろうて……
 
 UnknownString_81B57BE: @ 81B57BE
-	.string "The spirit of the sea...\p"
-	.string "That is what KYOGRE is said to be in\n"
-	.string "POKéMON form...\p"
-	.string "In the same manner that we and POKéMON\n"
-	.string "have life, the sea is alive...\p"
-	.string "KYOGRE has taught us that...$"
+	.string "바다의 화신...\n"
+	.string "그것이 가이오가의 정체라고\l"
+	.string "전해지고 있단다...\p"
+	.string "우리들 인간이나 포켓몬에게\n"
+	.string "생명이 있는 것처럼\l"
+	.string "이 바다 역시 살아있다는 걸...\p"
+	.string "가이오가는 우리에게\n"
+	.string "알려주려고 했던 거겠지...$"
+	// うみの けしん……ｎ
+	// それが カイオ-ガの しょうたい ともｌ
+	// いわれておる……ｐ
+	// わしら にんげんや ポケモンにｎ
+	// いのちが あるようにｌ
+	// この うみだって いきている……ｐ
+	// カイオ-ガは わしたちに そのことをｎ
+	// おしえて くれたのじゃろう……
 
 UnknownString_81B586F: @ 81B586F
-	.string "MT. PYRE is where we calm the spirits\n"
-	.string "of POKéMON that have passed on...\p"
-	.string "This is a high place where one can\n"
-	.string "see all of HOENN...\p"
-	.string "The disembodied spirits of POKéMON\n"
-	.string "must find solace here...\p"
-	.string "Is it coincidence that you are here...\p"
-	.string "Will you hear out my tale? A tale long\n"
-	.string "told in the HOENN region?$"
+	.string "송화산은 포켓몬의 영혼을\n"
+	.string "위로하기 위한 곳...\p"
+	.string "여기는 높기 때문에\n"
+	.string "호연지방을 한눈에 볼 수 있어서\l"
+	.string "포켓몬들의 영혼도\l"
+	.string "평온함을 느낄 수 있는 거겠지...\p"
+	.string "자네가 여기로 온 것도\n"
+	.string "무언가의 인연...\p"
+	.string "호연지방에 전해지는 이야기를\n"
+	.string "듣고 가게나...$"
+	// おくりびやまは ポケモンの たましいをｎ
+	// なぐさめる ための ところ……ｐ
+	// ここは たかい ばしょに あってｎ
+	// ホウエンを みわたす ことが できるからｌ
+	// ポケモンたちの たましいもｌ
+	// やすらぎを おぼえるの じゃろう……ｐ
+	// おまえさんが ここに きたのもｎ
+	// なにかの えん……ｐ
+	// ホウエンちほうに つたわる はなしをｎ
+	// きいて いきなされ……
 
 UnknownString_81B5992: @ 81B5992
-	.string "It happened long, long ago...\p"
-	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the sea\l"
-	.string "and the POKéMON of the land...\p"
-	.string "The POKéMON of the sea raised huge\n"
-	.string "waves and carved out oceans...\p"
-	.string "The POKéMON of the land raised\n"
-	.string "mountains and created continents...\p"
-	.string "Their fierce duel raged without end.\p"
-	.string "The world was engulfed in massive\n"
-	.string "infernos and vicious storms.\p"
-	.string "The BLUE ORB and the RED ORB brought\n"
-	.string "an end to the calamity.\p"
-	.string "Light poured from the two ORBS and\n"
-	.string "becalmed the enraged adversaries.\p"
-	.string "The pair, made docile, dove deep into\n"
-	.string "the sea where eventually they\l"
-	.string "disappeared...$"
+	.string "멀고도 먼 옛날...\p"
+	.string "세계에선 바다와 땅의 포켓몬이\n"
+	.string "격렬한 싸움을 벌이고 있었다\p"
+	.string "바다의 포켓몬은\n"
+	.string "거센 파도를 일으켜 바다를 넓히고\p"
+	.string "땅의 포켓몬은\n"
+	.string "대지를 일으켜 세워 땅을 넓혔지\p"
+	.string "2마리의 싸움은 끝나지 않아\n"
+	.string "이 세계는 활활 타오르는 불꽃과\l"
+	.string "휘몰아치는 폭풍으로 휩싸였다네\p"
+	.string "그것을 잠재운 것이\n"
+	.string "쪽빛구슬과 주홍구슬...\p"
+	.string "두 개의 구슬에서 퍼져나간 빛이\n"
+	.string "2마리의 분노를 잠재웠지\p"
+	.string "그리고 얌전해진 2마리는\n"
+	.string "해저 깊은 곳으로 들어가\l"
+	.string "이윽고 그 모습을 감추었다는군...$"
+	// とおい とおい おおむかしの こと……ｐ
+	// せかいでは うみと りくの ポケモンがｎ
+	// はげしい たたかいを くりひろげていたｐ
+	// うみの ポケモンはｎ
+	// あらなみを おこして うみを ひろげｐ
+	// りくの ポケモンはｎ
+	// だいちを もりあげ じめんを ひろげたｐ
+	// 2ひきの たたかいは おわることなくｎ
+	// この せかいは もえさかる ほのおとｌ
+	// ふきあれる あらしで うめつくされたｐ
+	// それを しずめたのがｎ
+	// あいいろのたま と べにいろのたま……ｐ
+	// ふたつの たまから ひろがる ひかりがｎ
+	// 2ひきの いかりを しずめたｐ
+	// そして おとなしくなった 2ひきはｎ
+	// かいてい ふかく もぐっていきｌ
+	// やがて そのすがたを けしたのじゃ……
 
 UnknownString_81B5BD7: @ 81B5BD7
-	.string "I see...\n"
-	.string "Well, that, too, is fine...$"
+	.string "그런가...\n"
+	.string "뭐 그것도 좋겠지...$"
+	// そうかね……ｎ
+	// まあ それも よいじゃろう……
 
 UnknownString_81B5BFC: @ 81B5BFC
-	.string "ARCHIE: You...\n"
-	.string "So you stopped KYOGRE...\p"
-	.string "I shouldn't be surprised...\p"
-	.string "I understand now that humans cannot\n"
-	.string "freely control the balance between\l"
-	.string "the land and the sea...\p"
-	.string "So I have come to return the\n"
-	.string "RED ORB...\p"
-	.string "I doubt that we will cross paths again...\n"
-	.string "Farewell...$"
+	.string "아강: 네가...\n"
+	.string "가이오가를...\p"
+	.string "역시나로군...\p"
+	.string "어차피 인간은\n"
+	.string "바다와 대지의 균형을\l"
+	.string "자유롭게 조종할 수 없어...\p"
+	.string "그래서 여기에\n"
+	.string "주홍구슬을 돌려주러 왔다...\p"
+	.string "이제 너와 만날 일은 없겠지...\n"
+	.string "작별이다...$"
+	// アオギリ『きみが……ｎ
+	// カイオ-ガを……ｐ
+	// さすが だな……ｐ
+	// しょせん にんげん にはｎ
+	// うみと だいちの バランスをｌ
+	// じゆうに あやつる なんて できない……ｐ
+	// だから ここにｎ
+	// べにいろのたまを かえしに きた……ｐ
+	// もう きみと あうことは ないだろう……ｎ
+	// さらば だ……

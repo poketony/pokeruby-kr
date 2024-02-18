@@ -1,17 +1,25 @@
 VerdanturfTown_Mart_Text_1781C9:: @ 81781C9
-	.string "For any POKéMON match, X SPECIAL\n"
-	.string "is crucial.\p"
-	.string "It jacks up the power of some moves\n"
-	.string "even though it's only for one battle.$"
+	.string "포켓몬 승부에\n"
+	.string "스페셜업은 빠질 수 없지!\p"
+	.string "배틀 때만이라고는 해도\n"
+	.string "기술의 위력이 올라가거든!$"
+	// ポケモン しょうぶにｎ
+	// スペシャルアップは かかせない!ｐ
+	// たたかいの ときだけ とはいえｎ
+	// わざの いりょくが あがるんだからな!
 
 VerdanturfTown_Mart_Text_178240:: @ 8178240
-	.string "They don't sell any items that will let\n"
-	.string "you win CONTESTS...\p"
-	.string "It means you have to raise POKéMON\n"
-	.string "diligently on an everyday basis.$"
+	.string "콘테스트에서 우승하게 해 주는\n"
+	.string "도구 같은 건 팔지 않는 건가...\p"
+	.string "역시 평소에도\n"
+	.string "소중히 키우지 않으면 안 되겠구먼$"
+	// コンテストに かてるようなｎ
+	// どうぐは うってない ですねえ……ｐ
+	// やはり ふだんからｎ
+	// だいじに そだてないと ダメなんですねえ
 
 VerdanturfTown_Mart_Text_1782C0:: @ 81782C0
-	.string "The NEST BALL works better on\n"
-	.string "weakened POKéMON.\p"
-	.string "VERDANTURF is the only place you can\n"
-	.string "buy it.$"
+	.string "잔디마을에서만 살 수 있는 네스트볼은\n"
+	.string "약한 포켓몬일수록 잡기 쉽게 해줘$"
+	// シダケでしか かえない ネストボ-ルｎ
+	// よわい ポケモンほど つかまえ やすくなるの

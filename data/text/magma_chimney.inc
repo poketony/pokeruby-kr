@@ -1,143 +1,239 @@
 MtChimney_Text_1B37BB:: @ 81B37BB
-	.string "The power contained in the METEORITE...\p"
-	.string "By amplifying its power with this\n"
-	.string "machine, MT. CHIMNEY's volcanic activity\l"
-	.string "will instantly intensify...\p"
-	.string "Fufufu... The volcano will erupt, spewing\n"
-	.string "lava that will cool and harden.\l"
-	.string "It will expand the landmass...$"
+	.string "운석에 숨겨진 힘\p"
+	.string "이 장치로 증폭된다면\n"
+	.string "눈 깜짝할 사이에 굴뚝산의\l"
+	.string "화산 활동은 활발해진다...\p"
+	.string "후후후... 화산이 분화해\n"
+	.string "이윽고 용암이 흘러서 굳으면\l"
+	.string "대지가 넓어지겠지...$"
+	// いんせきに ひめられた ちからｐ
+	// この そうちで ぞうふく すればｎ
+	// たちまちの うちに えんとつやまのｌ
+	// かざん かつどうは かっぱつになる……ｐ
+	// フフフ…… かざんは ふんかしてｎ
+	// やがて ようがんが ひえて かたまりｌ
+	// だいちが ふえるだろう……
 
 MtChimney_Text_1B38B3:: @ 81B38B3
-	.string "MAXIE: You again...\p"
-	.string "Now listen.\n"
-	.string "We humans have grown on dry land.\p"
-	.string "The land is everything!\n"
-	.string "Its importance is paramount!\p"
-	.string "That is why we of TEAM MAGMA are\n"
-	.string "committed to expanding the landmass.\p"
-	.string "It will create space for new species\n"
-	.string "of POKéMON to evolve.\p"
-	.string "It will give us humans more space to\n"
-	.string "advance.\p"
-	.string "That is TEAM MAGMA's vision!\p"
-	.string "I can't allow an ignorant child like\n"
-	.string "you to get in our way.\p"
-	.string "I, MAXIE, will show you the\n"
-	.string "consequences of meddling!$"
+	.string "마적: 또 네 녀석인가...\p"
+	.string "... 알겠나 우리\n"
+	.string "인간은 대지에서 진화해 왔다!\p"
+	.string "그래 대지야말로 전부다!\p"
+	.string "그래서 우리 마그마단은\n"
+	.string "대지를 넓혀서\l"
+	.string "새로운 포켓몬을 진화시킨다!\p"
+	.string "인간이 발전하기 위한\n"
+	.string "장소도 넓힌다!\p"
+	.string "이것이야말로 마그마단의 이상!\n"
+	.string "아무것도 모르는 너 같은 꼬마에게\l"
+	.string "방해받을 수는 없다\p"
+	.string "방해한다면 어떻게 되는지\n"
+	.string "이 마적이 똑똑히 보여주마!$"
+	// マツブサ『また きみか……ｐ
+	// …… いいか われわれｎ
+	// にんげんは だいちで しんか してきた!ｐ
+	// そう だいちこそが すべて!ｐ
+	// だから われわれ マグマだんはｎ
+	// だいちを ふやすことでｌ
+	// あらたな ポケモンを しんか させる!ｐ
+	// にんげんが はってん するためのｎ
+	// ばしょも ふやす!ｐ
+	// これこそが マグマだんの りそう!ｎ
+	// なにも しらない きみのような こどもにｌ
+	// じゃま させる わけには いかないｐ
+	// じゃまを するなら どうなるかｎ
+	// この マツブサが わからせて あげよう!
 
 MtChimney_Text_1B3A68:: @ 81B3A68
-	.string "What?!\p"
-	.string "I, MAXIE, was caught off guard?!$"
+	.string "뭣이!?\p"
+	.string "다른 사람도 아니고 이 마적이\n"
+	.string "방심한 건가!?$"
+	// なに!?ｐ
+	// この マツブサとも あろう ものがｎ
+	// ゆだん したか!?
 
 MtChimney_Text_1B3A90:: @ 81B3A90
-	.string "MAXIE: Ah, whatever.\n"
-	.string "I will give up our plans for MT. CHIMNEY\l"
-	.string "for the time being...\p"
-	.string "But no one can ever stop us!\n"
-	.string "TEAM MAGMA will prevail!\p"
-	.string "Don't you ever forget that!$"
+	.string "마적: 뭐 상관없다\n"
+	.string "이 굴뚝산은 일단\l"
+	.string "포기하도록 하지...\p"
+	.string "하지만 우리 마그마단의 활동은\n"
+	.string "아무도 멈출 수 없다!\p"
+	.string "그것만은 잊지 마라!$"
+	// マツブサ『まあ いいｎ
+	// この えんとつやまは ひとまずｌ
+	// あきらめよう……ｐ
+	// だが われわれ マグマだんの かつどうをｎ
+	// とめることなど だれにも できない!ｐ
+	// それだけは わすれないで もらおう!
 
 MtChimney_Text_1B3B36:: @ 81B3B36
-	.string "Hehehe!\p"
-	.string "So you've come all the way here!\p"
-	.string "But you're too late!\n"
-	.string "I've already delivered the METEORITE\l"
-	.string "from METEOR FALLS to the BOSS!$"
+	.string "우효효!\p"
+	.string "너 여기까지 온 건가!\p"
+	.string "하지만 늦었다고\n"
+	.string "유성의 폭포에서 찾은\l"
+	.string "운석은 리더에게 넘겼으니까 말이야!$"
+	// ウヒョヒョ!ｐ
+	// おまえ ここまで きたのか!ｐ
+	// だけど おそかったぜｎ
+	// りゅうせいのたきで みつけたｌ
+	// いんせきは リ-ダ-に わたしたからな!
 
 MtChimney_Text_1B3BB8:: @ 81B3BB8
-	.string "Hehehe...\n"
-	.string "So I lost...\p"
-	.string "I'm sure glad I never took you on back\n"
-	.string "at METEOR FALLS.$"
+	.string "우효효...\n"
+	.string "져버렸나...\p"
+	.string "그때 유성의 폭포에서\n"
+	.string "싸우지 않아서 다행이군$"
+	// ウヒョヒョ……ｎ
+	// まけて しまったかｐ
+	// あのとき りゅうせいのたきでｎ
+	// たたかわなくて よかったぜ
 
 MtChimney_Text_1B3C07:: @ 81B3C07
-	.string "Hehehe!\p"
-	.string "You might have beaten me, but you don't\n"
-	.string "stand a chance against the BOSS!\p"
-	.string "If you get lost now, you won't have to\n"
-	.string "face a sound whipping!$"
+	.string "우효효...!\p"
+	.string "나를 이겨도\n"
+	.string "리더는 이길 수 없을걸!\p"
+	.string "빨리 돌아가야\n"
+	.string "괴로운 경험을 하지 않을 거다$"
+	// ウヒョヒョ……!ｐ
+	// おれに かててもｎ
+	// リ-ダ-には かてないぜ!ｐ
+	// さっさと かえったほうがｎ
+	// いたい おもい しなくて すむぜ
 
 MtChimney_Text_1B3C96:: @ 81B3C96
-	.string "We of TEAM MAGMA are working hard for\n"
-	.string "everyone's sake.\p"
-	.string "Like, if there's more land, there'd be\n"
-	.string "more places to live.\l"
-	.string "Everyone'd be happy!$"
+	.string "우리 마그마단은\n"
+	.string "모두를 위해 노력하고 있는 거다!\p"
+	.string "대지가 늘어나면\n"
+	.string "살 수 있는 곳이 늘어나서\l"
+	.string "모두가 기뻐할 테니까 좋잖아!$"
+	// おれら マグマだんはｎ
+	// みんなの ために がんばってるんだ!ｐ
+	// だって だいちが ふえればｎ
+	// すむところが ふえるからｌ
+	// みんな うれしいだろ!
 
 MtChimney_Text_1B3D1E:: @ 81B3D1E
-	.string "Hunh?\n"
-	.string "What do you mean I lost?$"
+	.string "어라-?\n"
+	.string "나 진 건가-!?$"
+	// あれ-?ｎ
+	// おれ まけたの-!?
 
 MtChimney_Text_1B3D3D:: @ 81B3D3D
-	.string "Our BOSS says, “It will make everyone\n"
-	.string "happy.”\p"
-	.string "But why does everyone keep getting\n"
-	.string "in our way?$"
+	.string "우리들의 리더가\n"
+	.string "“모두가 기뻐할 일”이라고\l"
+	.string "했단 말이다!\p"
+	.string "그런데 왜 다들 방해하는 거지?$"
+	// おれらの リ-ダ-はｎ
+	// 「みんなが よろこぶ ことだ」ってｌ
+	// いってるんだ!ｐ
+	// なのに なんで みんな ジャマするんだ?
 
 MtChimney_Text_1B3D9A:: @ 81B3D9A
-	.string "That annoying TEAM AQUA...\n"
-	.string "They always mess with our plans!$"
+	.string "아쿠아단 놈들...\n"
+	.string "일일이 우릴 방해하다니!$"
+	// アクアだんの やつらめ……ｎ
+	// いちいち おれたちの じゃまを しやがって!
 
 MtChimney_Text_1B3DD6: @ 81B3DD6
-	.string "METEORITES pack amazing power!$"
+	.string "운석에는 굉장한 파워가 있어!$"
+	// いんせきには すごい パワ-が あるのだ!
 
 MtChimney_Text_1B3DF5:: @ 81B3DF5
-	.string "Go! Stomp TEAM AQUA!\n"
-	.string "And expand the land!$"
+	.string "가랏-! 아쿠아단을 부숴버려!\n"
+	.string "아무튼 대지를 늘리는 거야!$"
+	// いけ-! アクアだんを ぶっつぶせ!ｎ
+	// そして だいちを ふやすのだ!
 
 MtChimney_Text_1B3E1F:: @ 81B3E1F
-	.string "Stay out of our way, okay?\p"
-	.string "We're trying to enlarge the landmass\n"
-	.string "for the good of everybody!$"
+	.string "알겠어? 우릴 방해하지 마!\p"
+	.string "우린 모두를 위해서\n"
+	.string "대지를 늘리려고 하는 거니까!$"
+	// いいか おれたちの じゃまを するな!ｐ
+	// おれたちは みんなの ためにｎ
+	// だいちを ふやそうと してるんだからな!
 
 MtChimney_Text_1B3E7A:: @ 81B3E7A
-	.string "Yeah!\n"
-	.string "Douse them in fire!$"
+	.string "좋았어-!\n"
+	.string "불꽃을 퍼부어 줘라-!!$"
+	// よ-し!ｎ
+	// ほのおを ぶっかけてやれ-!!
 
 UnknownString_81B3E94: @ 81B3E94
-	.string "We're going to keep making more land!$"
+	.string "좀 더 좀 더 대지를 넓히자고!$"
+	// もっと もっと だいちを ふやすぜ!!
 
 MtChimney_Text_1B3EBA:: @ 81B3EBA
-	.string "Bufoh!$"
+	.string "부후오-!!$"
+	// ぶふぉ-!!
 
 MtChimney_Text_1B3EC1:: @ 81B3EC1
-	.string "ARCHIE: Oh, {PLAYER}{KUN}!\p"
-	.string "Please, you must stop TEAM MAGMA\n"
-	.string "for me!\p"
-	.string "They're trying to make this volcano\n"
-	.string "erupt by using the stolen METEORITE's\l"
-	.string "power!\p"
-	.string "It's all a part of their plans to\n"
-	.string "expand the world's landmass!$"
+	.string "아강: 오오! {PLAYER}!\n"
+	.string "마침 잘 와 주었다!\p"
+	.string "나를 대신해서\n"
+	.string "마그마단을 멈추어다오!\p"
+	.string "저 녀석들 빼앗은 운석의 파워로\n"
+	.string "이 화산을 분화시켜서\l"
+	.string "땅을 넓힐 생각이다!$"
+	// アオギリ『おお! §あ§お!ｎ
+	// いいところに きてくれたな!ｐ
+	// わたしに かわってｎ
+	// マグマだんを とめてくれ!ｐ
+	// あいつら うばった いんせきの パワ-でｎ
+	// この かざんを ふんか させてｌ
+	// りくを ふやそうと しているんだ!
 
 MtChimney_Text_1B3F8C:: @ 81B3F8C
-	.string "ARCHIE: {PLAYER}{KUN}!\p"
-	.string "Please, you've got to stop TEAM MAGMA\n"
-	.string "for me!\p"
-	.string "Dealing with these three thugs is\n"
-	.string "a lot, even for me!$"
+	.string "아강: {PLAYER}!\p"
+	.string "나를 대신해서\n"
+	.string "마그마단을 멈추어다오!\p"
+	.string "조무래기 3명을 상대하는 건\n"
+	.string "아무리 나라도 쉽지 않다!$"
+	// アオギリ『§あ§お!ｐ
+	// わたしに かわってｎ
+	// マグマだんを とめてくれ!ｐ
+	// こいつら したっぱ 3にんの あいてはｎ
+	// さすがの わたしでも たいへんだ!
 
 MtChimney_Text_1B3FFE:: @ 81B3FFE
-	.string "ARCHIE: {PLAYER}{KUN}! Thank you!\p"
-	.string "With your help, we thwarted TEAM\n"
-	.string "MAGMA's destructive plan!\p"
-	.string "But... This victory doesn't mean the\n"
-	.string "end of their evil plans.\p"
-	.string "We will remain vigilant and keep up\n"
-	.string "our pursuit of TEAM MAGMA.\p"
-	.string "{PLAYER}{KUN}, we shall meet again!$"
+	.string "아강: {PLAYER}! 고맙군\n"
+	.string "네 덕분에 마그마단의\l"
+	.string "파괴활동을 막을 수 있었다\p"
+	.string "하지만... 그 녀석들의 야망은\n"
+	.string "이걸로 끝난 게 아니겠지!\p"
+	.string "우리는 계속해서 마그마단을\n"
+	.string "쫓아가겠다!\p"
+	.string "{PLAYER}\n"
+	.string "다음에 보도록 하지!$"
+	// アオギリ『§あ§お! ありがとうｎ
+	// きみの おかけで マグマだんのｌ
+	// はかいかつどうを ふせぐことが できたｐ
+	// だが…… まだ あいつらの やぼうはｎ
+	// これで おわった わけじゃない!ｐ
+	// われわれは ひきつづき マグマだんをｎ
+	// おいかけると しよう!ｐ
+	// §あ§おｎ
+	// では また あおう!
 
 MtChimney_Text_1B40EA:: @ 81B40EA
-	.string "Darn... TEAM MAGMA outnumbers us!\n"
-	.string "We can't keep up with them!$"
+	.string "젠장 마그마단이 너무 많아...\n"
+	.string "이대로라면 위험해!$"
+	// くそう マグマだんが おおすぎる……ｎ
+	// このままでは まずいぞ!
 
 MtChimney_Text_1B4128:: @ 81B4128
-	.string "If they expand the land, there'll be\n"
-	.string "less habitats for WATER POKéMON!$"
+	.string "대지를 넓혀버리면\n"
+	.string "물포켓몬이 살 수 있는 곳이\l"
+	.string "그만큼 줄어든다고-!$"
+	// だいちを ふやしたらｎ
+	// みずポケモンが すむ ばしょがｌ
+	// へってしまう じゃね-か!
 
 MtChimney_Text_1B416E:: @ 81B416E
-	.string "TEAM MAGMA wants to expand the\n"
-	.string "landmass... How's that for insane?$"
+	.string "마그마단 녀석들\n"
+	.string "땅을 넓히려고 하다니 어이가 없구만!$"
+	// マグマだんめｎ
+	// りくを ふやそう なんて ばかげてるぜ!
 
 MtChimney_Text_1B41B0:: @ 81B41B0
-	.string "Bushaa!$"
+	.string "푸샤-!!$"
+	// ぷしゃ-!!

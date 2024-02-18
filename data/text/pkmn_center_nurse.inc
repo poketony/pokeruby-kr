@@ -13,8 +13,7 @@ gText_NurseJoy_Welcome:: @ 81A0A7D
 	// やすませて あげますか?
 
 gText_NurseJoy_WeHopeToSeeYouAgain:: @ 81A0AFA
-	.string "또\n"
-	.string "이용해 주세요!$"
+	.string "또 이용해 주세요!$"
 	// またのｎ
 	// ごりようを おまち してます!
 

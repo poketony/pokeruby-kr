@@ -1,81 +1,138 @@
 LilycoveCity_DepartmentStore_1F_Text_1C4B5E:: @ 81C4B5E
-	.string "This is the POKéMON LOTTERY CORNER.\p"
-	.string "All shoppers visiting our DEPARTMENT\n"
-	.string "STORE get to draw a POKéMON LOTO\l"
-	.string "TICKET.\p"
-	.string "If the LOTO TICKET's number matches\n"
-	.string "the ID number of any of your POKéMON,\l"
-	.string "you will receive a fabulous gift.\p"
-	.string "Would you like to draw a POKéMON\n"
-	.string "LOTO TICKET?$"
+	.string "이곳은 ID 추첨센터\n"
+	.string "추첨 코너입니다\p"
+	.string "본 백화점에 방문하신\n"
+	.string "모든 분께 ID 추첨센터\l"
+	.string "추첨을 하고 있습니다!\p"
+	.string "추첨한 번호와 손님의\n"
+	.string "포켓몬 ID를 뒤에서부터 비교하여\l"
+	.string "일치한 자릿수에 따라 멋진 상품을\l"
+	.string "선물로 드립니다!\p"
+	.string "ID 추첨센터\n"
+	.string "추첨에 도전하겠습니까?$"
+	// こちらは ポケモンくじｎ
+	// ちゅうせん コ-ナ-ですｐ
+	// とうデパ-トに おこし いただいた かたにｎ
+	// もれなく ポケモンくじをｌ
+	// ひいて いただいて います!ｐ
+	// ひいた くじの ナンバ-とｎ
+	// おきゃくさまの ポケモンの IDがｌ
+	// あっていましたら すてきな しょうひんをｌ
+	// プレゼント いたします!ｐ
+	// ポケモンくじを ひかれますか?
 
 LilycoveCity_DepartmentStore_1F_Text_1C4C6A:: @ 81C4C6A
-	.string "Please come back tomorrow.$"
+	.string "내일 다시 생각이\n"
+	.string "나신다면 와 주십시오$"
+	// また あした いこうｎ
+	// おこし ください
 
 LilycoveCity_DepartmentStore_1F_Text_1C4C85:: @ 81C4C85
-	.string "Please do visit us again.$"
+	.string "그럼 다음에 또 이용해 주세요$"
+	// それでは また おこし ください
 
 UnknownString_81C4C9F: @ 81C4C9F
-	.string "Please pick a LOTO TICKET.\n"
+	.string "그럼 추첨을 하겠습니다\n"
 	.string "... ... ...$"
+	// では くじを ひいて くださいｎ
+	// ………
 
 LilycoveCity_DepartmentStore_1F_Text_1C4CC6:: @ 81C4CC6
-	.string "Please pick a LOTO TICKET.\n"
+	.string "그럼 추첨을 하겠습니다\n"
 	.string "...{PAUSE}{0x39} ...{PAUSE}{0x39} ...{PAUSE}{0x39}$"
+	// では くじを ひいて くださいｎ
+	// …©くぐ…©くぐ…©くぐ
 
 LilycoveCity_DepartmentStore_1F_Text_1C4CF6:: @ 81C4CF6
-	.string "The LOTO TICKET number is {STR_VAR_1}.\p"
-	.string "I need to run a check on this number\n"
-	.string "to see if it matches any of your\l"
-	.string "POKéMON's ID numbers. Please wait.$"
+	.string "추첨 번호는 {STR_VAR_1}입니다!\p"
+	.string "번호가 당신의 포켓몬 ID와\n"
+	.string "일치하는지 알아볼 테니\l"
+	.string "잠시 기다려 주십시오$"
+	// くじの ナンバ-は §いです!ｐ
+	// ナンバ-が あなたの ポケモンの IDとｎ
+	// いっちしているか おしらべ いたしますのでｌ
+	// しょうしょう おまちください
 
 LilycoveCity_DepartmentStore_1F_Text_1C4D7D:: @ 81C4D7D
-	.string "Congratulations!\p"
-	.string "The ID number of your team's\n"
-	.string "{STR_VAR_1} matches your LOTO TICKET's\l"
-	.string "number!$"
+	.string "축하합니다!\p"
+	.string "당신이 데리고 있는\n"
+	.string "{STR_VAR_1}의 ID가\l"
+	.string "추첨 번호와 일치합니다!$"
+	// おめでとう ございます!ｐ
+	// あなたが つれているｎ
+	// §いちゃんの IDが みごとにｌ
+	// くじの ナンバ-と いっち しました!
 
 LilycoveCity_DepartmentStore_1F_Text_1C4DD1:: @ 81C4DD1
-	.string "Congratulations!\p"
-	.string "The ID number of your PC-boxed\n"
-	.string "{STR_VAR_1} matches your LOTO TICKET's\l"
-	.string "number!$"
+	.string "축하합니다!\p"
+	.string "PC에 맡긴\n"
+	.string "{STR_VAR_1}의 ID가\l"
+	.string "추첨 번호와 일치합니다!$"
+	// おめでとう ございます!ｐ
+	// パソコンに あずけているｎ
+	// §いちゃんの IDが みごとにｌ
+	// くじの ナンバ-と いっち しました!
 
 LilycoveCity_DepartmentStore_1F_Text_1C4E27:: @ 81C4E27
-	.string "I'm sorry.\n"
-	.string "None of the numbers matched.$"
+	.string "아쉽네요\n"
+	.string "모두 꽝인 모양입니다$"
+	// ざんねんでしたｎ
+	// すべて はずれの ようです
 
 LilycoveCity_DepartmentStore_1F_Text_1C4E4F:: @ 81C4E4F
-	.string "Two digits matched, so you win the\n"
-	.string "third prize!\l"
-	.string "You've won the {STR_VAR_1}!$"
+	.string "2자리 일치하니\n"
+	.string "3등입니다!\l"
+	.string "{STR_VAR_1}{K_EULREUL} 드리겠습니다!!$"
+	// 2ケタ あって いましたのでｎ
+	// 3とう です!ｌ
+	// §いを さしあげます!!
 
 LilycoveCity_DepartmentStore_1F_Text_1C4E92:: @ 81C4E92
-	.string "Three digits matched, so you win the\n"
-	.string "second prize!\l"
-	.string "You've won the {STR_VAR_1}!$"
+	.string "3자리 일치하니\n"
+	.string "2등입니다!\l"
+	.string "{STR_VAR_1}{K_EULREUL} 드리겠습니다!!$"
+	// 3ケタ あって いましたのでｎ
+	// 2とう です!ｌ
+	// §いを さしあげます!!
 
 LilycoveCity_DepartmentStore_1F_Text_1C4ED8:: @ 81C4ED8
-	.string "Four digits matched, so you win the\n"
-	.string "first prize!\l"
-	.string "You've won the {STR_VAR_1}!$"
+	.string "4자리 일치하니\n"
+	.string "1등입니다!\l"
+	.string "{STR_VAR_1}{K_EULREUL} 드리겠습니다!!$"
+	// 4ケタ あって いましたのでｎ
+	// 1とう です!ｌ
+	// §いを さしあげます!!
 
 LilycoveCity_DepartmentStore_1F_Text_1C4F1C:: @ 81C4F1C
-	.string "Oh, my goodness, all five digits matched!\p"
-	.string "You've won the jackpot prize!\n"
-	.string "You've won the {STR_VAR_1}!$"
+	.string "무려! 5자리 모두\n"
+	.string "일치합니다!!\p"
+	.string "특등입니다!!\n"
+	.string "{STR_VAR_1}{K_EULREUL} 드리겠습니다!!$"
+	// なんと 5ケタ すべてｎ
+	// あって いました!!ｐ
+	// とくとうです!!ｎ
+	// §いを さしあげます!!
 
 LilycoveCity_DepartmentStore_1F_Text_1C4F77:: @ 81C4F77
-	.string "Oh?\n"
-	.string "You seem to have no room for this.\p"
-	.string "Please make room in your BAG and\n"
-	.string "let me know.$"
+	.string "...어라?\n"
+	.string "도구가 가득한 모양이네요\p"
+	.string "도구를 정리하고 나서 다시 한 번\n"
+	.string "와 주십시오$"
+	// ………あら?ｎ
+	// どうぐが いっぱいの ようですねｐ
+	// どうぐを せいりしてから もういちどｎ
+	// おこし ください
 
 LilycoveCity_DepartmentStore_1F_Text_1C4FCC:: @ 81C4FCC
-	.string "{PLAYER}?\n"
-	.string "Yes, I've been expecting you.\p"
-	.string "This is the prize we've been holding\n"
-	.string "for you.$"
+	.string "{PLAYER}님이시군요\n"
+	.string "보관하고 있었습니다!\p"
+	.string "그럼 상품을\n"
+	.string "드리도록 하겠습니다$"
+	// §あさん ですねｎ
+	// おまちして おりました!ｐ
+	// では しょうひんをｎ
+	// おわたし いたします
 
 LilycoveCity_DepartmentStore_1F_Text_1C501C:: @ 81C501C
-	.string "Please do visit again.$"
+	.string "그럼 다음에 또 이용해 주세요$"
+	// それでは また おこし ください

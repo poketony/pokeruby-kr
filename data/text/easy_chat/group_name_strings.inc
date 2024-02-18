@@ -1,65 +1,65 @@
 gEasyChatGroupName_Pokemon:: @ 842C7DB
-	.string "POKéMON$"
+	.string "포켓몬$"
 
 gEasyChatGroupName_Trainer:: @ 842C7E3
-	.string "TRAINER$"
+	.string "트레이너$"
 
 gEasyChatGroupName_Status:: @ 842C7EB
-	.string "STATUS$"
+	.string "스테이터스$"
 
 gEasyChatGroupName_Battle:: @ 842C7F2
-	.string "BATTLE$"
+	.string "배틀$"
 
 gEasyChatGroupName_Greetings:: @ 842C7F9
-	.string "GREETINGS$"
+	.string "인사$"
 
 gEasyChatGroupName_People:: @ 842C803
-	.string "PEOPLE$"
+	.string "사람$"
 
 gEasyChatGroupName_Voices:: @ 842C80A
-	.string "VOICES$"
+	.string "목소리$"
 
 gEasyChatGroupName_Speech:: @ 842C811
-	.string "SPEECH$"
+	.string "언어$"
 
 gEasyChatGroupName_Endings:: @ 842C818
-	.string "ENDINGS$"
+	.string "끝맺음$"
 
 gEasyChatGroupName_Feelings:: @ 842C820
-	.string "FEELINGS$"
+	.string "기분$"
 
 gEasyChatGroupName_Conditions:: @ 842C829
-	.string "CONDITIONS$"
+	.string "컨디션$"
 
 gEasyChatGroupName_Actions:: @ 842C834
-	.string "ACTIONS$"
+	.string "행동$"
 
 gEasyChatGroupName_Lifestyle:: @ 842C83C
-	.string "LIFESTYLE$"
+	.string "생활$"
 
 gEasyChatGroupName_Hobbies:: @ 842C846
-	.string "HOBBIES$"
+	.string "취미$"
 
 gEasyChatGroupName_Time:: @ 842C84E
-	.string "TIME$"
+	.string "시간$"
 
 gEasyChatGroupName_Misc:: @ 842C853
-	.string "MISC.$"
+	.string "이것저것$"
 
 gEasyChatGroupName_Adjectives:: @ 842C859
-	.string "ADJECTIVES$"
+	.string "반복$"
 
 gEasyChatGroupName_Events:: @ 842C864
-	.string "EVENT.$"
+	.string "이벤트$"
 
 gEasyChatGroupName_Move1:: @ 842C86B
-	.string "MOVE 1$"
+	.string "기술1$"
 
 gEasyChatGroupName_Move2:: @ 842C872
-	.string "MOVE 2$"
+	.string "기술2$"
 
 gEasyChatGroupName_TrendySaying:: @ 842C879
-	.string "TRENDY SAYING$"
+	.string "유행$"
 
 gEasyChatGroupName_Pokemon2:: @ 842C887
-	.string "POKéMON2$"
+	.string "포켓몬2$"

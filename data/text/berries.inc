@@ -1,235 +1,368 @@
 PetalburgCity_Gym_Text_1C5570:: @ 81C5570
-	.string "DAD: Hi, {PLAYER}!\p"
-	.string "I just received a very rare BERRY.\n"
-	.string "I'd like you to have it.$"
+	.string "아빠: 오오 {PLAYER}{K_AYA}!\p"
+	.string "희귀한 나무열매를 손에 넣었으니\n"
+	.string "선물하도록 하마!$"
+	// パパ『やあ §あ!ｐ
+	// めずらしい きのみを てに いれたからｎ
+	// プレゼント するよ!
 
 Route104_Text_1C55B9:: @ 81C55B9
-	.string "If you see BERRIES growing in loamy\n"
-	.string "soil, feel free to take them.\p"
-	.string "But make sure you plant a BERRY in the\n"
-	.string "same spot. That's common courtesy.\p"
-	.string "Here, I'll share this with you.$"
+	.string "푹신푹신한 흙에 자라고 있는 나무열매는\n"
+	.string "언제든지 따도 상관은 없지만...\p"
+	.string "나무열매를 1개 같은 장소에 심는 것\n"
+	.string "하나만 지켜주렴 그게 예의란다\p"
+	.string "자 그럼 이걸 나눠주마$"
+	// ふかふかの つちに はえている きのみはｎ
+	// じゆうに とっても よいのじゃが…ｐ
+	// 1つだけ きのみを おなじ ばしょに うめるｎ
+	// それが れいぎと いうものじゃｐ
+	// ほれ これを わけてやろう
 
 Route104_Text_1C5665:: @ 81C5665
-	.string "The way you look, you must be a\n"
-	.string "TRAINER, no?\p"
-	.string "TRAINERS often make POKéMON hold\n"
-	.string "BERRIES.\p"
-	.string "It's up to you whether to grow BERRIES\n"
-	.string "or use them.$"
+	.string "보아하니 자네 트레이너지?\p"
+	.string "트레이너는 자주 포켓몬에게\n"
+	.string "나무열매를 지니게 하지\p"
+	.string "심든지 사용하든지 자네 맘이라네$"
+	// あんた みたところ トレ-ナ-じゃろ?ｐ
+	// トレ-ナ-は よく きのみを ポケモンにｎ
+	// もたせとるわいｐ
+	// ふやすも つかうも あんた しだいじゃ
 
 Route111_Text_1C56F0:: @ 81C56F0
-	.string "I watered my plants lots and lots!\n"
-	.string "A whole bunch of flowers bloomed!\p"
-	.string "And then a whole bunch of BERRIES\n"
-	.string "appeared!\p"
-	.string "Here you go!\n"
-	.string "You can have this!$"
+	.string "매일 물을 줬더니\n"
+	.string "꽃이 잔뜩 피었어\p"
+	.string "그랬더니 나무열매도 많이 열렸어!\p"
+	.string "자!\n"
+	.string "이거 줄게$"
+	// いつも みずを あげてたらｎ
+	// たくさん はなが さいたんだｐ
+	// そしたら きのみも たくさん できた!ｐ
+	// はい!ｎ
+	// これ あげる
 
 Route111_Text_1C5781:: @ 81C5781
-	.string "I'm going to try really hard and make\n"
-	.string "some RED {POKEBLOCK}S!\p"
-	.string "I hope you try hard, too!$"
+	.string "열심히 빨강포켓몬스넥을 만들 거야!\n"
+	.string "{K_GIRL_CALL}도 힘내!$"
+	// がんばって あかいポロック つくるんだ!ｎ
+	// §いも がんばってね!
 
 Route111_Text_1C57D2:: @ 81C57D2
-	.string "I wonder what color BERRIES I'll look\n"
-	.string "for today?$"
+	.string "오늘은 무슨 색의 나무열매를\n"
+	.string "찾아볼까-$"
+	// きょうは なにいろの きのみをｎ
+	// さがそっかな-
 
 Route114_Text_1C5803:: @ 81C5803
-	.string "I'm gathering BERRIES so I can win a\n"
-	.string "POKéMON CONTEST.\p"
-	.string "If you'd like, I'll share one with you.$"
+	.string "포켓몬 콘테스트에서 우승하기 위해\n"
+	.string "나무열매를 모으고 있어\p"
+	.string "괜찮다면 네게도 나눠줄게!$"
+	// ポケモンコンテストの ゆうしょうを めざしてｎ
+	// きのみを あつめているんだｐ
+	// よかったら きみにも わけて あげるよ!
 
 Route114_Text_1C5861:: @ 81C5861
-	.string "Good luck to you, too!$"
+	.string "너도 열심히 해!$"
+	// きみも がんばれ!
 
 Route114_Text_1C5878:: @ 81C5878
-	.string "What BERRIES should I plant today?\n"
-	.string "What color {POKEBLOCK}S should I make?\p"
-	.string "Fretting over stuff like that is fun\n"
-	.string "in its own way.$"
+	.string "오늘은 무슨 나무열매를 심을까...\n"
+	.string "그리고 무슨 색의 포켓몬스넥을 만들까...\p"
+	.string "이러면서 고민하는 것도 즐거워$"
+	// きょうは どの きのみを うめるか…ｎ
+	// そして なにいろの ポロックを つくるか…ｐ
+	// なやむのも また たのしいよ
 
 Route120_Text_1C58F1:: @ 81C58F1
-	.string "Give the case a shake, and out pops\n"
-	.string "a {POKEBLOCK}...\p"
-	.string "And that {POKEBLOCK} is caught and eaten\n"
-	.string "by a POKéMON...\p"
-	.string "It's an expression of love, isn't it?$"
+	.string "케이스를 열면 나오는 포켓몬스넥...\p"
+	.string "그리고 그걸 잡아서\n"
+	.string "먹어주는 포켓몬...\p"
+	.string "이거 사랑 맞지?$"
+	// ケ-スを ふると でてくる ポロック…ｐ
+	// そして それを キャッチしてｎ
+	// たべてくれる ポケモン…ｐ
+	// これって あい だよね?
 
 Route120_Text_1C5979:: @ 81C5979
-	.string "Yes, yes.\n"
-	.string "You understand what I mean.\p"
-	.string "You should take this.$"
+	.string "응 응!\n"
+	.string "역시 아는 사람은 안단 말이지\p"
+	.string "이거 줄게$"
+	// うん うん!ｎ
+	// やっぱ わかるひとには わかるよねｐ
+	// これ あげる
 
 Route120_Text_1C59B5:: @ 81C59B5
-	.string "Oh... But it is important to make your\n"
-	.string "own impressions, I guess...\p"
-	.string "You can have this.$"
+	.string "그렇구나...\n"
+	.string "하지만 다르게 느끼는 것도 중요하지\p"
+	.string "이거 줄게$"
+	// そっか……ｎ
+	// でも ちがうと かんじることも たいせつだねｐ
+	// これ あげる
 
 Route120_Text_1C5A0B:: @ 81C5A0B
-	.string "I think that BERRY is rare.\n"
-	.string "I hope you raise it with loving care.$"
+	.string "그 나무열매는 희귀한 것 같으니까\n"
+	.string "소중하게 키워줘!$"
+	// その きのみは めずらしいもの らしいからｎ
+	// たいせつに そだててね!
 
 Route120_Text_1C5A4D:: @ 81C5A4D
-	.string "I'll get more BERRIES from the\n"
-	.string "BERRY MASTER.$"
+	.string "또 나무열매 명인에게 받아 와야지$"
+	// また きのみめいじんに もらって こようっと
 
 LilycoveCity_Text_1C5A7A:: @ 81C5A7A
-	.string "When it gets right down to it...\p"
-	.string "The same way suits suit me perfectly,\n"
-	.string "a crisp breeze suits the sea.\p"
-	.string "And you, a BERRY suits you to a “T”...\p"
-	.string "Why should that be so?$"
+	.string "역시\p"
+	.string "나에게 슈트가 어울리듯\n"
+	.string "바다에는 바닷바람이 어울려\l"
+	.string "그리고 자네에겐 나무열매가 어울리는군...\p"
+	.string "왜일까?$"
+	// やっぱりｐ
+	// わたしに ス-ツが にあうようにｎ
+	// うみには しおかぜが にあうなｌ
+	// そして きみには きのみが にあいそうだ……ｐ
+	// なんでだろうね?
 
 LilycoveCity_Text_1C5B1D:: @ 81C5B1D
-	.string "When it gets right down to it...\p"
-	.string "It's because you're a TRAINER!$"
+	.string "역시 그건......\p"
+	.string "자네가 트레이너이기 때문이지!$"
+	// やっぱり それは…………ｐ
+	// きみが トレ-ナ-だからだ!
 
 LilycoveCity_Text_1C5B5D:: @ 81C5B5D
-	.string "When it gets right down to it...\p"
-	.string "The way dignified simplicity suits me,\n"
-	.string "{POKEBLOCK}S perfectly suit POKéMON.$"
+	.string "역시\p"
+	.string "나에게 심플함이 어울리듯\n"
+	.string "포켓몬에게는 포켓몬스넥이 어울려$"
+	// やっぱりｐ
+	// わたしに シンプルさが にあうようにｎ
+	// ポケモンには ポロックが にあうな
 
 Route123_BerryMastersHouse_Text_1C5BC4:: @ 81C5BC4
-	.string "You may call me the BERRY MASTER.\p"
-	.string "I dream of filling the world with\n"
-	.string "beautiful flowers, so I raise BERRIES\l"
-	.string "and hand them out to everyone.\p"
-	.string "You're deserving of one!$"
+	.string "난 나무열매 명인이라고 불리고 있지\p"
+	.string "난 온 세상을 아름다운 꽃으로\n"
+	.string "채우기 위해 나무열매를 키우고\l"
+	.string "그리고 마구 나눠주고 있다네\p"
+	.string "너에게도 나무열매를 나눠 주지!$"
+	// わしは きのみめいじんと よばれておるｐ
+	// わしは せかいじゅうを うつくしい はなでｎ
+	// うめつくそうと きのみを そだててｌ
+	// そして くばり まくって おるのじゃｐ
+	// きみにも きのみを わけて あげよう!
 
 Route123_BerryMastersHouse_Text_1C5C66:: @ 81C5C66
-	.string "Why be stingy?\n"
-	.string "Take another!$"
+	.string "자자 사양 말고 하나 더!$"
+	// ほれ えんりょ せずに もう ひとつ!
 
 Route123_BerryMastersHouse_Text_1C5C83:: @ 81C5C83
-	.string "Be sure to visit the PRETTY PETAL\n"
-	.string "flower shop near RUSTBORO.\p"
-	.string "Let flowers fill the world!$"
+	.string "금탄도시 근처에 있는 꽃잎 화원이라는\n"
+	.string "플라워숍도 잘 부탁하네\p"
+	.string "온 세상에 꽃을 피우자!$"
+	// カナズミの ちかくにある サン®トウカというｎ
+	// フラワ-ショップも よろしくのｐ
+	// せかいに はなを さかせましょう!
 
 Route123_BerryMastersHouse_Text_1C5CDC:: @ 81C5CDC
-	.string "I'm done for today.\n"
-	.string "Come again another day.\p"
-	.string "Let flowers fill the world!$"
+	.string "오늘은 이만 끝내야겠구먼\n"
+	.string "또 오게나\p"
+	.string "온 세상에 꽃을 피우자!$"
+	// きょうは もう おしまいじゃｎ
+	// また おいでｐ
+	// せかいに はなを さかせましょう!
 
 Route123_BerryMastersHouse_Text_1C5D24:: @ 81C5D24
-	.string "The way my husband grows BERRIES,\n"
-	.string "oh, he's the best in the world.\p"
-	.string "He makes me proud, that he does.\p"
-	.string "Incidentally, child, have you heard\n"
-	.string "a good saying lately?$"
+	.string "영감이 키운 나무열매는\n"
+	.string "말할 것도 없이 세계 제일이지\p"
+	.string "그래서 나도 자랑스럽구먼\p"
+	.string "그런데 자네\n"
+	.string "혹시 최근에 멋진 말을 들은 적 없나?$"
+	// じいさんの きのみの そだてかたはｎ
+	// そりゃあ せかいいちじゃｐ
+	// わしも はなが たかいわいｐ
+	// ところで あんたｎ
+	// いい ことばを きいたことが ないかい?
 
 Route123_BerryMastersHouse_Text_1C5DC1:: @ 81C5DC1
-	.string "Ah! What a remarkable saying!\n"
-	.string "Inspirational, it is!\p"
-	.string "I want you to have this.$"
+	.string "오옷! 정말 멋진 말이구먼!\n"
+	.string "감동했네\p"
+	.string "자 이것을 가져가게나$"
+	// おお! とても よい ことばじゃ!ｎ
+	// かんどう したわいｐ
+	// ほれ これを もっていきなされ
 
 Route123_BerryMastersHouse_Text_1C5E0E:: @ 81C5E0E
-	.string "Oh! A good saying it is.\n"
-	.string "You're quite remarkable.\p"
-	.string "I want you to have this.$"
+	.string "오옷! 꽤 멋진 말이구먼\n"
+	.string "자네도 좀 하는데\p"
+	.string "자 이것을 가져가게나$"
+	// おお! なかなか よい ことばじゃｎ
+	// あんたも たいしたもんじゃｐ
+	// ほれ これを もっていきなされ
 
 Route123_BerryMastersHouse_Text_1C5E59:: @ 81C5E59
-	.string "Our four grandchildren should become\n"
-	.string "more accomplished than my husband.\p"
-	.string "Joy never goes out of my life!$"
+	.string "손자 4명도 영감을 능가하는\n"
+	.string "큰 인물이 되겠지\p"
+	.string "인생에 재미있는 일이 끝이 없구먼!$"
+	// まごたち 4にんも じいさんを しのぐｎ
+	// おおものに なるじゃろうてｐ
+	// じんせい たのしいことが つきんのう!
 
 Route123_BerryMastersHouse_Text_1C5EC0:: @ 81C5EC0
-	.string "Ah...$"
+	.string "호오...$"
+	// ほう……
 
 Route104_PrettyPetalFlowerShop_Text_1C5EC6:: @ 81C5EC6
-	.string "Hello!\p"
-	.string "This is the PRETTY PETAL flower shop.\n"
-	.string "Spreading flowers throughout the world!$"
+	.string "안녕하세요!\p"
+	.string "꽃을 온 세상에 퍼뜨리는\n"
+	.string "플라워숍 꽃잎 화원입니다!$"
+	// こんにちは!ｐ
+	// はなを せかいに ひろめるｎ
+	// フラワ-ショップ サン®トウカです!
 
 Route104_PrettyPetalFlowerShop_Text_1C5F1B:: @ 81C5F1B
-	.string "{PLAYER}{KUN}, would you like to learn about\n"
-	.string "BERRIES?$"
+	.string "{PLAYER} 나무열매에 대해 알고 싶어?$"
+	// §あ§お きのみの こと しりたい?
 
 Route104_PrettyPetalFlowerShop_Text_1C5F48:: @ 81C5F48
-	.string "Your name is?\p"
-	.string "{PLAYER}{KUN}.\n"
-	.string "That's a nice name.\p"
-	.string "{PLAYER}{KUN}, would you like to learn about\n"
-	.string "BERRIES?$"
+	.string "당신의 이름은...\p"
+	.string "{PLAYER}{K_I}구나!\n"
+	.string "정말 좋은 이름이네!\l"
+	.string "{PLAYER} 나무열매에 대해 알고 싶어?$"
+	// あなたの なまえは……ｐ
+	// §あ§おね!ｎ
+	// とっても いい なまえだね!ｌ
+	// §あ§お きのみのこと しりたい?
 
 Route104_PrettyPetalFlowerShop_Text_1C5F9D:: @ 81C5F9D
-	.string "BERRIES grow on trees that thrive\n"
-	.string "only in dark, loamy soil.\p"
-	.string "If you take some BERRIES, be sure to\n"
-	.string "plant one in the loamy soil again.\p"
-	.string "A planted BERRY will soon sprout,\n"
-	.string "grow into a plant, flower beautifully,\l"
-	.string "then grow BERRIES again.\p"
-	.string "I want to see the whole wide world\n"
-	.string "filled with beautiful flowers.\l"
-	.string "That's my dream.\p"
-	.string "Please help me, {PLAYER}{KUN}. Plant BERRIES\n"
-	.string "and bring more flowers into the world.$"
+	.string "나무열매는 말이지 푹신푹신한\n"
+	.string "흙에서 가끔 딸 수 있어\l"
+	.string "그리고...\p"
+	.string "딴 열매 중 하나를 또 심을 수 있지!\p"
+	.string "그렇게 하면 그 나무열매에서\n"
+	.string "새싹이 트고 줄기가 자라고 꽃이 펴서\l"
+	.string "거기에 또 나무열매가 열려\p"
+	.string "그렇게 꽃을 늘려서\n"
+	.string "온 세상을 꽃으로 가득 채우는 게\l"
+	.string "내 꿈이야!\p"
+	.string "그러니까 {PLAYER}도 나무열매를 심어서\n"
+	.string "온 세상에 꽃을 퍼뜨려줘!$"
+	// きのみはね くろい ふかふかの つちのｎ
+	// ところで たまに とれるのｌ
+	// でね……ｐ
+	// とったら その1つを また うめるの!ｐ
+	// そうすると その きのみ からｎ
+	// めがでて みきが できて はながさいてｌ
+	// また きのみ が できるのｐ
+	// そうやって はなを ふやしてｎ
+	// せかいじゅうを はなに するのがｌ
+	// わたしの ゆめ なんだ!ｐ
+	// だから §あ§おも きのみを うめてｎ
+	// せかいに はなを ふやしてね!
 
 Route104_PrettyPetalFlowerShop_Text_1C6121:: @ 81C6121
-	.string "Flowers bring so much happiness to\n"
-	.string "people, don't they?$"
+	.string "꽃은 정말 행복한 기분으로\n"
+	.string "만들어 주는 거 같아$"
+	// おはなって とっても しあわせな きぶんにｎ
+	// してくれるよね
 
 Route104_PrettyPetalFlowerShop_Text_1C6158:: @ 81C6158
-	.string "Hello!\p"
-	.string "The more attention you give to flowers,\n"
-	.string "the more beautifully they bloom.\p"
-	.string "You'll like tending flowers. I'm sure\n"
-	.string "of it. You can have this.$"
+	.string "안녕!\p"
+	.string "꽃은 진심을 담아 돌보면\n"
+	.string "엄청 예쁘게 피고 나무열매도 많이 열려\p"
+	.string "너도 돌보고 싶어졌지?\n"
+	.string "이거 줄게$"
+	// こんにちは!ｐ
+	// おはなは せわを すれば するほどｎ
+	// たくさん きれいに さいて くれるのｐ
+	// あなたも せわを したく なった でしょ?ｎ
+	// これ あげるわ
 
 Route104_PrettyPetalFlowerShop_Text_1C61E8:: @ 81C61E8
-	.string "While BERRY plants are growing,\n"
-	.string "water them with the WAILMER PAIL.\p"
-	.string "Oh, another thing.\p"
-	.string "If you don't pick BERRIES for a while,\n"
-	.string "they'll drop off onto the ground.\l"
-	.string "But they'll sprout again.\p"
-	.string "Isn't that awesome?\n"
-	.string "It's like they have the will to live.$"
+	.string "나무열매가 자랄 때마다\n"
+	.string "물뿌리개로 물을 주도록 해!\p"
+	.string "그리고 있지\p"
+	.string "나무열매는 계속 방치해 놓으면\n"
+	.string "땅에 떨어져버려\l"
+	.string "하지만 거기서 또다시 새싹이 트게 되지!\p"
+	.string "정말 대단하지 않아?\n"
+	.string "생명의 힘이 느껴져$"
+	// きのみが そだつ たびにｎ
+	// じょうろで みずを あげてね!ｐ
+	// あとねｐ
+	// きのみは ずっと ずっと ほうっておくとｎ
+	// じめんに おちてしまうのｌ
+	// でもね そこから また めがでて くるの!ｐ
+	// すごいよね!ｎ
+	// いきものの ちからを かんじるよね
 
 Route104_PrettyPetalFlowerShop_Text_1C62DA:: @ 81C62DA
-	.string "I'm trying to be like my big sisters.\n"
-	.string "I'm growing flowers, too!\p"
-	.string "Here you go! It's for you!$"
+	.string "언니들을 본받아서\n"
+	.string "열심히 꽃을 키우고 있어\p"
+	.string "자! 이거 줄게!$"
+	// おね-ちゃんたちを みならってｎ
+	// がんばって おはなを そだててるのｐ
+	// はい! これあげる!
 
 Route104_PrettyPetalFlowerShop_Text_1C6335:: @ 81C6335
-	.string "You can plant a BERRY and grow it big,\n"
-	.string "or you can make a POKéMON hold it.\p"
-	.string "But now they have a machine that mixes\n"
-	.string "up different BERRIES and makes candies\l"
-	.string "for POKéMON.\p"
-	.string "I want some candy, too.$"
+	.string "나무열매는 심어서 자라게 하거나\n"
+	.string "포켓몬한테 지니게 할 수 있어\p"
+	.string "그런데 최근에는 여러 나무열매를 섞으면\n"
+	.string "포켓몬의 과자를 만들어주는 기계가\l"
+	.string "있다고 하더라고\p"
+	.string "나도 과자 먹고 싶어-$"
+	// きのみは うめて おおきく したりｎ
+	// ポケモンに もたせたり できるのｐ
+	// でも さいきん きのみを いくつか まぜるとｎ
+	// ポケモンの おかしになる きかいがｌ
+	// ある らしいんだｐ
+	// あたしも おかし ほし-
 
 SootopolisCity_Text_1C63F2:: @ 81C63F2
-	.string "Hi, what's your name?\p"
-	.string "... ... ...  ... ... ...  ... ... ...\n"
-	.string "Okay. That's nice!\p"
-	.string "My name is KIRI.\p"
-	.string "My mommy and daddy named me that so\n"
-	.string "I would grow healthy and warmhearted.\l"
-	.string "That's what they wished.\p"
-	.string "You can have one of these.$"
+	.string "{K_GIRL_CALL}{K_EUNNEUN} 이름이 뭐야?\p"
+	.string "...... ...... ......\n"
+	.string "오- 좋은 이름이네-\p"
+	.string "내 이름은 키리라고 해\p"
+	.string "아빠랑 엄마가 잘 자라서\n"
+	.string "마음이 따뜻한 여자아이가 되라는\l"
+	.string "바람을 담아 내 이름을 지었다나 봐!\p"
+	.string "{K_GIRL_CALL}한테도 이거 줄게$"
+	// §い なまえ なんていうの?ｐ
+	// ……… ……… ………ｎ
+	// へ- いいね-ｐ
+	// わたしは キリ っていう なまえなのｐ
+	// パパと ママが すくすくと そだってｎ
+	// こころの あたたかい おんなのこに なってｌ
+	// ほしいっていう ねがいを こめたんだって!ｐ
+	// §いにも これ あげる
 
 SootopolisCity_Text_1C64D0:: @ 81C64D0
-	.string "KIRI will give you this BERRY, too!\n"
-	.string "I really like it lots!$"
+	.string "그리고 {K_GIRL_CALL}한테는\n"
+	.string "내가 정말 좋아하는\l"
+	.string "이 나무열매도 줄게!$"
+	// あと §いには キリの だいすきなｎ
+	// この きのみも あげちゃう!
 
 SootopolisCity_Text_1C650B:: @ 81C650B
-	.string "I wonder what kind of wish is included\n"
-	.string "in your name.$"
+	.string "{K_GIRL_CALL} 이름에는\n"
+	.string "어떤 바람이 담겨 있어?$"
+	// §いの なまえにはｎ
+	// どんな ねがいが こめられてるの?
 
 SootopolisCity_Text_1C6540:: @ 81C6540
-	.string "Spring, summer, autumn, and winter.\p"
-	.string "If you're born in springtime, do you like\n"
-	.string "the spring, and if you're born in the\l"
-	.string "summer, do you like the summer?$"
+	.string "봄 여름 가을 겨울\n"
+	.string "봄에 태어나면 봄이 좋아지고\l"
+	.string "여름에 태어나면 여름이 좋아지는 걸까?$"
+	// はる なつ あき ふゆｎ
+	// はるに うまれると はるが すきでｌ
+	// なつに うまれると なつが すきなのかな?
 
 SootopolisCity_Text_1C65D4:: @ 81C65D4
-	.string "Then KIRI was born in the autumn,\n"
-	.string "so I love the autumn!\p"
-	.string "Which season do you like?$"
+	.string "그럼 난 가을에 태어났으니까\n"
+	.string "가을이 정말 좋아!\p"
+	.string "{K_GIRL_CALL}{K_EUNNEUN} 언제가 좋아?$"
+	// じゃあ キリは あきに うまれたからｎ
+	// あきが だいすき!ｐ
+	// §いは いつが すき?
 
 SootopolisCity_Text_1C6626:: @ 81C6626
-	.string "Oh...\n"
-	.string "It doesn't matter...\p"
-	.string "There's so much that I want to know...$"
+	.string "그렇구나...\n"
+	.string "상관없구나...\p"
+	.string "알고 싶은 게 너무 많아-$"
+	// そっか…ｎ
+	// かんけいないのか…ｐ
+	// しりたいことって たくさんあるな-

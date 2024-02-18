@@ -1,142 +1,239 @@
 MtChimney_Text_1B2DEE:: @ 81B2DEE
-	.string "The power contained in the\n"
-	.string "METEORITE...\p"
-	.string "By amplifying its power with this\n"
-	.string "machine, MT. CHIMNEY's volcanic activity\l"
-	.string "will stop.\p"
-	.string "Fufufu... Eventually, the cooled-down\n"
-	.string "crater will fill with rainwater, giving\l"
-	.string "WATER POKéMON a place to live.$"
+	.string "운석에 숨겨진 힘\p"
+	.string "이 장치로 증폭된다면\n"
+	.string "눈 깜짝할 사이에 굴뚝산의\l"
+	.string "화산 활동은 멈춘다...\p"
+	.string "후후후... 언젠가\n"
+	.string "식어버린 분화구에 빗물이 고여\l"
+	.string "물포켓몬이 살 수 있게 되겠지...$"
+	// いんせきに ひめられた ちからｐ
+	// この そうちで ぞうふく すればｎ
+	// たちまちの うちに えんとつやまのｌ
+	// かざん かつどうは とまる……ｐ
+	// フフフ…… いずれｎ
+	// ひえきった かこうに あまみずが たまりｌ
+	// みずポケモンが くらせるだろう……
 
 MtChimney_Text_1B2ED9:: @ 81B2ED9
-	.string "ARCHIE: You again...\p"
-	.string "Now listen.\n"
-	.string "All life depends on the sea.\p"
-	.string "The sea is everything!\n"
-	.string "Its importance is paramount!\p"
-	.string "That is why we of TEAM AQUA are\n"
-	.string "committed to expanding the sea.\p"
-	.string "Doing so will result in the emergence\n"
-	.string "of new POKéMON species.\p"
-	.string "We will return the world back to\n"
-	.string "nature for the good of POKéMON.\p"
-	.string "That is TEAM AQUA's vision!\p"
-	.string "I can't allow an ignorant child like\n"
-	.string "you to get in our way.\p"
-	.string "I, ARCHIE, will show you the\n"
-	.string "consequences of meddling!$"
+	.string "아강: 또 네 녀석인가...\p"
+	.string "... 알겠나 모든\n"
+	.string "생명은 바다로부터 태어났다!\p"
+	.string "그래 바다야말로 전부다!\p"
+	.string "그래서 우리 아쿠아단은\n"
+	.string "바다를 넓혀서\l"
+	.string "새로운 포켓몬을 탄생시킨다!\p"
+	.string "포켓몬을 위해서\n"
+	.string "자연을 되돌린다!\p"
+	.string "이것이야말로 아쿠아단의 이상!\n"
+	.string "아무것도 모르는 너 같은 꼬마에게\l"
+	.string "방해받을 수는 없다\p"
+	.string "방해한다면 어떻게 되는지\n"
+	.string "이 아강이 똑똑히 보여주마!$"
+	// アオギリ『また きみか……ｐ
+	// …… いいか すべてのｎ
+	// いのちは うみから うまれた!ｐ
+	// そう うみこそが すべて!ｐ
+	// だから われわれ アクアだんはｎ
+	// うみを ふやすことでｌ
+	// あらたな ポケモンを たんじょう させる!ｐ
+	// ポケモンの ためにｎ
+	// しぜんを とりもどす!ｐ
+	// これこそが アクアだんの りそう!ｎ
+	// なにも しらない きみのような こどもにｌ
+	// じゃま させる わけには いかないｐ
+	// じゃまを するなら どうなるかｎ
+	// この アオギリが わからせて あげよう!
 
 MtChimney_Text_1B3099:: @ 81B3099
-	.string "What?!\p"
-	.string "I, ARCHIE, was caught off guard?!$"
+	.string "뭐야!?\p"
+	.string "다른 사람도 아니고 이 아강이\n"
+	.string "방심한 건가!?$"
+	// なに!?ｐ
+	// この アオギリとも あろう ものがｎ
+	// ゆだん したか!?
 
 MtChimney_Text_1B30C2:: @ 81B30C2
-	.string "ARCHIE: Ah, whatever.\n"
-	.string "I will give up our plans for MT.\l"
-	.string "CHIMNEY for the time being...\p"
-	.string "But no one can ever stop us!\n"
-	.string "TEAM AQUA will prevail!\p"
-	.string "Don't you ever forget that!$"
+	.string "아강: 뭐 상관없다\n"
+	.string "이 굴뚝산은 일단\l"
+	.string "포기하도록 하지...\p"
+	.string "하지만 우리 아쿠아단의 활동은\n"
+	.string "아무도 멈출 수 없다!\p"
+	.string "그것만은 잊지 마라!$"
+	// アオギリ『まあ いいｎ
+	// この えんとつやまは ひとまずｌ
+	// あきらめよう……ｐ
+	// だが われわれ アクアだんの かつどうをｎ
+	// とめることなど だれにも できない!ｐ
+	// それだけは わすれないで もらおう!
 
 MtChimney_Text_1B3168:: @ 81B3168
-	.string "Hehehe!\p"
-	.string "So you've come all the way here!\p"
-	.string "But you're too late!\n"
-	.string "I've already delivered the METEORITE\l"
-	.string "from METEOR FALLS to the BOSS!$"
+	.string "우효효!\p"
+	.string "너 여기까지 온 건가!\p"
+	.string "하지만 늦었다고\n"
+	.string "유성의 폭포에서 찾은\l"
+	.string "운석은 리더에게 넘겼으니까 말이야!$"
+	// ウヒョヒョ!ｐ
+	// おまえ ここまで きたのか!ｐ
+	// だけど おそかったぜｎ
+	// りゅうせいのたきで みつけたｌ
+	// いんせきは リ-ダ-に わたしたからな!
 
 MtChimney_Text_1B31EA:: @ 81B31EA
-	.string "Hehehe...\n"
-	.string "So I lost...\p"
-	.string "I'm sure glad I never took you on back\n"
-	.string "at METEOR FALLS.$"
+	.string "우효효...\n"
+	.string "져버렸나...\p"
+	.string "그때 유성의 폭포에서\n"
+	.string "싸우지 않아서 다행이군$"
+	// ウヒョヒョ……ｎ
+	// まけて しまったかｐ
+	// あのとき りゅうせいのたきでｎ
+	// たたかわなくて よかったぜ
 
 MtChimney_Text_1B3239:: @ 81B3239
-	.string "Hehehe!\p"
-	.string "You might have beaten me, but you don't\n"
-	.string "stand a chance against the BOSS!\p"
-	.string "If you get lost now, you won't have to\n"
-	.string "face a sound whipping!$"
+	.string "우효효...!\p"
+	.string "나를 이겨도\n"
+	.string "리더는 이길 수 없을걸!\p"
+	.string "빨리 돌아가야\n"
+	.string "괴로운 경험을 하지 않을 거다$"
+	// ウヒョヒョ……!ｐ
+	// おれに かててもｎ
+	// リ-ダ-には かてないぜ!ｐ
+	// さっさと かえったほうがｎ
+	// いたい おもい しなくて すむぜ
 
 MtChimney_Text_1B32C8:: @ 81B32C8
-	.string "We of TEAM AQUA are working hard for\n"
-	.string "everyone's sake.\p"
-	.string "Like, if there's more water around,\n"
-	.string "WATER POKéMON will be happy, and it'll\l"
-	.string "give people more fun places to swim!$"
+	.string "우리 아쿠아단은\n"
+	.string "모두를 위해 노력하고 있는 거다!\p"
+	.string "물이 늘어나면\n"
+	.string "물포켓몬들도 좋아할 거고\l"
+	.string "사람들도 마음껏 헤엄칠 수 있으니 좋잖아!$"
+	// おれら アクアだんはｎ
+	// みんなの ために がんばってるんだ!ｐ
+	// だって みずが ふえればｎ
+	// みずポケモンたち よろこぶしｌ
+	// ひとだって およげて きもちいいだろ!
 
 MtChimney_Text_1B336E:: @ 81B336E
-	.string "Hunh?\n"
-	.string "What do you mean I lost?$"
+	.string "어라-?\n"
+	.string "나 진 건가-!?$"
+	// あれ-?ｎ
+	// おれ まけたの-!?
 
 MtChimney_Text_1B338D:: @ 81B338D
-	.string "Our BOSS says, “It will make everyone\n"
-	.string "happy.”\p"
-	.string "But why does everyone keep getting\n"
-	.string "in our way?$"
+	.string "우리들의 리더가\n"
+	.string "“모두가 기뻐할 일”이라고\l"
+	.string "했단 말이다!\p"
+	.string "그런데 왜 다들 방해하는 거지?$"
+	// おれらの リ-ダ-はｎ
+	// 「みんなが よろこぶ ことだ」ってｌ
+	// いってるんだ!ｐ
+	// なのに なんで みんな ジャマするんだ?
 
 MtChimney_Text_1B33EA:: @ 81B33EA
-	.string "That annoying TEAM MAGMA...\n"
-	.string "They always mess with our plans!$"
+	.string "마그마단 놈들...\n"
+	.string "일일이 우릴 방해하다니!$"
+	// マグマだんの やつらめ……ｎ
+	// いちいち おれたちの じゃまを しやがって!
 
 MtChimney_Text_1B3427:: @ 81B3427
-	.string "METEORITES pack amazing power!$"
+	.string "운석에는 굉장한 파워가 있어!$"
+	// いんせきには すごい パワ-が あるのだ!
 
 MtChimney_Text_1B3446:: @ 81B3446
-	.string "Go! Stomp TEAM MAGMA!\n"
-	.string "And expand the sea!$"
+	.string "가랏-! 마그마단을 부숴버려!\n"
+	.string "아무튼 물을 늘리는 거야!$"
+	// いけ-! マグマだんを ぶっつぶせ!ｎ
+	// とにかく みずを ふやすんだ!
 
 MtChimney_Text_1B3470:: @ 81B3470
-	.string "Stay out of our way, okay?\p"
-	.string "We're trying to enlarge the sea for\n"
-	.string "the good of everybody!$"
+	.string "알겠어? 우릴 방해하지 마!\p"
+	.string "우린 모두를 위해서\n"
+	.string "바다를 늘리려고 하는 거니까!$"
+	// いいか おれたちの じゃまを するな!ｐ
+	// おれたちは みんなの ためにｎ
+	// うみを ふやそうと してるんだからな!
 
 MtChimney_Text_1B34C6:: @ 81B34C6
-	.string "Yeah!\n"
-	.string "Hose them down!$"
+	.string "좋았어-!\n"
+	.string "물을 퍼부어 줘라-!!$"
+	// よ-し!ｎ
+	// みずを ぶっかけてやれ-!!
 
 MtChimney_Text_1B34DC:: @ 81B34DC
-	.string "We're going to keep expanding the sea!$"
+	.string "좀 더 좀 더 바다를 넓히자고!$"
+	// もっと もっと うみを ふやすぜ!!
 
 MtChimney_Text_1B3503:: @ 81B3503
-	.string "Bushaa!$"
+	.string "푸샤-!!$"
+	// ぷしゃ-!!
 
 MtChimney_Text_1B350B:: @ 81B350B
-	.string "MAXIE: Oh, {PLAYER}{KUN}!\p"
-	.string "Please, you must stop TEAM AQUA\n"
-	.string "for me!\p"
-	.string "They're trying to make this volcano\n"
-	.string "inactive by using the stolen\l"
-	.string "METEORITE's power!$"
+	.string "마적: 오오! {PLAYER}!\n"
+	.string "마침 잘 와 주었다!\p"
+	.string "나를 대신해서\n"
+	.string "아쿠아단을 멈추어다오!\p"
+	.string "저 녀석들 빼앗은 운석의 파워로\n"
+	.string "이 화산의 움직임을\l"
+	.string "멈출 생각이다!$"
+	// マツブサ『おお! §あ§お!ｎ
+	// いいところに きてくれたな!ｐ
+	// わたしに かわってｎ
+	// アクアだんを とめてくれ!ｐ
+	// あいつら うばった いんせきの パワ-でｎ
+	// この かざんの うごきをｌ
+	// とめようと かんがえているんだ!
 
 MtChimney_Text_1B3598:: @ 81B3598
-	.string "MAXIE: {PLAYER}{KUN}!\p"
-	.string "Please, you've got to stop TEAM AQUA\n"
-	.string "for me!\p"
-	.string "Dealing with these three thugs is\n"
-	.string "a lot, even for me!$"
+	.string "마적: {PLAYER}!\p"
+	.string "나를 대신해서\n"
+	.string "아쿠아단을 멈추어다오!\p"
+	.string "조무래기 3명을 상대하는 건\n"
+	.string "아무리 나라도 쉽지 않다!$"
+	// マツブサ『§あ§お!ｐ
+	// わたしに かわってｎ
+	// アクアだんを とめてくれ!ｐ
+	// こいつら したっぱ 3にんの あいてはｎ
+	// さすがの わたしでも たいへんだ!
 
 MtChimney_Text_1B3608:: @ 81B3608
-	.string "MAXIE: {PLAYER}{KUN}! Thank you!\p"
-	.string "With your help, we thwarted TEAM\n"
-	.string "AQUA's destructive plan!\p"
-	.string "But... This victory doesn't mean the\n"
-	.string "end of their evil plans.\p"
-	.string "We will remain vigilant and keep up\n"
-	.string "our pursuit of TEAM AQUA.\p"
-	.string "{PLAYER}{KUN}, we shall meet again!$"
+	.string "마적: {PLAYER}! 고맙군\n"
+	.string "네 덕분에 아쿠아단의\l"
+	.string "파괴활동을 막을 수 있었다\p"
+	.string "하지만... 그 녀석들의 야망은\n"
+	.string "이걸로 끝난 게 아니겠지!\p"
+	.string "우리는 계속해서 아쿠아단을\n"
+	.string "쫓아가겠다!\p"
+	.string "{PLAYER}\n"
+	.string "다음에 보도록 하지!$"
+	// マツブサ『§あ§お! ありがとうｎ
+	// きみの おかけで アクアだんのｌ
+	// はかいかつどうを ふせぐことが できたｐ
+	// だが…… まだ あいつらの やぼうはｎ
+	// これで おわった わけじゃない!ｐ
+	// われわれは ひきつづき アクアだんをｎ
+	// おいかけると しよう!ｐ
+	// §あ§おｎ
+	// では また あおう!
 
 MtChimney_Text_1B36F1:: @ 81B36F1
-	.string "Darn... TEAM AQUA outnumbers us!\n"
-	.string "We can't keep up with them!$"
+	.string "젠장 아쿠아단이 너무 많아...\n"
+	.string "이대로라면 위험해!$"
+	// くそう アクアだんが おおすぎる……ｎ
+	// このままでは まずいぞ!
 
 MtChimney_Text_1B372E:: @ 81B372E
-	.string "If they expand the sea, there'll be less\n"
-	.string "habitats for POKéMON and people!$"
+	.string "바다를 넓혀버리면\n"
+	.string "포켓몬과 사람이 살 수 있는 곳이\l"
+	.string "그만큼 줄어든다고-!$"
+	// うみを ふやしたらｎ
+	// ポケモンや ひとが すむ ばしょがｌ
+	// へってしまう じゃね-か!
 
 MtChimney_Text_1B3778:: @ 81B3778
-	.string "TEAM AQUA wants to expand the sea...\n"
-	.string "How's that for insane?$"
+	.string "아쿠아단 녀석들\n"
+	.string "바다를 넓히려고 하다니 어이가 없구만!$"
+	// アクアだんめｎ
+	// うみを ふやそう なんて ばかげてるぜ!
 
 MtChimney_Text_1B37B4:: @ 81B37B4
-	.string "Bufoh!$"
+	.string "부후오-!!$"
+	// ぶふぉ-!!

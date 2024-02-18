@@ -1,16 +1,27 @@
 SlateportCity_House2_Text_1804CF:: @ 81804CF
-	.string "My POKéMON has a HASTY nature.\p"
-	.string "It has higher SPEED compared to my\n"
-	.string "other POKéMON.\p"
-	.string "Maybe their nature has something to\n"
-	.string "do with the stat gains of POKéMON.$"
+	.string "내 포켓몬은 성격이 성급해서\n"
+	.string "다른 포켓몬에 비해\l"
+	.string "스피드가 빨라\p"
+	.string "성격에 따라 오르기 쉬운 능력이\n"
+	.string "다른 걸까?$"
+	// わたしの ポケモン せっかちでねｎ
+	// ほかの ポケモンと くらべるとｌ
+	// すばやさが たかいんだわｐ
+	// せいかくで そだちやすい のうりょくにｎ
+	// ちがいが あるのかもな?
 
 SlateportCity_House2_Text_180567:: @ 8180567
-	.string "You need a CONTEST PASS to enter a\n"
-	.string "CONTEST.\p"
-	.string "It's easy to get. They give it to\n"
-	.string "anyone who has POKéMON.$"
+	.string "콘테스트에 참가하려면\n"
+	.string "콘테스트패스가 필요해\p"
+	.string "포켓몬을 지니고 있는 사람이라면\n"
+	.string "누구든지 받을 수 있으니까 안심해!$"
+	// コンテストに さんか するにはｎ
+	// コンテストパスが いるのｐ
+	// ポケモンを もっている ひと ならｎ
+	// だれでも もらえるから あんしん ね!
 
 SlateportCity_House2_Text_1805CD:: @ 81805CD
-	.string "Oh, a CONTEST PASS!\n"
-	.string "You're going to be a contestant?$"
+	.string "어머 콘테스트패스잖아!\n"
+	.string "흐-음 콘테스트에 참가하는구나$"
+	// あら コンテストパス!ｎ
+	// ふ-ん コンテストに さんか するんだ

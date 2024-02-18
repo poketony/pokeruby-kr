@@ -1,13 +1,21 @@
 SlateportCity_PokemonCenter_1F_Text_180602:: @ 8180602
-	.string "Want a tip for battling?\p"
-	.string "I'd say it's raising different kinds\n"
-	.string "of POKéMON in a balanced manner.\p"
-	.string "It's no good to make just one\n"
-	.string "POKéMON strong.\p"
-	.string "If it has a type disadvantage, it\n"
-	.string "might not stand a chance.$"
+	.string "승부의 요령이라...\p"
+	.string "다양한 포켓몬을\n"
+	.string "균형 있게 키우는 거 아닐까?\p"
+	.string "한 마리만 강하다 해도\n"
+	.string "상성이 불리한 포켓몬과 만나면\l"
+	.string "손발도 못 쓰고 질 수 있거든$"
+	// しょうぶの コツ……ｐ
+	// いろんな ポケモンをｎ
+	// バランスよく そだてることじゃ ないか?ｐ
+	// いっぴきだけ つよくてもｎ
+	// にがてな ポケモンに であってしまうとｌ
+	// ても あしも でなくなりそうだぜ
 
 SlateportCity_PokemonCenter_1F_Text_1806CB:: @ 81806CB
-	.string "I trade POKéMON with my friends.\p"
-	.string "If a traded POKéMON is holding an\n"
-	.string "item, it makes me twice as happy!$"
+	.string "친구랑 포켓몬 교환했을 때\p"
+	.string "포켓몬이 도구를 지니고 있으면\n"
+	.string "2배로 기뻐-!!$"
+	// ともだちと ポケモンこうかん するでしょｐ
+	// ポケモンが どうぐを もっているとｎ
+	// 2ばい うれしく なるよね-!!

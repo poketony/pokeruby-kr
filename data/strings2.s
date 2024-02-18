@@ -108,10 +108,10 @@ gOtherText_SafariStock:: @ 842C4A9
 	.string "사파리볼\n{STR_VAR_1}개 남음$"
 
 gSystemText_LinkStandby:: @ 842C4C0
-	.string "통신 대기 중입니다\n...B 버튼으로 취소합니다$"
+	.string "통신 대기 중입니다\n......B 버튼으로 취소합니다$"
 
 gSystemText_LoadEventPressA:: @ 842C4E9
-	.string "A 버튼으로 사건을 읽어들입니다\n...B 버튼으로 취소합니다$"
+	.string "A 버튼으로 사건을 읽어들입니다\n......B 버튼으로 취소합니다$"
 
 gSystemText_LoadingEvent:: @ 842C524
 	.string "사건을 읽어들이는 중!!$"
@@ -273,10 +273,10 @@ gOtherText_BattleResults:: @ 842C9F0
 	.string "{PLAYER}의 대전 성적$"
 
 gOtherText_WinRecord:: @ 842CA04
-	.string "{STR_VAR_1}승 {STR_VAR_2}패 {STR_VAR_3}무승부$"
+	.string "{CLEAR_TO 27}{STR_VAR_1}승 {STR_VAR_2}패 {STR_VAR_3}무승부$"
 
 gOtherText_WinLoseDraw:: @ 842CA20
-	.string "{CLEAR_TO 0x53}승{CLEAR_TO 0x80}패{CLEAR_TO 0xB0}무승부$"
+	.string "승{CLEAR_TO 48}패{CLEAR_TO 88}무승부$"
 
 gOtherText_SevenDashes:: @ 842CA3C
 	.string "-------$"

@@ -29,7 +29,7 @@ Route103_Text_16D65B:: @ 816D65B
 Route103_Text_16D688:: @ 816D688
 	.string "봄이: 나 왜 아빠가\n"
 	.string "너를 주목하는지\l"
-	.string "알 거 같은 기분이 들어!\p"
+	.string "알 거 같아!\p"
 	.string "왜냐하면 받은 지 얼마 안 된 포켓몬이\n"
 	.string "벌써 널 따르고 있잖아!\p"
 	.string "너라면 어떤 포켓몬이랑도\n"
@@ -77,7 +77,7 @@ Route103_Text_16D836:: @ 816D836
 Route103_Text_16D856:: @ 816D856
 	.string "휘웅: 아빠가 왜\n"
 	.string "{PLAYER}{K_EULREUL} 주목하는지\l"
-	.string "안 거 같은 기분이 들어...\p"
+	.string "알 거 같아...\p"
 	.string "받은 지 얼마 안 된 포켓몬이\n"
 	.string "벌써 이렇게 잘 따르고 있잖아\p"
 	.string "{PLAYER} 너라면 어떤 포켓몬이랑도\n"
