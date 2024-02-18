@@ -256,8 +256,7 @@ const u8 gOtherText_UsedRepel[] = _("{PLAYER}{K_EUNNEUN}\n{STR_VAR_2}{K_EULREUL}
 const u8 gOtherText_BoxIsFull[] = _("박스가 가득 찼습니다!{PAUSE_UNTIL_PRESS}");
 const u8 gOtherText_Size[] = _("크기");
 const u8 gOtherText_Firm[] = _("경도");
-
-const u8 gContestStatsText_Unknown1[] = _("{STR_VAR_1}.{STR_VAR_2}”"); // cm
+const u8 gOtherText_Centimeter[] = _("{STR_VAR_1}.{STR_VAR_2}cm");
 
 const u8 ContestStatsText_VerySoft[] = _("매우 부드럽다");
 const u8 ContestStatsText_Soft[] = _("부드럽다");

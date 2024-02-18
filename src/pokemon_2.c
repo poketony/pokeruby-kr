@@ -352,12 +352,33 @@ u32 GetBoxMonData(struct BoxPokemon *boxMon, s32 field, u8 *data)
         }
         else
         {
-            retVal = 0;
-
-            while (retVal < POKEMON_NAME_LENGTH && boxMon->nickname[retVal] != EOS)
+            if (boxMon->language == LANGUAGE_JAPANESE)
             {
-                data[retVal] = boxMon->nickname[retVal];
-                retVal++;
+                retVal = 0;
+                while (retVal < 5 && boxMon->nickname[retVal] != EOS)
+                {
+                    data[retVal] = boxMon->nickname[retVal];
+                    retVal++;
+                }
+            }
+            else
+            {
+                u8 length = 0;
+                while (boxMon->nickname[retVal] != EOS)
+                {
+                    data[retVal] = boxMon->nickname[retVal];
+                    retVal++;
+                    length++;
+
+                    if (IsKoreanGlyph(boxMon->nickname[retVal - 1]))
+                    {
+                        data[retVal] = boxMon->nickname[retVal];
+                        retVal++;
+                    }
+
+                    if (length == 5)
+                        break;
+                }
             }
 
             data[retVal] = EOS;
@@ -1163,36 +1184,6 @@ void GetSpeciesName(u8 *name, u16 species)
             name[i] = gSpeciesNames[species][i];
 
         if (name[i] == EOS)
-            break;
-    }
-
-    name[i] = EOS;
-}
-
-void GetSpeciesName5(u8 *name, u16 species)
-{
-    u8 i, length = 0;
-
-    for (i = 0; i <= POKEMON_NAME_LENGTH; i++)
-    {
-        if (species > NUM_SPECIES)
-            name[i] = gSpeciesNames[0][i];
-        else
-            name[i] = gSpeciesNames[species][i];
-
-        if (IsKoreanGlyph(name[i]))
-        {
-            i++;
-
-            if (species > NUM_SPECIES)
-                name[i] = gSpeciesNames[0][i];
-            else
-                name[i] = gSpeciesNames[species][i];
-        }
-
-        length++;
-
-        if (name[i] == EOS || length == 5)
             break;
     }
 

@@ -2248,7 +2248,7 @@ static void sub_80A015C(struct Pokemon *mon)
         if (move == 0)
         {
             sub_80A1918(i, 1);
-            SummaryScreen_PrintColoredText(gOtherText_OneDash, 13, 15, (2 * i) + 4);
+            SummaryScreen_PrintColoredTextPixelCoords(gOtherText_OneDash, 13, 122, (16 * i) + 32, 1);
             Menu_PrintText(gOtherText_TwoDashes, 26, (2 * i) + 4);
         }
         else
@@ -2258,7 +2258,7 @@ static void sub_80A015C(struct Pokemon *mon)
             else
                 SummaryScreen_DrawTypeIcon(gContestMoves[move].contestCategory + 18, 87, ((2 * i) + 4) * 8, i);
 
-            SummaryScreen_PrintColoredText(gMoveNames[move], 13, 15, (2 * i) + 4);
+            SummaryScreen_PrintColoredTextPixelCoords(gMoveNames[move], 13, 122, (16 * i) + 32, 1);
             SummaryScreen_PlaceTextTile_White(1, 24, (2 * i) + 4);
 
             ppBonuses = GetMonData(mon, MON_DATA_PP_BONUSES);
@@ -2281,7 +2281,7 @@ static void sub_80A029C(struct Pokemon *mon)
 
     if (pssData.moveToLearn == 0)
     {
-        SummaryScreen_PrintColoredText(gOtherText_CancelNoTerminator, 13, 15, 12);
+        SummaryScreen_PrintColoredTextPixelCoords(gOtherText_CancelNoTerminator, 13, 122, 96, 1);
         return;
     }
 
@@ -2293,9 +2293,9 @@ static void sub_80A029C(struct Pokemon *mon)
         SummaryScreen_DrawTypeIcon(gContestMoves[move].contestCategory + 18, 87, 96, 4);
 
     if (pssData.page == PSS_PAGE_BATTLE_MOVES)
-        SummaryScreen_PrintColoredText(gMoveNames[move], 10, 15, 12);
+        SummaryScreen_PrintColoredTextPixelCoords(gMoveNames[move], 10, 122, 96, 1);
     else
-        SummaryScreen_PrintColoredText(gMoveNames[move], 9, 15, 12);
+        SummaryScreen_PrintColoredTextPixelCoords(gMoveNames[move], 9, 122, 96, 1);
 
     SummaryScreen_PlaceTextTile_White(1, 24, 12);
 
@@ -2630,7 +2630,7 @@ static void PokemonSummaryScreen_PrintPrimaryInfo(struct Pokemon *mon)
     Menu_PrintText(gStringVar1, 1, 12);
 
     buffer = SummaryScreen_SetTextColor(gStringVar1, 13);
-    buffer = GetMonNickname5(mon, buffer);
+    buffer = GetMonNickname(mon, buffer);
     Menu_PrintText(gStringVar1, level == 100 ? 5 : 4, 12);
 
     buffer = gStringVar1;
@@ -2799,42 +2799,38 @@ static void DrawExperienceProgressBar(struct Pokemon *mon)
 // Each of the 4 summary screens displays different text.
 static void PrintSummaryWindowHeaderText(void)
 {
+    u8 rightOffset = 4 - (GetStringWidthInMenuWindow(sPageHeaderTexts[pssData.headerActionTextId]) / 8);
     u8 *buffer = gStringVar1;
 
-    buffer[0] = EXT_CTRL_CODE_BEGIN;
-    buffer[1] = 0x12;
-    buffer[2] = 0x2;
-
-    buffer += 3;
+    *(buffer++) = EXT_CTRL_CODE_BEGIN;
+    *(buffer++) = EXT_CTRL_CODE_SKIP;
+    *(buffer++) = 2;
     buffer = SummaryScreen_SetTextColor(buffer, 13);
     buffer = StringCopy(buffer, sPageHeaderTexts[pssData.headerTextId]);
-
-    buffer[0] = EXT_CTRL_CODE_BEGIN;
-    buffer[1] = 0x13;
-    buffer[2] = 0x58;
-    buffer[3] = EOS;
-
+    *(buffer++) = EXT_CTRL_CODE_BEGIN;
+    *(buffer++) = EXT_CTRL_CODE_CLEAR_TO;
+    *(buffer++) = 88;
+    *(buffer++) = EOS;
     Menu_PrintText(gStringVar1, 1, 0);
+
+    Menu_EraseWindowRect(24, 0, 29, 1);
 
     if (pssData.headerActionTextId != 0)
     {
-        SummaryScreen_PlaceTextTile_White(5, 24, 0);
-        SummaryScreen_PlaceTextTile_White(6, 25, 0);
-    }
-    else
-    {
-        Menu_EraseWindowRect(24, 0, 25, 1);
+        SummaryScreen_PlaceTextTile_White(5, 24 + rightOffset, 0);
+        SummaryScreen_PlaceTextTile_White(6, 25 + rightOffset, 0);
     }
 
     buffer = gStringVar1;
+    *(buffer++) = EXT_CTRL_CODE_BEGIN;
+    *(buffer++) = EXT_CTRL_CODE_SKIP;
+    *(buffer++) = 8 * rightOffset;
     buffer = SummaryScreen_SetTextColor(buffer, 15);
     buffer = StringCopy(buffer, sPageHeaderTexts[pssData.headerActionTextId]);
-
-    buffer[0] = EXT_CTRL_CODE_BEGIN;
-    buffer[1] = 0x13;
-    buffer[2] = 0x28;
-    buffer[3] = EOS;
-
+    *(buffer++) = EXT_CTRL_CODE_BEGIN;
+    *(buffer++) = EXT_CTRL_CODE_CLEAR_TO;
+    *(buffer++) = 40;
+    *(buffer++) = EOS;
     Menu_PrintText(gStringVar1, 26, 0);
 }
 
