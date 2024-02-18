@@ -510,7 +510,10 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
                     toCpy = gStringVar2;
                 }
                 else
-                    toCpy = gBattleTextBuff2;
+                {
+                    BattleStringExpandPlaceholders(gBattleTextBuff2, gStringVar2);
+                    toCpy = gStringVar2;
+                }
                 break;
             case B_TXT_BUFF3:
                 if (gBattleTextBuff3[0] == B_BUFF_PLACEHOLDER_BEGIN)
@@ -829,6 +832,55 @@ void ExpandBattleTextBuffPlaceholders(u8* src, u8* dst)
     {
         switch (src[srcID])
         {
+        case B_TXT_EUNNEUN:
+            if (sJongCode != 0)
+                StringAppend(dst, gExpandedPlaceholder_Eun);
+            else
+                StringAppend(dst, gExpandedPlaceholder_Neun);
+            srcID += 1;
+            break;
+        case B_TXT_IGA:
+            if (sJongCode != 0)
+                StringAppend(dst, gExpandedPlaceholder_I);
+            else
+                StringAppend(dst, gExpandedPlaceholder_Ga);
+            srcID += 1;
+            break;
+        case B_TXT_EULREUL:
+            if (sJongCode != 0)
+                StringAppend(dst, gExpandedPlaceholder_Eul);
+            else
+                StringAppend(dst, gExpandedPlaceholder_Reul);
+            srcID += 1;
+            break;
+        case B_TXT_EU:
+            if (sJongCode != 0 && sJongCode != 8)
+                StringAppend(dst, gExpandedPlaceholder_Eu);
+            else
+                StringAppend(dst, gExpandedPlaceholder_Empty);
+            srcID += 1;
+            break;
+        case B_TXT_I:
+            if (sJongCode != 0)
+                StringAppend(dst, gExpandedPlaceholder_I);
+            else
+                StringAppend(dst, gExpandedPlaceholder_Empty);
+            srcID += 1;
+            break;
+        case B_TXT_WAGWA:
+            if (sJongCode != 0)
+                StringAppend(dst, gExpandedPlaceholder_Gwa);
+            else
+                StringAppend(dst, gExpandedPlaceholder_Wa);
+            srcID += 1;
+            break;
+        case B_TXT_AYA:
+            if (sJongCode != 0)
+                StringAppend(dst, gExpandedPlaceholder_A);
+            else
+                StringAppend(dst, gExpandedPlaceholder_Ya);
+            srcID += 1;
+            break;
         case B_BUFF_STRING: // battle string
             hword = T1_READ_16(&src[srcID + 1]);
             StringAppend(dst, gBattleStringsTable[hword - BATTLESTRING_TO_SUB]);
