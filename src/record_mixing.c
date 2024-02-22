@@ -151,7 +151,7 @@ void Task_RecordMixing_Main(u8 taskId)
             tState = 4;
             data[10] = sub_8083664();
             Menu_ClearWindowText();
-            Menu_PrintText(gOtherText_MixingComplete, 2, 15);
+            Menu_PrintText(gOtherText_MixingComplete, 4, 15);
             data[8] = 0;
         }
         break;
@@ -181,7 +181,7 @@ void sub_80B95F0(u8 taskId)
     case 0:
         sub_80B9A78();
         Menu_DisplayDialogueFrame();
-        Menu_PrintText(gOtherText_MixingRecordsWithFriend, 2, 15);
+        Menu_PrintText(gOtherText_MixingRecordsWithFriend, 4, 15);
         task->data[8] = 0x708;
         task->tState = 400;
         ClearLinkCallback_2();
