@@ -945,11 +945,20 @@ void sub_8047CD8(void)
 
 static void sub_8047CE8(void)
 {
+    u8 buf[8];
+    u8 *txtPtr = buf;
     u8 mpId;
+
     sub_804AFB8(&gWindowTemplate_81E725C, gUnknown_020296CC[0], gSaveBlock2.playerName, 0xC);
     mpId = GetMultiplayerId();
     sub_804AFB8(&gWindowTemplate_81E725C, gUnknown_020296CC[3], gLinkPlayers[mpId ^ 1].name, 0xC);
-    sub_804AFB8(&gWindowTemplate_81E725C, gUnknown_020296CC[6], gUnknown_0820C14C[0], 0x8);
+
+    *(txtPtr++) = EXT_CTRL_CODE_BEGIN;
+    *(txtPtr++) = EXT_CTRL_CODE_CLEAR_TO;
+    *(txtPtr++) = (36 - GetStringWidthInMenuWindow(gUnknown_0820C14C[0])) / 2;
+    StringCopy(txtPtr, gUnknown_0820C14C[0]);
+    sub_804AFB8(&gWindowTemplate_81E725C, gUnknown_020296CC[6], buf, 0x8);
+
     sub_804ACD8(gUnknown_0820C14C[1], gUnknown_020296CC[8], 0x14);
     nullsub_5(3, 0);
 }
