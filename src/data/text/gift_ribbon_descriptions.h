@@ -1,143 +1,143 @@
 const u8 gGiftRibbonDescriptionPart1_2003RegionalTourney[] = _(
-    "2003 REGIONAL TOURNEY");
+    "2003년 지방 대회");
 
 const u8 gGiftRibbonDescriptionPart2_Champion[] = _(
-    "CHAMPION RIBBON");
+    "우승 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_2003NationalTourney[] = _(
-    "2003 NATIONAL TOURNEY");
+    "2003년 전국 대회");
 
 const u8 gGiftRibbonDescriptionPart1_2003GlobalCup[] = _(
-    "2003 GLOBAL CUP");
+    "2003년 월드컵");
 
 const u8 gGiftRibbonDescriptionPart2_RunnerUp[] = _(
-    "Runner-up RIBBON");
+    "준우승 기념리본");
 
 const u8 gGiftRibbonDescriptionPart2_Semifinalist[] = _(
-    "Semifinalist RIBBON");
+    "베스트4 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_2004RegionalTourney[] = _(
-    "2004 REGIONAL TOURNEY");
+    "2004년 지방 대회");
 
 const u8 gGiftRibbonDescriptionPart1_2004NationalTourney[] = _(
-    "2004 NATIONAL TOURNEY");
+    "2004년 전국 대회");
 
 const u8 gGiftRibbonDescriptionPart1_2004GlobalCup[] = _(
-    "2004 GLOBAL CUP");
+    "2004년 월드컵");
 
 const u8 gGiftRibbonDescriptionPart1_2005RegionalTourney[] = _(
-    "2005 REGIONAL TOURNEY");
+    "2005년 지방 대회");
 
 const u8 gGiftRibbonDescriptionPart1_2005NationalTourney[] = _(
-    "2005 NATIONAL TOURNEY");
+    "2005년 전국 대회");
 
 const u8 gGiftRibbonDescriptionPart1_2005GlobalCup[] = _(
-    "2005 GLOBAL CUP");
+    "2005년 월드컵");
 
 const u8 gGiftRibbonDescriptionPart1_PokemonBattleCup[] = _(
-    "POKéMON BATTLE CUP");
+    "포켓몬 배틀 컵");
 
 const u8 gGiftRibbonDescriptionPart2_Participation[] = _(
-    "Participation RIBBON");
+    "참가 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_PokemonLeague[] = _(
-    "POKéMON LEAGUE");
+    "포켓몬리그");
 
 const u8 gGiftRibbonDescriptionPart1_AdvanceCup[] = _(
-    "ADVANCE CUP");
+    "어드밴스 컵");
 
 const u8 gGiftRibbonDescriptionPart1_PokemonTournament[] = _(
-    "POKéMON Tournament");
+    "포켓몬 대회에");
 
 const u8 gGiftRibbonDescriptionPart2_Participation2[] = _(
-    "Participation RIBBON");
+    "참가한 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_PokemonEvent[] = _(
-    "POKéMON Event");
+    "포켓몬 이벤트에");
 
 const u8 gGiftRibbonDescriptionPart1_PokemonFestival[] = _(
-    "POKéMON Festival");
+    "포켓몬 축제에");
 
 const u8 gGiftRibbonDescriptionPart1_DifficultyClearing[] = _(
-    "Difficulty-clearing");
+    "곤란과 싸워 이긴");
 
 const u8 gGiftRibbonDescriptionPart2_Commemorative[] = _(
-    "Commemorative RIBBON");
+    "기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_ClearingAllDifficulties[] = _(
-    "RIBBON awarded for");
+    "모든 고난을");
 
 const u8 gGiftRibbonDescriptionPart2_ClearingAllDifficulties[] = _(
-    "clearing all difficulties.");
+    "극복한 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_100StraightWin[] = _(
-    "100-straight Win");
+    "100명에게 승리 달성");
 
 const u8 gGiftRibbonDescriptionPart1_DarknessTower[] = _(
-    "DARKNESS TOWER Clear");
+    "어둠탑 클리어");
 
 const u8 gGiftRibbonDescriptionPart1_RedTower[] = _(
-    "RED TOWER Clear");
+    "붉은 탑 클리어");
 
 const u8 gGiftRibbonDescriptionPart1_BlackironTower[] = _(
-    "BLACKIRON TOWER Clear");
+    "무쇠탑 클리어");
 
 const u8 gGiftRibbonDescriptionPart1_FinalTower[] = _(
-    "FINAL TOWER Clear");
+    "최후의 탑 클리어");
 
 const u8 gGiftRibbonDescriptionPart1_LegendMaking[] = _(
-    "Legend-making");
+    "전설을 만든");
 
 const u8 gGiftRibbonDescriptionPart1_PokemonCenterTokyo[] = _(
-    "POKéMON CENTER TOKYO");
+    "포켓몬센터 도쿄");
 
 const u8 gGiftRibbonDescriptionPart1_PokemonCenterOsaka[] = _(
-    "POKéMON CENTER OSAKA");
+    "포켓몬센터 오사카");
 
 const u8 gGiftRibbonDescriptionPart1_PokemonCenterNagoya[] = _(
-    "POKéMON CENTER NAGOYA");
+    "포켓몬센터 나고야");
 
 const u8 gGiftRibbonDescriptionPart1_PokemonCenterNY[] = _(
-    "POKéMON CENTER NY");
+    "포켓몬센터 뉴욕");
 
 const u8 gGiftRibbonDescriptionPart1_SummerHolidays[] = _(
-    "Summer Holidays RIBBON");
+    "여름 방학 기념리본");
 
 const u8 gGiftRibbonDescriptionPart2_EmptyString[] = _(
     "");
 
 const u8 gGiftRibbonDescriptionPart1_WinterHolidays[] = _(
-    "Winter Holidays RIBBON");
+    "겨울 방학 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_SpringHolidays[] = _(
-    "Spring Holidays RIBBON");
+    "봄 방학 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_Evergreen[] = _(
-    "Evergreen RIBBON");
+    "크리스마스 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_SpecialHoliday[] = _(
-    "Special Holiday RIBBON");
+    "기념일 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_HardWorker[] = _(
-    "Hard Worker RIBBON");
+    "열심히 한 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_LotsOfFriends[] = _(
-    "Lots of Friends RIBBON");
+    "친구 가득 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_FullOfEnergy[] = _(
-    "Full of Energy RIBBON");
+    "기운 가득 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_LovedPokemon[] = _(
-    "A commemorative RIBBON");
+    "매우 좋아하는 포켓몬에게");
 
 const u8 gGiftRibbonDescriptionPart2_LovedPokemon[] = _(
-    "for a loved POKéMON.");
+    "달려 있는 기념리본");
 
 const u8 gGiftRibbonDescriptionPart1_LoveForPokemon[] = _(
-    "RIBBON that shows");
+    "포켓몬을 매우 좋아하는 것을");
 
 const u8 gGiftRibbonDescriptionPart2_LoveForPokemon[] = _(
-    "love for POKéMON.");
+    "증명하는 기념리본");
 
 const u8 *const gGiftRibbonDescriptions[][2] = 
 {

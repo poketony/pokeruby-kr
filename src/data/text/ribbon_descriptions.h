@@ -1,59 +1,59 @@
 const u8 gRibbonDescriptionPart1_Champion[] = _(
-    "CHAMPION-beating, HALL");
+    "챔피언에게 이겨서");
 
 const u8 gRibbonDescriptionPart2_Champion[] = _(
-    "OF FAME Member RIBBON");
+    "전당등록한 기념리본");
 
 const u8 gRibbonDescriptionPart1_CoolContest[] = _(
-    "COOL CONTEST");
+    "근사함콘테스트");
 
 const u8 gRibbonDescriptionPart1_BeautyContest[] = _(
-    "BEAUTY CONTEST");
+    "아름다움콘테스트");
 
 const u8 gRibbonDescriptionPart1_CuteContest[] = _(
-    "CUTE CONTEST");
+    "귀여움콘테스트");
 
 const u8 gRibbonDescriptionPart1_SmartContest[] = _(
-    "SMART CONTEST");
+    "슬기로움콘테스트");
 
 const u8 gRibbonDescriptionPart1_ToughContest[] = _(
-    "TOUGH CONTEST");
+    "강인함콘테스트");
 
 const u8 gRibbonDescriptionPart2_NormalRank[] = _(
-    "Normal Rank winner!");
+    "노말랭크 우승!");
 
 const u8 gRibbonDescriptionPart2_SuperRank[] = _(
-    "Super Rank winner!");
+    "슈퍼랭크 우승!");
 
 const u8 gRibbonDescriptionPart2_HyperRank[] = _(
-    "Hyper Rank winner!");
+    "하이퍼랭크 우승!");
 
 const u8 gRibbonDescriptionPart2_MasterRank[] = _(
-    "Master Rank winner!");
+    "마스터랭크 우승!");
 
 const u8 gRibbonDescriptionPart1_Winning[] = _(
-    "RIBBON for clearing LV50");
+    "배틀타워 레벨50에서");
 
 const u8 gRibbonDescriptionPart2_Winning[] = _(
-    "at the BATTLE TOWER.");
+    "연승한 기념리본");
 
 const u8 gRibbonDescriptionPart1_Victory[] = _(
-    "Won for clearing LV100");
+    "배틀타워 레벨100에서");
 
 const u8 gRibbonDescriptionPart2_Victory[] = _(
-    "at the BATTLE TOWER.");
+    "연승한 기념리본");
 
 const u8 gRibbonDescriptionPart1_Artist[] = _(
-    "RIBBON for being chosen");
+    "호화로운 초상화의 모델이");
 
 const u8 gRibbonDescriptionPart2_Artist[] = _(
-    "as a super sketch model.");
+    "된 기념리본");
 
 const u8 gRibbonDescriptionPart1_Effort[] = _(
-    "RIBBON awarded for");
+    "많이 노력하고 있는");
 
 const u8 gRibbonDescriptionPart2_Effort[] = _(
-    "being a hard worker.");
+    "포켓몬에게 수여되는 리본");
 
 const u8 *const gRibbonDescriptions[][2] = 
 {

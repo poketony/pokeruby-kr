@@ -284,9 +284,9 @@ static const u8 sUnknownJpnString8[10] = _("あきと"); // Akito (Mori)
 static const u8 sUnknownJpnString9[10] = _("シゲル"); // Shigeru (Ohmori)
 static const u8 sUnknownJpnString10[10] = _("ヨシノリ"); // Yoshinori (Matsuda)
 
-static const u8 sUnknownText_2Pok[] = _("2Pok");
-static const u8 sUnknownText_3Pok[] = _("3Pok");
-static const u8 sUnknownText_4Pok[] = _("4Pok");
+static const u8 sUnknownText_2Pok[] = _("2포켓");
+static const u8 sUnknownText_3Pok[] = _("3포켓");
+static const u8 sUnknownText_4Pok[] = _("4포켓");
 static const u8* const gUnknown_08216284[] =
 {
       sUnknownText_2Pok, sUnknownText_3Pok, sUnknownText_4Pok
@@ -298,9 +298,9 @@ static const u8 sUnknown2PString[4] = _("2P");
 static const u8 sUnknown3PString[4] = _("3P");
 static const u8 sUnknown4PString[4] = _("4P");
 
-static const u8 sBlenderOpponentName1[] = _("MISTER");
-static const u8 sBlenderOpponentName2[] = _("LADDIE");
-static const u8 sBlenderOpponentName3[] = _("LASSIE");
+static const u8 sBlenderOpponentName1[] = _("명인");
+static const u8 sBlenderOpponentName2[] = _("남자아이");
+static const u8 sBlenderOpponentName3[] = _("여자아이");
 static const u8* const sBlenderOpponentsNames[] =
 {
     sBlenderOpponentName1, sBlenderOpponentName2, sBlenderOpponentName3
