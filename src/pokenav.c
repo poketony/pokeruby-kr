@@ -37,11 +37,12 @@ EWRAM_DATA u16 gUnknown_020388B4 = 0;
 extern const u8 gUnknown_083E0314[];
 extern const u16 gUnknown_08E9F9E8[];
 extern const u16 gUnknown_083E0274[];
-extern const u8 gUnknown_08E9FC64[];
+extern const u8 gPokenavTrainerEyesBgTiles[];
+extern const u8 gPokenavTrainerEyesRibbonsBgTiles[];
 extern const u8 gUnknown_083E0354[];
-extern const u8 gUnknown_08E9FD64[];
-extern const u8 gUnknown_08E9FE54[];
-extern const u8 gUnknown_08E9FD1C[];
+extern const u8 gPokeNavTrainerEyesRibbonsTopBgTiles[];
+extern const u8 gPokeNavTrainerEyesTopBgTiles[];
+extern const u8 gPokeNavTrainerEyesBottomBgTiles[];
 extern const u16 gPokenavConditionSearch2_Pal[];
 extern const u8 gUnknown_083E0334[];
 extern const u16 gUnknown_083E02B4[];
@@ -998,7 +999,10 @@ bool8 sub_80F02A0(void)
         Menu_EraseScreen();
         break;
     case 5:
-        LZ77UnCompVram(gUnknown_08E9FC64, (void *)VRAM + 0xE800);
+        if (gPokenavStructPtr->unk87CA != 2)
+            LZ77UnCompVram(gPokenavTrainerEyesRibbonsBgTiles, (void *)VRAM + 0xE800);
+        else
+            LZ77UnCompVram(gPokenavTrainerEyesBgTiles, (void *)VRAM + 0xE800);
         break;
     case 6:
         LZ77UnCompVram(gPokenavConditionSearch2_Gfx, (void *)VRAM + 0x8000);
@@ -1040,12 +1044,12 @@ bool8 sub_80F02A0(void)
     case 8:
         if (gPokenavStructPtr->unk87CA != 2)
         {
-            sub_8095C8C((void *)VRAM + 0xE800, 0, 5, gUnknown_08E9FD1C, 0, 0, 9, 4, 9);
+            sub_8095C8C((void *)VRAM + 0xE800, 0, 5, gPokeNavTrainerEyesRibbonsTopBgTiles, 0, 0, 9, 4, 9);
         }
         else
         {
-            sub_8095C8C((void *)VRAM + 0xE800, 0, 4, gUnknown_08E9FE54, 0, 0, 12, 10, 12);
-            sub_8095C8C((void *)VRAM + 0xE800, 0, 8, gUnknown_08E9FD64, 0, 0, 12, 10, 12);
+            sub_8095C8C((void *)VRAM + 0xE800, 0, 4, gPokeNavTrainerEyesBottomBgTiles, 0, 0, 12, 10, 12);
+            sub_8095C8C((void *)VRAM + 0xE800, 0, 8, gPokeNavTrainerEyesTopBgTiles, 0, 0, 12, 10, 12);
         }
         break;
     case 9:
@@ -1260,7 +1264,7 @@ void sub_80F0A24(u16 arg0, u16 arg1)
     u8 var0 = gPokenavStructPtr->unk87C8 == 0 ? 2 : 1;
     sub_80F4428(gPokenavStructPtr->unk8788, arg0, var0);
     BasicInitMenuWindow(&gWindowTemplate_81E70D4);
-    Menu_PrintText(gPokenavStructPtr->unk8788, 13, arg1);
+    Menu_PrintText(gPokenavStructPtr->unk8788, 14, arg1);
 }
 
 void sub_80F0A74(u16 arg0, u16 arg1)
@@ -1694,7 +1698,7 @@ bool8 sub_80F162C(u8 arg0)
         LZ77UnCompVram(gUnknown_08E9FF58, (void *)(VRAM + 0xE800));
         break;
     case 2:
-    DmaCopy16Defvars(3, gPokenavRibbonPokeView_Gfx, (void *)(VRAM + 0xE000), 0xE0);
+        DmaCopy16Defvars(3, gPokenavRibbonPokeView_Gfx, (void *)(VRAM + 0xE000), 0xE0);
         break;
     case 3:
         if (!arg0)
@@ -4777,6 +4781,8 @@ bool8 sub_80F63D0(void)
 
 u8 * sub_80F6514(u8 * r10, u16 sp0, u8 sp4)
 {
+    const u8 textAmount[] = _("개");
+
     u8 * dest = r10;
     u8 box = gPokenavStructPtr->unk893c[sp0].unk1;
     u8 monNo = gPokenavStructPtr->unk893c[sp0].partyIdx;
@@ -4807,7 +4813,7 @@ u8 * sub_80F6514(u8 * r10, u16 sp0, u8 sp4)
 
         dest[0] = EXT_CTRL_CODE_BEGIN;
         dest[1] = 0x13; // CLEAR_TO
-        dest[2] = 63;
+        dest[2] = 55;
         dest += 3;
 
         switch (gender)
@@ -4843,7 +4849,7 @@ u8 * sub_80F6514(u8 * r10, u16 sp0, u8 sp4)
 
         dest[0] = EXT_CTRL_CODE_BEGIN;
         dest[1] = 0x13; // CLEAR_TO
-        dest[2] = 70;
+        dest[2] = 62;
         dest += 3;
 
         dest[0] = CHAR_SLASH;
@@ -4856,13 +4862,14 @@ u8 * sub_80F6514(u8 * r10, u16 sp0, u8 sp4)
         dest = ConvertIntToDecimalString(dest, level);
         if (sp4 == 1)
         {
-            dest = AlignInt1InMenuWindow(dest, gPokenavStructPtr->unk893c[sp0].unk0, 0x80, 0x01);
+            dest = AlignInt1InMenuWindow(dest, gPokenavStructPtr->unk893c[sp0].unk0, 119, 1);
+            dest = StringCopy(dest, textAmount);
         }
         else
         {
             dest[0] = EXT_CTRL_CODE_BEGIN;
             dest[1] = 0x13; // CLEAR_TO
-            dest[2] = 103;
+            dest[2] = 95;
             dest += 3;
             *dest = EOS;
         }
