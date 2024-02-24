@@ -1281,18 +1281,20 @@ void CB2_PrintErrorMessage(void)
     switch (gMain.state)
     {
     case 0:
-        Menu_PrintTextPixelCoords(gMultiText_LinkError, 20, 56, 1);
+        {
+            u8 strWidth = GetStringWidthInMenuWindow(gMultiText_LinkError);
+            u8 left = (240 - strWidth) / 2;
+            Menu_PrintTextPixelCoords(gMultiText_LinkError, left, 56, 1);
+        }
 #if DEBUG
         StringCopy(array, sColorCodes);
 
         ConvertIntToHexStringN(array2, sErrorLinkStatus, STR_CONV_MODE_LEADING_ZEROS, 8);
         StringAppend(array, array2);
-
         StringAppend(array, sEmptyString);
 
         ConvertIntToHexStringN(array2, sErrorLastSendQueueCount, STR_CONV_MODE_LEADING_ZEROS, 2);
         StringAppend(array, array2);
-
         StringAppend(array, sEmptyString);
 
         ConvertIntToHexStringN(array2, sErrorLastRecvQueueCount, STR_CONV_MODE_LEADING_ZEROS, 2);
