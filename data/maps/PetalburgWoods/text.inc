@@ -22,7 +22,7 @@ PetalburgWoods_Text_194DED:: @ 8194DED
 
 PetalburgWoods_Text_194E6B:: @ 8194E6B
 	.string "야! 데봉의 연구원!\p"
-	.string "그 서류를 일로 내놔!$"
+	.string "그 서류 일로 내놔!$"
 	// やい! デボンの けんきゅういん!ｐ
 	// その しょるいを こっちに よこしやがれ!
 
