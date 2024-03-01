@@ -1,125 +1,210 @@
 FallarborTown_ContestLobby_Text_1B6E63:: @ 81B6E63
-	.string "Oh? Did you want to make some {POKEBLOCK}S\n"
-	.string "with this old-timer?$"
+	.string "오! 할아버지랑 같이\n"
+	.string "포켓몬스넥을 만들고 싶은 거니?$"
+	// お! おじさんと いっしょにｎ
+	// ポロックを つくりたいのかい?
 
 FallarborTown_ContestLobby_Text_1B6E9D:: @ 81B6E9D
-	.string "Excellent!$"
+	.string "그렇구나!$"
+	// そうか!
 
 FallarborTown_ContestLobby_Text_1B6EA8:: @ 81B6EA8
-	.string "Oh...\n"
-	.string "You've made this old-timer sad...$"
+	.string "그렇구나...\n"
+	.string "할아버지 외로워...$"
+	// そうか…ｎ
+	// おじさん さみしい…
 
 FallarborTown_ContestLobby_Text_1B6ED0:: @ 81B6ED0
-	.string "Do you know how to make a {POKEBLOCK}?$"
+	.string "그럼 포켓몬스넥을 만드는 방법은\n"
+	.string "이미 알고 있니?$"
+	// じゃあ ポロックの つくりかたは ｎ
+	// もう しってるかい?
 
 FallarborTown_ContestLobby_Text_1B6EF1:: @ 81B6EF1
-	.string "Let's get started, then!\p"
-	.string "Let's BERRY BLENDER!$"
+	.string "그럼 시작한다!\p"
+	.string "렛츠 나무열매블렌더!!$"
+	// じゃあ はじめるぞ!ｐ
+	// レッツ きのみブレンダ-!!
 
 FallarborTown_ContestLobby_Text_1B6F1F:: @ 81B6F1F
-	.string "Okay, a little explanation, then.\p"
-	.string "Oh, don't worry, it's quite simple.\p"
-	.string "When the BLENDER's arrow comes to\n"
-	.string "your marker, just press the A Button.\p"
-	.string "That's all you have to do.\n"
-	.string "You'll see how easy it is when you try.$"
+	.string "좋아 설명할게!\p"
+	.string "뭐 간단해!\p"
+	.string "나무열매블렌더의 마크가\n"
+	.string "자기 쪽으로 올 때\l"
+	.string "버튼을 누르기만 하면 되거든\p"
+	.string "뭐 실제로 해보면\n"
+	.string "금방 알게 될 거야!$"
+	// よし せつめいするぞ!ｐ
+	// なぁに かんたんな ことだ!ｐ
+	// きのみブレンダ-の マ-クがｎ
+	// じぶんの ところに きたらｌ
+	// ボタンを おせば いいだけだｐ
+	// まあ じっさいに やってみればｎ
+	// すぐ わかるさ!
 
 FallarborTown_ContestLobby_Text_1B6FF0:: @ 81B6FF0
-	.string "Oh?\n"
-	.string "You don't have any BERRIES?\p"
-	.string "If you don't have any BERRIES,\n"
-	.string "you can't make any {POKEBLOCK}S.$"
+	.string "어라?\n"
+	.string "근데 나무열매를 안 갖고 있나 보네\p"
+	.string "나무열매가 없으면 포켓몬스넥은\n"
+	.string "만들 수 없어$"
+	// あれ?ｎ
+	// でも きのみを もってない みたいだねｐ
+	// きのみが ないと ポロックはｎ
+	// つくれないんだよ
 
 FallarborTown_ContestLobby_Text_1B704A:: @ 81B704A
-	.string "Well, that won't do at all now, will it?\p"
-	.string "If you don't mind leftovers, you can\n"
-	.string "have one of my BERRIES.\p"
-	.string "That way, we could make some {POKEBLOCK}S\n"
-	.string "together using the BERRY BLENDER.$"
+	.string "뭐 어쩔 수 없지\p"
+	.string "할아버지의 남은 나무열매라도\n"
+	.string "괜찮다면 주마!\p"
+	.string "이걸로 같이 나무열매블렌더로\n"
+	.string "포켓몬스넥을 만들자꾸나$"
+	// しかたないなぁ もうｐ
+	// おじさんの あまった きのみでｎ
+	// よければ あげるよ!ｐ
+	// これで いっしょに きのみブレンダ-でｎ
+	// ポロックを つくろうや
 
 FallarborTown_ContestLobby_Text_1B70F6:: @ 81B70F6
-	.string "If I had some BERRIES left over,\n"
-	.string "I'd gladly give you one...\p"
-	.string "But, I don't have any to spare today.\n"
-	.string "We'll have to do this another time.$"
+	.string "할아버지한테 남은 나무열매가 있으면\n"
+	.string "줄 수 있을 텐데...\p"
+	.string "오늘은 더 이상 남아있지 않구먼\n"
+	.string "다음에 같이 하자꾸나$"
+	// おじさんの あまりの きのみが あればｎ
+	// あげるん だけど…ｐ
+	// きょうは もう あまって ないんだｎ
+	// また こんど やろうな
 
 FallarborTown_ContestLobby_Text_1B717C:: @ 81B717C
-	.string "But your {POKEBLOCK} CASE is full.\p"
-	.string "You should use some {POKEBLOCK}S before\n"
-	.string "you come see me again.$"
+	.string "하지만 포켓몬스넥케이스가\n"
+	.string "가득 찬 것 같구먼\p"
+	.string "포켓몬스넥을 줄이고 나서\n"
+	.string "다시 오게나$"
+	// でも ポロックケ-ス がｎ
+	// いっぱいの ようだねｐ
+	// ポロックを へらしてからｎ
+	// また おいで
 
 FallarborTown_ContestLobby_Text_1B71D2:: @ 81B71D2
-	.string "But you don't have a {POKEBLOCK} CASE.\p"
-	.string "You should get a {POKEBLOCK} CASE and then\n"
-	.string "come see me.$"
+	.string "하지만 포켓몬스넥케이스를\n"
+	.string "아직 갖고 있지 않나 보구나\p"
+	.string "포켓몬스넥케이스를\n"
+	.string "받고 나서 다시 오렴$"
+	// でも ポロックケ-スをｎ
+	// まだもって ないようだねｐ
+	// ポロックケ-スをｎ
+	// もらってから またおいで
 
 LilycoveCity_ContestLobby_Text_1B7225:: @ 81B7225
 SlateportCity_ContestLobby_Text_1B7225:: @ 81B7225
-	.string "Let's get blending already!$"
+	.string "빨리 섞어 보자!!$"
+	// はやく まぜようぜ!!
 
 LilycoveCity_ContestLobby_Text_1B7241:: @ 81B7241
-	.string "I wonder what kind of {POKEBLOCK} I'll get?\n"
-	.string "This is so exciting!$"
+	.string "어떤 포켓몬스넥이 완성될까?\n"
+	.string "두근거리네!$"
+	// どんな ポロックが できるのかしら?ｎ
+	// ドキドキ しちゃう!
 
 FallarborTown_ContestLobby_Text_1B727C:: @ 81B727C
-	.string "{POKEBLOCK}S will be made with your friends \n"
-	.string "from BERRIES in the BERRY BLENDER.\p"
-	.string "Is it okay to save the game before\n"
-	.string "linking with your friends?$"
+	.string "나무열매블렌더로 친구와 함께\n"
+	.string "나무열매로 포켓몬스넥을 만듭니다\p"
+	.string "통신하기 전에\n"
+	.string "리포트를 작성해도 괜찮겠습니까?$"
+	// きのみブレンダ-で ともだちと いっしょにｎ
+	// きのみから ポロックを つくりますｐ
+	// つうしんに はいる まえにｎ
+	// レポ-トを かいても よろしいですか?
 
 FallarborTown_ContestLobby_Text_1B7304:: @ 81B7304
-	.string "Searching for your friends...\n"
-	.string "... ... B Button: Cancel$"
+	.string "친구를 찾고 있습니다\n"
+	.string "......B 버튼으로 취소$"
+	// ともだちを さがしていますｎ
+	// ……Bボタンで キャンセル
 
 FallarborTown_ContestLobby_Text_1B733B:: @ 81B733B
-	.string "{STR_VAR_1} arrived.$"
+	.string "{STR_VAR_1}님이 왔습니다$"
+	// §いさんが きました
 
 FallarborTown_ContestLobby_Text_1B7347:: @ 81B7347
-	.string "{STR_VAR_1} and {STR_VAR_2} arrived.$"
+	.string "{STR_VAR_1}님과 {STR_VAR_2}님이\n"
+	.string	"왔습니다$"
+	// §いさんと §うさんがｎ
+	// きました
 
 FallarborTown_ContestLobby_Text_1B735A:: @ 81B735A
-	.string "{STR_VAR_1}, {STR_VAR_2}, and\n"
-	.string "{STR_VAR_3} arrived.$"
+	.string "{STR_VAR_1}님과 {STR_VAR_2}님\n"
+	.string "그리고 {STR_VAR_3}님이 왔습니다$"
+	// §いさん §うさんｎ
+	// §えさんが きました
 
 UnknownString_81B7372: @ 81B7372
-	.string "Nobody came...$"
+	.string "아무도 오지 않았습니다...$"
+	// だれも きませんでした…
 
 FallarborTown_ContestLobby_Text_1B7381:: @ 81B7381
-	.string "You have no BERRIES.\n"
-	.string "The BERRY BLENDER can't be used.$"
+	.string "나무열매가 없으므로\n"
+	.string "나무열매블렌더는 쓸 수 없습니다$"
+	// きのみが ないのでｎ
+	// きのみブレンダ-は つかえません
 
 FallarborTown_ContestLobby_Text_1B73B7:: @ 81B73B7
-	.string "Your {POKEBLOCK} CASE is full.\n"
-	.string "The BERRY BLENDER can't be used.$"
+	.string "포켓몬스넥케이스가 가득하므로\n"
+	.string "나무열매블렌더는 쓸 수 없습니다$"
+	// ポロックケ-スが いっぱい なのでｎ
+	// きのみブレンダ-は つかえません
 
 FallarborTown_ContestLobby_Text_1B73F1:: @ 81B73F1
-	.string "You don't have a {POKEBLOCK} CASE.\n"
-	.string "The BERRY BLENDER can't be used.$"
+	.string "포켓몬스넥케이스가 없으므로\n"
+	.string "나무열매블렌더는 쓸 수 없습니다$"
+	// ポロックケ-スが ないのでｎ
+	// きのみブレンダ-は つかえません
 
 FallarborTown_ContestLobby_Text_1B742F:: @ 81B742F
-	.string "I love making {POKEBLOCK}S.\p"
-	.string "I always have some BERRIES with me.$"
+	.string "나는 포켓몬스넥을\n"
+	.string "만드는 게 너무 좋아서\p"
+	.string "언제나 나무열매를\n"
+	.string "갖고 오지$"
+	// わしは ポロックをｎ
+	// つくるのが だいすきでｐ
+	// いつも きのみをｎ
+	// もって きてるんだ
 
 FallarborTown_ContestLobby_Text_1B7469:: @ 81B7469
-	.string "If you'd like, we could make some\n"
-	.string "{POKEBLOCK}S together using the\l"
-	.string "BERRY BLENDER.$"
+	.string "만약 괜찮다면\n"
+	.string "같이 나무열매블렌더로\l"
+	.string "포켓몬스넥을 만들자고$"
+	// もし よかったらｎ
+	// いっしょに きのみブレンダ-でｌ
+	// ポロックを つくろうや
 
 FallarborTown_ContestLobby_Text_1B74B4:: @ 81B74B4
-	.string "Oh?\n"
-	.string "You don't have any BERRIES?\p"
-	.string "Well, that won't do at all now, will it?\p"
-	.string "If you don't mind leftovers, you can\n"
-	.string "have one of my BERRIES.$"
+	.string "어라?\n"
+	.string "나무열매를 안 가지고 있니?\p"
+	.string "뭐 어쩔 수 없지\p"
+	.string "아저씨의 남은 나무열매라도\n"
+	.string "괜찮다면 줄게!$"
+	// あれ?ｎ
+	// きのみを もってないの?ｐ
+	// しかたないなぁ もうｐ
+	// おじさんの あまった きのみでｎ
+	// よければ あげるよ!
 
 FallarborTown_ContestLobby_Text_1B753A:: @ 81B753A
-	.string "We'll use it to make {POKEBLOCK}S together\n"
-	.string "using the BERRY BLENDER.$"
+	.string "이제 같이 나무열매블렌더로\n"
+	.string "포켓몬스넥을 만들자!$"
+	// これで いっしょに きのみブレンダ-でｎ
+	// ポロックを つくろうや
 
 FallarborTown_ContestLobby_Text_1B7578:: @ 81B7578
-	.string "Oh?\n"
-	.string "You don't have any BERRIES?\p"
-	.string "If I had some left over, I'd gladly\n"
-	.string "give you one...\p"
-	.string "But, I don't have any to spare today.\n"
-	.string "Sorry about that.$"
+	.string "어라?\n"
+	.string "나무열매를 안 가지고 있니?\p"
+	.string "아저씨한테 남은 게 있다면\n"
+	.string "줄 수 있을 텐데...\p"
+	.string "오늘 건 이제 다 썼어\n"
+	.string "미안해$"
+	// あれ?ｎ
+	// きのみを もってないの?ｐ
+	// おじさんの あまりが あればｎ
+	// あげるん だけど…ｐ
+	// きょうは もう あまってｎ
+	// ないんだ すまんな

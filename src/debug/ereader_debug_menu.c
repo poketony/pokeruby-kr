@@ -11,7 +11,7 @@
 #include "mail_data.h"
 
 #if DEBUG
-const u8 Str_842E238[] = DTR("タマゴ", "EGG");
+const u8 Str_842E238[] = DTR("タマゴ", "알");
 #else
 const u8 Str_842E238[] = _("タマゴ");
 #endif
@@ -160,8 +160,8 @@ size_t debug_sub_813C5B4(u8 * dest)
     return size;
 }
 
-const u8 Str_842E240[] = _("ENGLISH");
-const u8 Str_842E248[] = _("TOURNAMENT");
+const u8 Str_842E240[] = _("한글");
+const u8 Str_842E248[] = _("토너먼트");
 
 void debug_sub_813C638(struct Pokemon * mon, u16 species, u8 level, u16 itemId)
 {
@@ -310,22 +310,22 @@ size_t debug_sub_813C93C(u8 * dest)
 }
 
 const u8 Str_842E25E[] = KANA("ポケコッコ"); // TRN: kokko?
-const u8 Str_842E264[] = _("ticket");
-const u8 Str_842E26B[] = _("{PKMN}");
-const u8 Str_842E26E[] = _("wrong {PKMN}");
-const u8 Str_842E277[] = _("ribbon");
-const u8 Str_842E27E[] = _("DEX");
-const u8 Str_842E282[] = _("message");
-const u8 Str_842E28A[] = _("egg");
+const u8 Str_842E264[] = _("티켓");
+const u8 Str_842E26B[] = _("포켓몬");
+const u8 Str_842E26E[] = _("틀린 포켓몬");
+const u8 Str_842E277[] = _("리본");
+const u8 Str_842E27E[] = _("도감");
+const u8 Str_842E282[] = _("메시지");
+const u8 Str_842E28A[] = _("알");
 const u8 Str_842E28E[] = _("RAM seed");
-const u8 Str_842E297[] = _("trainer");
-const u8 Str_842E29F[] = _("clock");
-const u8 Str_842E2A5[] = _("item");
-const u8 Str_842E2AA[] = _("goods");
-const u8 Str_842E2B0[] = _("potion");
-const u8 Str_842E2B7[] = _("ball");
-const u8 Str_842E2BC[] = _("cheri berry");
-const u8 Str_842E2C8[] = _("TM01");
+const u8 Str_842E297[] = _("트레이너");
+const u8 Str_842E29F[] = _("시계");
+const u8 Str_842E2A5[] = _("도구");
+const u8 Str_842E2AA[] = _("굿즈");
+const u8 Str_842E2B0[] = _("회복");
+const u8 Str_842E2B7[] = _("볼");
+const u8 Str_842E2BC[] = _("버치열매");
+const u8 Str_842E2C8[] = _("기술머신01");
 
 const struct UnkDebugMenu3Items gUnknown_Debug_842E2D0[] = {
     {Str_842E264, debug_sub_813C404},

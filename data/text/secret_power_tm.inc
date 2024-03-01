@@ -1,34 +1,57 @@
 Route111_Text_1A3520:: @ 81A3520
-	.string "What's that?\n"
-	.string "What am I doing?\p"
-	.string "I'm thinking about making my own room\n"
-	.string "here using a POKéMON move.\p"
-	.string "I know! I'll give you this TM.\n"
-	.string "Will you use it to make your own room?$"
+	.string "엣 뭘 하고 있냐고?\p"
+	.string "포켓몬의 기술을 써서\n"
+	.string "여기에 나만의 방을\l"
+	.string "만들려고 생각 중이야!\p"
+	.string "그래 이 기술머신을 줄 테니까\n"
+	.string "너도 만들어 볼래?$"
+	// えっ なにを してるかって?ｐ
+	// ポケモンの わざを つかってｎ
+	// ここに ぼくだけの へやをｌ
+	// つくろうと おもってね!ｐ
+	// そうだっ この わざマシンを あげるからｎ
+	// きみも つくって みるかい?
 
 Route111_Text_1A35C5:: @ 81A35C5
-	.string "Find a big tree that looks like it might\n"
-	.string "drop some vines.\p"
-	.string "Use SECRET POWER in front of the tree.\n"
-	.string "Some vines should get free and drop\l"
-	.string "down, so you can climb the tree.\p"
-	.string "You'll find a lot of space for putting\n"
-	.string "your favorite things.\p"
-	.string "It'll be your own secret room...\n"
-	.string "A SECRET BASE!\p"
-	.string "You should make one, too.\p"
-	.string "Another thing, you don't always have\n"
-	.string "to make your SECRET BASE in a tree.\p"
-	.string "Try using SECRET POWER on rock walls\n"
-	.string "that have small indents in them.\p"
-	.string "I'm going to look for other places, too.\n"
-	.string "Okay, bye!$"
+	.string "덩굴이 떨어질 것 같은 나무를 향해서\n"
+	.string "비밀의힘을 써 봐!\l"
+	.string "덩굴이 떨어져서 나무 위에 들어갈 수 있어!\p"
+	.string "그러면 위에 넓은 방이 있어서\n"
+	.string "나는 거기에 좋아하는 물건을 놓지!\l"
+	.string "자신만의 비밀의 방...\l"
+	.string "그래 비밀기지야!\l"
+	.string "너도 만들면 좋을걸-\p"
+	.string "아 참 비밀기지를 만들 수 있는 곳은\n"
+	.string "나무 위뿐만이 아니야!\p"
+	.string "작게 움푹 패인 벽 같은 곳에도\n"
+	.string "비밀의힘을 써보도록 해!\p"
+	.string "나는 다른 장소를 찾아보도록 할게\n"
+	.string "그럼 이만!$"
+	// ツルが おちそうな きにむかってｎ
+	// ひみつのちからを つかってごらん!ｌ
+	// ツルが おちてきて きのうえに のぼれるよ!ｐ
+	// それでね うえには ひろいへやが あるからｎ
+	// ぼくは そこに すきなものを おくんだ!ｌ
+	// じぶんだけの ひみつのへや…ｌ
+	// そう ひみつきちさ!ｌ
+	// きみも つくると いいよ-ｐ
+	// そうそう ひみつきちを つくれる ばしょはｎ
+	// きのうえ だけじゃ ないよ!ｐ
+	// ちいさな くぼみがある かべなんかにもｎ
+	// ひみつのちからを つかって みるといいよ!ｐ
+	// ぼくも ほかの ばしょを さがして みるねｎ
+	// それじゃ!
 
 Route111_Text_1A37B5:: @ 81A37B5
-	.string "Oh, you don't want this?\n"
-	.string "If you change your mind, tell me, okay?$"
+	.string "그래 필요 없구나...\n"
+	.string "가지고 싶어진다면 다시 말 걸어줘!$"
+	// そう いらないんだ…ｎ
+	// ほしくなったら また こえかけてね!
 
 Route111_Text_1A37F6:: @ 81A37F6
-	.string "Oh, you don't have any room for this.\p"
-	.string "I'll hold on to it, so come back for it\n"
-	.string "another time, okay?$"
+	.string "어라?\n"
+	.string "그 이상은 지닐 수 없는 것 같아\p"
+	.string "다음에 가지러 와줘!$"
+	// あれ?ｎ
+	// それいじょうは もてない みたいだよｐ
+	// また こんど とりに きてね!
