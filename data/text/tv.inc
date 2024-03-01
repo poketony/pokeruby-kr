@@ -195,62 +195,100 @@ gTVBravoTrainerText9:: @ 81A774F
 	// §い の しょうかいだ-!
 
 BattleTower_Lobby_Text_1A776D:: @ 81A776D
-	.string "Hello! You're the TRAINER who just had\n"
-	.string "a battle, right?\p"
-	.string "I'm gathering interviews with TRAINERS\n"
-	.string "all over the place.\p"
-	.string "May I get a few words from you about\n"
-	.string "your impressions on battling?$"
+	.string "아! 지금 막 배틀이 끝난\n"
+	.string "트레이너분이시군요!\p"
+	.string "저는 지금 여러 트레이너의\n"
+	.string "이야기를 들으면서 돌아다니고 있는데\p"
+	.string "배틀이 끝난 감상을\n"
+	.string "조금만 들려주실 수 있을까요?$"
+	// あ! いま たたかっていたｎ
+	// トレ-ナ-の かたですね!ｐ
+	// わたし いま いろんな トレ-ナ-のｎ
+	// はなしを きいて まわってるんだけどｐ
+	// たたかいおわった かんそうをｎ
+	// すこしだけ きかせて もらえませんか?
 
 BattleTower_Lobby_Text_1A7823:: @ 81A7823
-	.string "You will? Really?\n"
-	.string "Thank you!\l"
-	.string "Then, uh...\p"
-	.string "How did things turn out in the BATTLE\n"
-	.string "TOWER today?\p"
-	.string "Were you satisfied with the battle?\n"
-	.string "Or are you unhappy?$"
+	.string "정말인가요!?\n"
+	.string "감사합니다!\l"
+	.string "으음 그럼...\p"
+	.string "이번 배틀타워의\n"
+	.string "대전은 어땠나요?\p"
+	.string "만족하셨습니까!?\n"
+	.string "아니면 불만이신가요!?$"
+	// ほんと!?ｎ
+	// ありがとう!ｌ
+	// えっと それじゃあねぇ……ｐ
+	// こんかいの バトルタワ-のｎ
+	// たいせんは どうでしたかｐ
+	// まんぞく でしたか!ｎ
+	// それとも ふまん ですか!?
 
 BattleTower_Lobby_Text_1A78B7:: @ 81A78B7
-	.string "Oh...\n"
-	.string "Sorry we disturbed you.\p"
-	.string "Please give us an interview the next\n"
-	.string "time you visit the BATTLE TOWER.$"
+	.string "아아!\n"
+	.string "죄송합니다\p"
+	.string "그럼 다음에 또 배틀타워에 온다면\n"
+	.string "들려주세요$"
+	// あぁ!ｎ
+	// ごめんなさいｐ
+	// じゃあ またこんど バトルタワ-に きたらｎ
+	// きかせて くださいね
 
 BattleTower_Lobby_Text_1A791B:: @ 81A791B
-	.string "Well, of course!\p"
-	.string "That unmistakable look of satisfaction\n"
-	.string "on your face...\p"
-	.string "It's obvious that you've had a great\n"
-	.string "battle.$"
+	.string "역시나!\p"
+	.string "그 만족한 얼굴을 보면\n"
+	.string "얼마나 좋은 시합이었는지가\l"
+	.string "보인단 말이죠!$"
+	// さっすが!ｐ
+	// その まんぞくした かおを みればｎ
+	// どんなに いいしあいだったかｌ
+	// わかりますよ!
 
 BattleTower_Lobby_Text_1A7990:: @ 81A7990
-	.string "Oh, I see...\p"
-	.string "Well, it certainly is difficult to make a\n"
-	.string "battle turn out exactly as planned.$"
+	.string "으-음 그렇습니까...\p"
+	.string "생각한 것처럼 승부하는 건\n"
+	.string "꽤나 어려운 일이니 말이죠...$"
+	// う-ん そうですか……ｐ
+	// おもいどおりに しょうぶを するのってｎ
+	// なかなか むずかしい ですからね……
 
 BattleTower_Lobby_Text_1A79EB:: @ 81A79EB
-	.string "Oh, oh, may I ask one more question?\p"
-	.string "If you were to describe your\n"
-	.string "impressions about this battle with one\l"
-	.string "saying, what would it be?$"
+	.string "아앗 그리고\n"
+	.string "하나만 더 괜찮을까요?\p"
+	.string "이번 배틀의 감상을\n"
+	.string "한마디로 딱 들려주세요!$"
+	// あぁっ あとｎ
+	// もう ひとつだけ いいですか?ｐ
+	// この たたかいの かんそうをｎ
+	// ひとことで ビシッと きかせてください!
 
 BattleTower_Lobby_Text_1A7A6E:: @ 81A7A6E
-	.string "Oh, that is stunningly cool!\p"
-	.string "That's a great line!\n"
-	.string "I hope you'll do great next time, too.\p"
-	.string "I hope to see you again!$"
+	.string "멋있어요-!!\p"
+	.string "좋은 마무리 대사네요\n"
+	.string "다음 배틀도 기대하고 있겠습니다\p"
+	.string "그럼 다음에 또 봐요!$"
+	// かっこい-!!ｐ
+	// いい きめゼリフ ですねｎ
+	// つぎの たたかいも きたい してますよｐ
+	// それでは また!
 
 BattleTower_Lobby_Text_1A7AE0:: @ 81A7AE0
-	.string "Oh, I see...\p"
-	.string "Still, being the silent type is also cool,\n"
-	.string "isn't it?\p"
-	.string "I hope you'll give me the opportunity to\n"
-	.string "share your thoughts again!$"
+	.string "그렇습니까...\p"
+	.string "하지만 아무 할 말이 없는 것\n"
+	.string "또한 멋있네요!\p"
+	.string "그럼 다음 기회에\n"
+	.string "감상을 들려주세요!$"
+	// そうですか……ｐ
+	// でも なにも いわないのもｎ
+	// また かっこいいですね!ｐ
+	// それじゃあ またの きかいにｎ
+	// かんそうを きかせて ください!
 
 BattleTower_Lobby_Text_1A7B66:: @ 81A7B66
-	.string "I'll be looking forward to your next\n"
-	.string "battle!$"
+	.string "다음 배틀도\n"
+	.string "기대하고 있다구요$"
+	// つぎの たたかいもｎ
+	// きたい してますよ
 
 gTVBravoTrainerBattleTowerText1:: @ 81A7B93
 	.string "Yeah!\n"
