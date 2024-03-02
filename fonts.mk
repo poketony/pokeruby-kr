@@ -25,8 +25,11 @@ graphics-modern/fonts/font3_lat.4bpp: graphics-modern/fonts/font3_lat.png
 graphics/fonts/font4_lat.4bpp: graphics/fonts/font4_lat.png
 	$(RSFONT) $< $@ 220 0
 
-graphics/fonts/font6_braille.1bpp: graphics/fonts/font6_braille.png
+graphics/fonts/font6_braille_legacy.1bpp: graphics/fonts/font6_braille_legacy.png
 	$(RSFONT) $< $@ 192 0
+
+graphics/fonts/font6_braille.4bpp: graphics/fonts/font6_braille.png
+	$(RSFONT) $< $@ 128 1
 
 graphics/fonts/font0_kor.4bpp: graphics/fonts/font0_kor.png
 	$(RSFONT) $< $@ 2608 1

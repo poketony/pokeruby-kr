@@ -1,11 +1,11 @@
 Underwater_SealedChamber_Braille_1C533D:: @ 81C533D
 	.byte 3
 	.byte 6
-	.byte 27
+	.byte 26
 	.byte 13
 	.byte 5
 	.byte 9
-	.braille "GO UP HERE.$"
+	.braille "⠱⠈⠕⠠⠎⠀⠍⠗⠐⠥$"
 
 SealedChamber_OuterRoom_Braille_1C534F:: @ 81C534F
 	.byte 9
@@ -99,12 +99,13 @@ SealedChamber_OuterRoom_Braille_1C53A9:: @ 81C53A9
 
 SealedChamber_OuterRoom_Braille_1C53B1:: @ 81C53B1
 	.byte 5
-	.byte 6
+	.byte 4
 	.byte 25
-	.byte 13
+	.byte 15
 	.byte 7
-	.byte 9
-	.braille "DIG HERE.$"
+	.byte 7
+	.braille "⠱⠈⠕⠠⠎\n"
+	.braille "⠈⠍⠑⠎⠶⠙⠈⠕$"
 
 SealedChamber_InnerRoom_Braille_1C53C1:: @ 81C53C1
 	.byte 3
@@ -125,10 +126,10 @@ SealedChamber_InnerRoom_Braille_1C53F2:: @ 81C53F2
 	.byte 19
 	.byte 8
 	.byte 3
-	.braille "IN THIS\n"
-	.braille "CAVE WE\n"
-	.braille "HAVE\n"
-	.braille "LIVED.$"
+	.braille "⠍⠐⠕⠊⠮⠵\n"
+	.braille "⠕⠀⠊⠿⠈⠯⠝⠠⠎\n"
+	.braille "⠠⠗⠶⠚⠧⠂⠚⠈⠥\n"
+	.braille "⠇⠂⠣⠧⠌⠊$"
 
 SealedChamber_InnerRoom_Braille_1C5414:: @ 81C5414
 	.byte 4
