@@ -28,6 +28,40 @@ static const s32 sPowersOfTen[] =
     1000000000,
 };
 
+// MEMO: 기존 영문 점자를 지원하기 위한 데이터
+static const u8 sBrailleCharmap[][2] =
+{
+    { CHAR_A,      0x01 },
+    { CHAR_B,      0x05 },
+    { CHAR_C,      0x03 },
+    { CHAR_D,      0x0B },
+    { CHAR_E,      0x09 },
+    { CHAR_F,      0x07 },
+    { CHAR_G,      0x0F },
+    { CHAR_H,      0x0D },
+    { CHAR_I,      0x06 },
+    { CHAR_J,      0x0E },
+    { CHAR_K,      0x11 },
+    { CHAR_L,      0x15 },
+    { CHAR_M,      0x13 },
+    { CHAR_N,      0x1B },
+    { CHAR_O,      0x19 },
+    { CHAR_P,      0x17 },
+    { CHAR_Q,      0x1F },
+    { CHAR_R,      0x1D },
+    { CHAR_S,      0x16 },
+    { CHAR_T,      0x1E },
+    { CHAR_U,      0x31 },
+    { CHAR_V,      0x35 },
+    { CHAR_W,      0x2E },
+    { CHAR_X,      0x33 },
+    { CHAR_Y,      0x3B },
+    { CHAR_Z,      0x39 },
+    { CHAR_SPACE,  0x00 },
+    { CHAR_COMMA,  0x04 },
+    { CHAR_PERIOD, 0x2C },
+};
+
 u8 *StringCopy10(u8 *dest, const u8 *src)
 {
     u8 i;
@@ -413,13 +447,28 @@ u8 *StringBraille(u8 *dest, const u8 *src)
         case EOS:
             *dest = c;
             return dest;
-        case 0xFE:
+        case CHAR_NEWLINE:
             dest = StringCopy(dest, gotoLine2);
             break;
-        default:
-            *dest++ = c;
-            *dest++ = c + 0x40;
+        case 0x37:
+            // 37 nn
+            *(dest++) = c;
+            *(dest++) = *(src++);
             break;
+        default:
+        {
+            u8 i;
+            for (i = 0; i < sizeof(sBrailleCharmap); i++)
+            {
+                if (c == sBrailleCharmap[i][0])
+                {
+                    *(dest++) = sBrailleCharmap[i][1];
+                    *(dest++) = sBrailleCharmap[i][1] + 0x40;
+                    break;
+                }
+            }
+            break;
+        }
         }
     }
 }

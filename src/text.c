@@ -236,7 +236,8 @@ static const u8 sFont0LatinGlyphs[] = INCBIN_U8("graphics/fonts/font0_lat.1bpp")
 static const u8 sFont1LatinGlyphs[] = INCBIN_U8("graphics/fonts/font1_lat.1bpp");
 static const u8 sFont0JapaneseGlyphs[] = INCBIN_U8("graphics/fonts/font0_jpn.1bpp");
 static const u8 sFont1JapaneseGlyphs[] = INCBIN_U8("graphics/fonts/font1_jpn.1bpp");
-static const u8 sBrailleGlyphs[] = INCBIN_U8("graphics/fonts/font6_braille.1bpp");
+static const u8 sBrailleLegacyGlyphs[] = INCBIN_U8("graphics/fonts/font6_braille_legacy.1bpp");
+static const u8 sBrailleGlyphs[] = INCBIN_U8("graphics/fonts/font6_braille.4bpp");
 static const u32 sDownArrowTiles[] = INCBIN_U32("graphics/fonts/down_arrow.4bpp");
 
 // clang-format off
@@ -428,7 +429,7 @@ static const struct Font sFonts[] =
     { 4, (u8 *)gFont3JapaneseGlyphs, 64, 512 },
     { 1, (u8 *)gFont4JapaneseGlyphs, 32,   0 },
     { 2, (u8 *)gFont4JapaneseGlyphs, 32,   0 },
-    { 3, (u8 *)sBrailleGlyphs,  8,   0 },
+    { 3, (u8 *)sBrailleLegacyGlyphs,  8,   0 },
     // Latin
     { 0, (u8 *)sFont0LatinGlyphs, 16,   8 },
     { 1, (u8 *)sFont1LatinGlyphs,  8,   0 },
@@ -436,7 +437,7 @@ static const struct Font sFonts[] =
     { 0, (u8 *)gFont3LatinGlyphs, 64,  32 },
     { 1, (u8 *)gFont4LatinGlyphs, 32,   0 },
     { 2, (u8 *)gFont4LatinGlyphs, 32,   0 },
-    { 3, (u8 *)sBrailleGlyphs,  8,   0 },
+    { 3, (u8 *)sBrailleLegacyGlyphs,  8,   0 },
 };
 
 static const u8 sTextSpeedDelays[] = { 6, 3, 1 }; // slow, mid, fast
@@ -1856,7 +1857,7 @@ static u16 LoadFixedWidthFont_Braille(struct Window *win, u16 startOffset)
     u8 *buffer = win->tileData + 32 * startOffset;
     for (i = 0; i < 256; i++)
     {
-        ApplyColors_UnshadowedFont(&sBrailleGlyphs[8 * i], (u32 *)buffer, win->foregroundColor, win->backgroundColor);
+        ApplyColors_UnshadowedFont(&sBrailleLegacyGlyphs[8 * i], (u32 *)buffer, win->foregroundColor, win->backgroundColor);
         buffer += 32;
     }
     return i;
@@ -4359,7 +4360,39 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
     u16 koreanGlyph;
     s32 retVal = 0;
 
-    if (win->language != LANGUAGE_JAPANESE && IsKoreanGlyph(glyph))
+    if (win->fontNum == 6 && glyph == 0x37)
+    {
+        koreanGlyph = (glyph << 8) | win->text[win->textIndex++];
+        koreanGlyph -= 0x3700;
+
+        glyphTileInfo.width = 8;
+        glyphTileInfo.textMode = win->textMode;
+        glyphTileInfo.startPixel = (win->left + win->cursorX) & 7;
+        glyphTileInfo.colors = sGlyphBuffer.colors;
+
+        glyphTileInfo.src = (u8 *)sBrailleGlyphs + 0x80 * koreanGlyph;
+        glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 0));
+        DrawGlyphTile_ShadowedFont(&glyphTileInfo);
+        glyphTileInfo.src += 0x20;
+        glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
+        retVal = DrawGlyphTile_ShadowedFont(&glyphTileInfo);
+
+        UpdateTilemap(win, retVal);
+        AddToCursorX(win, 8);
+
+        glyphTileInfo.startPixel = (win->left + win->cursorX) & 7;
+        glyphTileInfo.width = 8;
+
+        glyphTileInfo.src = (u8 *)sBrailleGlyphs + 0x80 * koreanGlyph + 0x40;
+        glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 0));
+        DrawGlyphTile_ShadowedFont(&glyphTileInfo);
+        glyphTileInfo.src += 0x20;
+        glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
+        retVal = DrawGlyphTile_ShadowedFont(&glyphTileInfo);
+        return retVal;
+    }
+
+    if (win->fontNum != 6 && win->language != LANGUAGE_JAPANESE && IsKoreanGlyph(glyph))
     {
         koreanGlyph = (glyph << 8) | win->text[win->textIndex++];
         koreanGlyph -= 0x3700;
@@ -4390,10 +4423,10 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
                 glyphTileInfo.src += 0x20;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
                 retVal = DrawGlyphTile_UnshadowedFont(&glyphTileInfo);
-                
+
                 UpdateTilemap(win, retVal);
                 AddToCursorX(win, 8);
-                
+
                 glyphTileInfo.startPixel = (win->left + win->cursorX) & 7;
                 glyphTileInfo.width = 3;
 
@@ -4412,10 +4445,10 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
                 glyphTileInfo.src += 0x20;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
                 retVal = DrawGlyphTile_UnshadowedFont(&glyphTileInfo);
-                
+
                 UpdateTilemap(win, retVal);
                 AddToCursorX(win, 8);
-                
+
                 glyphTileInfo.startPixel = (win->left + win->cursorX) & 7;
                 glyphTileInfo.width = 1;
 
@@ -4456,13 +4489,13 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
                 glyphTileInfo.src += 0x20;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
                 retVal = DrawGlyphTile_ShadowedFont(&glyphTileInfo);
-                
+
                 UpdateTilemap(win, retVal);
                 AddToCursorX(win, 8);
-                
+
                 glyphTileInfo.startPixel = (win->left + win->cursorX) & 7;
                 glyphTileInfo.width = 3;
-                
+
                 glyphTileInfo.src = (u8 *)sFont3Korean10ptGlyphs + 0x80 * koreanGlyph + 0x40;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 0));
                 DrawGlyphTile_ShadowedFont(&glyphTileInfo);
@@ -4478,13 +4511,13 @@ static s32 DrawGlyphTiles(struct Window *win, u32 glyph, u32 glyphWidth)
                 glyphTileInfo.src += 0x20;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 1));
                 retVal = DrawGlyphTile_ShadowedFont(&glyphTileInfo);
-                
+
                 UpdateTilemap(win, retVal);
                 AddToCursorX(win, 8);
-                
+
                 glyphTileInfo.startPixel = (win->left + win->cursorX) & 7;
                 glyphTileInfo.width = 1;
-                
+
                 glyphTileInfo.src = (u8 *)sFont3Korean8ptGlyphs + 0x80 * koreanGlyph + 0x40;
                 glyphTileInfo.dest = (u32 *)(win->tileData + 0x20 * GetCursorTileNum(win, 0, 0));
                 DrawGlyphTile_ShadowedFont(&glyphTileInfo);
