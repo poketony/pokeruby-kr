@@ -296,8 +296,8 @@ UnderwaterUseDivePromptText: @ 81B138E
 SurfacingBlockedText: @ 81B13CE
 	.string "위에 무언가가 있습니다!\n"
 	.string "여기서는 다이빙을 쓸 수 없습니다$"
-	// うえに なにか あります!ｎ
-	// ここではダイビングを つかえません
+	@ うえに なにか あります!ｎ
+	@ ここではダイビングを つかえません
 
 SweetScentNothingHereScript:: @ 81B140C
 	msgbox SweetScentNothingHereText, MSGBOX_SIGN
@@ -306,5 +306,5 @@ SweetScentNothingHereScript:: @ 81B140C
 SweetScentNothingHereText: @ 81B1415
 	.string "여기에는\n"
 	.string "아무것도 없는 것 같다...$"
-	// ここにはｎ
-	// なにも いないようだ……
+	@ ここにはｎ
+	@ なにも いないようだ……

@@ -108,7 +108,7 @@ gBattleScriptsForMoveEffects:: @ 81D6BBC
 	.4byte BattleScript_EffectConversion2
 	.4byte BattleScript_EffectLockOn
 	.4byte BattleScript_EffectSketch
-	.4byte BattleScript_EffectUnused60//Thaw
+	.4byte BattleScript_EffectUnused60 @ Thaw
 	.4byte BattleScript_EffectSleepTalk
 	.4byte BattleScript_EffectDestinyBond
 	.4byte BattleScript_EffectFlail
