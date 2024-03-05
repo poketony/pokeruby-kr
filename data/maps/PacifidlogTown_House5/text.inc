@@ -11,7 +11,7 @@ PacifidlogTown_House5_Text_17973B:: @ 817973B
 PacifidlogTown_House5_Text_179765:: @ 8179765
 	.string "환상섬...\n"
 	.string "아마도 신기루 때문에\l"
-	.string "보였다 안 보였다 하는 것 같아\p"
+	.string "보였다 안 보였다 하는 것 같군\p"
 	.string "아니 어쩌면 진짜로\n"
 	.string "나타났다 사라졌다 하는 건가...?$"
 	@ マボロシじま……ｎ
