@@ -204,7 +204,7 @@ gOtherText_ThreeQuestions:: @ 842C890
 	.string "???$"
 
 gOtherText_From:: @ 842C894
-	.string "From $"
+	.string "{K_EU}로부터$"
 
 gOtherText_MixingRecordsWithFriend:: @ 842C89A
 	.string "레코드를 섞고 있습니다$"
@@ -219,16 +219,16 @@ gOtherText_FirstHOF:: @ 842C8EC
 	.string "첫 전당등록$"
 
 gOtherText_LinkCableBattles:: @ 842C8FF
-	.string "통신케이블 대전           승                패$"
+	.string "통신케이블 대전                  승             패$"
 
 gOtherText_BattleTowerWinRecord:: @ 842C924
-	.string "배틀타워       승{CLEAR_TO 0x72}&{CLEAR_TO 0x98}연승$"
+	.string "배틀타워{CLEAR_TO 0x75}승{CLEAR_TO 0x9D}연승$"
 
 gOtherText_ContestRecord:: @ 842C943
 	.string "친구와 콘테스트 우승$"
 
 gOtherText_MixingRecord:: @ 842C959
-	.string "친구와 만든 포켓몬스넥      개$"
+	.string "친구와 만든 포켓몬스넥$"
 
 gOtherText_TradeRecord:: @ 842C96A
 	.string "포켓몬 교환$"

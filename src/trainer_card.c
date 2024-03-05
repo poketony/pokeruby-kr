@@ -1279,10 +1279,10 @@ static void TrainerCard_Back_PrintBattleTower(void)
     if (gTrainerCardPtr->showBattleTowerStatus != 0)
     {
         AlignInt2InMenuWindow(buffer, gTrainerCardPtr->displayedCard.battleTowerWins, 24, 1);
-        Menu_PrintTextPixelCoords(buffer, 112, 120, 0);
+        Menu_PrintTextPixelCoords(buffer, 152, 120, 0);
 
         AlignInt2InMenuWindow(buffer, gTrainerCardPtr->displayedCard.battleTowerLosses, 24, 1);
-        Menu_PrintTextPixelCoords(buffer, 149, 120, 0);
+        Menu_PrintTextPixelCoords(buffer, 200, 120, 0);
     }
 }
 
