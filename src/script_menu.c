@@ -933,7 +933,7 @@ void ScriptMenu_CreatePCMenu(void)
 void ScriptMenu_DisplayPCStartupPrompt(void)
 {
     Menu_DisplayDialogueFrame();
-    Menu_PrintText(Text_WhichPCShouldBeAccessed, 2, 15);
+    Menu_PrintText(Text_WhichPCShouldBeAccessed, 4, 15);
 }
 
 #define tState       data[0]

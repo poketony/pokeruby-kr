@@ -143,7 +143,8 @@ extern const u8 DexText_Terminator6[];
 extern const u8 gMenuText_WelcomeToHOFAndDexRating[];
 extern const u8 gMenuText_HOFSaving[];
 extern const u8 gMenuText_HOFCorrupt[];
-extern const u8 gMenuText_HOFNumber[];
+extern const u8 gMenuText_HOFNumber1[];
+extern const u8 gMenuText_HOFNumber2[];
 extern const u8 gMenuText_HOFCongratulations[];
 
 extern const u8 gOtherText_Number2[];

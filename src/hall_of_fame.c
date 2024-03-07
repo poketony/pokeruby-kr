@@ -909,16 +909,16 @@ static void sub_8142B04(u8 taskID)
     BlendPalettes(0xFFFF0000, 12, RGB(31, 26, 28));
 
     stringPtr = gStringVar1;
-    stringPtr = StringCopy(stringPtr, gMenuText_HOFNumber);
-    stringPtr[0] = 0xFC;
-    stringPtr[1] = 0x14;
-    stringPtr[2] = 0x6;
-    stringPtr += 3;
+    stringPtr = StringCopy(stringPtr, gMenuText_HOFNumber1);
+    *(stringPtr++) = EXT_CTRL_CODE_BEGIN;
+    *(stringPtr++) = EXT_CTRL_CODE_MIN_LETTER_SPACING;
+    *(stringPtr++) = 8;
     stringPtr = ConvertIntToDecimalString(stringPtr, gTasks[taskID].tCurrPageNo);
-    stringPtr[0] = 0xFC;
-    stringPtr[1] = 0x13;
-    stringPtr[2] = 0xF0;
-    stringPtr[3] = EOS;
+    stringPtr = StringCopy(stringPtr, gMenuText_HOFNumber2);
+    *(stringPtr++) = EXT_CTRL_CODE_BEGIN;
+    *(stringPtr++) = EXT_CTRL_CODE_CLEAR_TO;
+    *(stringPtr++) = 240;
+    *(stringPtr++) = EOS;
     Menu_PrintText(gStringVar1, 0, 0);
 
     gTasks[taskID].func = sub_8142CC8;

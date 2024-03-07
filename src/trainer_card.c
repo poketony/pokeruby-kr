@@ -1157,6 +1157,7 @@ static void TrainerCard_Front_PrintMoney(void)
 
 static void TrainerCard_Front_PrintPokedexCount(void)
 {
+    const u8 textAmount[] = _("마리");
     u8 buffer[16];
 
     if (
@@ -1170,6 +1171,7 @@ static void TrainerCard_Front_PrintPokedexCount(void)
     else
     {
         ConvertIntToDecimalStringN(buffer, gTrainerCardPtr->displayedCard.pokedexSeen, STR_CONV_MODE_LEFT_ALIGN, 3);
+        StringAppend(buffer, textAmount);
         MenuPrint_RightAligned(buffer, 16, 10);
     }
 }

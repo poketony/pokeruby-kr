@@ -151,7 +151,8 @@ const u8 DexText_Terminator6[] = _(" ");
 const u8 gMenuText_WelcomeToHOFAndDexRating[] = _("전당등록을 축하합니다!$발견한 포켓몬 {STR_VAR_1}!\n잡은 포켓몬 {STR_VAR_2}!\p털보박사의\n포켓몬 도감 평가!\p털보박사: 어디 보자\p");
 const u8 gMenuText_HOFSaving[] = _("지금까지의 리포트를 작성하고 있습니다!\n전원을 끄지 마십시오");
 const u8 gMenuText_HOFCorrupt[] = _("전당등록의 기록이 손상되었습니다!");
-const u8 gMenuText_HOFNumber[] = _("HALL OF FAME No. ");
+const u8 gMenuText_HOFNumber1[] = _("제 ");
+const u8 gMenuText_HOFNumber2[] = _("회 전당등록!");
 const u8 gMenuText_HOFCongratulations[] = _("리그 챔피언! 축하합니다!");
 
 const u8 gOtherText_Number2[] = _("No. ");

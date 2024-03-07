@@ -1281,11 +1281,11 @@ void CB2_PrintErrorMessage(void)
     switch (gMain.state)
     {
     case 0:
-        {
-            u8 strWidth = GetStringWidthInMenuWindow(gMultiText_LinkError);
-            u8 left = (240 - strWidth) / 2;
-            Menu_PrintTextPixelCoords(gMultiText_LinkError, left, 56, 1);
-        }
+        // NOTE:
+        //   RS 버전에서는 문자열 너비를 구하는 함수가 줄단위를 지원하지 않아 하드코드 입력했습니다.
+        //   * 원본: gMultiText_LinkError의 너비는 116, (240 - 64) / 2 = 88
+        //   * 한글: gMultiText_LinkError의 너비는 116, (240 - 116) / 2 = 62
+        Menu_PrintTextPixelCoords(gMultiText_LinkError, 62, 56, 1);
 #if DEBUG
         StringCopy(array, sColorCodes);
 
