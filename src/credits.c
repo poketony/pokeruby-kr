@@ -78,6 +78,8 @@ enum
     PAGE_BRAILLE_CODE_CHECK_2,
     PAGE_SPECIAL_THANKS_4,
     PAGE_SPECIAL_THANKS_5,
+    PAGE_FAN_TRANSLATOR_1,
+    PAGE_FAN_TRANSLATOR_2,
 
     PAGE_COUNT
 };
@@ -756,7 +758,7 @@ static void Task_UpdatePage(u8 taskIdB)
         if (!gPaletteFade.active)
         {
             gTasks[taskIdB].data[TDB_0] = 1;
-            gTasks[taskIdB].data[TDB_3] = 0x58;
+            gTasks[taskIdB].data[TDB_3] = 96;
             gTasks[gTasks[taskIdB].data[TDB_TASK_A_ID]].data[TDA_14] = 0;
             gUnknown_02039320 = 0;
         }
@@ -776,7 +778,7 @@ static void Task_UpdatePage(u8 taskIdB)
             if (gTasks[taskIdB].data[TDB_CURRENT_PAGE] < PAGE_COUNT)
             {
                 for (i = 0; i < 5; i++)
-                    MenuPrint_Centered(gCreditsEntryPointerTable[gTasks[taskIdB].data[TDB_CURRENT_PAGE]][i]->text, 0, 9 + i * 2, 240);
+                    MenuPrint_Centered(gCreditsEntryPointerTable[gTasks[taskIdB].data[TDB_CURRENT_PAGE]][i], 0, 9 + i * 2, 240);
 
                 gTasks[taskIdB].data[TDB_CURRENT_PAGE] += 1;
                 gTasks[taskIdB].data[TDB_0] += 1;
@@ -798,7 +800,7 @@ static void Task_UpdatePage(u8 taskIdB)
         REG_DISPCNT |= DISPCNT_BG0_ON;
         if (!gPaletteFade.active)
         {
-            gTasks[taskIdB].data[TDB_3] = UNK_DEFINE_82;
+            gTasks[taskIdB].data[TDB_3] = 123;
             gTasks[taskIdB].data[TDB_0] += 1;
         }
         return;
