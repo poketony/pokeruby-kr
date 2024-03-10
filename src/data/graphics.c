@@ -892,6 +892,7 @@ const u8 gPartyMenuMisc_Pal[] = INCBIN_U8("graphics/interface/party_menu_misc.gb
 const u8 gPartyMenuMisc_Tilemap[] = INCBIN_U8("graphics/interface/party_menu_misc.bin.lz");
 const u8 gPartyMenuHpBar_Gfx[] = INCBIN_U8("graphics/interface/party_menu_hpbar.4bpp.lz");
 const u8 gPartyMenuOrderText_Gfx[] = INCBIN_U8("graphics/interface/party_menu_ordertext.4bpp.lz");
+const u8 gPartyMenuOrderText2_Gfx[] = INCBIN_U8("graphics/interface/party_menu_ordertext2.4bpp.lz");
 const u8 gMoveTypes_Gfx[] = INCBIN_U8("graphics/types/move_types.4bpp.lz");
 const u8 gMoveTypes_Pal[] = INCBIN_U8("graphics/types/move_types.gbapal.lz");
 const u8 gMenuSummaryGfx[] = INCBIN_U8("graphics/interface/summary_frames.4bpp.lz");// the arrows appear to be unused.

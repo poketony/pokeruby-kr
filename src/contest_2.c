@@ -863,7 +863,7 @@ void PrintContestantTrainerNameWithColor(u8 contestant, u8 color)
     str = Contest_CopyStringWithColor(str, gEmptyString_81E72B0, color);
     str[0] = EXT_CTRL_CODE_BEGIN;
     str[1] = EXT_CTRL_CODE_SIZE;
-    str[2] = 4;
+    str[2] = 3;
     str += 3;
 
     *str++ = CHAR_SLASH;
@@ -902,7 +902,7 @@ void PrintContestantMonNameWithColor(u8 contestant, u8 color)
 
     str[0] = EXT_CTRL_CODE_BEGIN;
     str[1] = EXT_CTRL_CODE_SIZE;
-    str[2] = 4;
+    str[2] = 3;
     str += 3;
 
     str = Contest_CopyStringWithColor(str, gContestMons[contestant].nickname, color);
@@ -912,7 +912,7 @@ void PrintContestantMonNameWithColor(u8 contestant, u8 color)
         &gWindowTemplate_Contest_MoveDescription,
         gDisplayedStringBattle,
         512 + gContestantTurnOrder[contestant] * 20,
-        253 + gUnknown_083CA308[gContestantTurnOrder[contestant]][0] * 8,
+        256 + gUnknown_083CA308[gContestantTurnOrder[contestant]][0] * 8,
         gUnknown_083CA308[gContestantTurnOrder[contestant]][1] * 8,
         1);
 }
@@ -3664,8 +3664,8 @@ void ShowHideNextTurnGfx(bool8 a)
         {
             CpuCopy32(
                 GetTurnOrderNumberGfx(i),
-                (void *)(VRAM + 0x10000 + (gSprites[eContestGfxState[i].nextTurnSpriteId].oam.tileNum + 5) * 32),
-                64);
+                (void *)(VRAM + 0x10000 + (gSprites[eContestGfxState[i].nextTurnSpriteId].oam.tileNum + 3) * 32),
+                32);
             gSprites[eContestGfxState[i].nextTurnSpriteId].y = gUnknown_083CA33C[gContestantTurnOrder[i]];
             gSprites[eContestGfxState[i].nextTurnSpriteId].invisible = FALSE;
         }

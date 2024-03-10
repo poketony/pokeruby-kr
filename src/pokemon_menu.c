@@ -12,6 +12,7 @@
 #include "menu_helpers.h"
 #include "pokemon_summary_screen.h"
 #include "data2.h"
+#include "decompress.h"
 #include "strings.h"
 #include "item_use.h"
 #include "item.h"
@@ -56,6 +57,9 @@ extern u8 gPokemonItemUseType;
 extern u16 gUnknown_0202E8F8;
 extern void (*gPokemonItemUseCallback)(u8 taskID, u16 itemID, TaskFunc func);
 extern TaskFunc gUnknown_03005CF0;
+
+extern const u8 gPartyMenuOrderText_Gfx[];
+extern const u8 gPartyMenuOrderText2_Gfx[];
 
 void sub_808A520(void);
 void sub_80A61D0(void);
@@ -980,10 +984,13 @@ static void sub_808AF80(void)
                 switch (CheckIfItemIsTMHMOrEvolutionStone(gSpecialVar_ItemId))
                 {
                 case 1:
+                    LZDecompressVram(gPartyMenuOrderText2_Gfx, (void *)(BG_VRAM + 0x6180));
                     sub_808AE8C();
                     break;
                 case 2:
                     sub_808AF20();
+                case 0:
+                    LZDecompressVram(gPartyMenuOrderText_Gfx, (void *)(BG_VRAM + 0x6180));
                     break;
                 }
             }
