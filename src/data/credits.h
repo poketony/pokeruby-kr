@@ -132,17 +132,22 @@ const u8 Text_Howitt[] = _("Anthony Howitt");
 const u8 Text_Tilden[] = _("Gail Tilden");
 const u8 Text_EBU[] = _("European Blind Union");
 const u8 Text_ABA[] = _("Australian Braille Authority");
-const u8 Text_KBL[] = _("Korean Braille Library");
 const u8 Text_RNZFotB[] = _("Royal New Zealand Federation for the Blind");
 const u8 Text_FanTranslator[] = _("{PALETTE 9}Fan Translator");
 const u8 Text_FanTranslator1[] = _("koipkoi");
-const u8 Text_FanTranslator2[] = _("Junhyo Jo (poketony)");
+const u8 Text_FanTranslator2[] = _("poketony");
 const u8 Text_FanTranslator3[] = _("myeong-gun");
-const u8 Text_FanTranslator4[] = _("돌아온달토끼");
 const u8 Text_FanTranslator5[] = _("피새");
+const u8 Text_FanTranslator4[] = _("hsgo2430");
 const u8 Text_FanTranslator6[] = _("pyg7669");
-const u8 Text_FanTranslator7[] = _("산");
+const u8 Text_FanTranslator7[] = _("lee8321996");
+const u8 Text_FanTranslator8[] = _("{PALETTE 9}Fan Translator (Font)");
+const u8 Text_FanTranslator9[] = _("Galmuri (quiple)");
+const u8 Text_FanTranslator10[] = _("7x11 Gilche (chozekun)");
+const u8 Text_FanTranslator11[] = _("Korean Braille Library");
+
 const u8 Text_Terminator[] = _("");
+
 #ifdef SAPPHIRE
 const u8 Text_Version[] = _("{PALETTE 9}POKéMON SAPPHIRE"); 
 #else
@@ -500,7 +505,7 @@ const u8 *const gCreditsEntryPointerTable[][LINES_PER_PAGE] =
         Text_BrailleCodeCheck,
         Text_ABA,
         Text_RNZFotB,
-        Text_KBL,
+        _,
         _,
     },
     {
@@ -529,6 +534,20 @@ const u8 *const gCreditsEntryPointerTable[][LINES_PER_PAGE] =
         Text_FanTranslator5,
         Text_FanTranslator6,
         Text_FanTranslator7,
+        _,
+    },
+    {
+        Text_FanTranslator8,
+        Text_FanTranslator9,
+        Text_FanTranslator10,
+        _,
+        _,
+    },
+    {
+        _,
+        Text_BrailleCodeCheck,
+        Text_FanTranslator11,
+        _,
         _,
     },
 };

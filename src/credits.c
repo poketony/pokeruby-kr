@@ -80,6 +80,8 @@ enum
     PAGE_SPECIAL_THANKS_5,
     PAGE_FAN_TRANSLATOR_1,
     PAGE_FAN_TRANSLATOR_2,
+    PAGE_FAN_TRANSLATOR_3,
+    PAGE_FAN_TRANSLATOR_4,
 
     PAGE_COUNT
 };
@@ -800,7 +802,7 @@ static void Task_UpdatePage(u8 taskIdB)
         REG_DISPCNT |= DISPCNT_BG0_ON;
         if (!gPaletteFade.active)
         {
-            gTasks[taskIdB].data[TDB_3] = 123;
+            gTasks[taskIdB].data[TDB_3] = 117;
             gTasks[taskIdB].data[TDB_0] += 1;
         }
         return;
