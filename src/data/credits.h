@@ -1,41 +1,41 @@
-const u8 Category_Credits[] = _("{PALETTE 9}Credits");
-const u8 Category_ExecutiveDirector[] = _("{PALETTE 9}Executive Director");
-const u8 Category_Director[] = _("{PALETTE 9}Director");
-const u8 Category_ArtDirector[] = _("{PALETTE 9}Art Director");
-const u8 Category_BattleDirector[] = _("{PALETTE 9}Battle Director");
-const u8 Category_MainProgrammer[] = _("{PALETTE 9}Main Programmer");
-const u8 Category_BattleSystemProgrammer[] = _("{PALETTE 9}Battle System Programmer");
-const u8 Category_FieldSystemProgrammer[] = _("{PALETTE 9}Field System Programmer");
-const u8 Category_Programmers[] = _("{PALETTE 9}Programmers");
-const u8 Category_MainGraphicDesigner[] = _("{PALETTE 9}Main Graphic Designer");
-const u8 Category_POKeMONGraphicDesigners[] = _("{PALETTE 9}POKéMON & Graphic Designers");
-const u8 Category_POKeMONDesigners[] = _("{PALETTE 9}POKéMON Designers");
-const u8 Category_MusicComposition[] = _("{PALETTE 9}Music Composition");
-const u8 Category_SoundEffectsPOKeMONVoices[] = _("{PALETTE 9}Sound Effects & POKéMON Voices");
-const u8 Category_GameDesigners[] = _("{PALETTE 9}Game Designers");
-const u8 Category_PlotScenario[] = _("{PALETTE 9}Plot Scenario");
-const u8 Category_GameScenario[] = _("{PALETTE 9}Game Scenario");
-const u8 Category_ScriptDesigners[] = _("{PALETTE 9}Script Designers");
-const u8 Category_MapDesigners[] = _("{PALETTE 9}Map Designers");
-const u8 Category_MapDataDesigners[] = _("{PALETTE 9}Map Data Designers");
-const u8 Category_ParametricDesigners[] = _("{PALETTE 9}Parametric Designers");
-const u8 Category_POKeDEXText[] = _("{PALETTE 9}POKéDEX Text");
-const u8 Category_EnvironmentToolProgrammers[] = _("{PALETTE 9}Environment & Tool Programmers");
-const u8 Category_ProductTesting[] = _("{PALETTE 9}Product Testing");
-const u8 Category_SpecialThanks[] = _("{PALETTE 9}Special Thanks");
-const u8 Category_Coordinators[] = _("{PALETTE 9}Coordinators");
-const u8 Category_Producers[] = _("{PALETTE 9}Producers");
-const u8 Category_ExecutiveProducers[] = _("{PALETTE 9}Executive Producers");
-const u8 Category_InformationSupervisors[] = _("{PALETTE 9}Information Supervisors");
-const u8 Category_TaskManagers[] = _("{PALETTE 9}Task Managers");
-const u8 Category_BrailleCodeCheck[] = _("{PALETTE 9}Braille Code Check");
-const u8 Category_EnglishVersionCoordinators[] = _("{PALETTE 9}English Version Coordinators");
-const u8 Category_Translator[] = _("{PALETTE 9}Translator");
-const u8 Category_ProductSupport[] = _("{PALETTE 9}Product Support");
-const u8 Category_Artwork[] = _("{PALETTE 9}Artwork");
-const u8 Category_TextEditor[] = _("{PALETTE 9}Text Editor");
-const u8 Category_NOAProductTesting[] = _("{PALETTE 9}NOK Product Testing");
-const u8 Category_GraphicDesigners[] = _("{PALETTE 9}Graphic Designers");
+const u8 Text_Credits[] = _("{PALETTE 9}Credits");
+const u8 Text_ExecutiveDirector[] = _("{PALETTE 9}Executive Director");
+const u8 Text_Director[] = _("{PALETTE 9}Director");
+const u8 Text_ArtDirector[] = _("{PALETTE 9}Art Director");
+const u8 Text_BattleDirector[] = _("{PALETTE 9}Battle Director");
+const u8 Text_MainProgrammer[] = _("{PALETTE 9}Main Programmer");
+const u8 Text_BattleSystemProgrammer[] = _("{PALETTE 9}Battle System Programmer");
+const u8 Text_FieldSystemProgrammer[] = _("{PALETTE 9}Field System Programmer");
+const u8 Text_Programmers[] = _("{PALETTE 9}Programmers");
+const u8 Text_MainGraphicDesigner[] = _("{PALETTE 9}Main Graphic Designer");
+const u8 Text_POKeMONGraphicDesigners[] = _("{PALETTE 9}POKéMON & Graphic Designers");
+const u8 Text_POKeMONDesigners[] = _("{PALETTE 9}POKéMON Designers");
+const u8 Text_MusicComposition[] = _("{PALETTE 9}Music Composition");
+const u8 Text_SoundEffectsPOKeMONVoices[] = _("{PALETTE 9}Sound Effects & POKéMON Voices");
+const u8 Text_GameDesigners[] = _("{PALETTE 9}Game Designers");
+const u8 Text_PlotScenario[] = _("{PALETTE 9}Plot Scenario");
+const u8 Text_GameScenario[] = _("{PALETTE 9}Game Scenario");
+const u8 Text_ScriptDesigners[] = _("{PALETTE 9}Script Designers");
+const u8 Text_MapDesigners[] = _("{PALETTE 9}Map Designers");
+const u8 Text_MapDataDesigners[] = _("{PALETTE 9}Map Data Designers");
+const u8 Text_ParametricDesigners[] = _("{PALETTE 9}Parametric Designers");
+const u8 Text_POKeDEXText[] = _("{PALETTE 9}POKéDEX Text");
+const u8 Text_EnvironmentToolProgrammers[] = _("{PALETTE 9}Environment & Tool Programmers");
+const u8 Text_ProductTesting[] = _("{PALETTE 9}Product Testing");
+const u8 Text_SpecialThanks[] = _("{PALETTE 9}Special Thanks");
+const u8 Text_Coordinators[] = _("{PALETTE 9}Coordinators");
+const u8 Text_Producers[] = _("{PALETTE 9}Producers");
+const u8 Text_ExecutiveProducers[] = _("{PALETTE 9}Executive Producers");
+const u8 Text_InformationSupervisors[] = _("{PALETTE 9}Information Supervisors");
+const u8 Text_TaskManagers[] = _("{PALETTE 9}Task Managers");
+const u8 Text_BrailleCodeCheck[] = _("{PALETTE 9}Braille Code Check");
+const u8 Text_EnglishVersionCoordinators[] = _("{PALETTE 9}English Version Coordinators");
+const u8 Text_Translator[] = _("{PALETTE 9}Translator");
+const u8 Text_ProductSupport[] = _("{PALETTE 9}Product Support");
+const u8 Text_Artwork[] = _("{PALETTE 9}Artwork");
+const u8 Text_TextEditor[] = _("{PALETTE 9}Text Editor");
+const u8 Text_NOAProductTesting[] = _("{PALETTE 9}NOA Product Testing");
+const u8 Text_GraphicDesigners[] = _("{PALETTE 9}Graphic Designers");
 const u8 Text_SatoshiTajiri[] = _("Satoshi Tajiri");
 const u8 Text_Masuda[] = _("Junichi Masuda");
 const u8 Text_Sugimori[] = _("Ken Sugimori");
@@ -112,542 +112,442 @@ const u8 Text_Mitsuhara[] = _("Satoshi Mitsuhara");
 const u8 Text_JapanBrailleLibrary[] = _("Japan Braille Library");
 const u8 Text_Komura[] = _("Tomotaka Komura");
 const u8 Text_Ohashi[] = _("Mikiko Ohashi");
-const u8 Text_McMahill[] = _("Kohan Lee");
-const u8 Text_Ogasawara[] = _("Hyangun Kim");
+const u8 Text_McMahill[] = _("Seth McMahill");
+const u8 Text_Ogasawara[] = _("Nob Ogasawara");
 const u8 Text_Yamamoto[] = _("Souichi Yamamoto");
 const u8 Text_Funakoshi[] = _("Masanori Funakoshi");
 const u8 Text_Fujihara[] = _("Kazuhiro Fujihara");
 const u8 Text_Nakamichi[] = _("Kimiko Nakamichi");
 const u8 Text_Hara[] = _("Daisuke Hara");
 const u8 Text_Okada[] = _("Atsushi Okada");
-const u8 Text_Lillygren[] = _("Kohan Lee");
-const u8 Text_Hertzog[] = _("Jihun Oh");
+const u8 Text_Lillygren[] = _("Teresa Lillygren");
+const u8 Text_Hertzog[] = _("Thomas Hertzog");
 const u8 Text_Ridgeway[] = _("Ed Ridgeway");
 const u8 Text_NFotB[] = _("National Federation of the Blind");
-const u8 Text_Maurer[] = _("Youngyoo Han");
+const u8 Text_Maurer[] = _("Patricia A. Maurer");
 const u8 Text_Ford[] = _("Sayoko Blodgett-Ford");
 const u8 Text_Barlow[] = _("Nicola Pratt-Barlow");
 const u8 Text_Uyama[] = _("Koji Uyama");
 const u8 Text_Howitt[] = _("Anthony Howitt");
 const u8 Text_Tilden[] = _("Gail Tilden");
 const u8 Text_EBU[] = _("European Blind Union");
-const u8 Text_ABA[] = _("Korean Braille Library");
+const u8 Text_ABA[] = _("Australian Braille Authority");
 const u8 Text_RNZFotB[] = _("Royal New Zealand Federation for the Blind");
-const u8 Text_CreditsTerminator[] = _("");
+const u8 Text_FanTranslator[] = _("{PALETTE 9}Korean Fan Translator");
+const u8 Text_FanTranslator1[] = _("koipkoi");
+const u8 Text_FanTranslator2[] = _("poketony");
+const u8 Text_FanTranslator3[] = _("myeong-gun");
+const u8 Text_FanTranslator5[] = _("bloodbird");
+const u8 Text_FanTranslator4[] = _("hsgo2430");
+const u8 Text_FanTranslator6[] = _("pyg7669");
+const u8 Text_FanTranslator7[] = _("lee8321996");
+const u8 Text_FanTranslator8[] = _("{PALETTE 9}Korean Fan Translator (Font)");
+const u8 Text_FanTranslator9[] = _("Galmuri (quiple)");
+const u8 Text_FanTranslator10[] = _("7x11 Gilche (chozekun)");
+const u8 Text_FanTranslator11[] = _("Korean Braille Library");
+
+const u8 Text_Terminator[] = _("");
+
 #ifdef SAPPHIRE
 const u8 Text_Version[] = _("{PALETTE 9}POKéMON SAPPHIRE"); 
 #else
 const u8 Text_Version[] = _("{PALETTE 9}POKéMON RUBY");
 #endif
 
-const struct CreditsEntry CreditsTerminator[] = {0, Text_CreditsTerminator};
-#ifdef SAPPHIRE
-const struct CreditsEntry CreditsVersion[] = {7, Text_Version};
-#else
-const struct CreditsEntry CreditsVersion[] = {8, Text_Version};
-#endif
-const struct CreditsEntry CreditsCredits[] = {11, Category_Credits};
-const struct CreditsEntry CreditsExecutiveDirector[] = {8, Category_ExecutiveDirector};
-const struct CreditsEntry CreditsDirector[] = {12,  Category_Director};
-const struct CreditsEntry CreditsArtDirector[] = {10,  Category_ArtDirector};
-const struct CreditsEntry CreditsBattleDirector[] = {10,  Category_BattleDirector};
-const struct CreditsEntry CreditsMainProgrammer[] = {10,  Category_MainProgrammer};
-const struct CreditsEntry CreditsBattleSystemProgrammer[] = {8, Category_BattleSystemProgrammer};
-const struct CreditsEntry CreditsFieldSystemProgrammer[] = {7, Category_FieldSystemProgrammer};
-const struct CreditsEntry CreditsProgrammers[] = {12,  Category_Programmers};
-const struct CreditsEntry CreditsMainGraphicDesigner[] = {7,  Category_MainGraphicDesigner};
-const struct CreditsEntry CreditsPOKeMONGraphicDesigners[] = {6, Category_POKeMONGraphicDesigners};
-const struct CreditsEntry CreditsPOKeMONDesigners[] = {10,  Category_POKeMONDesigners};
-const struct CreditsEntry CreditsMusicComposition[] = {13,  Category_MusicComposition};
-const struct CreditsEntry CreditsSoundEffectsPOKeMONVoices[] = {4, Category_SoundEffectsPOKeMONVoices};
-const struct CreditsEntry CreditsGameDesigners[] = {11, Category_GameDesigners};
-const struct CreditsEntry CreditsPlotScenario[] = {11, Category_PlotScenario};
-const struct CreditsEntry CreditsGameScenario[] = {13, Category_GameScenario};
-const struct CreditsEntry CreditsScriptDesigners[] = {10, Category_ScriptDesigners};
-const struct CreditsEntry CreditsMapDesigners[] = {11, Category_MapDesigners};
-const struct CreditsEntry CreditsMapDataDesigners[] = {9, Category_MapDataDesigners};
-const struct CreditsEntry CreditsParametricDesigners[] = {9, Category_ParametricDesigners};
-const struct CreditsEntry CreditsPOKeDEXText[] = {11, Category_POKeDEXText};
-const struct CreditsEntry CreditsEnvironmentToolProgrammers[] = {6, Category_EnvironmentToolProgrammers};
-const struct CreditsEntry CreditsProductTesting[] = {11, Category_ProductTesting};
-const struct CreditsEntry CreditsSpecialThanks[] = {10, Category_SpecialThanks};
-const struct CreditsEntry CreditsCoordinators[] = {11, Category_Coordinators};
-const struct CreditsEntry CreditsProducers[] = {11, Category_Producers};
-const struct CreditsEntry CreditsExecutiveProducers[] = {7, Category_ExecutiveProducers};
-const struct CreditsEntry CreditsInformationSupervisors[] = {10, Category_InformationSupervisors};
-const struct CreditsEntry CreditsTaskManagers[] = {8, Category_TaskManagers};
-const struct CreditsEntry CreditsBrailleCodeCheck[] = {10, Category_BrailleCodeCheck};
-const struct CreditsEntry CreditsSatoshiTajiri[] = {11, Text_SatoshiTajiri};
-const struct CreditsEntry CreditsMasuda[] = {11, Text_Masuda};
-const struct CreditsEntry CreditsSugimori[] = {11, Text_Sugimori};
-const struct CreditsEntry CreditsMorimoto[] = {11, Text_Morimoto};
-const struct CreditsEntry CreditsTetsuyaWatanabe[] = {11, Text_TetsuyaWatanabe};
-const struct CreditsEntry CreditsSogabe[] = {11, Text_Sogabe};
-const struct CreditsEntry CreditsTamada[] = {11, Text_Tamada};
-const struct CreditsEntry CreditsMori[] = {11, Text_Mori};
-const struct CreditsEntry CreditsKagaya[] = {11, Text_Kagaya};
-const struct CreditsEntry CreditsMatsuda[] = {11, Text_Matsuda};
-const struct CreditsEntry CreditsHiroyukiNakamura[] = {11, Text_HiroyukiNakamura};
-const struct CreditsEntry CreditsTaya[] = {11, Text_Taya};
-const struct CreditsEntry CreditsNohara[] = {11, Text_Nohara};
-const struct CreditsEntry CreditsTomomichiOhta[] = {11, Text_TomomichiOhta};
-const struct CreditsEntry CreditsIwasawa[] = {11, Text_Iwasawa};
-const struct CreditsEntry CreditsTakenoriOhta[] = {11, Text_TakenoriOhta};
-const struct CreditsEntry CreditsYoshida[] = {11, Text_Yoshida};
-const struct CreditsEntry CreditsFujiwara[] = {11, Text_Fujiwara};
-const struct CreditsEntry CreditsSatoshiOhta[] = {11, Text_SatoshiOhta};
-const struct CreditsEntry CreditsIwashita[] = {11, Text_Iwashita};
-const struct CreditsEntry CreditsTomita[] = {11, Text_Tomita};
-const struct CreditsEntry CreditsUnno[] = {11, Text_Unno};
-const struct CreditsEntry CreditsEo[] = {11, Text_Eo};
-const struct CreditsEntry CreditsOkutani[] = {11, Text_Okutani};
-const struct CreditsEntry CreditsNishida[] = {11, Text_Nishida};
-const struct CreditsEntry CreditsSaito[] = {11, Text_Saito};
-const struct CreditsEntry CreditsYoshikawa[] = {11, Text_Yoshikawa};
-const struct CreditsEntry CreditsIchinose[] = {11, Text_Ichinose};
-const struct CreditsEntry CreditsAoki[] = {11, Text_Aoki};
-const struct CreditsEntry CreditsNishino[] = {11, Text_Nishino};
-const struct CreditsEntry CreditsMatsushima[] = {11, Text_Matsushima};
-const struct CreditsEntry CreditsTetsujiOhta[] = {11, Text_TetsujiOhta};
-const struct CreditsEntry CreditsSato[] = {11, Text_Sato};
-const struct CreditsEntry CreditsKawachimaru[] = {11, Text_Kawachimaru};
-const struct CreditsEntry CreditsShimoyamada[] = {11, Text_Shimoyamada};
-const struct CreditsEntry CreditsOhmori[] = {11, Text_Ohmori};
-const struct CreditsEntry CreditsTakahashi[] = {11, Text_Takahashi};
-const struct CreditsEntry CreditsToshinobuMatsumiya[] = {11, Text_ToshinobuMatsumiya};
-const struct CreditsEntry CreditsTomisawa[] = {11, Text_Tomisawa};
-const struct CreditsEntry CreditsEnomoto[] = {11, Text_Enomoto};
-const struct CreditsEntry CreditsTerada[] = {11, Text_Terada};
-const struct CreditsEntry CreditsSakurai[] = {11, Text_Sakurai};
-const struct CreditsEntry CreditsSagawa[] = {11, Text_Sagawa};
-const struct CreditsEntry CreditsTominaga[] = {11, Text_Tominaga};
-const struct CreditsEntry CreditsYoshiroTajiri[] = {11, Text_YoshioTajiri};
-const struct CreditsEntry CreditsSasaki[] = {11, Text_Sasaki};
-const struct CreditsEntry CreditsHamano[] = {11, Text_Hamano};
-const struct CreditsEntry CreditsChieMatsumiya[] = {11, Text_ChieMatsumiya};
-const struct CreditsEntry CreditsShinozaki[] = {11, Text_Shinozaki};
-const struct CreditsEntry CreditsFujii[] = {11, Text_Fujii};
-const struct CreditsEntry CreditsSuperMarioClub[] = {11, Text_SuperMarioClub};
-const struct CreditsEntry CreditsTada[] = {11, Text_Tada};
-const struct CreditsEntry CreditsOhnishi[] = {11, Text_Ohnishi};
-const struct CreditsEntry CreditsOkamura[] = {11, Text_Okamura};
-const struct CreditsEntry CreditsHiroNakamura[] = {11, Text_HiroNakamura};
-const struct CreditsEntry CreditsUesugi[] = {11, Text_Uesugi};
-const struct CreditsEntry CreditsMurakawa[] = {11, Text_Murakawa};
-const struct CreditsEntry CreditsKinashi[] = {11, Text_Kinashi};
-const struct CreditsEntry CreditsTakizawa[] = {11, Text_Takizawa};
-const struct CreditsEntry CreditsTakada[] = {11, Text_Takada};
-const struct CreditsEntry CreditsKondo[] = {11, Text_Kondo};
-const struct CreditsEntry CreditsMashima[] = {11, Text_Mashima};
-const struct CreditsEntry CreditsNomoto[] = {11, Text_Nomoto};
-const struct CreditsEntry CreditsIzushi[] = {11, Text_Izushi};
-const struct CreditsEntry CreditsYamagami[] = {11, Text_Yamagami};
-const struct CreditsEntry CreditsKyokoWatanabe[] = {11, Text_KyokoWatanabe};
-const struct CreditsEntry CreditsNakano[] = {11, Text_Nakano};
-const struct CreditsEntry CreditsJinnai[] = {11, Text_Jinnai};
-const struct CreditsEntry CreditsTsuru[] = {11, Text_Tsuru};
-const struct CreditsEntry CreditsIshihara[] = {11, Text_Ishihara};
-const struct CreditsEntry CreditsIwata[] = {11, Text_Iwata};
-const struct CreditsEntry CreditsSuyama[] = {11, Text_Suyama};
-const struct CreditsEntry CreditsMitsuhara[] = {11, Text_Mitsuhara};
-const struct CreditsEntry CreditsJapanBrailleLibrary[] = {9, Text_JapanBrailleLibrary};
-const struct CreditsEntry CreditsKomura[] = {11, Text_Komura};
-const struct CreditsEntry CreditsOhashi[] = {11, Text_Ohashi};
-const struct CreditsEntry CreditsEnglishVersionCoordinators[] = {0, Category_EnglishVersionCoordinators};
-const struct CreditsEntry CreditsTranslator[] = {0, Category_Translator};
-const struct CreditsEntry CreditsProductSupport[] = {0, Category_ProductSupport};
-const struct CreditsEntry CreditsArtwork[] = {0, Category_Artwork};
-const struct CreditsEntry CreditsTextEditor[] = {0, Category_TextEditor};
-const struct CreditsEntry CreditsNOAProductTesting[] = {0, Category_NOAProductTesting};
-const struct CreditsEntry CreditsGraphicDesigners[] = {0, Category_GraphicDesigners};
-const struct CreditsEntry CreditsMcMahill[] = {0, Text_McMahill};
-const struct CreditsEntry CreditsOgasawara[] = {0, Text_Ogasawara};
-const struct CreditsEntry CreditsYamamoto[] = {0, Text_Yamamoto};
-const struct CreditsEntry CreditsFunakoshi[] = {0, Text_Funakoshi};
-const struct CreditsEntry CreditsFujihara[] = {0, Text_Fujihara};
-const struct CreditsEntry CreditsNakamichi[] = {0, Text_Nakamichi};
-const struct CreditsEntry CreditsHara[] = {0, Text_Hara};
-const struct CreditsEntry CreditsOkada[] = {0, Text_Okada};
-const struct CreditsEntry CreditsLillygren[] = {0, Text_Lillygren};
-const struct CreditsEntry CreditsHertzog[] = {0, Text_Hertzog};
-const struct CreditsEntry CreditsRidgeway[] = {0, Text_Ridgeway};
-const struct CreditsEntry CreditsNFotB[] = {0, Text_NFotB};
-const struct CreditsEntry CreditsMaurer[] = {0, Text_Maurer};
-const struct CreditsEntry CreditsFord[] = {0, Text_Ford};
-const struct CreditsEntry CreditsBarlow[] = {0, Text_Barlow};
-const struct CreditsEntry CreditsUyama[] = {0, Text_Uyama};
-const struct CreditsEntry CreditsHowitt[] = {0, Text_Howitt};
-const struct CreditsEntry CreditsTilden[] = {0, Text_Tilden};
-const struct CreditsEntry CreditsEBU[] = {0, Text_EBU};
-const struct CreditsEntry CreditsABA[] = {0, Text_ABA};
-const struct CreditsEntry CreditsRNZFotB[] = {0, Text_RNZFotB};
-
 #define LINES_PER_PAGE 5
-#define _ CreditsTerminator
-const struct CreditsEntry *const gCreditsEntryPointerTable[][LINES_PER_PAGE] =
+#define _ Text_Terminator
+const u8 *const gCreditsEntryPointerTable[][LINES_PER_PAGE] =
 {
     {
         _,
-        CreditsVersion,
-        CreditsCredits,
+        Text_Version,
+        Text_Credits,
         _,
         _
     },
     {
         _,
-        CreditsDirector,
-        CreditsMasuda,
+        Text_Director,
+        Text_Masuda,
         _,
         _,
     },
     {
         _,
-        CreditsArtDirector,
-        CreditsSugimori,
+        Text_ArtDirector,
+        Text_Sugimori,
         _,
         _,
     },
     {
         _,
-        CreditsBattleDirector,
-        CreditsMorimoto,
+        Text_BattleDirector,
+        Text_Morimoto,
         _,
         _,
     },
     {
         _,
-        CreditsMainProgrammer,
-        CreditsTetsuyaWatanabe,
+        Text_MainProgrammer,
+        Text_TetsuyaWatanabe,
         _,
         _,
     },
     {
-        CreditsBattleSystemProgrammer,
-        CreditsSogabe,
-        CreditsFieldSystemProgrammer,
-        CreditsTamada,
+        Text_BattleSystemProgrammer,
+        Text_Sogabe,
+        Text_FieldSystemProgrammer,
+        Text_Tamada,
         _,
     },
     {
-        CreditsProgrammers,
-        CreditsMori,
-        CreditsKagaya,
-        CreditsMatsuda,
+        Text_Programmers,
+        Text_Mori,
+        Text_Kagaya,
+        Text_Matsuda,
         _,
     },
     {
-        CreditsProgrammers,
-        CreditsHiroyukiNakamura,
-        CreditsTaya,
-        CreditsNohara,
+        Text_Programmers,
+        Text_HiroyukiNakamura,
+        Text_Taya,
+        Text_Nohara,
         _,
     },
     {
-        CreditsProgrammers,
-        CreditsTomomichiOhta,
-        CreditsIwasawa,
-        CreditsTakenoriOhta,
-        _,
-    },
-    {
-        _,
-        CreditsMainGraphicDesigner,
-        CreditsYoshida,
-        _,
-        _,
-    },
-    {
-        CreditsPOKeMONGraphicDesigners,
-        CreditsSugimori,
-        CreditsYoshida,
-        _,
-        _,
-    },
-    {
-        CreditsPOKeMONGraphicDesigners,
-        CreditsFujiwara,
-        CreditsSatoshiOhta,
-        CreditsIwashita,
-        _,
-    },
-    {
-        CreditsPOKeMONGraphicDesigners,
-        CreditsTomita,
-        CreditsUnno,
-        CreditsEo,
-        _,
-    },
-    {
-        CreditsPOKeMONDesigners,
-        CreditsMorimoto,
-        CreditsOkutani,
-        CreditsNishida,
-        _,
-    },
-    {
-        CreditsPOKeMONDesigners,
-        CreditsSaito,
-        CreditsYoshikawa,
-        _,
-        _,
-    },
-    {
-        CreditsMusicComposition,
-        CreditsIchinose,
-        CreditsAoki,
-        CreditsMasuda,
+        Text_Programmers,
+        Text_TomomichiOhta,
+        Text_Iwasawa,
+        Text_TakenoriOhta,
         _,
     },
     {
         _,
-        CreditsSoundEffectsPOKeMONVoices,
-        CreditsAoki,
+        Text_MainGraphicDesigner,
+        Text_Yoshida,
         _,
         _,
     },
     {
-        CreditsGameDesigners,
-        CreditsMasuda,
-        CreditsMorimoto,
-        CreditsNishino,
-        _,
-    },
-    {
-        CreditsGameDesigners,
-        CreditsMatsushima,
-        CreditsTetsujiOhta,
-        CreditsSato,
-        CreditsKawachimaru,
-    },
-    {
-        CreditsGameDesigners,
-        CreditsShimoyamada,
-        CreditsOhmori,
-        CreditsTakahashi,
-        _,
-    },
-    {
-        CreditsPlotScenario,
-        CreditsMasuda,
-        CreditsTomisawa,
-        CreditsNishino,
-        _,
-    },
-    {
-        CreditsGameScenario,
-        CreditsToshinobuMatsumiya,
-        CreditsTomisawa,
+        Text_POKeMONGraphicDesigners,
+        Text_Sugimori,
+        Text_Yoshida,
         _,
         _,
     },
     {
-        CreditsScriptDesigners,
-        CreditsNohara,
-        CreditsTetsujiOhta,
-        CreditsTomomichiOhta,
+        Text_POKeMONGraphicDesigners,
+        Text_Fujiwara,
+        Text_SatoshiOhta,
+        Text_Iwashita,
         _,
     },
     {
-        CreditsMapDesigners,
-        CreditsOhmori,
-        CreditsTetsujiOhta,
-        CreditsNishino,
+        Text_POKeMONGraphicDesigners,
+        Text_Tomita,
+        Text_Unno,
+        Text_Eo,
         _,
     },
     {
-        CreditsMapDataDesigners,
-        CreditsTetsujiOhta,
-        CreditsTakahashi,
-        _,
+        Text_POKeMONDesigners,
+        Text_Morimoto,
+        Text_Okutani,
+        Text_Nishida,
         _,
     },
     {
-        CreditsParametricDesigners,
-        CreditsNishino,
-        CreditsMorimoto,
-        CreditsTetsujiOhta,
-        CreditsShimoyamada,
-    },
-    {
-        _,
-        CreditsPOKeDEXText,
-        CreditsMatsushima,
+        Text_POKeMONDesigners,
+        Text_Saito,
+        Text_Yoshikawa,
         _,
         _,
     },
     {
-        CreditsEnvironmentToolProgrammers,
-        CreditsSogabe,
-        CreditsTamada,
-        CreditsHiroyukiNakamura,
-        CreditsMori,
-    },
-    {
-        CreditsProductTesting,
-        CreditsSuperMarioClub,
-        CreditsTada,
-        CreditsOhnishi,
-        CreditsOkamura,
-    },
-    {
-        CreditsSpecialThanks,
-        CreditsTominaga,
-        CreditsYoshiroTajiri,
-        CreditsSasaki,
-        _,
-    },
-    {
-        CreditsSpecialThanks,
-        CreditsHamano,
-        CreditsChieMatsumiya,
-        CreditsShinozaki,
-        CreditsFujii,
-    },
-    {
-        CreditsSpecialThanks,
-        CreditsSuyama,
-        CreditsMitsuhara,
-        CreditsKomura,
-        CreditsOhashi,
-    },
-    {
-        CreditsSpecialThanks,
-        CreditsTakizawa,
-        CreditsTakada,
-        CreditsKondo,
-        CreditsMashima,
-    },
-    {
-        CreditsInformationSupervisors,
-        CreditsEnomoto,
-        CreditsTerada,
-        CreditsSakurai,
-        CreditsSagawa,
-    },
-    {
-        CreditsCoordinators,
-        CreditsKyokoWatanabe,
-        CreditsNakano,
-        _,
-        _,
-    },
-    {
-        CreditsTaskManagers,
-        CreditsYamagami,
-        CreditsNomoto,
-        _,
-        _,
-    },
-    {
-        CreditsProducers,
-        CreditsJinnai,
-        CreditsIzushi,
-        CreditsTsuru,
+        Text_MusicComposition,
+        Text_Ichinose,
+        Text_Aoki,
+        Text_Masuda,
         _,
     },
     {
         _,
-        CreditsExecutiveDirector,
-        CreditsSatoshiTajiri,
+        Text_SoundEffectsPOKeMONVoices,
+        Text_Aoki,
         _,
         _,
     },
     {
+        Text_GameDesigners,
+        Text_Masuda,
+        Text_Morimoto,
+        Text_Nishino,
         _,
-        CreditsExecutiveProducers,
-        CreditsIwata,
+    },
+    {
+        Text_GameDesigners,
+        Text_Matsushima,
+        Text_TetsujiOhta,
+        Text_Sato,
+        Text_Kawachimaru,
+    },
+    {
+        Text_GameDesigners,
+        Text_Shimoyamada,
+        Text_Ohmori,
+        Text_Takahashi,
+        _,
+    },
+    {
+        Text_PlotScenario,
+        Text_Masuda,
+        Text_Tomisawa,
+        Text_Nishino,
+        _,
+    },
+    {
+        Text_GameScenario,
+        Text_ToshinobuMatsumiya,
+        Text_Tomisawa,
+        _,
+        _,
+    },
+    {
+        Text_ScriptDesigners,
+        Text_Nohara,
+        Text_TetsujiOhta,
+        Text_TomomichiOhta,
+        _,
+    },
+    {
+        Text_MapDesigners,
+        Text_Ohmori,
+        Text_TetsujiOhta,
+        Text_Nishino,
+        _,
+    },
+    {
+        Text_MapDataDesigners,
+        Text_TetsujiOhta,
+        Text_Takahashi,
+        _,
+        _,
+    },
+    {
+        Text_ParametricDesigners,
+        Text_Nishino,
+        Text_Morimoto,
+        Text_TetsujiOhta,
+        Text_Shimoyamada,
+    },
+    {
+        _,
+        Text_POKeDEXText,
+        Text_Matsushima,
+        _,
+        _,
+    },
+    {
+        Text_EnvironmentToolProgrammers,
+        Text_Sogabe,
+        Text_Tamada,
+        Text_HiroyukiNakamura,
+        Text_Mori,
+    },
+    {
+        Text_ProductTesting,
+        Text_SuperMarioClub,
+        Text_Tada,
+        Text_Ohnishi,
+        Text_Okamura,
+    },
+    {
+        Text_SpecialThanks,
+        Text_Tominaga,
+        Text_YoshioTajiri,
+        Text_Sasaki,
+        _,
+    },
+    {
+        Text_SpecialThanks,
+        Text_Hamano,
+        Text_ChieMatsumiya,
+        Text_Shinozaki,
+        Text_Fujii,
+    },
+    {
+        Text_SpecialThanks,
+        Text_Suyama,
+        Text_Mitsuhara,
+        Text_Komura,
+        Text_Ohashi,
+    },
+    {
+        Text_SpecialThanks,
+        Text_Takizawa,
+        Text_Takada,
+        Text_Kondo,
+        Text_Mashima,
+    },
+    {
+        Text_InformationSupervisors,
+        Text_Enomoto,
+        Text_Terada,
+        Text_Sakurai,
+        Text_Sagawa,
+    },
+    {
+        Text_Coordinators,
+        Text_KyokoWatanabe,
+        Text_Nakano,
+        _,
+        _,
+    },
+    {
+        Text_TaskManagers,
+        Text_Yamagami,
+        Text_Nomoto,
+        _,
+        _,
+    },
+    {
+        Text_Producers,
+        Text_Jinnai,
+        Text_Izushi,
+        Text_Tsuru,
+        _,
+    },
+    {
+        _,
+        Text_ExecutiveDirector,
+        Text_SatoshiTajiri,
         _,
         _,
     },
     {
         _,
-        CreditsExecutiveProducers,
-        CreditsIshihara,
-        _,
-        _,
-    },
-    {
-        CreditsEnglishVersionCoordinators,
-        CreditsHiroNakamura,
-        CreditsMcMahill,
+        Text_ExecutiveProducers,
+        Text_Iwata,
         _,
         _,
     },
     {
         _,
-        CreditsTranslator,
-        CreditsOgasawara,
+        Text_ExecutiveProducers,
+        Text_Ishihara,
         _,
         _,
     },
     {
-        CreditsProgrammers,
-        CreditsMurakawa,
-        CreditsYamamoto,
-        CreditsFunakoshi,
-        CreditsKinashi,
-    },
-    {
-        CreditsGraphicDesigners,
-        CreditsYamamoto,
-        CreditsKinashi,
-        _,
-        _,
-    },
-    {
-        CreditsProductSupport,
-        CreditsNakamichi,
-        CreditsHara,
+        Text_EnglishVersionCoordinators,
+        Text_HiroNakamura,
+        Text_McMahill,
         _,
         _,
     },
     {
         _,
-        CreditsArtwork,
-        CreditsOkada,
+        Text_Translator,
+        Text_Ogasawara,
+        _,
+        _,
+    },
+    {
+        Text_Programmers,
+        Text_Murakawa,
+        Text_Yamamoto,
+        Text_Funakoshi,
+        Text_Kinashi,
+    },
+    {
+        Text_GraphicDesigners,
+        Text_Yamamoto,
+        Text_Kinashi,
+        _,
+        _,
+    },
+    {
+        Text_ProductSupport,
+        Text_Nakamichi,
+        Text_Hara,
         _,
         _,
     },
     {
         _,
-        CreditsTextEditor,
-        CreditsLillygren,
+        Text_Artwork,
+        Text_Okada,
         _,
         _,
     },
     {
-        CreditsNOAProductTesting,
-        CreditsHertzog,
-        CreditsRidgeway,
+        _,
+        Text_TextEditor,
+        Text_Lillygren,
         _,
         _,
     },
     {
-        CreditsBrailleCodeCheck,
-        CreditsNFotB,
-        CreditsMaurer,
-        CreditsJapanBrailleLibrary,
-        CreditsEBU,
-    },
-    {
-        CreditsBrailleCodeCheck,
-        CreditsABA,
-        CreditsRNZFotB,
+        Text_NOAProductTesting,
+        Text_Hertzog,
+        Text_Ridgeway,
         _,
         _,
     },
     {
-        CreditsSpecialThanks,
-        CreditsFord,
-        CreditsBarlow,
-        CreditsUesugi,
-        CreditsUyama,
+        Text_BrailleCodeCheck,
+        Text_NFotB,
+        Text_Maurer,
+        Text_JapanBrailleLibrary,
+        Text_EBU,
     },
     {
-        CreditsSpecialThanks,
-        CreditsHowitt,
-        CreditsTilden,
-        CreditsFujihara,
+        Text_BrailleCodeCheck,
+        Text_ABA,
+        Text_RNZFotB,
+        _,
+        _,
+    },
+    {
+        Text_SpecialThanks,
+        Text_Ford,
+        Text_Barlow,
+        Text_Uesugi,
+        Text_Uyama,
+    },
+    {
+        Text_SpecialThanks,
+        Text_Howitt,
+        Text_Tilden,
+        Text_Fujihara,
+        _,
+    },
+    {
+        Text_FanTranslator,
+        Text_FanTranslator1,
+        Text_FanTranslator2,
+        Text_FanTranslator3,
+        Text_FanTranslator4,
+    },
+    {
+        Text_FanTranslator,
+        Text_FanTranslator5,
+        Text_FanTranslator6,
+        Text_FanTranslator7,
+        _,
+    },
+    {
+        Text_FanTranslator8,
+        Text_FanTranslator9,
+        Text_FanTranslator10,
+        _,
+        _,
+    },
+    {
+        _,
+        Text_BrailleCodeCheck,
+        Text_FanTranslator11,
+        _,
         _,
     },
 };
