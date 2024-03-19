@@ -2057,6 +2057,23 @@ u8 Text_PrintWindow8002F44(struct Window *win)
         }
         else if (win->state == WIN_STATE_PLACEHOLDER)
         {
+            if (win->text[win->textIndex - 3] == PLACEHOLDER_BEGIN)
+            {
+                const u8 *ptr = GetExpandedPlaceholder(win->text[win->textIndex - 2]);
+                u16 ch;
+
+                while (*ptr != EOS)
+                    ptr++;
+
+                ch = (*(ptr - 2) << 8) | *(ptr - 1);
+                gJongCode = GetJongCode(ch);
+            }
+            else
+            {
+                u16 ch = (win->text[win->textIndex - 3] << 8) | win->text[win->textIndex - 2];
+                gJongCode = GetJongCode(ch);
+            }
+
             sub_8002FA0(win, GetExpandedPlaceholder(win->text[win->textIndex++]));
         }
 
@@ -2075,10 +2092,7 @@ static u8 sub_8002FA0(struct Window *win, const u8 *text)
     win->text = text;
     win->textIndex = 0;
     win->state = WIN_STATE_NORMAL;
-
-    gJongCode = GetJongCode((savedText[savedTextIndex - 2] << 8) | savedText[savedTextIndex - 1]);
     retVal = Text_PrintWindow8002F44(win);
-
     win->text = savedText;
     win->textIndex = savedTextIndex;
     win->state = WIN_STATE_NORMAL;
