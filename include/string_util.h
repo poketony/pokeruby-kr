@@ -9,6 +9,7 @@ enum StringConvertMode
 };
 
 extern const u8 gEmptyString_81E72B0[];
+extern u8 gJongCode;
 
 u8 *StringCopy10(u8 *dest, const u8 *src);
 u8 *StringGetEnd10(u8 *str);

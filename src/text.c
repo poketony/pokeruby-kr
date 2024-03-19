@@ -2075,7 +2075,10 @@ static u8 sub_8002FA0(struct Window *win, const u8 *text)
     win->text = text;
     win->textIndex = 0;
     win->state = WIN_STATE_NORMAL;
+
+    gJongCode = GetJongCode((savedText[savedTextIndex - 2] << 8) | savedText[savedTextIndex - 1]);
     retVal = Text_PrintWindow8002F44(win);
+
     win->text = savedText;
     win->textIndex = savedTextIndex;
     win->state = WIN_STATE_NORMAL;

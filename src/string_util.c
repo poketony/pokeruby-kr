@@ -10,7 +10,7 @@ u8 gUnknownStringVar[16];
 const u8 gEmptyString_81E72B0[] = _("");
 const u8 gRightPointingTriangleString[] = _("▶");
 
-static EWRAM_DATA u8 sJongCode = 0;
+EWRAM_DATA u8 gJongCode = 0;
 
 static const u8 sDigits[] = __("0123456789ABCDEF");
 
@@ -407,7 +407,7 @@ u8 *StringExpandPlaceholders(u8 *dest, const u8 *src)
         {
         case PLACEHOLDER_BEGIN:
             prevChar = (*(dest - 2) << 8) | *(dest - 1);
-            sJongCode = GetJongCode(prevChar);
+            gJongCode = GetJongCode(prevChar);
             placeholderId = *src++;
             expandedString = GetExpandedPlaceholder(placeholderId);
             dest = StringExpandPlaceholders(dest, expandedString);
@@ -553,7 +553,7 @@ static const u8 *ExpandPlaceholder_GirlCall(void)
 
 static const u8 *ExpandPlaceholder_EunNeun(void)
 {
-    if (sJongCode != 0)
+    if (gJongCode != 0)
         return gExpandedPlaceholder_Eun;
     else
         return gExpandedPlaceholder_Neun;
@@ -561,7 +561,7 @@ static const u8 *ExpandPlaceholder_EunNeun(void)
 
 static const u8 *ExpandPlaceholder_Iga(void)
 {
-    if (sJongCode != 0)
+    if (gJongCode != 0)
         return gExpandedPlaceholder_I;
     else
         return gExpandedPlaceholder_Ga;
@@ -569,7 +569,7 @@ static const u8 *ExpandPlaceholder_Iga(void)
 
 static const u8 *ExpandPlaceholder_EulReul(void)
 {
-    if (sJongCode != 0)
+    if (gJongCode != 0)
         return gExpandedPlaceholder_Eul;
     else
         return gExpandedPlaceholder_Reul;
@@ -577,7 +577,7 @@ static const u8 *ExpandPlaceholder_EulReul(void)
 
 static const u8 *ExpandPlaceholder_Eu(void)
 {
-    if (sJongCode != 0 && sJongCode != 8)
+    if (gJongCode != 0 && gJongCode != 8)
         return gExpandedPlaceholder_Eu;
     else
         return gExpandedPlaceholder_Empty;
@@ -585,7 +585,7 @@ static const u8 *ExpandPlaceholder_Eu(void)
 
 static const u8 *ExpandPlaceholder_I(void)
 {
-    if (sJongCode != 0)
+    if (gJongCode != 0)
         return gExpandedPlaceholder_I;
     else
         return gExpandedPlaceholder_Empty;
@@ -593,7 +593,7 @@ static const u8 *ExpandPlaceholder_I(void)
 
 static const u8 *ExpandPlaceholder_WaGwa(void)
 {
-    if (sJongCode != 0)
+    if (gJongCode != 0)
         return gExpandedPlaceholder_Gwa;
     else
         return gExpandedPlaceholder_Wa;
@@ -601,7 +601,7 @@ static const u8 *ExpandPlaceholder_WaGwa(void)
 
 static const u8 *ExpandPlaceholder_Aya(void)
 {
-    if (sJongCode != 0)
+    if (gJongCode != 0)
         return gExpandedPlaceholder_A;
     else
         return gExpandedPlaceholder_Ya;
