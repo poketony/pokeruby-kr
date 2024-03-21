@@ -25,19 +25,11 @@ const u16 gMysteryEventPhrase[] = {EC_WORD_MYSTERY, EC_WORD_EVENT, EC_WORD_IS, E
 
 const u16 gBerryMasterWifePhrases[][2] =
 {
-#if ENGLISH
     {EC_WORD_GREAT, EC_WORD_BATTLE},
     {EC_WORD_CHALLENGE, EC_WORD_CONTEST},
     {EC_WORD_OVERWHELMING, EC_POKEMON(LATIAS)},
     {EC_WORD_COOL, EC_POKEMON(LATIOS)},
     {EC_WORD_SUPER, EC_WORD_HUSTLE},
-#else
-    {EC_WORD_GREAT, EC_WORD_FIGHT},
-    {EC_WORD_CONTEST, EC_WORD_CHALLENGE},
-    {EC_POKEMON(LATIAS), EC_WORD_OVERWHELMING},
-    {EC_POKEMON(LATIOS), EC_WORD_COOL},
-    {EC_WORD_SUPER, 0xFFFF},
-#endif
 };
 
 // const pointer to gEasyChatStruct-> easy_chat might be two separate files.
@@ -502,17 +494,10 @@ void sub_80E6690(void)
 // Default profile phrase
 const u16 gUnknown_083DB7EC[] =
 {
-#if ENGLISH
     EC_WORD_I_AM,
     EC_WORD_A,
     EC_WORD_POKEMON,
     EC_WORD_GREAT,
-#else
-    EC_WORD_I_AM,
-    EC_WORD_BIG,
-    EC_WORD_IN,
-    EC_WORD_POKEMON,
-#endif
 };
 
 const u16 gUnknown_083DB7F4[] =

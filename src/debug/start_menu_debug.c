@@ -350,17 +350,6 @@ extern const u8 Str_839BD2C[];
 extern const u8 Str_839BD4C[];
 
 static u8 gUnknown_030006B8;
-
-#ifndef ENGLISH
-struct DebugBuildDateInfo {
-    s32 max;
-    s32 digitMultiplier;
-    s32 numDigits;
-    s32 offset;
-};
-
-static const struct DebugBuildDateInfo *gDebugBuildDate;
-#endif
 static u8 gUnknown_030006C0;
 static u8 gUnknown_030006C1;
 static const u8 * gUnknown_030006C4;
@@ -392,15 +381,10 @@ void debug_sub_8076B68(void)
 {
     Menu_PrintText(gDebugVersionString, 1, 1);
     Menu_PrintText(gDebugRTCString, 1, 3);
-#if ENGLISH
     Menu_PrintText(gDebugCreatedString, 1, 7);
     DebugMenu_DisplayBuildDate(3, 9);
     Menu_PrintText(gDebugContinuousString, 1, 12);
     DebugMenu_DisplayContinuousDate(3, 16);
-#else
-    Menu_PrintText(gDebugRomString, 1, 9);
-    DebugMenu_DisplayBuildDate(4, 11);
-#endif
     debug_sub_8076AC8(0);
     CreateTask(debug_sub_8076BB4, 1);
 }
@@ -1406,21 +1390,12 @@ u8 DebugMenu_8077C14(void)
 
 
 const u8 Str_839BFDC[] = DTR("　じかん　ふん　びょう", "  HOURS MINUTES SECONDS");
-
-#if ENGLISH
 const u8 ContinousDateTime[] = "2002 08 01 20:25";
-#else
-static const struct DebugBuildDateInfo gDebugBuildDateInfo[] = {
-    { 99, 10, 2, 23 },
-    { 99, 10, 2, 26 }
-};
-#endif
 
 // Parses the version code in a highly inefficient and unsafe way.
 void DebugMenu_ConvertBuildDate(const u8 *buildDateStr, u8 *out)
 {
     s32 i;
-#if ENGLISH
     u16 year;
     u16 month;
     u16 day;
@@ -1447,31 +1422,6 @@ void DebugMenu_ConvertBuildDate(const u8 *buildDateStr, u8 *out)
     out = ConvertIntToDecimalStringN(out, hour, STR_CONV_MODE_LEADING_ZEROS, 2);
     *out++ = CHAR_COLON;
     out = ConvertIntToDecimalStringN(out, minutes, STR_CONV_MODE_LEADING_ZEROS, 2);
-#else
-    // Prevents register allocation swap
-    // Intended: r7 = out, r6 = gDebugBuildDate->numDigits
-    // Observed: r6 = out, r7 = gDebugBuildDate->numDigits
-    ++out; --out;
-
-    gDebugBuildDate = gDebugBuildDateInfo;
-    *out++ = CHAR_SPACE;
-    *out++ = CHAR_SPACE;
-    for (i = 0; i < 2; i++, gDebugBuildDate++)
-    {
-        s32 j;
-        s32 mul;
-        u32 date = 0;
-        for (mul = gDebugBuildDate->digitMultiplier, j = 0; j < gDebugBuildDate->numDigits; j++, mul /= 10)
-            date += (buildDateStr[gDebugBuildDate->offset + j] - '0') * mul;
-        if (gDebugBuildDate->max < date)
-            date = gDebugBuildDate->max;
-        out = ConvertIntToDecimalStringN(out, date, STR_CONV_MODE_LEADING_ZEROS, gDebugBuildDate->numDigits);
-    }
-    out[0] = buildDateStr[29] - 'A' + CHAR_A;
-    if (out[0] > 0xf6) // prevent special characters
-        out[0] = 0xf6;
-    out[1] = EOS;
-#endif
 }
 
 void DebugMenu_DisplayBuildDate(u8 x, u8 y)
@@ -1480,13 +1430,11 @@ void DebugMenu_DisplayBuildDate(u8 x, u8 y)
     Menu_PrintText(gStringVar4, x, y);
 }
 
-#if ENGLISH
 void DebugMenu_DisplayContinuousDate(u8 x, u8 y)
 {
     DebugMenu_ConvertBuildDate(ContinousDateTime, gStringVar4);
     Menu_PrintText(gStringVar4, x, y);
 }
-#endif
 
 void DebugMenu_8077D24(const struct MenuAction *menuAction, u8 width, u8 itemCount)
 {

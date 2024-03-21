@@ -47,16 +47,9 @@ u8 gDexCryScreenState;
 
 const u16 CryMeterNeedlePalette[] = INCBIN_U16("graphics/pokedex/cry_meter_needle.gbapal");
 const u8 CryMeterNeedleTiles[] = INCBIN_U8("graphics/pokedex/cry_meter_needle.4bpp");
-
-#if ENGLISH
 const u16 gCryMeter_Tilemap[] = INCBIN_U16("graphics/pokedex/cry_meter_map.bin");
 const u16 gCryMeter_Pal[] = INCBIN_U16("graphics/pokedex/cry_meter.gbapal");
 const u8 gCryMeter_Gfx[] = INCBIN_U8("graphics/pokedex/cry_meter.4bpp.lz");
-#else
-extern const u16 gCryMeter_Tilemap[];
-extern const u16 gCryMeter_Pal[];
-extern const u8 gCryMeter_Gfx[];
-#endif // ENGLISH
 
 const u16 sWaveformOffsets[][72] = {
     {

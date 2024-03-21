@@ -239,11 +239,7 @@ const union AnimCmd gSpriteAnim_83DBC1C[] =
 
 const union AnimCmd gSpriteAnim_83DBC24[] =
 {
-#if ENGLISH
     ANIMCMD_FRAME(8, 5),
-#else
-    ANIMCMD_FRAME(0, 5),
-#endif
     ANIMCMD_END,
 };
 
@@ -291,11 +287,7 @@ const union AnimCmd gSpriteAnim_83DBC5C[] =
 
 const union AnimCmd gSpriteAnim_83DBC64[] =
 {
-#if ENGLISH
     ANIMCMD_FRAME(40, 5),
-#else
-    ANIMCMD_FRAME(16, 5),
-#endif
     ANIMCMD_END,
 };
 
@@ -438,11 +430,7 @@ void sub_80E85F8(struct Sprite *sprite)
             sprite->y = (gEasyChatStruct->unk1A8 - gEasyChatStruct->unk1B5) * 16 + 96;
             break;
         case 1:
-#if ENGLISH
             sprite->x = 216;
-#else
-            sprite->x = 214;
-#endif
             sprite->y = gEasyChatStruct->unk1A8 * 16 + 96;
             break;
         case 2:
@@ -1393,32 +1381,13 @@ void sub_80E9940(u8 *a, u8 b)
     sub_80E9A60(a, 2, r4 * 2);
 }
 
-#if ENGLISH
-
 const u8 gUnknown_083DBEAC[][32] =
 {
-	_("{UNKNOWN_14 8} A B C  D E F  {UNKNOWN_14 0}others"),
-	_("{UNKNOWN_14 8} G H I  J K L      "),
-	_("{UNKNOWN_14 8} M N O  P Q R S    "),
-	_("{UNKNOWN_14 8} T U V  W X Y Z    "),
+    _("{UNKNOWN_14 8} A B C  D E F  {UNKNOWN_14 0}others"),
+    _("{UNKNOWN_14 8} G H I  J K L      "),
+    _("{UNKNOWN_14 8} M N O  P Q R S    "),
+    _("{UNKNOWN_14 8} T U V  W X Y Z    "),
 };
-
-#else
-
-const u8 unk_83E7EB0[] = _("{UNKNOWN_14 8} A B C  D E F  {UNKNOWN_14 0}mehr");
-const u8 unk_83E7ECA[] = _("{UNKNOWN_14 8} G H I  J K L      ");
-const u8 unk_83E7EE1[] = _("{UNKNOWN_14 8} M N O  P Q R S    ");
-const u8 unk_83E7EF8[] = _("{UNKNOWN_14 8} T U V  W X Y Z    ");
-const u8 *const gUnknown_083DBEAC[] =
-{
-    unk_83E7EB0,
-    unk_83E7ECA,
-    unk_83E7EE1,
-    unk_83E7EF8,
-    unk_83E7EB0 + 21,  // pointer to "mehr". What is this for?
-};
-
-#endif
 
 void sub_80E9974(void)
 {

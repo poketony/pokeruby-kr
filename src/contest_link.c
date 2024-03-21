@@ -7,9 +7,6 @@
 #include "string_util.h"
 #include "link.h"
 
-static void sub_80C8644(u8 taskId);
-static void sub_80C8660(u8 taskId);
-
 static void SendBlockToAllOpponents(const void *data, u16 size)
 {
     memcpy(gDecompressionBuffer, data, size);
@@ -40,32 +37,10 @@ static bool8 HaveAllPlayersReceivedBlock(void)
 
 void Task_LinkContest_Init(u8 taskId)
 {
-#if ENGLISH
     u8 i;
 
     for (i = 0; i < 4; i++)
         gBlockRecvBuffer[i][0] = 0xff;
-#endif
-    gTasks[taskId].data[0] = 0;
-    gTasks[taskId].func = sub_80C8644;
-}
-
-static void sub_80C8644(u8 taskId)
-{
-    gTasks[taskId].func = sub_80C8660;
-}
-
-static void sub_80C8660(u8 taskId)
-{
-    if (gReceivedRemoteLinkPlayers)
-    {
-        gContestPlayerMonIndex = GetMultiplayerId();
-        if (GetLinkPlayerCount() == MAX_LINK_PLAYERS)
-        {
-            gIsLinkContest = TRUE;
-            SwitchTaskToFollowupFunc(taskId);
-        }
-    }
 }
 
 u8 GetStringLanguage(const u8 *string)

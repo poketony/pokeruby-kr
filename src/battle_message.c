@@ -653,11 +653,7 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
                         if (gLinkPlayers[gBattleStruct->multiplayerId].id == gPotentialItemEffectBattler)
                         {
                             StringCopy(text, gEnigmaBerries[gPotentialItemEffectBattler].name);
-#ifdef ENGLISH
                             StringAppend(text, BattleText_Berry);
-#else
-                            de_sub_8073174(text, BattleText_Berry);
-#endif
                             toCpy = text;
                         }
                         else
@@ -911,7 +907,6 @@ void ExpandBattleTextBuffPlaceholders(u8* src, u8* dst)
             srcID += 2;
             break;
         case B_BUFF_MON_NICK_WITH_PREFIX: // poke nick with prefix
-#ifdef ENGLISH
             if (GetBattlerSide(src[srcID + 1]) == 0)
             {
                 GetMonData(&gPlayerParty[src[srcID + 2]], MON_DATA_NICKNAME, text);
@@ -926,24 +921,6 @@ void ExpandBattleTextBuffPlaceholders(u8* src, u8* dst)
             }
             StringGetEnd10(text);
             StringAppend(dst, text);
-#else
-            if (GetBattlerSide(src[srcID + 1]) == 0)
-            {
-                GetMonData(&gPlayerParty[src[srcID + 2]], MON_DATA_NICKNAME, text);
-                StringGetEnd10(text);
-                StringAppend(dst, text);
-            }
-            else
-            {
-                GetMonData(&gEnemyParty[src[srcID + 2]], MON_DATA_NICKNAME, text);
-                StringGetEnd10(text);
-                StringAppend(dst, text);
-                if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
-                    StringAppend(dst, BattleText_Foe);
-                else
-                    StringAppend(dst, BattleText_Wild);
-            }
-#endif
             srcID += 3;
             break;
         case B_BUFF_STAT: // stats
@@ -980,11 +957,7 @@ void ExpandBattleTextBuffPlaceholders(u8* src, u8* dst)
                         if (gLinkPlayers[gBattleStruct->multiplayerId].id == gPotentialItemEffectBattler)
                         {
                             StringCopy(dst, gEnigmaBerries[gPotentialItemEffectBattler].name);
-#ifdef ENGLISH
                             StringAppend(dst, BattleText_Berry);
-#else
-                            de_sub_8073174(dst, BattleText_Berry);
-#endif
                         }
                         else
                             StringAppend(dst, BattleText_EnigmaBerry);

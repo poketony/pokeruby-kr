@@ -2388,25 +2388,15 @@ static void sub_8050E30(void)
     case 1:
         gBerryBlenderData->field_6F = 3;
         Menu_EraseWindowRect(23, 8, 28, 13);
-#ifdef ENGLISH
         StringCopy(gStringVar4, gLinkPlayers[gBerryBlenderData->field_7A].name);
         StringAppend(gStringVar4, gOtherText_OtherCaseIsFull);
-#else
-        StringCopy(gStringVar4, gOtherText_OtherCaseIsFull);
-        de_sub_8073110(gStringVar4, gLinkPlayers[gBerryBlenderData->field_7A].name);
-#endif
         MenuPrintMessage(gStringVar4, 1, 15);
         break;
     case 2:
         gBerryBlenderData->field_6F++;
         Menu_EraseWindowRect(23, 8, 28, 13);
-#ifdef ENGLISH
         StringCopy(gStringVar4, gLinkPlayers[gBerryBlenderData->field_7A].name);
         StringAppend(gStringVar4, gOtherText_NoBerriesForBlend);
-#else
-        StringCopy(gStringVar4, gOtherText_NoBerriesForBlend);
-        de_sub_8073110(gStringVar4, gLinkPlayers[gBerryBlenderData->field_7A].name);
-#endif
         MenuPrintMessage(gStringVar4, 1, 15);
         break;
     case 3:
@@ -2995,11 +2985,7 @@ bool8 Blender_PrintBlendingResults(void)
 
                 StringCopy(textPtr, gBerryBlenderData->blendedBerries[place].name);
                 ConvertInternationalString(textPtr, gLinkPlayers[place].language);
-#ifdef ENGLISH
                 StringAppend(textPtr, gOtherText_Berry);
-#else
-                de_sub_8073174(textPtr, gOtherText_Berry);
-#endif
                 textPtr = gBerryBlenderData->stringVar;
                 textPtr = ConvertIntToDecimalString(textPtr, i + 1);
                 textPtr[0] = CHAR_SPACE;
@@ -3015,16 +3001,11 @@ bool8 Blender_PrintBlendingResults(void)
             textPtr = StringCopy(textPtr, gOtherText_MaxSpeed);
             textPtr = AlignInt1InMenuWindow(textPtr, gBerryBlenderData->max_RPM / 100, 121, 1);
 
-#ifdef ENGLISH
             textPtr[0] = CHAR_SPACE;
             textPtr[1] = CHAR_PERIOD;
             textPtr[2] = CHAR_SPACE;
             textPtr += 3;
             textPtr = AlignStringInMenuWindow(textPtr, text[0], 142, 1);
-#else
-            *textPtr++ = CHAR_COMMA;
-            textPtr = AlignStringInMenuWindow(textPtr, text[0], 136, 1);
-#endif
             StringCopy(textPtr, gOtherText_RPM);
             Menu_PrintText(gBerryBlenderData->stringVar, 5, 13);
 
@@ -3035,14 +3016,8 @@ bool8 Blender_PrintBlendingResults(void)
             ConvertIntToDecimalStringN(text[1], seconds, 2, 2);
             textPtr = gBerryBlenderData->stringVar;
             textPtr = StringCopy(textPtr, gOtherText_RequiredTime);
-
-#ifdef ENGLISH
             textPtr = AlignStringInMenuWindow(textPtr, text[0], 102, 1);
-#else
-            textPtr = AlignStringInMenuWindow(textPtr, text[0], 99, 1);
-#endif
             textPtr = StringAppend(textPtr, gOtherText_Min);
-
             textPtr = AlignStringInMenuWindow(textPtr, text[1], 136, 1);
             StringCopy(textPtr, gOtherText_Sec);
 
@@ -3096,11 +3071,7 @@ static void Blender_PrintMadePokeblockString(struct Pokeblock* pokeblock, u8* ds
 
     dst[0] = EOS;
     StringCopy(dst, gPokeblockNames[pokeblock->color]);
-#ifdef ENGLISH
     StringAppend(dst, gOtherText_PokeBlockMade);
-#else
-    de_sub_8073174(dst, gOtherText_PokeBlockMade);
-#endif
     StringAppend(dst, sNewLineString_0);
 
     flavourLvl = sub_810C9B0(pokeblock);
@@ -3504,14 +3475,10 @@ void ShowBerryBlenderRecordWindow(void)
         u32 record = gSaveBlock1.berryBlenderRecords[i];
         u8* txtPtr = AlignInt1InMenuWindow(text, record / 100, 18, 1);
 
-#ifdef ENGLISH
         txtPtr[0] = CHAR_SPACE;
         txtPtr[1] = CHAR_PERIOD;
         txtPtr[2] = CHAR_SPACE;
         txtPtr += 3;
-#else
-        *txtPtr++ = CHAR_COMMA;
-#endif
 
         txtPtr = ConvertIntToDecimalStringN(txtPtr, record % 100, 2, 2);
         StringAppend(txtPtr, gOtherText_RPM);
