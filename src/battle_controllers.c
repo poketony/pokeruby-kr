@@ -786,7 +786,7 @@ void BtlController_EmitPrintString(u8 a, u16 stringID)
 
     for (i = 0; i < 4; i++)
         stringInfo->abilities[i] = gBattleMons[i].ability;
-    for (i = 0; i < 0x10; i++)
+    for (i = 0; i < TRANSFER_TEXT_BUFF_ARRAY_COUNT; i++)
     {
         stringInfo->textBuffs[0][i] = gBattleTextBuff1[i];
         stringInfo->textBuffs[1][i] = gBattleTextBuff2[i];
@@ -815,7 +815,7 @@ void BtlController_EmitPrintSelectionString(u8 a, u16 stringID)
 
     for (i = 0; i < 4; i++)
         stringInfo->abilities[i] = gBattleMons[i].ability;
-    for (i = 0; i < 0x10; i++)
+    for (i = 0; i < TRANSFER_TEXT_BUFF_ARRAY_COUNT; i++)
     {
         stringInfo->textBuffs[0][i] = gBattleTextBuff1[i];
         stringInfo->textBuffs[1][i] = gBattleTextBuff2[i];

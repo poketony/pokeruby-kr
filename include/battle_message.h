@@ -1,7 +1,8 @@
 #ifndef GUARD_BATTLE_MESSAGE_H
 #define GUARD_BATTLE_MESSAGE_H
 
-#define TEXT_BUFF_ARRAY_COUNT   32
+#define TRANSFER_TEXT_BUFF_ARRAY_COUNT   16
+#define TEXT_BUFF_ARRAY_COUNT            32
 
 struct StringInfoBattle
 {

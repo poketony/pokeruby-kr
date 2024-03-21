@@ -175,7 +175,6 @@ extern struct BattleEnigmaBerry gEnigmaBerries[4];
 extern u8 gBattleBufferA[4][0x200];
 
 EWRAM_DATA u8 gAbilitiesPerBank[4] = {0};
-static EWRAM_DATA u8 sJongCode = 0;
 
 extern const u8* const gUnknown_08401674[]; // table of pointers to 'a -TYPE' strings
 extern const u8* const gUnknown_08400F58[]; // table of pointers to stat strings
@@ -222,7 +221,7 @@ void BufferStringBattle(u16 stringID)
     {
         gAbilitiesPerBank[i] = gStringInfo->abilities[i];
     }
-    for (i = 0; i < 0x10; i++)
+    for (i = 0; i < TRANSFER_TEXT_BUFF_ARRAY_COUNT; i++)
     {
         gBattleTextBuff1[i] = gStringInfo->textBuffs[0][i];
         gBattleTextBuff2[i] = gStringInfo->textBuffs[1][i];
@@ -423,7 +422,89 @@ void BufferStringBattle(u16 stringID)
 
 u32 BattleStringExpandPlaceholdersToDisplayedString(const u8* src)
 {
-    BattleStringExpandPlaceholders(src, gDisplayedStringBattle);
+    const u8 *toCpy = NULL;
+    u8 *srcPtr = gDisplayedStringBattleTemp;
+    u8 *dstPtr = gDisplayedStringBattle;
+    u8 currentJongCode = 0;
+
+    BattleStringExpandPlaceholders(src, gDisplayedStringBattleTemp);
+
+    // 한글 placeholder 처리
+    while (*srcPtr != B_BUFF_EOS)
+    {
+        toCpy = NULL;
+
+        if (*srcPtr == PLACEHOLDER_BEGIN)
+        {
+            switch (*(srcPtr + 1))
+            {
+            case B_TXT_EUNNEUN:
+                if (currentJongCode != 0)
+                    toCpy = gExpandedPlaceholder_Eun;
+                else
+                    toCpy = gExpandedPlaceholder_Neun;
+                break;
+            case B_TXT_IGA:
+                if (currentJongCode != 0)
+                    toCpy = gExpandedPlaceholder_I;
+                else
+                    toCpy = gExpandedPlaceholder_Ga;
+                break;
+            case B_TXT_EULREUL:
+                if (currentJongCode != 0)
+                    toCpy = gExpandedPlaceholder_Eul;
+                else
+                    toCpy = gExpandedPlaceholder_Reul;
+                break;
+            case B_TXT_EU:
+                if (currentJongCode != 0 && currentJongCode != 8)
+                    toCpy = gExpandedPlaceholder_Eu;
+                else
+                    toCpy = gExpandedPlaceholder_Empty;
+                break;
+            case B_TXT_I:
+                if (currentJongCode != 0)
+                    toCpy = gExpandedPlaceholder_I;
+                else
+                    toCpy = gExpandedPlaceholder_Empty;
+                break;
+            case B_TXT_WAGWA:
+                if (currentJongCode != 0)
+                    toCpy = gExpandedPlaceholder_Gwa;
+                else
+                    toCpy = gExpandedPlaceholder_Wa;
+                break;
+            case B_TXT_AYA:
+                if (currentJongCode != 0)
+                    toCpy = gExpandedPlaceholder_A;
+                else
+                    toCpy = gExpandedPlaceholder_Ya;
+                break;
+            }
+        }
+
+        if (toCpy == NULL)
+        {
+            *dstPtr = *srcPtr;
+            dstPtr++;
+            srcPtr++;
+        }
+        else
+        {
+            srcPtr += 2;
+
+            while (*toCpy != EOS)
+            {
+                *dstPtr = *toCpy;
+                dstPtr++;
+                toCpy++;
+            }
+        }
+
+        currentJongCode = GetJongCode((*(dstPtr - 2) << 8) | *(dstPtr - 1));
+    }
+
+    *dstPtr = EOS;
 }
 
 const u8* TryGetStatusString(u8* src)
@@ -480,11 +561,12 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
     u32 dstID = 0; // if they used dstID, why not use srcID as well?
     const u8* toCpy = NULL;
     u8 text[30];
-    u16 prevChar;
     u8 multiplayerID = GetMultiplayerId();
 
     while (*src != EOS)
     {
+        toCpy = NULL;
+
         if (*src == B_BUFF_PLACEHOLDER_BEGIN)
         {
             src++;
@@ -510,10 +592,7 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
                     toCpy = gStringVar2;
                 }
                 else
-                {
-                    BattleStringExpandPlaceholders(gBattleTextBuff2, gStringVar2);
-                    toCpy = gStringVar2;
-                }
+                    toCpy = gBattleTextBuff2;
                 break;
             case B_TXT_BUFF3:
                 if (gBattleTextBuff3[0] == B_BUFF_PLACEHOLDER_BEGIN)
@@ -523,48 +602,6 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
                 }
                 else
                     toCpy = gBattleTextBuff3;
-                break;
-            case B_TXT_EUNNEUN:
-                if (sJongCode != 0)
-                    toCpy = gExpandedPlaceholder_Eun;
-                else
-                    toCpy = gExpandedPlaceholder_Neun;
-                break;
-            case B_TXT_IGA:
-                if (sJongCode != 0)
-                    toCpy = gExpandedPlaceholder_I;
-                else
-                    toCpy = gExpandedPlaceholder_Ga;
-                break;
-            case B_TXT_EULREUL:
-                if (sJongCode != 0)
-                    toCpy = gExpandedPlaceholder_Eul;
-                else
-                    toCpy = gExpandedPlaceholder_Reul;
-                break;
-            case B_TXT_EU:
-                if (sJongCode != 0 && sJongCode != 8)
-                    toCpy = gExpandedPlaceholder_Eu;
-                else
-                    toCpy = gExpandedPlaceholder_Empty;
-                break;
-            case B_TXT_I:
-                if (sJongCode != 0)
-                    toCpy = gExpandedPlaceholder_I;
-                else
-                    toCpy = gExpandedPlaceholder_Empty;
-                break;
-            case B_TXT_WAGWA:
-                if (sJongCode != 0)
-                    toCpy = gExpandedPlaceholder_Gwa;
-                else
-                    toCpy = gExpandedPlaceholder_Wa;
-                break;
-            case B_TXT_AYA:
-                if (sJongCode != 0)
-                    toCpy = gExpandedPlaceholder_A;
-                else
-                    toCpy = gExpandedPlaceholder_Ya;
                 break;
             case B_TXT_PLAYER_MON1_NAME: // first player poke name
                 GetMonData(&gPlayerParty[gBattlerPartyIndexes[GetBattlerAtPosition(0)]], MON_DATA_NICKNAME, text);
@@ -783,13 +820,22 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
                     toCpy = BattleText_Foe4;
                 break;
             }
-            //if (toCpy != NULL) really GF, why did you forget about this?
-            while (*toCpy != EOS)
+
+            if (toCpy == NULL)
             {
-                dst[dstID] = *toCpy;
-                dstID++;
-                toCpy++;
+                dst[dstID++] = PLACEHOLDER_BEGIN;
+                dst[dstID++] = *src;
             }
+            else
+            {
+                while (*toCpy != EOS)
+                {
+                    dst[dstID] = *toCpy;
+                    dstID++;
+                    toCpy++;
+                }
+            }
+
             if (*src == B_TXT_TRAINER1_LOSE_TEXT)
             {
                 dst[dstID] = EXT_CTRL_CODE_BEGIN;
@@ -804,10 +850,6 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
             dstID++;
         }
         src++;
-
-        // 종성유무 체크
-        prevChar = (dst[dstID - 2] << 8) | dst[dstID - 1];
-        sJongCode = GetJongCode(prevChar);
     }
 
     dst[dstID] = *src;
@@ -828,55 +870,6 @@ void ExpandBattleTextBuffPlaceholders(u8* src, u8* dst)
     {
         switch (src[srcID])
         {
-        case B_TXT_EUNNEUN:
-            if (sJongCode != 0)
-                StringAppend(dst, gExpandedPlaceholder_Eun);
-            else
-                StringAppend(dst, gExpandedPlaceholder_Neun);
-            srcID += 1;
-            break;
-        case B_TXT_IGA:
-            if (sJongCode != 0)
-                StringAppend(dst, gExpandedPlaceholder_I);
-            else
-                StringAppend(dst, gExpandedPlaceholder_Ga);
-            srcID += 1;
-            break;
-        case B_TXT_EULREUL:
-            if (sJongCode != 0)
-                StringAppend(dst, gExpandedPlaceholder_Eul);
-            else
-                StringAppend(dst, gExpandedPlaceholder_Reul);
-            srcID += 1;
-            break;
-        case B_TXT_EU:
-            if (sJongCode != 0 && sJongCode != 8)
-                StringAppend(dst, gExpandedPlaceholder_Eu);
-            else
-                StringAppend(dst, gExpandedPlaceholder_Empty);
-            srcID += 1;
-            break;
-        case B_TXT_I:
-            if (sJongCode != 0)
-                StringAppend(dst, gExpandedPlaceholder_I);
-            else
-                StringAppend(dst, gExpandedPlaceholder_Empty);
-            srcID += 1;
-            break;
-        case B_TXT_WAGWA:
-            if (sJongCode != 0)
-                StringAppend(dst, gExpandedPlaceholder_Gwa);
-            else
-                StringAppend(dst, gExpandedPlaceholder_Wa);
-            srcID += 1;
-            break;
-        case B_TXT_AYA:
-            if (sJongCode != 0)
-                StringAppend(dst, gExpandedPlaceholder_A);
-            else
-                StringAppend(dst, gExpandedPlaceholder_Ya);
-            srcID += 1;
-            break;
         case B_BUFF_STRING: // battle string
             hword = T1_READ_16(&src[srcID + 1]);
             StringAppend(dst, gBattleStringsTable[hword - BATTLESTRING_TO_SUB]);

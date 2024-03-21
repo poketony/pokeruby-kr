@@ -606,6 +606,7 @@ extern u16 gBattle_WIN1V;
 
 extern u8 gLastHitBy[MAX_BATTLERS_COUNT];
 
+extern u8 gDisplayedStringBattleTemp[];
 extern u8 gDisplayedStringBattle[];
 
 extern u16 gBattleTypeFlags;

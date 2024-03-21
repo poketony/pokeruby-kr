@@ -14,6 +14,9 @@
 gUnknown_020238C8 = .; /* 20238C8 */
     . += 0x4;
 
+gDisplayedStringBattleTemp = .;
+    . += 0x12C; /* 300 */
+
 gDisplayedStringBattle = .; /* 20238CC */
     . += 0x12C; /* 300 */
 
