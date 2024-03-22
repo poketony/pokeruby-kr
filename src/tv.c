@@ -1044,7 +1044,7 @@ void sub_80BE478(void)
         return;
 
     GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar1);
-    if (StringLength(gSaveBlock2.playerName) > 1 && StringLength(gStringVar1) > 1)
+    if (StringLength_Multibyte(gSaveBlock2.playerName) > 1 && StringLength_Multibyte(gStringVar1) > 1)
     {
         struct TVShowNameRaterShow *nameRaterShow = &gSaveBlock1.tvShows[gUnknown_03005D38.var0].nameRaterShow;
 
