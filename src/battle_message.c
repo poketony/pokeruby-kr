@@ -963,6 +963,11 @@ void ExpandBattleTextBuffPlaceholders(u8* src, u8* dst)
                 srcID += 3;
             }
             break;
+        default:
+            *(dst++) = B_BUFF_PLACEHOLDER_BEGIN;
+            *(dst++) = src[srcID];
+            srcID++;
+            break;
         }
     }
 }
