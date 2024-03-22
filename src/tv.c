@@ -39,6 +39,7 @@
 #include "string_util.h"
 #include "strings.h"
 #include "text.h"
+#include "korean.h"
 #include "ewram.h"
 #include "constants/moves.h"
 #include "constants/region_map_sections.h"
@@ -1935,82 +1936,156 @@ u8 sub_80BF7E8(struct TVShowNameRaterShow *arg0)
     return flagsum & 0x7;
 }
 
-
-void sub_80BF820(u8 arg0, u8 arg1, u8 arg2, u16 arg3, u16 arg4, struct TVShowNameRaterShow *tvShow)
+void TV_GetNicknameSubstring(u8 stringVarsType, u8 startIndex, u8 type, u16 targetType, u16 targetIndex, struct TVShowNameRaterShow *tvShow)
 {
-    u8 flags[3];
-    u16 nameLength;
+    const u8 *originNamePtr;
+    u8 normalizedName[22];
+    u8 copyBuf[6];
+    u16 nameLength, requiredNameLength;
     u8 i;
 
-    for (i = 0; i < 3; i++)
-        flags[i] = EOS;
+    for (i = 0; i < 6; i++)
+        copyBuf[i] = EOS;
+    for (i = 0; i < 22; i++)
+        normalizedName[i] = EOS;
 
-    if (arg3 == 0)
+    switch (targetType)
     {
-        nameLength = StringLength(tvShow->trainerName);
-        if (arg2 == 0)
+    case 0:
+        originNamePtr = tvShow->trainerName;
+        nameLength = StringLength_Multibyte(originNamePtr);
+        break;
+    case 1:
+        originNamePtr = tvShow->pokemonName;
+        nameLength = StringLength_Multibyte(originNamePtr);
+        break;
+    default:
+        originNamePtr = gSpeciesNames[targetIndex];
+        nameLength = StringLength_Multibyte(originNamePtr);
+        break;
+    }
+
+    i = 0;
+    while (*originNamePtr != EOS)
+    {
+        if (IsKoreanGlyph(*originNamePtr))
         {
-            flags[0] = tvShow->trainerName[arg1];
-        }
-        else if (arg2 == 1)
-        {
-            flags[0] = tvShow->trainerName[nameLength - arg1];
-        }
-        else if (arg2 == 2) {
-            flags[0] = tvShow->trainerName[arg1];
-            flags[1] = tvShow->trainerName[arg1 + 1];
+            normalizedName[i++] = *(originNamePtr++);
+            normalizedName[i++] = *originNamePtr++;
         }
         else
         {
-            flags[0] = tvShow->trainerName[nameLength - (arg1 + 2)];
-            flags[1] = tvShow->trainerName[nameLength - (arg1 + 1)];
+            normalizedName[i++] = 0;
+            normalizedName[i++] = *originNamePtr++;
         }
     }
-    else if (arg3 == 1)
+
+    switch (type)
     {
-        nameLength = StringLength(tvShow->pokemonName);
-        if (arg2 == 0)
+        case 0:
+        case 1:
+            requiredNameLength = startIndex + 1;
+            break;
+        case 2:
+        default:
+            requiredNameLength = startIndex + 2;
+            break;
+    }
+
+    // NOTE: 영문과 다르게 한글은 짧은 문자열이 존재합니다.
+    if (nameLength < requiredNameLength)
+    {
+        if (normalizedName[0] == 0)
         {
-            flags[0] = tvShow->pokemonName[arg1];
-        }
-        else if (arg2 == 1)
-        {
-            flags[0] = tvShow->pokemonName[nameLength - arg1];
-        }
-        else if (arg2 == 2)
-        {
-            flags[0] = tvShow->pokemonName[arg1];
-            flags[1] = tvShow->pokemonName[arg1 + 1];
+            copyBuf[0] = normalizedName[1];
         }
         else
         {
-            flags[0] = tvShow->pokemonName[nameLength - (arg1 + 2)];
-            flags[1] = tvShow->pokemonName[nameLength - (arg1 + 1)];
+            copyBuf[0] = normalizedName[0];
+            copyBuf[1] = normalizedName[1];
         }
     }
     else
     {
-        nameLength = StringLength(gSpeciesNames[arg4]);
-        if (arg2 == 0)
+        switch (type)
         {
-            flags[0] = gSpeciesNames[arg4][arg1];
+        case 0:
+        {
+            u8 *dst = copyBuf;
+            u8 index = index = (startIndex + 0) * 2;
+            if (normalizedName[index] == 0)
+            {
+                *(dst++) = normalizedName[index + 1];
+            }
+            else
+            {
+                *(dst++) = normalizedName[index];
+                *(dst++) = normalizedName[index + 1];
+            }
+            break;
         }
-        else if (arg2 == 1)
+
+        case 1:
         {
-            flags[0] = gSpeciesNames[arg4][nameLength - arg1];
+            u8 *dst = copyBuf;
+            u8 index = (nameLength - startIndex - (2 - i)) * 2;
+            if (normalizedName[index] == 0)
+            {
+                *(dst++) = normalizedName[index + 1];
+            }
+            else
+            {
+                *(dst++) = normalizedName[index];
+                *(dst++) = normalizedName[index + 1];
+            }
+            break;
         }
-        else if (arg2 == 2)
+
+        case 2:
         {
-            flags[0] = gSpeciesNames[arg4][arg1];
-            flags[1] = gSpeciesNames[arg4][arg1 + 1];
+            u8 index;
+            u8 *dst = copyBuf;
+
+            for (i = 0; i < 2; i++)
+            {
+                index = (startIndex + i) * 2;
+                if (normalizedName[index] == 0)
+                {
+                    *(dst++) = normalizedName[index + 1];
+                }
+                else
+                {
+                    *(dst++) = normalizedName[index];
+                    *(dst++) = normalizedName[index + 1];
+                }
+            }
+            break;
         }
-        else
+
+        default:
         {
-            flags[0] = gSpeciesNames[arg4][nameLength - (arg1 + 2)];
-            flags[1] = gSpeciesNames[arg4][nameLength - (arg1 + 1)];
+            u8 index;
+            u8 *dst = copyBuf;
+
+            for (i = 0; i < 2; i++)
+            {
+                index = (nameLength - startIndex - (2 - i)) * 2;
+                if (normalizedName[index] == 0)
+                {
+                    *(dst++) = normalizedName[index + 1];
+                }
+                else
+                {
+                    *(dst++) = normalizedName[index];
+                    *(dst++) = normalizedName[index + 1];
+                }
+            }
+            break;
+        }
         }
     }
-    StringCopy(gUnknown_083D1464[arg0], flags);
+
+    StringCopy(gUnknown_083D1464[stringVarsType], copyBuf);
 }
 
 bool8 TV_IsScriptShowKindAlreadyInQueue(void)
@@ -2926,46 +3001,46 @@ void DoTVShowTheNameRaterShow(void)
     case 9:
     case 10:
     case 11:
-        sub_80BF820(0, 1, 0, 1, 0, nameRaterShow);
+        TV_GetNicknameSubstring(0, 1, 0, 1, 0, nameRaterShow);
         TVShowConvertInternationalString(gStringVar3, gStringVar1, nameRaterShow->pokemonNameLanguage);
-        sub_80BF820(0, 0, 0, 1, 0, nameRaterShow);
+        TV_GetNicknameSubstring(0, 0, 0, 1, 0, nameRaterShow);
         TVShowConvertInternationalString(gStringVar2, gStringVar1, nameRaterShow->pokemonNameLanguage);
         TVShowConvertInternationalString(gStringVar1, nameRaterShow->pokemonName, nameRaterShow->pokemonNameLanguage);
         sTVShowState = 12;
         break;
     case 13:
-        sub_80BF820(0, 0, 3, 1, 0, nameRaterShow);
+        TV_GetNicknameSubstring(0, 0, 3, 1, 0, nameRaterShow);
         TVShowConvertInternationalString(gStringVar3, gStringVar1, nameRaterShow->pokemonNameLanguage);
-        sub_80BF820(0, 0, 2, 0, 0, nameRaterShow);
+        TV_GetNicknameSubstring(0, 0, 2, 0, 0, nameRaterShow);
         TVShowConvertInternationalString(gStringVar2, gStringVar1, nameRaterShow->language);
         TVShowConvertInternationalString(gStringVar1, nameRaterShow->trainerName, nameRaterShow->language);
         sTVShowState = 14;
         break;
     case 14:
-        sub_80BF820(0, 0, 3, 0, 0, nameRaterShow);
+        TV_GetNicknameSubstring(0, 0, 3, 0, 0, nameRaterShow);
         TVShowConvertInternationalString(gStringVar3, gStringVar1, nameRaterShow->language);
-        sub_80BF820(0, 0, 2, 1, 0, nameRaterShow);
+        TV_GetNicknameSubstring(0, 0, 2, 1, 0, nameRaterShow);
         TVShowConvertInternationalString(gStringVar2, gStringVar1, nameRaterShow->pokemonNameLanguage);
         TVShowConvertInternationalString(gStringVar1, nameRaterShow->trainerName, nameRaterShow->language);
         sTVShowState = 18;
         break;
     case 15:
-        sub_80BF820(1, 0, 2, 1, 0, nameRaterShow);
+        TV_GetNicknameSubstring(1, 0, 2, 1, 0, nameRaterShow);
         TVShowConvertInternationalString(gStringVar1, gStringVar2, nameRaterShow->pokemonNameLanguage);
         StringCopy(gStringVar2, gSpeciesNames[nameRaterShow->species]);
-        sub_80BF820(2, 0, 3, 2, nameRaterShow->species, nameRaterShow);
+        TV_GetNicknameSubstring(2, 0, 3, 2, nameRaterShow->species, nameRaterShow);
         sTVShowState = 16;
         break;
     case 16:
-        sub_80BF820(0, 0, 3, 1, 0, nameRaterShow);
+        TV_GetNicknameSubstring(0, 0, 3, 1, 0, nameRaterShow);
         TVShowConvertInternationalString(gStringVar3, gStringVar1, nameRaterShow->pokemonNameLanguage);
-        sub_80BF820(0, 0, 2, 2, nameRaterShow->species, nameRaterShow);
+        TV_GetNicknameSubstring(0, 0, 2, 2, nameRaterShow->species, nameRaterShow);
         sTVShowState = 17;
         break;
     case 17:
-        sub_80BF820(1, 0, 2, 1, 0, nameRaterShow);
+        TV_GetNicknameSubstring(1, 0, 2, 1, 0, nameRaterShow);
         TVShowConvertInternationalString(gStringVar1, gStringVar2, nameRaterShow->pokemonNameLanguage);
-        sub_80BF820(2, 0, 3, 2, nameRaterShow->var1C, nameRaterShow);
+        TV_GetNicknameSubstring(2, 0, 3, 2, nameRaterShow->var1C, nameRaterShow);
         StringCopy(gStringVar2, gSpeciesNames[nameRaterShow->var1C]);
         sTVShowState = 18;
         break;
