@@ -891,8 +891,15 @@ const u8 gPartyMenuMisc_Gfx[] = INCBIN_U8("graphics/interface/party_menu_misc.4b
 const u8 gPartyMenuMisc_Pal[] = INCBIN_U8("graphics/interface/party_menu_misc.gbapal.lz");
 const u8 gPartyMenuMisc_Tilemap[] = INCBIN_U8("graphics/interface/party_menu_misc.bin.lz");
 const u8 gPartyMenuHpBar_Gfx[] = INCBIN_U8("graphics/interface/party_menu_hpbar.4bpp.lz");
+
+#if MODERN
+const u8 gPartyMenuOrderText_Gfx[] = INCBIN_U8("graphics-modern/interface/party_menu_ordertext.4bpp.lz");
+const u8 gPartyMenuOrderText2_Gfx[] = INCBIN_U8("graphics-modern/interface/party_menu_ordertext2.4bpp.lz");
+#else
 const u8 gPartyMenuOrderText_Gfx[] = INCBIN_U8("graphics/interface/party_menu_ordertext.4bpp.lz");
 const u8 gPartyMenuOrderText2_Gfx[] = INCBIN_U8("graphics/interface/party_menu_ordertext2.4bpp.lz");
+#endif
+
 const u8 gMoveTypes_Gfx[] = INCBIN_U8("graphics/types/move_types.4bpp.lz");
 const u8 gMoveTypes_Pal[] = INCBIN_U8("graphics/types/move_types.gbapal.lz");
 const u8 gMenuSummaryGfx[] = INCBIN_U8("graphics/interface/summary_frames.4bpp.lz");// the arrows appear to be unused.
@@ -910,7 +917,13 @@ const u8 gUnknown_08E74E88[] = INCBIN_U8("graphics/interface/pokemon_info.bin.lz
 const u8 gBagMaleTiles[] = INCBIN_U8("graphics/misc/bag_male.4bpp.lz");
 const u8 gBagFemaleTiles[] = INCBIN_U8("graphics/misc/bag_female.4bpp.lz");
 const u8 gBagPalette[] = INCBIN_U8("graphics/misc/bag.gbapal.lz");
+
+#if MODERN
+const u8 gBagScreen_Gfx[] = INCBIN_U8("graphics-modern/interface/bag_screen.4bpp.lz");
+#else
 const u8 gBagScreen_Gfx[] = INCBIN_U8("graphics/interface/bag_screen.4bpp.lz");
+#endif
+
 const u8 gBagScreenMale_Pal[] = INCBIN_U8("graphics/interface/bag_screen_male.gbapal.lz");
 const u8 gBagScreenFemale_Pal[] = INCBIN_U8("graphics/interface/bag_screen_female.gbapal.lz");
 const u8 gBagScreen_Tilemap[] = INCBIN_U8("graphics/interface/bag_screen.bin");
@@ -1075,7 +1088,13 @@ const u16 gPokenavMenuOptions1_Pal[] = INCBIN_U16("graphics/pokenav/pokenav1.gba
 const u16 gPokenavMenuOptions2_Pal[] = INCBIN_U16("graphics/pokenav/pokenav2.gbapal");
 const u16 gPokenavMenuOptions3_Pal[] = INCBIN_U16("graphics/pokenav/pokenav3.gbapal");
 const u8 gPokenavHoennMapHeader_Gfx[] = INCBIN_U8("graphics/pokenav/map_header.4bpp.lz");
+
+#if MODERN
+const u8 gPokenavHoennMapMisc_Gfx[] = INCBIN_U8("graphics-modern/pokenav/map_misc2.4bpp.lz");
+#else
 const u8 gPokenavHoennMapMisc_Gfx[] = INCBIN_U8("graphics/pokenav/map_misc2.4bpp.lz");
+#endif
+
 const u8 gPokenavHoennMapSquares_Gfx[] = INCBIN_U8("graphics/pokenav/zoom_tiles.4bpp.lz");
 const u16 gPokenavHoennMap1_Pal[] = INCBIN_U16("graphics/pokenav/map_menu.gbapal");
 const u8 gPokenavHoennMapSquares_Pal[] = INCBIN_U8("graphics/pokenav/zoom_tiles.gbapal");
@@ -1104,7 +1123,12 @@ const u16 gPokenavCondition7_Pal[] = INCBIN_U16("graphics/pokenav/condition7.bin
 const u8 gPokenavTrainersEyesHeader_Gfx[] = INCBIN_U8("graphics/pokenav/trainereyes.4bpp.lz");
 const u8 gPokenavRibbonsHeader_Gfx[] = INCBIN_U8("graphics/pokenav/ribbons.4bpp.lz");
 
+#if MODERN
+const u8 gMenuTrainerCard_Gfx[] = INCBIN_U8("graphics-modern/trainer_card/trainer_card.4bpp");
+#else
 const u8 gMenuTrainerCard_Gfx[] = INCBIN_U8("graphics/trainer_card/trainer_card.4bpp");
+#endif
+
 const u16 gMenuTrainerCard0Star_Pal[] = INCBIN_U16("graphics/trainer_card/trainer_card_0star.gbapal");
 const u16 gMenuTrainerCard1Star_Pal[] = INCBIN_U16("graphics/trainer_card/trainer_card_1star.gbapal");
 const u16 gMenuTrainerCard2Star_Pal[] = INCBIN_U16("graphics/trainer_card/trainer_card_2star.gbapal");
@@ -1140,7 +1164,12 @@ const u16 gMenuWordGroupIndicator_Pal[] = INCBIN_U16("graphics/interface/wordgro
 const u16 gMenuWordGroupFrame1_Pal[] = INCBIN_U16("graphics/interface/wordgroup_pink.gbapal");
 const u16 gMenuWordGroupFrame2_Pal[] = INCBIN_U16("graphics/interface/wordgroup_blue.gbapal");
 
+#if MODERN
+const u8 gMiscClock_Gfx[] = INCBIN_U8("graphics-modern/misc/clock.4bpp.lz");
+#else
 const u8 gMiscClock_Gfx[] = INCBIN_U8("graphics/misc/clock.4bpp.lz");
+#endif
+
 const u16 gMiscClockMale_Pal[] = INCBIN_U16("graphics/misc/clock1.gbapal"); // boy
 const u16 gMiscClockFemale_Pal[] = INCBIN_U16("graphics/misc/clock2.gbapal"); // girl
 
