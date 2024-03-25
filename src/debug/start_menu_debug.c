@@ -527,14 +527,14 @@ void DebugMenu_8076D6C(u8 taskId)
     {
     case 0:
         Menu_DisplayDialogueFrame();
-        Menu_PrintText(Str_839BD2C, 2, 15);
+        Menu_PrintText(Str_839BD2C, 4, 15);
         data[0]++;
         break;
     case 1:
         if (gMain.newKeys & A_BUTTON)
         {
             Menu_DisplayDialogueFrame();
-            Menu_PrintText(Str_839BD4C, 2, 15);
+            Menu_PrintText(Str_839BD4C, 4, 15);
             PlaySE(0x49);
             RtcReset();
             data[0]++;
@@ -570,7 +570,7 @@ void DebugMenu_8076E30(u8 taskId)
     {
         case 0:
             Menu_DisplayDialogueFrame();
-            Menu_PrintText(Str_839BD5A, 2, 15);
+            Menu_PrintText(Str_839BD5A, 4, 15);
             data[0]++;
             break;
         case 1:
@@ -578,7 +578,7 @@ void DebugMenu_8076E30(u8 taskId)
             {
                 Menu_DisplayDialogueFrame();
                 sub_813B79C();
-                Menu_PrintText(Str_839BD7D, 2, 15);
+                Menu_PrintText(Str_839BD7D, 4, 15);
                 PlaySE(SE_DING_DONG);
                 data[0]++;
             }
@@ -1558,7 +1558,7 @@ void DebugMenu_8077F40(u8 taskId)
 {
     struct Task *task = gTasks + taskId;
     Menu_DisplayDialogueFrame();
-    Menu_PrintText(gDebug0x839C008, 2, 15);
+    Menu_PrintText(gDebug0x839C008, 4, 15);
     DebugMenu_8077EE0(task->data[1], task->data[2]);
     task->func = DebugMenu_8077F7C;
 }
@@ -1571,7 +1571,7 @@ void DebugMenu_8077F7C(u8 taskId)
     if (gMain.newKeys & A_BUTTON)
     {
         Menu_DisplayDialogueFrame();
-        Menu_PrintText(Str_839C014, 2, 15);
+        Menu_PrintText(Str_839C014, 4, 15);
         DebugMenu_8077EE0(task->data[1], task->data[2]);
         task->func = DebugMenu_8077FFC;
     }
@@ -1996,7 +1996,7 @@ void DebugMenu_8078550(u16 gameStat)
         ConvertIntToDecimalStringN(gStringVar3 + 7, value & 0xff, STR_CONV_MODE_LEADING_ZEROS, 2);
     }
     Menu_DisplayDialogueFrame();
-    Menu_PrintText(Str_839C07C, 2, 15);
+    Menu_PrintText(Str_839C07C, 4, 15);
 }
 
 bool32 DebugMenu_807860C(u8 taskId)
@@ -2145,7 +2145,7 @@ void DebugMenu_8078880(u8 taskId)
             gTasks[taskId].data[0]++;
             break;
         case 1:
-            Menu_PrintText(gStringVar4, 2, 15);
+            Menu_PrintText(gStringVar4, 4, 15);
             gTasks[taskId].data[0]++;
             break;
         case 2:
@@ -2386,7 +2386,7 @@ const u8 Str_839C5A4[] = _("Press A, begin to write\n"
 bool8 DebugMenu_8078C80(void)
 {
     Menu_DisplayDialogueFrame();
-    Menu_PrintText(Str_839C5A4, 2, 15);
+    Menu_PrintText(Str_839C5A4, 4, 15);
     gMenuCallback = DebugMenu_8078CA8;
     return FALSE;
 }
@@ -2439,7 +2439,7 @@ bool8 DebugMenu_8078D30(void)
 bool8 DebugMenu_8078D7C(void)
 {
     Menu_DisplayDialogueFrame();
-    Menu_PrintText(gStringVar4, 2, 15);
+    Menu_PrintText(gStringVar4, 4, 15);
     gMenuCallback = DebugMenu_8078DA4;
     return FALSE;
 }

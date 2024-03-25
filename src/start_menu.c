@@ -191,7 +191,7 @@ void debug_sub_8075C40(u8 taskId)
         ConvertIntToDecimalStringN(gStringVar1, _debugStartMenu_1, 1, 8);
         ConvertIntToDecimalStringN(gStringVar2, _debugStartMenu_0, 1, 8);
         Menu_DisplayDialogueFrame();
-        Menu_PrintText(gUnknown_Debug_839B6D8, 2, 15);
+        Menu_PrintText(gUnknown_Debug_839B6D8, 4, 15);
         data[0]++;
         break;
     case 3:
@@ -913,7 +913,7 @@ static void Task_8071B64(u8 taskId)
         {
         case 0:
             Menu_DisplayDialogueFrame();
-            Menu_PrintText(gSystemText_Saving, 2, 15);
+            Menu_PrintText(gSystemText_Saving, 4, 15);
             BeginNormalPaletteFade(0xFFFFFFFF, 0, 16, 0, RGB(0, 0, 0));
             (*step)++;
             break;

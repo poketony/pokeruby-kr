@@ -554,7 +554,7 @@ bool8 TayaDebugMenu_PokenavD(void)
     {
         StringCopy(gSharedMem, gUnknown_Debug_083C4F94);
         gSharedMem[i + 1] = EOS;
-        Menu_PrintText(gSharedMem, 2, 15);
+        Menu_PrintText(gSharedMem, 4, 15);
         for (j = 0; j < 30; j++)
         {
             struct BoxPokemon *boxPokemon;
