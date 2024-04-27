@@ -70,26 +70,18 @@ Route124_DivingTreasureHuntersHouse_Text_19F686:: @ 819F686
 
 Route124_DivingTreasureHuntersHouse_Text_19F6C5:: @ 819F6C5
 	.string "{CLEAR_TO 0x0e}원하는 것{CLEAR_TO 0x7d}교환할 것\n"
-	.string "{CLEAR_TO 0x0f}빨강조각{CLEAR_TO 0x51}{0x7B}{0x7C}\l"
-	.string "{CLEAR_TO 0x0e}불꽃의돌\p"
+	.string "{CLEAR_TO 0x0f}빨강조각{CLEAR_TO 0x51}{0x7B}{0x7C}{CLEAR_TO 0x7e}불꽃의돌\p"
 	.string "{CLEAR_TO 0x0e}원하는 것{CLEAR_TO 0x7d}교환할 것\n"
-	.string "{CLEAR_TO 0x0f}노랑조각{CLEAR_TO 0x51}{0x7B}{0x7C}\l"
-	.string "{CLEAR_TO 0x0e}천둥의돌\p"
+	.string "{CLEAR_TO 0x0f}노랑조각{CLEAR_TO 0x51}{0x7B}{0x7C}{CLEAR_TO 0x7e}천둥의돌\p"
 	.string "{CLEAR_TO 0x0e}원하는 것{CLEAR_TO 0x7d}교환할 것\n"
-	.string "{CLEAR_TO 0x0f}파랑조각{CLEAR_TO 0x51}{0x7B}{0x7C}\l"
-	.string "{CLEAR_TO 0x0e}물의돌\p"
+	.string "{CLEAR_TO 0x0f}파랑조각{CLEAR_TO 0x51}{0x7B}{0x7C}{CLEAR_TO 0x82}물의돌\p"
 	.string "{CLEAR_TO 0x0e}원하는 것{CLEAR_TO 0x7d}교환할 것\n"
-	.string "{CLEAR_TO 0x0f}초록조각{CLEAR_TO 0x51}{0x7B}{0x7C}\l"
-	.string "{CLEAR_TO 0x0e}리프의돌$"
+	.string "{CLEAR_TO 0x0f}초록조각{CLEAR_TO 0x51}{0x7B}{0x7C}{CLEAR_TO 0x7e}리프의돌$"
 	@ ほしいモノ       あげるモノｎ
-	@  あかいかけら   ©し©©しｌ
-	@  ほのおのいしｐ
+	@  あかいかけら   ©し©©し ほのおのいしｐ
 	@ ほしいモノ       あげるモノｎ
-	@  きいろいかけら  ©し©©しｌ
-	@  かみなりのいしｐ
+	@  きいろいかけら  ©し©©し かみなりのいしｐ
 	@ ほしいモノ       あげるモノｎ
-	@  あおいかけら   ©し©©しｌ
-	@  みずのいしｐ
+	@  あおいかけら   ©し©©し みずのいしｐ
 	@ ほしいモノ       あげるモノｎ
-	@  みどりのかけら  ©し©©しｌ
-	@  リ-フのいし
+	@  みどりのかけら  ©し©©し リ-フのいし
