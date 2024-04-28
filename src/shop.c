@@ -548,18 +548,13 @@ static void Shop_DisplayDecorationPriceInList(u16 itemId, u8 var2, bool32 hasCon
 
     if (hasControlCode)
     {
-        stringPtr[0] = EXT_CTRL_CODE_BEGIN;
-        stringPtr[1] = EXT_CTRL_CODE_COLOR;
-        stringPtr[2] = TEXT_COLOR_RED;
-        stringPtr += 3;
+        Menu_BlankWindowRect(14, 2, 14, 17);
+        Menu_PrintText(gMenuCursorText_SelectedCursor, 14, var2);
     }
 
     StringCopy(stringPtr, gDecorations[itemId].name);
     Menu_PrintTextPixelCoordsAndGetLines(&gStringVar1[0], 120, var2 * 8, 88, 1);
     stringPtr = gStringVar1;
-
-    if (hasControlCode)
-        stringPtr = &gStringVar1[3];
 
     GetMoneyAmountText(stringPtr, gDecorations[itemId].price, 5);
     Menu_PrintTextPixelCoords(&gStringVar1[0], 192, var2 * 8, 1);
