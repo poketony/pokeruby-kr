@@ -264,7 +264,7 @@ OtherText_PokeName::
 	.string "{STR_VAR_1}의 이름은?$"
 
 gOtherText_Marco:: @ 842C9E1
-	.string "까꿍$" @ polo
+	.string "준현$" @ polo
 
 gOtherText_Coins:: @ 842C9E7
 	.string "{STR_VAR_1}개$"

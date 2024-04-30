@@ -195,7 +195,7 @@ SootopolisCity_Gym_1F_Text_18F0CA:: @ 818F0CA
 	.string "나는 윤진\n"
 	.string "이 루네시티의 체육관 관장\p"
 	.string "뭐지?\n"
-	.string "너 분위기가 조금\p"
+	.string "너 분위기가 조금\l"
 	.string "변한 듯한 느낌이 드는걸\p"
 	.string "각성의 사당에서 무슨 일이 있었는지\n"
 	.string "네가 무엇을 해왔는지\l"

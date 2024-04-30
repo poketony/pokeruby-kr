@@ -553,7 +553,7 @@ static void Task_Hof_InitTeamSaveData(u8 taskID)
     }
     *lastSavedTeam = *fameMons;
     Menu_DrawStdWindowFrame(2, 14, 27, 19);
-    Menu_PrintText(gMenuText_HOFSaving, 3, 15);
+    Menu_PrintText(gMenuText_HOFSaving, 4, 15);
     gTasks[taskID].func = sub_8142274;
 }
 
