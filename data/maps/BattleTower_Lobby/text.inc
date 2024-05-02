@@ -74,12 +74,13 @@ BattleTower_Lobby_Text_19A0D1:: @ 819A0D1
 
 BattleTower_Lobby_Text_19A249:: @ 819A249
 	.string "손님!\p"
-	.string "참가 가능한 포켓몬이 3마리는 필요합니다!\p"
-	.string "참가하려면 레벨50 이하의\n"
-	.string "모두 종류가 다른 포켓몬을\l"
+	.string "참가할 수 있는 포켓몬이\n"
+	.string "3마리는 필요합니다!\p"
+	.string "참가하려면 레벨 50 이하의\n"
+	.string "종류가 다른 포켓몬을\l"
 	.string "3마리 준비해 주십시오\p"
 	.string "또한 지니게 할 도구도\n"
-	.string "모두 다른 도구로 해주세요!\p"
+	.string "모두 다른 도구로 해주십시오!\p"
 	.string "그리고 알{STR_VAR_1}"
 	.string "참가시킬 수 없습니다!\p"
 	.string "준비되면\n"
