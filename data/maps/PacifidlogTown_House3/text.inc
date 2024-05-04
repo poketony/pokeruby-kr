@@ -33,10 +33,10 @@ PacifidlogTown_House3_Text_17950A:: @ 817950A
 	@ あなたと あたし もう ともだち よね!
 
 PacifidlogTown_House3_Text_179541:: @ 8179541
-	.string "그거 포켓몬 도감이야?\p"
-	.string "그 말은 너 많은 포켓몬이랑\n"
+	.string "그거 포켓몬 도감이지?\p"
+	.string "그럼 너 많은 포켓몬이랑\n"
 	.string "만났다는 소리 아니야?\p"
-	.string "그거 정말 부러워!$"
+	.string "그거 정말 부러운걸!$"
 	@ それって ポケモンずかん?ｐ
 	@ それって あなた たくさんのｎ
 	@ ポケモンと であった ってこと?ｐ
