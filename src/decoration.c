@@ -1521,23 +1521,20 @@ void sub_80FE428(u8 taskId)
 
 void sub_80FE470(u8 decoCat, u8 left, u8 top, u8 palIdx) // PrintDecorationCategorySelectionMenuString
 {
-    u8 *strptr;
-    u8 v0;
-    v0 = Menu_GetTextWindowPaletteNum();
-    // PALETTE {palIdx}
-    strptr = gStringVar4;
-    strptr[0] = EXT_CTRL_CODE_BEGIN;
-    strptr[1] = 5;
-    strptr[2] = palIdx;
-    strptr += 3;
+    u8 *strptr = gStringVar4;
+    *(strptr++) = EXT_CTRL_CODE_BEGIN;
+    *(strptr++) = EXT_CTRL_CODE_PALETTE;
+    *(strptr++) = palIdx;
+
     strptr = StringCopy(strptr, gUnknown_083EC5E4[decoCat]);
-    strptr = AlignInt1InMenuWindow(strptr, GetNumDecorationsInInventoryCategory(decoCat), 0x56, 1);
-    *strptr++ = 0xba;
-    strptr = AlignInt1InMenuWindow(strptr, gDecorationInventories[decoCat].size, 0x68, 1);
-    strptr[0] = EXT_CTRL_CODE_BEGIN;
-    strptr[1] = 5;
-    strptr[2] = v0;
-    strptr[3] = EOS;
+    strptr = AlignInt1InMenuWindow(strptr, GetNumDecorationsInInventoryCategory(decoCat), 70, 1);
+    *(strptr++) = CHAR_SLASH;
+    strptr = AlignInt1InMenuWindow(strptr, gDecorationInventories[decoCat].size, 88, 1);
+    *(strptr++) = EXT_CTRL_CODE_BEGIN;
+    *(strptr++) = EXT_CTRL_CODE_PALETTE;
+    *(strptr++) = Menu_GetTextWindowPaletteNum();
+    *(strptr++) = EOS;
+
     Menu_PrintText(gStringVar4, left, top);
 }
 
@@ -1660,7 +1657,7 @@ void sub_80FE7EC(u8 taskId)
     sub_80FEC94(taskId);
     sub_80FECB8(gUnknown_020388F6);
 
-    Menu_DrawStdWindowFrame(15, 12, 29, 19);
+    Menu_DrawStdWindowFrame(16, 12, 29, 19);
 
     sub_80FECE0(gUnknown_020388F2 + gUnknown_020388F4);
     InitMenu(0, 1, 2, gUnknown_020388F3 + 1, gUnknown_020388F2);
@@ -1692,12 +1689,12 @@ void sub_80FE894(u8 taskId /*r8*/, s8 cursorVector /*r5*/, s8 bgVector /*r7*/)
     {
         if (v0)
         {
-            Menu_DrawStdWindowFrame(15, 12, 29, 19);
+            Menu_DrawStdWindowFrame(16, 12, 29, 19);
         }
         sub_80FECE0(gUnknown_020388F2 + gUnknown_020388F4);
     } else
     {
-        Menu_EraseWindowRect(15, 12, 29, 19);
+        Menu_EraseWindowRect(16, 12, 29, 19);
     }
 }
 
@@ -1774,7 +1771,7 @@ void sub_80FEABC(u8 taskId, u8 dummy1)
         }
         if (i == gUnknown_020388D5)
         {
-            Menu_PrintTextPixelCoordsAndGetLines(gOtherText_Exit, 16, 8 * ni, 0x68, 1);
+            Menu_PrintTextPixelCoordsAndGetLines(gOtherText_Exit, 16, 8 * ni, 96, 1);
             break;
         }
         if (gUnknown_020388D0[i])
@@ -1782,16 +1779,16 @@ void sub_80FEABC(u8 taskId, u8 dummy1)
             if (sDecorationContext.isPlayerRoom == 1 && gUnknown_020388F6 != DECORCAT_DOLL && gUnknown_020388F6 != DECORCAT_CUSHION && gTasks[taskId].data[11] == 0)
             {
                 StringCopy(gStringVar1, gDecorations[gUnknown_020388D0[i]].name);
-                Menu_PrintTextPixelCoordsAndGetLines(gUnknown_083EC65A, 16, 8 * ni, 0x68, 1);
+                Menu_PrintTextPixelCoordsAndGetLines(gUnknown_083EC65A, 16, 8 * ni, 96, 1);
             } else
             {
-                Menu_PrintTextPixelCoordsAndGetLines(gDecorations[gUnknown_020388D0[i]].name, 16, 8 * ni, 0x68, 1);
+                Menu_PrintTextPixelCoordsAndGetLines(gDecorations[gUnknown_020388D0[i]].name, 16, 8 * ni, 96, 1);
             }
             for (j=0; j<16; j++)
             {
                 if (gUnknown_020388D6[j] - 1 == i)
                 {
-                    sub_80F94A4(4, &gUnknown_020388F7[i - gUnknown_020388F4], 0x6c, (i - gUnknown_020388F4) * 16 + 24);
+                    sub_80F94A4(4, &gUnknown_020388F7[i - gUnknown_020388F4], 108, (i - gUnknown_020388F4) * 16 + 24);
                     break;
                 }
             }
@@ -1799,7 +1796,7 @@ void sub_80FEABC(u8 taskId, u8 dummy1)
             {
                 if (gUnknown_020388E6[j] - 1 == i)
                 {
-                    sub_80F94A4(5, &gUnknown_020388F7[i - gUnknown_020388F4], 0x6c, (i - gUnknown_020388F4) * 16 + 24);
+                    sub_80F94A4(5, &gUnknown_020388F7[i - gUnknown_020388F4], 108, (i - gUnknown_020388F4) * 16 + 24);
                     break;
                 }
             }
@@ -1815,19 +1812,19 @@ void sub_80FEC94(u8 taskId)
 
 void sub_80FECB8(u8 decoCat)
 {
-    Menu_DrawStdWindowFrame(15, 0, 29, 3);
-    sub_80FE470(decoCat, 16, 1, 0xff);
+    Menu_DrawStdWindowFrame(17, 0, 29, 3);
+    sub_80FE470(decoCat, 18, 1, 0xff);
 }
 
 void sub_80FECE0(u8 decoCat)
 {
-    sub_8072AB0(gDecorations[gUnknown_020388D0[decoCat]].description, 128, 104, 104, 48, 1);
+    sub_8072AB0(gDecorations[gUnknown_020388D0[decoCat]].description, 136, 104, 96, 48, 1);
 }
 
 void sub_80FED1C(void)
 {
-    Menu_EraseWindowRect(15, 0, 29, 3);
-    Menu_EraseWindowRect(15, 12, 29, 19);
+    Menu_EraseWindowRect(17, 0, 29, 3);
+    Menu_EraseWindowRect(16, 12, 29, 19);
 }
 
 void sub_80FED3C(u8 taskId)
