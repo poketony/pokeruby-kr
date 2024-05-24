@@ -204,7 +204,7 @@ gOtherText_ThreeQuestions:: @ 842C890
 	.string "???$"
 
 gOtherText_From:: @ 842C894
-	.string "{K_EU}로부터$"
+	.string "$" @ NOTE: 필요 시 "발신인: $" 또는 "글쓴이: $"로 대치
 
 gOtherText_MixingRecordsWithFriend:: @ 842C89A
 	.string "레코드를 섞고 있습니다$"
