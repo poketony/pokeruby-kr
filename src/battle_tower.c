@@ -881,26 +881,15 @@ u8 AppendBattleTowerBannedSpeciesName(u16 species, u8 curIndexToAppend, s32 numT
 {
     if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
     {
+        StringAppend(gStringVar1, BattleText_CommaSpace);
+
         curIndexToAppend++;
-        switch (curIndexToAppend - 1)
+        if (curIndexToAppend % 2 == 1)
         {
-        case 0:
-        case 2:
-        case 4:
-        case 6:
-        case 8:
-        case 10:
-            if (numToAppend > curIndexToAppend)
-                StringAppend(gStringVar1, BattleText_CommaSpace);
-            break;
-        case 1:
-            StringAppend(gStringVar1, BattleText_CommaSpace);
-            StringAppend(gStringVar1, BattleText_NewLine);
-            break;
-        default:
-            StringAppend(gStringVar1, BattleText_CommaSpace);
-            StringAppend(gStringVar1, BattleText_LineBreak);
-            break;
+            if (curIndexToAppend >= 4)
+                StringAppend(gStringVar1, BattleText_LineBreak);
+            else
+                StringAppend(gStringVar1, BattleText_NewLine);
         }
         StringAppend(gStringVar1, gSpeciesNames[species]);
     }
@@ -977,23 +966,17 @@ void CheckPartyBattleTowerBanlist(void)
     {
         gStringVar1[0] = 0xFF;
         gSpecialVar_0x8004 = 1;
-        counter = 0;
+        counter = 1;
 
         numBanlistCaught = CountBattleTowerBanlistCaught();
 
         for (i = 0; gBattleTowerBannedSpecies[i] != 0xFFFF; i++)
             counter = AppendBattleTowerBannedSpeciesName(gBattleTowerBannedSpecies[i], counter, numBanlistCaught);
 
-        if (counter == 0)
-        {
+        if (counter & 1)
             StringAppend(gStringVar1, BattleText_Are);
-        }
         else
-        {
-            if (1 & counter)
-                StringAppend(gStringVar1, BattleText_LineBreak);
-            StringAppend(gStringVar1, BattleText_Are);
-        }
+            StringAppend(gStringVar1, BattleText_Are2);
     }
     else
     {
