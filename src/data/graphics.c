@@ -510,6 +510,7 @@ const u8 gBattleWindowSmallGfx[] = INCBIN_U8("graphics/battle_interface/window2.
 const u8 gBattleWindowSmall2Gfx[] = INCBIN_U8("graphics/battle_interface/window3.4bpp.lz");
 const u8 gBattleWindowSmall3Gfx[] = INCBIN_U8("graphics/battle_interface/window4.4bpp.lz");
 const u8 gBattleWindowLarge2Gfx[] = INCBIN_U8("graphics/battle_interface/window5.4bpp.lz");
+const u8 gBattleWindowColonGfx[] = INCBIN_U8("graphics/battle_interface/window_colon.4bpp");
 
 const u8 unused_gfx_shadow_4bpp[] = INCBIN_U8("graphics/unused/shadow.4bpp.lz");
 const u8 unused_gfx_shadow_pal[] = INCBIN_U8("graphics/unused/shadow.gbapal.lz");

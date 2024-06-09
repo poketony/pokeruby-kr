@@ -821,6 +821,13 @@ void DrawLevelText(u8 spriteId, u8 value)
     *(ptr++) = EOS;
     sub_80034D4(eBattleInterfaceGfxBuffer, str);
 
+    // NOTE(44): 콜론이 지워지는 부분을 다시 채웁니다.
+    CpuCopy32(
+        gBattleWindowColonGfx,
+        r7[0] - TILE_SIZE_4BPP + gSprites[spriteId].oam.tileNum * TILE_SIZE_4BPP,
+        TILE_SIZE_4BPP
+    );
+
     j = (value == 100) ? 3 : 2;
     for (i = 0; i < j; i++)
     {

@@ -563,20 +563,11 @@ static void sub_80F8DA0(void)
         ConvertEasyChatWordsToString(sSharedMemPtr->words[i], &sSharedMemPtr->varF4->words[r6], sSharedMemPtr->var10C->var4[i].unk_0_2, 1);
         r6 += sSharedMemPtr->var10C->var4[i].unk_0_2;
     }
-    ptr = sSharedMemPtr->varD8;
-    if (sSharedMemPtr->var100 == 0)
-    {
-        ptr = sub_80F8D7C(ptr, sSharedMemPtr->varF4->playerName);
-        StringCopy(ptr, gOtherText_From);
-        sSharedMemPtr->varF9 = sSharedMemPtr->var10C->var2 - StringLength(sSharedMemPtr->varD8);
 
-    }
-    else
-    {
-        ptr = StringCopy(ptr, gOtherText_From);
-        sub_80F8D7C(ptr, sSharedMemPtr->varF4->playerName);
-        sSharedMemPtr->varF9 = sSharedMemPtr->var10C->var2;
-    }
+    ptr = sSharedMemPtr->varD8;
+    ptr = StringCopy(ptr, gOtherText_From);
+    ptr = sub_80F8D7C(ptr, sSharedMemPtr->varF4->playerName);
+    sSharedMemPtr->varF9 = sSharedMemPtr->var10C->var2;
 }
 
 static void sub_80F8E80(void)
