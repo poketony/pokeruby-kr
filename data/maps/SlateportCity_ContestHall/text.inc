@@ -73,12 +73,12 @@ SlateportCity_ContestHall_Text_17CEF3:: @ 817CEF3
 	@ わたしの みる めは たしかですよ!
 
 SlateportCity_ContestHall_Text_17CFA7:: @ 817CFA7
-	.string "심사위원: 여어, 안녕하신가!\n"
+	.string "심사위원: 여어 안녕하신가!\n"
 	.string "너도 트레이너인가 보구나!\p"
 	.string "그럼 포켓몬 콘테스트에\n"
 	.string "나올 수 있겠군!\p"
 	.string "콘테스트패스를 잔디마을에서 받고\n"
-	.string "지금 바로 참가하도록!$"
+	.string "지금 바로 엔트리하도록!$"
 	@ しんさいん『やあ こんにちは!ｎ
 	@ きみも トレ-ナ-の ようだね!ｐ
 	@ だったら ポケモンコンテストにｎ
@@ -105,7 +105,7 @@ SlateportCity_ContestHall_Text_17D07F:: @ 817D07F
 SlateportCity_ContestHall_Text_17D0F9:: @ 817D0F9
 	.string "앗! 이런 곳까지 오다니\n"
 	.string "너 콘테스트에 진심이구나!\l"
-	.string "그러면 좋은 걸 알려줄게\p"
+	.string "그럼 좋은 걸 알려줄게\p"
 	.string "보여준 기술의 반응이 좋으면\n"
 	.string "회장이 익사이트해져!\p"
 	.string "가장 익사이트해졌을 때\n"

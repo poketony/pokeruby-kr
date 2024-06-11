@@ -144,7 +144,7 @@ gTradeText_WillBeSent:: @ 842C60B
 	.string "{STR_VAR_2}{K_EULREUL} {STR_VAR_1}에게 보냅니다!$"
 
 gTradeText_ByeBye:: @ 842C622
-	.string "바이바이! {STR_VAR_2}!$"
+	.string "바이바이 {STR_VAR_2}!$"
 
 gTradeText_SentOverPoke:: @ 842C62F
 	.string "{STR_VAR_1}{K_EU}로부터 {STR_VAR_3}{K_IGA} 전송됐다!$"
@@ -264,7 +264,7 @@ OtherText_PokeName::
 	.string "{STR_VAR_1}의 이름은?$"
 
 gOtherText_Marco:: @ 842C9E1
-	.string "까꿍$" @ polo
+	.string "준현$" @ polo
 
 gOtherText_Coins:: @ 842C9E7
 	.string "{STR_VAR_1}개$"

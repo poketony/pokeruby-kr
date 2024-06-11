@@ -8,7 +8,7 @@ SootopolisCity_House2_Text_18FA66:: @ 818FA66
 
 SootopolisCity_House2_Text_18FAAE:: @ 818FAAE
 	.string "그래요... 두 개의 구슬이\n"
-	.string "이웃한 모습은\l"
+	.string "이웃한 모습을 보면\l"
 	.string "왠지 마음이 편해지지요...$"
 	@ そう…… ふたつのたまがｎ
 	@ となりあわせに おかれている ようすはｌ

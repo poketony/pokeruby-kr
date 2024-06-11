@@ -22,7 +22,7 @@ FallarborTown_ContestLobby_Text_1771F2:: @ 81771F2
 
 FallarborTown_ContestLobby_Text_177246:: @ 8177246
 	.string "여기에 우승한 포켓몬의\n"
-	.string "미소가 장식되어있지?\p"
+	.string "미소가 장식되어 있지?\p"
 	.string "이거 내가 그린 거야!\p"
 	.string "너의 포켓몬이 우승하면\n"
 	.string "열심히 그려줄게!$"
