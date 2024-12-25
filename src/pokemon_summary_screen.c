@@ -2006,7 +2006,7 @@ static void sub_809FAC8(struct Pokemon *mon)
         Menu_EraseWindowRect(3, 16, 9, 17);
         Menu_EraseWindowRect(0, 12, 11, 15);
         GetMonNickname(mon, gStringVar1);
-        SummaryScreen_PrintColoredText(gStringVar1, 13, 3, 16);
+        SummaryScreen_PrintColoredText(gStringVar1, 13, 1, 12);
         LoadPalette(sUnknown_083C157C, 4, 2);
     }
     else
@@ -2077,8 +2077,8 @@ static void SummaryScreen_PrintPokemonInfo(struct Pokemon *mon)
         buffer[3] = EOS;
         Menu_PrintText(gStringVar1, 11, 4);
 
-        SummaryScreen_PrintColoredTextPixelCoords(gOtherText_FiveQuestions, 13, 193, 32, 1);
-        SummaryScreen_DrawTypeIcon(TYPE_MYSTERY, 120, 48, 0);
+        SummaryScreen_PrintColoredTextPixelCoords(gOtherText_FiveQuestions, 13, 201, 32, 1);
+        SummaryScreen_DrawTypeIcon(TYPE_MYSTERY, 112, 48, 0);
 
         friendship = GetMonData(mon, MON_DATA_FRIENDSHIP);
         if (friendship <= 5)
