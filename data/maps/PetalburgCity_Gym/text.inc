@@ -589,7 +589,7 @@ PetalburgCity_Gym_Text_17B749:: @ 817B749
 	@ あなたの おとうさんが まっているわ!
 
 PetalburgCity_Gym_Text_17B7C0:: @ 817B7C0
-	.string "포켓몬을 강하게 키우는 것도 좋지만\n"
+	.string "포켓몬을 강하게 키우는 것도 좋지만\p"
 	.string "승부의 승패를 정하는 건\n"
 	.string "그 사람의 포켓몬을 생각하는\l"
 	.string "마음이야...!$"
