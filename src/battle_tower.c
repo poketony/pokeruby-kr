@@ -28,6 +28,7 @@
 #include "tv.h"
 
 #include "data/battle_tower/trainers.h"
+#include "data/battle_tower/trainer_greetings.h"
 
 static const u16 sBattleTowerHeldItems[] =
 {
@@ -995,7 +996,7 @@ void PrintBattleTowerTrainerGreeting(void)
     if (gSaveBlock2.battleTower.battleTowerTrainerId == BATTLE_TOWER_EREADER_TRAINER_ID)
         PrintBattleTowerTrainerMessage(gSaveBlock2.battleTower.ereaderTrainer.greeting);
     else if (gSaveBlock2.battleTower.battleTowerTrainerId < BATTLE_TOWER_RECORD_MIXING_TRAINER_BASE_ID)
-        PrintBattleTowerTrainerMessage((u16 *)gBattleTowerTrainers[gSaveBlock2.battleTower.battleTowerTrainerId].greeting);
+        StringCopy(gStringVar4, sBattleTowerTrainerGreetingTexts[gSaveBlock2.battleTower.battleTowerTrainerId]);
     else
         PrintBattleTowerTrainerMessage(gSaveBlock2.battleTower.records[gSaveBlock2.battleTower.battleTowerTrainerId - BATTLE_TOWER_RECORD_MIXING_TRAINER_BASE_ID].greeting);
 }

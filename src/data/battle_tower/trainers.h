@@ -2,7 +2,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
 {
     {
         .trainerClass = FACILITY_CLASS_YOUNGSTER,
-        .name = _("ALVIN"),
+        .name = _("민재"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_ARE,
@@ -15,7 +15,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BIRD_KEEPER,
-        .name = _("DIRK"),
+        .name = _("더크"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_OKAY,
@@ -28,7 +28,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_LADY,
-        .name = _("CYBIL"),
+        .name = _("승희"),
         .teamFlags = 0x02,
         .greeting = {
             EC_WORD_YOU_RE,
@@ -41,7 +41,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BLACK_BELT,
-        .name = _("CHEN"),
+        .name = _("첸"),
         .teamFlags = 0x05,
         .greeting = {
             EC_WORD_MY,
@@ -54,7 +54,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_NINJA_BOY,
-        .name = _("YOSHI"),
+        .name = _("요시"),
         .teamFlags = 0x05,
         .greeting = {
             EC_WORD_GO,
@@ -67,7 +67,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .name = _("TINA"),
+        .name = _("티나"),
         .teamFlags = 0x0A,
         .greeting = {
             EC_WORD_STUDY,
@@ -80,7 +80,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BUG_MANIAC,
-        .name = _("COREY"),
+        .name = _("코리"),
         .teamFlags = 0x41,
         .greeting = {
             EC_WORD_HEY,
@@ -93,7 +93,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_FISHERMAN,
-        .name = _("GORDON"),
+        .name = _("고든"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_I,
@@ -106,7 +106,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_TUBER_F,
-        .name = _("ANN"),
+        .name = _("앤"),
         .teamFlags = 0x02,
         .greeting = {
             EC_WORD_WE,
@@ -119,7 +119,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEFAN_F,
-        .name = _("JULIA"),
+        .name = _("줄리아"),
         .teamFlags = 0x42,
         .greeting = {
             EC_WORD_I_AM,
@@ -132,7 +132,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_GENTLEMAN,
-        .name = _("GREGORY"),
+        .name = _("그레고"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_I,
@@ -145,7 +145,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_CAMPER,
-        .name = _("KEITH"),
+        .name = _("키스"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_YOU_RE,
@@ -158,7 +158,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
-        .name = _("KENDRA"),
+        .name = _("켄드라"),
         .teamFlags = 0x0A,
         .greeting = {
             EC_WORD_I_AM,
@@ -171,7 +171,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_HIKER,
-        .name = _("DEV"),
+        .name = _("익진"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_WAHAHAHA,
@@ -184,7 +184,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BATTLE_GIRL,
-        .name = _("CASSIE"),
+        .name = _("다희"),
         .teamFlags = 0x0A,
         .greeting = {
             EC_WORD_YOU_RE,
@@ -197,7 +197,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_PSYCHIC_M,
-        .name = _("JULIAN"),
+        .name = _("줄리안"),
         .teamFlags = 0x05,
         .greeting = {
             EC_WORD_FUFUFU,
@@ -210,7 +210,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_LASS,
-        .name = _("JOYCE"),
+        .name = _("예희"),
         .teamFlags = 0x02,
         .greeting = {
             EC_WORD_BE,
@@ -223,7 +223,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_GUITARIST,
-        .name = _("LES"),
+        .name = _("도현"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_I_AM,
@@ -236,7 +236,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_RICH_BOY,
-        .name = _("CLINTON"),
+        .name = _("클린턴"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_I,
@@ -249,7 +249,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BUG_CATCHER,
-        .name = _("LEWIS"),
+        .name = _("루이스"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_THIS,
@@ -262,7 +262,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_PICNICKER,
-        .name = _("RACHAEL"),
+        .name = _("하율"),
         .teamFlags = 0x02,
         .greeting = {
             EC_WORD_I,
@@ -275,7 +275,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_COLLECTOR,
-        .name = _("HAROLD"),
+        .name = _("해럴드"),
         .teamFlags = 0x09,
         .greeting = {
             EC_WORD_HERE,
@@ -288,7 +288,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_TUBER_M,
-        .name = _("KIPP"),
+        .name = _("훈현"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_I_AM,
@@ -301,7 +301,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_KINDLER,
-        .name = _("IRWIN"),
+        .name = _("시우"),
         .teamFlags = 0x05,
         .greeting = {
             EC_WORD_YOU,
@@ -314,7 +314,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_PSYCHIC_F,
-        .name = _("EILEEN"),
+        .name = _("아일린"),
         .teamFlags = 0x0A,
         .greeting = {
             EC_WORD_I,
@@ -327,7 +327,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SWIMMER_F,
-        .name = _("ANNE"),
+        .name = _("주련"),
         .teamFlags = 0x02,
         .greeting = {
             EC_WORD_SORRY,
@@ -340,7 +340,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
-        .name = _("RUTH"),
+        .name = _("루스"),
         .teamFlags = 0x06,
         .greeting = {
             EC_WORD_A,
@@ -353,7 +353,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEMANIAC,
-        .name = _("JEREMY"),
+        .name = _("제러미"),
         .teamFlags = 0x40,
         .greeting = {
             EC_WORD_MY,
@@ -366,7 +366,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SAILOR,
-        .name = _("TREVOR"),
+        .name = _("해준"),
         .teamFlags = 0x09,
         .greeting = {
             EC_WORD_MY,
@@ -379,7 +379,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEMON_BREEDER_F,
-        .name = _("COLETTE"),
+        .name = _("채린"),
         .teamFlags = 0x06,
         .greeting = {
             EC_WORD_I,
@@ -392,7 +392,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_HEX_MANIAC,
-        .name = _("PAULA"),
+        .name = _("은서"),
         .teamFlags = 0x42,
         .greeting = {
             EC_WORD_IT_S,
@@ -405,7 +405,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_RUIN_MANIAC,
-        .name = _("STANLY"),
+        .name = _("스탠리"),
         .teamFlags = 0x41,
         .greeting = {
             EC_WORD_ADVENTURE,
@@ -418,7 +418,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
-        .name = _("TROY"),
+        .name = _("승우"),
         .teamFlags = 0x09,
         .greeting = {
             EC_WORD_YOU,
@@ -431,7 +431,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SCHOOL_KID_M,
-        .name = _("ED"),
+        .name = _("은찬"),
         .teamFlags = 0x08,
         .greeting = {
             EC_WORD_POKEMON,
@@ -444,7 +444,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEMON_RANGER_F,
-        .name = _("ELLEN"),
+        .name = _("엘렌"),
         .teamFlags = 0x04,
         .greeting = {
             EC_WORD_ARE,
@@ -457,7 +457,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SWIMMER_M,
-        .name = _("ARNIE"),
+        .name = _("아니"),
         .teamFlags = 0x09,
         .greeting = {
             EC_WORD_I,
@@ -470,7 +470,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
-        .name = _("HAL"),
+        .name = _("시인"),
         .teamFlags = 0x09,
         .greeting = {
             EC_WORD_BOY,
@@ -483,7 +483,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BEAUTY,
-        .name = _("LAUREN"),
+        .name = _("로런"),
         .teamFlags = 0x06,
         .greeting = {
             EC_WORD_A,
@@ -496,7 +496,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_AROMA_LADY,
-        .name = _("STACY"),
+        .name = _("스테시"),
         .teamFlags = 0x06,
         .greeting = {
             EC_WORD_HAVE,
@@ -509,7 +509,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_COLLECTOR,
-        .name = _("DARYL"),
+        .name = _("대릴"),
         .teamFlags = 0x81,
         .greeting = {
             EC_WORD_YOUR,
@@ -522,7 +522,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
-        .name = _("KATHY"),
+        .name = _("캐시"),
         .teamFlags = 0x04,
         .greeting = {
             EC_WORD_I,
@@ -535,7 +535,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEMON_RANGER_M,
-        .name = _("HARRIS"),
+        .name = _("지호"),
         .teamFlags = 0x0C,
         .greeting = {
             EC_WORD_WAAAH,
@@ -548,7 +548,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEFAN_M,
-        .name = _("GLENN"),
+        .name = _("글렌"),
         .teamFlags = 0x80,
         .greeting = {
             EC_WORD_LISTEN,
@@ -561,7 +561,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
-        .name = _("NICO"),
+        .name = _("니코"),
         .teamFlags = 0x04,
         .greeting = {
             EC_WORD_DON_T,
@@ -574,7 +574,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEMON_BREEDER_M,
-        .name = _("BAILEY"),
+        .name = _("베일리"),
         .teamFlags = 0x41,
         .greeting = {
             EC_WORD_ARE,
@@ -587,7 +587,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_PARASOL_LADY,
-        .name = _("ABBIE"),
+        .name = _("향연"),
         .teamFlags = 0x08,
         .greeting = {
             EC_WORD_THE,
@@ -600,7 +600,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_CAMPER,
-        .name = _("AL"),
+        .name = _("알"),
         .teamFlags = 0x0C,
         .greeting = {
             EC_WORD_LET_S,
@@ -613,7 +613,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .name = _("PEGGY"),
+        .name = _("페기"),
         .teamFlags = 0x42,
         .greeting = {
             EC_WORD_I,
@@ -626,7 +626,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BEAUTY,
-        .name = _("NAOMI"),
+        .name = _("주아"),
         .teamFlags = 0x04,
         .greeting = {
             EC_WORD_IT,
@@ -639,7 +639,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_NINJA_BOY,
-        .name = _("KENJI"),
+        .name = _("건희"),
         .teamFlags = 0x0C,
         .greeting = {
             EC_WORD_PLEASE,
@@ -652,7 +652,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
-        .name = _("ROSS"),
+        .name = _("태민"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_WAKE_UP,
@@ -665,7 +665,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEMON_RANGER_F,
-        .name = _("EDNA"),
+        .name = _("유정"),
         .teamFlags = 0x02,
         .greeting = {
             EC_WORD_BATTLE_TOWER,
@@ -678,7 +678,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_RUIN_MANIAC,
-        .name = _("ANTON"),
+        .name = _("안톤"),
         .teamFlags = 0x41,
         .greeting = {
             EC_WORD_BLEND,
@@ -691,7 +691,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SWIMMER_M,
-        .name = _("MITCH"),
+        .name = _("미치"),
         .teamFlags = 0x81,
         .greeting = {
             EC_WORD_NEXT,
@@ -704,7 +704,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_HEX_MANIAC,
-        .name = _("ROD"),
+        .name = _("보라"),
         .teamFlags = 0x42,
         .greeting = {
             EC_WORD_GIMME,
@@ -717,7 +717,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
-        .name = _("RICH"),
+        .name = _("리치"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_TASTY,
@@ -730,7 +730,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEFAN_M,
-        .name = _("DANIEL"),
+        .name = _("성현"),
         .teamFlags = 0x80,
         .greeting = {
             EC_WORD_GO,
@@ -743,7 +743,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_PSYCHIC_F,
-        .name = _("GLORIA"),
+        .name = _("글로아"),
         .teamFlags = 0x82,
         .greeting = {
             EC_WORD_LET_S,
@@ -756,7 +756,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_GUITARIST,
-        .name = _("NELSON"),
+        .name = _("넬슨"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_MUSIC,
@@ -769,7 +769,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_KINDLER,
-        .name = _("FERRIS"),
+        .name = _("페리스"),
         .teamFlags = 0x41,
         .greeting = {
             EC_WORD_GOOD,
@@ -782,7 +782,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_AROMA_LADY,
-        .name = _("AMANDA"),
+        .name = _("아만다"),
         .teamFlags = 0x82,
         .greeting = {
             EC_WORD_WHAT,
@@ -795,7 +795,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
-        .name = _("MASON"),
+        .name = _("메이슨"),
         .teamFlags = 0x10,
         .greeting = {
             EC_WORD_I,
@@ -808,7 +808,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_DRAGON_TAMER,
-        .name = _("NATE"),
+        .name = _("용준"),
         .teamFlags = 0x10,
         .greeting = {
             EC_WORD_DRAGON,
@@ -821,7 +821,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_LASS,
-        .name = _("MIRIAM"),
+        .name = _("호양"),
         .teamFlags = 0x82,
         .greeting = {
             EC_WORD_YOU_RE,
@@ -834,7 +834,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEMANIAC,
-        .name = _("THEO"),
+        .name = _("테오"),
         .teamFlags = 0x40,
         .greeting = {
             EC_WORD_I,
@@ -847,7 +847,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
-        .name = _("PAMELA"),
+        .name = _("파멜라"),
         .teamFlags = 0x10,
         .greeting = {
             EC_WORD_HERE_I_COME,
@@ -860,7 +860,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEFAN_F,
-        .name = _("ALISSA"),
+        .name = _("다은"),
         .teamFlags = 0x20,
         .greeting = {
             EC_WORD_IT_S,
@@ -873,7 +873,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_GENTLEMAN,
-        .name = _("ARTHUR"),
+        .name = _("아서"),
         .teamFlags = 0x20,
         .greeting = {
             EC_WORD_PLEASE,
@@ -886,7 +886,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SWIMMER_F,
-        .name = _("MARCY"),
+        .name = _("마시"),
         .teamFlags = 0x82,
         .greeting = {
             EC_WORD_I_AM,
@@ -899,7 +899,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_COOL_TRAINER_M,
-        .name = _("MILLER"),
+        .name = _("밀러"),
         .teamFlags = 0x10,
         .greeting = {
             EC_WORD_I,
@@ -912,7 +912,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BIRD_KEEPER,
-        .name = _("OLIVER"),
+        .name = _("올리버"),
         .teamFlags = 0x11,
         .greeting = {
             EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS,
@@ -925,7 +925,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
-        .name = _("MOLLY"),
+        .name = _("몰리"),
         .teamFlags = 0x12,
         .greeting = {
             EC_WORD_HOW,
@@ -938,7 +938,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BUG_MANIAC,
-        .name = _("JASON"),
+        .name = _("제이슨"),
         .teamFlags = 0x40,
         .greeting = {
             EC_WORD_WATER,
@@ -951,7 +951,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BATTLE_GIRL,
-        .name = _("AVA"),
+        .name = _("에이바"),
         .teamFlags = 0x20,
         .greeting = {
             EC_WORD_WHAT,
@@ -964,7 +964,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_FISHERMAN,
-        .name = _("HANK"),
+        .name = _("행크"),
         .teamFlags = 0x10,
         .greeting = {
             EC_WORD_YOU_RE,
@@ -977,7 +977,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SAILOR,
-        .name = _("PETER"),
+        .name = _("피터"),
         .teamFlags = 0x20,
         .greeting = {
             EC_WORD_IT_S,
@@ -990,7 +990,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_EXPERT_F,
-        .name = _("MINDY"),
+        .name = _("초아"),
         .teamFlags = 0x20,
         .greeting = {
             EC_WORD_YOU,
@@ -1003,7 +1003,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BUG_MANIAC,
-        .name = _("DWIGHT"),
+        .name = _("태호"),
         .teamFlags = 0x11,
         .greeting = {
             EC_WORD_ARE,
@@ -1016,7 +1016,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEMON_BREEDER_F,
-        .name = _("REENA"),
+        .name = _("리나"),
         .teamFlags = 0x12,
         .greeting = {
             EC_WORD_I,
@@ -1029,7 +1029,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_PARASOL_LADY,
-        .name = _("MEGAN"),
+        .name = _("메건"),
         .teamFlags = 0x10,
         .greeting = {
             EC_WORD_DON_T,
@@ -1042,7 +1042,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
-        .name = _("SIERRA"),
+        .name = _("시현"),
         .teamFlags = 0x04,
         .greeting = {
             EC_WORD_I_VE,
@@ -1055,7 +1055,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEMON_RANGER_M,
-        .name = _("ARNOLD"),
+        .name = _("수윤"),
         .teamFlags = 0x08,
         .greeting = {
             EC_WORD_I_AM,
@@ -1068,7 +1068,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BLACK_BELT,
-        .name = _("XIN"),
+        .name = _("진우"),
         .teamFlags = 0x04,
         .greeting = {
             EC_WORD_HOO_HAH,
@@ -1081,7 +1081,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_COOL_TRAINER_F,
-        .name = _("KELLY"),
+        .name = _("켈리"),
         .teamFlags = 0x02,
         .greeting = {
             EC_WORD_YOU,
@@ -1094,7 +1094,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_COLLECTOR,
-        .name = _("VANCE"),
+        .name = _("범준"),
         .teamFlags = 0x80,
         .greeting = {
             EC_WORD_POKEMON,
@@ -1107,7 +1107,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
-        .name = _("TOBY"),
+        .name = _("토비"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_THIS,
@@ -1120,7 +1120,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_GENTLEMAN,
-        .name = _("NORTON"),
+        .name = _("예승"),
         .teamFlags = 0x20,
         .greeting = {
             EC_WORD_I,
@@ -1133,7 +1133,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BATTLE_GIRL,
-        .name = _("ZOE"),
+        .name = _("조에"),
         .teamFlags = 0x02,
         .greeting = {
             EC_WORD_THIS,
@@ -1146,7 +1146,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_BEAUTY,
-        .name = _("EMMA"),
+        .name = _("엠마"),
         .teamFlags = 0x20,
         .greeting = {
             EC_WORD_DON_T,
@@ -1159,7 +1159,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_HIKER,
-        .name = _("VINCE"),
+        .name = _("빈스"),
         .teamFlags = 0x04,
         .greeting = {
             EC_WORD_YAHOO,
@@ -1172,7 +1172,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_EXPERT_M,
-        .name = _("MARV"),
+        .name = _("마브"),
         .teamFlags = 0x10,
         .greeting = {
             EC_WORD_LEARN,
@@ -1185,7 +1185,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_POKEMON_BREEDER_M,
-        .name = _("TODD"),
+        .name = _("토드"),
         .teamFlags = 0x40,
         .greeting = {
             EC_WORD_THE,
@@ -1198,7 +1198,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_GUITARIST,
-        .name = _("GAVIN"),
+        .name = _("옥규"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_BABY,
@@ -1211,7 +1211,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_PSYCHIC_M,
-        .name = _("QUINN"),
+        .name = _("청양"),
         .teamFlags = 0x08,
         .greeting = {
             EC_WORD_I,
@@ -1224,7 +1224,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_COOL_TRAINER_F,
-        .name = _("JENN"),
+        .name = _("예지"),
         .teamFlags = 0x02,
         .greeting = {
             EC_WORD_I_AM,
@@ -1237,7 +1237,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_EXPERT_M,
-        .name = _("JOEL"),
+        .name = _("조엘"),
         .teamFlags = 0x10,
         .greeting = {
             EC_WORD_BELIEVE,
@@ -1250,7 +1250,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_DRAGON_TAMER,
-        .name = _("KYLE"),
+        .name = _("시연"),
         .teamFlags = 0x0C,
         .greeting = {
             EC_WORD_I,
@@ -1263,7 +1263,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_COOL_TRAINER_M,
-        .name = _("BRET"),
+        .name = _("브렛"),
         .teamFlags = 0x01,
         .greeting = {
             EC_WORD_TAKE,
@@ -1276,7 +1276,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_EXPERT_F,
-        .name = _("CARRIE"),
+        .name = _("캐리"),
         .teamFlags = 0x10,
         .greeting = {
             EC_WORD_TRAINER,
@@ -1289,7 +1289,7 @@ const struct BattleTowerTrainer gBattleTowerTrainers[] =
     },
     {
         .trainerClass = FACILITY_CLASS_LADY,
-        .name = _("GILLIAN"),
+        .name = _("희안"),
         .teamFlags = 0x02,
         .greeting = {
             EC_WORD_COME_ON,

@@ -880,26 +880,26 @@ const struct InGameTrade gIngameTrades[] = {
 
 const u16 gIngameTradeMail[][10] = {
     {
-        EC_POKEMON(PIKACHU),
-        EC_WORD_THANK_YOU,
-        EC_WORD_EXCL,
-        EC_WORD_MY,
-        EC_POKEMON(SKITTY),
-        EC_WORD_EATS,
-        EC_WORD_A_LOT,
-        EC_WORD_NOW,
-        EC_WORD_EXCL,
+        EC_POKEMON(PIKACHU), // 피카츄
+        EC_WORD_REALLY, // 정말
+        EC_WORD_THANKS, // 고마워
+        EC_WORD_EXCL, // !
+        EC_POKEMON(SKITTY), // 에나비
+        EC_WORD_SWEETS, // 과자
+        EC_WORD_A_LOT, // 엄청
+        EC_WORD_EATS, // 먹는다
+        EC_WORD_EXCL, // !
         0
     }, {
-        EC_WORD_I,
-        EC_WORD_WANT,
-        EC_WORD_TO,
-        EC_WORD_SEE,
-        EC_WORD_A,
-        EC_MOVE2(PETAL_DANCE),
-        EC_WORD_IT_S,
-        EC_WORD_SO,
-        EC_WORD_PRETTY,
+        EC_WORD_ALMOST, // 이제
+        EC_MOVE2(PETAL_DANCE), // 꽃잎댄스
+        EC_WORD_SPECTATOR, // 관전
+        EC_WORD_GOING, // 가능하다
+        EC_WORD_EXCL, // !
+        EC_WORD_BEAUTIFUL, // 아름다운
+        EC_WORD_MOVE, // 기술
+        EC_WORD_YEAH, // 이야-
+        EC_WORD_EXCL, // !
         0
     }
 };

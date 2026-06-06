@@ -2,28 +2,8 @@
 #define DATA_TEXT_EASY_CHAT_GROUPS_EVENTS_ORDER
 
 u16 gEasyChatGroupOrder_Events[] = {
-    0,
-    14,
-    12,
-    3,
-    17,
-    4,
-    1,
-    10,
-    9,
-    15,
-    11,
-    6,
-    13,
-    19,
-    5,
-    18,
-    20,
-    21,
-    16,
-    8,
-    2,
-    7,
+    17, 19, 0, 13, 16, 14, 15, 20, 21, 9, 8, 7,
+    12, 11, 10, 5, 2, 4, 1, 18, 3, 6,
 };
 
 #endif // DATA_TEXT_EASY_CHAT_GROUPS_EVENTS_ORDER

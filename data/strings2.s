@@ -17,7 +17,7 @@ gMultiText_Saving:: @ 842C328
 	.string "통신 대기 중!\n잠시 기다려 주십시오$"
 
 gMultiText_LinkError:: @ 842C34C
-	.string "{HIGHLIGHT TRANSPARENT}{COLOR WHITE2}통신 에러가 발생했습니다\n통신케이블의 연결을 확인하고\n전원을 껐다가 다시 켜 주십시오$"
+	.string "{HIGHLIGHT TRANSPARENT}{COLOR WHITE2}{SHADOW DARK_GREY}통신 에러가 발생했습니다\n통신케이블의 연결을 확인하고\n전원을 껐다가 다시 켜 주십시오$"
 
 gSystemText_OptionMenu:: @ 842C3A6
 	.string "{PALETTE 9}설정을 바꾼다$"

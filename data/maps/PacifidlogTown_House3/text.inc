@@ -2,7 +2,7 @@ PacifidlogTown_House3_Text_17940E:: @ 817940E
 	.string "트레이너님! 괜찮다면\n"
 	.string "나랑 포켓몬 교환하자!\p"
 	.string "황금마을에만 있으면 잡을 수 있는\n"
-	.string "포켓몬이 한정되어 있거든!\p"
+	.string "포켓몬이 많지 않거든!\p"
 	.string "혹시 {STR_VAR_1} 없어?\n"
 	.string "난 {STR_VAR_2}{K_EULREUL} 줄게!$"
 	@ トレ-ナ-さん! よかったらｎ

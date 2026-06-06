@@ -21,15 +21,15 @@ extern const struct WindowTemplate gWindowTemplate_81E6DA8;
 
 extern void sub_80546B8(void);
 
-const u16 gMysteryEventPhrase[] = {EC_WORD_MYSTERY, EC_WORD_EVENT, EC_WORD_IS, EC_WORD_EXCITING};
+const u16 gMysteryEventPhrase[] = {EC_WORD_WE, EC_WORD_TOGETHER, EC_WORD_LINK, EC_WORD_LET_S}; // 모두 같이 통신 하자
 
 const u16 gBerryMasterWifePhrases[][2] =
 {
-    {EC_WORD_GREAT, EC_WORD_BATTLE},
-    {EC_WORD_CHALLENGE, EC_WORD_CONTEST},
-    {EC_WORD_OVERWHELMING, EC_POKEMON(LATIAS)},
-    {EC_WORD_COOL, EC_POKEMON(LATIOS)},
-    {EC_WORD_SUPER, EC_WORD_HUSTLE},
+    {EC_WORD_MUCH, EC_WORD_MATCH}, // すごい しょうぶ -> 굉장한 승부
+    {EC_WORD_CONTEST, EC_WORD_CHALLENGE}, // チャレンジ コンテスト -> 콘테스트 도전
+    {EC_WORD_BEAUTIFUL, EC_POKEMON(LATIAS)}, // すごすぎ ラティアス -> 아름다운 라티아스
+    {EC_WORD_FABULOUS, EC_POKEMON(LATIOS)}, // かっこいい ラティオス -> 멋진 라티오스
+    {EC_WORD_HUSTLE, EC_WORD_FULL}, // モーレツ ハッスル -> 의욕 가득
 };
 
 // const pointer to gEasyChatStruct-> easy_chat might be two separate files.
@@ -44,13 +44,12 @@ const struct ScanlineEffectParams gUnknown_083DB698 =
 
 const u8 gUnknown_083DB6A4[] = {4, 0, 0, 0, 1, 5, 0, 2, 2, 3, 2, 2, 2, 3};
 
-// choose by alphabet keyboard
-const u8 gUnknown_083DB6B2[][16] =
+// choose by Korean initial consonant keyboard
+const u8 gUnknown_083DB6B2[][7] =
 {
-    _("ABCDEF "),
-    _("GHIJKL"),
-    _("MNOPQRS"),
-    _("TUVWXYZ"),
+    { 1,  2,  3,  4,  5,  6,  0},
+    { 7,  8,  9, 10, 11, 12,  0},
+    {13, 14, 15, 16, 17, 18, 19},
 };
 
 struct EasyChatPrompt
@@ -441,15 +440,16 @@ void sub_80E6630(void)
 
     for (i = 0; i < 4; i++)
     {
+        for (r3 = 0; r3 < 14; r3++)
+            gEasyChatStruct->unk40[i][r3] = CHAR_SPACE;
+    }
+
+    for (i = 0; i < ARRAY_COUNT(gUnknown_083DB6B2); i++)
+    {
         const u8 *row = gUnknown_083DB6B2[i];
 
-        for (r3 = 0; row[r3] != EOS; r3++)
-        {
-            if (row[r3] != CHAR_SPACE)
-                gEasyChatStruct->unk40[i][r3] = row[r3] + 0x46;
-            else
-                gEasyChatStruct->unk40[i][r3] = CHAR_SPACE;
-        }
+        for (r3 = 0; r3 < ARRAY_COUNT(gUnknown_083DB6B2[0]); r3++)
+            gEasyChatStruct->unk40[i][r3] = row[r3];
     }
 }
 
@@ -494,20 +494,20 @@ void sub_80E6690(void)
 // Default profile phrase
 const u16 gUnknown_083DB7EC[] =
 {
-    EC_WORD_I_AM,
-    EC_WORD_A,
-    EC_WORD_POKEMON,
-    EC_WORD_GREAT,
+    EC_WORD_I, // 나
+    EC_WORD_POKEMON, // 포켓몬
+    EC_WORD_EXCESS, // 너무
+    EC_WORD_LIKES, // 좋아
 };
 
 const u16 gUnknown_083DB7F4[] =
 {
-    EC_WORD_ARE,
-    EC_WORD_YOU,
-    EC_WORD_READY,
-    EC_WORD_QUES,
-    EC_WORD_HERE_I_COME,
-    EC_WORD_EXCL,
+    EC_WORD_HIT, // 자 그럼
+    EC_WORD_WENT, // 간다
+    EC_WORD_A_LOT, // 엄청
+    EC_WORD_DECIDE, // 각오
+    EC_WORD_ALL, // 하도록 해
+    EC_WORD_EXCL, // !
 };
 
 // ResetDefaultEasyChatPhrases
@@ -561,7 +561,7 @@ void sub_80E683C(void)
         gEasyChatStruct->unk1AA[0] = 7;
         gEasyChatStruct->unk1AA[1] = 6;
         gEasyChatStruct->unk1AA[2] = 7;
-        gEasyChatStruct->unk1AA[3] = 7;
+        gEasyChatStruct->unk1AA[3] = 0;
     }
     gEasyChatStruct->unk1A8 = 0;
     gEasyChatStruct->unk1A9 = 0;
@@ -1335,13 +1335,13 @@ bool8 sub_80E77C8(void)
         {
             gEasyChatStruct->unk1A8--;
             if (gEasyChatStruct->unk1A8 < 1)
-                gEasyChatStruct->unk1A8 = 3;
+                gEasyChatStruct->unk1A8 = 2;
             return TRUE;
         }
         else if (gMain.newAndRepeatedKeys & DPAD_DOWN)
         {
             gEasyChatStruct->unk1A8++;
-            if (gEasyChatStruct->unk1A8 > 3)
+            if (gEasyChatStruct->unk1A8 > 2)
                 gEasyChatStruct->unk1A8 = 1;
             return TRUE;
         }
@@ -1356,13 +1356,13 @@ bool8 sub_80E77C8(void)
             {
                 gEasyChatStruct->unk1A8--;
                 if (gEasyChatStruct->unk1A8 < 0)
-                    gEasyChatStruct->unk1A8 = 3;
+                    gEasyChatStruct->unk1A8 = 2;
                 pressedUpDown = TRUE;
             }
             else if (gMain.newAndRepeatedKeys & DPAD_DOWN)
             {
                 gEasyChatStruct->unk1A8++;
-                if (gEasyChatStruct->unk1A8 > 3)
+                if (gEasyChatStruct->unk1A8 > 2)
                     gEasyChatStruct->unk1A8 = 0;
                 pressedUpDown = TRUE;
             }
@@ -1505,9 +1505,10 @@ bool8 sub_80E7B40(void)
 
     if (gMain.newAndRepeatedKeys & DPAD_LEFT)
     {
-        gEasyChatStruct->unk99A5--;
-        if (gEasyChatStruct->unk99A5 < 0)
+        if (gEasyChatStruct->unk99A5 == 0)
             gEasyChatStruct->unk99A5 = gEasyChatStruct->unk99A6[gEasyChatStruct->unk99A4] - 1;
+        else
+            gEasyChatStruct->unk99A5--;
         return TRUE;
     }
     else if (gMain.newAndRepeatedKeys & DPAD_RIGHT)
@@ -1522,16 +1523,17 @@ bool8 sub_80E7B40(void)
     {
         if (gEasyChatStruct->unk9A29 != 0)
         {
-            gEasyChatStruct->unk1C0 = -gEasyChatStruct->unk9A29;
-            if (gEasyChatStruct->unk1C0 < -4)
+            if (gEasyChatStruct->unk9A29 > 4)
                 gEasyChatStruct->unk1C0 = -4;
+            else
+                gEasyChatStruct->unk1C0 = -gEasyChatStruct->unk9A29;
         }
         gEasyChatStruct->unk99A4 += gEasyChatStruct->unk1C0;
         gEasyChatStruct->unk1BE = 4;
     }
     else if (gMain.newKeys & SELECT_BUTTON)
     {
-        if (gEasyChatStruct->unk9A29 < gEasyChatStruct->unk9A28 - 4)
+        if (gEasyChatStruct->unk9A28 > gEasyChatStruct->unk9A29 + 4)
         {
             gEasyChatStruct->unk1C0 = gEasyChatStruct->unk9A28 - 4 - gEasyChatStruct->unk9A29;
             if (gEasyChatStruct->unk1C0 > 4)

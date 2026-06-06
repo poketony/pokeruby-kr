@@ -1164,7 +1164,7 @@ gTVNameRaterText13:: @ 81AA09D
 gTVNameRaterText14:: @ 81AA0D7
 	.string "트레이너 {STR_VAR_1}씨의\n"
 	.string "이름을 따서\p"
-	.string "“{STR_VAR_2}{STR_VAR_3}”{K_I}라고 하는 것도\l"
+	.string "“{STR_VAR_2}{STR_VAR_3}”{K_I}라고 하는 것도\n"
 	.string "무척 좋은 닉네임이 되겠군요$"
 	@ トレ-ナ-の §いさんのｎ
 	@ なまえを もってきてｐ
@@ -1472,7 +1472,7 @@ gTVPokemonTodayText3:: @ 81AAE31
 gTVPokemonTodayText4:: @ 81AAE9D
 	.string "누님: 그렇게 간단하게\n"
 	.string "포획하다니\p"
-	.string "{STR_VAR_1}씨와 {STR_VAR_2}의\l"
+	.string "{STR_VAR_1}씨와 {STR_VAR_2}의\n"
 	.string "만남은 분명 운명적이었을 거야!$"
 	@ おねえさん『そんなに かんたんにｎ
 	@ つかまえる なんてｐ

@@ -46,3 +46,4 @@ build/
 *.diff
 porymap.project.cfg
 .vscode/
+/codex-lab

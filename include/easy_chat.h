@@ -12,6 +12,8 @@ struct UnknownEasyChatStruct1
     void *unk8;
 };
 
+#define EASY_CHAT_ALPHABETICAL_WORDS_CAPACITY 512
+
 struct Shared1000
 {
     void (*unk0)(void);  // main cb 2
@@ -74,23 +76,23 @@ struct Shared1000
     void (*unk1C4)(void);
     u8 unk1C8[0x500];
     u8 unk6C8[0xB78-0x6C8];
-    u16 unkB78[27][255];
+    u16 unkB78[27][EASY_CHAT_ALPHABETICAL_WORDS_CAPACITY];
     u16 unk4142[(0x78-0x42)/2];  //0x446C
     u16 unk4178[(0x41A4-0x4178)/2]; // unknown length
     const u8 *ecWordStrings[0x16][0x100];  //0x44CE in german
-    s8 unk99A4;
-    s8 unk99A5;
-    s8 unk99A6[130];
-    s8 unk9A28;
-    s8 unk9A29;
-    u16 unk9A2A[(0x9C32-0x9A2A)/4][2];  // unknown length
+    u16 unk99A4;
+    u16 unk99A5;
+    u8 unk99A6[EASY_CHAT_ALPHABETICAL_WORDS_CAPACITY / 2];
+    u16 unk9A28;
+    u16 unk9A29;
+    u16 unk9A2A[EASY_CHAT_ALPHABETICAL_WORDS_CAPACITY / 2][2];
     u8 unk9C32;
     u8 filler9C33;
     u16 unk9C34[3][9];
     u8 filler9C6A[2];
-    s8 *unk9C6C;
+    u8 unk9C6C;
     u8 unk9C70;
-    s8 unk9C71;
+    u16 unk9C71;
     u8 filler9C72[2];
     struct Sprite *unk9C74;
     u8 filler9C78[4];

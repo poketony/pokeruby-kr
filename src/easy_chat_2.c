@@ -395,12 +395,11 @@ void sub_80E8534(void)
     gEasyChatStruct->unk9C->data[1] = 0;
 }
 
-const s8 gUnknown_083DBCC4[][7] =
+const u8 gUnknown_083DBCC4[][7] =
 {
-    {1,  3,  5,  8, 10, 12, 15},
-    {1,  3,  5,  8, 10, 12,  0},
-    {1,  3,  5,  8, 10, 12, 14},
-    {1,  3,  5,  8, 10, 12, 14},
+    { 38,  55,  72, 115, 132, 149, 166},
+    { 38,  55,  72, 115, 132, 149,   0},
+    { 38,  55,  72, 115, 132, 149, 166},
 };
 
 void sub_80E85F8(struct Sprite *sprite)
@@ -434,11 +433,11 @@ void sub_80E85F8(struct Sprite *sprite)
             sprite->y = gEasyChatStruct->unk1A8 * 16 + 96;
             break;
         case 2:
-            sprite->x = 151;
+            sprite->x = 160;
             sprite->y = 96;
             break;
         case 3:
-            sprite->x = gUnknown_083DBCC4[gEasyChatStruct->unk1A8][gEasyChatStruct->unk1A9] * 8 + 31;
+            sprite->x = gUnknown_083DBCC4[gEasyChatStruct->unk1A8][gEasyChatStruct->unk1A9];
             sprite->y = (gEasyChatStruct->unk1A8 - gEasyChatStruct->unk1B5) * 16 + 96;
             break;
         }
@@ -545,26 +544,23 @@ void sub_80E8958(u8 animNum)
     if (animNum == 0)
     {
         r9 = 100;
-        gEasyChatStruct->unk9C6C = &gEasyChatStruct->unk1B5;
+        gEasyChatStruct->unk9C6C = 0;
         if (gEasyChatStruct->unk26 == 0)
-            gEasyChatStruct->unk9C71 = gEasyChatStruct->unk1B6 - 4;
+            gEasyChatStruct->unk9C71 = (gEasyChatStruct->unk1B6 > 4) ? gEasyChatStruct->unk1B6 - 4 : 0;
         else
             gEasyChatStruct->unk9C71 = 0;
     }
     else
     {
         r9 = 120;
-        gEasyChatStruct->unk9C6C = &gEasyChatStruct->unk9A29;
-        gEasyChatStruct->unk9C71 = gEasyChatStruct->unk9A28 - 4;
+        gEasyChatStruct->unk9C6C = 1;
+        gEasyChatStruct->unk9C71 = (gEasyChatStruct->unk9A28 > 4) ? gEasyChatStruct->unk9A28 - 4 : 0;
         for (i = 0; i < 2; i++)
         {
             gEasyChatStruct->unkB4[i]->invisible = FALSE;
             gEasyChatStruct->unkB4[i]->data[1] = 1;
         }
     }
-
-    if (gEasyChatStruct->unk9C71 < 0)
-        gEasyChatStruct->unk9C71 = 0;
 
     for (i = 0; i < 2; i++)
     {
@@ -673,20 +669,26 @@ void sub_80E8A7C(void)
 void sub_80E8B78(struct Sprite *sprite)
 {
     bool8 invisible;
+    u16 scrollOffset;
 
     if (gEasyChatStruct->unk9C70 != 0 && sprite->data[1] != 0)
     {
+        if (gEasyChatStruct->unk9C6C == 0)
+            scrollOffset = gEasyChatStruct->unk1B5;
+        else
+            scrollOffset = gEasyChatStruct->unk9A29;
+
         if (sprite->data[0] == 0)
         {
             invisible = FALSE;
-            if (*gEasyChatStruct->unk9C6C == 0)
+            if (scrollOffset == 0)
                 invisible = TRUE;
             sprite->invisible = invisible;
         }
         else
         {
             invisible = FALSE;
-            if (*gEasyChatStruct->unk9C6C == gEasyChatStruct->unk9C71)
+            if (scrollOffset == gEasyChatStruct->unk9C71)
                 invisible = TRUE;
             sprite->invisible = invisible;
         }
@@ -1381,12 +1383,11 @@ void sub_80E9940(u8 *a, u8 b)
     sub_80E9A60(a, 2, r4 * 2);
 }
 
-const u8 gUnknown_083DBEAC[][32] =
+const u8 gUnknown_083DBEAC[][128] =
 {
-    _("{UNKNOWN_14 8} A B C  D E F  {UNKNOWN_14 0}others"),
-    _("{UNKNOWN_14 8} G H I  J K L      "),
-    _("{UNKNOWN_14 8} M N O  P Q R S    "),
-    _("{UNKNOWN_14 8} T U V  W X Y Z    "),
+    _("{CLEAR_TO 6}ㄱ{CLEAR_TO 23}ㄲ{CLEAR_TO 40}ㄴ{CLEAR_TO 83}ㄷ{CLEAR_TO 100}ㄸ{CLEAR_TO 117}ㄹ{CLEAR_TO 142}기타"),
+    _("{CLEAR_TO 6}ㅁ{CLEAR_TO 23}ㅂ{CLEAR_TO 40}ㅃ{CLEAR_TO 83}ㅅ{CLEAR_TO 100}ㅆ{CLEAR_TO 117}ㅇ"),
+    _("{CLEAR_TO 6}ㅈ{CLEAR_TO 23}ㅉ{CLEAR_TO 40}ㅊ{CLEAR_TO 83}ㅋ{CLEAR_TO 100}ㅌ{CLEAR_TO 117}ㅍ{CLEAR_TO 134}ㅎ"),
 };
 
 void sub_80E9974(void)
@@ -1405,7 +1406,6 @@ void sub_80E9974(void)
         sub_80E9A60(gUnknown_083DBEAC[0], 2, 0);
         sub_80E9A60(gUnknown_083DBEAC[1], 2, 2);
         sub_80E9A60(gUnknown_083DBEAC[2], 2, 4);
-        sub_80E9A60(gUnknown_083DBEAC[3], 2, 6);
     }
 }
 

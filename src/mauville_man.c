@@ -140,12 +140,12 @@ EWRAM_DATA static u16 gUnknown_020388BC = 0;  // set but not used?
 
 static const u16 sDefaultBardSongLyrics[] =
 {
-    EC_WORD_SISTER,
-    EC_WORD_EATS,
-    EC_WORD_SWEETS,
-    EC_WORD_VORACIOUS,
-    EC_WORD_AND,
-    EC_WORD_DROOLING,
+    EC_WORD_SISTER, // 누나
+    EC_WORD_SWEETS, // 과자
+    EC_WORD_A_LOT, // 엄청
+    EC_WORD_EATS, // 먹는다
+    EC_WORD_DIET, // 다이어트
+    EC_WORD_END, // 끝
 };
 
 static const u8 *const sGiddyAdjectives[] =

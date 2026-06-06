@@ -226,18 +226,18 @@ const struct UnkMailStruct Unknown_3E5790[] =
 
 const struct MailLayout gUnknown_083E57A4[] =
 {
-    {5, 15, 15, 4, 3, Unknown_3E5790},
-    {5, 15, 15, 4, 3, Unknown_3E5790},
-    {5, 15, 16, 4, 3, Unknown_3E5790},
-    {5, 15, 15, 4, 3, Unknown_3E5790},
-    {5, 15, 15, 4, 3, Unknown_3E5790},
-    {5, 15, 16, 4, 3, Unknown_3E5790},
-    {5, 15, 16, 4, 3, Unknown_3E5790},
-    {5, 15, 15, 4, 3, Unknown_3E5790},
-    {5, 15, 15, 4, 3, Unknown_3E5790},
-    {5, 15, 15, 4, 3, Unknown_3E5790},
-    {5, 16, 15, 4, 3, Unknown_3E5790},
-    {5, 15, 15, 4, 3, Unknown_3E5790},
+    {5, 15, 20, 4, 3, Unknown_3E5790},
+    {5, 15, 20, 4, 3, Unknown_3E5790},
+    {5, 15, 21, 4, 3, Unknown_3E5790},
+    {5, 15, 20, 4, 3, Unknown_3E5790},
+    {5, 15, 20, 4, 3, Unknown_3E5790},
+    {5, 15, 21, 4, 3, Unknown_3E5790},
+    {5, 15, 21, 4, 3, Unknown_3E5790},
+    {5, 15, 20, 4, 3, Unknown_3E5790},
+    {5, 15, 20, 4, 3, Unknown_3E5790},
+    {5, 15, 20, 4, 3, Unknown_3E5790},
+    {5, 16, 20, 4, 3, Unknown_3E5790},
+    {5, 15, 20, 4, 3, Unknown_3E5790},
 };
 
 #if DEBUG
