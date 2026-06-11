@@ -21,7 +21,7 @@ extern const struct WindowTemplate gWindowTemplate_81E6DA8;
 
 extern void sub_80546B8(void);
 
-const u16 gMysteryEventPhrase[] = {EC_WORD_WE, EC_WORD_TOGETHER, EC_WORD_LINK, EC_WORD_LET_S}; // 모두 같이 통신 하자
+const u16 gMysteryEventPhrase[] = {EC_WORD_MYSTERY, EC_WORD_EVENT, EC_WORD_EXCITING, EC_WORD_THICK}; // 이상한 사건 두근두근 쿵쿵
 
 const u16 gBerryMasterWifePhrases[][2] =
 {
